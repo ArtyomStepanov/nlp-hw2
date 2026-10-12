@@ -1,0 +1,22 @@
+# Datasets, model weights and generated experiment files
+/data/
+/artifacts/
+*.parquet
+*.pt
+*.pth
+*.safetensors
+
+# Python and notebook caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Local settings and credentials
+.DS_Store
+.env
+.env.*
+!.env.example
+.vscode/
