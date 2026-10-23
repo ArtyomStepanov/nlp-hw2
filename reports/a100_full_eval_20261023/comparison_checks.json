@@ -1,0 +1,162 @@
+{
+  "schema": 1,
+  "status": "passed",
+  "checked_at": "2026-10-23T14:09:34.789141+00:00",
+  "scope": "Saved-artifact verification only; no model generation, prediction execution, raw-cache loading, or weights downloaded.",
+  "validation": {
+    "rows": 20000,
+    "common_eligible": 19886,
+    "excluded_both": 114,
+    "validation_sha256": "282001d478bffb2d13ab2ca41e8232a0c99c3623f898dd7077128c266172c406",
+    "golden_reference_sha256": "42fc3fa34f9e7ce9cfbc84fb2ad35dddccceb275e6d249ec7f7d2fe4cef9785b"
+  },
+  "checks": {
+    "all_golden_reference_identities_and_row_order_match": true,
+    "all_prediction_execution_and_between_model_input_identities_match": true,
+    "all_pass_flags_statuses_counts_rates_and_denominators_recomputed": true,
+    "evaluator_sidecars_and_completion_match": true,
+    "same_generation_settings": true,
+    "original_validation_mapping_and_canonical_receipts_match": true,
+    "actual_best180000_weight_sha_and_training181144_provenance_match": true,
+    "downloaded_and_historical_file_receipts_verified": true
+  },
+  "full_model": {
+    "num_examples": 20000,
+    "num_evaluated": 19886,
+    "num_passed": 14775,
+    "num_bad_code": 32,
+    "pass@1": 0.7429850145831238,
+    "bad_code_rate": 0.0016,
+    "wrong_answer_rate": 0.2556069596701197,
+    "reference_error_rate": 0.0057,
+    "evaluation_coverage": 0.9943,
+    "evaluation_seconds": 245.28619204834104,
+    "status_counts": {
+      "passed": 14775,
+      "wrong_answer": 5083,
+      "ok": 110,
+      "runtime_error": 22,
+      "syntax_error": 6,
+      "unsupported_code": 2,
+      "timeout": 1,
+      "invalid_output": 1
+    },
+    "reference_status_counts": {
+      "ok": 19886,
+      "unsupported_code": 27,
+      "runtime_error": 76,
+      "invalid_output": 11
+    },
+    "prediction_column": "generated_code",
+    "reference_column": "code",
+    "comparison": "reference_solve",
+    "architecture": "bart",
+    "num_beams": 4,
+    "max_new_tokens": 256,
+    "length_penalty": 1.0,
+    "generation_seconds": 466.75004912540317,
+    "validation_sha256": "282001d478bffb2d13ab2ca41e8232a0c99c3623f898dd7077128c266172c406",
+    "evaluation_split": "validation",
+    "num_reference_errors": 114,
+    "num_hit_token_limit": 9,
+    "passed_fraction_of_all_sampled": 0.73875,
+    "finished_at": "2026-10-23T14:07:44.858011+00:00",
+    "reference_identity_verified": true,
+    "pass_percent": 74.29850145831239
+  },
+  "distinct4m": {
+    "num_examples": 20000,
+    "num_evaluated": 19886,
+    "num_passed": 13657,
+    "num_bad_code": 70,
+    "pass@1": 0.6867645579804887,
+    "bad_code_rate": 0.0035,
+    "wrong_answer_rate": 0.3097153776526199,
+    "reference_error_rate": 0.0057,
+    "evaluation_coverage": 0.9943,
+    "evaluation_seconds": 248.60350800305605,
+    "status_counts": {
+      "passed": 13657,
+      "wrong_answer": 6159,
+      "runtime_error": 64,
+      "ok": 114,
+      "invalid_output": 3,
+      "syntax_error": 3
+    },
+    "reference_status_counts": {
+      "ok": 19886,
+      "unsupported_code": 27,
+      "runtime_error": 76,
+      "invalid_output": 11
+    },
+    "prediction_column": "generated_code",
+    "reference_column": "code",
+    "comparison": "reference_solve",
+    "architecture": "bart",
+    "num_beams": 4,
+    "max_new_tokens": 256,
+    "length_penalty": 1.0,
+    "generation_seconds": 469.0115721002221,
+    "validation_sha256": "282001d478bffb2d13ab2ca41e8232a0c99c3623f898dd7077128c266172c406",
+    "evaluation_split": "validation",
+    "num_reference_errors": 114,
+    "num_hit_token_limit": 15,
+    "passed_fraction_of_all_sampled": 0.68285,
+    "finished_at": "2026-10-22T21:47:32.055096+00:00",
+    "pass_percent": 68.67645579804888
+  },
+  "paired": {
+    "both_pass": 13101,
+    "full_only": 1674,
+    "distinct4m_only": 556,
+    "neither_pass": 4555,
+    "excluded_both": 114,
+    "common_eligible": 19886,
+    "net_additional_full_passes": 1118,
+    "delta_percentage_points": 5.622045660263502,
+    "prediction_changes": 13609,
+    "eligible_prediction_changes": 13528
+  },
+  "source_checkpoint": {
+    "best_step": 180000,
+    "training_attempts": 181144,
+    "weight_sha256": "2059268173416c77cd8c901c791eb86e7cbcea0ede756b2bb830ec23638b8165",
+    "remote_weight_proof_sha256": "261b58c0f712ff9567d6209dcce8bd8752cb25aa2f44ce26f43ea622c56c7ab8"
+  },
+  "verified_file_sha256": {
+    "full_download": {
+      "evaluation/config.json": "800ea33f8ca7160bd267b14662a1c1271ad465039f157a219296bf3ad884a173",
+      "evaluation/evaluation/evaluation.jsonl": "c87cf5b3c0a632f6c0c27a7e94e2853fc433d16a31546b9485c81c514e7f90f8",
+      "evaluation/evaluation/evaluation_config.json": "0154b0c91c4615d3ecaa4d568975ddf87ede771984cdd4c628fe1ed166a55f5c",
+      "evaluation/evaluation/metrics.json": "648b03814c30a0ccac68dc4967e1e13bffe57bc64a9fc048eda048bc09cd9df5",
+      "evaluation/metrics.json": "ecc40aeec862e7c9cb18dc74463198e5b4fba877932f94c46e65f8863c3b8e8f",
+      "evaluation/predictions.jsonl": "3f7b3fceb6b98ffa09675f45623d0ce1bfdd11252d1fa3ebbef254f077390306",
+      "evaluation/progress.json": "d6ec878726a2e2fedefca6c653f9b7ba8863f67d684a916a279221fac67e35c5",
+      "logs/bootstrap.log": "f05af90065a24d984b12a662ded036bfa5a4c68d8338ce5baa130ea2b18bdb2a",
+      "logs/evaluation.log": "3bec263dd722e5c3a15fb56bb4e6a3224074f0cdb2c6c84acb5d12e705d0d836",
+      "evaluation_source_manifest.json": "292de131b2a4afac4d361a477e5d2402cb3f659f757129016d38b149d7c322a3",
+      "evaluation.pid": "c3625b70da67bc4fd709c685ebf0643c17a9e5c0e27a470020d8be98600a84e1",
+      "evaluation_driver.pid": "81027629e714080a98afcbd55a44b46fa77fcbac19f29c1564fd2e43365e5ffc",
+      "evaluation.phase": "37a40f08d8548dba289b9b0bb35bcf63b359f6d37ee86044ebc6b6da080b9ec1",
+      "evaluation.exitcode": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "launch_evaluation.sh": "3374479a077da403428736f1d2b77e70a817c358e7d53e2dbbd493af2b0bb60c"
+    },
+    "distinct4m": {
+      "config.json": "69990939b5adacf1f1c277971ace759068ccf0c657fd07f2a8ce95eaf87068ff",
+      "evaluation/evaluation.jsonl": "5e4472b48df843c70030d4577fbd0a4b7b85aed6c001560b40ab42f348fa739e",
+      "evaluation/evaluation_config.json": "1155e5265b46cf50e1b44565e11d60c27770c433ce1787d02f1c300cef3c5a61",
+      "evaluation/metrics.json": "155086e0c527f1139cca9fd73633e769d488f2b30d3730a3320f2b87c69f6526",
+      "metrics.json": "1c88221a5ac68f21fded2ce8267ea4dedd31514baef06bd9bb075695edf18ad1",
+      "predictions.jsonl": "b763cd5624d241d6eab9a1d25bc7c33adcff1ebf5ec701e61b79c931dff6a3de",
+      "progress.json": "d6ec878726a2e2fedefca6c653f9b7ba8863f67d684a916a279221fac67e35c5"
+    },
+    "download_receipt": "ac4b7a32ccab116bf124872c596795777ba64e28172b2b7351a4793d0a769b45"
+  },
+  "limitations": [
+    "One seed (42) with different training data/budgets; this comparison does not establish universal superiority.",
+    "These validation rows were used for loss monitoring and best-checkpoint selection; this is not official hidden-test accuracy.",
+    "Canonical token-row identity is checked against pinned evaluator mapping receipts; local reports contain decoded text rather than the original Arrow token buffers.",
+    "A100 generation timing does not establish the 180-second T4 requirement."
+  ],
+  "findings": []
+}

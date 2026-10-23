@@ -1,0 +1,131 @@
+
+
+
+
+Saving the dataset (0/1 shards):   0%|          | 0/8 [00:00<?, ? examples/s]
+Saving the dataset (1/1 shards): 100%|██████████| 8/8 [00:00<00:00, 2362.66 examples/s]
+Saving the dataset (1/1 shards): 100%|██████████| 8/8 [00:00<00:00, 2193.53 examples/s]
+
+Saving the dataset (0/1 shards):   0%|          | 0/4 [00:00<?, ? examples/s]
+Saving the dataset (1/1 shards): 100%|██████████| 4/4 [00:00<00:00, 3546.23 examples/s]
+Saving the dataset (1/1 shards): 100%|██████████| 4/4 [00:00<00:00, 3050.96 examples/s]
+
+  0%|          | 0/4 [00:00<?, ?it/s]
+                                     
+
+ 25%|██▌       | 1/4 [00:00<00:00, 18.30it/s]
+                                             
+
+ 50%|█████     | 2/4 [00:00<00:00, 33.64it/s]
+                                             
+
+ 75%|███████▌  | 3/4 [00:00<00:00, 46.85it/s]
+                                             
+
+100%|██████████| 4/4 [00:00<00:00, 58.76it/s]{'loss': '5.764', 'grad_norm': '1.694', 'learning_rate': '0', 'epoch': '0.25'}
+{'loss': '5.742', 'grad_norm': '1.959', 'learning_rate': '0.0002', 'epoch': '0.5'}
+{'loss': '5.764', 'grad_norm': '1.743', 'learning_rate': '0.00015', 'epoch': '0.75'}
+{'loss': '5.743', 'grad_norm': '1.936', 'learning_rate': '5e-05', 'epoch': '1'}
+
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+                                             
+
+                                     
+[A
+100%|██████████| 4/4 [00:00<00:00, 53.47it/s]
+
+100%|██████████| 2/2 [00:00<00:00, 802.28it/s][A
+
+                                              [A{'eval_loss': '5.737', 'eval_token_loss': '5.736', 'eval_target_tokens': 31, 'eval_runtime': '0.0053', 'eval_samples_per_second': '753.3', 'eval_steps_per_second': '376.7', 'epoch': '1'}
+
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s][A
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00, 979.06it/s]
+
+                                             
+
+100%|██████████| 4/4 [00:00<00:00, 41.07it/s]
+100%|██████████| 4/4 [00:00<00:00, 40.94it/s]
+{'train_runtime': '0.0975', 'train_samples_per_second': '82.04', 'train_steps_per_second': '41.02', 'train_loss': '5.753', 'epoch': '1'}
+
+  0%|          | 0/2 [00:00<?, ?it/s]
+100%|██████████| 2/2 [00:00<00:00, 1118.63it/s]
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00, 1113.43it/s]
+Matplotlib is building the font cache; this may take a moment.
+
+Loading weights:   0%|          | 0/54 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 54/54 [00:00<00:00, 19635.23it/s]
+copy: generated 2/4 in 0.0s
+copy: generated 4/4 in 0.0s
+
+Creating json from Arrow format:   0%|          | 0/1 [00:00<?, ?ba/s]
+Creating json from Arrow format: 100%|██████████| 1/1 [00:00<00:00, 216.02ba/s]
+copy: execution checks, 4 references and predictions
+
+Creating json from Arrow format:   0%|          | 0/1 [00:00<?, ?ba/s]
+Creating json from Arrow format: 100%|██████████| 1/1 [00:00<00:00, 1416.04ba/s]
+{"num_examples": 4, "num_evaluated": 3, "num_passed": 0, "num_bad_code": 4, "pass@1": 0.0, "bad_code_rate": 1.0, "wrong_answer_rate": 0.0, "reference_error_rate": 0.25, "evaluation_coverage": 0.75, "evaluation_seconds": 0.0895709159958642, "status_counts": {"runtime_error": 4}, "reference_status_counts": {"ok": 3, "syntax_error": 1}, "prediction_column": "generated_code", "reference_column": "code", "comparison": "reference_solve", "architecture": "copy", "num_beams": 4, "max_new_tokens": 8, "generation_seconds": 0.01847479201387614, "validation_sha256": "502dddbedc9cf64fd3ab4b88e4beed34bb0d7651da8a00adf787c50b24024a8e", "evaluation_split": "validation", "num_reference_errors": 1, "num_hit_token_limit": 4, "passed_fraction_of_all_sampled": 0.0, "finished_at": "2026-10-20T11:21:18.437693+00:00"}
+VERIFIED copy 3 0.0
+
+  0%|          | 0/4 [00:00<?, ?it/s]
+                                     
+
+ 25%|██▌       | 1/4 [00:00<00:00, 73.63it/s]
+                                             
+
+ 50%|█████     | 2/4 [00:00<00:00, 113.43it/s]
+                                              
+
+ 75%|███████▌  | 3/4 [00:00<00:00, 142.06it/s]
+                                              
+
+100%|██████████| 4/4 [00:00<00:00, 163.43it/s]{'loss': '6.269', 'grad_norm': '2.416', 'learning_rate': '0', 'epoch': '0.25'}
+{'loss': '6.604', 'grad_norm': '2.754', 'learning_rate': '0.0002', 'epoch': '0.5'}
+{'loss': '5.913', 'grad_norm': '2.807', 'learning_rate': '0.00015', 'epoch': '0.75'}
+{'loss': '6.199', 'grad_norm': '2.266', 'learning_rate': '5e-05', 'epoch': '1'}
+
+
+  0%|          | 0/2 [00:00<?, ?it/s][A
+                                              
+
+                                     
+[A
+100%|██████████| 4/4 [00:00<00:00, 140.72it/s]
+
+100%|██████████| 2/2 [00:00<00:00, 1221.05it/s][A
+
+                                               [A{'eval_loss': '6.154', 'eval_token_loss': '6.187', 'eval_target_tokens': 31, 'eval_runtime': '0.0026', 'eval_samples_per_second': '1538', 'eval_steps_per_second': '768.9', 'epoch': '1'}
+
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s][A
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00, 1866.62it/s]
+
+                                              
+
+100%|██████████| 4/4 [00:00<00:00, 115.51it/s]
+100%|██████████| 4/4 [00:00<00:00, 114.81it/s]
+{'train_runtime': '0.0344', 'train_samples_per_second': '232.2', 'train_steps_per_second': '116.1', 'train_loss': '6.246', 'epoch': '1'}
+
+  0%|          | 0/2 [00:00<?, ?it/s]
+100%|██████████| 2/2 [00:00<00:00, 1561.25it/s]
+
+Writing model shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Writing model shards: 100%|██████████| 1/1 [00:00<00:00, 1607.63it/s]
+
+Loading weights:   0%|          | 0/28 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 28/28 [00:00<00:00, 23967.45it/s]
+t5: generated 2/4 in 0.0s
+t5: generated 4/4 in 0.0s
+
+Creating json from Arrow format:   0%|          | 0/1 [00:00<?, ?ba/s]
+Creating json from Arrow format: 100%|██████████| 1/1 [00:00<00:00, 3030.57ba/s]
+t5: execution checks, 4 references and predictions
+
+Creating json from Arrow format:   0%|          | 0/1 [00:00<?, ?ba/s]
+Creating json from Arrow format: 100%|██████████| 1/1 [00:00<00:00, 1321.04ba/s]
+{"num_examples": 4, "num_evaluated": 3, "num_passed": 0, "num_bad_code": 4, "pass@1": 0.0, "bad_code_rate": 1.0, "wrong_answer_rate": 0.0, "reference_error_rate": 0.25, "evaluation_coverage": 0.75, "evaluation_seconds": 0.08866783298435621, "status_counts": {"syntax_error": 3, "runtime_error": 1}, "reference_status_counts": {"ok": 3, "syntax_error": 1}, "prediction_column": "generated_code", "reference_column": "code", "comparison": "reference_solve", "architecture": "t5", "num_beams": 4, "max_new_tokens": 8, "generation_seconds": 0.012061416986398399, "validation_sha256": "502dddbedc9cf64fd3ab4b88e4beed34bb0d7651da8a00adf787c50b24024a8e", "evaluation_split": "validation", "num_reference_errors": 1, "num_hit_token_limit": 4, "passed_fraction_of_all_sampled": 0.0, "finished_at": "2026-10-20T11:21:18.833385+00:00"}
+VERIFIED t5 3 0.0
+Both native HF checkpoints, beam4, identical rows/order, reference-error denominator: verified.

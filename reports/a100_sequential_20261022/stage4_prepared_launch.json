@@ -1,0 +1,49 @@
+{
+  "status": "prepared_pending_stage3_review_completion",
+  "winner": "distinct4m",
+  "argv": [
+    "python3",
+    "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage2_recovery_code/tools/run_a100_decoding.py",
+    "--bundle-root",
+    "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage2_data/distinct4m",
+    "--checkpoint",
+    "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage2_recovery/trials/distinct4m/final",
+    "--architecture",
+    "bart",
+    "--output-dir",
+    "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage4_decoding",
+    "--reference-identity",
+    "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage2_recovery_code/reference_identity.json"
+  ],
+  "launcher_sha256": "56b702f78df03a78dce1e9635b1023a7fe592335e61821c12c50feedfe94d4b4",
+  "grid": [
+    {
+      "beam": 2,
+      "length_penalty": 1.0,
+      "batch": 64
+    },
+    {
+      "beam": 4,
+      "length_penalty": 1.0,
+      "batch": 64
+    },
+    {
+      "beam": 8,
+      "length_penalty": 1.0,
+      "batch": 32
+    },
+    {
+      "beam": 4,
+      "length_penalty": 0.8,
+      "batch": 64
+    },
+    {
+      "beam": 4,
+      "length_penalty": 1.2,
+      "batch": 64
+    }
+  ],
+  "selection_rows": 2000,
+  "confirmation_rows": 20000,
+  "max_new_tokens": 256
+}

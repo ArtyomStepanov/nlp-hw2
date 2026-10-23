@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "status": "complete",
+  "request": {
+    "base_rows": [
+      1000000,
+      20000
+    ],
+    "full_rows": [
+      11593060,
+      118302
+    ],
+    "repeat_factor": 4,
+    "seed": 42,
+    "global_batch": 256
+  },
+  "provenance": {
+    "original_bundle_sha256": "7480c7d1778bffce50db987019f2ccf87c06f8643c1ce59ad811e4fd3c77d0e1",
+    "original_selection_sha256": "aab7a9237d69484044504eac5c998f9f7ebd9c5573ad4d1e31fb4f41705e1e3d",
+    "original_selection": {
+      "identity": {
+        "train_rows": 1000000,
+        "validation_rows": 20000,
+        "seed": 42,
+        "source": "/workspace/nlp-hw2/artifacts/experiments/transformer_003_10x10_d1024_h100/preprocessed/4879438077e0cb46363513447b8659890aeae228b22084a5856ab2ac5b6560fc/dataset",
+        "tokenizer_sha256": "abd75c8655b948f612ebbf065a12269613269a4755cd0a698b0bf7a5bc1e9704"
+      },
+      "splits": {
+        "train": {
+          "source_rows": 11593060,
+          "selected_rows": 1000000,
+          "source_fingerprint": "aa5d0e63813f76f9",
+          "indices_sha256": "e9c9a3ab522a0d8e015fa746e1b180a877e1038d671a6f59a88cfda9901ebf44",
+          "seed": 42
+        },
+        "val": {
+          "source_rows": 118302,
+          "selected_rows": 20000,
+          "source_fingerprint": "bccad2dc0c84a83e",
+          "indices_sha256": "27f9db6e215b9666e3d60dd01c207169afb92d8e535eb3c7ee48a21efcd66b21",
+          "seed": 43
+        }
+      },
+      "created_at": "2026-10-19T15:58:09.980519+00:00"
+    },
+    "full_cache_path": "/home/artyom-step/workspace/nlp-hw2/artifacts/experiments/transformer_002_8x8_d768_lr1e4/preprocessed/59ebc525571791733f851050d49d4a25a2ba5330ff775d360d868ec0bc6f35e0/dataset",
+    "full_cache": {
+      "train": {
+        "rows": 11593060,
+        "fingerprint": "db4a9cf00f162409",
+        "original_source_fingerprint": "aa5d0e63813f76f9",
+        "fingerprint_matches_original": false
+      },
+      "val": {
+        "rows": 118302,
+        "fingerprint": "593c37f2d44384f8",
+        "original_source_fingerprint": "bccad2dc0c84a83e",
+        "fingerprint_matches_original": false
+      }
+    },
+    "verified_original_rows": {
+      "train": 1000000,
+      "val": 20000
+    },
+    "original_rows_sha256": {
+      "train": "f38a4a16701954f7f763c22ea499e70ccb04788683cc6cc573933ce349d8eb8c",
+      "val": "ef11fafa16c1b9f03560cfc68ed0f83d3e07aa7b4ccb9054d12a8e34c0ce8fae"
+    },
+    "validation_rows_sha256": "ef11fafa16c1b9f03560cfc68ed0f83d3e07aa7b4ccb9054d12a8e34c0ce8fae",
+    "row_hash_format": "sha256 of ordered JSON [input_ids,attention_mask,labels] + LF"
+  },
+  "expected_rows": [
+    4000000,
+    20000
+  ],
+  "optimizer_updates_per_epoch": 15625,
+  "epochs": 1,
+  "bundles": {
+    "repeat4m": {
+      "path": "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage2_data/repeat4m",
+      "bundle_manifest_sha256": "ae80f9cd054d3bb23667bcb3a7d9f7200322005202f82c2945d718295e4b1f26"
+    },
+    "distinct4m": {
+      "path": "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage2_data/distinct4m",
+      "bundle_manifest_sha256": "bab34556554696fd8927f4914df1aa835b9d1c8290bf180d4a5143a34381721c"
+    }
+  },
+  "completed_at": "2026-10-22T16:55:35.820470+00:00"
+}

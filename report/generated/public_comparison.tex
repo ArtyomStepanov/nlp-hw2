@@ -1,0 +1,18 @@
+\begin{tabular}{>{\raggedright\arraybackslash}p{.30\linewidth}>{\raggedright\arraybackslash}p{.28\linewidth}>{\raggedright\arraybackslash}p{.28\linewidth}}
+\toprule
+Параметр & Прежняя 002 & Новая полная \\
+\midrule
+Encoder + decoder & 8+8 & 8+8 \\
+Hidden / FFN & 768 / 3072 & 1024 / 4096 \\
+Параметры, млн & 139.25 & 244.39 \\
+Train / эпохи & 11\,593\,060 / 4 & 11\,593\,060 / 4 \\
+BPE / seed & 8000 / 42 & 8000 / 42 \\
+Global batch & 128 & 256 \\
+LR & $3\cdot10^{-4}$; после 50k $10^{-4}$ & $2\cdot10^{-4}$ \\
+Точность обучения & BF16 & FP16 \\
+Лучший checkpoint & 360000 & 180000 \\
+Token loss Val-full & 0.1927033 & 0.1910213 \\
+Beam / max tokens & 4 / 256 & 4 / 256 \\
+Public & 735/960 (76.5625\%) & 729/960 (75.9375\%) \\
+\bottomrule
+\end{tabular}

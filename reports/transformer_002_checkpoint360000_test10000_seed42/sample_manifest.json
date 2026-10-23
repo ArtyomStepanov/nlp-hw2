@@ -1,0 +1,26 @@
+{
+  "dataset": "/home/artyom-step/workspace/nlp-hw2/artifacts/datasets/tinysms_98_1_1_seed42/test",
+  "heldout_size": 118380,
+  "heldout_fingerprint": "104b916db8a72ffa",
+  "split_sizes": {
+    "train": 0.98,
+    "val": 0.01,
+    "test": 0.01
+  },
+  "split_seed": 42,
+  "sample_seed": 42,
+  "sample_size": 10000,
+  "sample_sha256": "04d25083e90470612722e1e816b90efba62a8b9a1c893919a8cf29d122c0549a",
+  "selection": "saved test.add_column(test_row_index).shuffle(seed=42).select(range(10000))",
+  "filtering": "none; source truncation recorded; references are not truncated",
+  "official_test_used": false,
+  "checkpoint": "/home/artyom-step/workspace/nlp-hw2/artifacts/experiments/transformer_002_8x8_d768_lr1e4/checkpoint-360000",
+  "checkpoint_step": 360000,
+  "sample_copied_from": "/home/artyom-step/workspace/nlp-hw2/artifacts/evaluations/transformer_002_checkpoint50000_test10000_seed42_20261013/sample",
+  "validation_token_loss": 0.19270332574169102,
+  "started_at_utc": "2026-10-14T08:05:57.527678+00:00",
+  "timing_note": "Sequential inference on one A100 after training; not a Colab/T4 benchmark.",
+  "checkpoint_weights_sha256": "61180683902bdbf16bdc51de550fa238b733cd5c6f03f5154ff5b9d325708f00",
+  "tokenizer_sha256": "abd75c8655b948f612ebbf065a12269613269a4755cd0a698b0bf7a5bc1e9704",
+  "training_finished_step": 362284
+}

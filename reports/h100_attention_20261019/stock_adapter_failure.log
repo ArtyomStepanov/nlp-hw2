@@ -1,0 +1,18 @@
+[transformers] kernels hub usage is disabled through the environment USE_HUB_KERNELS=NO
+Loading weights:   0%|          | 0/428 [00:00<?, ?it/s]Loading weights: 100%|██████████| 428/428 [00:00<00:00, 11217.10it/s]
+{"backend": "fp32", "loss": 0.4777663052082062, "finite": true, "gradient_tensors": 427}
+Loading weights:   0%|          | 0/428 [00:00<?, ?it/s]Loading weights: 100%|██████████| 428/428 [00:00<00:00, 10518.51it/s]
+{"backend": "sdpa", "loss": 0.477369487285614, "finite": true, "gradient_tensors": 427, "vs_fp32": {"loss_abs_diff": 0.0003968179225921631, "logit_rmse": 0.006556205451488495, "gradient_relative_l2": 0.009283287482816444, "gradient_cosine": 0.9999574971355466}}
+Fetching 22 files:   0%|          | 0/22 [00:00<?, ?it/s]Fetching 22 files: 100%|██████████| 22/22 [00:00<00:00, 3192.56it/s]
+Loading weights:   0%|          | 0/428 [00:00<?, ?it/s]Loading weights: 100%|██████████| 428/428 [00:00<00:00, 10977.84it/s]
+{"backend": "fa2", "loss": 0.9602686762809753, "finite": true, "gradient_tensors": 427, "vs_fp32": {"loss_abs_diff": 0.48250237107276917, "logit_rmse": 0.7904044985771179, "gradient_relative_l2": 0.7873719453557576, "gradient_cosine": 0.731980556925678}, "vs_sdpa": {"loss_abs_diff": 0.48289918899536133, "logit_rmse": 0.7904014587402344, "gradient_relative_l2": 0.7879825158001088, "gradient_cosine": 0.7319870635761238}}
+Traceback (most recent call last):
+  File "/workspace/nlp-hw2/reports/h100_attention_20261019/compare_attention.py", line 183, in <module>
+    main()
+  File "/workspace/nlp-hw2/reports/h100_attention_20261019/compare_attention.py", line 177, in main
+    result = correctness(rows) if args.correctness else benchmark(rows, args)
+             ^^^^^^^^^^^^^^^^^
+  File "/workspace/nlp-hw2/reports/h100_attention_20261019/compare_attention.py", line 98, in correctness
+    assert record["vs_fp32"]["gradient_relative_l2"] <= 2 * base["gradient_relative_l2"] + .005
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

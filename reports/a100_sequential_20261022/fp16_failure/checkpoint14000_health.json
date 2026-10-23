@@ -1,0 +1,19 @@
+{
+  "at": "2026-10-22T19:44:13.232385+00:00",
+  "checkpoint": "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage2/trials/repeat4m/checkpoint-14000",
+  "model": {
+    "tensors": 344,
+    "elements": 244399936,
+    "all_finite": true
+  },
+  "optimizer_state_tensors_checked": 1029,
+  "optimizer_all_finite": true,
+  "scaler": {
+    "scale": 8388608.0,
+    "growth_factor": 2.0,
+    "backoff_factor": 0.5,
+    "growth_interval": 2000,
+    "_growth_tracker": 0
+  },
+  "gpu_training_or_resume_performed": false
+}

@@ -1,0 +1,11 @@
+{
+  "prediction_column": "generated_code",
+  "reference_column": "code",
+  "timeout_seconds": 2.0,
+  "workers": 8,
+  "memory_limit_mb": 256,
+  "max_code_bytes": 65536,
+  "relative_tolerance": 1e-06,
+  "absolute_tolerance": 1e-06,
+  "output_dir": "/home/artyom-step/workspace/nlp-hw2/artifacts/evaluations/transformer_002_checkpoint90000_test10000_seed42_20261013/beam4/evaluation"
+}

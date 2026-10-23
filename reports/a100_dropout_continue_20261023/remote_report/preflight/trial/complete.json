@@ -1,0 +1,46 @@
+{
+  "architecture": "bart",
+  "global_step": 2,
+  "metrics": {
+    "eval_loss": 0.17579934000968933,
+    "eval_model_preparation_time": 0.0044,
+    "eval_token_loss": 0.175793594218233,
+    "eval_target_tokens": 4704,
+    "eval_runtime": 0.1626,
+    "eval_samples_per_second": 393.503,
+    "eval_steps_per_second": 6.148,
+    "epoch": 1.0
+  },
+  "wall_seconds": 8.989956188946962,
+  "precision": "fp16",
+  "world_size": 1,
+  "effective_batch": 256,
+  "parameters": 244391936,
+  "finished_at": "2026-10-23T15:04:23.160262+00:00",
+  "torch": "2.9.1+cu128",
+  "transformers": "5.10.2",
+  "best_model_checkpoint": null,
+  "best_metric": 0.175793594218233,
+  "best_global_step": 0,
+  "latest_checkpoint": "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_dropout_continue_20261023/preflight/trial/checkpoint-2",
+  "final_weights_source": "parent_baseline",
+  "amp_diagnostics": {
+    "overflow_count": 0,
+    "final_loss_scale": 65536.0,
+    "scope": "current_process_session"
+  },
+  "gpu": "NVIDIA A100 80GB PCIe",
+  "peak_allocated_gib": 21.141717433929443,
+  "initial_validation": {
+    "eval_loss": 0.17579934000968933,
+    "eval_model_preparation_time": 0.0044,
+    "eval_token_loss": 0.175793594218233,
+    "eval_target_tokens": 4704,
+    "eval_runtime": 0.4043,
+    "eval_samples_per_second": 158.311,
+    "eval_steps_per_second": 2.474,
+    "epoch": 0
+  },
+  "improved_over_parent": false,
+  "selected_checkpoint": "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_full_20261023/training/trial/checkpoint-180000"
+}

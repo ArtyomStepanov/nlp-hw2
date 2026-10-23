@@ -1,0 +1,116 @@
+{
+  "at": "2026-10-22T16:52:19.957017+00:00",
+  "reason": "User requested disk cleanup; completed preflight weights and superseded Stage1 checkpoints only",
+  "free_before": 54557880320,
+  "planned": [
+    {
+      "path": "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage1/preflight/copy/checkpoint-2/model.safetensors",
+      "kind": "file",
+      "bytes": 978696948,
+      "allocated_bytes": 978702336
+    },
+    {
+      "path": "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage1/preflight/copy/checkpoint-2/scaler.pt",
+      "kind": "file",
+      "bytes": 1383,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage1/preflight/copy/checkpoint-2/optimizer.pt",
+      "kind": "file",
+      "bytes": 1957544564,
+      "allocated_bytes": 1957552128
+    },
+    {
+      "path": "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage1/preflight/copy/checkpoint-2/scheduler.pt",
+      "kind": "file",
+      "bytes": 1465,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage1/preflight/copy/final/model.safetensors",
+      "kind": "file",
+      "bytes": 978696948,
+      "allocated_bytes": 978702336
+    },
+    {
+      "path": "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage1/preflight/bart/checkpoint-2/model.safetensors",
+      "kind": "file",
+      "bytes": 977639840,
+      "allocated_bytes": 977645568
+    },
+    {
+      "path": "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage1/preflight/bart/checkpoint-2/scaler.pt",
+      "kind": "file",
+      "bytes": 1383,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage1/preflight/bart/checkpoint-2/optimizer.pt",
+      "kind": "file",
+      "bytes": 1955427560,
+      "allocated_bytes": 1955434496
+    },
+    {
+      "path": "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage1/preflight/bart/checkpoint-2/scheduler.pt",
+      "kind": "file",
+      "bytes": 1465,
+      "allocated_bytes": 4096
+    },
+    {
+      "path": "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage1/preflight/bart/final/model.safetensors",
+      "kind": "file",
+      "bytes": 977639840,
+      "allocated_bytes": 977645568
+    },
+    {
+      "path": "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_20261022_bundle.zip",
+      "kind": "file",
+      "bytes": 147823117,
+      "allocated_bytes": 147828736
+    },
+    {
+      "path": "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage1/trials/bart/checkpoint-3000",
+      "kind": "directory",
+      "bytes": 2933634612,
+      "allocated_bytes": 2933673984
+    },
+    {
+      "path": "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage1/trials/copy/checkpoint-3000",
+      "kind": "directory",
+      "bytes": 2936808810,
+      "allocated_bytes": 2936848384
+    }
+  ],
+  "preserved": [
+    {
+      "path": "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage1/trials/bart/final/model.safetensors",
+      "bytes": 977639840
+    },
+    {
+      "path": "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage1/trials/bart/checkpoint-3907/model.safetensors",
+      "bytes": 977639840
+    },
+    {
+      "path": "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage1/trials/bart/checkpoint-3907/optimizer.pt",
+      "bytes": 1955427560
+    },
+    {
+      "path": "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage1/trials/copy/final/model.safetensors",
+      "bytes": 978696948
+    },
+    {
+      "path": "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage1/trials/copy/checkpoint-3907/model.safetensors",
+      "bytes": 978696948
+    },
+    {
+      "path": "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage1/trials/copy/checkpoint-3907/optimizer.pt",
+      "bytes": 1957544564
+    }
+  ],
+  "active_stage2_preserved": true,
+  "status": "complete",
+  "removed_logical_bytes": 13843917935,
+  "removed_allocated_bytes": 13844049920,
+  "free_after": 68401930240
+}

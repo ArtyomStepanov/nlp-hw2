@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "recorded_at": "2026-10-23T14:28:21.465548+00:00",
+  "source_thread_id": "01a13044-77eb-7d53-927a-9430e9d7a9d2",
+  "scope": "Official bot public scores; manual transcription of new bot screenshot and prior recorded bot result, not a live leaderboard query.",
+  "public_rows": 960,
+  "old_model": {
+    "name": "Transformer-002",
+    "best_checkpoint": 360000,
+    "parameters": 139253760,
+    "num_passed": 735,
+    "reported_percent": 76.56,
+    "submission_file": "transformer_002_checkpoint360000_beam4_t4.jsonl",
+    "submission_sha256": "15f52fbf028511a0dc78c8b34aefce82cda4d0bba2b5158c78760156f654dcd5",
+    "source": "README.md section 19 October 2026 public result of model 002; prior author-provided bot result. Original screenshot not independently re-opened for this update.",
+    "reported_public_error_percent": {
+      "no_code": 0.0,
+      "syntax_error": 0.0,
+      "runtime_error": 0.21,
+      "wrong_answer": 23.23
+    }
+  },
+  "new_model": {
+    "name": "Full BART 8+8/d1024",
+    "best_checkpoint": 180000,
+    "parameters": 244391936,
+    "num_passed": 729,
+    "reported_percent": 75.94,
+    "submission_file": "a100_full_best180000_beam4_t4.jsonl",
+    "submission_sha256": "4d4a229127b93f08c9c227dda4fe1268ed371ca77f8c5ee913ef35d2e7033256",
+    "source": "Bot screenshot supplied by the user in the source thread; visually checked in the report thread.",
+    "screenshot": "report/evidence/public_new_bot_20261023.png",
+    "screenshot_sha256": "1bbc63ead2fd55284562e7a2caa023fe7a140fccd5ef31b158e4d73cdadb3a71",
+    "reported_public_error_percent": {
+      "no_code": 0.0,
+      "syntax_error": 0.0,
+      "runtime_error": 0.1,
+      "wrong_answer": 23.96
+    }
+  },
+  "delta_new_minus_old": {
+    "num_passed": -6,
+    "percentage_points": -0.625
+  },
+  "private_result": null,
+  "paired_public_outcomes": null,
+  "limitations": [
+    "Only aggregate public counts are known; net -6 does not mean exactly six individual answer changes.",
+    "Private quality is unknown; public results do not establish its direction.",
+    "The 68.6765% to 74.2985% validation gain compares the new full model with short distinct4m, not the prior official model 002."
+  ]
+}

@@ -1,0 +1,8 @@
+# Keep the Kaggle image's installed torch/CUDA/torchvision build (torch>=2.6).
+transformers==5.10.2
+accelerate==1.15.0
+datasets==4.6.0
+tokenizers==0.22.2
+huggingface-hub==1.18.0
+matplotlib==3.10.6
+packaging==26.2

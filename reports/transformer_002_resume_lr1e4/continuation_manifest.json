@@ -1,0 +1,32 @@
+{
+  "prepared_at_utc": "2026-10-13T12:48:45.157527+00:00",
+  "source_checkpoint": "/home/artyom-step/workspace/nlp-hw2/artifacts/experiments/transformer_002_8x8_d768/checkpoint-50000",
+  "resume_checkpoint": "/home/artyom-step/workspace/nlp-hw2/artifacts/experiments/transformer_002_8x8_d768_lr1e4/checkpoint-50000",
+  "output_dir": "/home/artyom-step/workspace/nlp-hw2/artifacts/experiments/transformer_002_8x8_d768_lr1e4",
+  "lr_scale": 0.3333333333333333,
+  "base_lr": 9.999999999999999e-05,
+  "resumed_lr": 9.789718429409466e-05,
+  "global_step": 50000,
+  "max_steps": 362284,
+  "optimizer_tensors_compared": 1029,
+  "weights_rng_and_adam_state_unchanged": true,
+  "source_checkpoint_sha256": {
+    "training_layout.json": "16a98b94c9dea510b05b31884bfab1f4f449a0bb4fc08a31337cd4ceda930a79",
+    "training_args.bin": "5486531f64f8ccd1f88b716becedd55651fa89ebe234c76e3fea0648c976a2eb",
+    "config.json": "300bdbcb98d2d15fe8a275c854e8606abb28b5d665490daf889f36a849fbb8b5",
+    "model.safetensors": "296e21fbea65b46851cbba166b5193e39501222def470018520c729e6ce94660",
+    "trainer_state.json": "9036dde6fd3abaf616c65aedf50a8cc0c4ed1d41ffbb1288f8218ecec59c57f0",
+    "generation_config.json": "6d5bd370a97d994f5a7112ca7e3e42c132ead2c3219959665690cda7743b83d3",
+    "tokenizer_config.json": "5128280f8f8798b74a5032fca3c6a6f50b80835fdb46afe012280ac314fde389",
+    "optimizer.pt": "20d4e40d1effe9d178c0b1109030735655807a64f019eef080561014af3958ed",
+    "scheduler.pt": "0aa18813cce961511cec7cea36f48af78ae17369c4eb81802aff323146ddce67",
+    "rng_state_1.pth": "1752dcf6aff836f1b3e6fcc24dc5014ab7862e39c7002f713af700fad1e33c9a",
+    "rng_state_0.pth": "a6c558c358d4d73f482b84259a1bfc77ead76508a2f8fe208002e2b59284a5c5",
+    "tokenizer.json": "abd75c8655b948f612ebbf065a12269613269a4755cd0a698b0bf7a5bc1e9704"
+  },
+  "early_stopping_patience": 5,
+  "patience_counter": 0,
+  "eval_steps": 5000,
+  "data_reuse": "Immutable Arrow files hard-linked; metadata independently copied",
+  "free_disk_gib_after_prepare": 14.174858093261719
+}

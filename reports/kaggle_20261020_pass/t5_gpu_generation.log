@@ -1,0 +1,36 @@
+Loading weights:   0%|          | 0/189 [00:00<?, ?it/s]Loading weights:  16%|█▌        | 30/189 [00:00<00:00, 287.56it/s]Loading weights:  31%|███       | 59/189 [00:00<00:00, 268.30it/s]Loading weights:  47%|████▋     | 89/189 [00:00<00:00, 261.30it/s]Loading weights:  61%|██████▏   | 116/189 [00:00<00:00, 193.92it/s]Loading weights:  73%|███████▎  | 138/189 [00:00<00:00, 192.20it/s]Loading weights:  84%|████████▍ | 159/189 [00:00<00:00, 166.30it/s]Loading weights:  94%|█████████▎| 177/189 [00:00<00:00, 167.54it/s]Loading weights: 100%|██████████| 189/189 [00:00<00:00, 202.12it/s]
+t5: generated 64/20000 in 2.9s
+t5: generated 640/20000 in 36.8s
+t5: generated 1280/20000 in 107.4s
+t5: generated 1920/20000 in 155.0s
+t5: generated 2560/20000 in 201.8s
+t5: generated 3200/20000 in 266.0s
+t5: generated 3840/20000 in 364.4s
+t5: generated 4480/20000 in 437.3s
+t5: generated 5120/20000 in 569.3s
+t5: generated 5760/20000 in 653.7s
+t5: generated 6400/20000 in 725.3s
+t5: generated 7040/20000 in 894.1s
+t5: generated 7680/20000 in 996.8s
+t5: generated 8320/20000 in 1165.9s
+t5: generated 8960/20000 in 1320.6s
+t5: generated 9600/20000 in 1458.5s
+t5: generated 10240/20000 in 1615.1s
+t5: generated 10880/20000 in 1787.6s
+t5: generated 11520/20000 in 1961.3s
+t5: generated 12160/20000 in 2120.3s
+t5: generated 12800/20000 in 2317.5s
+t5: generated 13440/20000 in 2496.5s
+t5: generated 14080/20000 in 2706.2s
+t5: generated 14720/20000 in 2917.6s
+t5: generated 15360/20000 in 3129.9s
+t5: generated 16000/20000 in 3329.7s
+t5: generated 16640/20000 in 3540.1s
+t5: generated 17280/20000 in 3752.2s
+t5: generated 17920/20000 in 3964.5s
+t5: generated 18560/20000 in 4179.9s
+t5: generated 19200/20000 in 4398.0s
+t5: generated 19840/20000 in 4621.1s
+t5: generated 20000/20000 in 4682.3s
+Creating json from Arrow format:   0%|          | 0/20 [00:00<?, ?ba/s]Creating json from Arrow format:  55%|█████▌    | 11/20 [00:00<00:00, 105.31ba/s]Creating json from Arrow format: 100%|██████████| 20/20 [00:00<00:00, 107.05ba/s]
+t5: execution checks, 20000 references and predictions

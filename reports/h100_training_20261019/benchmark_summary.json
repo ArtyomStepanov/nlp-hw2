@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-19",
+  "gpu": "NVIDIA H100 PCIe 80GB",
+  "parameters": 303177728,
+  "model": {
+    "encoder_layers": 10,
+    "decoder_layers": 10,
+    "d_model": 1024,
+    "ffn_dim": 4096,
+    "attention_heads": 8
+  },
+  "sample": {
+    "source": "train only; 256 random rows from the first 2048 rows of each of 60 train parquet shards",
+    "seed": 42,
+    "rows_raw": 15360,
+    "rows_after_filter": 15346,
+    "source_mean_tokens": 47.275,
+    "target_mean_tokens": 67.06,
+    "length_limit": 256,
+    "sha256": "0046ac7a473f15f9e41648bcc21ba7eaeff2be77ee417ae77d2e7ce4bdc5212a",
+    "caveat": "Not a uniform sample of the whole dataset; throughput is a short-run comparison, not a full-run ETA."
+  },
+  "timing": "Forward, backward, gradient clipping and optimizer update, including collation and transfers; 4 warmup batches excluded; same random initialization each trial. BF16; SDPA; token CE in FP32. Compilation warmup recorded separately.",
+  "oom": {
+    "batch": 512,
+    "order": "grouped",
+    "optim": "fused",
+    "compile": false,
+    "result": "CUDA out of memory; other trials completed with finite loss/gradients"
+  },
+  "selected": {
+    "batch": 128,
+    "accumulation": 2,
+    "effective_batch": 256,
+    "learning_rate": 0.0002,
+    "compile": true,
+    "dynamic_shapes": true,
+    "optim": "adamw_torch_fused",
+    "group_by_length": true
+  },
+  "resume": "Epoch-seeded length sampler; original loader set_epoch before skip wrappers; regression tests for epochs1/2 and world sizes1/2.",
+  "tests": "82 passed (pytest tests -q); 5 warnings: Python fork deprecation and expected max_steps schedule-change warnings.",
+  "trainer_smoke": {
+    "steps": 20,
+    "resume_to_step": 22,
+    "status": "both exited 0",
+    "finite_losses_and_grad_norms": true,
+    "compile": true,
+    "gradient_accumulation_steps": 2,
+    "eval_and_checkpoint_every_steps": 10
+  }
+}

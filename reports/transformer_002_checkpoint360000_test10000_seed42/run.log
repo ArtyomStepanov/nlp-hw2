@@ -1,0 +1,4 @@
+[2026-10-14T08:05:58+00:00] Verified the exact same 10,000 held-out rows as the 50k evaluation
+[2026-10-14T08:05:58+00:00] Started greedy: pid=497
+[2026-10-14T08:08:51+00:00] Started beam4: pid=20541
+[2026-10-14T08:14:08+00:00] Both evaluations complete

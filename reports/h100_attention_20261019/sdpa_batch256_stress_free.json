@@ -1,0 +1,26 @@
+{
+  "backend": "sdpa",
+  "implementation": "sdpa",
+  "compile": true,
+  "checkpoint_step": 7500,
+  "microbatch": 256,
+  "accumulation": 1,
+  "global_batch": 256,
+  "stress": true,
+  "examples_per_repeat": 1024,
+  "warmup_seconds": 23.603570254985243,
+  "median_examples_per_second": 427.5461184079163,
+  "peak_allocated_gib": 72.0159854888916,
+  "peak_reserved_gib": 73.623046875,
+  "finite": true,
+  "runs": [
+    {
+      "seconds": 2.395063259638846,
+      "examples_per_second": 427.5461184079163,
+      "last_loss": 0.03147665783762932,
+      "last_gradient_norm": 0.6546729207038879
+    }
+  ],
+  "torch": "2.9.1+cu128",
+  "gpu": "NVIDIA H100 PCIe"
+}

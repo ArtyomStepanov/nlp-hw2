@@ -1,0 +1,98 @@
+{
+  "models": {
+    "bart": {
+      "num_examples": 20000,
+      "num_evaluated": 19886,
+      "num_passed": 10204,
+      "num_bad_code": 368,
+      "pass@1": 0.5131248114251232,
+      "bad_code_rate": 0.0184,
+      "wrong_answer_rate": 0.4684702805994167,
+      "reference_error_rate": 0.0057,
+      "evaluation_coverage": 0.9943,
+      "evaluation_seconds": 246.0104409828782,
+      "status_counts": {
+        "passed": 10204,
+        "wrong_answer": 9316,
+        "runtime_error": 304,
+        "ok": 112,
+        "syntax_error": 53,
+        "timeout": 2,
+        "unsupported_code": 2,
+        "invalid_output": 7
+      },
+      "reference_status_counts": {
+        "ok": 19886,
+        "unsupported_code": 27,
+        "runtime_error": 76,
+        "invalid_output": 11
+      },
+      "prediction_column": "generated_code",
+      "reference_column": "code",
+      "comparison": "reference_solve",
+      "architecture": "bart",
+      "num_beams": 4,
+      "max_new_tokens": 256,
+      "length_penalty": 1.0,
+      "generation_seconds": 534.4984176568687,
+      "validation_sha256": "282001d478bffb2d13ab2ca41e8232a0c99c3623f898dd7077128c266172c406",
+      "evaluation_split": "validation",
+      "num_reference_errors": 114,
+      "num_hit_token_limit": 182,
+      "passed_fraction_of_all_sampled": 0.5102,
+      "finished_at": "2026-10-22T15:57:21.970988+00:00"
+    },
+    "copy": {
+      "num_examples": 20000,
+      "num_evaluated": 19886,
+      "num_passed": 10203,
+      "num_bad_code": 357,
+      "pass@1": 0.5130745247913104,
+      "bad_code_rate": 0.01785,
+      "wrong_answer_rate": 0.46907372020516946,
+      "reference_error_rate": 0.0057,
+      "evaluation_coverage": 0.9943,
+      "evaluation_seconds": 249.7529949620366,
+      "status_counts": {
+        "passed": 10203,
+        "wrong_answer": 9328,
+        "runtime_error": 312,
+        "syntax_error": 30,
+        "ok": 112,
+        "invalid_output": 15
+      },
+      "reference_status_counts": {
+        "ok": 19886,
+        "unsupported_code": 27,
+        "runtime_error": 76,
+        "invalid_output": 11
+      },
+      "prediction_column": "generated_code",
+      "reference_column": "code",
+      "comparison": "reference_solve",
+      "architecture": "copy",
+      "num_beams": 4,
+      "max_new_tokens": 256,
+      "length_penalty": 1.0,
+      "generation_seconds": 528.2472777850926,
+      "validation_sha256": "282001d478bffb2d13ab2ca41e8232a0c99c3623f898dd7077128c266172c406",
+      "evaluation_split": "validation",
+      "num_reference_errors": 114,
+      "num_hit_token_limit": 125,
+      "passed_fraction_of_all_sampled": 0.51015,
+      "finished_at": "2026-10-22T16:32:36.480264+00:00"
+    }
+  },
+  "winner": "bart",
+  "selection_rule": "Prefer simpler BART unless Copy leads by >0.5 percentage points.",
+  "finished_at": "2026-10-22T16:32:37.620336+00:00",
+  "paired": {
+    "both_passed": 9155,
+    "bart_only": 1049,
+    "copy_only": 1048,
+    "neither_passed": 8634
+  },
+  "reference_identity_verified": true,
+  "comparison": "same20k validation, one seed, one epoch on1M; preliminary, not official test",
+  "difference_bart_minus_copy_pp": 0.005028663381279053
+}

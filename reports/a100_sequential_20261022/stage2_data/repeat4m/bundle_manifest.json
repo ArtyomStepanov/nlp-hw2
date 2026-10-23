@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "created_at": "2026-10-22T16:43:30.747851+00:00",
+  "files": [
+    {
+      "path": "data/dataset_dict.json",
+      "bytes": 28,
+      "sha256": "37b75ca00c6464fb0545b1a34339647a18ac5a94a18dc4906a2744889ec1a20d"
+    },
+    {
+      "path": "data/train/data-00000-of-00007.arrow",
+      "bytes": 454485856,
+      "sha256": "53dbf911ccdd7c80029287823f7e57933feb0cc21b831d3b842c13e679f8f016"
+    },
+    {
+      "path": "data/train/data-00001-of-00007.arrow",
+      "bytes": 454429336,
+      "sha256": "748d3cf1a3425c422c9ed6070924bd2e301809c08043834093f58b3ecaf427d7"
+    },
+    {
+      "path": "data/train/data-00002-of-00007.arrow",
+      "bytes": 454521464,
+      "sha256": "54cf3fffc46a6df3bdf26f5d6a3ba329ef4c2d60f6f92d1a1356f4db6b2c6aed"
+    },
+    {
+      "path": "data/train/data-00003-of-00007.arrow",
+      "bytes": 454339576,
+      "sha256": "feddad799b927a67507b9194434dba67c421614d49bf5ed62cd95e61f340f08d"
+    },
+    {
+      "path": "data/train/data-00004-of-00007.arrow",
+      "bytes": 454598160,
+      "sha256": "70af5ca5309e7b35b6cee68806d04a5d5e7f0e43281b03f6d6f42ef77a7e59ae"
+    },
+    {
+      "path": "data/train/data-00005-of-00007.arrow",
+      "bytes": 454245520,
+      "sha256": "a81ccdc8bc966ab59e2620d9fff9092f87c2ac5c2e0a88fb7ad4d30eb74973a7"
+    },
+    {
+      "path": "data/train/data-00006-of-00007.arrow",
+      "bytes": 454583680,
+      "sha256": "01d433b7ba5d4ce6f443581266aefc6e325e43fae63e9c615e6722d9afc89cde"
+    },
+    {
+      "path": "data/train/dataset_info.json",
+      "bytes": 10983,
+      "sha256": "e62ceb6a45d361e7d7ab4a7c215ea52aca22fc53f59f1d951c98e11270d91d5d"
+    },
+    {
+      "path": "data/train/state.json",
+      "bytes": 601,
+      "sha256": "0870b1904eef61190b838f9ecb5e9d7dce503bb8a729319d23af6bec61503283"
+    },
+    {
+      "path": "data/val/data-00000-of-00001.arrow",
+      "bytes": 15890712,
+      "sha256": "49fbccc0a7dafd6799f016ac19b8ba3cdb5469064369f802469e90ae358af4a2"
+    },
+    {
+      "path": "data/val/dataset_info.json",
+      "bytes": 10983,
+      "sha256": "e62ceb6a45d361e7d7ab4a7c215ea52aca22fc53f59f1d951c98e11270d91d5d"
+    },
+    {
+      "path": "data/val/state.json",
+      "bytes": 247,
+      "sha256": "459d25ef362332b30159b1c66e79fa309995a77694c993033923cf43b8d971d5"
+    },
+    {
+      "path": "selection/data_manifest.json",
+      "bytes": 3469,
+      "sha256": "db1019e323091ea265971650fb8c9636adf58965440abb8411e4a484c5e318c4"
+    },
+    {
+      "path": "selection/train_indices.npy",
+      "bytes": 32000128,
+      "sha256": "74e5909704c8a60edf526012fe2508e0019f34da22775d70aec7acfde6978118"
+    },
+    {
+      "path": "selection/val_indices.npy",
+      "bytes": 160128,
+      "sha256": "27f9db6e215b9666e3d60dd01c207169afb92d8e535eb3c7ee48a21efcd66b21"
+    },
+    {
+      "path": "tokenizer.json",
+      "bytes": 534007,
+      "sha256": "abd75c8655b948f612ebbf065a12269613269a4755cd0a698b0bf7a5bc1e9704"
+    }
+  ],
+  "selection_sha256": "db1019e323091ea265971650fb8c9636adf58965440abb8411e4a484c5e318c4"
+}

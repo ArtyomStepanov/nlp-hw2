@@ -1,0 +1,18 @@
+{
+  "selected": "kaggle_core.tar.zst",
+  "excluded": "h100_models_and_full_cache.tar.zst",
+  "reason": "User chose to skip heavy backups without a new model with confirmed quality improvement; retain experiment results and inputs for fresh Kaggle comparisons.",
+  "excluded_content": [
+    "weights of eight one-epoch BART trials",
+    "experiment 003 checkpoint-15000 and optimizer state",
+    "full tokenized cache"
+  ],
+  "preserved_elsewhere": [
+    "previous final model 002 verified locally",
+    "metrics, configurations and training histories of all eight BART trials"
+  ],
+  "download_status": "complete_and_verified",
+  "source_files_deleted": false,
+  "verified_at": "2026-10-19T18:44:02.994695+00:00",
+  "h100_may_be_stopped_for_selected_scope": true
+}

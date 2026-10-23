@@ -1,0 +1,38 @@
+{
+  "greedy": {
+    "pass@1": 0.649813677107463,
+    "num_passed": 6452,
+    "num_evaluated": 9929,
+    "bad_code_rate": 0.015,
+    "total_seconds": 127.88894211873412,
+    "mean_generated_tokens": 66.3881,
+    "hit_token_limit_rate": 0.0052
+  },
+  "beam4": {
+    "pass@1": 0.6743881559069392,
+    "num_passed": 6696,
+    "num_evaluated": 9929,
+    "bad_code_rate": 0.0072,
+    "total_seconds": 167.75308598950505,
+    "mean_generated_tokens": 68.4547,
+    "hit_token_limit_rate": 0.0013
+  },
+  "paired_counts": {
+    "both_correct": 6243,
+    "beam_only_correct": 453,
+    "greedy_only_correct": 209,
+    "neither_correct": 3024
+  },
+  "delta_pass_at_1_percentage_points": 2.4574478799476283,
+  "paired_bootstrap_delta_95_ci_percentage_points": [
+    1.9538724947124584,
+    2.961023265182798
+  ],
+  "inference_time_ratio": 1.3117090751580416,
+  "identical_sample_and_references_verified": true,
+  "notes": [
+    "One best candidate from beam search is scored: this is pass@1, not pass@4.",
+    "Timing uses one A100; greedy timing comes from the original run with the same configuration.",
+    "Bootstrap is approximate and treats sampled rows as independent; duplicate questions may exist."
+  ]
+}

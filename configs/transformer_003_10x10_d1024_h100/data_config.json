@@ -1,0 +1,22 @@
+{
+  "dataset_id": "SlavaYus/tinysms_qa_12m",
+  "source_split": "train",
+  "sizes": {
+    "train": 0.98,
+    "val": 0.01,
+    "test": 0.01
+  },
+  "seed": 42,
+  "columns": [
+    "question",
+    "code"
+  ],
+  "remove_code_comments": true,
+  "preprocessing_sha256": "df5e35028e80fd2d6406d8e2cb77420204e7693022a2e5a8d37c78aed1e94211",
+  "rows": {
+    "train": 11601243,
+    "val": 118380,
+    "test": 118380
+  },
+  "prepare_seconds": 92.5558492699638
+}

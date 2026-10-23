@@ -1,0 +1,20 @@
+{
+  "started_at": "2026-10-23T13:56:17.782612+00:00",
+  "status": "complete_verified",
+  "remote_root": "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_full_eval_20261023",
+  "tmux": "nlp-a100-full-eval-20261023",
+  "pipeline_pid": 228251,
+  "driver_pid": 228257,
+  "checkpoint_step": 180000,
+  "training_global_step": 181144,
+  "evaluator_sha256": "ed6df43e3ab222e220dcddc1fa30e1500581cb2f731b05e57aa7c45647f42f0f",
+  "last_progress": {
+    "generated": 20000,
+    "total": 20000,
+    "phase": "complete"
+  },
+  "launch_sha256": "3374479a077da403428736f1d2b77e70a817c358e7d53e2dbbd493af2b0bb60c",
+  "pipeline_exitcode": 0,
+  "finished_at": "2026-10-23T14:07:44.858011+00:00",
+  "comparison_checks": "comparison_checks.json"
+}

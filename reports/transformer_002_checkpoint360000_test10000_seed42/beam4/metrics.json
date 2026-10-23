@@ -1,0 +1,989 @@
+{
+  "num_examples": 10000,
+  "total_seconds": 240.4634008128196,
+  "generation_seconds": 238.96956295706332,
+  "examples_per_second": 41.58637017607579,
+  "generated_tokens_per_second": 2905.8805289139223,
+  "mean_generated_tokens": 69.4417,
+  "source_truncated_rate": 0.0,
+  "hit_token_limit_rate": 0.0003,
+  "eos_rate": 0.9997,
+  "device": "cuda:0",
+  "mixed_precision": "fp16",
+  "batch_stats": [
+    {
+      "batch": 0,
+      "num_examples": 64,
+      "source_width": 20,
+      "seconds": 1.6083627454936504
+    },
+    {
+      "batch": 1,
+      "num_examples": 64,
+      "source_width": 21,
+      "seconds": 0.6022624969482422
+    },
+    {
+      "batch": 2,
+      "num_examples": 64,
+      "source_width": 22,
+      "seconds": 0.763374999165535
+    },
+    {
+      "batch": 3,
+      "num_examples": 64,
+      "source_width": 23,
+      "seconds": 0.7429940775036812
+    },
+    {
+      "batch": 4,
+      "num_examples": 64,
+      "source_width": 24,
+      "seconds": 0.8058812152594328
+    },
+    {
+      "batch": 5,
+      "num_examples": 64,
+      "source_width": 24,
+      "seconds": 0.8523958269506693
+    },
+    {
+      "batch": 6,
+      "num_examples": 64,
+      "source_width": 25,
+      "seconds": 0.742450064048171
+    },
+    {
+      "batch": 7,
+      "num_examples": 64,
+      "source_width": 25,
+      "seconds": 2.0616384018212557
+    },
+    {
+      "batch": 8,
+      "num_examples": 64,
+      "source_width": 25,
+      "seconds": 0.8738824911415577
+    },
+    {
+      "batch": 9,
+      "num_examples": 64,
+      "source_width": 26,
+      "seconds": 0.9396500363945961
+    },
+    {
+      "batch": 10,
+      "num_examples": 64,
+      "source_width": 26,
+      "seconds": 0.905752632766962
+    },
+    {
+      "batch": 11,
+      "num_examples": 64,
+      "source_width": 26,
+      "seconds": 0.6170269995927811
+    },
+    {
+      "batch": 12,
+      "num_examples": 64,
+      "source_width": 27,
+      "seconds": 0.8491555470973253
+    },
+    {
+      "batch": 13,
+      "num_examples": 64,
+      "source_width": 27,
+      "seconds": 0.814395809546113
+    },
+    {
+      "batch": 14,
+      "num_examples": 64,
+      "source_width": 28,
+      "seconds": 0.9436066094785929
+    },
+    {
+      "batch": 15,
+      "num_examples": 64,
+      "source_width": 28,
+      "seconds": 0.9267517440021038
+    },
+    {
+      "batch": 16,
+      "num_examples": 64,
+      "source_width": 28,
+      "seconds": 0.8716126717627048
+    },
+    {
+      "batch": 17,
+      "num_examples": 64,
+      "source_width": 28,
+      "seconds": 0.9334542993456125
+    },
+    {
+      "batch": 18,
+      "num_examples": 64,
+      "source_width": 29,
+      "seconds": 0.7863527927547693
+    },
+    {
+      "batch": 19,
+      "num_examples": 64,
+      "source_width": 29,
+      "seconds": 0.9510500710457563
+    },
+    {
+      "batch": 20,
+      "num_examples": 64,
+      "source_width": 29,
+      "seconds": 0.9298076815903187
+    },
+    {
+      "batch": 21,
+      "num_examples": 64,
+      "source_width": 29,
+      "seconds": 0.9457838982343674
+    },
+    {
+      "batch": 22,
+      "num_examples": 64,
+      "source_width": 30,
+      "seconds": 0.6523345373570919
+    },
+    {
+      "batch": 23,
+      "num_examples": 64,
+      "source_width": 30,
+      "seconds": 2.5722219701856375
+    },
+    {
+      "batch": 24,
+      "num_examples": 64,
+      "source_width": 30,
+      "seconds": 0.8049364592880011
+    },
+    {
+      "batch": 25,
+      "num_examples": 64,
+      "source_width": 30,
+      "seconds": 0.726596599444747
+    },
+    {
+      "batch": 26,
+      "num_examples": 64,
+      "source_width": 31,
+      "seconds": 1.0172118805348873
+    },
+    {
+      "batch": 27,
+      "num_examples": 64,
+      "source_width": 31,
+      "seconds": 0.7239269986748695
+    },
+    {
+      "batch": 28,
+      "num_examples": 64,
+      "source_width": 31,
+      "seconds": 0.720486843958497
+    },
+    {
+      "batch": 29,
+      "num_examples": 64,
+      "source_width": 31,
+      "seconds": 2.054301295429468
+    },
+    {
+      "batch": 30,
+      "num_examples": 64,
+      "source_width": 32,
+      "seconds": 1.1293567530810833
+    },
+    {
+      "batch": 31,
+      "num_examples": 64,
+      "source_width": 32,
+      "seconds": 1.3143004439771175
+    },
+    {
+      "batch": 32,
+      "num_examples": 64,
+      "source_width": 32,
+      "seconds": 0.6978606767952442
+    },
+    {
+      "batch": 33,
+      "num_examples": 64,
+      "source_width": 32,
+      "seconds": 1.200593039393425
+    },
+    {
+      "batch": 34,
+      "num_examples": 64,
+      "source_width": 33,
+      "seconds": 1.3327980991452932
+    },
+    {
+      "batch": 35,
+      "num_examples": 64,
+      "source_width": 33,
+      "seconds": 1.029877608641982
+    },
+    {
+      "batch": 36,
+      "num_examples": 64,
+      "source_width": 33,
+      "seconds": 0.8754911404103041
+    },
+    {
+      "batch": 37,
+      "num_examples": 64,
+      "source_width": 33,
+      "seconds": 0.9870069529861212
+    },
+    {
+      "batch": 38,
+      "num_examples": 64,
+      "source_width": 34,
+      "seconds": 1.1359165199100971
+    },
+    {
+      "batch": 39,
+      "num_examples": 64,
+      "source_width": 34,
+      "seconds": 1.7169721852988005
+    },
+    {
+      "batch": 40,
+      "num_examples": 64,
+      "source_width": 34,
+      "seconds": 0.9133627731353045
+    },
+    {
+      "batch": 41,
+      "num_examples": 64,
+      "source_width": 34,
+      "seconds": 1.4921225886791945
+    },
+    {
+      "batch": 42,
+      "num_examples": 64,
+      "source_width": 34,
+      "seconds": 1.393786607310176
+    },
+    {
+      "batch": 43,
+      "num_examples": 64,
+      "source_width": 35,
+      "seconds": 0.909324161708355
+    },
+    {
+      "batch": 44,
+      "num_examples": 64,
+      "source_width": 35,
+      "seconds": 1.1926190666854382
+    },
+    {
+      "batch": 45,
+      "num_examples": 64,
+      "source_width": 35,
+      "seconds": 1.1557652223855257
+    },
+    {
+      "batch": 46,
+      "num_examples": 64,
+      "source_width": 35,
+      "seconds": 0.8459903672337532
+    },
+    {
+      "batch": 47,
+      "num_examples": 64,
+      "source_width": 36,
+      "seconds": 1.1767208967357874
+    },
+    {
+      "batch": 48,
+      "num_examples": 64,
+      "source_width": 36,
+      "seconds": 1.0037639886140823
+    },
+    {
+      "batch": 49,
+      "num_examples": 64,
+      "source_width": 36,
+      "seconds": 1.018545912578702
+    },
+    {
+      "batch": 50,
+      "num_examples": 64,
+      "source_width": 36,
+      "seconds": 0.9354611970484257
+    },
+    {
+      "batch": 51,
+      "num_examples": 64,
+      "source_width": 37,
+      "seconds": 1.376283260062337
+    },
+    {
+      "batch": 52,
+      "num_examples": 64,
+      "source_width": 37,
+      "seconds": 2.5697204992175102
+    },
+    {
+      "batch": 53,
+      "num_examples": 64,
+      "source_width": 37,
+      "seconds": 1.0028837528079748
+    },
+    {
+      "batch": 54,
+      "num_examples": 64,
+      "source_width": 37,
+      "seconds": 1.2550346162170172
+    },
+    {
+      "batch": 55,
+      "num_examples": 64,
+      "source_width": 38,
+      "seconds": 1.743663826957345
+    },
+    {
+      "batch": 56,
+      "num_examples": 64,
+      "source_width": 38,
+      "seconds": 1.9732494112104177
+    },
+    {
+      "batch": 57,
+      "num_examples": 64,
+      "source_width": 38,
+      "seconds": 1.0905777793377638
+    },
+    {
+      "batch": 58,
+      "num_examples": 64,
+      "source_width": 38,
+      "seconds": 1.42378731071949
+    },
+    {
+      "batch": 59,
+      "num_examples": 64,
+      "source_width": 39,
+      "seconds": 1.2890776190906763
+    },
+    {
+      "batch": 60,
+      "num_examples": 64,
+      "source_width": 39,
+      "seconds": 1.1218496784567833
+    },
+    {
+      "batch": 61,
+      "num_examples": 64,
+      "source_width": 39,
+      "seconds": 1.0834890939295292
+    },
+    {
+      "batch": 62,
+      "num_examples": 64,
+      "source_width": 39,
+      "seconds": 2.522469053044915
+    },
+    {
+      "batch": 63,
+      "num_examples": 64,
+      "source_width": 40,
+      "seconds": 1.1391074247658253
+    },
+    {
+      "batch": 64,
+      "num_examples": 64,
+      "source_width": 40,
+      "seconds": 1.066194161772728
+    },
+    {
+      "batch": 65,
+      "num_examples": 64,
+      "source_width": 40,
+      "seconds": 1.5881374347954988
+    },
+    {
+      "batch": 66,
+      "num_examples": 64,
+      "source_width": 40,
+      "seconds": 1.574012504890561
+    },
+    {
+      "batch": 67,
+      "num_examples": 64,
+      "source_width": 41,
+      "seconds": 1.6596851907670498
+    },
+    {
+      "batch": 68,
+      "num_examples": 64,
+      "source_width": 41,
+      "seconds": 1.231006484478712
+    },
+    {
+      "batch": 69,
+      "num_examples": 64,
+      "source_width": 41,
+      "seconds": 1.1468941811472178
+    },
+    {
+      "batch": 70,
+      "num_examples": 64,
+      "source_width": 41,
+      "seconds": 1.4237604904919863
+    },
+    {
+      "batch": 71,
+      "num_examples": 64,
+      "source_width": 42,
+      "seconds": 1.3215592708438635
+    },
+    {
+      "batch": 72,
+      "num_examples": 64,
+      "source_width": 42,
+      "seconds": 2.0878936611115932
+    },
+    {
+      "batch": 73,
+      "num_examples": 64,
+      "source_width": 42,
+      "seconds": 1.223474733531475
+    },
+    {
+      "batch": 74,
+      "num_examples": 64,
+      "source_width": 42,
+      "seconds": 1.04038174636662
+    },
+    {
+      "batch": 75,
+      "num_examples": 64,
+      "source_width": 43,
+      "seconds": 1.2068440895527601
+    },
+    {
+      "batch": 76,
+      "num_examples": 64,
+      "source_width": 43,
+      "seconds": 1.0582653414458036
+    },
+    {
+      "batch": 77,
+      "num_examples": 64,
+      "source_width": 43,
+      "seconds": 1.1613412126898766
+    },
+    {
+      "batch": 78,
+      "num_examples": 64,
+      "source_width": 44,
+      "seconds": 1.1730629187077284
+    },
+    {
+      "batch": 79,
+      "num_examples": 64,
+      "source_width": 44,
+      "seconds": 1.5269544068723917
+    },
+    {
+      "batch": 80,
+      "num_examples": 64,
+      "source_width": 44,
+      "seconds": 1.196762340143323
+    },
+    {
+      "batch": 81,
+      "num_examples": 64,
+      "source_width": 44,
+      "seconds": 1.104860283434391
+    },
+    {
+      "batch": 82,
+      "num_examples": 64,
+      "source_width": 45,
+      "seconds": 1.1409671995788813
+    },
+    {
+      "batch": 83,
+      "num_examples": 64,
+      "source_width": 45,
+      "seconds": 1.1494890470057726
+    },
+    {
+      "batch": 84,
+      "num_examples": 64,
+      "source_width": 45,
+      "seconds": 1.17832107283175
+    },
+    {
+      "batch": 85,
+      "num_examples": 64,
+      "source_width": 46,
+      "seconds": 1.1826328672468662
+    },
+    {
+      "batch": 86,
+      "num_examples": 64,
+      "source_width": 46,
+      "seconds": 1.2936180997639894
+    },
+    {
+      "batch": 87,
+      "num_examples": 64,
+      "source_width": 46,
+      "seconds": 1.8517018798738718
+    },
+    {
+      "batch": 88,
+      "num_examples": 64,
+      "source_width": 46,
+      "seconds": 1.4174013528972864
+    },
+    {
+      "batch": 89,
+      "num_examples": 64,
+      "source_width": 47,
+      "seconds": 1.4241996817290783
+    },
+    {
+      "batch": 90,
+      "num_examples": 64,
+      "source_width": 47,
+      "seconds": 1.4111757725477219
+    },
+    {
+      "batch": 91,
+      "num_examples": 64,
+      "source_width": 47,
+      "seconds": 1.4504650942981243
+    },
+    {
+      "batch": 92,
+      "num_examples": 64,
+      "source_width": 48,
+      "seconds": 1.587319415062666
+    },
+    {
+      "batch": 93,
+      "num_examples": 64,
+      "source_width": 48,
+      "seconds": 1.1937071830034256
+    },
+    {
+      "batch": 94,
+      "num_examples": 64,
+      "source_width": 48,
+      "seconds": 1.7551312651485205
+    },
+    {
+      "batch": 95,
+      "num_examples": 64,
+      "source_width": 49,
+      "seconds": 2.442228050902486
+    },
+    {
+      "batch": 96,
+      "num_examples": 64,
+      "source_width": 49,
+      "seconds": 1.4915955513715744
+    },
+    {
+      "batch": 97,
+      "num_examples": 64,
+      "source_width": 49,
+      "seconds": 1.344777476042509
+    },
+    {
+      "batch": 98,
+      "num_examples": 64,
+      "source_width": 50,
+      "seconds": 1.3111644834280014
+    },
+    {
+      "batch": 99,
+      "num_examples": 64,
+      "source_width": 50,
+      "seconds": 1.410153018310666
+    },
+    {
+      "batch": 100,
+      "num_examples": 64,
+      "source_width": 50,
+      "seconds": 1.3276796396821737
+    },
+    {
+      "batch": 101,
+      "num_examples": 64,
+      "source_width": 51,
+      "seconds": 1.4908661842346191
+    },
+    {
+      "batch": 102,
+      "num_examples": 64,
+      "source_width": 51,
+      "seconds": 1.9884407632052898
+    },
+    {
+      "batch": 103,
+      "num_examples": 64,
+      "source_width": 51,
+      "seconds": 1.9220339674502611
+    },
+    {
+      "batch": 104,
+      "num_examples": 64,
+      "source_width": 52,
+      "seconds": 1.2969370484352112
+    },
+    {
+      "batch": 105,
+      "num_examples": 64,
+      "source_width": 52,
+      "seconds": 1.6077401507645845
+    },
+    {
+      "batch": 106,
+      "num_examples": 64,
+      "source_width": 53,
+      "seconds": 1.7533884346485138
+    },
+    {
+      "batch": 107,
+      "num_examples": 64,
+      "source_width": 53,
+      "seconds": 1.6336459126323462
+    },
+    {
+      "batch": 108,
+      "num_examples": 64,
+      "source_width": 53,
+      "seconds": 1.71525227278471
+    },
+    {
+      "batch": 109,
+      "num_examples": 64,
+      "source_width": 54,
+      "seconds": 1.5071201380342245
+    },
+    {
+      "batch": 110,
+      "num_examples": 64,
+      "source_width": 54,
+      "seconds": 1.316788399592042
+    },
+    {
+      "batch": 111,
+      "num_examples": 64,
+      "source_width": 55,
+      "seconds": 2.369169507175684
+    },
+    {
+      "batch": 112,
+      "num_examples": 64,
+      "source_width": 55,
+      "seconds": 1.6031888667494059
+    },
+    {
+      "batch": 113,
+      "num_examples": 64,
+      "source_width": 56,
+      "seconds": 1.325295714661479
+    },
+    {
+      "batch": 114,
+      "num_examples": 64,
+      "source_width": 56,
+      "seconds": 1.373816268518567
+    },
+    {
+      "batch": 115,
+      "num_examples": 64,
+      "source_width": 56,
+      "seconds": 1.5652147438377142
+    },
+    {
+      "batch": 116,
+      "num_examples": 64,
+      "source_width": 57,
+      "seconds": 1.7698771078139544
+    },
+    {
+      "batch": 117,
+      "num_examples": 64,
+      "source_width": 57,
+      "seconds": 1.5105705931782722
+    },
+    {
+      "batch": 118,
+      "num_examples": 64,
+      "source_width": 58,
+      "seconds": 1.397582871839404
+    },
+    {
+      "batch": 119,
+      "num_examples": 64,
+      "source_width": 58,
+      "seconds": 2.0362364444881678
+    },
+    {
+      "batch": 120,
+      "num_examples": 64,
+      "source_width": 59,
+      "seconds": 2.580099167302251
+    },
+    {
+      "batch": 121,
+      "num_examples": 64,
+      "source_width": 59,
+      "seconds": 1.5748705491423607
+    },
+    {
+      "batch": 122,
+      "num_examples": 64,
+      "source_width": 60,
+      "seconds": 2.192849285900593
+    },
+    {
+      "batch": 123,
+      "num_examples": 64,
+      "source_width": 60,
+      "seconds": 2.0850144159048796
+    },
+    {
+      "batch": 124,
+      "num_examples": 64,
+      "source_width": 61,
+      "seconds": 1.8820709567517042
+    },
+    {
+      "batch": 125,
+      "num_examples": 64,
+      "source_width": 61,
+      "seconds": 2.00164576433599
+    },
+    {
+      "batch": 126,
+      "num_examples": 64,
+      "source_width": 62,
+      "seconds": 1.9670045711100101
+    },
+    {
+      "batch": 127,
+      "num_examples": 64,
+      "source_width": 63,
+      "seconds": 1.7779579032212496
+    },
+    {
+      "batch": 128,
+      "num_examples": 64,
+      "source_width": 63,
+      "seconds": 1.7489627357572317
+    },
+    {
+      "batch": 129,
+      "num_examples": 64,
+      "source_width": 64,
+      "seconds": 2.1549758706241846
+    },
+    {
+      "batch": 130,
+      "num_examples": 64,
+      "source_width": 64,
+      "seconds": 2.002376437187195
+    },
+    {
+      "batch": 131,
+      "num_examples": 64,
+      "source_width": 65,
+      "seconds": 1.9992262218147516
+    },
+    {
+      "batch": 132,
+      "num_examples": 64,
+      "source_width": 66,
+      "seconds": 2.0919896755367517
+    },
+    {
+      "batch": 133,
+      "num_examples": 64,
+      "source_width": 66,
+      "seconds": 1.6817503981292248
+    },
+    {
+      "batch": 134,
+      "num_examples": 64,
+      "source_width": 67,
+      "seconds": 1.7979746330529451
+    },
+    {
+      "batch": 135,
+      "num_examples": 64,
+      "source_width": 68,
+      "seconds": 1.9906613267958164
+    },
+    {
+      "batch": 136,
+      "num_examples": 64,
+      "source_width": 69,
+      "seconds": 2.564178181812167
+    },
+    {
+      "batch": 137,
+      "num_examples": 64,
+      "source_width": 69,
+      "seconds": 2.455722950398922
+    },
+    {
+      "batch": 138,
+      "num_examples": 64,
+      "source_width": 70,
+      "seconds": 2.557829750701785
+    },
+    {
+      "batch": 139,
+      "num_examples": 64,
+      "source_width": 71,
+      "seconds": 2.606811612844467
+    },
+    {
+      "batch": 140,
+      "num_examples": 64,
+      "source_width": 72,
+      "seconds": 2.3917643055319786
+    },
+    {
+      "batch": 141,
+      "num_examples": 64,
+      "source_width": 73,
+      "seconds": 2.3828069996088743
+    },
+    {
+      "batch": 142,
+      "num_examples": 64,
+      "source_width": 74,
+      "seconds": 2.5002003479748964
+    },
+    {
+      "batch": 143,
+      "num_examples": 64,
+      "source_width": 75,
+      "seconds": 2.436374742537737
+    },
+    {
+      "batch": 144,
+      "num_examples": 64,
+      "source_width": 76,
+      "seconds": 2.294134445488453
+    },
+    {
+      "batch": 145,
+      "num_examples": 64,
+      "source_width": 78,
+      "seconds": 1.9977563917636871
+    },
+    {
+      "batch": 146,
+      "num_examples": 64,
+      "source_width": 79,
+      "seconds": 2.3346755541861057
+    },
+    {
+      "batch": 147,
+      "num_examples": 64,
+      "source_width": 81,
+      "seconds": 2.8457293920218945
+    },
+    {
+      "batch": 148,
+      "num_examples": 64,
+      "source_width": 83,
+      "seconds": 2.169639093801379
+    },
+    {
+      "batch": 149,
+      "num_examples": 64,
+      "source_width": 86,
+      "seconds": 2.4147200789302588
+    },
+    {
+      "batch": 150,
+      "num_examples": 64,
+      "source_width": 88,
+      "seconds": 2.0525311045348644
+    },
+    {
+      "batch": 151,
+      "num_examples": 64,
+      "source_width": 92,
+      "seconds": 2.499835293740034
+    },
+    {
+      "batch": 152,
+      "num_examples": 64,
+      "source_width": 95,
+      "seconds": 2.6665575206279755
+    },
+    {
+      "batch": 153,
+      "num_examples": 64,
+      "source_width": 100,
+      "seconds": 2.9727895352989435
+    },
+    {
+      "batch": 154,
+      "num_examples": 64,
+      "source_width": 108,
+      "seconds": 2.546704201027751
+    },
+    {
+      "batch": 155,
+      "num_examples": 64,
+      "source_width": 131,
+      "seconds": 3.146184606477618
+    },
+    {
+      "batch": 156,
+      "num_examples": 16,
+      "source_width": 184,
+      "seconds": 2.476713716983795
+    }
+  ],
+  "num_evaluated": 9946,
+  "num_passed": 7245,
+  "num_bad_code": 13,
+  "pass@1": 0.7284335411220592,
+  "bad_code_rate": 0.0013,
+  "wrong_answer_rate": 0.27035994369595817,
+  "reference_error_rate": 0.0054,
+  "evaluation_coverage": 0.9946,
+  "evaluation_seconds": 67.47609481960535,
+  "status_counts": {
+    "passed": 7245,
+    "wrong_answer": 2689,
+    "ok": 53,
+    "runtime_error": 9,
+    "unsupported_code": 3,
+    "invalid_output": 1
+  },
+  "reference_status_counts": {
+    "ok": 9946,
+    "invalid_output": 8,
+    "runtime_error": 34,
+    "unsupported_code": 12
+  },
+  "prediction_column": "generated_code",
+  "reference_column": "code",
+  "comparison": "reference_solve",
+  "num_reference_errors": 54,
+  "passed_fraction_of_all_sampled": 0.7245,
+  "num_source_truncated": 0,
+  "num_hit_token_limit": 3,
+  "official_test_used": false,
+  "checkpoint": "/home/artyom-step/workspace/nlp-hw2/artifacts/experiments/transformer_002_8x8_d768_lr1e4/checkpoint-360000"
+}

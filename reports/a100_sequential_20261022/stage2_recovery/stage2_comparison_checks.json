@@ -1,0 +1,141 @@
+{
+  "schema": 1,
+  "status": "passed",
+  "checked_at": "2026-10-22T22:01:01.191173+00:00",
+  "scope": "Local saved-artifact verification only; no SSH, training, generation, or program execution. Training Arrow files were not reloaded or rehashed.",
+  "validation": {
+    "rows": 20000,
+    "common_eligible": 19886,
+    "excluded_both": 114,
+    "validation_sha256": "282001d478bffb2d13ab2ca41e8232a0c99c3623f898dd7077128c266172c406",
+    "golden_reference_file_sha256": "42fc3fa34f9e7ce9cfbc84fb2ad35dddccceb275e6d249ec7f7d2fe4cef9785b"
+  },
+  "checks": {
+    "all_20000_golden_reference_eligibility_status_results_match_both": true,
+    "all_20000_row_order_question_code_identities_match_between_models": true,
+    "prediction_rows_match_evaluation_rows_both": true,
+    "saved_pass_flags_and_statuses_recomputed_with_evaluator_equality": true,
+    "all_counts_rates_and_denominators_recomputed": true,
+    "metrics_match_evaluator_sidecars_receipts_and_completion": true,
+    "same_generation_and_evaluation_settings": true,
+    "same_training_config_except_dataset_manifest": true,
+    "same_model_config_and_seed": true,
+    "matched_4m_exposure_budget_and_15625_scheduled_attempts": true,
+    "all_seven_receipt_files_size_and_sha256_verified_each": true,
+    "golden_verifier": "tools.run_a100_stage1.verify_reference_results"
+  },
+  "generation": {
+    "num_beams": 4,
+    "max_new_tokens": 256,
+    "length_penalty": 1.0,
+    "do_sample": false,
+    "batch_size": 64
+  },
+  "models": {
+    "repeat4m": {
+      "num_examples": 20000,
+      "num_evaluated": 19886,
+      "num_passed": 13445,
+      "num_bad_code": 113,
+      "pass@1": 0.6761037916121895,
+      "bad_code_rate": 0.00565,
+      "wrong_answer_rate": 0.3182641054007845,
+      "reference_error_rate": 0.0057,
+      "evaluation_coverage": 0.9943,
+      "status_counts": {
+        "passed": 13445,
+        "wrong_answer": 6329,
+        "runtime_error": 102,
+        "ok": 113,
+        "invalid_output": 5,
+        "syntax_error": 5,
+        "timeout": 1
+      },
+      "reference_status_counts": {
+        "ok": 19886,
+        "unsupported_code": 27,
+        "runtime_error": 76,
+        "invalid_output": 11
+      },
+      "pass_percent": 67.61037916121894,
+      "num_hit_token_limit": 14,
+      "passed_fraction_of_all_sampled": 0.67225,
+      "token_loss": 0.26735336462672726,
+      "amp_diagnostics": {
+        "overflow_count": 1,
+        "final_loss_scale": 4194304.0,
+        "scope": "current_process_session"
+      }
+    },
+    "distinct4m": {
+      "num_examples": 20000,
+      "num_evaluated": 19886,
+      "num_passed": 13657,
+      "num_bad_code": 70,
+      "pass@1": 0.6867645579804887,
+      "bad_code_rate": 0.0035,
+      "wrong_answer_rate": 0.3097153776526199,
+      "reference_error_rate": 0.0057,
+      "evaluation_coverage": 0.9943,
+      "status_counts": {
+        "passed": 13657,
+        "wrong_answer": 6159,
+        "runtime_error": 64,
+        "ok": 114,
+        "invalid_output": 3,
+        "syntax_error": 3
+      },
+      "reference_status_counts": {
+        "ok": 19886,
+        "unsupported_code": 27,
+        "runtime_error": 76,
+        "invalid_output": 11
+      },
+      "pass_percent": 68.67645579804888,
+      "num_hit_token_limit": 15,
+      "passed_fraction_of_all_sampled": 0.68285,
+      "token_loss": 0.2504437715860451,
+      "amp_diagnostics": {
+        "overflow_count": 2,
+        "final_loss_scale": 2097152.0,
+        "scope": "current_process_session"
+      }
+    }
+  },
+  "paired": {
+    "both_pass": 12711,
+    "both_fail": 5495,
+    "distinct4m_only": 946,
+    "repeat4m_only": 734,
+    "excluded_both": 114,
+    "common_eligible": 19886,
+    "net_additional_distinct4m_passes": 212,
+    "delta_percentage_points": 1.0660766368299306
+  },
+  "verified_file_sha256": {
+    "repeat4m": {
+      "config.json": "9ab94e1cc58a6ceedb4188b0ff7543291446dc18b09c87712389fce194991814",
+      "evaluation/evaluation.jsonl": "8adca1f10c896c4ac087e96c2770a9dc70632bd669b6897835065e9af919c2dd",
+      "evaluation/evaluation_config.json": "f1bde1e50008ed9078b2a0e002fc8ec3e4714cc5743e9534168af9c880462a05",
+      "evaluation/metrics.json": "96f6fc148faa27ac5e2b3929c26f3c9cfcc08a2c00024213817c0f95b17a5587",
+      "metrics.json": "b531bef7e950b9f396f4d214e7512b9af58448cfc497938637037c09ec053a4b",
+      "predictions.jsonl": "fe7624847bc0af0f0d0ae9acd0a3012db8f57c4916b4b7f01c3acc7424e40a13",
+      "progress.json": "d6ec878726a2e2fedefca6c653f9b7ba8863f67d684a916a279221fac67e35c5"
+    },
+    "distinct4m": {
+      "config.json": "69990939b5adacf1f1c277971ace759068ccf0c657fd07f2a8ce95eaf87068ff",
+      "evaluation/evaluation.jsonl": "5e4472b48df843c70030d4577fbd0a4b7b85aed6c001560b40ab42f348fa739e",
+      "evaluation/evaluation_config.json": "1155e5265b46cf50e1b44565e11d60c27770c433ce1787d02f1c300cef3c5a61",
+      "evaluation/metrics.json": "155086e0c527f1139cca9fd73633e769d488f2b30d3730a3320f2b87c69f6526",
+      "metrics.json": "1c88221a5ac68f21fded2ce8267ea4dedd31514baef06bd9bb075695edf18ad1",
+      "predictions.jsonl": "b763cd5624d241d6eab9a1d25bc7c33adcff1ebf5ec701e61b79c931dff6a3de",
+      "progress.json": "d6ec878726a2e2fedefca6c653f9b7ba8863f67d684a916a279221fac67e35c5"
+    }
+  },
+  "limitations": [
+    "One seed (42) and one matched 4M exposure budget; this result does not prove general superiority.",
+    "Validation was used for training loss monitoring; this is local validation solve-result agreement, not official hidden-test accuracy.",
+    "Native AMP diagnostics report 1 repeat4m overflow versus 2 distinct4m overflows in the current process sessions; repeat4m resumed from step 14000, so these counts do not establish equal successful weight-update totals."
+  ],
+  "findings": []
+}

@@ -1,0 +1,179 @@
+{
+  "schema": 1,
+  "stage": 2,
+  "recovery": {
+    "failed_stage2_dir": "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage2",
+    "checkpoint": "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage2/trials/repeat4m/checkpoint-14000",
+    "checkpoint_step": 14000,
+    "remaining_step_attempts": 1625,
+    "planned_step_attempts": 15625,
+    "failed_queue_state_sha256": "27f684cce8ae306813b3ff25b25de18d152adf83f23ef57aedb1f3d62ab71539",
+    "failed_request_sha256": "d5ad30e558ffae4a2d88c02a550efe902023c6d94d3d1fa7b450552abaaf76a2",
+    "frozen_manifest_sha256": "62cc7fd5c8befac98d5f0500417689b88b01fb9c08f634ab0021d82f7a1a3b1e",
+    "source_patch": {
+      "path": "kaggle_experiments.py",
+      "before_sha256": "45b193b4350a3f8ce3d2eaa3c48c45a874711b4ab73be505bcf8cbb19bcef6a7",
+      "after_sha256": "b6d71da0e67bafac9c2fadf9b4db27064a10ac2da4d30a14e4f5a6b385f44734"
+    },
+    "manifest": {
+      "config": {
+        "architecture": "bart",
+        "micro_batch": 128,
+        "global_batch": 256,
+        "learning_rate": 0.0002,
+        "num_train_epochs": 1.0,
+        "eval_steps": 1000,
+        "precision": "fp16",
+        "gradient_checkpointing": false,
+        "torch_compile": false,
+        "torch_compile_backend": "inductor",
+        "use_cpu": false,
+        "tiny_model": false,
+        "preflight": false,
+        "max_steps": -1,
+        "expected_rows": [
+          4000000,
+          20000
+        ],
+        "expected_manifest_sha": "ae80f9cd054d3bb23667bcb3a7d9f7200322005202f82c2945d718295e4b1f26",
+        "seed": 42
+      },
+      "precision": "fp16",
+      "world_size": 1,
+      "gradient_accumulation_steps": 2,
+      "bundle_sha256": "ae80f9cd054d3bb23667bcb3a7d9f7200322005202f82c2945d718295e4b1f26",
+      "selection_sha256": "db1019e323091ea265971650fb8c9636adf58965440abb8411e4a484c5e318c4",
+      "model_config": {
+        "vocab_size": 8000,
+        "d_model": 1024,
+        "encoder_layers": 8,
+        "decoder_layers": 8,
+        "attention_heads": 8,
+        "ffn_dim": 4096,
+        "max_position_embeddings": 512,
+        "dropout": 0.1,
+        "attention_dropout": 0.0,
+        "pad_token_id": 0,
+        "bos_token_id": 2,
+        "eos_token_id": 3,
+        "unk_token_id": 1
+      },
+      "train_rows": 4000000,
+      "validation_rows": 20000
+    },
+    "checkpoint_files": [
+      {
+        "path": "config.json",
+        "bytes": 1011,
+        "sha256": "30d9ba2a3ebdf1fa9e440aef154412b149d6fd9172e36940abd2e52839bf1c85"
+      },
+      {
+        "path": "generation_config.json",
+        "bytes": 257,
+        "sha256": "6d5bd370a97d994f5a7112ca7e3e42c132ead2c3219959665690cda7743b83d3"
+      },
+      {
+        "path": "model.safetensors",
+        "bytes": 977639840,
+        "sha256": "6d859afa87b4491b39be29f231693205a318a451fd5b8133f6a5b6ab89e36705"
+      },
+      {
+        "path": "optimizer.pt",
+        "bytes": 1955427560,
+        "sha256": "c78b99bc85b85b61bbeffd920e8dff7c8963641cab6cf4872cb21776d8a1a1f5"
+      },
+      {
+        "path": "rng_state.pth",
+        "bytes": 14645,
+        "sha256": "05596b8743271ea9450f618e4fe2d778450f6c039478d1bc21fabb7acde25a1b"
+      },
+      {
+        "path": "run_manifest.json",
+        "bytes": 1225,
+        "sha256": "62cc7fd5c8befac98d5f0500417689b88b01fb9c08f634ab0021d82f7a1a3b1e"
+      },
+      {
+        "path": "scaler.pt",
+        "bytes": 1383,
+        "sha256": "23c844bc341ec75b5cad5ad0be21d7c0eeee0623194498c334d6946af672123e"
+      },
+      {
+        "path": "scheduler.pt",
+        "bytes": 1465,
+        "sha256": "46145cb6a71d370aa691dd5cd7efec9bcd45343764922d6ac1eabed1a70a738e"
+      },
+      {
+        "path": "tokenizer.json",
+        "bytes": 534007,
+        "sha256": "abd75c8655b948f612ebbf065a12269613269a4755cd0a698b0bf7a5bc1e9704"
+      },
+      {
+        "path": "tokenizer_config.json",
+        "bytes": 304,
+        "sha256": "5128280f8f8798b74a5032fca3c6a6f50b80835fdb46afe012280ac314fde389"
+      },
+      {
+        "path": "trainer_state.json",
+        "bytes": 29497,
+        "sha256": "823b5522999285194bf2bfb5fdcb40243e99fd795ad6cacaa2619fa9d74ca7cc"
+      },
+      {
+        "path": "training_args.bin",
+        "bytes": 5457,
+        "sha256": "8debb621c48c60c90dc084d67e23b02839e91b223efe3b0e5691f877a2388f33"
+      }
+    ]
+  },
+  "architecture": "bart",
+  "stage1_dir": "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage1",
+  "prepared_data_dir": "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage2_data",
+  "output_dir": "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage2_recovery",
+  "reference_identity": "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage2_recovery_code/reference_identity.json",
+  "stage1": {
+    "winner": "bart",
+    "completion_sha256": "640b1b1c6591baaa20e0c8f5ff69b69dfbd1683451fcf6d6badc3904654e4050",
+    "reference_sha256": "42fc3fa34f9e7ce9cfbc84fb2ad35dddccceb275e6d249ec7f7d2fe4cef9785b"
+  },
+  "prepared": {
+    "completion_sha256": "26c3bac82936553f0af8976cf326bf90a871c14d42a88f7527cea0792a982528",
+    "bundles": {
+      "repeat4m": {
+        "bundle_sha256": "ae80f9cd054d3bb23667bcb3a7d9f7200322005202f82c2945d718295e4b1f26",
+        "selection_sha256": "db1019e323091ea265971650fb8c9636adf58965440abb8411e4a484c5e318c4",
+        "tokenizer_sha256": "abd75c8655b948f612ebbf065a12269613269a4755cd0a698b0bf7a5bc1e9704"
+      },
+      "distinct4m": {
+        "bundle_sha256": "bab34556554696fd8927f4914df1aa835b9d1c8290bf180d4a5143a34381721c",
+        "selection_sha256": "80357f04410a2cb1812d71fed3c66c61c6e8367a140c2911af44bff325d29d13",
+        "tokenizer_sha256": "abd75c8655b948f612ebbf065a12269613269a4755cd0a698b0bf7a5bc1e9704"
+      }
+    }
+  },
+  "evaluation": {
+    "batch_size": 64,
+    "num_beams": 4,
+    "max_new_tokens": 256,
+    "length_penalty": 1.0,
+    "device": "cuda:0"
+  },
+  "shared_gpu_lock": "/tmp/nlp_hw2_stage2_recovery_cuda0_uid1091",
+  "sources": {
+    "kaggle_experiments.py": "b6d71da0e67bafac9c2fadf9b4db27064a10ac2da4d30a14e4f5a6b385f44734",
+    "training.py": "43312d3f7b48fc5cd8f772baccd9eb5721aa96385267a35ad563187dfed71ab8",
+    "evaluation.py": "9ad4d6bb1c03d0d2eca15a597db3319cf264e7d3cfcc86149a609251a4e983d0",
+    "_code_runner.py": "0e68f1713d6f65b9c2638aca26bd7c1440328b000b648eb9f76c01352d721913",
+    "plotting.py": "2071e931d633d2cc0399e9560ef088bab38302d5e0cf77331a0784777ff297b2",
+    "tools/run_a100_stage2.py": "3ba10cf55de138df911cc9271a2d100e9b40184a612443d2af85cac5d7a32cdd",
+    "tools/run_a100_stage1.py": "0966773bb18e2fca2621d5e95d5ec9941937545e4a2a07642567dc93fb06ce4b",
+    "tools/evaluate_fixed_bundle.py": "aaaa2681fd4ba5f0ccd3e716eb5b480dcb5d8e1b1df60711e18d0eace8622169",
+    "tools/prepare_a100_diversity.py": "5d72088ef7cd9b32860496cbf211b95f84de411baeb1eabb1c7fc264eb1e1dfa",
+    "models/__init__.py": "f0ac5a18a8a85dd51fa4044cc8fc4c2f2e210304baf3ee6c13cad2792847114f",
+    "models/base.py": "a18e9a415bab03a5ef2ca313b7d9e27b515d8b20a8028648e9683bc8e999fbc0",
+    "models/baseline.py": "349643d10004fd37aa9644d25634bbf832b867851304432e4d9b66dea8001ea1",
+    "models/config.py": "fce960895e77d4661e91f94b474a203522392416f73714679cfc2a2a6bca79d0",
+    "models/copy.py": "51aa4b4b92943ffb8b02c0742ad137b02eb06c48a2def9cc2c9fb4bbc7ec79d2",
+    "models/t5.py": "d1ab22531c00453fb426a6e79f4c69b7ce9508f0849399b6241d4d23dee703bc",
+    "models/t5_attention.py": "3b32cf763518b5236af861d7b7c4cc41286a775e60f8412773b321e0c0f51388",
+    "tools/recover_a100_stage2.py": "2cc1e05ca0c98e6995ab25efd467e4b33298da330a3c82adfe8ad749bee0171f"
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "schema": 1,
+  "checkpoint_step": 180000,
+  "final_training_step": 181144,
+  "model_parameters": 244391936,
+  "test_rows": 1919,
+  "question_order_sha256": "6dd86866b2ed86a09781b7f471fc2fce5c00975503c4a85f1ec959dae0b93279",
+  "official_test_has_targets": false,
+  "weights_source": "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_full_20261023/training/trial/final",
+  "weights_exactly_match": "checkpoint-180000",
+  "generation": {
+    "num_beams": 4,
+    "length_penalty": 1.0,
+    "max_new_tokens": 256,
+    "mixed_precision": "fp16",
+    "sort_by_length": true,
+    "initial_batch_size": 128
+  },
+  "files": {
+    "RUN.txt": {
+      "bytes": 1086,
+      "sha256": "a0402a5142abb7e63debe186b92fae8e58ffcd04ed0fae3887d9c6abf1e713cf"
+    },
+    "benchmark_full_t4.py": {
+      "bytes": 13553,
+      "sha256": "41343c797a415237bbd98bedbcdf4f27d9ec848988e1d7c0807f08884fd36829"
+    },
+    "checkpoint/config.json": {
+      "bytes": 1011,
+      "sha256": "30d9ba2a3ebdf1fa9e440aef154412b149d6fd9172e36940abd2e52839bf1c85"
+    },
+    "checkpoint/generation_config.json": {
+      "bytes": 257,
+      "sha256": "6d5bd370a97d994f5a7112ca7e3e42c132ead2c3219959665690cda7743b83d3"
+    },
+    "checkpoint/model.safetensors": {
+      "bytes": 977639840,
+      "sha256": "2059268173416c77cd8c901c791eb86e7cbcea0ede756b2bb830ec23638b8165"
+    },
+    "checkpoint/model_config.json": {
+      "bytes": 297,
+      "sha256": "1eac6c7b7def7d73b4d6b20d1166a029a802029c62f3b2cbfb56f38085df39ee"
+    },
+    "checkpoint/tokenizer.json": {
+      "bytes": 534007,
+      "sha256": "abd75c8655b948f612ebbf065a12269613269a4755cd0a698b0bf7a5bc1e9704"
+    },
+    "checkpoint/tokenizer_config.json": {
+      "bytes": 304,
+      "sha256": "5128280f8f8798b74a5032fca3c6a6f50b80835fdb46afe012280ac314fde389"
+    },
+    "inference.py": {
+      "bytes": 17298,
+      "sha256": "837e1147884a5a517a28d167e0a5ade715072a202c1fd3ffe3d879baa2cd30b8"
+    },
+    "models/__init__.py": {
+      "bytes": 378,
+      "sha256": "f0ac5a18a8a85dd51fa4044cc8fc4c2f2e210304baf3ee6c13cad2792847114f"
+    },
+    "models/base.py": {
+      "bytes": 3434,
+      "sha256": "a18e9a415bab03a5ef2ca313b7d9e27b515d8b20a8028648e9683bc8e999fbc0"
+    },
+    "models/baseline.py": {
+      "bytes": 5633,
+      "sha256": "349643d10004fd37aa9644d25634bbf832b867851304432e4d9b66dea8001ea1"
+    },
+    "models/config.py": {
+      "bytes": 2922,
+      "sha256": "fce960895e77d4661e91f94b474a203522392416f73714679cfc2a2a6bca79d0"
+    },
+    "models/copy.py": {
+      "bytes": 7559,
+      "sha256": "51aa4b4b92943ffb8b02c0742ad137b02eb06c48a2def9cc2c9fb4bbc7ec79d2"
+    },
+    "models/t5.py": {
+      "bytes": 1629,
+      "sha256": "d1ab22531c00453fb426a6e79f4c69b7ce9508f0849399b6241d4d23dee703bc"
+    },
+    "models/t5_attention.py": {
+      "bytes": 3637,
+      "sha256": "3b32cf763518b5236af861d7b7c4cc41286a775e60f8412773b321e0c0f51388"
+    },
+    "requirements-colab.txt": {
+      "bytes": 68,
+      "sha256": "c99d1bf244b77bccbd2f96265fbb82fa0eeff3809d2fbc4ba33d2e300febda2d"
+    },
+    "test.parquet": {
+      "bytes": 136439,
+      "sha256": "8bde59c8d8bb7edc4e8a503be22fc132c4a47773025d333432e78c5489e6522a"
+    },
+    "utils.py": {
+      "bytes": 1381,
+      "sha256": "709493015d18f1e37d7384d50d686e4c66029126c4698eff8e60c5dd06b9e9a0"
+    }
+  },
+  "validation_repair": {
+    "kind": "generation_effective_default_validation",
+    "original_bundle_manifest_sha256": "06916a34eb73d999937de3a9e0c9662636b521b4a4513c7bcc5e12a747dd2ab7",
+    "original_benchmark_sha256": "f5087b3ef09677a413ce9e9d8aab2bd670b17bd4fbefc1a4c149e65641b059b6",
+    "repaired_benchmark_sha256": "41343c797a415237bbd98bedbcdf4f27d9ec848988e1d7c0807f08884fd36829",
+    "generation_behavior_changed": false,
+    "weights_changed": false,
+    "explanation": "Validate None with pinned Transformers effective defaults; reject explicit nondefaults. Generation configuration unchanged."
+  }
+}

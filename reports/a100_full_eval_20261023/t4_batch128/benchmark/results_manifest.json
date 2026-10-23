@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "files": {
+    "a100_full_best180000_beam4_t4.jsonl": {
+      "bytes": 470647,
+      "sha256": "4d4a229127b93f08c9c227dda4fe1268ed371ca77f8c5ee913ef35d2e7033256"
+    },
+    "batch_stats.json": {
+      "bytes": 1619,
+      "sha256": "0e893dc8c6be5fab99e9353e119ca6a75177d286ca39277bf02bb4fc61c69b5c"
+    },
+    "complete.json": {
+      "bytes": 274,
+      "sha256": "12aa061f01634e8fa5a4c94cab960bc089ad43cdd5b2689a1badef79c5e91e87"
+    },
+    "metrics.json": {
+      "bytes": 3031,
+      "sha256": "19271df2f69d80cb285cb4bd7eba16d4f8372f8124dbff5cf9273183b71adccc"
+    },
+    "predictions.jsonl": {
+      "bytes": 1072432,
+      "sha256": "f2ec1defed5d4cdd9769c7c2222ba48ffc887a31dbb9a5da04120962715aeff7"
+    },
+    "request.json": {
+      "bytes": 1261,
+      "sha256": "300cd09783c6132ae5641e1b18d26597b9600ac73dd91e996ec72a2d4dbd836f"
+    }
+  }
+}

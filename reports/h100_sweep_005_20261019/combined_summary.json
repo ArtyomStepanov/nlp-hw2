@@ -1,0 +1,107 @@
+{
+  "train_rows": 1000000,
+  "validation_rows": 20000,
+  "seed": 42,
+  "epochs": 1,
+  "global_batch": 256,
+  "metric": "eval_token_loss",
+  "total_trial_wall_seconds": 6226.765073084272,
+  "results": [
+    {
+      "name": "e8_d8_lr2e-04",
+      "encoder": 8,
+      "decoder": 8,
+      "lr": 0.0002,
+      "loss": 0.39463842142245426,
+      "seconds": 654.0847726692446,
+      "parameters": 244391936,
+      "peak_allocated_gib": 30.224976062774658,
+      "checkpoint": "/workspace/nlp-hw2/artifacts/sweeps/hpo_005_architecture_extension/trials/e8_d8_lr2e-04/checkpoint-3907",
+      "data_sha256": "aab7a9237d69484044504eac5c998f9f7ebd9c5573ad4d1e31fb4f41705e1e3d"
+    },
+    {
+      "name": "e8_d12_lr2e-04",
+      "encoder": 8,
+      "decoder": 12,
+      "lr": 0.0002,
+      "loss": 0.39921499228162355,
+      "seconds": 828.0386650622822,
+      "parameters": 311578624,
+      "peak_allocated_gib": 38.114078998565674,
+      "checkpoint": "/workspace/nlp-hw2/artifacts/sweeps/hpo_005_architecture_extension/trials/e8_d12_lr2e-04/checkpoint-3907",
+      "data_sha256": "aab7a9237d69484044504eac5c998f9f7ebd9c5573ad4d1e31fb4f41705e1e3d"
+    },
+    {
+      "name": "e10_d10_lr2e-04",
+      "encoder": 10,
+      "decoder": 10,
+      "lr": 0.0002,
+      "loss": 0.43630529723264855,
+      "seconds": 797.1318416567519,
+      "parameters": 303177728,
+      "peak_allocated_gib": 36.90833520889282,
+      "checkpoint": "/workspace/nlp-hw2/artifacts/sweeps/hpo_004_1m_1epoch/trials/e10_d10_lr2e-04/checkpoint-3907",
+      "data_sha256": "aab7a9237d69484044504eac5c998f9f7ebd9c5573ad4d1e31fb4f41705e1e3d"
+    },
+    {
+      "name": "e10_d10_lr1e-04",
+      "encoder": 10,
+      "decoder": 10,
+      "lr": 0.0001,
+      "loss": 0.48900128594596465,
+      "seconds": 796.0589962117374,
+      "parameters": 303177728,
+      "peak_allocated_gib": 36.90833520889282,
+      "checkpoint": "/workspace/nlp-hw2/artifacts/sweeps/hpo_004_1m_1epoch/trials/e10_d10_lr1e-04/checkpoint-3907",
+      "data_sha256": "aab7a9237d69484044504eac5c998f9f7ebd9c5573ad4d1e31fb4f41705e1e3d"
+    },
+    {
+      "name": "e8_d12_lr1e-04",
+      "encoder": 8,
+      "decoder": 12,
+      "lr": 0.0001,
+      "loss": 0.49680420434804684,
+      "seconds": 827.6195253133774,
+      "parameters": 311578624,
+      "peak_allocated_gib": 38.114078998565674,
+      "checkpoint": "/workspace/nlp-hw2/artifacts/sweeps/hpo_005_architecture_extension/trials/e8_d12_lr1e-04/checkpoint-3907",
+      "data_sha256": "aab7a9237d69484044504eac5c998f9f7ebd9c5573ad4d1e31fb4f41705e1e3d"
+    },
+    {
+      "name": "e12_d8_lr1e-04",
+      "encoder": 12,
+      "decoder": 8,
+      "lr": 0.0001,
+      "loss": 0.6126221092282343,
+      "seconds": 764.0803327760659,
+      "parameters": 294776832,
+      "peak_allocated_gib": 35.700729846954346,
+      "checkpoint": "/workspace/nlp-hw2/artifacts/sweeps/hpo_004_1m_1epoch/trials/e12_d8_lr1e-04/checkpoint-3907",
+      "data_sha256": "aab7a9237d69484044504eac5c998f9f7ebd9c5573ad4d1e31fb4f41705e1e3d"
+    },
+    {
+      "name": "e10_d10_lr3e-04",
+      "encoder": 10,
+      "decoder": 10,
+      "lr": 0.0003,
+      "loss": 0.8508708189978291,
+      "seconds": 797.0261906730011,
+      "parameters": 303177728,
+      "peak_allocated_gib": 36.90833520889282,
+      "checkpoint": "/workspace/nlp-hw2/artifacts/sweeps/hpo_005_architecture_extension/trials/e10_d10_lr3e-04/checkpoint-3907",
+      "data_sha256": "aab7a9237d69484044504eac5c998f9f7ebd9c5573ad4d1e31fb4f41705e1e3d"
+    },
+    {
+      "name": "e12_d8_lr2e-04",
+      "encoder": 12,
+      "decoder": 8,
+      "lr": 0.0002,
+      "loss": 0.8625280418237009,
+      "seconds": 762.7247487218119,
+      "parameters": 294776832,
+      "peak_allocated_gib": 35.700729846954346,
+      "checkpoint": "/workspace/nlp-hw2/artifacts/sweeps/hpo_004_1m_1epoch/trials/e12_d8_lr2e-04/checkpoint-3907",
+      "data_sha256": "aab7a9237d69484044504eac5c998f9f7ebd9c5573ad4d1e31fb4f41705e1e3d"
+    }
+  ]
+}

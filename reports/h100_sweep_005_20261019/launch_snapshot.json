@@ -1,0 +1,39 @@
+{
+  "captured_at": "2026-10-19T16:56:25.043522+00:00",
+  "summary": {
+    "status": "running",
+    "completed": [],
+    "failures": [],
+    "active_trial": "e8_d12_lr1e-04"
+  },
+  "step": 293,
+  "last_metrics": [
+    {
+      "loss": "9.387",
+      "grad_norm": "19.38",
+      "learning_rate": "0",
+      "epoch": "0.000256"
+    },
+    {
+      "loss": "4.851",
+      "grad_norm": "2.201",
+      "learning_rate": "5.051e-05",
+      "epoch": "0.0256"
+    },
+    {
+      "loss": "2.803",
+      "grad_norm": "1.781",
+      "learning_rate": "0.0001",
+      "epoch": "0.0512"
+    }
+  ],
+  "gpu": "93 %, 38903 MiB",
+  "disk_free_gib": 83.81908798217773,
+  "prior_round_exitcode": "0",
+  "shared_data_manifest_sha256": "aab7a9237d69484044504eac5c998f9f7ebd9c5573ad4d1e31fb4f41705e1e3d",
+  "source_sha256": {
+    "train_sweep.py": "ece6d6a6f26381cf27a740c04db11e79e45ce0a5149a7f2d3df6aad9c648465c",
+    "tests/test_train_sweep.py": "74808ff3f442f6961b1400bde339ba64566eac31580bcaf9e04f334bdc8a6518",
+    "configs/hpo_005_architecture_extension/sweep.json": "daa82524177f1b24d18171f7f3522e173366f4b61c6db9f80d02bab12ce62d1c"
+  }
+}

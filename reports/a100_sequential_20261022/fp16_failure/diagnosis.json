@@ -1,0 +1,13 @@
+{
+  "checkpoint13000_scale": 4194304,
+  "checkpoint14000_scale": 8388608,
+  "growth_interval": 2000,
+  "checkpoint14000_growth_tracker": 0,
+  "forward_logged_losses_finite": true,
+  "guard_before_native_scaler_step": true,
+  "cause": "AMP overflow after scale growth plausible; guard incompatibility confirmed independently",
+  "error": "FloatingPointError: Nonfinite gradients; stop before updating weights.",
+  "last_eval_token_loss": 0.2684728041764027,
+  "checkpoint": "stage2/trials/repeat4m/checkpoint-14000",
+  "remote_restarted": false
+}

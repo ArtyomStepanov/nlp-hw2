@@ -1,0 +1,46 @@
+[
+  {
+    "name": "e8_d12_lr1e-04",
+    "output_dir": "/workspace/nlp-hw2/artifacts/sweeps/hpo_005_architecture_extension/trials/e8_d12_lr1e-04",
+    "encoder_layers": 8,
+    "decoder_layers": 12,
+    "learning_rate": 0.0001,
+    "train_batch_size": 128,
+    "gradient_accumulation_steps": 2,
+    "num_train_epochs": 1,
+    "seed": 42
+  },
+  {
+    "name": "e8_d12_lr2e-04",
+    "output_dir": "/workspace/nlp-hw2/artifacts/sweeps/hpo_005_architecture_extension/trials/e8_d12_lr2e-04",
+    "encoder_layers": 8,
+    "decoder_layers": 12,
+    "learning_rate": 0.0002,
+    "train_batch_size": 128,
+    "gradient_accumulation_steps": 2,
+    "num_train_epochs": 1,
+    "seed": 42
+  },
+  {
+    "name": "e8_d8_lr2e-04",
+    "output_dir": "/workspace/nlp-hw2/artifacts/sweeps/hpo_005_architecture_extension/trials/e8_d8_lr2e-04",
+    "encoder_layers": 8,
+    "decoder_layers": 8,
+    "learning_rate": 0.0002,
+    "train_batch_size": 128,
+    "gradient_accumulation_steps": 2,
+    "num_train_epochs": 1,
+    "seed": 42
+  },
+  {
+    "name": "e10_d10_lr3e-04",
+    "output_dir": "/workspace/nlp-hw2/artifacts/sweeps/hpo_005_architecture_extension/trials/e10_d10_lr3e-04",
+    "encoder_layers": 10,
+    "decoder_layers": 10,
+    "learning_rate": 0.0003,
+    "train_batch_size": 128,
+    "gradient_accumulation_steps": 2,
+    "num_train_epochs": 1,
+    "seed": 42
+  }
+]

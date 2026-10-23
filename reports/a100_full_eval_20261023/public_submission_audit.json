@@ -1,0 +1,55 @@
+{
+  "status": "static_identity_checked",
+  "public_scores": {
+    "old002": {
+      "passed": 735,
+      "eligible": 960,
+      "reported_percent": 76.56
+    },
+    "full_bart": {
+      "passed": 729,
+      "eligible": 960,
+      "reported_percent": 75.94
+    },
+    "delta_passed": -6,
+    "delta_percentage_points": -0.625,
+    "source": "User-provided bot screenshots; private labels unavailable"
+  },
+  "private_quality": "unknown",
+  "old_submission_sha256": "15f52fbf028511a0dc78c8b34aefce82cda4d0bba2b5158c78760156f654dcd5",
+  "new_submission_sha256": "4d4a229127b93f08c9c227dda4fe1268ed371ca77f8c5ee913ef35d2e7033256",
+  "rows_each": 1919,
+  "same_answer_strings": 729,
+  "examples": [
+    {
+      "row": 1,
+      "question": "Student: The area of a triangle is 54 square inches. The base of the triangle is 12 inches. Find the height of the triangle in inches.",
+      "old_code": "def solve() -> int:\n    area = 54\n    base = 12\n    height = area / base\n    result = height\n\n    return result\n",
+      "new_code": "def solve() -> int:\n    base = 12\n    area = 54\n    height = area / base\n    result = height\n\n    return result\n",
+      "old_result": 4.5,
+      "new_result": 4.5,
+      "bot_reference_result": 9
+    },
+    {
+      "row": 2,
+      "question": "A restaurant sells 200 burgers on a regular day. For a promotion, they decided to sell 300 burgers a day for a discounted price of $3 per burger. If their regular price was $4 per burger, how much revenue will they earn on the day of promotion?",
+      "old_code": "def solve() -> int:\n    regular_burgers = 200\n    discounted_burgers = 300\n    regular_price = 4\n    discounted_price = 3\n    regular_revenue = regular_burgers * regular_price\n    discounted_revenue = discounted_burgers * discounted_price\n    total_revenue = regular_revenue + discounted_revenue\n    result = total_revenue\n    return result\n",
+      "new_code": "def solve() -> int:\n    regular_burgers = 200\n    discounted_burgers = 300\n    discounted_price = 3\n    regular_price = 4\n    revenue_regular = regular_burgers * regular_price\n    revenue_discounted = discounted_burgers * discounted_price\n    total_revenue = revenue_regular + revenue_discounted\n    result = total_revenue\n    return result\n",
+      "old_result": 1700,
+      "new_result": 1700,
+      "bot_reference_result": 900
+    },
+    {
+      "row": 5,
+      "question": "A clothing store owner orders 25 shirts every day. After 3 months, he had sold 750 shirts but still had 2000 in stock. How many shirts did he have originally?",
+      "old_code": "def solve() -> int:\n    shirts_per_day = 25\n    \n    days_in_3_months = 3 * 30\n    \n    total_shirts_ordered = shirts_per_day * days_in_3_months\n    \n    shirts_sold = 750\n    \n    shirts_in_stock = 2000\n    \n    original_shirts = total_shirts_ordered + shirts_sold - shirts_in_stock\n    \n    result = original_shirts\n    \n    return result\n",
+      "new_code": "def solve() -> int:\n    shirts_ordered_per_day = 25\n    months = 3\n    shirts_sold = 750\n    shirts_in_stock = 2000\n    \n    total_shirts_ordered = shirts_ordered_per_day * 30 * months\n    original_shirts = total_shirts_ordered + shirts_in_stock - shirts_sold\n    \n    result = original_shirts\n    return result\n",
+      "old_result": 1000,
+      "new_result": 3500,
+      "bot_reference_result": 5000
+    }
+  ],
+  "screenshot_sha256": "1bbc63ead2fd55284562e7a2caa023fe7a140fccd5ef31b158e4d73cdadb3a71",
+  "screenshot_local_ignored_path": "artifacts/a100_full_eval_20261023/public_result_screenshot.png",
+  "example_scope": "Only the three user-shown bot errors, not all 960 public labels. Both models fail these three examples. No target-based tuning or denominator correction."
+}

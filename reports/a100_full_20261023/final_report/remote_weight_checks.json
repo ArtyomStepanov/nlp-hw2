@@ -1,0 +1,23 @@
+{
+  "checked_at": "2026-10-23T13:36:07.932813+00:00",
+  "status": "passed",
+  "source_files_verified": 26,
+  "final_exactly_matches_best": true,
+  "all_best_latest_final_tensors_finite": true,
+  "tensor_count": 344,
+  "unique_tensor_elements_including_buffers": 244399936,
+  "trainable_parameters": 244391936,
+  "stored_tensor_dtypes": ["torch.float32"],
+  "training_precision": "fp16 AMP",
+  "latest_differs_from_best_tensor_count": 320,
+  "best_checkpoint": "checkpoint-180000",
+  "latest_checkpoint": "checkpoint-181144",
+  "resumable_state_files_present_in_both": ["optimizer.pt", "scheduler.pt", "scaler.pt", "rng_state.pth", "trainer_state.json", "run_manifest.json"],
+  "weight_sha256": {
+    "checkpoint-180000/model.safetensors": "2059268173416c77cd8c901c791eb86e7cbcea0ede756b2bb830ec23638b8165",
+    "checkpoint-181144/model.safetensors": "1a0a46502e93933c0beabd1224ab7ebef050f32ab9a5401f7e5a250ba96c8602",
+    "final/model.safetensors": "2059268173416c77cd8c901c791eb86e7cbcea0ede756b2bb830ec23638b8165"
+  },
+  "weight_bytes_per_file": 977639840,
+  "weights_downloaded_locally": false
+}

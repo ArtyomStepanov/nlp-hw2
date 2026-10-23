@@ -1,0 +1,15 @@
+{
+  "vocab_size": 8000,
+  "d_model": 1024,
+  "encoder_layers": 8,
+  "decoder_layers": 8,
+  "attention_heads": 8,
+  "ffn_dim": 4096,
+  "max_position_embeddings": 512,
+  "dropout": 0.1,
+  "attention_dropout": 0.0,
+  "pad_token_id": 0,
+  "bos_token_id": 2,
+  "eos_token_id": 3,
+  "unk_token_id": 1
+}

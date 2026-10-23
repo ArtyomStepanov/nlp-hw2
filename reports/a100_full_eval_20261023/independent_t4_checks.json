@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "status": "passed",
+  "checked_at": "2026-10-23T14:15:26.588280+00:00",
+  "scope": "Independent local receipt, source, question-order, submission and timing verification. No browser/remote calls, model-weight loading, or generated-code execution.",
+  "checks": {
+    "all_9_download_receipts_and_result_archive_match": true,
+    "all_6_result_manifest_receipts_match": true,
+    "original_and_overlay_manifests_link_to_actual_best180000_sha": true,
+    "all_unchanged_small_bundle_sources_tokenizer_and_saved_configs_match": true,
+    "overlay_only_changes_effective_default_validation": true,
+    "all_1919_official_questions_and_original_order_match": true,
+    "every_submission_code_matches_prediction_in_original_order": true,
+    "all_source_lengths_and_15_batches_recomputed": true,
+    "generation_batch_sum_and_synchronized_outer_scope_verified": true,
+    "no_generation_warmup_in_frozen_source": true,
+    "complete_receipt_and_both_recorded_timers_under_180_seconds": true,
+    "screenshot_consistent_with_saved_metrics": true
+  },
+  "checkpoint_step": 180000,
+  "training_attempts": 181144,
+  "weight_sha256": "2059268173416c77cd8c901c791eb86e7cbcea0ede756b2bb830ec23638b8165",
+  "gpu": "Tesla T4",
+  "compute_capability": [
+    7,
+    5
+  ],
+  "batch_size": 128,
+  "num_beams": 4,
+  "length_penalty": 1.0,
+  "max_new_tokens": 256,
+  "official_test_rows": 1919,
+  "question_order_sha256": "6dd86866b2ed86a09781b7f471fc2fce5c00975503c4a85f1ec959dae0b93279",
+  "source_truncated": 0,
+  "hit_token_limit": 0,
+  "empty_answers": 0,
+  "timing": {
+    "batch_sum_seconds": 164.66872661000025,
+    "total_seconds": 165.07392259200014,
+    "outer_seconds": 165.10661156800006,
+    "load_seconds": 4.298147315000051,
+    "load_plus_outer_seconds": 169.4047588830001,
+    "outer_margin_under_180_seconds": 14.893388431999938,
+    "peak_allocated_gib": 8.069822311401367,
+    "scope": "Tokenization, length sorting, transfers, generation, decoding and prediction assembly; checkpoint loading, dependency installation and file writing excluded. No generation warmup."
+  },
+  "provenance": {
+    "download_receipt_sha256": "c0c3128df39c595e7d90cd9f7f8854076ee9a8d98a21efb422b8714249e11dfe",
+    "result_archive_sha256": "c53116eed939b7b4f021826d9cbd46a56ed56eb1da13c67000a99c583c83673c",
+    "original_bundle_manifest_sha256": "06916a34eb73d999937de3a9e0c9662636b521b4a4513c7bcc5e12a747dd2ab7",
+    "overlay_bundle_manifest_sha256": "6c91d0b45bf808b9d8f0648d8aadc509707516914fe797d294e9446efb27f549",
+    "benchmark_original_sha256": "f5087b3ef09677a413ce9e9d8aab2bd670b17bd4fbefc1a4c149e65641b059b6",
+    "benchmark_overlay_sha256": "41343c797a415237bbd98bedbcdf4f27d9ec848988e1d7c0807f08884fd36829",
+    "submission_sha256": "4d4a229127b93f08c9c227dda4fe1268ed371ca77f8c5ee913ef35d2e7033256",
+    "screenshot_sha256": "ed8667cf6067d83588f600471d5d7f1ed0c4ba101e5f01c2c8115e9a21021050"
+  },
+  "limits": [
+    "Weight identity is chained through the pinned runtime benchmark verification and manifests; model-weight payload was not loaded or rehashed locally.",
+    "This verifies recorded inference timing on one Tesla T4 run; generated official-test programs were not executed and hidden-test accuracy is unknown."
+  ],
+  "findings": []
+}

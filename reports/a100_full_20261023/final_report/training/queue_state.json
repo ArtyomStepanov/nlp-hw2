@@ -1,0 +1,10 @@
+{
+  "status": "complete",
+  "phase": "complete",
+  "driver_pid": 225026,
+  "architecture": "bart",
+  "started_at": "2026-10-22T22:27:07.431409+00:00",
+  "trial": "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_full_20261023/training/trial",
+  "updated_at": "2026-10-23T13:26:37.878955+00:00",
+  "resume_from": null
+}

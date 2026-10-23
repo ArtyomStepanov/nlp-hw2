@@ -1,0 +1,22 @@
+{
+  "status": "training",
+  "pipeline_pid": 268796,
+  "tmux": "nlp-a100-dropout-20261023",
+  "remote_root": "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_dropout_continue_20261023",
+  "checked_at": "2026-10-23T15:09:31.347435+00:00",
+  "snapshot_archive_sha256": "51251efdbc42956db169777e26a903a6580192641c71b1458126fea0026f24ff",
+  "validation": "306 full tests passed; independent review no blockers; GPU preflight finite; full baseline finite",
+  "driver_pid": 268935,
+  "driver_started_at": "2026-10-23T15:04:24.724546+00:00",
+  "initial_eval_token_loss": 0.19102141552704124,
+  "preflight": {
+    "status": "complete",
+    "global_step": 2,
+    "peak_allocated_gib": 21.141717433929443,
+    "amp_overflow_count": 0
+  },
+  "automation_id": "a100-dropout",
+  "confirmed_step": 105,
+  "planned_step_attempts": 90572,
+  "last_logged_train_loss": 0.2131
+}

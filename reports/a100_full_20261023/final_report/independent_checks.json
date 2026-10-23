@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "status": "passed",
+  "checked_at": "2026-10-23T13:38:51.235267+00:00",
+  "scope": "Independent local JSON/history/source-archive and download-receipt checks; no remote calls, generation, generated-program execution, or weights downloaded.",
+  "checks": {
+    "all_34_remote_size_and_sha_receipts_match": true,
+    "completion_request_and_launch_identity_match": true,
+    "frozen_4epoch_fp16_global256_seed42_model_optimizer_schedule_match": true,
+    "full_original_rows_and_bundle_manifest_identity_match": true,
+    "tokenizer_sha_identical_at_best_latest_final_and_source": true,
+    "all_26_archived_source_hashes_and_12_training_source_identities_match": true,
+    "early_stopping_state_preserved_and_epoch_cap_reached": true,
+    "scheduled_eval_steps_and_final_repeat_match": true,
+    "all_logged_train_eval_and_completion_numbers_finite": true,
+    "best180000_latest181144_manifests_and_history_prefixes_consistent": true,
+    "final_export_provenance_records_restored_best": true
+  },
+  "downloaded_files": 34,
+  "downloaded_bytes": 4110389,
+  "pipeline_exitcode": 0,
+  "completion_reason": "Reached four-epoch limit; patience counter 1 remained below 5.",
+  "train_rows": 11593060,
+  "validation_rows": 118302,
+  "global_step_attempts": 181144,
+  "history_rows": 1851,
+  "train_loss_rows": 1812,
+  "validation_rows_logged": 38,
+  "best": {
+    "step": 180000,
+    "eval_token_loss": 0.19102131500784642
+  },
+  "latest": {
+    "step": 181144,
+    "eval_token_loss": 0.1910216021814018
+  },
+  "final": {
+    "weights_source": "best_eval_token_loss",
+    "repeated_best_eval_token_loss": 0.1910215738661824,
+    "repeated_minus_recorded_best": 2.5885833598859875e-07
+  },
+  "native_amp": {
+    "overflow_count": 66,
+    "final_loss_scale": 1048576.0,
+    "scope": "current_process_session"
+  },
+  "trainable_parameters": 244391936,
+  "runtime_seconds": 53940.95045078918,
+  "finished_at": "2026-10-23T13:26:37.277760+00:00",
+  "limits": [
+    "Weight tensor equality, finiteness, remote optimizer/scheduler/scaler/RNG presence and current remote source hashes are covered by the parent agent separate remote verification.",
+    "No solve-result generation/pass@1 evaluation of the new full-data model was performed by this check.",
+    "The final repeated evaluation of restored best weights differs from the recorded best by about 2.59e-7; report each metric at its recorded evaluation stage."
+  ],
+  "receipt_sha256": "b67b190aaebb96d42515835f182f15e12011e5e7add8a741ea3dbe4e5cff3e71",
+  "findings": [],
+  "separate_parent_remote_proof": {
+    "path": "remote_weight_checks.json",
+    "sha256": "261b58c0f712ff9567d6209dcce8bd8752cb25aa2f44ce26f43ea622c56c7ab8",
+    "receipt_consistent_with_local_provenance": true,
+    "independently_reexecuted": false
+  }
+}

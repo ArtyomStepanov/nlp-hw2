@@ -1,0 +1,19 @@
+{
+  "architecture": "copy",
+  "checkpoint": "/kaggle/input/notebooks/artyomstep/nlp-hw2-copy-008-1m/copy_008_1m/final",
+  "checkpoint_step": 3907,
+  "validation_rows": 20000,
+  "validation_sha256": "282001d478bffb2d13ab2ca41e8232a0c99c3623f898dd7077128c266172c406",
+  "bundle_sha256": "7480c7d1778bffce50db987019f2ccf87c06f8643c1ce59ad811e4fd3c77d0e1",
+  "selection_sha256": "aab7a9237d69484044504eac5c998f9f7ebd9c5573ad4d1e31fb4f41705e1e3d",
+  "device": "cuda:0",
+  "batch_size": 64,
+  "num_beams": 4,
+  "max_new_tokens": 256,
+  "do_sample": false,
+  "use_cache": true,
+  "reference_source": "Full saved validation labels, decoded without truncation",
+  "evaluation_split": "validation; used during training for loss monitoring",
+  "official_test_used": false,
+  "started_at": "2026-10-20T11:37:27.915294+00:00"
+}

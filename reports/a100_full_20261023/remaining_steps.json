@@ -1,0 +1,48 @@
+{
+  "full_training": "complete",
+  "pass_at_1_on_original_fixed_20k_validation": {
+    "status": "complete_verified",
+    "expected_num_eligible": 19886,
+    "expected_num_excluded": 114,
+    "generation": {
+      "num_beams": 4,
+      "length_penalty": 1.0,
+      "max_new_tokens": 256
+    },
+    "validation_sha256": "282001d478bffb2d13ab2ca41e8232a0c99c3623f898dd7077128c266172c406",
+    "num_passed": 14775,
+    "pass_at_1": 0.7429850145831238,
+    "baseline_num_passed": 13657,
+    "delta_percentage_points": 5.622045660263502,
+    "report": "../a100_full_eval_20261023/comparison_checks.json"
+  },
+  "t4_benchmark": {
+    "status": "complete_passed_observed_run",
+    "official_limit_seconds": 180,
+    "actual_full_finalist_checkpoint_benchmarked_on_t4": true,
+    "runtime_and_checkpoint_pair_verified_available": true,
+    "a100_timing_establishes_t4_compliance": false,
+    "gpu": "Tesla T4",
+    "num_questions": 1919,
+    "total_seconds": 165.07392259200014,
+    "wall_generation_seconds": 165.10661156800006,
+    "load_seconds": 4.298147315000051,
+    "peak_allocated_gib": 8.069822311401367,
+    "within_180_seconds": true,
+    "report": "../a100_full_eval_20261023/t4_batch128/benchmark/metrics.json"
+  },
+  "new_experiments_started_after_full_completion": true,
+  "updated_at": "2026-10-23T14:15:41.330794+00:00",
+  "post_training_evaluation_started": true,
+  "new_training_started_after_full_completion": false,
+  "external_submission": {
+    "status": "submitted_by_user_public_result_known",
+    "prepared_jsonl": "../a100_full_eval_20261023/t4_batch128/benchmark/a100_full_best180000_beam4_t4.jsonl",
+    "public_num_passed": 729,
+    "public_num_evaluated": 960,
+    "public_pass_at_1": 0.759375,
+    "private_result": "unknown"
+  },
+  "remaining_authorized_measurements": [],
+  "post_training_experiment_scope": "Only explicitly authorized original20k pass@1 and actual full-finalist T4 benchmark; no new training"
+}

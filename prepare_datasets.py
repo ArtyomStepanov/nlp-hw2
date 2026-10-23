@@ -1,5 +1,6 @@
 """Очистка Python-кода в Hugging Face datasets и воспроизводимое разбиение."""
 
+import ast
 import io
 import math
 import tokenize
@@ -11,13 +12,16 @@ import datasets as ds
 def remove_code_comments(code: str) -> str:
     """Удалить Python-комментарии #, сохранив строки, docstring и переносы строк.
 
-    Если код нельзя токенизировать, возникает ValueError. Код не исполняется.
+    Если код нельзя токенизировать, возникает ValueError. На Python 3.10/3.11
+    корректность спорных Unicode-токенов дополнительно проверяется парсером.
+    Код не исполняется и не нормализуется.
     """
     if not isinstance(code, str):
         raise TypeError("Код должен быть строкой.")
 
     lines = io.StringIO(code).readlines()
     comments: dict[int, list[tuple[int, int]]] = {}
+    error_token: str | None = None
     try:
         for token in tokenize.generate_tokens(io.StringIO(code).readline):
             if token.type == tokenize.COMMENT:
@@ -25,9 +29,18 @@ def remove_code_comments(code: str) -> str:
                 start, end = token.start[1], token.end[1]
                 comments.setdefault(line_index, []).append((start, end))
             elif token.type == tokenize.ERRORTOKEN and not token.string.isspace():
-                raise ValueError(f"Не удалось токенизировать код: {token.string!r}.")
+                if error_token is None:
+                    error_token = token.string
     except (tokenize.TokenError, SyntaxError) as error:
         raise ValueError(f"Не удалось токенизировать код: {error}") from error
+
+    if error_token is not None:
+        # Старый tokenize не распознаёт часть допустимых Unicode-символов
+        # в именах (например, ＿). Парсер Python принимает такие имена.
+        try:
+            ast.parse(code)
+        except (SyntaxError, ValueError) as error:
+            raise ValueError(f"Не удалось токенизировать код: {error_token!r}.") from error
 
     for line_index, spans in comments.items():
         # Удаляем с конца, чтобы сохранить исходные позиции остальных токенов.

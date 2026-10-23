@@ -1,0 +1,9 @@
+{
+  "pid": 3613,
+  "identity": "287276362",
+  "checkpoint": "/workspace/nlp-hw2/artifacts/experiments/transformer_003_10x10_d1024_h100/checkpoint-15000",
+  "step": 15000,
+  "paused_at": 1792425192.0271673,
+  "resume_script": "/workspace/nlp-hw2/artifacts/launches/transformer_003_10x10_d1024_h100/resume_after_sweep.sh",
+  "reason": "User authorized pausing full training after checkpoint for four 1M-example one-epoch trials"
+}

@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "status": "verified",
+  "request_sha256": "43fb0a3d0e076466f76b4385c459e1f3bdcd4e2ea4beda0fd4f3dff2db94603c",
+  "result": {
+    "num_examples": 20000,
+    "num_evaluated": 19886,
+    "num_passed": 13657,
+    "num_bad_code": 70,
+    "pass@1": 0.6867645579804887,
+    "bad_code_rate": 0.0035,
+    "wrong_answer_rate": 0.3097153776526199,
+    "reference_error_rate": 0.0057,
+    "evaluation_coverage": 0.9943,
+    "evaluation_seconds": 248.60350800305605,
+    "status_counts": {
+      "passed": 13657,
+      "wrong_answer": 6159,
+      "runtime_error": 64,
+      "ok": 114,
+      "invalid_output": 3,
+      "syntax_error": 3
+    },
+    "reference_status_counts": {
+      "ok": 19886,
+      "unsupported_code": 27,
+      "runtime_error": 76,
+      "invalid_output": 11
+    },
+    "prediction_column": "generated_code",
+    "reference_column": "code",
+    "comparison": "reference_solve",
+    "architecture": "bart",
+    "num_beams": 4,
+    "max_new_tokens": 256,
+    "length_penalty": 1.0,
+    "generation_seconds": 469.0115721002221,
+    "validation_sha256": "282001d478bffb2d13ab2ca41e8232a0c99c3623f898dd7077128c266172c406",
+    "evaluation_split": "validation",
+    "num_reference_errors": 114,
+    "num_hit_token_limit": 15,
+    "passed_fraction_of_all_sampled": 0.68285,
+    "finished_at": "2026-10-22T21:47:32.055096+00:00"
+  },
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 879,
+      "sha256": "69990939b5adacf1f1c277971ace759068ccf0c657fd07f2a8ce95eaf87068ff"
+    },
+    {
+      "path": "evaluation/evaluation.jsonl",
+      "bytes": 20003040,
+      "sha256": "5e4472b48df843c70030d4577fbd0a4b7b85aed6c001560b40ab42f348fa739e"
+    },
+    {
+      "path": "evaluation/evaluation_config.json",
+      "bytes": 368,
+      "sha256": "1155e5265b46cf50e1b44565e11d60c27770c433ce1787d02f1c300cef3c5a61"
+    },
+    {
+      "path": "evaluation/metrics.json",
+      "bytes": 708,
+      "sha256": "155086e0c527f1139cca9fd73633e769d488f2b30d3730a3320f2b87c69f6526"
+    },
+    {
+      "path": "metrics.json",
+      "bytes": 1131,
+      "sha256": "1c88221a5ac68f21fded2ce8267ea4dedd31514baef06bd9bb075695edf18ad1"
+    },
+    {
+      "path": "predictions.jsonl",
+      "bytes": 16209996,
+      "sha256": "b763cd5624d241d6eab9a1d25bc7c33adcff1ebf5ec701e61b79c931dff6a3de"
+    },
+    {
+      "path": "progress.json",
+      "bytes": 66,
+      "sha256": "d6ec878726a2e2fedefca6c653f9b7ba8863f67d684a916a279221fac67e35c5"
+    }
+  ],
+  "verified_at": "2026-10-22T21:47:33.168265+00:00"
+}

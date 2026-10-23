@@ -1,0 +1,9 @@
+{
+  "eval_loss": 0.8292531967163086,
+  "eval_token_loss": 0.8296048068755871,
+  "eval_target_tokens": 136979,
+  "eval_runtime": 0.9677,
+  "eval_samples_per_second": 2116.324,
+  "eval_steps_per_second": 8.267,
+  "epoch": 0.5586777224497907
+}

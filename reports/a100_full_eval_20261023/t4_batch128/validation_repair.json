@@ -1,0 +1,15 @@
+{
+  "status": "verified",
+  "original_bundle_root": "/content/a100_full_best180000_t4",
+  "overlay_root": "/content/a100_full_best180000_t4_defaults_fix",
+  "overlay_manifest_sha256": "6c91d0b45bf808b9d8f0648d8aadc509707516914fe797d294e9446efb27f549",
+  "repair": {
+    "kind": "generation_effective_default_validation",
+    "original_bundle_manifest_sha256": "06916a34eb73d999937de3a9e0c9662636b521b4a4513c7bcc5e12a747dd2ab7",
+    "original_benchmark_sha256": "f5087b3ef09677a413ce9e9d8aab2bd670b17bd4fbefc1a4c149e65641b059b6",
+    "repaired_benchmark_sha256": "41343c797a415237bbd98bedbcdf4f27d9ec848988e1d7c0807f08884fd36829",
+    "generation_behavior_changed": false,
+    "weights_changed": false,
+    "explanation": "Validate None with pinned Transformers effective defaults; reject explicit nondefaults. Generation configuration unchanged."
+  }
+}

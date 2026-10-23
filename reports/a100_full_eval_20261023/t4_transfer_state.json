@@ -1,0 +1,13 @@
+{
+  "status": "complete_verified",
+  "approval": "Explicit user reply: Да, загрузить в этот Colab",
+  "destination_notebook": "https://colab.research.google.com/drive/1xdx4Dil5nVZK_l8FlVZPJC7zLM8kKgiY",
+  "archive_bytes": 978377144,
+  "archive_sha256": "9845b2ad033482ad113dfc02592bbf72963520e4cf0c8c83403cd3ff144260da",
+  "public_sharing_created": false,
+  "last_observed_bytes_mib": 171.0,
+  "colab_cell": "75vd4gQhDoRa",
+  "benchmark_complete": true,
+  "overlay_manifest_sha256": "6c91d0b45bf808b9d8f0648d8aadc509707516914fe797d294e9446efb27f549",
+  "results_archive_sha256": "c53116eed939b7b4f021826d9cbd46a56ed56eb1da13c67000a99c583c83673c"
+}

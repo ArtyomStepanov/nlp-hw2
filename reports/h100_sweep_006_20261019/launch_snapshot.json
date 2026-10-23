@@ -1,0 +1,39 @@
+{
+  "started_at": "2026-10-19T18:22:58.083755+00:00",
+  "tmux": "nlp-hpo-006",
+  "files_sha256": {
+    "models/t5.py": "d1ab22531c00453fb426a6e79f4c69b7ce9508f0849399b6241d4d23dee703bc",
+    "models/t5_attention.py": "3b32cf763518b5236af861d7b7c4cc41286a775e60f8412773b321e0c0f51388",
+    "models/__init__.py": "7561f6aa316549a93495826e8fc4c43e608bfce4b4b30a3ae2efa2b3164e1bd6",
+    "models/base.py": "a18e9a415bab03a5ef2ca313b7d9e27b515d8b20a8028648e9683bc8e999fbc0",
+    "models/baseline.py": "0896e2f2201be8650285344f535df04b70d3fa2a409403626338cec66506f9d8",
+    "models/config.py": "c21905d2da97eb18348bbc1afd877406db939886224b29abb912b54a8e2c6115",
+    "training.py": "0534bfafb34ff3bc38f02ea9402a6ca9add8615eb85f05f06254de2e88595f76",
+    "train_sweep.py": "9e6aa0bab9e9c331b01f749510f410a8e0799ab93744e8b1648028c5cae80860",
+    "configs/hpo_006_t5/sweep.json": "c95608a0c85651633cd3c65f56bb8f7c10ae3aee2b45d6f7ccce6d985252066c",
+    "tests/test_t5.py": "501a958be6fd492d40a5e6fb55fcc8a2b6538578bb2e102c6324fe92333c789f",
+    "tests/test_train_sweep.py": "ab5e22b0454eb9a7b65845671ead9304b8d99a9754d3dc6ec1e23fdb9cb88aae",
+    "tests/test_training.py": "b6b17f780f43664beaa50ef647695b719f1fa4229b7a540cdacac5637fc836d5",
+    "reports/h100_sweep_006_20261019/validate_t5_h100.py": "e6e6fe3611a0911a4ccc1dc00670f740a815ff1e08ac7833c027303ef116b97a",
+    "reports/h100_sweep_006_20261019/launch.sh": "843b289c9c8b7294174f14651f0694a104510a6058a7d78430ff325e8ac672fc"
+  },
+  "data_manifest_sha256": "aab7a9237d69484044504eac5c998f9f7ebd9c5573ad4d1e31fb4f41705e1e3d",
+  "tokenizer_sha256": "abd75c8655b948f612ebbf065a12269613269a4755cd0a698b0bf7a5bc1e9704",
+  "probe": {
+    "parameters": 247310848,
+    "worst_case_peak_allocated_gib": 36.001307010650635,
+    "real_batch": {
+      "source_length": 104,
+      "target_length": 160,
+      "step_seconds": [
+        0.26005918625742197,
+        0.2612038920633495,
+        0.26437807362526655
+      ],
+      "examples_per_second": 977.5455347491144,
+      "peak_allocated_gib": 21.00372076034546,
+      "loss": 7.311657190322876
+    }
+  },
+  "pane_pid": "15684"
+}

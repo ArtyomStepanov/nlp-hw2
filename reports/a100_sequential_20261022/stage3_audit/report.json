@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "purpose": "Inspection samples only; no new or corrected targets.",
+  "sampling": {
+    "seed": 42,
+    "sample_size": 200,
+    "algorithm": "Python random.Random(seed).sample, independently per split; sorted by sample_row"
+  },
+  "provenance": {
+    "original_bundle_root": "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/bundle",
+    "evaluation_dir": "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage2_recovery/evaluations/distinct4m",
+    "original_bundle_sha256": "7480c7d1778bffce50db987019f2ccf87c06f8643c1ce59ad811e4fd3c77d0e1",
+    "original_selection_sha256": "aab7a9237d69484044504eac5c998f9f7ebd9c5573ad4d1e31fb4f41705e1e3d",
+    "tokenizer_sha256": "abd75c8655b948f612ebbf065a12269613269a4755cd0a698b0bf7a5bc1e9704",
+    "original_source": "/workspace/nlp-hw2/artifacts/experiments/transformer_003_10x10_d1024_h100/preprocessed/4879438077e0cb46363513447b8659890aeae228b22084a5856ab2ac5b6560fc/dataset",
+    "evaluation_bundle_sha256": "bab34556554696fd8927f4914df1aa835b9d1c8290bf180d4a5143a34381721c",
+    "evaluation_selection_sha256": "80357f04410a2cb1812d71fed3c66c61c6e8367a140c2911af44bff325d29d13",
+    "checkpoint": "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage2_recovery/trials/distinct4m/final",
+    "architecture": "bart",
+    "validation_sha256": "282001d478bffb2d13ab2ca41e8232a0c99c3623f898dd7077128c266172c406",
+    "input_files": {
+      "config": {
+        "path": "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage2_recovery/evaluations/distinct4m/config.json",
+        "sha256": "69990939b5adacf1f1c277971ace759068ccf0c657fd07f2a8ce95eaf87068ff"
+      },
+      "metrics": {
+        "path": "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage2_recovery/evaluations/distinct4m/metrics.json",
+        "sha256": "1c88221a5ac68f21fded2ce8267ea4dedd31514baef06bd9bb075695edf18ad1"
+      },
+      "predictions": {
+        "path": "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage2_recovery/evaluations/distinct4m/predictions.jsonl",
+        "sha256": "b763cd5624d241d6eab9a1d25bc7c33adcff1ebf5ec701e61b79c931dff6a3de"
+      },
+      "evaluation": {
+        "path": "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage2_recovery/evaluations/distinct4m/evaluation/evaluation.jsonl",
+        "sha256": "5e4472b48df843c70030d4577fbd0a4b7b85aed6c001560b40ab42f348fa739e"
+      }
+    }
+  },
+  "counts": {
+    "train_rows": 1000000,
+    "validation_rows": 20000,
+    "eligible": 19886,
+    "eligible_passed": 13657,
+    "eligible_failed": 6229,
+    "excluded_reference_errors": 114,
+    "selected_errors": 200,
+    "train_sample": 200,
+    "all_statuses": {
+      "passed": 13657,
+      "wrong_answer": 6159,
+      "runtime_error": 64,
+      "ok": 114,
+      "invalid_output": 3,
+      "syntax_error": 3
+    },
+    "reference_statuses": {
+      "ok": 19886,
+      "unsupported_code": 27,
+      "runtime_error": 76,
+      "invalid_output": 11
+    },
+    "eligible_failure_statuses": {
+      "wrong_answer": 6159,
+      "runtime_error": 64,
+      "invalid_output": 3,
+      "syntax_error": 3
+    },
+    "sampled_failure_statuses": {
+      "wrong_answer": 198,
+      "runtime_error": 2
+    },
+    "sampled_syntax_errors": 0,
+    "sampled_no_top_level_solve": 0,
+    "sampled_hit_token_limit": 1
+  },
+  "limitations": [
+    "Executable references are eligible for the existing comparison, not proven semantically correct.",
+    "AST checks describe syntax and top-level definitions; saved execution results are not rerun.",
+    "Token-limit flags are saved generation diagnostics, not proof that an answer was truncated."
+  ],
+  "output_files": {
+    "selected_errors.jsonl": "607e1948b2a330faae33b99c68d011bb386e18b2395f95ad99c4685e4be84eaa",
+    "train_sample.jsonl": "703cfe94920466b33dfc80f3f030aae4c312bb702aa894530fc2683ae3c6ba22"
+  }
+}

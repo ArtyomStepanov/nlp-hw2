@@ -1,0 +1,14 @@
+{
+  "status": "complete",
+  "mode": "beam4",
+  "device": "cuda:1",
+  "num_beams": 4,
+  "batch_size": 64,
+  "precision": "fp16",
+  "max_new_tokens": 256,
+  "max_source_length": 256,
+  "checkpoint": "/home/artyom-step/workspace/nlp-hw2/artifacts/experiments/transformer_002_8x8_d768/checkpoint-50000",
+  "started_at_utc": "2026-10-13T12:09:29.845090+00:00",
+  "run_seconds": 320.0141952559352,
+  "completed_at_utc": "2026-10-13T12:14:49.859410+00:00"
+}

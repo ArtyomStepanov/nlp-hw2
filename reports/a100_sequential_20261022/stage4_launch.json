@@ -1,0 +1,15 @@
+{
+  "status": "launched",
+  "stage": 4,
+  "winner": "distinct4m",
+  "tmux": "nlp-a100-stage4-20261023",
+  "launched_at": "2026-10-22T22:07:35.188519+00:00",
+  "output": "stage4_decoding/",
+  "code": "stage2_recovery_code/",
+  "stage3_review_sha256": "a693c9f4b4f9b556968f37446b875a3e46e199be84c1dcfbfd5b692040267b66",
+  "launcher_sha256": "56b702f78df03a78dce1e9635b1023a7fe592335e61821c12c50feedfe94d4b4",
+  "gpu_free_before_bytes": 84849917952,
+  "grid_selection_rows": 2000,
+  "final_confirmation_rows": 20000,
+  "max_new_tokens": 256
+}

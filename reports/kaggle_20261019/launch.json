@@ -1,0 +1,62 @@
+{
+  "archive": "/Users/artyom-step/nlp-hw2/artifacts/kaggle_20261019/nlp_hw2_kaggle.zip",
+  "archive_bytes": 147823117,
+  "archive_sha256": "8e3bd611db9993968abb3c3aa2989e00367f3a01dd7860e547c0c2bd0810a72d",
+  "bundle_manifest_sha256": "7480c7d1778bffce50db987019f2ccf87c06f8643c1ce59ad811e4fd3c77d0e1",
+  "selection_sha256": "aab7a9237d69484044504eac5c998f9f7ebd9c5573ad4d1e31fb4f41705e1e3d",
+  "file_count": 26,
+  "uncompressed_bytes": 820000860,
+  "status": "both_version_2_completed_successfully",
+  "t5_url": "https://www.kaggle.com/code/artyomstep/nlp-hw2-t5-007-1m/edit",
+  "copy_url": "https://www.kaggle.com/code/artyomstep/nlp-hw2-copy-008-1m/edit",
+  "dataset_url": "https://www.kaggle.com/datasets/artyomstep/nlp-hw2-fixed-1m-t5-copy-20261019",
+  "requested_gpu": "T4 x2 per notebook",
+  "train_rows": 1000000,
+  "validation_rows": 20000,
+  "global_batch": 256,
+  "epochs": 1,
+  "learning_rate": 0.0002,
+  "tests_passed": 129,
+  "first_copy_run": {
+    "version": 1,
+    "run_id": 360168202,
+    "status": "failed_in_preflight",
+    "reason": "HF explicit torch_compile_backend overrode torch_compile=False; torch2.11 DDP Inductor invalid output node"
+  },
+  "first_t5_run": {
+    "version": 1,
+    "status": "cancelled"
+  },
+  "expected_precision": "fp16",
+  "dataset_version": 3,
+  "precision": "fp16",
+  "torch_compile": false,
+  "jobs": {
+    "copy": {
+      "version": 2,
+      "run_id": 360171441,
+      "status": "success",
+      "url": "https://www.kaggle.com/code/artyomstep/nlp-hw2-copy-008-1m",
+      "global_step": 3907,
+      "eval_token_loss": 0.39254692065173874,
+      "wall_seconds": 7444.498771568,
+      "finished_at": "2026-10-19T22:38:04.803396+00:00"
+    },
+    "t5": {
+      "version": 2,
+      "run_id": 360171567,
+      "status": "success",
+      "url": "https://www.kaggle.com/code/artyomstep/nlp-hw2-t5-007-1m",
+      "global_step": 3907,
+      "eval_token_loss": 1.0128972864446282,
+      "wall_seconds": 10756.214713170999,
+      "finished_at": "2026-10-19T23:42:25.282155+00:00"
+    }
+  },
+  "last_checked_utc": "2026-10-20T11:12:49.264Z",
+  "corrected_gpu_preflight_verified": true,
+  "full_training_progress_verified": true,
+  "queue_screenshot": "/Users/artyom-step/nlp-hw2/reports/kaggle_20261019/queued_jobs.jpg",
+  "full_training_completed_verified": true,
+  "results_path": "reports/kaggle_20261019/results_summary.json"
+}

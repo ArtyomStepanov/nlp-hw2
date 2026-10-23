@@ -1,0 +1,29 @@
+{
+  "step": 50000,
+  "max_steps": 362284,
+  "lr": [
+    9.789718429409466e-05,
+    9.789718429409466e-05
+  ],
+  "optimizer_steps": [
+    50000
+  ],
+  "scheduler": {
+    "base_lrs": [
+      9.999999999999999e-05,
+      9.999999999999999e-05
+    ],
+    "last_epoch": 50000,
+    "_step_count": 50001,
+    "_is_initial": false,
+    "_get_lr_called_within_step": false,
+    "_last_lr": [
+      9.789718429409466e-05,
+      9.789718429409466e-05
+    ],
+    "lr_lambdas": [
+      {},
+      {}
+    ]
+  }
+}

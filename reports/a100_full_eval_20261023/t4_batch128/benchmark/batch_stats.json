@@ -1,0 +1,92 @@
+[
+  {
+    "batch": 0,
+    "num_examples": 128,
+    "source_width": 25,
+    "seconds": 6.011012425999979
+  },
+  {
+    "batch": 1,
+    "num_examples": 128,
+    "source_width": 27,
+    "seconds": 5.28704537700014
+  },
+  {
+    "batch": 2,
+    "num_examples": 128,
+    "source_width": 30,
+    "seconds": 4.4548402870000245
+  },
+  {
+    "batch": 3,
+    "num_examples": 128,
+    "source_width": 32,
+    "seconds": 6.393542876000083
+  },
+  {
+    "batch": 4,
+    "num_examples": 128,
+    "source_width": 35,
+    "seconds": 5.194858882000062
+  },
+  {
+    "batch": 5,
+    "num_examples": 128,
+    "source_width": 37,
+    "seconds": 6.35022684799992
+  },
+  {
+    "batch": 6,
+    "num_examples": 128,
+    "source_width": 40,
+    "seconds": 7.779710482000155
+  },
+  {
+    "batch": 7,
+    "num_examples": 128,
+    "source_width": 43,
+    "seconds": 7.3978840729998865
+  },
+  {
+    "batch": 8,
+    "num_examples": 128,
+    "source_width": 46,
+    "seconds": 11.847334477000004
+  },
+  {
+    "batch": 9,
+    "num_examples": 128,
+    "source_width": 49,
+    "seconds": 23.8518399579998
+  },
+  {
+    "batch": 10,
+    "num_examples": 128,
+    "source_width": 53,
+    "seconds": 10.340190754000105
+  },
+  {
+    "batch": 11,
+    "num_examples": 128,
+    "source_width": 59,
+    "seconds": 11.016954258000169
+  },
+  {
+    "batch": 12,
+    "num_examples": 128,
+    "source_width": 64,
+    "seconds": 12.657051999000032
+  },
+  {
+    "batch": 13,
+    "num_examples": 128,
+    "source_width": 74,
+    "seconds": 15.297490429999925
+  },
+  {
+    "batch": 14,
+    "num_examples": 127,
+    "source_width": 166,
+    "seconds": 30.788743482999962
+  }
+]

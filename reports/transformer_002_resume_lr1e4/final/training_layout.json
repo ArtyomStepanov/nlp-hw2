@@ -1,0 +1,14 @@
+{
+  "world_size": 2,
+  "per_device_train_batch_size": 64,
+  "gradient_accumulation_steps": 1,
+  "effective_batch_size": 128,
+  "train_rows": 11593060,
+  "steps_per_epoch": 90571,
+  "max_steps": 362284,
+  "dataset_fingerprint": "59ebc525571791733f851050d49d4a25a2ba5330ff775d360d868ec0bc6f35e0",
+  "seed": 42,
+  "learning_rate": 9.999999999999999e-05,
+  "lr_scheduler_type": "cosine",
+  "warmup_ratio": 0.05
+}

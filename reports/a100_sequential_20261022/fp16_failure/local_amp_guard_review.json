@@ -1,0 +1,66 @@
+{
+  "status": "local_patch_ready_for_review_no_remote_execution",
+  "changed_code": [
+    "kaggle_experiments.py",
+    "tests/test_amp_safety.py"
+  ],
+  "versions": {
+    "torch": "2.9.1",
+    "transformers": "5.10.2",
+    "accelerate": "1.15.0"
+  },
+  "confirmed_mechanism": [
+    "Trainer unscales/clips before on_pre_optimizer_step, then invokes optimizer.step.",
+    "Old guard aborts before GradScaler can finish a recorded overflow skip/backoff.",
+    "Finite scalar loss with FP16 backward overflow reproduced old failure for SGD and fused AdamW.",
+    "Native scaler preserves weights, backs scale 65536 to 32768, then permits a subsequent finite update.",
+    "Fused AdamW skips inside its kernel while Accelerate step_was_skipped remains false."
+  ],
+  "checkpoint_evidence_reported_by_parent": {
+    "checkpoint_13000": {
+      "scale": 4194304,
+      "growth_interval": 2000,
+      "_growth_tracker": 1000
+    },
+    "checkpoint_14000": {
+      "scale": 8388608,
+      "_growth_tracker": 0
+    },
+    "validation_loss_finite": true,
+    "inference": "Scale growth immediately before the failure strengthens recoverable scaled-overflow hypothesis; the offending gradient/batch was not captured."
+  },
+  "patch_behavior": [
+    "Permit nonfinite gradients only with an enabled GradScaler recording found_inf for the actual unwrapped optimizer.",
+    "Keep missing gradients, unscaled FP32/BF16 bad gradients, finite-forward-loss checks and loss/LR/evaluation metric checks fatal.",
+    "Permit a nonfinite grad_norm log only at that recorded overflow step after observed scale backoff; replace it with null in live logs and TrainerState history.",
+    "Reject nonstandard numeric NaN/Infinity when writing JSON.",
+    "Record amp_overflow_count and amp_loss_scale in log_history, and session-scoped amp_diagnostics in complete.json."
+  ],
+  "red_green": {
+    "red_command": "MPLBACKEND=Agg python3 -m pytest -q tests/test_amp_safety.py -k detected_amp_overflow --disable-warnings",
+    "red_result": "2 failed with old guard FloatingPointError: Nonfinite gradients; stop before updating weights.",
+    "focused_green_result": "18 passed",
+    "portable_green_command": "MPLBACKEND=Agg python3 -m pytest -q tests/test_amp_safety.py tests/test_kaggle_experiments.py -k 'not two_process'",
+    "portable_green_result": "29 passed, 2 deselected",
+    "final_tests_directory_command": "MPLBACKEND=Agg python3 -m pytest -q tests -k 'not two_process and not two_rank'",
+    "final_tests_directory_result": "240 passed, 1 failed, 3 deselected",
+    "remaining_environment_failure": {
+      "test": "tests/test_prepare_datasets.py::test_dataset_comments_support_unicode_with_multiple_processes",
+      "cause": "Sandbox denied multiprocessing SyncManager socket bind: PermissionError [Errno 1] Operation not permitted, propagated as EOFError."
+    },
+    "bare_pytest_attempt": "28 collection errors from duplicate test module names inside artifact backup trees; actual workspace tests were then scoped with tests/.",
+    "py_compile_result": "passed for kaggle_experiments.py and tests/test_amp_safety.py"
+  },
+  "residual_behavior": [
+    "No LR, batch, precision, data, configured schedule, or optimizer settings changed.",
+    "Installed Accelerate may advance the LR scheduler after a fused-kernel skipped update because its skip flag is false. This pre-existing stack behavior is characterized but deliberately not corrected by the guard patch.",
+    "amp_diagnostics overflow_count is scoped to the current process session and resets on resume.",
+    "Recorded scaler found_inf proves a protected overflow path, not that the original model/batch instability source is fully diagnosed."
+  ],
+  "remote_actions": [],
+  "commits": [],
+  "sha256": {
+    "kaggle_experiments.py": "b6d71da0e67bafac9c2fadf9b4db27064a10ac2da4d30a14e4f5a6b385f44734",
+    "tests/test_amp_safety.py": "e024f97473f475b209d077f634debfaaa8b5a3b8acf9a68b535cc3c8269a9f99"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "output_dir": "artifacts/sweeps/hpo_005_architecture_extension",
+  "prepared_data_dir": "artifacts/sweeps/hpo_004_1m_1epoch",
+  "tokenized_dataset": "artifacts/experiments/transformer_003_10x10_d1024_h100/preprocessed/4879438077e0cb46363513447b8659890aeae228b22084a5856ab2ac5b6560fc/dataset",
+  "tokenizer": "artifacts/tokenizer.json",
+  "train_rows": 1000000,
+  "validation_rows": 20000,
+  "seed": 42,
+  "micro_batch": 128,
+  "trials": [
+    {"encoder_layers": 8, "decoder_layers": 12, "learning_rate": 0.0001},
+    {"encoder_layers": 8, "decoder_layers": 12, "learning_rate": 0.0002},
+    {"encoder_layers": 8, "decoder_layers": 8, "learning_rate": 0.0002},
+    {"encoder_layers": 10, "decoder_layers": 10, "learning_rate": 0.0003}
+  ]
+}

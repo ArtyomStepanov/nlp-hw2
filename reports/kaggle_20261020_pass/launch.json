@@ -1,0 +1,194 @@
+{
+  "status": "complete",
+  "notebook_url": "https://www.kaggle.com/code/artyomstep/nlp-hw2-pass1-t5-copy-val20k-beam4-256",
+  "architectures": [
+    "copy",
+    "t5"
+  ],
+  "model_notebook_versions": {
+    "copy": 2,
+    "t5": 2
+  },
+  "train": false,
+  "evaluation_split": "validation",
+  "validation_rows": 20000,
+  "num_beams": 4,
+  "max_new_tokens": 256,
+  "batch_size": 64,
+  "requested_gpu": "T4 x2",
+  "precision": "fp16",
+  "rtol": 1e-06,
+  "atol": 1e-06,
+  "reference_error_policy": "exclude failed references; report denominator",
+  "checked_at": "2026-10-20T11:34:44.025402+00:00",
+  "gpu_verified": [
+    "Tesla T4",
+    "Tesla T4"
+  ],
+  "torch": "2.11.0+cu128",
+  "transformers": "5.10.2",
+  "processes": {
+    "copy": {
+      "physical_gpu": 0,
+      "pid": 141
+    },
+    "t5": {
+      "physical_gpu": 1,
+      "pid": 142
+    }
+  },
+  "kaggle_commit_status": "Save & Run All remains Committing, no version in history; direct draft execution started",
+  "screenshot": "reports/kaggle_20261020_pass/running.jpg",
+  "copy_local_result": {
+    "num_examples": 20000,
+    "num_evaluated": 19886,
+    "num_passed": 10248,
+    "num_bad_code": 376,
+    "pass@1": 0.5153374233128835,
+    "bad_code_rate": 0.0188,
+    "wrong_answer_rate": 0.46605652217640553,
+    "reference_error_rate": 0.0057,
+    "evaluation_coverage": 0.9943,
+    "evaluation_seconds": 243.63310066700797,
+    "status_counts": {
+      "passed": 10248,
+      "wrong_answer": 9268,
+      "runtime_error": 318,
+      "syntax_error": 43,
+      "ok": 108,
+      "invalid_output": 15
+    },
+    "reference_status_counts": {
+      "ok": 19886,
+      "unsupported_code": 27,
+      "runtime_error": 76,
+      "invalid_output": 11
+    },
+    "prediction_column": "generated_code",
+    "reference_column": "code",
+    "comparison": "reference_solve",
+    "architecture": "copy",
+    "num_beams": 4,
+    "max_new_tokens": 256,
+    "validation_sha256": "282001d478bffb2d13ab2ca41e8232a0c99c3623f898dd7077128c266172c406",
+    "evaluation_split": "validation",
+    "num_reference_errors": 114,
+    "num_hit_token_limit": 142,
+    "mean_generated_tokens": 62.0642,
+    "scoring_environment": {
+      "python": "3.13.4 (v3.13.4:8a526ec7cbe, Jun  3 2025, 21:14:54) [Clang 16.0.0 (clang-1600.0.26.6)]",
+      "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O"
+    },
+    "evaluator_sha256": "9ad4d6bb1c03d0d2eca15a597db3319cf264e7d3cfcc86149a609251a4e983d0",
+    "code_runner_sha256": "0e68f1713d6f65b9c2638aca26bd7c1440328b000b648eb9f76c01352d721913",
+    "wall_seconds": 243.999740750005
+  },
+  "copy_cloud_result": {
+    "num_examples": 20000,
+    "num_evaluated": 19886,
+    "num_passed": 10248,
+    "num_bad_code": 376,
+    "pass@1": 0.5153374233128835,
+    "bad_code_rate": 0.0188,
+    "wrong_answer_rate": 0.46605652217640553,
+    "reference_error_rate": 0.0057,
+    "evaluation_coverage": 0.9943,
+    "evaluation_seconds": 1406.6123091089999,
+    "status_counts": {
+      "passed": 10248,
+      "wrong_answer": 9268,
+      "runtime_error": 318,
+      "syntax_error": 43,
+      "ok": 108,
+      "invalid_output": 15
+    },
+    "reference_status_counts": {
+      "ok": 19886,
+      "unsupported_code": 27,
+      "runtime_error": 76,
+      "invalid_output": 11
+    },
+    "prediction_column": "generated_code",
+    "reference_column": "code",
+    "comparison": "reference_solve",
+    "architecture": "copy",
+    "num_beams": 4,
+    "max_new_tokens": 256,
+    "generation_seconds": 1874.891849346,
+    "validation_sha256": "282001d478bffb2d13ab2ca41e8232a0c99c3623f898dd7077128c266172c406",
+    "evaluation_split": "validation",
+    "num_reference_errors": 114,
+    "num_hit_token_limit": 142,
+    "passed_fraction_of_all_sampled": 0.5124,
+    "finished_at": "2026-10-20T12:32:21.681622+00:00"
+  },
+  "copy_cloud_and_local_scoring_match": true,
+  "t5_generation_config": {
+    "architecture": "t5",
+    "checkpoint": "/kaggle/input/notebooks/artyomstep/nlp-hw2-t5-007-1m/t5_007_1m/final",
+    "checkpoint_step": 3907,
+    "validation_rows": 20000,
+    "validation_sha256": "282001d478bffb2d13ab2ca41e8232a0c99c3623f898dd7077128c266172c406",
+    "bundle_sha256": "7480c7d1778bffce50db987019f2ccf87c06f8643c1ce59ad811e4fd3c77d0e1",
+    "selection_sha256": "aab7a9237d69484044504eac5c998f9f7ebd9c5573ad4d1e31fb4f41705e1e3d",
+    "device": "cuda:0",
+    "batch_size": 64,
+    "num_beams": 4,
+    "max_new_tokens": 256,
+    "do_sample": false,
+    "use_cache": true,
+    "reference_source": "Full saved validation labels, decoded without truncation",
+    "evaluation_split": "validation; used during training for loss monitoring",
+    "official_test_used": false,
+    "started_at": "2026-10-20T11:37:27.982382+00:00"
+  },
+  "results_file": "reports/kaggle_20261020_pass/comparison_summary.json",
+  "last_checked_utc": "2026-10-20T13:08:20.348656+00:00",
+  "t5_local_result": {
+    "num_examples": 20000,
+    "num_evaluated": 19886,
+    "num_passed": 3333,
+    "num_bad_code": 1189,
+    "pass@1": 0.16760535049783767,
+    "bad_code_rate": 0.05945,
+    "wrong_answer_rate": 0.7731569948707634,
+    "reference_error_rate": 0.0057,
+    "evaluation_coverage": 0.9943,
+    "evaluation_seconds": 238.95080712501658,
+    "status_counts": {
+      "passed": 3333,
+      "wrong_answer": 15375,
+      "invalid_output": 245,
+      "runtime_error": 885,
+      "syntax_error": 59,
+      "ok": 103
+    },
+    "reference_status_counts": {
+      "ok": 19886,
+      "unsupported_code": 27,
+      "runtime_error": 76,
+      "invalid_output": 11
+    },
+    "prediction_column": "generated_code",
+    "reference_column": "code",
+    "comparison": "reference_solve",
+    "architecture": "t5",
+    "num_beams": 4,
+    "max_new_tokens": 256,
+    "validation_sha256": "282001d478bffb2d13ab2ca41e8232a0c99c3623f898dd7077128c266172c406",
+    "evaluation_split": "validation",
+    "num_reference_errors": 114,
+    "num_hit_token_limit": 586,
+    "mean_generated_tokens": 57.77725,
+    "scoring_environment": {
+      "python": "3.13.4 (v3.13.4:8a526ec7cbe, Jun  3 2025, 21:14:54) [Clang 16.0.0 (clang-1600.0.26.6)]",
+      "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O"
+    },
+    "evaluator_sha256": "9ad4d6bb1c03d0d2eca15a597db3319cf264e7d3cfcc86149a609251a4e983d0",
+    "code_runner_sha256": "0e68f1713d6f65b9c2638aca26bd7c1440328b000b648eb9f76c01352d721913",
+    "wall_seconds": 239.315829707979
+  },
+  "gpu_session_stopped": true,
+  "active_kaggle_events": 0,
+  "cloud_t5_checker": "cancelled after local results were saved"
+}

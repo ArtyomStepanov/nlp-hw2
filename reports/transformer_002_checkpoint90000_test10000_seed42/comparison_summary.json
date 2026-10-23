@@ -1,0 +1,76 @@
+{
+  "sample_size": 10000,
+  "sample_sha256": "04d25083e90470612722e1e816b90efba62a8b9a1c893919a8cf29d122c0549a",
+  "previous_step": 50000,
+  "current_step": 90000,
+  "scope": "Same 10,000 examples from saved 98/1/1 test; not the public leaderboard",
+  "timing_note": "90k inference ran alongside training; no speed comparison",
+  "modes": {
+    "greedy": {
+      "num_evaluated": 9946,
+      "num_reference_errors": 54,
+      "previous_passed": 5988,
+      "current_passed": 6772,
+      "previous_pass_at_1": 0.6020510758093706,
+      "current_pass_at_1": 0.680876734365574,
+      "delta_percentage_points": 7.882565855620349,
+      "gained": 1114,
+      "lost": 330,
+      "previous_bad_code_rate": 0.023,
+      "current_bad_code_rate": 0.006,
+      "current_status_counts": {
+        "passed": 6772,
+        "wrong_answer": 3115,
+        "runtime_error": 38,
+        "ok": 53,
+        "syntax_error": 11,
+        "invalid_output": 8,
+        "unsupported_code": 1,
+        "timeout": 2
+      },
+      "execution_status_counts": {
+        "ok": 9940,
+        "runtime_error": 38,
+        "syntax_error": 11,
+        "invalid_output": 8,
+        "unsupported_code": 1,
+        "timeout": 2
+      },
+      "mean_generated_tokens": 66.4827,
+      "num_hit_token_limit": 24
+    },
+    "beam4": {
+      "num_evaluated": 9946,
+      "num_reference_errors": 54,
+      "previous_passed": 6269,
+      "current_passed": 6931,
+      "previous_pass_at_1": 0.6303036396541323,
+      "current_pass_at_1": 0.696863060526845,
+      "delta_percentage_points": 6.655942087271272,
+      "gained": 961,
+      "lost": 299,
+      "previous_bad_code_rate": 0.0134,
+      "current_bad_code_rate": 0.0035,
+      "current_status_counts": {
+        "passed": 6931,
+        "wrong_answer": 2980,
+        "ok": 54,
+        "runtime_error": 20,
+        "unsupported_code": 2,
+        "invalid_output": 7,
+        "syntax_error": 4,
+        "timeout": 2
+      },
+      "execution_status_counts": {
+        "ok": 9965,
+        "runtime_error": 20,
+        "unsupported_code": 2,
+        "invalid_output": 7,
+        "syntax_error": 4,
+        "timeout": 2
+      },
+      "mean_generated_tokens": 69.3412,
+      "num_hit_token_limit": 16
+    }
+  }
+}

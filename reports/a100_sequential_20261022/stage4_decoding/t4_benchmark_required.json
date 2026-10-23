@@ -1,0 +1,5 @@
+{
+  "status": "pending",
+  "reason": "A100 evaluation timing only; not a T4 compliance measurement.",
+  "next_step": "Benchmark the confirmed decoder on T4 separately."
+}

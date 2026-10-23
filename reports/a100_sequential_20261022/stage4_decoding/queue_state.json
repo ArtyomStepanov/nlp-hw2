@@ -1,0 +1,12 @@
+{
+  "status": "complete",
+  "stage": 4,
+  "phase": "complete",
+  "started_at": "2026-10-22T22:07:35.232314+00:00",
+  "decoder": {
+    "num_beams": 4,
+    "length_penalty": 1.0,
+    "batch_size": 64
+  },
+  "evaluation_output": "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage4_decoding/confirmation"
+}

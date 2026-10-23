@@ -1,0 +1,366 @@
+{
+  "schema": 1,
+  "audit_at": "2026-10-23T15:09:20.357774+00:00",
+  "status": "read_only_candidate_audit",
+  "candidate_manifest_sha256": "7f2f2e43353c1ab06e4203e2d53c139e1c92ee592bf143fb055c632c150dcc21",
+  "scope": {
+    "backup_reports": "Skipped reports/a100_shutdown_backup_20261023 because another agent is changing them.",
+    "model_weights_and_dataset_files": "Exclude weights, optimizer tensors and tokenized data; no model weights or data tensor files found in candidates/archives. One historical 1383-byte scaler.pt inside state_artifacts.tar.gz is an intentional diagnostic state.",
+    "raw_screenshot": "Exclude report/evidence/public_new_bot_20261023.png from publication; leave the local file untouched. It is byte-identical to ignored artifacts/a100_full_eval_20261023/public_result_screenshot.png.",
+    "compressed_scientific_records": "Root explicitly approved retaining the seven compressed scientific-record archives, including their large JSONL members. Exclusion applies to standalone large duplicates.",
+    "live_receipts": "New dropout remote_report files are a snapshot and may be included after root confirms advancing training steps."
+  },
+  "current_candidate_summary": {
+    "files": 680,
+    "unique_paths": 680,
+    "tracked_paths": 21,
+    "untracked_new_paths": 659,
+    "missing_paths": [],
+    "recorded_total_bytes": 69254584,
+    "current_total_bytes": 69263371,
+    "stale_sizes": [
+      {
+        "path": "README.md",
+        "manifest_bytes": 201538,
+        "current_bytes": 204124
+      },
+      {
+        "path": "docs/superpowers/plans/2026-10-23-a100-dropout-continuation.md",
+        "manifest_bytes": 4144,
+        "current_bytes": 4600
+      },
+      {
+        "path": "kaggle_experiments.py",
+        "manifest_bytes": 21197,
+        "current_bytes": 26942
+      }
+    ],
+    "manifest_test_summary_stale": "301 live tests passed across runs; 4 socket-bound tests required sandbox escalation; bare collection301 after pytest.ini",
+    "updated_test_evidence_from_root": "306 passed, full pytest including distributed tests"
+  },
+  "required_candidate_removals": [
+    {
+      "path": "report/evidence/public_new_bot_20261023.png",
+      "bytes": 294444,
+      "sha256": "1bbc63ead2fd55284562e7a2caa023fe7a140fccd5ef31b158e4d73cdadb3a71",
+      "reason": "Identical raw user screenshot; excluded per root instruction, preserve local copy."
+    }
+  ],
+  "recommended_new_files_snapshot": [
+    {
+      "path": "reports/a100_dropout_continue_20261023/automation.json",
+      "bytes": 228,
+      "sha256": "38244826bfaa56aeb7edd6604cea9d9f0a873ae896139b113756f5b5e1524938",
+      "classification": "continuation_source_or_launch_receipt"
+    },
+    {
+      "path": "reports/a100_dropout_continue_20261023/launch.json",
+      "bytes": 787,
+      "sha256": "f3c84b6b85cbbee2c5b7085eb946d9936cdca5e0e71ae307b2dcc8226f6c1dde",
+      "classification": "continuation_source_or_launch_receipt"
+    },
+    {
+      "path": "reports/a100_dropout_continue_20261023/launch_dropout.sh",
+      "bytes": 2769,
+      "sha256": "2b85333f2e35d2f7ef0cded107c7daf33efdcb84a100020ef4f512537b9f6eee",
+      "classification": "continuation_source_or_launch_receipt"
+    },
+    {
+      "path": "reports/a100_dropout_continue_20261023/monitor_prompt.txt",
+      "bytes": 7072,
+      "sha256": "921c7fd001265ae7ff3854b76cc3295eb936af69d493c552ca74c7903beba6d7",
+      "classification": "continuation_source_or_launch_receipt"
+    },
+    {
+      "path": "reports/a100_dropout_continue_20261023/monitor_state.json",
+      "bytes": 365,
+      "sha256": "f997d83694cf8c2c782c32dad5a20d4e4e5e532f36fd312727138fa5a4c8d0e4",
+      "classification": "continuation_source_or_launch_receipt"
+    },
+    {
+      "path": "reports/a100_dropout_continue_20261023/remote_report/download_receipt.json",
+      "bytes": 1395,
+      "sha256": "ec6066954904414172737b0041d6e6de1ea3d1fae91d4704cc9dc8b2f1c764f2",
+      "classification": "live_remote_receipt"
+    },
+    {
+      "path": "reports/a100_dropout_continue_20261023/remote_report/dropout_driver.pid",
+      "bytes": 7,
+      "sha256": "fab571fd7fbac096513a74e10cb9bfdc6a42fd346e29f1ebac274a7eb7528b49",
+      "classification": "live_remote_receipt"
+    },
+    {
+      "path": "reports/a100_dropout_continue_20261023/remote_report/dropout_pipeline.phase",
+      "bytes": 9,
+      "sha256": "3f401d92c688c4c4370769f029d97854129f1bd4e22d78643ebf527bcfd877a8",
+      "classification": "live_remote_receipt"
+    },
+    {
+      "path": "reports/a100_dropout_continue_20261023/remote_report/dropout_pipeline.pid",
+      "bytes": 7,
+      "sha256": "1beeb5036493f7039c59e82829b3865e4b0a55197a3003931f9dfd0cab81e7c5",
+      "classification": "live_remote_receipt"
+    },
+    {
+      "path": "reports/a100_dropout_continue_20261023/remote_report/preflight/dropout_complete.json",
+      "bytes": 1829,
+      "sha256": "587f7dc4589d5805f2a878dd27bb78cb24ab64b4827dc832dc46efe3b91802b0",
+      "classification": "live_remote_receipt"
+    },
+    {
+      "path": "reports/a100_dropout_continue_20261023/remote_report/preflight/trial/complete.json",
+      "bytes": 1522,
+      "sha256": "dcb915c624a7540b788d7e58613f4c86cf2c16840c2f0b6e4aaab8838ef478bf",
+      "classification": "live_remote_receipt"
+    },
+    {
+      "path": "reports/a100_dropout_continue_20261023/remote_report/preflight/trial/initial_validation.json",
+      "bytes": 262,
+      "sha256": "e2ab95a088ca7d1b651cca02b9413868154143be98ec79981a4ce6b7c3fbaabc",
+      "classification": "live_remote_receipt"
+    },
+    {
+      "path": "reports/a100_dropout_continue_20261023/remote_report/training/queue_state.json",
+      "bytes": 123,
+      "sha256": "108777047855f6ddf336091079f25c229a47ab77bdf9266ca2a0cdbe9b3cc196",
+      "classification": "live_remote_receipt"
+    },
+    {
+      "path": "reports/a100_dropout_continue_20261023/remote_report/training/run_request.json",
+      "bytes": 2903,
+      "sha256": "63b9bffe37fb910726f1ffee1942fe687a9be027f65275ca6279d02cb0ff9990",
+      "classification": "live_remote_receipt"
+    },
+    {
+      "path": "reports/a100_dropout_continue_20261023/remote_report/training/trial/run_manifest.json",
+      "bytes": 1848,
+      "sha256": "d0f1a8e5d6cc94135fb66c3a679e8f0c901ab3e1e29f7cc8869b199f45bc4900",
+      "classification": "live_remote_receipt"
+    },
+    {
+      "path": "reports/a100_dropout_continue_20261023/remote_report/training/trial/trainer_args.json",
+      "bytes": 3669,
+      "sha256": "3f864b5753db7e670468c07665ce40f7d4d7a02f8ff90f5ff720ceadf6086c3e",
+      "classification": "live_remote_receipt"
+    },
+    {
+      "path": "reports/a100_dropout_continue_20261023/source_manifest.json",
+      "bytes": 3041,
+      "sha256": "e7fd107dd861af46f22e7abbf3722f17bc7160a18bdc28ab8282a5087f2bf6c8",
+      "classification": "continuation_source_or_launch_receipt"
+    },
+    {
+      "path": "reports/a100_dropout_continue_20261023/test_validation.json",
+      "bytes": 222,
+      "sha256": "1c06382fc5ec36815a96533e4c2fe79415f444537decf534f5e0a221a97f9f00",
+      "classification": "continuation_source_or_launch_receipt"
+    },
+    {
+      "path": "tests/test_dropout_continuation.py",
+      "bytes": 6653,
+      "sha256": "292eebaf3be158801f5d951f3b64f7824da2aaa2b40880b0695c60ab9ff50f39",
+      "classification": "continuation_source_or_launch_receipt"
+    },
+    {
+      "path": "tools/run_a100_dropout.py",
+      "bytes": 4867,
+      "sha256": "5af9b1c681b7dea40615e21062371f5fee8ee11caab5de8bf21c014c81b431ab",
+      "classification": "continuation_source_or_launch_receipt"
+    }
+  ],
+  "recommended_new_files_count": 20,
+  "recommended_new_files_bytes": 39578,
+  "publication_counts_after_raw_screenshot_removal_and_snapshot_additions": {
+    "candidate_paths": 699,
+    "untracked_new_paths": 678,
+    "optional_extra_audit_files_not_counted": [
+      "reports/git_publication_20261023/candidate_manifest.json",
+      "reports/git_publication_20261023/read_only_audit.json"
+    ]
+  },
+  "approved_compressed_scientific_records": {
+    "archives": [
+      "reports/a100_full_eval_20261023/evaluation_results.tar.gz",
+      "reports/a100_full_eval_20261023/t4_batch128_verified_results.zip",
+      "reports/a100_sequential_20261022/bart_evaluation_artifacts.tar.gz",
+      "reports/a100_sequential_20261022/stage1_final_artifacts.tar.gz",
+      "reports/a100_sequential_20261022/stage2_recovery/distinct4m_final_artifacts.tar.gz",
+      "reports/a100_sequential_20261022/stage2_recovery/repeat4m_evaluation_artifacts.tar.gz",
+      "reports/a100_sequential_20261022/stage4_decoding_artifacts.tar.gz"
+    ],
+    "archive_count": 7,
+    "compressed_bytes": 44680515,
+    "large_jsonl_member_count": 23,
+    "large_jsonl_uncompressed_bytes": 235771702,
+    "large_jsonl_members": [
+      {
+        "archive": "reports/a100_full_eval_20261023/evaluation_results.tar.gz",
+        "member": "evaluation/evaluation/evaluation.jsonl",
+        "bytes": 20094534
+      },
+      {
+        "archive": "reports/a100_full_eval_20261023/evaluation_results.tar.gz",
+        "member": "evaluation/predictions.jsonl",
+        "bytes": 16309902
+      },
+      {
+        "archive": "reports/a100_full_eval_20261023/t4_batch128_verified_results.zip",
+        "member": "benchmark/predictions.jsonl",
+        "bytes": 1072432
+      },
+      {
+        "archive": "reports/a100_sequential_20261022/bart_evaluation_artifacts.tar.gz",
+        "member": "predictions.jsonl",
+        "bytes": 16001013
+      },
+      {
+        "archive": "reports/a100_sequential_20261022/bart_evaluation_artifacts.tar.gz",
+        "member": "evaluation/evaluation.jsonl",
+        "bytes": 19838451
+      },
+      {
+        "archive": "reports/a100_sequential_20261022/stage1_final_artifacts.tar.gz",
+        "member": "evaluations/copy/predictions.jsonl",
+        "bytes": 15958923
+      },
+      {
+        "archive": "reports/a100_sequential_20261022/stage1_final_artifacts.tar.gz",
+        "member": "evaluations/copy/evaluation/evaluation.jsonl",
+        "bytes": 19794747
+      },
+      {
+        "archive": "reports/a100_sequential_20261022/stage2_recovery/distinct4m_final_artifacts.tar.gz",
+        "member": "evaluations/distinct4m/predictions.jsonl",
+        "bytes": 16209996
+      },
+      {
+        "archive": "reports/a100_sequential_20261022/stage2_recovery/distinct4m_final_artifacts.tar.gz",
+        "member": "evaluations/distinct4m/evaluation/evaluation.jsonl",
+        "bytes": 20003040
+      },
+      {
+        "archive": "reports/a100_sequential_20261022/stage2_recovery/repeat4m_evaluation_artifacts.tar.gz",
+        "member": "evaluations/repeat4m/predictions.jsonl",
+        "bytes": 16220792
+      },
+      {
+        "archive": "reports/a100_sequential_20261022/stage2_recovery/repeat4m_evaluation_artifacts.tar.gz",
+        "member": "evaluations/repeat4m/evaluation/evaluation.jsonl",
+        "bytes": 20018618
+      },
+      {
+        "archive": "reports/a100_sequential_20261022/stage4_decoding_artifacts.tar.gz",
+        "member": "stage4_decoding/selection/4_beam4_lp0.8/evaluation/evaluation.jsonl",
+        "bytes": 1983248
+      },
+      {
+        "archive": "reports/a100_sequential_20261022/stage4_decoding_artifacts.tar.gz",
+        "member": "stage4_decoding/selection/4_beam4_lp0.8/predictions.jsonl",
+        "bytes": 1603867
+      },
+      {
+        "archive": "reports/a100_sequential_20261022/stage4_decoding_artifacts.tar.gz",
+        "member": "stage4_decoding/selection/5_beam4_lp1.2/evaluation/evaluation.jsonl",
+        "bytes": 2000269
+      },
+      {
+        "archive": "reports/a100_sequential_20261022/stage4_decoding_artifacts.tar.gz",
+        "member": "stage4_decoding/selection/5_beam4_lp1.2/predictions.jsonl",
+        "bytes": 1620656
+      },
+      {
+        "archive": "reports/a100_sequential_20261022/stage4_decoding_artifacts.tar.gz",
+        "member": "stage4_decoding/selection/2_beam4_lp1/evaluation/evaluation.jsonl",
+        "bytes": 1992897
+      },
+      {
+        "archive": "reports/a100_sequential_20261022/stage4_decoding_artifacts.tar.gz",
+        "member": "stage4_decoding/selection/2_beam4_lp1/predictions.jsonl",
+        "bytes": 1613373
+      },
+      {
+        "archive": "reports/a100_sequential_20261022/stage4_decoding_artifacts.tar.gz",
+        "member": "stage4_decoding/selection/3_beam8_lp1/evaluation/evaluation.jsonl",
+        "bytes": 2002182
+      },
+      {
+        "archive": "reports/a100_sequential_20261022/stage4_decoding_artifacts.tar.gz",
+        "member": "stage4_decoding/selection/3_beam8_lp1/predictions.jsonl",
+        "bytes": 1622489
+      },
+      {
+        "archive": "reports/a100_sequential_20261022/stage4_decoding_artifacts.tar.gz",
+        "member": "stage4_decoding/selection/1_beam2_lp1/evaluation/evaluation.jsonl",
+        "bytes": 1988585
+      },
+      {
+        "archive": "reports/a100_sequential_20261022/stage4_decoding_artifacts.tar.gz",
+        "member": "stage4_decoding/selection/1_beam2_lp1/predictions.jsonl",
+        "bytes": 1608652
+      },
+      {
+        "archive": "reports/a100_sequential_20261022/stage4_decoding_artifacts.tar.gz",
+        "member": "stage4_decoding/confirmation/evaluation/evaluation.jsonl",
+        "bytes": 20003040
+      },
+      {
+        "archive": "reports/a100_sequential_20261022/stage4_decoding_artifacts.tar.gz",
+        "member": "stage4_decoding/confirmation/predictions.jsonl",
+        "bytes": 16209996
+      }
+    ]
+  },
+  "archive_image_members": [
+    {
+      "archive": "reports/a100_full_20261023/final_artifacts.tar.gz",
+      "member": "training/trial/training.png",
+      "bytes": 85960
+    },
+    {
+      "archive": "reports/a100_sequential_20261022/bart_training_artifacts.tar.gz",
+      "member": "training.png",
+      "bytes": 89206
+    },
+    {
+      "archive": "reports/a100_sequential_20261022/copy_training_artifacts.tar.gz",
+      "member": "training.png",
+      "bytes": 89118
+    },
+    {
+      "archive": "reports/a100_sequential_20261022/stage2_recovery/distinct4m_final_artifacts.tar.gz",
+      "member": "trials/distinct4m/training.png",
+      "bytes": 88356
+    },
+    {
+      "archive": "reports/a100_sequential_20261022/stage2_recovery/repeat4m_training_artifacts.tar.gz",
+      "member": "training.png",
+      "bytes": 88481
+    }
+  ],
+  "archive_image_review": "Five archive image members are training.png plots. No raw screenshot archive member names; raw public screenshot is the single exact-hash duplicate explicitly excluded above.",
+  "standalone_candidate_jsonl": {
+    "count": 14,
+    "max_bytes": 470647
+  },
+  "secret_scan": {
+    "independent_audit_status": "Complete: no concrete credential findings. Generic password literals were classified as scientific dataset question/code, not credential configuration.",
+    "manifest_files": 680,
+    "nested_archive_members_scanned": 334,
+    "notebooks": 10,
+    "embedded_png_images": 3,
+    "strict_credential_matches": 0,
+    "credential_filenames": 0,
+    "new_dropout_report_files_scanned": 18,
+    "new_dropout_report_strict_matches": 0,
+    "generic_password_literal_findings": {
+      "matches": 12,
+      "classification": "Duplicate scientific evaluation record; question describes fake/random data and code is a generated Python function."
+    }
+  },
+  "actions_performed": [
+    "Read candidate manifest, current paths and byte sizes.",
+    "Read Git inventory/status only.",
+    "Inspected archive member inventories without extracting or modifying archives.",
+    "No staging, committing, pushing, source edits or local file removals."
+  ]
+}

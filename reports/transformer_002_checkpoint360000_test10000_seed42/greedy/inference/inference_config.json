@@ -1,0 +1,13 @@
+{
+  "batch_size": 128,
+  "source_column": "question",
+  "max_source_length": 256,
+  "max_new_tokens": 256,
+  "num_beams": 1,
+  "sort_by_length": true,
+  "truncate_source": true,
+  "mixed_precision": "fp16",
+  "device": "cuda:0",
+  "output_dir": "/home/artyom-step/workspace/nlp-hw2/artifacts/evaluations/transformer_002_checkpoint360000_test10000_seed42_20261014/greedy/inference",
+  "tokenizer_vocab_size": 8000
+}

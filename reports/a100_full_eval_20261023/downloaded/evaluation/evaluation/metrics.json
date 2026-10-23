@@ -1,0 +1,31 @@
+{
+  "num_examples": 20000,
+  "num_evaluated": 19886,
+  "num_passed": 14775,
+  "num_bad_code": 32,
+  "pass@1": 0.7429850145831238,
+  "bad_code_rate": 0.0016,
+  "wrong_answer_rate": 0.2556069596701197,
+  "reference_error_rate": 0.0057,
+  "evaluation_coverage": 0.9943,
+  "evaluation_seconds": 245.28619204834104,
+  "status_counts": {
+    "passed": 14775,
+    "wrong_answer": 5083,
+    "ok": 110,
+    "runtime_error": 22,
+    "syntax_error": 6,
+    "unsupported_code": 2,
+    "timeout": 1,
+    "invalid_output": 1
+  },
+  "reference_status_counts": {
+    "ok": 19886,
+    "unsupported_code": 27,
+    "runtime_error": 76,
+    "invalid_output": 11
+  },
+  "prediction_column": "generated_code",
+  "reference_column": "code",
+  "comparison": "reference_solve"
+}

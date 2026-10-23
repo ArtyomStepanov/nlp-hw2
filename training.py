@@ -2,7 +2,11 @@
 
 import importlib.util
 from importlib.metadata import version
+import hashlib
 import json
+import math
+import os
+import warnings
 from dataclasses import dataclass, field, fields
 from pathlib import Path
 from typing import Literal
@@ -19,11 +23,13 @@ from transformers import (
     PreTrainedTokenizerFast,
     Seq2SeqTrainer,
     Seq2SeqTrainingArguments,
+    TrainerCallback,
 )
 from transformers.trainer_utils import get_last_checkpoint
+from transformers.trainer_pt_utils import LengthGroupedSampler
 
 from models import BaseSeq2SeqModel
-from utils import get_device
+from utils import configure_compile_precision, get_device
 
 
 __all__ = ["TrainingConfig", "TrainingResult", "train_model"]
@@ -49,7 +55,7 @@ class TrainingConfig:
     max_target_length: int = 256
     mixed_precision: Literal["auto", "no", "fp16", "bf16"] = "auto"
     eval_strategy: Literal["epoch", "steps"] = "epoch"
-    eval_steps: int = 1000
+    eval_steps: int = 5000
     logging_steps: int = 100
     save_total_limit: int = 2
     seed: int = 42
@@ -61,6 +67,10 @@ class TrainingConfig:
     max_train_samples: int | None = None
     max_eval_samples: int | None = None
     pad_to_multiple_of: int = 8
+    use_cpu: bool = False
+    optim: Literal["adamw_torch", "adamw_torch_fused"] = "adamw_torch"
+    group_by_length: bool = False
+    torch_compile: bool = False
 
     def __post_init__(self) -> None:
         if not isinstance(self.tokenizer, Tokenizer):
@@ -82,6 +92,10 @@ class TrainingConfig:
             raise ValueError("weight_decay должен быть >= 0, warmup_ratio — в диапазоне [0, 1).")
         if self.lr_scheduler_type not in {"linear", "cosine"}:
             raise ValueError("lr_scheduler_type: 'linear' или 'cosine'.")
+        if self.optim not in {"adamw_torch", "adamw_torch_fused"}:
+            raise ValueError("optim: 'adamw_torch' или 'adamw_torch_fused'.")
+        if not isinstance(self.group_by_length, bool) or not isinstance(self.torch_compile, bool):
+            raise TypeError("group_by_length и torch_compile должны быть bool.")
         if self.mixed_precision not in {"auto", "no", "fp16", "bf16"}:
             raise ValueError("mixed_precision: 'auto', 'no', 'fp16' или 'bf16'.")
         if self.eval_strategy not in {"epoch", "steps"}:
@@ -125,7 +139,7 @@ def _encode_batch(batch: dict, tokenizer: PreTrainedTokenizerFast, source_column
         sources.append(source)
         targets.append(target)
     if not sources:
-        return {name: [] for name in ("input_ids", "attention_mask", "labels", "source_length", "target_length")}
+        return {name: [] for name in ("input_ids", "attention_mask", "labels", "source_length", "target_length", "length")}
     encoded = tokenizer(sources, truncation=False, padding=False, return_token_type_ids=False, verbose=False)
     target_ids = tokenizer(targets, truncation=False, padding=False, return_token_type_ids=False, verbose=False)["input_ids"]
     labels = [ids[1:] for ids in target_ids]
@@ -135,6 +149,7 @@ def _encode_batch(batch: dict, tokenizer: PreTrainedTokenizerFast, source_column
         "labels": labels,
         "source_length": [len(ids) for ids in encoded["input_ids"]],
         "target_length": [len(ids) for ids in labels],
+        "length": [max(len(source), len(target)) for source, target in zip(encoded["input_ids"], labels)],
     }
 
 
@@ -179,7 +194,10 @@ def _prepare_dataset(dataset: ds.Dataset, tokenizer: PreTrainedTokenizerFast, co
         "dropped_long": valid_rows - len(prepared),
         "prepared_rows": len(prepared),
     }
-    return prepared.remove_columns(["source_length", "target_length"]), stats
+    removed = ["source_length", "target_length"]
+    if not config.group_by_length:
+        removed.append("length")
+    return prepared.remove_columns(removed), stats
 
 
 def _token_normalized_loss(outputs, labels: torch.Tensor, num_items_in_batch=None) -> torch.Tensor:
@@ -217,13 +235,73 @@ class _TokenLossMetric:
         return result
 
 
+class _EpochLengthGroupedSampler(LengthGroupedSampler):
+    """Rebuild the same permutation when Trainer resumes and skips batches."""
+
+    def __init__(self, batch_size, lengths, seed):
+        super().__init__(batch_size=batch_size, lengths=list(lengths), generator=torch.Generator())
+        self.seed = seed
+        self.epoch = 0
+
+    def set_epoch(self, epoch):
+        self.epoch = epoch
+
+    def __iter__(self):
+        self.generator.manual_seed(self.seed + self.epoch)
+        return super().__iter__()
+
+
+class _TokenLossTrainer(Seq2SeqTrainer):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        if self.args.torch_compile:
+            configure_compile_precision()
+
+    def _run_epoch(self, model, epoch, train_dataloader, *args, **kwargs):
+        # Accelerate 1.15 cannot propagate set_epoch through the extra skip
+        # wrapper around a DDP loader. Set the original loader before Trainer
+        # applies skip_first_batches when resuming mid-epoch.
+        if self.args.train_sampling_strategy == "group_by_length":
+            train_dataloader.set_epoch(epoch)
+        return super()._run_epoch(model, epoch, train_dataloader, *args, **kwargs)
+
+    def _get_train_sampler(self, train_dataset=None):
+        # Trainer strips auxiliary columns before calling this method. Read
+        # target-aware lengths from the full dataset with the same row order.
+        if self.args.train_sampling_strategy == "group_by_length":
+            # Random indexing into a datasets.Column for every training row is
+            # expensive; materialize just the small integer length column once.
+            return _EpochLengthGroupedSampler(
+                batch_size=self.args.per_device_train_batch_size
+                * self.args.gradient_accumulation_steps * self.args.world_size,
+                lengths=self.train_dataset[self.args.length_column_name],
+                seed=self.args.data_seed if self.args.data_seed is not None else self.args.seed,
+            )
+        return super()._get_train_sampler(train_dataset)
+
+    def evaluation_loop(self, *args, **kwargs):
+        # Seq2SeqTrainer.evaluate/predict in Transformers 5.10 replaces
+        # gather_for_metrics with gather even without generation. Streaming
+        # metrics would then count padding duplicates in the last DDP batch.
+        if not self.args.predict_with_generate:
+            self.gather_function = self.accelerator.gather_for_metrics
+        return super().evaluation_loop(*args, **kwargs)
+
+
 def _validate_resume(path: Path, network: PreTrainedModel, tokenizer: Tokenizer) -> int:
     weight_files = ("model.safetensors", "model.safetensors.index.json", "pytorch_model.bin", "pytorch_model.bin.index.json")
     required = ("trainer_state.json", "config.json", "tokenizer.json", "optimizer.pt", "scheduler.pt")
     if not path.is_dir() or any(not (path / name).is_file() for name in required) or not any((path / name).is_file() for name in weight_files):
         raise ValueError("Для продолжения нужна полная папка Trainer checkpoint-N с весами и состоянием обучения.")
     saved_config = json.loads((path / "config.json").read_text(encoding="utf-8"))
-    for name in ("vocab_size", "d_model", "encoder_layers", "decoder_layers", "encoder_attention_heads", "decoder_attention_heads", "encoder_ffn_dim", "decoder_ffn_dim", "max_position_embeddings", "pad_token_id", "bos_token_id", "eos_token_id", "decoder_start_token_id"):
+    fields = ["model_type", "vocab_size", "d_model", "encoder_layers", "decoder_layers", "encoder_attention_heads", "decoder_attention_heads", "encoder_ffn_dim", "decoder_ffn_dim", "max_position_embeddings", "pad_token_id", "bos_token_id", "eos_token_id", "decoder_start_token_id"]
+    if network.config.model_type == "t5":
+        fields += ["num_layers", "num_decoder_layers", "num_heads", "d_kv", "d_ff",
+                   "feed_forward_proj", "relative_attention_num_buckets", "relative_attention_max_distance",
+                   "dropout_rate", "layer_norm_epsilon", "tie_word_embeddings"]
+    if network.config.model_type == 'copy_bart':
+        fields += ['copy_attention_dim', 'copy_excluded_ids']
+    for name in fields:
         if saved_config.get(name) != getattr(network.config, name, None):
             raise ValueError(f"Конфигурация checkpoint отличается от модели: {name}.")
     saved_tokenizer = json.loads((path / "tokenizer.json").read_text(encoding="utf-8"))
@@ -237,14 +315,155 @@ def _validate_resume(path: Path, network: PreTrainedModel, tokenizer: Tokenizer)
     return step
 
 
-def _precision_flags(config: TrainingConfig) -> tuple[bool, bool]:
-    device = get_device()
+def _precision_flags(config: TrainingConfig, device: torch.device | None = None) -> tuple[bool, bool]:
+    device = device or get_device()
     precision = "fp16" if config.mixed_precision == "auto" and device.type == "cuda" else config.mixed_precision
     if precision in {"fp16", "bf16"} and device.type != "cuda":
         raise ValueError("В этом интерфейсе fp16/bf16 доступны на CUDA; для CPU/MPS используйте 'auto' или 'no'.")
     if precision == "bf16" and not torch.cuda.is_bf16_supported():
         raise ValueError("Устройство не поддерживает bf16. Для NVIDIA T4 используйте fp16.")
     return precision == "fp16", precision == "bf16"
+
+
+def _on_main_process(state, action) -> None:
+    """Run a shared-filesystem operation once and propagate errors to all ranks."""
+    if state.num_processes == 1:
+        action()
+        return
+    error = [None]
+    if state.is_main_process:
+        try:
+            action()
+        except Exception as exc:
+            error[0] = f"{type(exc).__name__}: {exc}"
+    torch.distributed.broadcast_object_list(error, src=0)
+    if error[0] is not None:
+        raise RuntimeError(f"Rank 0: {error[0]}")
+
+
+def _prepare_training_data(dataset, eval_dataset, tokenizer, config, state, output_dir):
+    # Only rank 0 runs map(num_proc=...). Save even in-memory input to disk so
+    # followers reuse the result without launching world_size * num_proc workers.
+    identity = {
+        "train": dataset._fingerprint,
+        "val": eval_dataset._fingerprint if eval_dataset is not None else None,
+        "tokenizer": config.tokenizer.to_str(),
+        **{name: getattr(config, name) for name in (
+            "source_column", "target_column", "max_source_length", "max_target_length",
+            "max_train_samples", "max_eval_samples", "seed",
+        )},
+        "preprocessing_version": 1,
+    }
+    # Preserve the historical fingerprint for default runs and old resumes.
+    if config.group_by_length:
+        identity["preprocessing_version"] = 2
+    fingerprint = hashlib.sha256(json.dumps(identity, sort_keys=True).encode()).hexdigest()
+    cache_dir = output_dir / "preprocessed" / fingerprint
+
+    def prepare():
+        if (cache_dir / "stats.json").is_file():
+            return
+        train_data, train_stats = _prepare_dataset(dataset, tokenizer, config, "train", config.max_train_samples)
+        prepared = ds.DatasetDict({"train": train_data})
+        stats = {"train": train_stats}
+        if eval_dataset is not None:
+            prepared["val"], stats["val"] = _prepare_dataset(eval_dataset, tokenizer, config, "val", config.max_eval_samples)
+        prepared.save_to_disk(str(cache_dir / "dataset"))
+        _write_json(cache_dir / "stats.json", stats)
+
+    _on_main_process(state, prepare)
+    prepared = ds.load_from_disk(str(cache_dir / "dataset"))
+    stats = json.loads((cache_dir / "stats.json").read_text(encoding="utf-8"))
+    return prepared["train"], prepared.get("val"), stats, fingerprint
+
+
+def _training_layout(config, args, train_rows: int, fingerprint: str) -> dict:
+    effective_batch = config.train_batch_size * config.gradient_accumulation_steps * args.world_size
+    steps_per_epoch = math.ceil(train_rows / effective_batch)
+    return {
+        "world_size": args.world_size,
+        "per_device_train_batch_size": config.train_batch_size,
+        "gradient_accumulation_steps": config.gradient_accumulation_steps,
+        "effective_batch_size": effective_batch,
+        "train_rows": train_rows,
+        "steps_per_epoch": steps_per_epoch,
+        "max_steps": config.max_steps if config.max_steps > 0 else math.ceil(config.num_train_epochs * steps_per_epoch),
+        "dataset_fingerprint": fingerprint,
+        "seed": config.seed,
+        "learning_rate": config.learning_rate,
+        "lr_scheduler_type": config.lr_scheduler_type,
+        "warmup_ratio": config.warmup_ratio,
+        "group_by_length": config.group_by_length,
+        "optim": config.optim,
+    }
+
+
+class _SaveTrainingLayout(TrainerCallback):
+    def __init__(self, layout: dict) -> None:
+        self.layout = layout
+
+    def on_save(self, args, state, control, **kwargs):
+        if state.is_world_process_zero:
+            _write_json(Path(args.output_dir) / f"checkpoint-{state.global_step}" / "training_layout.json", self.layout)
+
+    def on_log(self, args, state, control, **kwargs):
+        # Keep plots available during training and after an interrupted run.
+        # Trainer has already appended this event to log_history.
+        if state.is_world_process_zero:
+            _write_json(Path(args.output_dir) / "log_history.json", state.log_history)
+
+
+def _validate_resume_layout(checkpoint: Path, layout: dict, config: TrainingConfig) -> None:
+    manifest = checkpoint / "training_layout.json"
+    if manifest.is_file():
+        previous = json.loads(manifest.read_text(encoding="utf-8"))
+    else:
+        # Compatibility with checkpoints created before DDP support. Rank RNG
+        # files record the old topology; never guess it from visible GPUs now.
+        run_dir = checkpoint.parent
+        required = [run_dir / name for name in ("training_config.json", "preprocessing.json")]
+        if not all(path.is_file() for path in required):
+            raise ValueError("Checkpoint не содержит training_layout.json или исходные JSON запуска. Используйте --warm-start-from в новом output_dir.")
+        saved = json.loads(required[0].read_text(encoding="utf-8"))
+        stats = json.loads(required[1].read_text(encoding="utf-8"))
+        state = json.loads((checkpoint / "trainer_state.json").read_text(encoding="utf-8"))
+        rng_files = list(checkpoint.glob("rng_state_*.pth"))
+        world_size = len(rng_files) if rng_files else 1 if (checkpoint / "rng_state.pth").is_file() else None
+        if world_size is None:
+            raise ValueError("Не удалось определить world_size исходного checkpoint; используйте --warm-start-from.")
+        batch = saved["train_batch_size"] * saved["gradient_accumulation_steps"] * world_size
+        previous = {
+            "world_size": world_size, "effective_batch_size": batch,
+            "train_rows": stats["train"]["prepared_rows"],
+            "steps_per_epoch": math.ceil(stats["train"]["prepared_rows"] / batch),
+            "max_steps": state["max_steps"],
+            **{name: saved[name] for name in ("seed", "learning_rate", "lr_scheduler_type", "warmup_ratio")},
+            "group_by_length": saved.get("group_by_length", False),
+            "optim": saved.get("optim", "adamw_torch"),
+        }
+        for name in ("source_column", "target_column", "max_source_length", "max_target_length", "max_train_samples"):
+            if saved.get(name) != getattr(config, name):
+                raise ValueError(f"При resume нельзя менять {name}; используйте --warm-start-from в новом output_dir.")
+    for name, default in (("group_by_length", False), ("optim", "adamw_torch")):
+        if previous.get(name, default) != layout.get(name, default):
+            raise ValueError(f"Resume: нельзя менять {name} (sampler/optimizer); используйте новый запуск.")
+    for name in ("effective_batch_size", "train_rows", "steps_per_epoch", "dataset_fingerprint", "seed"):
+        if name in previous and previous[name] != layout[name]:
+            raise ValueError(
+                f"Resume: {name} изменился ({previous[name]} -> {layout[name]}). "
+                "Сохраните global batch = train_batch_size * gradient_accumulation_steps * world_size "
+                "и исходные данные либо используйте --warm-start-from в новом output_dir."
+            )
+    schedule_changed = [name for name in ("max_steps", "learning_rate", "lr_scheduler_type", "warmup_ratio") if previous[name] != layout[name]]
+    topology_changed = previous["world_size"] != layout["world_size"]
+    if "learning_rate" in schedule_changed:
+        raise ValueError("Resume восстанавливает learning_rate из optimizer/scheduler checkpoint. Для нового learning_rate используйте --warm-start-from в новом output_dir.")
+    if schedule_changed:
+        if topology_changed:
+            raise ValueError(f"При смене world_size resume требует прежний scheduler ({', '.join(schedule_changed)}). Используйте --warm-start-from для нового расписания.")
+        warnings.warn(f"Resume меняет расписание обучения: {', '.join(schedule_changed)}. Состояние optimizer сохраняется, scheduler использует новые параметры.", UserWarning)
+    if topology_changed:
+        warnings.warn("Resume с другим world_size сохраняет optimizer, scheduler и положение в данных; RNG/dropout и дополнение последнего DDP-батча могут отличаться от исходного запуска.", UserWarning)
 
 
 def train_model(
@@ -266,6 +485,9 @@ def train_model(
     resume_from_checkpoint=True продолжает последний checkpoint в output_dir;
     путь должен указывать на папку Trainer checkpoint-N, а не на model.pt.
     Модель и BPE при продолжении должны совпадать с первоначальным запуском.
+    Для нескольких GPU используйте torchrun: batch size задаётся на один процесс.
+    При смене world_size resume требует прежний global batch и scheduler;
+    состояние RNG и дополнение последнего батча могут отличаться.
     """
     if importlib.util.find_spec("accelerate") is None:
         raise ImportError("Для обучения установите Accelerate: %pip install -U accelerate")
@@ -293,7 +515,17 @@ def train_model(
     for name, token in (("pad_token_id", "<pad>"), ("bos_token_id", "<bos>"), ("eos_token_id", "<eos>")):
         if config.tokenizer.token_to_id(token) != getattr(model.config, name):
             raise ValueError(f"ID {token} в модели и токенизаторе отличаются.")
-    fp16, bf16 = _precision_flags(config)
+    from accelerate import PartialState
+
+    # Initialize process groups and select LOCAL_RANK's GPU before precision
+    # checks, preprocessing or touching shared output files.
+    use_cpu = config.use_cpu or os.environ.get("ACCELERATE_USE_CPU", "").lower() in {"true", "1", "yes"}
+    distributed = PartialState(cpu=use_cpu)
+    if distributed.device.type == "cpu":
+        # Accelerate may use cpu:0 for MULTI_CPU; torch.load(map_location=...)
+        # only accepts the unindexed CPU device when restoring an optimizer.
+        distributed.device = torch.device("cpu")
+    fp16, bf16 = _precision_flags(config, distributed.device)
 
     output_dir = Path(config.output_dir).expanduser().resolve()
     if resume_from_checkpoint is True:
@@ -307,8 +539,11 @@ def train_model(
     resume_step = None
     if resume_from_checkpoint is not None:
         resume_step = _validate_resume(Path(resume_from_checkpoint), network, config.tokenizer)
-    if output_dir.exists() and any(output_dir.iterdir()) and resume_from_checkpoint is None:
-        raise FileExistsError("output_dir уже содержит файлы. Выберите папку нового эксперимента или resume_from_checkpoint.")
+    def validate_output():
+        if output_dir.exists() and any(output_dir.iterdir()) and resume_from_checkpoint is None:
+            raise FileExistsError("output_dir уже содержит файлы. Выберите папку нового эксперимента или resume_from_checkpoint.")
+
+    _on_main_process(distributed, validate_output)
 
     tokenizer = PreTrainedTokenizerFast(
         tokenizer_object=config.tokenizer,
@@ -319,12 +554,7 @@ def train_model(
     )
     if tokenizer.encode("", add_special_tokens=True) != [model.config.bos_token_id, model.config.eos_token_id]:
         raise ValueError("Нужен токенизатор, добавляющий BOS/EOS, как train_bpe_tokenizer.")
-    train_data, train_stats = _prepare_dataset(dataset, tokenizer, config, "train", config.max_train_samples)
-    stats = {"train": train_stats}
-    eval_data = None
-    if eval_dataset is not None:
-        eval_data, stats["val"] = _prepare_dataset(eval_dataset, tokenizer, config, "val", config.max_eval_samples)
-    has_eval = eval_data is not None
+    has_eval = eval_dataset is not None
     args = Seq2SeqTrainingArguments(
         output_dir=str(output_dir),
         num_train_epochs=config.num_train_epochs,
@@ -337,8 +567,15 @@ def train_model(
         warmup_steps=float(config.warmup_ratio),
         lr_scheduler_type=config.lr_scheduler_type,
         max_grad_norm=config.max_grad_norm,
-        optim="adamw_torch",
+        optim=config.optim,
+        train_sampling_strategy="group_by_length" if config.group_by_length else "random",
+        length_column_name="length",
+        torch_compile=config.torch_compile,
         fp16=fp16, bf16=bf16,
+        use_cpu=use_cpu,
+        accelerator_config={"use_configured_state": True},
+        average_tokens_across_devices=True,
+        ddp_find_unused_parameters=False,
         gradient_checkpointing=config.gradient_checkpointing,
         eval_strategy=config.eval_strategy if has_eval else "no",
         eval_steps=config.eval_steps,
@@ -346,6 +583,7 @@ def train_model(
         save_steps=config.eval_steps,
         save_total_limit=config.save_total_limit,
         load_best_model_at_end=has_eval,
+        restore_callback_states_from_checkpoint=True,
         metric_for_best_model="eval_token_loss" if has_eval else None,
         greater_is_better=False if has_eval else None,
         logging_steps=config.logging_steps,
@@ -355,13 +593,22 @@ def train_model(
         batch_eval_metrics=has_eval,
         predict_with_generate=False,
         dataloader_num_workers=config.dataloader_num_workers,
-        dataloader_pin_memory=torch.cuda.is_available(),
+        dataloader_pin_memory=distributed.device.type == "cuda",
         seed=config.seed,
         data_seed=config.seed,
         label_names=["labels"],
     )
+    if args.n_gpu > 1:
+        raise ValueError("Для нескольких GPU запустите torchrun --standalone --nproc_per_node=2 train_distributed.py ...; для одного GPU задайте CUDA_VISIBLE_DEVICES.")
+    train_data, eval_data, stats, fingerprint = _prepare_training_data(
+        dataset, eval_dataset, tokenizer, config, distributed, output_dir,
+    )
+    layout = _training_layout(config, args, len(train_data), fingerprint)
+    if resume_from_checkpoint is not None:
+        _validate_resume_layout(Path(resume_from_checkpoint), layout, config)
     callbacks = [EarlyStoppingCallback(early_stopping_patience=config.early_stopping_patience)] if config.early_stopping_patience is not None else []
-    trainer = Seq2SeqTrainer(
+    callbacks.append(_SaveTrainingLayout(layout))
+    trainer = _TokenLossTrainer(
         model=network,
         args=args,
         train_dataset=train_data,
@@ -380,8 +627,8 @@ def train_model(
     # В seq2seq сдвигаются decoder inputs, а CE включает ВСЕ labels, включая
     # первый токен кода; исключать его из num_items_in_batch нельзя.
     trainer._loss_shifts_labels = False
-    output_dir.mkdir(parents=True, exist_ok=True)
-    if trainer.is_world_process_zero():
+    def save_metadata():
+        output_dir.mkdir(parents=True, exist_ok=True)
         metadata_dir = output_dir
         if resume_step is not None:
             metadata_dir = output_dir / "resumes" / f"step-{resume_step}"
@@ -395,22 +642,29 @@ def train_model(
         _write_json(metadata_dir / "training_config.json", run_config)
         _write_json(metadata_dir / "model_config.json", model.config.to_dict())
         _write_json(metadata_dir / "preprocessing.json", stats)
-        _write_json(metadata_dir / "environment.json", {"device": str(args.device), "torch": str(torch.__version__), "transformers": version("transformers"), "accelerate": version("accelerate"), "datasets": version("datasets"), "tokenizers": version("tokenizers")})
+        _write_json(metadata_dir / "environment.json", {"device": str(args.device), "world_size": args.world_size, "torch": str(torch.__version__), "transformers": version("transformers"), "accelerate": version("accelerate"), "datasets": version("datasets"), "tokenizers": version("tokenizers")})
+        _write_json(metadata_dir / "training_layout.json", layout)
         (metadata_dir / "trainer_args.json").write_text(args.to_json_string(), encoding="utf-8")
         config.tokenizer.save(str(metadata_dir / "tokenizer.json"))
-    print(f"Обучение: {len(train_data):,} строк; валидация: {len(eval_data):,}" if has_eval else f"Обучение: {len(train_data):,} строк; без валидации")
+
+    _on_main_process(distributed, save_metadata)
+    if trainer.is_world_process_zero():
+        print(f"Обучение: {len(train_data):,} строк; world_size={args.world_size}; global batch={layout['effective_batch_size']}")
     train_output = trainer.train(resume_from_checkpoint=resume_from_checkpoint)
     metrics = dict(train_output.metrics)
     if has_eval:
         metrics.update(trainer.evaluate())
     model.eval()
-    if trainer.is_world_process_zero():
+    def save_result():
         model.save_checkpoint(output_dir / "model.pt")
         trainer.save_state()
         _write_json(output_dir / "metrics.json", metrics)
         _write_json(output_dir / "log_history.json", trainer.state.log_history)
+    _on_main_process(distributed, save_result)
     return TrainingResult(model, trainer, metrics, stats, output_dir, trainer.state.best_model_checkpoint)
 
 
 def _write_json(path: Path, values) -> None:
-    path.write_text(json.dumps(values, ensure_ascii=False, indent=2), encoding="utf-8")
+    temporary = path.with_suffix(path.suffix + ".tmp")
+    temporary.write_text(json.dumps(values, ensure_ascii=False, indent=2), encoding="utf-8")
+    temporary.replace(path)

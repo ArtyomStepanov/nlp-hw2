@@ -1,0 +1,9 @@
+{
+  "model": "t5",
+  "rows": 20000,
+  "mean_generated_tokens": 57.77725,
+  "median_generated_tokens": 49.0,
+  "more_than_64_tokens": 3964,
+  "hit_256_without_eos": 586,
+  "ended_with_eos": 19414
+}

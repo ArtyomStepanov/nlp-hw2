@@ -1,0 +1,36 @@
+{
+  "checked_at": "2026-10-23T14:38:21.695600+00:00",
+  "status": "passed",
+  "document_version": "0.4",
+  "pages": 16,
+  "figures": 5,
+  "tables": 14,
+  "builtin_compiler": "success",
+  "local_xelatex": "success",
+  "overfull_boxes": 0,
+  "missing_characters": 0,
+  "undefined_references": 0,
+  "saved_json_sources_verified": 29,
+  "new_evaluation": "14775/19886, same validation and golden references; +1118 vs distinct4m",
+  "t4": "Best checkpoint-180000, one Tesla T4, 1919 rows; 165.073922592s pipeline / 165.106611568s external wall time",
+  "visual_review": "All 16 final pages inspected in contact sheets; revised public comparison page 13 inspected at full page size. No clipping or overlap.",
+  "public_result": {
+    "old": "735/960 = 76.5625%",
+    "new": "729/960 = 75.9375%",
+    "delta_passes": -6,
+    "delta_pp": -0.625,
+    "new_bot_screenshot": "visually checked and hash recorded",
+    "private": "unknown"
+  },
+  "pdf": "report/output/pdf/report.pdf",
+  "pdf_sha256": "8d259b7f4213ad533b0bcb2d5b187e1162052ee459388503af8d2a8d5af8a4a3",
+  "pdf_bytes": 201461,
+  "comparison_scope_verified": "Official public versus prior official public; validation improvement versus short Distinct4m explicitly distinguished.",
+  "editorial_checks": {
+    "all_12_conclusions_first_person": true,
+    "third_person_author_references_removed": true,
+    "public_screenshot_intro_removed": true,
+    "standalone_public_delta_formula_removed": true,
+    "public_table_and_numeric_results_preserved": true
+  }
+}

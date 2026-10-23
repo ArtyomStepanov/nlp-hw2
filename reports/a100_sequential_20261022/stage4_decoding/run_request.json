@@ -1,0 +1,47 @@
+{
+  "architecture": "bart",
+  "checkpoint": "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage2_recovery/trials/distinct4m/final",
+  "checkpoint_step": 15625,
+  "bundle_root": "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage2_data/distinct4m",
+  "expected_train_rows": 4000000,
+  "bundle_sha256": "bab34556554696fd8927f4914df1aa835b9d1c8290bf180d4a5143a34381721c",
+  "selection_sha256": "80357f04410a2cb1812d71fed3c66c61c6e8367a140c2911af44bff325d29d13",
+  "training_manifest_sha256": "d7216bc86f80a43b80fc04bcafd079f3400dee5f7e5a21ea4c023b9e0aece868",
+  "reference_identity": "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage2_recovery_code/reference_identity.json",
+  "reference_identity_sha256": "42fc3fa34f9e7ce9cfbc84fb2ad35dddccceb275e6d249ec7f7d2fe4cef9785b",
+  "subset_validation_sha256": "e867093926b3f125bc15ea701608f7d151b61983e16b9adc32305825d4c95881",
+  "full_validation_sha256": "282001d478bffb2d13ab2ca41e8232a0c99c3623f898dd7077128c266172c406",
+  "subset_rows": 2000,
+  "full_validation_rows": 20000,
+  "decoders": [
+    {
+      "num_beams": 2,
+      "length_penalty": 1.0,
+      "batch_size": 64
+    },
+    {
+      "num_beams": 4,
+      "length_penalty": 1.0,
+      "batch_size": 64
+    },
+    {
+      "num_beams": 8,
+      "length_penalty": 1.0,
+      "batch_size": 32
+    },
+    {
+      "num_beams": 4,
+      "length_penalty": 0.8,
+      "batch_size": 64
+    },
+    {
+      "num_beams": 4,
+      "length_penalty": 1.2,
+      "batch_size": 64
+    }
+  ],
+  "max_new_tokens": 256,
+  "selection_rule": "Highest num_passed; ties: fewer beams, then length_penalty closest to 1.0.",
+  "batch_note": "64 for beams 2/4; 32 for beam 8 (256 beam-expanded examples, matching beam 4).",
+  "timing_scope": "A100 evaluation timing only; not a T4 compliance measurement."
+}

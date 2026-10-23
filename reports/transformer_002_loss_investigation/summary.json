@@ -1,0 +1,103 @@
+{
+  "modes": {
+    "original_lr": {
+      "start_step": 50001,
+      "stop_step": 50600,
+      "max_grad_norm_before_clip": 60.61998748779297,
+      "max_grad_step": 50149,
+      "steps_grad_gt_1": 21,
+      "steps_grad_gt_3": 6,
+      "last_100_steps_loss": 0.8607518219947815,
+      "mean_loss_per_100_steps": [
+        0.29276140563189984,
+        0.31509548500180246,
+        0.9118364261090756,
+        0.8970265260338783,
+        0.8763328915834427,
+        0.8607518219947815
+      ],
+      "initial_lr": 0.000293691552882284,
+      "final_validation": {
+        "eval_loss": 0.8292531967163086,
+        "eval_token_loss": 0.8296048068755871,
+        "eval_target_tokens": 136979,
+        "eval_runtime": 0.9677,
+        "eval_samples_per_second": 2116.324,
+        "eval_steps_per_second": 8.267,
+        "epoch": 0.5586777224497907
+      }
+    },
+    "lr_div3": {
+      "start_step": 50001,
+      "stop_step": 50600,
+      "max_grad_norm_before_clip": 2.6777024269104004,
+      "max_grad_step": 50564,
+      "steps_grad_gt_1": 10,
+      "steps_grad_gt_3": 0,
+      "last_100_steps_loss": 0.2701996073126793,
+      "mean_loss_per_100_steps": [
+        0.283403362557292,
+        0.277361319065094,
+        0.2751440162956715,
+        0.27004997961223126,
+        0.2705582445859909,
+        0.2701996073126793
+      ],
+      "initial_lr": 9.789718429409466e-05,
+      "final_validation": {
+        "eval_loss": 0.2542293667793274,
+        "eval_token_loss": 0.25432958584820975,
+        "eval_target_tokens": 136979,
+        "eval_runtime": 0.9405,
+        "eval_samples_per_second": 2177.58,
+        "eval_steps_per_second": 8.506,
+        "epoch": 0.5586777224497907
+      }
+    },
+    "fp32_original_lr": {
+      "start_step": 50001,
+      "stop_step": 50600,
+      "max_grad_norm_before_clip": 30.93187141418457,
+      "max_grad_step": 50252,
+      "steps_grad_gt_1": 16,
+      "steps_grad_gt_3": 7,
+      "last_100_steps_loss": 0.2929918672144413,
+      "mean_loss_per_100_steps": [
+        0.29388117015361787,
+        0.2934371923655272,
+        0.2968992903828621,
+        0.29172572992742063,
+        0.29245110496878624,
+        0.2929918672144413
+      ],
+      "initial_lr": 0.000293691552882284,
+      "final_validation": {
+        "eval_loss": 0.27433666586875916,
+        "eval_token_loss": 0.27447805010019843,
+        "eval_target_tokens": 136979,
+        "eval_runtime": 3.3563,
+        "eval_samples_per_second": 610.201,
+        "eval_steps_per_second": 2.384,
+        "epoch": 0.5586777224497907
+      }
+    }
+  },
+  "original_history_loss": [
+    0.29276140213012697,
+    0.3150954818725586,
+    0.9118367004394531,
+    0.8970265197753906,
+    0.8763330078125,
+    0.8607518005371094
+  ],
+  "max_reproduction_absolute_error": 2.7433037752544465e-07,
+  "identical_batches_all_600_steps_both_ranks": true,
+  "checkpoint": "checkpoint-50000",
+  "fixed_validation_rows": 2048,
+  "no_intermediate_eval_or_checkpoint_saving": true,
+  "tests": {
+    "ddp_global_token_average_and_resume": "passed",
+    "warmup_cosine": "passed"
+  },
+  "limits": "600-step diagnostic runs; no long-run stability or test-quality guarantee. No replay weights saved."
+}

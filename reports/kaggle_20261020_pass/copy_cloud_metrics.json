@@ -1,0 +1,39 @@
+{
+  "num_examples": 20000,
+  "num_evaluated": 19886,
+  "num_passed": 10248,
+  "num_bad_code": 376,
+  "pass@1": 0.5153374233128835,
+  "bad_code_rate": 0.0188,
+  "wrong_answer_rate": 0.46605652217640553,
+  "reference_error_rate": 0.0057,
+  "evaluation_coverage": 0.9943,
+  "evaluation_seconds": 1406.6123091089999,
+  "status_counts": {
+    "passed": 10248,
+    "wrong_answer": 9268,
+    "runtime_error": 318,
+    "syntax_error": 43,
+    "ok": 108,
+    "invalid_output": 15
+  },
+  "reference_status_counts": {
+    "ok": 19886,
+    "unsupported_code": 27,
+    "runtime_error": 76,
+    "invalid_output": 11
+  },
+  "prediction_column": "generated_code",
+  "reference_column": "code",
+  "comparison": "reference_solve",
+  "architecture": "copy",
+  "num_beams": 4,
+  "max_new_tokens": 256,
+  "generation_seconds": 1874.891849346,
+  "validation_sha256": "282001d478bffb2d13ab2ca41e8232a0c99c3623f898dd7077128c266172c406",
+  "evaluation_split": "validation",
+  "num_reference_errors": 114,
+  "num_hit_token_limit": 142,
+  "passed_fraction_of_all_sampled": 0.5124,
+  "finished_at": "2026-10-20T12:32:21.681622+00:00"
+}

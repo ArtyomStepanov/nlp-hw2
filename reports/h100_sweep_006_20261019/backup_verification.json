@@ -1,0 +1,46 @@
+{
+  "verified_at": "2026-10-19T18:44:02.994695+00:00",
+  "scope": "Kaggle core only; large H100 weights, optimizer checkpoint and full cache intentionally not downloaded",
+  "archive": "/Users/artyom-step/nlp-hw2/artifacts/remote_backups/h100_20261019_kaggle/archives/kaggle_core.tar.zst",
+  "archive_bytes": 146270209,
+  "archive_sha256": "1765b58ec2bda2e547eb12328399fc43ef3eb854748fe9fe2feb04206a1db003",
+  "restored_root": "/Users/artyom-step/nlp-hw2/artifacts/remote_backups/h100_20261019_kaggle/restored",
+  "verified_source_files": 301,
+  "verified_uncompressed_bytes": 838088219,
+  "dataset_rows": {
+    "train": 1000000,
+    "val": 20000
+  },
+  "tokenizer_vocab_size": 8000,
+  "tokenizer_sha256": "abd75c8655b948f612ebbf065a12269613269a4755cd0a698b0bf7a5bc1e9704",
+  "completed_bart_trials": [
+    "artifacts/sweeps/hpo_004_1m_1epoch/trials/e10_d10_lr1e-04/complete.json",
+    "artifacts/sweeps/hpo_004_1m_1epoch/trials/e10_d10_lr2e-04/complete.json",
+    "artifacts/sweeps/hpo_004_1m_1epoch/trials/e12_d8_lr1e-04/complete.json",
+    "artifacts/sweeps/hpo_004_1m_1epoch/trials/e12_d8_lr2e-04/complete.json",
+    "artifacts/sweeps/hpo_005_architecture_extension/trials/e10_d10_lr3e-04/complete.json",
+    "artifacts/sweeps/hpo_005_architecture_extension/trials/e8_d12_lr1e-04/complete.json",
+    "artifacts/sweeps/hpo_005_architecture_extension/trials/e8_d12_lr2e-04/complete.json",
+    "artifacts/sweeps/hpo_005_architecture_extension/trials/e8_d8_lr2e-04/complete.json"
+  ],
+  "t5_summary": {
+    "status": "finished_with_failures",
+    "completed": [],
+    "failures": [
+      {
+        "trial": "t5_e8_d8_lr1e-04",
+        "returncode": 1,
+        "log": "/workspace/nlp-hw2/artifacts/sweeps/hpo_006_t5/logs/t5_e8_d8_lr1e-04-20261019T182258Z.log"
+      },
+      {
+        "trial": "t5_e8_d8_lr2e-04",
+        "returncode": 1,
+        "log": "/workspace/nlp-hw2/artifacts/sweeps/hpo_006_t5/logs/t5_e8_d8_lr2e-04-20261019T182423Z.log"
+      }
+    ],
+    "active_trial": null
+  },
+  "archive_and_file_hashes_valid": true,
+  "dataset_load_valid": true,
+  "tokenizer_load_valid": true
+}

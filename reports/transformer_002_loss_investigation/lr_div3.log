@@ -1,0 +1,10 @@
+[transformers] There were missing keys in the checkpoint model loaded: ['model.encoder.embed_tokens.weight', 'model.decoder.embed_tokens.weight', 'lm_head.weight'].
+[transformers] There were missing keys in the checkpoint model loaded: ['model.encoder.embed_tokens.weight', 'model.decoder.embed_tokens.weight', 'lm_head.weight'].
+{'loss': '0.2834', 'grad_norm': '0.3654', 'learning_rate': '9.788e-05', 'epoch': '0.5532'}
+{'loss': '0.2774', 'grad_norm': '0.3531', 'learning_rate': '9.787e-05', 'epoch': '0.5543'}
+{'loss': '0.2751', 'grad_norm': '0.3403', 'learning_rate': '9.786e-05', 'epoch': '0.5554'}
+{'loss': '0.2701', 'grad_norm': '0.2533', 'learning_rate': '9.784e-05', 'epoch': '0.5565'}
+{'loss': '0.2706', 'grad_norm': '0.3035', 'learning_rate': '9.783e-05', 'epoch': '0.5576'}
+{'loss': '0.2702', 'grad_norm': '0.2402', 'learning_rate': '9.782e-05', 'epoch': '0.5587'}
+{'train_runtime': '82.78', 'train_samples_per_second': '5.602e+05', 'train_steps_per_second': '4376', 'train_loss': '0.003254', 'epoch': '0.5587'}
+{'eval_loss': '0.2542', 'eval_token_loss': '0.2543', 'eval_target_tokens': 136979, 'eval_runtime': '0.9405', 'eval_samples_per_second': '2178', 'eval_steps_per_second': '8.506', 'epoch': '0.5587'}

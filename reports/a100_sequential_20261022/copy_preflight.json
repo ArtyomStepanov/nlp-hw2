@@ -1,0 +1,23 @@
+{
+  "architecture": "copy",
+  "global_step": 2,
+  "metrics": {
+    "eval_loss": 7.529045581817627,
+    "eval_token_loss": 7.529046048319398,
+    "eval_target_tokens": 4060,
+    "eval_runtime": 0.2053,
+    "eval_samples_per_second": 311.746,
+    "eval_steps_per_second": 4.871,
+    "epoch": 1.0
+  },
+  "wall_seconds": 6.949365809559822,
+  "precision": "fp16",
+  "world_size": 1,
+  "effective_batch": 256,
+  "parameters": 244656129,
+  "finished_at": "2026-10-22T15:24:08.454935+00:00",
+  "torch": "2.9.1+cu128",
+  "transformers": "5.10.2",
+  "gpu": "NVIDIA A100 80GB PCIe",
+  "peak_allocated_gib": 31.82173776626587
+}

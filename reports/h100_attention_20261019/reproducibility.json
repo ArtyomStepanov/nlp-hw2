@@ -1,0 +1,26 @@
+{
+  "python": "3.12.3",
+  "versions": {
+    "torch": "2.9.1",
+    "transformers": "5.10.2",
+    "accelerate": "1.15.0",
+    "datasets": "4.6.0"
+  },
+  "sha256": {
+    "reports/h100_attention_20261019/compare_attention.py": "9a4a1ca4239e825bfda836c05ea1296aef77b856a103fdeb3256299ac6ef807f",
+    "reports/h100_attention_20261019/validate_cross_attention.py": "0820443ea0f20f973ed7bbcfdaddacb4c19ca605f6b86119c48c1b7760d76af4",
+    "reports/h100_training_20261019/benchmark_data.json.gz": "0046ac7a473f15f9e41648bcc21ba7eaeff2be77ee417ae77d2e7ce4bdc5212a",
+    "artifacts/attention_benchmark/checkpoint/model.safetensors": "4898c78d3f55fb708930876648b0c6b0fb2f7a11155ac7c99802d2dd82242a8a",
+    "artifacts/attention_benchmark/checkpoint/config.json": "d0eb05ca3aa93a916a5f122c283f22aa06ba1eadef69a878701b1e27569d8742",
+    "artifacts/tokenizer.json": "abd75c8655b948f612ebbf065a12269613269a4755cd0a698b0bf7a5bc1e9704"
+  },
+  "checkpoint_step": 7500,
+  "isolated_dependencies": {
+    "kernels": "0.12.3",
+    "einops": "0.8.2"
+  },
+  "kernel_revisions": {
+    "kernels-community/flash-attn2": "c3f3c93a4a39e3d2cf49c13eac49229bc726ea13",
+    "kernels-community/flash-attn3": "e29f138fc363b396e5d2706c8a5f6fa7d36f41e0"
+  }
+}

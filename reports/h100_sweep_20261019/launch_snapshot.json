@@ -1,0 +1,38 @@
+{
+  "captured_at": "2026-10-19T16:04:35.051776+00:00",
+  "summary": {
+    "status": "running",
+    "completed": [],
+    "failures": [],
+    "active_trial": "e10_d10_lr1e-04"
+  },
+  "latest_log": "artifacts/sweeps/hpo_004_1m_1epoch/logs/e10_d10_lr1e-04-20261019T160216Z.log",
+  "last_progress": "568",
+  "last_metrics": [
+    {
+      "loss": "2.242",
+      "grad_norm": "1.5",
+      "learning_rate": "9.981e-05",
+      "epoch": "0.0768"
+    },
+    {
+      "loss": "1.898",
+      "grad_norm": "0.9211",
+      "learning_rate": "9.926e-05",
+      "epoch": "0.1024"
+    },
+    {
+      "loss": "1.644",
+      "grad_norm": "0.6228",
+      "learning_rate": "9.836e-05",
+      "epoch": "0.128"
+    }
+  ],
+  "gpu": "98 %, 42217 MiB, 81559 MiB",
+  "tmux": "nlp-hpo-004: 1 windows (created Mon Oct 19 16:02:15 2026)",
+  "source_sha256": {
+    "train_sweep.py": "f2336cba87e4a746ea9158ac3037965dfcfd62a6c61386601acb21a2e04a9650",
+    "tests/test_train_sweep.py": "ceb20fb278896e48822e46cef78eb2e2715294f35599280ba41ea9c640c30616",
+    "configs/hpo_004_1m_1epoch/sweep.json": "cc984f81946299c8db8fec880e0d0e5a0773512b409f1eaa45a970eee5feb0f3"
+  }
+}

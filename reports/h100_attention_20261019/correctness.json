@@ -1,0 +1,56 @@
+[
+  {
+    "backend": "fp32",
+    "loss": 0.4777663052082062,
+    "finite": true,
+    "gradient_tensors": 427
+  },
+  {
+    "backend": "sdpa",
+    "loss": 0.477369487285614,
+    "finite": true,
+    "gradient_tensors": 427,
+    "vs_fp32": {
+      "loss_abs_diff": 0.0003968179225921631,
+      "logit_rmse": 0.006556205451488495,
+      "gradient_relative_l2": 0.009321166936507608,
+      "gradient_cosine": 0.9999571387999101
+    }
+  },
+  {
+    "backend": "fa2",
+    "loss": 0.4786757826805115,
+    "finite": true,
+    "gradient_tensors": 427,
+    "vs_fp32": {
+      "loss_abs_diff": 0.0009094774723052979,
+      "logit_rmse": 0.00665977643802762,
+      "gradient_relative_l2": 0.009048476241498297,
+      "gradient_cosine": 0.9999594703546545
+    },
+    "vs_sdpa": {
+      "loss_abs_diff": 0.001306295394897461,
+      "logit_rmse": 0.007463566493242979,
+      "gradient_relative_l2": 0.009603793055164855,
+      "gradient_cosine": 0.9999559571976928
+    }
+  },
+  {
+    "backend": "fa3",
+    "loss": 0.47775593400001526,
+    "finite": true,
+    "gradient_tensors": 427,
+    "vs_fp32": {
+      "loss_abs_diff": 1.0371208190917969e-05,
+      "logit_rmse": 0.006654523313045502,
+      "gradient_relative_l2": 0.008583291216663782,
+      "gradient_cosine": 0.9999638618681448
+    },
+    "vs_sdpa": {
+      "loss_abs_diff": 0.0003864467144012451,
+      "logit_rmse": 0.007519327104091644,
+      "gradient_relative_l2": 0.008114634574942011,
+      "gradient_cosine": 0.999967066640967
+    }
+  }
+]

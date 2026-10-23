@@ -1,0 +1,191 @@
+{
+  "at": "2026-10-22T20:26:00.375237+00:00",
+  "queue": {
+    "status": "running",
+    "stage": 2,
+    "recovery": true,
+    "phase": "training",
+    "driver_pid": 83202,
+    "child_pid": 123554,
+    "started_at": "2026-10-22T19:54:58.654828+00:00",
+    "completed": [
+      "repeat4m"
+    ],
+    "variant": "distinct4m",
+    "architecture": "bart",
+    "updated_at": "2026-10-22T20:16:52.353080+00:00",
+    "log": "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage2_recovery/logs/distinct4m_training.log"
+  },
+  "alive": {
+    "driver_pid": true,
+    "child_pid": true
+  },
+  "free_disk_bytes": 59108335616,
+  "pipeline_phase": "running",
+  "pipeline_exitcode": null,
+  "stage2_complete": null,
+  "trials": {
+    "repeat4m": {
+      "complete": {
+        "architecture": "bart",
+        "global_step": 15625,
+        "metrics": {
+          "eval_loss": 0.2603245973587036,
+          "eval_token_loss": 0.26735336462672726,
+          "eval_target_tokens": 1344127,
+          "eval_runtime": 14.8626,
+          "eval_samples_per_second": 1345.662,
+          "eval_steps_per_second": 10.563,
+          "epoch": 1,
+          "amp_overflow_count": 1,
+          "amp_loss_scale": 4194304
+        },
+        "wall_seconds": 552.9438268877566,
+        "precision": "fp16",
+        "world_size": 1,
+        "effective_batch": 256,
+        "parameters": 244391936,
+        "finished_at": "2026-10-22T20:04:38.445289+00:00",
+        "torch": "2.9.1+cu128",
+        "transformers": "5.10.2",
+        "amp_diagnostics": {
+          "overflow_count": 1,
+          "final_loss_scale": 4194304,
+          "scope": "current_process_session"
+        },
+        "gpu": "NVIDIA A100 80GB PCIe",
+        "peak_allocated_gib": 32.54380226135254
+      },
+      "last_train": {
+        "loss": 0.2116263771057129,
+        "grad_norm": 0.361576110124588,
+        "learning_rate": 1.51416071701993e-9,
+        "epoch": 0.9984,
+        "step": 15600,
+        "amp_overflow_count": 1,
+        "amp_loss_scale": 4194304
+      },
+      "last_eval": {
+        "eval_loss": 0.2603245973587036,
+        "eval_token_loss": 0.26735336462672726,
+        "eval_target_tokens": 1344127,
+        "eval_runtime": 14.8626,
+        "eval_samples_per_second": 1345.662,
+        "eval_steps_per_second": 10.563,
+        "epoch": 1,
+        "step": 15625,
+        "amp_overflow_count": 1,
+        "amp_loss_scale": 4194304
+      }
+    },
+    "distinct4m": {
+      "complete": null,
+      "last_train": {
+        "loss": 0.619834098815918,
+        "grad_norm": 0.3640890121459961,
+        "learning_rate": 0.00019812240769377721,
+        "epoch": 0.1088,
+        "step": 1700
+      },
+      "last_eval": {
+        "eval_loss": 1.4803670644760132,
+        "eval_token_loss": 1.5982157569201112,
+        "eval_target_tokens": 1344127,
+        "eval_runtime": 14.9306,
+        "eval_samples_per_second": 1339.529,
+        "eval_steps_per_second": 10.515,
+        "epoch": 0.064,
+        "step": 1000
+      }
+    }
+  },
+  "evaluations": {
+    "repeat4m": {
+      "progress": {
+        "generated": 20000,
+        "total": 20000,
+        "phase": "complete"
+      },
+      "metrics": {
+        "num_examples": 20000,
+        "num_evaluated": 19886,
+        "num_passed": 13445,
+        "num_bad_code": 113,
+        "pass@1": 0.6761037916121895,
+        "bad_code_rate": 0.00565,
+        "wrong_answer_rate": 0.3182641054007845,
+        "reference_error_rate": 0.0057,
+        "evaluation_coverage": 0.9943,
+        "evaluation_seconds": 243.82722301781178,
+        "status_counts": {
+          "passed": 13445,
+          "wrong_answer": 6329,
+          "runtime_error": 102,
+          "ok": 113,
+          "invalid_output": 5,
+          "syntax_error": 5,
+          "timeout": 1
+        },
+        "reference_status_counts": {
+          "ok": 19886,
+          "unsupported_code": 27,
+          "runtime_error": 76,
+          "invalid_output": 11
+        },
+        "prediction_column": "generated_code",
+        "reference_column": "code",
+        "comparison": "reference_solve",
+        "architecture": "bart",
+        "num_beams": 4,
+        "max_new_tokens": 256,
+        "length_penalty": 1,
+        "generation_seconds": 469.17812605574727,
+        "validation_sha256": "282001d478bffb2d13ab2ca41e8232a0c99c3623f898dd7077128c266172c406",
+        "evaluation_split": "validation",
+        "num_reference_errors": 114,
+        "num_hit_token_limit": 14,
+        "passed_fraction_of_all_sampled": 0.67225,
+        "finished_at": "2026-10-22T20:16:51.302274+00:00"
+      },
+      "config": {
+        "architecture": "bart",
+        "checkpoint": "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage2_recovery/trials/repeat4m/final",
+        "checkpoint_step": 15625,
+        "validation_rows": 20000,
+        "validation_sha256": "282001d478bffb2d13ab2ca41e8232a0c99c3623f898dd7077128c266172c406",
+        "bundle_sha256": "ae80f9cd054d3bb23667bcb3a7d9f7200322005202f82c2945d718295e4b1f26",
+        "selection_sha256": "db1019e323091ea265971650fb8c9636adf58965440abb8411e4a484c5e318c4",
+        "device": "cuda:0",
+        "batch_size": 64,
+        "num_beams": 4,
+        "max_new_tokens": 256,
+        "length_penalty": 1,
+        "do_sample": false,
+        "use_cache": true,
+        "reference_source": "Full saved validation labels, decoded without truncation",
+        "evaluation_split": "validation; used during training for loss monitoring",
+        "official_test_used": false,
+        "started_at": "2026-10-22T20:04:56.140325+00:00"
+      }
+    },
+    "distinct4m": {
+      "progress": null,
+      "metrics": null,
+      "config": null
+    }
+  },
+  "log": {
+    "path": "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage2_recovery/logs/distinct4m_training.log",
+    "bytes": 104013,
+    "mtime": 1792700760.287932,
+    "tail": "�         | 1640/15625 [07:55<48:33,  4.80it/s]\n 11%|█         | 1641/15625 [07:55<47:41,  4.89it/s]\n 11%|█         | 1642/15625 [07:55<47:05,  4.95it/s]\n 11%|█         | 1643/15625 [07:55<46:36,  5.00it/s]\n 11%|█         | 1644/15625 [07:56<46:19,  5.03it/s]\n 11%|█         | 1645/15625 [07:56<46:05,  5.05it/s]\n 11%|█         | 1646/15625 [07:56<44:03,  5.29it/s]\n 11%|█         | 1647/15625 [07:56<42:38,  5.46it/s]\n 11%|█         | 1648/15625 [07:56<41:36,  5.60it/s]\n 11%|█         | 1649/15625 [07:57<40:56,  5.69it/s]\n 11%|█         | 1650/15625 [07:57<39:13,  5.94it/s]\n 11%|█         | 1651/15625 [07:57<1:17:45,  3.00it/s]\n 11%|█         | 1652/15625 [07:58<1:31:44,  2.54it/s]\n 11%|█         | 1653/15625 [07:58<1:37:05,  2.40it/s]\n 11%|█         | 1654/15625 [07:59<1:37:04,  2.40it/s]\n 11%|█         | 1655/15625 [07:59<1:35:35,  2.44it/s]\n 11%|█         | 1656/15625 [08:00<1:33:36,  2.49it/s]\n 11%|█         | 1657/15625 [08:00<1:31:26,  2.55it/s]\n 11%|█         | 1658/15625 [08:00<1:28:44,  2.62it/s]\n 11%|█         | 1659/15625 [08:01<1:26:26,  2.69it/s]\n 11%|█         | 1660/15625 [08:01<1:24:44,  2.75it/s]\n 11%|█         | 1661/15625 [08:01<1:21:59,  2.84it/s]\n 11%|█         | 1662/15625 [08:02<1:20:08,  2.90it/s]\n 11%|█         | 1663/15625 [08:02<1:18:45,  2.95it/s]\n 11%|█         | 1664/15625 [08:02<1:16:38,  3.04it/s]\n 11%|█         | 1665/15625 [08:03<1:14:08,  3.14it/s]\n 11%|█         | 1666/15625 [08:03<1:12:20,  3.22it/s]\n 11%|█         | 1667/15625 [08:03<1:11:06,  3.27it/s]\n 11%|█         | 1668/15625 [08:03<1:10:08,  3.32it/s]\n 11%|█         | 1669/15625 [08:04<1:08:20,  3.40it/s]\n 11%|█         | 1670/15625 [08:04<1:07:04,  3.47it/s]\n 11%|█         | 1671/15625 [08:04<1:06:07,  3.52it/s]\n 11%|█         | 1672/15625 [08:05<1:05:27,  3.55it/s]\n 11%|█         | 1673/15625 [08:05<1:05:01,  3.58it/s]\n 11%|█         | 1674/15625 [08:05<1:03:36,  3.66it/s]\n 11%|█         | 1675/15625 [08:05<1:01:36,  3.77it/s]\n 11%|█         | 1676/15625 [08:06<1:00:14,  3.86it/s]\n 11%|█         | 1677/15625 [08:06<59:17,  3.92it/s]  \n 11%|█         | 1678/15625 [08:06<58:36,  3.97it/s]\n 11%|█         | 1679/15625 [08:06<58:08,  4.00it/s]\n 11%|█         | 1680/15625 [08:07<57:49,  4.02it/s]\n 11%|█         | 1681/15625 [08:07<56:11,  4.14it/s]\n 11%|█         | 1682/15625 [08:07<54:57,  4.23it/s]\n 11%|█         | 1683/15625 [08:07<54:03,  4.30it/s]\n 11%|█         | 1684/15625 [08:07<53:23,  4.35it/s]\n 11%|█         | 1685/15625 [08:08<52:55,  4.39it/s]\n 11%|█         | 1686/15625 [08:08<52:43,  4.41it/s]\n 11%|█         | 1687/15625 [08:08<52:31,  4.42it/s]\n 11%|█         | 1688/15625 [08:08<50:28,  4.60it/s]\n 11%|█         | 1689/15625 [08:09<48:59,  4.74it/s]\n 11%|█         | 1690/15625 [08:09<48:00,  4.84it/s]\n 11%|█         | 1691/15625 [08:09<47:23,  4.90it/s]\n 11%|█         | 1692/15625 [08:09<46:55,  4.95it/s]\n 11%|█         | 1693/15625 [08:09<46:33,  4.99it/s]\n 11%|█         | 1694/15625 [08:10<46:13,  5.02it/s]\n 11%|█         | 1695/15625 [08:10<45:10,  5.14it/s]\n 11%|█         | 1696/15625 [08:10<43:31,  5.33it/s]\n 11%|█         | 1697/15625 [08:10<42:10,  5.50it/s]\n 11%|█         | 1698/15625 [08:10<41:18,  5.62it/s]\n 11%|█         | 1699/15625 [08:10<40:43,  5.70it/s]\n 11%|█         | 1700/15625 [08:11<38:59,  5.95it/s]\n                                                    \n{'loss': '0.6198', 'grad_norm': '0.3641', 'learning_rate': '0.0001981', 'epoch': '0.1088'}\n\n 11%|█         | 1700/15625 [08:11<38:59,  5.95it/s]\n 11%|█         | 1701/15625 [08:11<1:14:14,  3.13it/s]\n 11%|█         | 1702/15625 [08:12<1:29:07,  2.60it/s]\n 11%|█         | 1703/15625 [08:12<1:35:11,  2.44it/s]\n 11%|█         | 1704/15625 [08:13<1:36:21,  2.41it/s]\n 11%|█         | 1705/15625 [08:13<1:35:39,  2.43it/s]\n 11%|█         | 1706/15625 [08:13<1:34:20,  2.46it/s]\n 11%|█         | 1707/15625 [08:14<1:31:52,  2.53it/s]"
+  },
+  "gpu": {
+    "name": "NVIDIA A100 80GB PCIe",
+    "free_total_bytes": [
+      44392316928,
+      85293072384
+    ]
+  },
+  "processes": "    PID     ELAPSED %CPU   RSS STAT COMMAND\n  83202       31:03  1.1 184396 Sl+ python3 /home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage2_recovery_code/tools/recover_a100_stage2.py --stage1-dir /home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage1 --failed-stage2-dir /home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage2 --prepared-data-dir /home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage2_data --output-dir /home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage2_recovery --reference-identity /home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage2_recovery_code/reference_identity.json\n 123554       09:09  100 3168748 Rsl /usr/bin/python3 /home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage2_recovery_code/tools/recover_a100_stage2.py worker --request /home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage2_recovery/run_request.json --request-sha 43fb0a3d0e076466f76b4385c459e1f3bdcd4e2ea4beda0fd4f3dff2db94603c --variant distinct4m --phase training\n"
+}

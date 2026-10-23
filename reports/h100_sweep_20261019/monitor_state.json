@@ -1,0 +1,208 @@
+{
+  "captured_at": "2026-10-19T17:48:20.704436+00:00",
+  "rounds": {
+    "hpo_004_1m_1epoch": {
+      "status": "complete",
+      "active_trial": null,
+      "failures": [],
+      "completed": [
+        {
+          "name": "e10_d10_lr1e-04",
+          "metrics": {
+            "eval_loss": 0.4616970717906952,
+            "eval_token_loss": 0.48900128594596465,
+            "eval_target_tokens": 1344127,
+            "eval_runtime": 10.175,
+            "eval_samples_per_second": 1965.597,
+            "eval_steps_per_second": 15.43,
+            "epoch": 1
+          },
+          "steps": 3907,
+          "wall_seconds": 796.0589962117374,
+          "completed_at": "2026-10-19T16:15:38.719503+00:00"
+        },
+        {
+          "name": "e10_d10_lr2e-04",
+          "metrics": {
+            "eval_loss": 0.41387230157852173,
+            "eval_token_loss": 0.43630529723264855,
+            "eval_target_tokens": 1344127,
+            "eval_runtime": 10.2264,
+            "eval_samples_per_second": 1955.731,
+            "eval_steps_per_second": 15.352,
+            "epoch": 1
+          },
+          "steps": 3907,
+          "wall_seconds": 797.1318416567519,
+          "completed_at": "2026-10-19T16:29:03.517578+00:00"
+        },
+        {
+          "name": "e12_d8_lr1e-04",
+          "metrics": {
+            "eval_loss": 0.5752214193344116,
+            "eval_token_loss": 0.6126221092282343,
+            "eval_target_tokens": 1344127,
+            "eval_runtime": 9.4956,
+            "eval_samples_per_second": 2106.239,
+            "eval_steps_per_second": 16.534,
+            "epoch": 1
+          },
+          "steps": 3907,
+          "wall_seconds": 764.0803327760659,
+          "completed_at": "2026-10-19T16:41:55.264501+00:00"
+        },
+        {
+          "name": "e12_d8_lr2e-04",
+          "metrics": {
+            "eval_loss": 0.8389261960983276,
+            "eval_token_loss": 0.8625280418237009,
+            "eval_target_tokens": 1344127,
+            "eval_runtime": 9.4808,
+            "eval_samples_per_second": 2109.537,
+            "eval_steps_per_second": 16.56,
+            "epoch": 1
+          },
+          "steps": 3907,
+          "wall_seconds": 762.7247487218119,
+          "completed_at": "2026-10-19T16:54:46.012317+00:00"
+        }
+      ],
+      "step": 3907,
+      "last_metrics": [
+        {
+          "loss": "0.8596",
+          "grad_norm": "0.8316",
+          "learning_rate": "1.546e-06",
+          "epoch": "0.9471"
+        },
+        {
+          "loss": "0.8544",
+          "grad_norm": "0.7678",
+          "learning_rate": "4.177e-07",
+          "epoch": "0.9727"
+        },
+        {
+          "loss": "0.8562",
+          "grad_norm": "0.7801",
+          "learning_rate": "2.293e-09",
+          "epoch": "0.9983"
+        }
+      ],
+      "errors": [],
+      "nonfinite": [],
+      "exitcode": "0",
+      "log_mtime": 1792428886.0112276,
+      "tmux_alive": false
+    },
+    "hpo_005_architecture_extension": {
+      "status": "complete",
+      "active_trial": null,
+      "failures": [],
+      "completed": [
+        {
+          "name": "e8_d12_lr1e-04",
+          "metrics": {
+            "eval_loss": 0.4689086973667145,
+            "eval_token_loss": 0.49680420434804684,
+            "eval_target_tokens": 1344127,
+            "eval_runtime": 11.0265,
+            "eval_samples_per_second": 1813.816,
+            "eval_steps_per_second": 14.238,
+            "epoch": 1
+          },
+          "steps": 3907,
+          "wall_seconds": 827.6195253133774,
+          "completed_at": "2026-10-19T17:08:49.498719+00:00"
+        },
+        {
+          "name": "e8_d12_lr2e-04",
+          "metrics": {
+            "eval_loss": 0.38003695011138916,
+            "eval_token_loss": 0.39921499228162355,
+            "eval_target_tokens": 1344127,
+            "eval_runtime": 10.9756,
+            "eval_samples_per_second": 1822.224,
+            "eval_steps_per_second": 14.304,
+            "epoch": 1
+          },
+          "steps": 3907,
+          "wall_seconds": 828.0386650622822,
+          "completed_at": "2026-10-19T17:22:45.329702+00:00"
+        },
+        {
+          "name": "e8_d8_lr2e-04",
+          "metrics": {
+            "eval_loss": 0.3760811686515808,
+            "eval_token_loss": 0.39463842142245426,
+            "eval_target_tokens": 1344127,
+            "eval_runtime": 8.819,
+            "eval_samples_per_second": 2267.832,
+            "eval_steps_per_second": 17.802,
+            "epoch": 1
+          },
+          "steps": 3907,
+          "wall_seconds": 654.0847726692446,
+          "completed_at": "2026-10-19T17:33:46.687355+00:00"
+        },
+        {
+          "name": "e10_d10_lr3e-04",
+          "metrics": {
+            "eval_loss": 0.8285144567489624,
+            "eval_token_loss": 0.8508708189978291,
+            "eval_target_tokens": 1344127,
+            "eval_runtime": 10.1922,
+            "eval_samples_per_second": 1962.287,
+            "eval_steps_per_second": 15.404,
+            "epoch": 1
+          },
+          "steps": 3907,
+          "wall_seconds": 797.0261906730011,
+          "completed_at": "2026-10-19T17:47:11.421983+00:00"
+        }
+      ],
+      "step": 3907,
+      "last_metrics": [
+        {
+          "loss": "0.8486",
+          "grad_norm": "0.7981",
+          "learning_rate": "2.319e-06",
+          "epoch": "0.9471"
+        },
+        {
+          "loss": "0.8423",
+          "grad_norm": "0.7199",
+          "learning_rate": "6.265e-07",
+          "epoch": "0.9727"
+        },
+        {
+          "loss": "0.845",
+          "grad_norm": "0.7403",
+          "learning_rate": "3.44e-09",
+          "epoch": "0.9983"
+        }
+      ],
+      "errors": [],
+      "nonfinite": [],
+      "exitcode": "0",
+      "log_mtime": 1792432031.4216704,
+      "tmux_alive": false
+    }
+  },
+  "gpu": "0 %, 0 MiB, 81559 MiB",
+  "gpu_processes": "",
+  "disk_free_gib": 70.73,
+  "disk_total_gib": 157,
+  "reported_completed": [
+    "e10_d10_lr1e-04",
+    "e10_d10_lr2e-04",
+    "e12_d8_lr1e-04",
+    "e12_d8_lr2e-04",
+    "e8_d12_lr1e-04",
+    "e8_d12_lr2e-04",
+    "e8_d8_lr2e-04",
+    "e10_d10_lr3e-04"
+  ],
+  "reported_problems": [],
+  "monitor_status": "PAUSED",
+  "monitor_reason": "All eight authorized trials completed successfully; final artifacts and report saved."
+}

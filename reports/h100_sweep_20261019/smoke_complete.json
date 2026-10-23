@@ -1,0 +1,40 @@
+{
+  "trial": {
+    "name": "e10_d10_lr1e-04",
+    "output_dir": "/workspace/nlp-hw2/artifacts/sweeps/hpo_004_1m_1epoch/smoke",
+    "encoder_layers": 10,
+    "decoder_layers": 10,
+    "learning_rate": 0.0001,
+    "train_batch_size": 128,
+    "gradient_accumulation_steps": 2,
+    "num_train_epochs": 1,
+    "seed": 42,
+    "data_manifest_sha256": "aab7a9237d69484044504eac5c998f9f7ebd9c5573ad4d1e31fb4f41705e1e3d",
+    "smoke": true
+  },
+  "metrics": {
+    "eval_loss": 9.000743865966797,
+    "eval_token_loss": 9.000438456632653,
+    "eval_target_tokens": 490,
+    "eval_runtime": 0.0192,
+    "eval_samples_per_second": 417.479,
+    "eval_steps_per_second": 104.37,
+    "epoch": 1.0
+  },
+  "train_metrics": {
+    "train_runtime": 0.4692,
+    "train_samples_per_second": 17.05,
+    "train_steps_per_second": 4.262,
+    "total_flos": 66060288.0,
+    "train_loss": 8.994832515716553,
+    "epoch": 1.0
+  },
+  "steps": 2,
+  "train_rows": 8,
+  "validation_rows": 8,
+  "parameters": 310400,
+  "wall_seconds": 0.5847839969210327,
+  "peak_allocated_gib": 0.11359882354736328,
+  "checkpoint": "/workspace/nlp-hw2/artifacts/sweeps/hpo_004_1m_1epoch/smoke/checkpoint-2",
+  "completed_at": "2026-10-19T15:59:10.606262+00:00"
+}

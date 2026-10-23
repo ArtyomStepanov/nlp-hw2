@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/usr/bin/python3",
+    "-u",
+    "/home/artyom-step/workspace/nlp-hw2/artifacts/evaluations/transformer_002_checkpoint90000_test10000_seed42_20261013/run_evaluation.py",
+    "--output",
+    "/home/artyom-step/workspace/nlp-hw2/artifacts/evaluations/transformer_002_checkpoint90000_test10000_seed42_20261013"
+  ],
+  "cwd": "/home/artyom-step/workspace/nlp-hw2",
+  "tmux": "nlp-eval-90k",
+  "training_session": "nlp-002-lr1e4"
+}

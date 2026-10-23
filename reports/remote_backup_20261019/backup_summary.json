@@ -1,0 +1,261 @@
+{
+  "source_host": "nlp-bart.ml-contest-mla.ws.deep.yandex.net",
+  "source_path": "/home/artyom-step/workspace/nlp-hw2",
+  "destination": "/Users/artyom-step/nlp-hw2/artifacts/remote_backups/nlp-bart_20261019_161656/nlp-hw2",
+  "started_at": "2026-10-19T16:16:56.892912+03:00",
+  "scope": "Code and Git history, notebooks, final exported model, tokenizer/configs, logs, evaluation outputs and experiment reports. Dataset/Arrow caches and other checkpoint weights/optimizer states omitted by user choice.",
+  "local_free_bytes": 362621652992,
+  "scope_confirmed_at": "2026-10-19T16:30:21.867193+03:00",
+  "selected_files": 495,
+  "selected_bytes": 782703635,
+  "status": "complete",
+  "discarded_downloaded_unselected_files": 319,
+  "discarded_downloaded_unselected_bytes": 11006597528,
+  "completed_at": "2026-10-19T16:32:06.279636+03:00",
+  "verified_files": 495,
+  "verified_logical_bytes": 782703635,
+  "remote_selected_files_unchanged": true,
+  "adjacent_notebook_verified": true,
+  "remote_files_modified_or_deleted": false,
+  "existing_local_project_files_overwritten": false,
+  "final_model": {
+    "path": "/Users/artyom-step/nlp-hw2/artifacts/remote_backups/nlp-bart_20261019_161656/nlp-hw2/artifacts/experiments/transformer_002_8x8_d768_lr1e4/model.pt",
+    "sha256": "5e1a87fae9f39adc24c4fab8eaf630a89c4906862a6fa38962fb2f71d65fe0fd",
+    "size": 557159507
+  },
+  "verification": {
+    "verified_at": "2026-10-19T16:31:15.059125+03:00",
+    "source_host": "nlp-bart.ml-contest-mla.ws.deep.yandex.net",
+    "source_path": "/home/artyom-step/workspace/nlp-hw2",
+    "scope": "Code and Git history, notebooks, final exported model, tokenizer/configs, logs, evaluation outputs and experiment reports. Dataset/Arrow caches and other checkpoint weights/optimizer states omitted by user choice.",
+    "destination": "/Users/artyom-step/nlp-hw2/artifacts/remote_backups/nlp-bart_20261019_161656/nlp-hw2",
+    "complete": true,
+    "expected_files": 495,
+    "verified_files": 495,
+    "verified_logical_bytes": 782703635,
+    "source_unique_file_bytes": 782703635,
+    "source_hard_link_groups": 0,
+    "unpreserved_hard_link_groups": [],
+    "errors": [],
+    "method": "SHA-256 for every regular file; path/type/size/permissions/mtime checks; duplicate inode hashes reused"
+  },
+  "code_comparison": {
+    "compared_files": 30,
+    "same": 28,
+    "differences": [
+      {
+        "path": "README.md",
+        "remote_sha256": "a54013e1ec0b466ebc7c4e57f85a3664fd517240daaaca245ac8461194f7f455",
+        "local_sha256": "a4ed08f4710a380e59b3c2e0c7ed262251e3cf98021a09617edaecd3644a4ca0",
+        "status": "different"
+      },
+      {
+        "path": "train.ipynb",
+        "remote_sha256": "3d9a21a9aa40909ab0a4482c181a55b2c1a78abde9501ddfcec6d24e269b047c",
+        "local_sha256": "690609112f1a2b0d9624c58170604fcc18efd0f25542d88ca95f2f2cd67f6b2c",
+        "status": "different"
+      }
+    ],
+    "entries": [
+      {
+        "path": "prepare_datasets.py",
+        "remote_sha256": "df5e35028e80fd2d6406d8e2cb77420204e7693022a2e5a8d37c78aed1e94211",
+        "local_sha256": "df5e35028e80fd2d6406d8e2cb77420204e7693022a2e5a8d37c78aed1e94211",
+        "status": "same"
+      },
+      {
+        "path": "evaluate_checkpoint.ipynb",
+        "remote_sha256": "2fd0b250400ea62662e47bcab243b90ea3fcefc5b1f3c8c6bca898646126cc6f",
+        "local_sha256": "2fd0b250400ea62662e47bcab243b90ea3fcefc5b1f3c8c6bca898646126cc6f",
+        "status": "same"
+      },
+      {
+        "path": "requirements.txt",
+        "remote_sha256": "aba58d8a34b8981527c1dd09acada957435bb8b6e7c3fc62c3819a41f8c0a1d5",
+        "local_sha256": "aba58d8a34b8981527c1dd09acada957435bb8b6e7c3fc62c3819a41f8c0a1d5",
+        "status": "same"
+      },
+      {
+        "path": "_code_runner.py",
+        "remote_sha256": "0e68f1713d6f65b9c2638aca26bd7c1440328b000b648eb9f76c01352d721913",
+        "local_sha256": "0e68f1713d6f65b9c2638aca26bd7c1440328b000b648eb9f76c01352d721913",
+        "status": "same"
+      },
+      {
+        "path": "plotting.py",
+        "remote_sha256": "2071e931d633d2cc0399e9560ef088bab38302d5e0cf77331a0784777ff297b2",
+        "local_sha256": "2071e931d633d2cc0399e9560ef088bab38302d5e0cf77331a0784777ff297b2",
+        "status": "same"
+      },
+      {
+        "path": "evaluation.py",
+        "remote_sha256": "9ad4d6bb1c03d0d2eca15a597db3319cf264e7d3cfcc86149a609251a4e983d0",
+        "local_sha256": "9ad4d6bb1c03d0d2eca15a597db3319cf264e7d3cfcc86149a609251a4e983d0",
+        "status": "same"
+      },
+      {
+        "path": "README.md",
+        "remote_sha256": "a54013e1ec0b466ebc7c4e57f85a3664fd517240daaaca245ac8461194f7f455",
+        "local_sha256": "a4ed08f4710a380e59b3c2e0c7ed262251e3cf98021a09617edaecd3644a4ca0",
+        "status": "different"
+      },
+      {
+        "path": "tokenizer.py",
+        "remote_sha256": "4ff94323b5ab8aa5fac1e53760b76c4505b947b620539d6c7c62460f4ffbf746",
+        "local_sha256": "4ff94323b5ab8aa5fac1e53760b76c4505b947b620539d6c7c62460f4ffbf746",
+        "status": "same"
+      },
+      {
+        "path": ".gitignore",
+        "remote_sha256": "89fbfe6d32fa7172a92335f2a09aeb2687eaa6928de68ce320b2e3deddf9dca2",
+        "local_sha256": "89fbfe6d32fa7172a92335f2a09aeb2687eaa6928de68ce320b2e3deddf9dca2",
+        "status": "same"
+      },
+      {
+        "path": "utils.py",
+        "remote_sha256": "e1a3f3441abc890aeda4d1dc897466af3d493cf1688db0c9b8667dfbb0702eef",
+        "local_sha256": "e1a3f3441abc890aeda4d1dc897466af3d493cf1688db0c9b8667dfbb0702eef",
+        "status": "same"
+      },
+      {
+        "path": "train_002_8x8_d768.ipynb",
+        "remote_sha256": "13c3c1ac3c39e65c0585ea7e48ffeea514806aba48b37ebb2134d6b3d77273f6",
+        "local_sha256": "13c3c1ac3c39e65c0585ea7e48ffeea514806aba48b37ebb2134d6b3d77273f6",
+        "status": "same"
+      },
+      {
+        "path": "beam_search_comparison.ipynb",
+        "remote_sha256": "8896d41c643558b19527bfa34dc1f6f01f90aa9c14f60bf8f685bad303a6895e",
+        "local_sha256": "8896d41c643558b19527bfa34dc1f6f01f90aa9c14f60bf8f685bad303a6895e",
+        "status": "same"
+      },
+      {
+        "path": "inference.py",
+        "remote_sha256": "837e1147884a5a517a28d167e0a5ade715072a202c1fd3ffe3d879baa2cd30b8",
+        "local_sha256": "837e1147884a5a517a28d167e0a5ade715072a202c1fd3ffe3d879baa2cd30b8",
+        "status": "same"
+      },
+      {
+        "path": "evaluate_checkpoint.py",
+        "remote_sha256": "e80e1068db6a43899f21969479f61744135b6ef0f3698691e4b6879c66c15b81",
+        "local_sha256": "e80e1068db6a43899f21969479f61744135b6ef0f3698691e4b6879c66c15b81",
+        "status": "same"
+      },
+      {
+        "path": "train.ipynb",
+        "remote_sha256": "3d9a21a9aa40909ab0a4482c181a55b2c1a78abde9501ddfcec6d24e269b047c",
+        "local_sha256": "690609112f1a2b0d9624c58170604fcc18efd0f25542d88ca95f2f2cd67f6b2c",
+        "status": "different"
+      },
+      {
+        "path": "load_dataset.py",
+        "remote_sha256": "76349a121aea942e9edd8c3609eb820e3d5656b27760dda7f8172fe8fcc9601d",
+        "local_sha256": "76349a121aea942e9edd8c3609eb820e3d5656b27760dda7f8172fe8fcc9601d",
+        "status": "same"
+      },
+      {
+        "path": "train_distributed.py",
+        "remote_sha256": "0924d58fa8bf1382518f61256e6066d5dd971aade34a5e09390bf4375d08e1d2",
+        "local_sha256": "0924d58fa8bf1382518f61256e6066d5dd971aade34a5e09390bf4375d08e1d2",
+        "status": "same"
+      },
+      {
+        "path": "training.py",
+        "remote_sha256": "14fb3a058415f26b45f8ff3884c7ac69f09c5a6935738ce4d02ddcc6485a0c52",
+        "local_sha256": "14fb3a058415f26b45f8ff3884c7ac69f09c5a6935738ce4d02ddcc6485a0c52",
+        "status": "same"
+      },
+      {
+        "path": "tests/test_inference.py",
+        "remote_sha256": "c1bc246bfcfc6bf51b06a92b927f1c2e300b7a891f7f828d887b20dcc327f203",
+        "local_sha256": "c1bc246bfcfc6bf51b06a92b927f1c2e300b7a891f7f828d887b20dcc327f203",
+        "status": "same"
+      },
+      {
+        "path": "tests/test_plotting.py",
+        "remote_sha256": "6ab75b70acf6fa124599e2beccdc452508f7df278800a742ef238a7da6932247",
+        "local_sha256": "6ab75b70acf6fa124599e2beccdc452508f7df278800a742ef238a7da6932247",
+        "status": "same"
+      },
+      {
+        "path": "tests/test_evaluation.py",
+        "remote_sha256": "3239f62e5e92a4704cece87fec4950ca2d734a909abdb8585caeea5b310f1099",
+        "local_sha256": "3239f62e5e92a4704cece87fec4950ca2d734a909abdb8585caeea5b310f1099",
+        "status": "same"
+      },
+      {
+        "path": "tests/test_training.py",
+        "remote_sha256": "a551d31533fef9bfbfeccb0875e3b99bc89b519469b150e0f6ffb15c433b465f",
+        "local_sha256": "a551d31533fef9bfbfeccb0875e3b99bc89b519469b150e0f6ffb15c433b465f",
+        "status": "same"
+      },
+      {
+        "path": "tests/test_checkpoint_inference.py",
+        "remote_sha256": "464f77fe2ef0032955cbebc8f1f6cbb6bfb8cf6410c5cd93768acdaf0f1bef4f",
+        "local_sha256": "464f77fe2ef0032955cbebc8f1f6cbb6bfb8cf6410c5cd93768acdaf0f1bef4f",
+        "status": "same"
+      },
+      {
+        "path": "tests/test_prepare_datasets.py",
+        "remote_sha256": "6b5fe19eb3b815d6670ec83cef8e7b32ecb3333fcea4ec750778eadb2c7ac86e",
+        "local_sha256": "6b5fe19eb3b815d6670ec83cef8e7b32ecb3333fcea4ec750778eadb2c7ac86e",
+        "status": "same"
+      },
+      {
+        "path": "tests/test_distributed_training.py",
+        "remote_sha256": "8c792158631e0cab36fe45e8ae4f36ed31bbac7c6bdfbe596e0de9d3ef77b31d",
+        "local_sha256": "8c792158631e0cab36fe45e8ae4f36ed31bbac7c6bdfbe596e0de9d3ef77b31d",
+        "status": "same"
+      },
+      {
+        "path": "tests/test_checkpoint_evaluation.py",
+        "remote_sha256": "0f4e5c8c9b8084cd6a75801f33250793357f00980f2ea05ed2048e0e5eee3a33",
+        "local_sha256": "0f4e5c8c9b8084cd6a75801f33250793357f00980f2ea05ed2048e0e5eee3a33",
+        "status": "same"
+      },
+      {
+        "path": "models/config.py",
+        "remote_sha256": "c21905d2da97eb18348bbc1afd877406db939886224b29abb912b54a8e2c6115",
+        "local_sha256": "c21905d2da97eb18348bbc1afd877406db939886224b29abb912b54a8e2c6115",
+        "status": "same"
+      },
+      {
+        "path": "models/baseline.py",
+        "remote_sha256": "0896e2f2201be8650285344f535df04b70d3fa2a409403626338cec66506f9d8",
+        "local_sha256": "0896e2f2201be8650285344f535df04b70d3fa2a409403626338cec66506f9d8",
+        "status": "same"
+      },
+      {
+        "path": "models/__init__.py",
+        "remote_sha256": "4047f05472d4b643b836e383684aff9021c2c82feb528a45446f10ea2e904376",
+        "local_sha256": "4047f05472d4b643b836e383684aff9021c2c82feb528a45446f10ea2e904376",
+        "status": "same"
+      },
+      {
+        "path": "models/base.py",
+        "remote_sha256": "a18e9a415bab03a5ef2ca313b7d9e27b515d8b20a8028648e9683bc8e999fbc0",
+        "local_sha256": "a18e9a415bab03a5ef2ca313b7d9e27b515d8b20a8028648e9683bc8e999fbc0",
+        "status": "same"
+      }
+    ]
+  },
+  "notebook_comparison": {
+    "local_code_cells": 9,
+    "remote_code_cells": 13,
+    "code_cells_identical": false,
+    "remote_cells_with_outputs": 4,
+    "local_cells_with_outputs": 4
+  },
+  "adjacent_notebook": {
+    "path": "/home/artyom-step/workspace/example.ipynb",
+    "sha256": "f042391087bf5ed166f849843566da34c4ac5df8b25f69ed0d41256e4e3d2d02",
+    "size": 899
+  },
+  "excluded": [
+    "datasets and Arrow caches",
+    "other checkpoint weights",
+    "optimizer/RNG states",
+    "Python caches"
+  ],
+  "github_uploaded": false
+}

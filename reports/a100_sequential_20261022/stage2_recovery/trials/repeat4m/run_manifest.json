@@ -1,0 +1,46 @@
+{
+  "config": {
+    "architecture": "bart",
+    "micro_batch": 128,
+    "global_batch": 256,
+    "learning_rate": 0.0002,
+    "num_train_epochs": 1.0,
+    "eval_steps": 1000,
+    "precision": "fp16",
+    "gradient_checkpointing": false,
+    "torch_compile": false,
+    "torch_compile_backend": "inductor",
+    "use_cpu": false,
+    "tiny_model": false,
+    "preflight": false,
+    "max_steps": -1,
+    "expected_rows": [
+      4000000,
+      20000
+    ],
+    "expected_manifest_sha": "ae80f9cd054d3bb23667bcb3a7d9f7200322005202f82c2945d718295e4b1f26",
+    "seed": 42
+  },
+  "precision": "fp16",
+  "world_size": 1,
+  "gradient_accumulation_steps": 2,
+  "bundle_sha256": "ae80f9cd054d3bb23667bcb3a7d9f7200322005202f82c2945d718295e4b1f26",
+  "selection_sha256": "db1019e323091ea265971650fb8c9636adf58965440abb8411e4a484c5e318c4",
+  "model_config": {
+    "vocab_size": 8000,
+    "d_model": 1024,
+    "encoder_layers": 8,
+    "decoder_layers": 8,
+    "attention_heads": 8,
+    "ffn_dim": 4096,
+    "max_position_embeddings": 512,
+    "dropout": 0.1,
+    "attention_dropout": 0.0,
+    "pad_token_id": 0,
+    "bos_token_id": 2,
+    "eos_token_id": 3,
+    "unk_token_id": 1
+  },
+  "train_rows": 4000000,
+  "validation_rows": 20000
+}

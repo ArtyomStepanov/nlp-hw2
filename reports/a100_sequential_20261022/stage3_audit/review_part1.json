@@ -1,0 +1,2364 @@
+{
+  "schema": 1,
+  "scope": {
+    "validation_audit_indices": [
+      0,
+      99
+    ],
+    "train_audit_indices": [
+      0,
+      99
+    ],
+    "validation_rows": 100,
+    "train_rows": 100,
+    "source_files": [
+      "selected_errors_review_part1.jsonl",
+      "train_sample_review_part1.jsonl"
+    ],
+    "method": "Read every assigned question, reference code and validation generated code in bounded batches. Static semantic reasoning only; dataset functions were not executed. No corrected code or targets were created."
+  },
+  "definitions": {
+    "primary_category": "Single dominant source of the observed validation disagreement; a specific model-pattern category can coexist with a reference issue.",
+    "model_pattern": "Visible generated-code issue, independent of whether the stored reference is trustworthy. no_concrete_issue_found is not proof of correctness; uncertain is used for underdetermined statements.",
+    "reference_assessment": {
+      "concrete_reference_issue": "A specific contradiction, unsupported invented quantity/relation, wrong output scope, or visible formula defect in the reference. Does not identify a corrected target.",
+      "statement_ambiguous_or_incomplete": "The comparison depends on unresolved statement/rounding/output interpretation; no single reference correction is asserted.",
+      "no_concrete_issue_found": "No specific reference defect found in this bounded reading; not a proof of correctness."
+    },
+    "train_visible_runtime_risk": "Undefined name or dependency visible in the displayed function; math dependency can be satisfied by external execution context and was not tested.",
+    "confidence": "Confidence in the stated observation, not confidence that an unflagged example is fully correct."
+  },
+  "validation": [
+    {
+      "audit_index": 0,
+      "sample_row": 16,
+      "stored_status": "wrong_answer",
+      "primary_category": "number_entity_binding",
+      "model_pattern": "number_entity_binding",
+      "reference_assessment": "concrete_reference_issue",
+      "generated_evidence": "Uses headphones_price as the laptop price.",
+      "reference_or_statement_evidence": "No laptop price is stated; reference invents a 100-dollar price/rounding rule and pools David's money without an explicit transfer.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 1,
+      "sample_row": 89,
+      "stored_status": "wrong_answer",
+      "primary_category": "number_entity_binding",
+      "model_pattern": "number_entity_binding",
+      "reference_assessment": "concrete_reference_issue",
+      "generated_evidence": "Adds purchases of shoes and sandals to Jacob's backpacks.",
+      "reference_or_statement_evidence": "Reference also adds the five pairs of shoes to the backpack count.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 2,
+      "sample_row": 203,
+      "stored_status": "wrong_answer",
+      "primary_category": "reference_statement_problem",
+      "model_pattern": "rounding_unit",
+      "reference_assessment": "statement_ambiguous_or_incomplete",
+      "generated_evidence": "Uses floor division to count fully filled boxes.",
+      "reference_or_statement_evidence": "Reference returns a fractional box count although each filled box is said to contain five supplies; full-box versus fractional-box interpretation affects comparison.",
+      "confidence": "medium"
+    },
+    {
+      "audit_index": 3,
+      "sample_row": 365,
+      "stored_status": "wrong_answer",
+      "primary_category": "reference_statement_problem",
+      "model_pattern": "no_concrete_issue_found",
+      "reference_assessment": "concrete_reference_issue",
+      "generated_evidence": "Sums clothing counts and divides by clothes per pound, excluding the unrelated backpack.",
+      "reference_or_statement_evidence": "Reference subtracts the brother's backpack weight from Olivia's clothes.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 4,
+      "sample_row": 569,
+      "stored_status": "wrong_answer",
+      "primary_category": "rounding_unit",
+      "model_pattern": "rounding_unit",
+      "reference_assessment": "no_concrete_issue_found",
+      "generated_evidence": "Treats one dozen bought as twelve dozens by multiplying the per-dozen price by 12.",
+      "reference_or_statement_evidence": "No concrete reference issue found.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 5,
+      "sample_row": 715,
+      "stored_status": "wrong_answer",
+      "primary_category": "wrong_operation_formula",
+      "model_pattern": "wrong_operation_formula",
+      "reference_assessment": "concrete_reference_issue",
+      "generated_evidence": "Subtracts birth year and study duration from the explicitly stated start year and returns that as a year.",
+      "reference_or_statement_evidence": "Reference derives a different start year from birth year plus duration despite the question explicitly stating the start year.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 6,
+      "sample_row": 751,
+      "stored_status": "wrong_answer",
+      "primary_category": "wrong_operation_formula",
+      "model_pattern": "wrong_operation_formula",
+      "reference_assessment": "no_concrete_issue_found",
+      "generated_evidence": "Multiplies servings by servings-per-apple rather than using the inverse rate.",
+      "reference_or_statement_evidence": "No concrete reference issue found under divisible-apple interpretation.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 7,
+      "sample_row": 850,
+      "stored_status": "wrong_answer",
+      "primary_category": "reference_statement_problem",
+      "model_pattern": "no_concrete_issue_found",
+      "reference_assessment": "concrete_reference_issue",
+      "generated_evidence": "Computes outer rectangle area minus garden area.",
+      "reference_or_statement_evidence": "Reference reduces both expanded dimensions to only their increments before multiplying, then subtracts garden area; the negative path area conflicts with the geometry.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 8,
+      "sample_row": 890,
+      "stored_status": "wrong_answer",
+      "primary_category": "wrong_operation_formula",
+      "model_pattern": "wrong_operation_formula",
+      "reference_assessment": "statement_ambiguous_or_incomplete",
+      "generated_evidence": "Computes an unpaid-money fraction of one dress rather than the dress count explicitly described.",
+      "reference_or_statement_evidence": "The stated dress price, cash on hand, and 20-dollar shortfall conflict; reference invents a 170-dollar total, although its resulting count agrees with the stated single dress.",
+      "confidence": "medium"
+    },
+    {
+      "audit_index": 9,
+      "sample_row": 906,
+      "stored_status": "wrong_answer",
+      "primary_category": "omitted_condition_step",
+      "model_pattern": "omitted_condition_step",
+      "reference_assessment": "concrete_reference_issue",
+      "generated_evidence": "Returns one overall unit price rather than a cost for each person.",
+      "reference_or_statement_evidence": "Reference returns a pooled average across visits although the question asks for each person; whether tickets cover repeated visits is also unclear.",
+      "confidence": "medium"
+    },
+    {
+      "audit_index": 10,
+      "sample_row": 1199,
+      "stored_status": "wrong_answer",
+      "primary_category": "rounding_unit",
+      "model_pattern": "rounding_unit",
+      "reference_assessment": "no_concrete_issue_found",
+      "generated_evidence": "Rounds available-water duration upward with ceil, permitting a duration longer than the supplied water supports.",
+      "reference_or_statement_evidence": "No concrete reference issue found.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 11,
+      "sample_row": 1246,
+      "stored_status": "wrong_answer",
+      "primary_category": "wrong_operation_formula",
+      "model_pattern": "wrong_operation_formula",
+      "reference_assessment": "concrete_reference_issue",
+      "generated_evidence": "Subtracts each species' original count from the doubled overall total.",
+      "reference_or_statement_evidence": "Reference divides the doubled total equally among species rather than using the stated distinct species counts.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 12,
+      "sample_row": 1270,
+      "stored_status": "wrong_answer",
+      "primary_category": "reference_statement_problem",
+      "model_pattern": "no_concrete_issue_found",
+      "reference_assessment": "concrete_reference_issue",
+      "generated_evidence": "Uses the total-minus-difference relationship and divides across both people.",
+      "reference_or_statement_evidence": "Reference omits the division across the two people after subtracting their difference.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 13,
+      "sample_row": 1488,
+      "stored_status": "wrong_answer",
+      "primary_category": "wrong_operation_formula",
+      "model_pattern": "wrong_operation_formula",
+      "reference_assessment": "concrete_reference_issue",
+      "generated_evidence": "Ignores the stated original infection chance and returns a duplicated product in fractional units despite a percentage request.",
+      "reference_or_statement_evidence": "Reference adds the protection improvement to infection chance and multiplies unrelated population/mask fractions; conditional infection risk and protection wording are also underspecified.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 14,
+      "sample_row": 1719,
+      "stored_status": "wrong_answer",
+      "primary_category": "reference_statement_problem",
+      "model_pattern": "uncertain",
+      "reference_assessment": "concrete_reference_issue",
+      "generated_evidence": "Returns the total supply expenditure, which need not be the price of one art kit.",
+      "reference_or_statement_evidence": "No kit composition or number of kits is given; reference divides by the unrelated scarf count plus one.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 15,
+      "sample_row": 1797,
+      "stored_status": "wrong_answer",
+      "primary_category": "wrong_operation_formula",
+      "model_pattern": "wrong_operation_formula",
+      "reference_assessment": "concrete_reference_issue",
+      "generated_evidence": "Reduces the desired glasses by the broken fraction, reducing rather than covering the target.",
+      "reference_or_statement_evidence": "Reference truncates a noninteger lemon requirement despite the at-least/enough requirement; the connection between broken glasses and lost lemonade is also unclear.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 16,
+      "sample_row": 1872,
+      "stored_status": "wrong_answer",
+      "primary_category": "number_entity_binding",
+      "model_pattern": "number_entity_binding",
+      "reference_assessment": "no_concrete_issue_found",
+      "generated_evidence": "Invents a numeric instruments-per-year calculation rather than returning Jessica's explicitly named instrument.",
+      "reference_or_statement_evidence": "No concrete reference issue found.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 17,
+      "sample_row": 1920,
+      "stored_status": "wrong_answer",
+      "primary_category": "number_entity_binding",
+      "model_pattern": "number_entity_binding",
+      "reference_assessment": "no_concrete_issue_found",
+      "generated_evidence": "Uses the field-trip students as the pizza consumers instead of the students remaining in class.",
+      "reference_or_statement_evidence": "No concrete reference issue found.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 18,
+      "sample_row": 2108,
+      "stored_status": "wrong_answer",
+      "primary_category": "reference_statement_problem",
+      "model_pattern": "rounding_unit",
+      "reference_assessment": "concrete_reference_issue",
+      "generated_evidence": "Floors the affordable whole-book count.",
+      "reference_or_statement_evidence": "Reference returns a fractional number of books for a purchase-count question.",
+      "confidence": "medium"
+    },
+    {
+      "audit_index": 19,
+      "sample_row": 2136,
+      "stored_status": "wrong_answer",
+      "primary_category": "wrong_operation_formula",
+      "model_pattern": "wrong_operation_formula",
+      "reference_assessment": "concrete_reference_issue",
+      "generated_evidence": "Uses a fixed one marble per day for the second period rather than a daily decrease.",
+      "reference_or_statement_evidence": "Reference begins the decrease period at the original rate and continues through negative giveaways; the stated nine-day decreasing sequence itself becomes physically invalid.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 20,
+      "sample_row": 2337,
+      "stored_status": "wrong_answer",
+      "primary_category": "reference_statement_problem",
+      "model_pattern": "no_concrete_issue_found",
+      "reference_assessment": "concrete_reference_issue",
+      "generated_evidence": "Applies the stated 20-percent discount to the combined hardcover cost.",
+      "reference_or_statement_evidence": "Reference omits the stated discount entirely.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 21,
+      "sample_row": 2443,
+      "stored_status": "wrong_answer",
+      "primary_category": "wrong_operation_formula",
+      "model_pattern": "wrong_operation_formula",
+      "reference_assessment": "no_concrete_issue_found",
+      "generated_evidence": "Halves the stated total roundtrip distance although that total is already the requested quantity.",
+      "reference_or_statement_evidence": "No concrete reference issue found.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 22,
+      "sample_row": 2501,
+      "stored_status": "wrong_answer",
+      "primary_category": "number_entity_binding",
+      "model_pattern": "number_entity_binding",
+      "reference_assessment": "concrete_reference_issue",
+      "generated_evidence": "Uses cousin age and bakery stock in the number of additional donuts.",
+      "reference_or_statement_evidence": "The party's donut requirement is missing; reference substitutes the cousin's age for it.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 23,
+      "sample_row": 2514,
+      "stored_status": "wrong_answer",
+      "primary_category": "omitted_condition_step",
+      "model_pattern": "omitted_condition_step",
+      "reference_assessment": "concrete_reference_issue",
+      "generated_evidence": "Returns bracelet count and leftover beads rather than bracelet count and beads used.",
+      "reference_or_statement_evidence": "Reference returns only bracelet count, omitting the second requested output.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 24,
+      "sample_row": 2604,
+      "stored_status": "wrong_answer",
+      "primary_category": "reference_statement_problem",
+      "model_pattern": "no_concrete_issue_found",
+      "reference_assessment": "statement_ambiguous_or_incomplete",
+      "generated_evidence": "Charges for the soap needed across the full year.",
+      "reference_or_statement_evidence": "Reference excludes the already discussed bar by calculating only remaining months; full-year purchase versus additional stock after the initial bar is not explicit.",
+      "confidence": "medium"
+    },
+    {
+      "audit_index": 25,
+      "sample_row": 2729,
+      "stored_status": "wrong_answer",
+      "primary_category": "reference_statement_problem",
+      "model_pattern": "uncertain",
+      "reference_assessment": "concrete_reference_issue",
+      "generated_evidence": "Doubles Abby's age without modeling a shared timeline.",
+      "reference_or_statement_evidence": "The pronoun/current-age timing is ambiguous and past tense is problematic; reference combines age factors and adds mother's age without a justified timeline.",
+      "confidence": "medium"
+    },
+    {
+      "audit_index": 26,
+      "sample_row": 2757,
+      "stored_status": "wrong_answer",
+      "primary_category": "number_entity_binding",
+      "model_pattern": "number_entity_binding",
+      "reference_assessment": "concrete_reference_issue",
+      "generated_evidence": "Treats the first two laps' combined time as two separate three-minute laps and uses Emily's full time as Tom's final-lap time.",
+      "reference_or_statement_evidence": "Reference converts the already converted known-lap time to seconds a second time and reverses the finish-time relation.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 27,
+      "sample_row": 2760,
+      "stored_status": "wrong_answer",
+      "primary_category": "reference_statement_problem",
+      "model_pattern": "no_concrete_issue_found",
+      "reference_assessment": "concrete_reference_issue",
+      "generated_evidence": "Uses one exercise hour per day for seven days per week across five weeks.",
+      "reference_or_statement_evidence": "Reference assumes 24 exercise hours per day although the question says one.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 28,
+      "sample_row": 2853,
+      "stored_status": "wrong_answer",
+      "primary_category": "number_entity_binding",
+      "model_pattern": "number_entity_binding",
+      "reference_assessment": "concrete_reference_issue",
+      "generated_evidence": "Invents current_year=2021 and subtracts years playing from chronological age.",
+      "reference_or_statement_evidence": "No current year or starting age is given; reference also invents 2021 and incorrectly adds years playing to age.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 29,
+      "sample_row": 2935,
+      "stored_status": "wrong_answer",
+      "primary_category": "reference_statement_problem",
+      "model_pattern": "no_concrete_issue_found",
+      "reference_assessment": "concrete_reference_issue",
+      "generated_evidence": "Applies the stated per-pizza price to both sizes.",
+      "reference_or_statement_evidence": "Reference invents a lower price for small pizzas.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 30,
+      "sample_row": 2969,
+      "stored_status": "wrong_answer",
+      "primary_category": "reference_statement_problem",
+      "model_pattern": "no_concrete_issue_found",
+      "reference_assessment": "concrete_reference_issue",
+      "generated_evidence": "Subtracts the used ribbon length once.",
+      "reference_or_statement_evidence": "Reference adds remaining_length after already calculating total minus used length, double-counting the remainder.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 31,
+      "sample_row": 2972,
+      "stored_status": "wrong_answer",
+      "primary_category": "number_entity_binding",
+      "model_pattern": "number_entity_binding",
+      "reference_assessment": "concrete_reference_issue",
+      "generated_evidence": "Assigns skateboard wheel/spoke structure to scooter and pogo stick.",
+      "reference_or_statement_evidence": "Reference also assigns skateboard wheel/spoke structure to the scooter; scooter spoke details are not stated.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 32,
+      "sample_row": 2981,
+      "stored_status": "wrong_answer",
+      "primary_category": "reference_statement_problem",
+      "model_pattern": "no_concrete_issue_found",
+      "reference_assessment": "concrete_reference_issue",
+      "generated_evidence": "Returns the explicitly stated daily artwork count.",
+      "reference_or_statement_evidence": "Reference uses unrelated paintbrushes and an unsupported divisor to replace that explicit count.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 33,
+      "sample_row": 3051,
+      "stored_status": "wrong_answer",
+      "primary_category": "reference_statement_problem",
+      "model_pattern": "omitted_condition_step",
+      "reference_assessment": "concrete_reference_issue",
+      "generated_evidence": "Computes total apples from green apples but labels it total fruits.",
+      "reference_or_statement_evidence": "The fraction of all fruit that are apples is missing; reference treats the banana percentage as an apple/total relation and can create negative oranges.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 34,
+      "sample_row": 3285,
+      "stored_status": "wrong_answer",
+      "primary_category": "reference_statement_problem",
+      "model_pattern": "no_concrete_issue_found",
+      "reference_assessment": "concrete_reference_issue",
+      "generated_evidence": "Counts Zariah and four equally productive friends; the incorrect peach variable is unused.",
+      "reference_or_statement_evidence": "Reference adds unrelated peaches/basket-derived quantity to blackberries before multiplying by people.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 35,
+      "sample_row": 3625,
+      "stored_status": "wrong_answer",
+      "primary_category": "wrong_operation_formula",
+      "model_pattern": "wrong_operation_formula",
+      "reference_assessment": "no_concrete_issue_found",
+      "generated_evidence": "Treats garden dimensions as separate totals and sweetness as extra fruit rather than multiplying trees, yield, years and sugar per fruit.",
+      "reference_or_statement_evidence": "No concrete reference issue found under sweetness-as-sugar interpretation.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 36,
+      "sample_row": 3641,
+      "stored_status": "wrong_answer",
+      "primary_category": "wrong_operation_formula",
+      "model_pattern": "wrong_operation_formula",
+      "reference_assessment": "concrete_reference_issue",
+      "generated_evidence": "Counts every dice outcome as favorable.",
+      "reference_or_statement_evidence": "Reference undercounts favorable ordered outcomes by treating successful sum values as successful dice outcomes.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 37,
+      "sample_row": 3741,
+      "stored_status": "wrong_answer",
+      "primary_category": "wrong_operation_formula",
+      "model_pattern": "wrong_operation_formula",
+      "reference_assessment": "statement_ambiguous_or_incomplete",
+      "generated_evidence": "Subtracts all nonrunners from a single group size rather than the full population.",
+      "reference_or_statement_evidence": "The stated 100 runners contradict four groups of 20; reference uses the latter total without resolving the conflict.",
+      "confidence": "medium"
+    },
+    {
+      "audit_index": 38,
+      "sample_row": 4003,
+      "stored_status": "wrong_answer",
+      "primary_category": "number_entity_binding",
+      "model_pattern": "number_entity_binding",
+      "reference_assessment": "concrete_reference_issue",
+      "generated_evidence": "Invents a 100-square-foot kitchen.",
+      "reference_or_statement_evidence": "Kitchen area is absent; reference invents a different area of 450 square feet.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 39,
+      "sample_row": 4057,
+      "stored_status": "wrong_answer",
+      "primary_category": "reference_statement_problem",
+      "model_pattern": "no_concrete_issue_found",
+      "reference_assessment": "concrete_reference_issue",
+      "generated_evidence": "Subtracts available flour from required flour in the given cup units.",
+      "reference_or_statement_evidence": "Reference multiplies the flour shortfall by an unexplained factor of four.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 40,
+      "sample_row": 4157,
+      "stored_status": "wrong_answer",
+      "primary_category": "reference_statement_problem",
+      "model_pattern": "no_concrete_issue_found",
+      "reference_assessment": "concrete_reference_issue",
+      "generated_evidence": "Uses zero novel chapters at store three as explicitly stated.",
+      "reference_or_statement_evidence": "Reference includes the purchased magazine in the chapter count used to calculate store four.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 41,
+      "sample_row": 4192,
+      "stored_status": "wrong_answer",
+      "primary_category": "wrong_operation_formula",
+      "model_pattern": "wrong_operation_formula",
+      "reference_assessment": "concrete_reference_issue",
+      "generated_evidence": "Subtracts both full pencil and full eraser populations from student count, yielding a negative missing-student count.",
+      "reference_or_statement_evidence": "Reference labels everyone as missing items despite the explicit statement that every student has both items.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 42,
+      "sample_row": 4205,
+      "stored_status": "wrong_answer",
+      "primary_category": "number_entity_binding",
+      "model_pattern": "number_entity_binding",
+      "reference_assessment": "concrete_reference_issue",
+      "generated_evidence": "Includes the cat as packed cargo and subtracts an unsupported five-kilogram capacity.",
+      "reference_or_statement_evidence": "Reference also includes the cat although it is not stated to be packed and uses inconsistent book/capacity weight accounting; soda inclusion versus the book-only limit is unclear.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 43,
+      "sample_row": 4251,
+      "stored_status": "wrong_answer",
+      "primary_category": "reference_statement_problem",
+      "model_pattern": "number_entity_binding",
+      "reference_assessment": "concrete_reference_issue",
+      "generated_evidence": "Returns a ticket count although the actual final question asks for outside temperature.",
+      "reference_or_statement_evidence": "No temperature is supplied; reference returns Jackson's ticket count rather than temperature.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 44,
+      "sample_row": 4267,
+      "stored_status": "wrong_answer",
+      "primary_category": "reference_statement_problem",
+      "model_pattern": "uncertain",
+      "reference_assessment": "concrete_reference_issue",
+      "generated_evidence": "Combines fractional shares without information about a physical pie size.",
+      "reference_or_statement_evidence": "Physical original size cannot be inferred from fractions alone; reference also assigns one-sixth to all three friends although only two such shares are specified.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 45,
+      "sample_row": 4282,
+      "stored_status": "wrong_answer",
+      "primary_category": "reference_statement_problem",
+      "model_pattern": "number_entity_binding",
+      "reference_assessment": "concrete_reference_issue",
+      "generated_evidence": "Returns an invented age calculation instead of a favorite color.",
+      "reference_or_statement_evidence": "Hannah's favorite color is absent; reference invents blue and an unstated brother's age.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 46,
+      "sample_row": 4482,
+      "stored_status": "wrong_answer",
+      "primary_category": "reference_statement_problem",
+      "model_pattern": "no_concrete_issue_found",
+      "reference_assessment": "statement_ambiguous_or_incomplete",
+      "generated_evidence": "Divides good marbles among Sara and her three friends.",
+      "reference_or_statement_evidence": "Reference divides among only the three friends; whether Sara participates is the source of disagreement, and with/sharing wording supports inclusion.",
+      "confidence": "medium"
+    },
+    {
+      "audit_index": 47,
+      "sample_row": 4648,
+      "stored_status": "wrong_answer",
+      "primary_category": "reference_statement_problem",
+      "model_pattern": "number_entity_binding",
+      "reference_assessment": "concrete_reference_issue",
+      "generated_evidence": "Returns a clothing-money balance although the final question asks the number of continents.",
+      "reference_or_statement_evidence": "Reference returns a clothing shortfall, unrelated to the actual final question.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 48,
+      "sample_row": 4984,
+      "stored_status": "wrong_answer",
+      "primary_category": "wrong_operation_formula",
+      "model_pattern": "wrong_operation_formula",
+      "reference_assessment": "no_concrete_issue_found",
+      "generated_evidence": "Treats the total scheduled repayment as principal and adds interest instead of reversing the interest-inclusive total.",
+      "reference_or_statement_evidence": "No concrete reference issue found under the stated simple additional-interest interpretation.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 49,
+      "sample_row": 5123,
+      "stored_status": "wrong_answer",
+      "primary_category": "rounding_unit",
+      "model_pattern": "no_concrete_issue_found",
+      "reference_assessment": "statement_ambiguous_or_incomplete",
+      "generated_evidence": "Uses math.pi with the standard diameter/circumference formula.",
+      "reference_or_statement_evidence": "Reference uses 3.14; the question specifies no approximation or rounding convention, so this is a precision/comparison mismatch rather than a demonstrated formula defect.",
+      "confidence": "medium"
+    },
+    {
+      "audit_index": 50,
+      "sample_row": 5124,
+      "stored_status": "wrong_answer",
+      "primary_category": "reference_statement_problem",
+      "model_pattern": "no_concrete_issue_found",
+      "reference_assessment": "statement_ambiguous_or_incomplete",
+      "generated_evidence": "Uses seven days for a week and subtracts the two recorded lunches.",
+      "reference_or_statement_evidence": "Reference uses days_left=5 as the total budget length, then subtracts Monday and Tuesday; calendar-week versus workweek interpretation is unspecified.",
+      "confidence": "medium"
+    },
+    {
+      "audit_index": 51,
+      "sample_row": 5396,
+      "stored_status": "wrong_answer",
+      "primary_category": "reference_statement_problem",
+      "model_pattern": "no_concrete_issue_found",
+      "reference_assessment": "concrete_reference_issue",
+      "generated_evidence": "Sums the weekday and weekend production already weighted by their day counts.",
+      "reference_or_statement_evidence": "Reference multiplies that monthly total by total days again.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 52,
+      "sample_row": 5438,
+      "stored_status": "wrong_answer",
+      "primary_category": "number_entity_binding",
+      "model_pattern": "number_entity_binding",
+      "reference_assessment": "statement_ambiguous_or_incomplete",
+      "generated_evidence": "Treats a single 200-dollar amount as a per-person cost.",
+      "reference_or_statement_evidence": "Charges 200 to cover costs can denote a fee or an expense; reference assumes it is a deductible expense, while the question does not clearly distinguish gross receipts from profit.",
+      "confidence": "medium"
+    },
+    {
+      "audit_index": 53,
+      "sample_row": 5486,
+      "stored_status": "wrong_answer",
+      "primary_category": "number_entity_binding",
+      "model_pattern": "number_entity_binding",
+      "reference_assessment": "concrete_reference_issue",
+      "generated_evidence": "Invents two residents per house.",
+      "reference_or_statement_evidence": "People per house is absent; reference invents three residents per house.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 54,
+      "sample_row": 5563,
+      "stored_status": "wrong_answer",
+      "primary_category": "wrong_operation_formula",
+      "model_pattern": "wrong_operation_formula",
+      "reference_assessment": "statement_ambiguous_or_incomplete",
+      "generated_evidence": "Discards all affordable full groups and returns a count computed only from the leftover budget.",
+      "reference_or_statement_evidence": "Reference allows a fractional number of S'mores; ingredient-package divisibility and whole-S'mores convention are unspecified.",
+      "confidence": "medium"
+    },
+    {
+      "audit_index": 55,
+      "sample_row": 5649,
+      "stored_status": "wrong_answer",
+      "primary_category": "omitted_condition_step",
+      "model_pattern": "omitted_condition_step",
+      "reference_assessment": "no_concrete_issue_found",
+      "generated_evidence": "Counts only stock C's quarter-value gain instead of its principal plus gain in total holdings.",
+      "reference_or_statement_evidence": "No concrete reference issue found.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 56,
+      "sample_row": 5665,
+      "stored_status": "wrong_answer",
+      "primary_category": "number_entity_binding",
+      "model_pattern": "number_entity_binding",
+      "reference_assessment": "no_concrete_issue_found",
+      "generated_evidence": "Returns pencils for boys and girls although only the girls' combined pencils are requested.",
+      "reference_or_statement_evidence": "No concrete reference issue found.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 57,
+      "sample_row": 5671,
+      "stored_status": "wrong_answer",
+      "primary_category": "reference_statement_problem",
+      "model_pattern": "number_entity_binding",
+      "reference_assessment": "statement_ambiguous_or_incomplete",
+      "generated_evidence": "Subtracts an unrelated medical coverage limit from TV cost.",
+      "reference_or_statement_evidence": "The question asks to include medical coverage in TV cost without defining a charge; reference adds the coverage limit as though it were a purchase cost.",
+      "confidence": "medium"
+    },
+    {
+      "audit_index": 58,
+      "sample_row": 5683,
+      "stored_status": "wrong_answer",
+      "primary_category": "reference_statement_problem",
+      "model_pattern": "uncertain",
+      "reference_assessment": "concrete_reference_issue",
+      "generated_evidence": "Returns one day's knitting time although the total blanket size/duration is absent.",
+      "reference_or_statement_evidence": "Reference invents 50 total rows and multiplies that by rows per day again; no total rows or days is given.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 59,
+      "sample_row": 5757,
+      "stored_status": "wrong_answer",
+      "primary_category": "rounding_unit",
+      "model_pattern": "rounding_unit",
+      "reference_assessment": "no_concrete_issue_found",
+      "generated_evidence": "Subtracts a dollar amount directly from a count of quarters without currency conversion.",
+      "reference_or_statement_evidence": "No concrete reference issue found.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 60,
+      "sample_row": 5853,
+      "stored_status": "wrong_answer",
+      "primary_category": "reference_statement_problem",
+      "model_pattern": "no_concrete_issue_found",
+      "reference_assessment": "concrete_reference_issue",
+      "generated_evidence": "Treats 15 dollars as the stated total acquisition cost of all nine rolls.",
+      "reference_or_statement_evidence": "Reference multiplies that stated total cost by the roll count again.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 61,
+      "sample_row": 5872,
+      "stored_status": "wrong_answer",
+      "primary_category": "wrong_operation_formula",
+      "model_pattern": "wrong_operation_formula",
+      "reference_assessment": "concrete_reference_issue",
+      "generated_evidence": "Solves a different one-third relation and then subtracts from total participants.",
+      "reference_or_statement_evidence": "Reference omits students' own contribution to the teacher-plus-student total when choosing its denominator.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 62,
+      "sample_row": 5954,
+      "stored_status": "wrong_answer",
+      "primary_category": "number_entity_binding",
+      "model_pattern": "number_entity_binding",
+      "reference_assessment": "statement_ambiguous_or_incomplete",
+      "generated_evidence": "Adds the mother's oranges to the requested apples and uses only one half-share across the friends.",
+      "reference_or_statement_evidence": "Two friends pick half as much may mean each or jointly; reference includes only one half-share. The unrelated orange clause supplies no apples.",
+      "confidence": "medium"
+    },
+    {
+      "audit_index": 63,
+      "sample_row": 5969,
+      "stored_status": "wrong_answer",
+      "primary_category": "reference_statement_problem",
+      "model_pattern": "no_concrete_issue_found",
+      "reference_assessment": "concrete_reference_issue",
+      "generated_evidence": "Applies the stated boys-to-girls ratio directly to girl count.",
+      "reference_or_statement_evidence": "Reference divides by the boys-ratio numerator a second time. The supplied ratio and girl count also imply fractional people.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 64,
+      "sample_row": 6178,
+      "stored_status": "wrong_answer",
+      "primary_category": "wrong_operation_formula",
+      "model_pattern": "wrong_operation_formula",
+      "reference_assessment": "concrete_reference_issue",
+      "generated_evidence": "Multiplies combined vehicle capacity by the number of friends and then divides by car capacity.",
+      "reference_or_statement_evidence": "Reference sums separate hypothetical full-fleet requirements for every vehicle type rather than using the rented fleet together; driver/passenger scope is also unclear.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 65,
+      "sample_row": 6309,
+      "stored_status": "wrong_answer",
+      "primary_category": "number_entity_binding",
+      "model_pattern": "number_entity_binding",
+      "reference_assessment": "concrete_reference_issue",
+      "generated_evidence": "Adds fruit counts without shelf multiplier, ignores stated final fruit total, and treats shelves as staff.",
+      "reference_or_statement_evidence": "Reference invents three remaining staff; given initial fruit, the five removals already conflict with 214 still remaining.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 66,
+      "sample_row": 6312,
+      "stored_status": "wrong_answer",
+      "primary_category": "reference_statement_problem",
+      "model_pattern": "uncertain",
+      "reference_assessment": "concrete_reference_issue",
+      "generated_evidence": "Computes the slope through the two coordinates, a plausible reinterpretation as two points on one line.",
+      "reference_or_statement_evidence": "A single intersecting point cannot be two coordinates as written; reference invents a second perpendicular slope without a perpendicularity condition.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 67,
+      "sample_row": 6346,
+      "stored_status": "wrong_answer",
+      "primary_category": "wrong_operation_formula",
+      "model_pattern": "wrong_operation_formula",
+      "reference_assessment": "statement_ambiguous_or_incomplete",
+      "generated_evidence": "Subtracts all class hours from English/History hours and omits division by the number of other classes.",
+      "reference_or_statement_evidence": "Each class lasts 1.75 hours conflicts with English and History totaling 2.5 hours; reference treats 1.75 as an overall average instead.",
+      "confidence": "medium"
+    },
+    {
+      "audit_index": 68,
+      "sample_row": 6485,
+      "stored_status": "wrong_answer",
+      "primary_category": "reference_statement_problem",
+      "model_pattern": "number_entity_binding",
+      "reference_assessment": "concrete_reference_issue",
+      "generated_evidence": "Returns shower tile count although the question asks monthly books.",
+      "reference_or_statement_evidence": "No reading rate/duration is provided; reference maps tile dimensions and shoe size to books without a stated relation.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 69,
+      "sample_row": 6762,
+      "stored_status": "wrong_answer",
+      "primary_category": "rounding_unit",
+      "model_pattern": "rounding_unit",
+      "reference_assessment": "concrete_reference_issue",
+      "generated_evidence": "Uses floor for full resource-supported hours; exact fractional duration would differ.",
+      "reference_or_statement_evidence": "Reference ceil rounds resource-limited duration upward beyond available water; question does not explicitly request whole hours.",
+      "confidence": "medium"
+    },
+    {
+      "audit_index": 70,
+      "sample_row": 6770,
+      "stored_status": "runtime_error",
+      "primary_category": "runtime",
+      "model_pattern": "runtime",
+      "reference_assessment": "concrete_reference_issue",
+      "generated_evidence": "Reads undefined alice_owes_bob; visible name error explains the saved runtime_error. Debt updates also include unjustified debits.",
+      "reference_or_statement_evidence": "Reference subtracts Bob's payment again after already crediting it to Alice; the leading Answer 1 fragment is also inconsistent with the debt story.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 71,
+      "sample_row": 6804,
+      "stored_status": "wrong_answer",
+      "primary_category": "reference_statement_problem",
+      "model_pattern": "no_concrete_issue_found",
+      "reference_assessment": "concrete_reference_issue",
+      "generated_evidence": "Uses sold shirts and their price, excluding free neckties from revenue.",
+      "reference_or_statement_evidence": "Reference increases revenue with free neckties and divides by an unsupported 100. The stated sale fraction also implies fractional shirts.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 72,
+      "sample_row": 6809,
+      "stored_status": "wrong_answer",
+      "primary_category": "omitted_condition_step",
+      "model_pattern": "omitted_condition_step",
+      "reference_assessment": "no_concrete_issue_found",
+      "generated_evidence": "Omits the latest year's 30-centimeter increase from the two-year net change.",
+      "reference_or_statement_evidence": "No concrete reference issue found for net change, even though the result can be negative and the question calls it an increase.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 73,
+      "sample_row": 6858,
+      "stored_status": "wrong_answer",
+      "primary_category": "rounding_unit",
+      "model_pattern": "rounding_unit",
+      "reference_assessment": "no_concrete_issue_found",
+      "generated_evidence": "Floors required buses, leaving some passengers without capacity.",
+      "reference_or_statement_evidence": "No concrete reference issue found for these particular inputs.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 74,
+      "sample_row": 6861,
+      "stored_status": "wrong_answer",
+      "primary_category": "reference_statement_problem",
+      "model_pattern": "no_concrete_issue_found",
+      "reference_assessment": "concrete_reference_issue",
+      "generated_evidence": "Uses requested homework fraction divided by the stated hourly rate.",
+      "reference_or_statement_evidence": "Reference subtracts an already-completed quarter even though the question only states a rate, not prior completed work.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 75,
+      "sample_row": 6881,
+      "stored_status": "wrong_answer",
+      "primary_category": "rounding_unit",
+      "model_pattern": "rounding_unit",
+      "reference_assessment": "statement_ambiguous_or_incomplete",
+      "generated_evidence": "Returns the continuous water-supported duration.",
+      "reference_or_statement_evidence": "Reference floors to complete hours although the question does not explicitly require an integer; this is a duration convention mismatch.",
+      "confidence": "medium"
+    },
+    {
+      "audit_index": 76,
+      "sample_row": 6945,
+      "stored_status": "wrong_answer",
+      "primary_category": "rounding_unit",
+      "model_pattern": "rounding_unit",
+      "reference_assessment": "concrete_reference_issue",
+      "generated_evidence": "Counts both uses of ice but floors the number of trays needed despite a partial final tray.",
+      "reference_or_statement_evidence": "Reference omits glass ice entirely and returns fractional trays. Exactly using all ice from ten-space trays also conflicts with the stated total cubes.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 77,
+      "sample_row": 7070,
+      "stored_status": "wrong_answer",
+      "primary_category": "reference_statement_problem",
+      "model_pattern": "no_concrete_issue_found",
+      "reference_assessment": "concrete_reference_issue",
+      "generated_evidence": "Includes the seven days per week across two weeks.",
+      "reference_or_statement_evidence": "Reference omits days per week when combining weeks, daily laps and lap distance.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 78,
+      "sample_row": 7139,
+      "stored_status": "wrong_answer",
+      "primary_category": "rounding_unit",
+      "model_pattern": "rounding_unit",
+      "reference_assessment": "concrete_reference_issue",
+      "generated_evidence": "Includes all seven days, but returns a fractional bag despite the need-to-buy wording.",
+      "reference_or_statement_evidence": "Reference omits the seven-day factor and also returns fractional bags.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 79,
+      "sample_row": 7140,
+      "stored_status": "wrong_answer",
+      "primary_category": "reference_statement_problem",
+      "model_pattern": "number_entity_binding",
+      "reference_assessment": "concrete_reference_issue",
+      "generated_evidence": "Invents Joe's initial payment as zero.",
+      "reference_or_statement_evidence": "Payment total is missing and equal-payment wording conflicts with the unequal differences; reference invents Joe's payment as one.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 80,
+      "sample_row": 7141,
+      "stored_status": "wrong_answer",
+      "primary_category": "reference_statement_problem",
+      "model_pattern": "no_concrete_issue_found",
+      "reference_assessment": "concrete_reference_issue",
+      "generated_evidence": "Counts the specified fractions of roses and excludes unrelated yellow cubes.",
+      "reference_or_statement_evidence": "Reference adds grandmother's yellow cubes to flowers. Fractions of the given rose counts also imply nonintegral flowers.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 81,
+      "sample_row": 7462,
+      "stored_status": "wrong_answer",
+      "primary_category": "rounding_unit",
+      "model_pattern": "rounding_unit",
+      "reference_assessment": "no_concrete_issue_found",
+      "generated_evidence": "Converts pairs to individual socks but returns that individual count when pairs are requested.",
+      "reference_or_statement_evidence": "No concrete reference issue found.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 82,
+      "sample_row": 7582,
+      "stored_status": "wrong_answer",
+      "primary_category": "omitted_condition_step",
+      "model_pattern": "omitted_condition_step",
+      "reference_assessment": "no_concrete_issue_found",
+      "generated_evidence": "Returns only sale-day revenue, omitting normal-day revenue.",
+      "reference_or_statement_evidence": "No concrete reference issue found.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 83,
+      "sample_row": 7587,
+      "stored_status": "wrong_answer",
+      "primary_category": "rounding_unit",
+      "model_pattern": "no_concrete_issue_found",
+      "reference_assessment": "statement_ambiguous_or_incomplete",
+      "generated_evidence": "Uses the reciprocal of the combined work rates without rounding.",
+      "reference_or_statement_evidence": "Reference rounds to two decimal places without a requested precision; both use the same work-rate formula.",
+      "confidence": "medium"
+    },
+    {
+      "audit_index": 84,
+      "sample_row": 7692,
+      "stored_status": "wrong_answer",
+      "primary_category": "wrong_operation_formula",
+      "model_pattern": "wrong_operation_formula",
+      "reference_assessment": "concrete_reference_issue",
+      "generated_evidence": "Adds the 45-minute target, half of that target, and 20 while ignoring the explicitly elapsed 15 minutes.",
+      "reference_or_statement_evidence": "Reference adds an extra 40-minute broken-burner interval beyond the described 15 minutes and the post-fix cooking interval; remaining versus full normal-time wording is also unclear.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 85,
+      "sample_row": 7931,
+      "stored_status": "wrong_answer",
+      "primary_category": "reference_statement_problem",
+      "model_pattern": "number_entity_binding",
+      "reference_assessment": "concrete_reference_issue",
+      "generated_evidence": "Maps push-ups and emails to garbage by multiplication.",
+      "reference_or_statement_evidence": "No Zane garbage information is provided; reference maps push-ups and emails to pounds by addition.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 86,
+      "sample_row": 8111,
+      "stored_status": "wrong_answer",
+      "primary_category": "number_entity_binding",
+      "model_pattern": "number_entity_binding",
+      "reference_assessment": "no_concrete_issue_found",
+      "generated_evidence": "Subtracts the father's unrelated lamp value from Emily's bank balance.",
+      "reference_or_statement_evidence": "No concrete reference issue found.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 87,
+      "sample_row": 8138,
+      "stored_status": "wrong_answer",
+      "primary_category": "wrong_operation_formula",
+      "model_pattern": "wrong_operation_formula",
+      "reference_assessment": "no_concrete_issue_found",
+      "generated_evidence": "Uses 110 percent of January rather than January plus a 110-percent increase.",
+      "reference_or_statement_evidence": "No concrete reference issue found.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 88,
+      "sample_row": 8333,
+      "stored_status": "wrong_answer",
+      "primary_category": "omitted_condition_step",
+      "model_pattern": "omitted_condition_step",
+      "reference_assessment": "no_concrete_issue_found",
+      "generated_evidence": "Omits the initial 200-dollar balance and treats February's purchase as positive savings.",
+      "reference_or_statement_evidence": "No concrete reference issue found.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 89,
+      "sample_row": 8334,
+      "stored_status": "wrong_answer",
+      "primary_category": "wrong_operation_formula",
+      "model_pattern": "wrong_operation_formula",
+      "reference_assessment": "concrete_reference_issue",
+      "generated_evidence": "Uses a remainder operation for the amount filling the small bag and then reverses the remaining-capacity accounting.",
+      "reference_or_statement_evidence": "Reference uses the uncle's unrelated daily rice quantity as Emily's initial inventory rather than tracking transfer from the filled seven-kilogram bag.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 90,
+      "sample_row": 8627,
+      "stored_status": "wrong_answer",
+      "primary_category": "reference_statement_problem",
+      "model_pattern": "number_entity_binding",
+      "reference_assessment": "concrete_reference_issue",
+      "generated_evidence": "Returns remaining donuts instead of the requested favorite TV show.",
+      "reference_or_statement_evidence": "Favorite TV show is absent; reference invents Friends.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 91,
+      "sample_row": 8683,
+      "stored_status": "wrong_answer",
+      "primary_category": "reference_statement_problem",
+      "model_pattern": "no_concrete_issue_found",
+      "reference_assessment": "concrete_reference_issue",
+      "generated_evidence": "Totals Mason's requested rides and their ticket costs.",
+      "reference_or_statement_evidence": "Reference subtracts tickets bought by Noah without any stated transfer or connection to Mason.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 92,
+      "sample_row": 8684,
+      "stored_status": "wrong_answer",
+      "primary_category": "reference_statement_problem",
+      "model_pattern": "no_concrete_issue_found",
+      "reference_assessment": "concrete_reference_issue",
+      "generated_evidence": "Adds two stated hand loads and the vest once.",
+      "reference_or_statement_evidence": "Reference multiplies body weight plus vest by the per-hand strength factor, thereby increasing both hand loads because of a vest the question only says he wears.",
+      "confidence": "medium"
+    },
+    {
+      "audit_index": 93,
+      "sample_row": 8777,
+      "stored_status": "wrong_answer",
+      "primary_category": "wrong_operation_formula",
+      "model_pattern": "wrong_operation_formula",
+      "reference_assessment": "no_concrete_issue_found",
+      "generated_evidence": "Assigns half the total time to each leg despite equal distance and unequal speeds, then returns combined distance instead of one-way distance.",
+      "reference_or_statement_evidence": "No concrete reference issue found.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 94,
+      "sample_row": 9070,
+      "stored_status": "wrong_answer",
+      "primary_category": "reference_statement_problem",
+      "model_pattern": "no_concrete_issue_found",
+      "reference_assessment": "concrete_reference_issue",
+      "generated_evidence": "Uses the three books explicitly stated and the discount.",
+      "reference_or_statement_evidence": "Reference uses four books despite the question saying three.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 95,
+      "sample_row": 9176,
+      "stored_status": "wrong_answer",
+      "primary_category": "rounding_unit",
+      "model_pattern": "rounding_unit",
+      "reference_assessment": "concrete_reference_issue",
+      "generated_evidence": "Multiplies cups directly by calories per tablespoon without converting units.",
+      "reference_or_statement_evidence": "Reference already computes the tablespoons in half a cup, then multiplies by the half-cup amount a second time.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 96,
+      "sample_row": 9245,
+      "stored_status": "wrong_answer",
+      "primary_category": "rounding_unit",
+      "model_pattern": "rounding_unit",
+      "reference_assessment": "no_concrete_issue_found",
+      "generated_evidence": "Returns a count in pairs while the final question asks total shoes.",
+      "reference_or_statement_evidence": "Reference converts pairs to individual shoes; the final pronoun is slightly terse, but that reading is supported.",
+      "confidence": "medium"
+    },
+    {
+      "audit_index": 97,
+      "sample_row": 9254,
+      "stored_status": "wrong_answer",
+      "primary_category": "number_entity_binding",
+      "model_pattern": "number_entity_binding",
+      "reference_assessment": "concrete_reference_issue",
+      "generated_evidence": "Adds five pens to each color rather than respecting the stated color additions.",
+      "reference_or_statement_evidence": "The question says five more but two of each of two colors, which sums to four; reference adds only two to total and none to blue.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 98,
+      "sample_row": 9275,
+      "stored_status": "wrong_answer",
+      "primary_category": "reference_statement_problem",
+      "model_pattern": "wrong_operation_formula",
+      "reference_assessment": "concrete_reference_issue",
+      "generated_evidence": "Doubles east-plus-north distance rather than following the three described legs.",
+      "reference_or_statement_evidence": "The west-only return cannot reach the hive after a north leg. Reference concatenates coordinate-component lists and returns a list instead of a total distance.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 99,
+      "sample_row": 9333,
+      "stored_status": "wrong_answer",
+      "primary_category": "rounding_unit",
+      "model_pattern": "rounding_unit",
+      "reference_assessment": "no_concrete_issue_found",
+      "generated_evidence": "Uses unrounded purchase quantities and counts two soda cans per guest by reusing slices_per_guest.",
+      "reference_or_statement_evidence": "No concrete reference issue found.",
+      "confidence": "high"
+    }
+  ],
+  "train": [
+    {
+      "audit_index": 0,
+      "sample_row": 6814,
+      "category": "no_concrete_issue_found",
+      "tags": [
+        "no_concrete_issue_found"
+      ],
+      "evidence": "Reference applies the stated one-fifth age relation; no concrete question/reference mismatch found.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 1,
+      "sample_row": 12038,
+      "category": "no_concrete_issue_found",
+      "tags": [
+        "no_concrete_issue_found"
+      ],
+      "evidence": "Reference calculates the gas-giant proportion and converts to percent.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 2,
+      "sample_row": 26225,
+      "category": "statement_ambiguity_or_incomplete",
+      "tags": [
+        "statement_ambiguity_or_incomplete"
+      ],
+      "evidence": "Reference assumes one game per day across seven tournament days; the number of games per day is unstated. Aunt/page distractor assignments do not affect its output.",
+      "confidence": "medium"
+    },
+    {
+      "audit_index": 3,
+      "sample_row": 27824,
+      "category": "no_concrete_issue_found",
+      "tags": [
+        "no_concrete_issue_found"
+      ],
+      "evidence": "Reference divides apples equally among the stated employees.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 4,
+      "sample_row": 31244,
+      "category": "no_concrete_issue_found",
+      "tags": [
+        "no_concrete_issue_found"
+      ],
+      "evidence": "Reference applies the stated discount to all five hats and excludes the fishing distractor.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 5,
+      "sample_row": 33326,
+      "category": "question_reference_mismatch",
+      "tags": [
+        "question_reference_mismatch",
+        "distractor_contamination",
+        "fractional_discrete_count"
+      ],
+      "evidence": "Reference treats giving away small scarves as increasing the big-scarf count, then subtracts the unrelated sweater goal. The percentage also implies fractional scarves.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 6,
+      "sample_row": 33659,
+      "category": "no_concrete_issue_found",
+      "tags": [
+        "no_concrete_issue_found"
+      ],
+      "evidence": "Reference takes the stated defective percentage of total items.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 7,
+      "sample_row": 45561,
+      "category": "no_concrete_issue_found",
+      "tags": [
+        "no_concrete_issue_found"
+      ],
+      "evidence": "Reference uses the explicitly stated three-fourths savings target and subtracts current savings; no concrete mismatch found under that wording.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 8,
+      "sample_row": 48050,
+      "category": "statement_ambiguity_or_incomplete",
+      "tags": [
+        "statement_ambiguity_or_incomplete"
+      ],
+      "evidence": "Reference includes a gas stop at the exact arrival time; whether arrival counts as a stop en route is unstated.",
+      "confidence": "medium"
+    },
+    {
+      "audit_index": 9,
+      "sample_row": 49405,
+      "category": "no_concrete_issue_found",
+      "tags": [
+        "no_concrete_issue_found"
+      ],
+      "evidence": "Reference distinguishes recorded grocery spending from unexplained wallet loss.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 10,
+      "sample_row": 58655,
+      "category": "no_concrete_issue_found",
+      "tags": [
+        "no_concrete_issue_found"
+      ],
+      "evidence": "Reference computes Lily's fourteen daily wages and excludes the chef's dish-time distractor.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 11,
+      "sample_row": 66613,
+      "category": "no_concrete_issue_found",
+      "tags": [
+        "no_concrete_issue_found"
+      ],
+      "evidence": "Reference subtracts the fractions of oranges allocated to juice and marmalade; their conversion-to-container rates do not affect whole oranges left.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 12,
+      "sample_row": 69403,
+      "category": "question_reference_mismatch",
+      "tags": [
+        "question_reference_mismatch",
+        "spliced_question",
+        "distractor_contamination"
+      ],
+      "evidence": "Question splices police-ticket quota, hockey tickets and game attendance. Reference changes the January remainder into a February calculation, subtracts Michael's tickets and applies a game-attendance fraction.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 13,
+      "sample_row": 72933,
+      "category": "no_concrete_issue_found",
+      "tags": [
+        "no_concrete_issue_found"
+      ],
+      "evidence": "Reference multiplies bags by apples per bag.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 14,
+      "sample_row": 74870,
+      "category": "statement_ambiguity_or_incomplete",
+      "tags": [
+        "statement_ambiguity_or_incomplete",
+        "fractional_discrete_count"
+      ],
+      "evidence": "Exact 30 percent of 25 students is not an integer; reference returns fractional student counts without a rounding or approximate-percentage convention.",
+      "confidence": "medium"
+    },
+    {
+      "audit_index": 15,
+      "sample_row": 82627,
+      "category": "question_reference_mismatch",
+      "tags": [
+        "question_reference_mismatch"
+      ],
+      "evidence": "Reference includes the registration fee although the question says Sarah decides not to register the car.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 16,
+      "sample_row": 83667,
+      "category": "no_concrete_issue_found",
+      "tags": [
+        "no_concrete_issue_found"
+      ],
+      "evidence": "Reference uses six workday swims and the separate Sunday swim; no concrete mismatch found under that natural reading.",
+      "confidence": "medium"
+    },
+    {
+      "audit_index": 17,
+      "sample_row": 91161,
+      "category": "no_concrete_issue_found",
+      "tags": [
+        "no_concrete_issue_found"
+      ],
+      "evidence": "Reference includes Nate with four cousins and divides all game pieces equally.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 18,
+      "sample_row": 95325,
+      "category": "no_concrete_issue_found",
+      "tags": [
+        "no_concrete_issue_found"
+      ],
+      "evidence": "Reference divides distance by the stated constant speed.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 19,
+      "sample_row": 97251,
+      "category": "question_reference_mismatch",
+      "tags": [
+        "question_reference_mismatch"
+      ],
+      "evidence": "Reference subtracts the 15 already purchased before multiplying by four towers, effectively crediting those same purchases separately to every tower.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 20,
+      "sample_row": 98246,
+      "category": "no_concrete_issue_found",
+      "tags": [
+        "no_concrete_issue_found"
+      ],
+      "evidence": "Reference adds assembly and packaging labor minutes and converts to hours. Elapsed factory throughput would require a staffing/concurrency interpretation; no concrete arithmetic mismatch found.",
+      "confidence": "medium"
+    },
+    {
+      "audit_index": 21,
+      "sample_row": 101414,
+      "category": "no_concrete_issue_found",
+      "tags": [
+        "no_concrete_issue_found"
+      ],
+      "evidence": "Reference applies the senior discount before tax.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 22,
+      "sample_row": 105907,
+      "category": "visible_runtime_risk",
+      "tags": [
+        "visible_runtime_risk",
+        "undefined_name"
+      ],
+      "evidence": "Reference assigns total_cars_result but returns undefined result; visible name binding makes solve fail unless an unrelated global result exists.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 23,
+      "sample_row": 107175,
+      "category": "question_reference_mismatch",
+      "tags": [
+        "question_reference_mismatch",
+        "invented_quantity",
+        "distractor_contamination"
+      ],
+      "evidence": "Reference introduces unstated pool dimensions and computes pool volume/overflow instead of the requested free capacity in the nine-gallon pitcher.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 24,
+      "sample_row": 107473,
+      "category": "question_reference_mismatch",
+      "tags": [
+        "question_reference_mismatch",
+        "question_text_typo"
+      ],
+      "evidence": "Reference includes ten minutes of rest in time spent exercising. The question starts with a clipped name, but the mathematical body is present.",
+      "confidence": "medium"
+    },
+    {
+      "audit_index": 25,
+      "sample_row": 114975,
+      "category": "no_concrete_issue_found",
+      "tags": [
+        "no_concrete_issue_found"
+      ],
+      "evidence": "Reference converts the complete duration to hours and divides marathon distance by it.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 26,
+      "sample_row": 116739,
+      "category": "statement_ambiguity_or_incomplete",
+      "tags": [
+        "statement_ambiguity_or_incomplete"
+      ],
+      "evidence": "Emma's given cookie rate is lower than Lisa's, conflicting with how many more Emma baked. Reference returns a signed negative difference; batch-versus-continuous production is not specified.",
+      "confidence": "medium"
+    },
+    {
+      "audit_index": 27,
+      "sample_row": 120116,
+      "category": "no_concrete_issue_found",
+      "tags": [
+        "no_concrete_issue_found"
+      ],
+      "evidence": "Reference takes the limiting whole-batch count across flour and eggs.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 28,
+      "sample_row": 130889,
+      "category": "no_concrete_issue_found",
+      "tags": [
+        "no_concrete_issue_found"
+      ],
+      "evidence": "Reference counts four six-hour days plus Friday's three hours, excluding Emily's unrelated comparison.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 29,
+      "sample_row": 145051,
+      "category": "statement_ambiguity_or_incomplete",
+      "tags": [
+        "statement_ambiguity_or_incomplete",
+        "fractional_discrete_count"
+      ],
+      "evidence": "One-third of the stated 130 whole shells and half that amount give nonintegral shell counts; reference applies those exact fractions without a convention.",
+      "confidence": "medium"
+    },
+    {
+      "audit_index": 30,
+      "sample_row": 146316,
+      "category": "question_reference_mismatch",
+      "tags": [
+        "question_reference_mismatch",
+        "contradictory_costs",
+        "double_counting"
+      ],
+      "evidence": "Question gives conflicting per-puppy and total acquisition costs. Reference ignores the stated total purchase cost and subtracts the per-puppy costs twice.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 31,
+      "sample_row": 146413,
+      "category": "no_concrete_issue_found",
+      "tags": [
+        "no_concrete_issue_found"
+      ],
+      "evidence": "Reference sequentially applies laptop spending, one-third of the remainder on clothes, and loss on the new remainder.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 32,
+      "sample_row": 149811,
+      "category": "no_concrete_issue_found",
+      "tags": [
+        "no_concrete_issue_found"
+      ],
+      "evidence": "Reference derives side length from perimeter and squares it.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 33,
+      "sample_row": 160265,
+      "category": "question_reference_mismatch",
+      "tags": [
+        "question_reference_mismatch",
+        "distractor_contamination"
+      ],
+      "evidence": "Reference adds Grace's free employment benefit to Isabella's bicycle/helmet spending.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 34,
+      "sample_row": 163032,
+      "category": "statement_ambiguity_or_incomplete",
+      "tags": [
+        "statement_ambiguity_or_incomplete"
+      ],
+      "evidence": "Reference treats the full one-gallon tank as consumed over the trip, although the question only says Emma filled it before driving; actual fuel consumed is not stated.",
+      "confidence": "medium"
+    },
+    {
+      "audit_index": 35,
+      "sample_row": 167414,
+      "category": "no_concrete_issue_found",
+      "tags": [
+        "no_concrete_issue_found"
+      ],
+      "evidence": "Reference multiplies the three dimensions for box volume.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 36,
+      "sample_row": 167753,
+      "category": "question_reference_mismatch",
+      "tags": [
+        "question_reference_mismatch",
+        "mixed_units"
+      ],
+      "evidence": "Reference adds swimming laps directly to walking/cycling miles with no lap length conversion.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 37,
+      "sample_row": 170555,
+      "category": "question_reference_mismatch",
+      "tags": [
+        "question_reference_mismatch",
+        "spurious_answer_prefix",
+        "ambiguous_pattern"
+      ],
+      "evidence": "Reference omits the specified lap counts when adding distances and assumes a repetition rule. Question's continued pattern is unclear and includes an unrelated prefixed result.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 38,
+      "sample_row": 171339,
+      "category": "question_reference_mismatch",
+      "tags": [
+        "question_reference_mismatch",
+        "missing_required_quantity"
+      ],
+      "evidence": "Question asks about an unspecified rectangle after describing a square and triangle; reference invents a rectangle side relation.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 39,
+      "sample_row": 179451,
+      "category": "no_concrete_issue_found",
+      "tags": [
+        "no_concrete_issue_found"
+      ],
+      "evidence": "Reference subtracts both picked flower counts and adds the two remainders.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 40,
+      "sample_row": 201629,
+      "category": "no_concrete_issue_found",
+      "tags": [
+        "no_concrete_issue_found"
+      ],
+      "evidence": "Reference implements three more than the given lion/tiger difference.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 41,
+      "sample_row": 208496,
+      "category": "no_concrete_issue_found",
+      "tags": [
+        "no_concrete_issue_found"
+      ],
+      "evidence": "Reference follows the chained shirt multipliers and excludes the science distractor.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 42,
+      "sample_row": 219684,
+      "category": "question_reference_mismatch",
+      "tags": [
+        "question_reference_mismatch",
+        "invented_quantity"
+      ],
+      "evidence": "No shoe prices are provided; reference invents three prices and their average.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 43,
+      "sample_row": 221231,
+      "category": "no_concrete_issue_found",
+      "tags": [
+        "no_concrete_issue_found"
+      ],
+      "evidence": "Reference uses the conventional eight-times-as-many reading and subtracts Oliver's fruit count; no concrete mismatch found under that reading.",
+      "confidence": "medium"
+    },
+    {
+      "audit_index": 44,
+      "sample_row": 222955,
+      "category": "question_reference_mismatch",
+      "tags": [
+        "question_reference_mismatch",
+        "unsupported_multiplier",
+        "missing_required_quantity"
+      ],
+      "evidence": "Reference multiplies by the number of flower types without any statement that each monthly quantity applies per type, and treats all yearly plantings as watered for a full year; survival/timing of plantings is absent.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 45,
+      "sample_row": 225772,
+      "category": "no_concrete_issue_found",
+      "tags": [
+        "no_concrete_issue_found"
+      ],
+      "evidence": "Reference doubles the one-way bus fare for a round trip.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 46,
+      "sample_row": 229258,
+      "category": "no_concrete_issue_found",
+      "tags": [
+        "no_concrete_issue_found"
+      ],
+      "evidence": "Reference multiplies baskets by oranges per basket.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 47,
+      "sample_row": 229974,
+      "category": "question_reference_mismatch",
+      "tags": [
+        "question_reference_mismatch",
+        "spliced_question",
+        "wrong_formula",
+        "output_scope"
+      ],
+      "evidence": "Question contains two unrelated tasks. Reference overwrites the pay result with food calculations, uses two rather than one as yesterday's hotdog base, miscomputes fries, and omits yesterday's food from the two-meal total.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 48,
+      "sample_row": 230283,
+      "category": "question_reference_mismatch",
+      "tags": [
+        "question_reference_mismatch"
+      ],
+      "evidence": "Reference removes the five-year increment from Lily's future age before applying the three-times relation, undoing the future-age condition.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 49,
+      "sample_row": 231148,
+      "category": "question_reference_mismatch",
+      "tags": [
+        "question_reference_mismatch",
+        "missing_nonnegative_constraint"
+      ],
+      "evidence": "Reference returns a negative borrowing amount although the stated wallet balance already covers the clothes; no borrowing is needed in that situation.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 50,
+      "sample_row": 234053,
+      "category": "no_concrete_issue_found",
+      "tags": [
+        "no_concrete_issue_found"
+      ],
+      "evidence": "Reference adds the four new stickers to the initial eight.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 51,
+      "sample_row": 238968,
+      "category": "no_concrete_issue_found",
+      "tags": [
+        "no_concrete_issue_found"
+      ],
+      "evidence": "Reference subtracts both existing savings and the parents' contribution from laptop cost.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 52,
+      "sample_row": 240174,
+      "category": "no_concrete_issue_found",
+      "tags": [
+        "no_concrete_issue_found"
+      ],
+      "evidence": "Reference divides total cookies by the per-sibling allocation.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 53,
+      "sample_row": 243962,
+      "category": "no_concrete_issue_found",
+      "tags": [
+        "no_concrete_issue_found"
+      ],
+      "evidence": "Reference divides blue-ball count by all balls.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 54,
+      "sample_row": 244098,
+      "category": "no_concrete_issue_found",
+      "tags": [
+        "no_concrete_issue_found"
+      ],
+      "evidence": "Reference removes spoiled flour and floors the count of complete loaves.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 55,
+      "sample_row": 256702,
+      "category": "question_reference_mismatch",
+      "tags": [
+        "question_reference_mismatch",
+        "distractor_contamination",
+        "output_scope"
+      ],
+      "evidence": "Reference adds Sophia's unrelated collection purchases and returns made/purchased hats rather than the number still needed; the stated knit counts already exceed the target.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 56,
+      "sample_row": 256787,
+      "category": "no_concrete_issue_found",
+      "tags": [
+        "no_concrete_issue_found"
+      ],
+      "evidence": "Reference spends two-fifths and divides the remainder among ten siblings.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 57,
+      "sample_row": 258607,
+      "category": "no_concrete_issue_found",
+      "tags": [
+        "no_concrete_issue_found"
+      ],
+      "evidence": "Reference derives grades seven/eight and sums all four grades.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 58,
+      "sample_row": 263626,
+      "category": "no_concrete_issue_found",
+      "tags": [
+        "no_concrete_issue_found"
+      ],
+      "evidence": "Reference compares six monthly website payments with the stated platform subscription.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 59,
+      "sample_row": 275504,
+      "category": "question_reference_mismatch",
+      "tags": [
+        "question_reference_mismatch",
+        "contradictory_statement",
+        "number_binding"
+      ],
+      "evidence": "Question explicitly says five lost shells, but reference labels the remaining shells as lost and overwrites the original total; the five-times relation also conflicts with the explicit initial/lost numbers.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 60,
+      "sample_row": 277370,
+      "category": "no_concrete_issue_found",
+      "tags": [
+        "no_concrete_issue_found"
+      ],
+      "evidence": "Reference subtracts the cupcake fraction from all pastries.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 61,
+      "sample_row": 277746,
+      "category": "statement_ambiguity_or_incomplete",
+      "tags": [
+        "statement_ambiguity_or_incomplete",
+        "fractional_discrete_count"
+      ],
+      "evidence": "One-fourth of the stated 150 pairs of shoes gives a fractional pair, so exact category counts are incompatible with whole pairs. Reference does not state a rounding convention.",
+      "confidence": "medium"
+    },
+    {
+      "audit_index": 62,
+      "sample_row": 279946,
+      "category": "no_concrete_issue_found",
+      "tags": [
+        "no_concrete_issue_found"
+      ],
+      "evidence": "Reference applies the daily newspaper quantities to their three-day/two-day schedules and per-paper pay.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 63,
+      "sample_row": 280746,
+      "category": "no_concrete_issue_found",
+      "tags": [
+        "no_concrete_issue_found"
+      ],
+      "evidence": "Reference derives the brother's count and sums both people.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 64,
+      "sample_row": 283060,
+      "category": "question_reference_mismatch",
+      "tags": [
+        "question_reference_mismatch",
+        "omitted_interval",
+        "ambiguous_cycle_count"
+      ],
+      "evidence": "Reference multiplies the biweekly deposit by all weeks, ignoring the two-week interval. Whether seven restarts means seven or eight account-filling cycles is also unclear.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 65,
+      "sample_row": 288389,
+      "category": "no_concrete_issue_found",
+      "tags": [
+        "no_concrete_issue_found"
+      ],
+      "evidence": "Reference sums the vintage fractions from the two stated set sizes.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 66,
+      "sample_row": 291369,
+      "category": "no_concrete_issue_found",
+      "tags": [
+        "no_concrete_issue_found"
+      ],
+      "evidence": "Reference divides the remaining savings goal by daily savings.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 67,
+      "sample_row": 291476,
+      "category": "no_concrete_issue_found",
+      "tags": [
+        "no_concrete_issue_found"
+      ],
+      "evidence": "Reference uses the rectangular perimeter divided by the stated spacing around a closed boundary.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 68,
+      "sample_row": 291704,
+      "category": "no_concrete_issue_found",
+      "tags": [
+        "no_concrete_issue_found"
+      ],
+      "evidence": "Reference applies the store-wide discount to both purchased items.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 69,
+      "sample_row": 303445,
+      "category": "no_concrete_issue_found",
+      "tags": [
+        "no_concrete_issue_found"
+      ],
+      "evidence": "Reference subtracts all chair costs from total and divides remaining cost among tables.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 70,
+      "sample_row": 307419,
+      "category": "no_concrete_issue_found",
+      "tags": [
+        "no_concrete_issue_found"
+      ],
+      "evidence": "Reference applies the initial three-times relation and adds the found marbles.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 71,
+      "sample_row": 329963,
+      "category": "question_reference_mismatch",
+      "tags": [
+        "question_reference_mismatch",
+        "invented_quantity",
+        "fractional_discrete_count"
+      ],
+      "evidence": "Reference invents the brother's throw count by copying Jason's and floors the one-third relation although no rounding is stated; the exact fraction also conflicts with whole throws.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 72,
+      "sample_row": 330776,
+      "category": "no_concrete_issue_found",
+      "tags": [
+        "no_concrete_issue_found"
+      ],
+      "evidence": "Reference subtracts the completed two-thirds distance from the total.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 73,
+      "sample_row": 340035,
+      "category": "question_reference_mismatch",
+      "tags": [
+        "question_reference_mismatch",
+        "number_binding",
+        "missing_required_quantity"
+      ],
+      "evidence": "Question gives student count but no notebook count; reference substitutes 40 notebooks and floors the per-student allocation.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 74,
+      "sample_row": 352944,
+      "category": "no_concrete_issue_found",
+      "tags": [
+        "no_concrete_issue_found"
+      ],
+      "evidence": "Reference multiplies four packs by twelve cookies each.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 75,
+      "sample_row": 356778,
+      "category": "no_concrete_issue_found",
+      "tags": [
+        "no_concrete_issue_found"
+      ],
+      "evidence": "Reference includes Dan and his two friends in the equal split.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 76,
+      "sample_row": 360663,
+      "category": "question_reference_mismatch",
+      "tags": [
+        "question_reference_mismatch",
+        "missing_required_relation",
+        "dimension_mismatch"
+      ],
+      "evidence": "No cost-versus-output model is supplied. Reference divides new daily cost by one less than product count, which does not yield a supported product count.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 77,
+      "sample_row": 372528,
+      "category": "visible_runtime_risk",
+      "tags": [
+        "visible_runtime_risk",
+        "external_math_dependency"
+      ],
+      "evidence": "Reference calls math.ceil with no import in the displayed code. This is a visible dependency on an external math binding, not proof of failure in a harness that preimports math.",
+      "confidence": "medium"
+    },
+    {
+      "audit_index": 78,
+      "sample_row": 376417,
+      "category": "question_reference_mismatch",
+      "tags": [
+        "question_reference_mismatch",
+        "contradictory_statement",
+        "wrong_formula"
+      ],
+      "evidence": "The board-game relation and stated total toys conflict. Reference subtracts three from the remaining total, implementing neither the stated fewer-than relation nor a simple category remainder.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 79,
+      "sample_row": 379201,
+      "category": "no_concrete_issue_found",
+      "tags": [
+        "no_concrete_issue_found"
+      ],
+      "evidence": "Reference subtracts red and green counts from all marbles.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 80,
+      "sample_row": 379580,
+      "category": "visible_runtime_risk",
+      "tags": [
+        "visible_runtime_risk",
+        "external_math_dependency"
+      ],
+      "evidence": "Reference uses math.ceil without an import in the displayed code; arithmetic scope excludes the muffin distractor. Execution depends on whether the harness supplies math.",
+      "confidence": "medium"
+    },
+    {
+      "audit_index": 81,
+      "sample_row": 382554,
+      "category": "statement_unit_issue",
+      "tags": [
+        "statement_unit_issue",
+        "dimension_mismatch"
+      ],
+      "evidence": "Question treats karats, a gold-purity measure, as additive stock quantities per necklace/week. Reference follows that dimensional premise; a mass or other quantity unit is missing.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 82,
+      "sample_row": 388162,
+      "category": "no_concrete_issue_found",
+      "tags": [
+        "no_concrete_issue_found"
+      ],
+      "evidence": "Reference finds the pizza-preferring customers and divides all pizzas among them; fractional pizzas are divisible food portions.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 83,
+      "sample_row": 396922,
+      "category": "no_concrete_issue_found",
+      "tags": [
+        "no_concrete_issue_found"
+      ],
+      "evidence": "Reference adds the longer daily distance and converts miles to kilometers using a standard factor.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 84,
+      "sample_row": 397887,
+      "category": "question_reference_mismatch",
+      "tags": [
+        "question_reference_mismatch",
+        "missing_required_quantity",
+        "double_counting"
+      ],
+      "evidence": "Sale week/day timing is not provided. Reference invents discounted sales from integer division by fourteen and adds them to the full-price sales, counting extra sales without support.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 85,
+      "sample_row": 398382,
+      "category": "question_reference_mismatch",
+      "tags": [
+        "question_reference_mismatch"
+      ],
+      "evidence": "Reference multiplies finish time by the lower speed factor, making the slower runner finish sooner rather than applying inverse speed/time relation.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 86,
+      "sample_row": 398591,
+      "category": "no_concrete_issue_found",
+      "tags": [
+        "no_concrete_issue_found"
+      ],
+      "evidence": "Reference totals Elizabeth's pages and the friend's additional pages, then divides by book length.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 87,
+      "sample_row": 400156,
+      "category": "no_concrete_issue_found",
+      "tags": [
+        "no_concrete_issue_found"
+      ],
+      "evidence": "Reference derives Fairview's population and sums both cities, excluding the cinema distractor.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 88,
+      "sample_row": 403457,
+      "category": "statement_ambiguity_or_incomplete",
+      "tags": [
+        "statement_ambiguity_or_incomplete"
+      ],
+      "evidence": "Reference returns a fractional day from a daily reading rate; continuous-time duration versus calendar days until completion is not explicit.",
+      "confidence": "medium"
+    },
+    {
+      "audit_index": 89,
+      "sample_row": 414850,
+      "category": "question_reference_mismatch",
+      "tags": [
+        "question_reference_mismatch",
+        "invented_quantity",
+        "unanswerable_final_question",
+        "contradictory_statement"
+      ],
+      "evidence": "No house-height relation is provided; reference invents cookie height and maps cookie counts to house height. The allocations to Lily also contradict the remaining-cookie count.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 90,
+      "sample_row": 418801,
+      "category": "no_concrete_issue_found",
+      "tags": [
+        "no_concrete_issue_found"
+      ],
+      "evidence": "Reference applies tax to the combined phone and case subtotal.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 91,
+      "sample_row": 420651,
+      "category": "question_reference_mismatch",
+      "tags": [
+        "question_reference_mismatch",
+        "part_vs_remainder",
+        "fractional_discrete_count"
+      ],
+      "evidence": "After the niece's share, reference keeps one-quarter of the remainder instead of subtracting the quarter given to the nephew; original marble counts also imply fractions.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 92,
+      "sample_row": 439898,
+      "category": "question_reference_mismatch",
+      "tags": [
+        "question_reference_mismatch",
+        "invented_quantity",
+        "unrelated_price_to_usage_fee"
+      ],
+      "evidence": "No treadmill usage fee is given; reference invents a purchase price and converts a sale price into a per-minute workout fee.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 93,
+      "sample_row": 442417,
+      "category": "no_concrete_issue_found",
+      "tags": [
+        "no_concrete_issue_found"
+      ],
+      "evidence": "Reference divides area by length for the rectangle's width.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 94,
+      "sample_row": 442666,
+      "category": "no_concrete_issue_found",
+      "tags": [
+        "no_concrete_issue_found"
+      ],
+      "evidence": "Reference counts the five full working days and three Saturday hours, excluding daughter's age.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 95,
+      "sample_row": 443143,
+      "category": "question_reference_mismatch",
+      "tags": [
+        "question_reference_mismatch",
+        "invented_quantity",
+        "unanswerable_final_question"
+      ],
+      "evidence": "No fat amount or serving count is given; reference invents both quantities from unrelated superhero/pizza prose.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 96,
+      "sample_row": 449245,
+      "category": "no_concrete_issue_found",
+      "tags": [
+        "no_concrete_issue_found"
+      ],
+      "evidence": "Reference computes correct questions divided by all questions and converts to percent.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 97,
+      "sample_row": 471029,
+      "category": "no_concrete_issue_found",
+      "tags": [
+        "no_concrete_issue_found"
+      ],
+      "evidence": "Reference finds sold apples from the stated fraction and multiplies by sale price.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 98,
+      "sample_row": 475435,
+      "category": "no_concrete_issue_found",
+      "tags": [
+        "no_concrete_issue_found"
+      ],
+      "evidence": "Reference calculates profit and divides by revenue for profit margin percentage.",
+      "confidence": "high"
+    },
+    {
+      "audit_index": 99,
+      "sample_row": 481141,
+      "category": "question_reference_mismatch",
+      "tags": [
+        "question_reference_mismatch",
+        "invented_quantity",
+        "omitted_total_constraint"
+      ],
+      "evidence": "Reference invents coral count, ignores the total shell count, and applies an unsupported/reversed relation between coral and conch counts; the comparative wording itself is awkward.",
+      "confidence": "high"
+    }
+  ],
+  "counts": {
+    "validation_primary_categories": {
+      "number_entity_binding": 17,
+      "reference_statement_problem": 41,
+      "rounding_unit": 14,
+      "wrong_operation_formula": 21,
+      "omitted_condition_step": 6,
+      "runtime": 1
+    },
+    "validation_model_patterns": {
+      "number_entity_binding": 25,
+      "rounding_unit": 14,
+      "no_concrete_issue_found": 26,
+      "wrong_operation_formula": 22,
+      "omitted_condition_step": 7,
+      "uncertain": 5,
+      "runtime": 1
+    },
+    "validation_reference_assessments": {
+      "concrete_reference_issue": 65,
+      "statement_ambiguous_or_incomplete": 14,
+      "no_concrete_issue_found": 21
+    },
+    "validation_stored_statuses": {
+      "wrong_answer": 99,
+      "runtime_error": 1
+    },
+    "train_primary_categories": {
+      "no_concrete_issue_found": 58,
+      "statement_ambiguity_or_incomplete": 8,
+      "question_reference_mismatch": 30,
+      "visible_runtime_risk": 3,
+      "statement_unit_issue": 1
+    },
+    "train_tags_multilabel": {
+      "no_concrete_issue_found": 58,
+      "statement_ambiguity_or_incomplete": 8,
+      "question_reference_mismatch": 30,
+      "distractor_contamination": 5,
+      "fractional_discrete_count": 6,
+      "spliced_question": 2,
+      "visible_runtime_risk": 3,
+      "undefined_name": 1,
+      "invented_quantity": 7,
+      "question_text_typo": 1,
+      "contradictory_costs": 1,
+      "double_counting": 2,
+      "mixed_units": 1,
+      "spurious_answer_prefix": 1,
+      "ambiguous_pattern": 1,
+      "missing_required_quantity": 4,
+      "unsupported_multiplier": 1,
+      "wrong_formula": 2,
+      "output_scope": 2,
+      "missing_nonnegative_constraint": 1,
+      "contradictory_statement": 3,
+      "number_binding": 2,
+      "omitted_interval": 1,
+      "ambiguous_cycle_count": 1,
+      "missing_required_relation": 1,
+      "dimension_mismatch": 2,
+      "external_math_dependency": 2,
+      "statement_unit_issue": 1,
+      "unanswerable_final_question": 2,
+      "part_vs_remainder": 1,
+      "unrelated_price_to_usage_fee": 1,
+      "omitted_total_constraint": 1
+    },
+    "validation_confidence": {
+      "high": 80,
+      "medium": 20
+    },
+    "train_confidence": {
+      "high": 86,
+      "medium": 14
+    }
+  },
+  "strongest_examples": {
+    "model_number_entity_binding": [
+      {
+        "sample_row": 1920,
+        "evidence": "Uses the four absent students as consumers instead of the class minus absences."
+      },
+      {
+        "sample_row": 8111,
+        "evidence": "Subtracts the unrelated father's lamp value from bank balance."
+      }
+    ],
+    "model_formula_or_omitted_step": [
+      {
+        "sample_row": 4984,
+        "evidence": "Adds interest to the already scheduled repayment instead of reversing the loan relation."
+      },
+      {
+        "sample_row": 8138,
+        "evidence": "Confuses 110 percent more with 110 percent of the initial income."
+      },
+      {
+        "sample_row": 7582,
+        "evidence": "Omits the requested normal-day revenue."
+      }
+    ],
+    "model_runtime": [
+      {
+        "sample_row": 6770,
+        "evidence": "Undefined alice_owes_bob in generated code; saved status is runtime_error."
+      }
+    ],
+    "reference_disagreement_without_concrete_model_issue": [
+      {
+        "sample_row": 850,
+        "evidence": "Reference derives a negative path area by multiplying dimension increments; generated uses outer minus inner area."
+      },
+      {
+        "sample_row": 2337,
+        "evidence": "Reference omits the explicit 20-percent discount; generated applies it."
+      },
+      {
+        "sample_row": 2760,
+        "evidence": "Reference uses 24 exercise hours per day despite a stated one hour; generated uses one."
+      },
+      {
+        "sample_row": 5438,
+        "evidence": "Reference multiplies an already day-weighted monthly widget total by all days again."
+      },
+      {
+        "sample_row": 9070,
+        "evidence": "Reference uses four books although question says three."
+      }
+    ],
+    "train_specific_issues": [
+      {
+        "sample_row": 105907,
+        "evidence": "Returns undefined result after assigning total_cars_result."
+      },
+      {
+        "sample_row": 82627,
+        "evidence": "Includes registration fee explicitly not incurred."
+      },
+      {
+        "sample_row": 97251,
+        "evidence": "Credits already-bought chocolate bars once per tower rather than once overall."
+      },
+      {
+        "sample_row": 167753,
+        "evidence": "Adds swimming laps directly to miles without lap length."
+      },
+      {
+        "sample_row": 443143,
+        "evidence": "Invents fat and serving quantities absent from superhero/pizza question."
+      }
+    ]
+  },
+  "limitations": [
+    "This is one half of the fixed Stage 3 samples: the first 100 of 200 validation failures and first 100 of 200 training examples sorted by source row. Counts apply only to these assigned rows.",
+    "The validation sample is conditioned on an existing failed comparison and is not an unbiased measure of overall model or dataset error prevalence.",
+    "Static semantic inspection does not prove reference or generated correctness; status labels and source outputs were not rerun.",
+    "Reference problems and model defects overlap. Do not subtract every flagged reference from the model-failure count or treat all remaining cases as clean errors.",
+    "The boundary between whole-item/resource rounding, precision mismatch and ambiguous wording requires judgment; medium-confidence rows preserve that uncertainty.",
+    "No corrected outputs, corrected code, synthetic examples, new targets, training actions, or dataset changes were produced.",
+    "No specific syntactic truncation was found in the assigned displayed rows during semantic reading; authoritative AST and token-limit diagnostics belong to the separate objective report."
+  ],
+  "source_provenance": {
+    "full_source_sha256_verified_against_report": {
+      "selected_errors.jsonl": "607e1948b2a330faae33b99c68d011bb386e18b2395f95ad99c4685e4be84eaa",
+      "train_sample.jsonl": "703cfe94920466b33dfc80f3f030aae4c312bb702aa894530fc2683ae3c6ba22"
+    },
+    "review_input_sha256": {
+      "selected_errors_review_part1.jsonl": "e80008cbb612917b0654c7b17a5c9fe62cd3b8f4c38a8c271dec505158c713ba",
+      "train_sample_review_part1.jsonl": "3b58055fee87236612c7e909f3c81cd41348c8cbe9289477e9cab604fbb37101"
+    },
+    "checkpoint": "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage2_recovery/trials/distinct4m/final",
+    "sampling_seed": 42
+  }
+}

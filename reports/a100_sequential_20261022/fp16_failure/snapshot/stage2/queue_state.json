@@ -1,0 +1,14 @@
+{
+  "status": "failed",
+  "stage": 2,
+  "phase": "training",
+  "driver_pid": 82011,
+  "child_pid": null,
+  "started_at": "2026-10-22T16:55:36.915814+00:00",
+  "completed": [],
+  "variant": "repeat4m",
+  "architecture": "bart",
+  "updated_at": "2026-10-22T18:06:03.880050+00:00",
+  "log": "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage2/logs/repeat4m_training.log",
+  "error": "RuntimeError: repeat4m training exited 1; see /home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage2/logs/repeat4m_training.log"
+}

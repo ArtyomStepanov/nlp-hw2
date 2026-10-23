@@ -1,0 +1,154 @@
+{
+  "status": "launched",
+  "created_at": "2026-10-22T19:51:15.184138+00:00",
+  "files": {
+    "kaggle_experiments.py": {
+      "local_path": "/Users/artyom-step/nlp-hw2/kaggle_experiments.py",
+      "sha256": "b6d71da0e67bafac9c2fadf9b4db27064a10ac2da4d30a14e4f5a6b385f44734"
+    },
+    "train_kaggle.py": {
+      "local_path": "/Users/artyom-step/nlp-hw2/train_kaggle.py",
+      "sha256": "152e74f37c5c62a561e8bf650c35aef281a4edd2056834ea55ea74378978a7c8"
+    },
+    "training.py": {
+      "local_path": "/Users/artyom-step/nlp-hw2/training.py",
+      "sha256": "43312d3f7b48fc5cd8f772baccd9eb5721aa96385267a35ad563187dfed71ab8"
+    },
+    "utils.py": {
+      "local_path": "/Users/artyom-step/nlp-hw2/utils.py",
+      "sha256": "709493015d18f1e37d7384d50d686e4c66029126c4698eff8e60c5dd06b9e9a0"
+    },
+    "plotting.py": {
+      "local_path": "/Users/artyom-step/nlp-hw2/plotting.py",
+      "sha256": "2071e931d633d2cc0399e9560ef088bab38302d5e0cf77331a0784777ff297b2"
+    },
+    "tokenizer.py": {
+      "local_path": "/Users/artyom-step/nlp-hw2/tokenizer.py",
+      "sha256": "4ff94323b5ab8aa5fac1e53760b76c4505b947b620539d6c7c62460f4ffbf746"
+    },
+    "evaluation.py": {
+      "local_path": "/Users/artyom-step/nlp-hw2/evaluation.py",
+      "sha256": "9ad4d6bb1c03d0d2eca15a597db3319cf264e7d3cfcc86149a609251a4e983d0"
+    },
+    "_code_runner.py": {
+      "local_path": "/Users/artyom-step/nlp-hw2/_code_runner.py",
+      "sha256": "0e68f1713d6f65b9c2638aca26bd7c1440328b000b648eb9f76c01352d721913"
+    },
+    "prepare_datasets.py": {
+      "local_path": "/Users/artyom-step/nlp-hw2/prepare_datasets.py",
+      "sha256": "df5e35028e80fd2d6406d8e2cb77420204e7693022a2e5a8d37c78aed1e94211"
+    },
+    "tools/evaluate_fixed_bundle.py": {
+      "local_path": "/Users/artyom-step/nlp-hw2/tools/evaluate_fixed_bundle.py",
+      "sha256": "aaaa2681fd4ba5f0ccd3e716eb5b480dcb5d8e1b1df60711e18d0eace8622169"
+    },
+    "tools/run_a100_stage1.py": {
+      "local_path": "/Users/artyom-step/nlp-hw2/tools/run_a100_stage1.py",
+      "sha256": "0966773bb18e2fca2621d5e95d5ec9941937545e4a2a07642567dc93fb06ce4b"
+    },
+    "models/config.py": {
+      "local_path": "/Users/artyom-step/nlp-hw2/models/config.py",
+      "sha256": "fce960895e77d4661e91f94b474a203522392416f73714679cfc2a2a6bca79d0"
+    },
+    "models/t5.py": {
+      "local_path": "/Users/artyom-step/nlp-hw2/models/t5.py",
+      "sha256": "d1ab22531c00453fb426a6e79f4c69b7ce9508f0849399b6241d4d23dee703bc"
+    },
+    "models/baseline.py": {
+      "local_path": "/Users/artyom-step/nlp-hw2/models/baseline.py",
+      "sha256": "349643d10004fd37aa9644d25634bbf832b867851304432e4d9b66dea8001ea1"
+    },
+    "models/__init__.py": {
+      "local_path": "/Users/artyom-step/nlp-hw2/models/__init__.py",
+      "sha256": "f0ac5a18a8a85dd51fa4044cc8fc4c2f2e210304baf3ee6c13cad2792847114f"
+    },
+    "models/copy.py": {
+      "local_path": "/Users/artyom-step/nlp-hw2/models/copy.py",
+      "sha256": "51aa4b4b92943ffb8b02c0742ad137b02eb06c48a2def9cc2c9fb4bbc7ec79d2"
+    },
+    "models/t5_attention.py": {
+      "local_path": "/Users/artyom-step/nlp-hw2/models/t5_attention.py",
+      "sha256": "3b32cf763518b5236af861d7b7c4cc41286a775e60f8412773b321e0c0f51388"
+    },
+    "models/base.py": {
+      "local_path": "/Users/artyom-step/nlp-hw2/models/base.py",
+      "sha256": "a18e9a415bab03a5ef2ca313b7d9e27b515d8b20a8028648e9683bc8e999fbc0"
+    },
+    "reference_identity.json": {
+      "local_path": "/Users/artyom-step/nlp-hw2/reports/a100_sequential_20261022/reference_identity.json",
+      "sha256": "42fc3fa34f9e7ce9cfbc84fb2ad35dddccceb275e6d249ec7f7d2fe4cef9785b"
+    },
+    "tools/prepare_a100_diversity.py": {
+      "local_path": "/Users/artyom-step/nlp-hw2/tools/prepare_a100_diversity.py",
+      "sha256": "5d72088ef7cd9b32860496cbf211b95f84de411baeb1eabb1c7fc264eb1e1dfa"
+    },
+    "tools/run_a100_stage2.py": {
+      "local_path": "/Users/artyom-step/nlp-hw2/tools/run_a100_stage2.py",
+      "sha256": "3ba10cf55de138df911cc9271a2d100e9b40184a612443d2af85cac5d7a32cdd"
+    },
+    "tools/audit_a100_errors.py": {
+      "local_path": "/Users/artyom-step/nlp-hw2/tools/audit_a100_errors.py",
+      "sha256": "cd2d6e4dd40ee7cf8f834472cb2e7a1d28f541f8af04cc274313e0caef3a77ad"
+    },
+    "tools/run_a100_decoding.py": {
+      "local_path": "/Users/artyom-step/nlp-hw2/tools/run_a100_decoding.py",
+      "sha256": "23bde8f44db9ba23012b18bf0e17181fdf768f4cb15d9ef11aca2109016365bc"
+    },
+    "tools/recover_a100_stage2.py": {
+      "local_path": "/Users/artyom-step/nlp-hw2/tools/recover_a100_stage2.py",
+      "sha256": "2cc1e05ca0c98e6995ab25efd467e4b33298da330a3c82adfe8ad749bee0171f"
+    }
+  },
+  "changed_previous_files": [
+    "kaggle_experiments.py"
+  ],
+  "new_files": [
+    "tools/recover_a100_stage2.py"
+  ],
+  "archive_sha256": "31fbc78d6f2cb4c5cd04f26800241229175c55a6de2838a5aced3047e3f61d18",
+  "remote_argv": [
+    "python3",
+    "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage2_recovery_code/tools/recover_a100_stage2.py",
+    "--stage1-dir",
+    "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage1",
+    "--failed-stage2-dir",
+    "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage2",
+    "--prepared-data-dir",
+    "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage2_data",
+    "--output-dir",
+    "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage2_recovery",
+    "--reference-identity",
+    "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage2_recovery_code/reference_identity.json"
+  ],
+  "checkpoint_step": 14000,
+  "planned_total_step_attempts": 15625,
+  "remaining_step_attempts": 1625,
+  "after_repeat": [
+    "evaluate repeat4m beam4/max256 same20k",
+    "train distinct4m fresh same frozen config",
+    "evaluate distinct4m same canonical references"
+  ],
+  "remote_code_uploaded": true,
+  "remote_restarted": true,
+  "targeted_test_result": "69 passed in 7.43s",
+  "targeted_test_command": "MPLBACKEND=Agg python3 -m pytest tests/test_amp_safety.py tests/test_a100_recovery.py tests/test_a100_stage2.py -q",
+  "independent_review": "No material issues after source-continuity and shared-lock corrections",
+  "scheduler_caveat": "Unchanged native fused AdamW/Accelerate may advance scheduler during internally skipped AMP step; global_step represents attempted steps.",
+  "approved_at": "2026-10-22T19:53:51.134894+00:00",
+  "approval": "User: Да, продолжить с14 000",
+  "launch": {
+    "status": "launched",
+    "launched_at": "2026-10-22T19:54:58.602419+00:00",
+    "tmux": "nlp-a100-stage2-recovery-20261022",
+    "code": "stage2_recovery_code/",
+    "output": "stage2_recovery/",
+    "checkpoint": "stage2/trials/repeat4m/checkpoint-14000",
+    "source_files_verified": 24,
+    "authorized": true,
+    "scientific_settings_unchanged": true,
+    "driver_pid": 83202,
+    "child_pid": 83222,
+    "automation_id": "a100",
+    "automation_status": "ACTIVE"
+  }
+}

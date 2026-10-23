@@ -1,0 +1,26 @@
+{
+  "train_pid": 3613,
+  "train_identity": "287276362",
+  "controller_pid": 7222,
+  "controller_identity": "287628085",
+  "deadline": 1792427004.6334925,
+  "results": [
+    {
+      "variant": "sdpa_batch256_compiled",
+      "exit_code": 1
+    },
+    {
+      "variant": "sdpa_batch256_stress",
+      "exit_code": 1
+    },
+    {
+      "variant": "sdpa_batch128_control",
+      "exit_code": 0
+    }
+  ],
+  "paused_at": 1792424984.6583252,
+  "paused_memory_mib": 7576,
+  "benchmark_identity": "287675075",
+  "finished": true,
+  "resumed_at": 1792425131.596714
+}

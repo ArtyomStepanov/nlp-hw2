@@ -1,0 +1,192 @@
+{
+  "at": "2026-10-22T20:06:03.650327+00:00",
+  "queue": {
+    "status": "running",
+    "stage": 2,
+    "recovery": true,
+    "phase": "evaluation",
+    "driver_pid": 83202,
+    "child_pid": 83341,
+    "started_at": "2026-10-22T19:54:58.654828+00:00",
+    "completed": [],
+    "variant": "repeat4m",
+    "architecture": "bart",
+    "updated_at": "2026-10-22T20:04:47.510948+00:00",
+    "log": "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage2_recovery/logs/repeat4m_evaluation.log"
+  },
+  "alive": {
+    "driver_pid": true,
+    "child_pid": true
+  },
+  "free_disk_bytes": 62078414848,
+  "pipeline_phase": "running",
+  "pipeline_exitcode": null,
+  "stage2_complete": null,
+  "trials": {
+    "repeat4m": {
+      "complete": {
+        "architecture": "bart",
+        "global_step": 15625,
+        "metrics": {
+          "eval_loss": 0.2603245973587036,
+          "eval_token_loss": 0.26735336462672726,
+          "eval_target_tokens": 1344127,
+          "eval_runtime": 14.8626,
+          "eval_samples_per_second": 1345.662,
+          "eval_steps_per_second": 10.563,
+          "epoch": 1,
+          "amp_overflow_count": 1,
+          "amp_loss_scale": 4194304
+        },
+        "wall_seconds": 552.9438268877566,
+        "precision": "fp16",
+        "world_size": 1,
+        "effective_batch": 256,
+        "parameters": 244391936,
+        "finished_at": "2026-10-22T20:04:38.445289+00:00",
+        "torch": "2.9.1+cu128",
+        "transformers": "5.10.2",
+        "amp_diagnostics": {
+          "overflow_count": 1,
+          "final_loss_scale": 4194304,
+          "scope": "current_process_session"
+        },
+        "gpu": "NVIDIA A100 80GB PCIe",
+        "peak_allocated_gib": 32.54380226135254
+      },
+      "recent_history": [
+        {
+          "loss": 0.21388593673706055,
+          "grad_norm": 0.32816219329833984,
+          "learning_rate": 3.555836023532155e-8,
+          "epoch": 0.992,
+          "step": 15500,
+          "amp_overflow_count": 1,
+          "amp_loss_scale": 4194304
+        },
+        {
+          "loss": 0.2116263771057129,
+          "grad_norm": 0.361576110124588,
+          "learning_rate": 1.51416071701993e-9,
+          "epoch": 0.9984,
+          "step": 15600,
+          "amp_overflow_count": 1,
+          "amp_loss_scale": 4194304
+        },
+        {
+          "eval_loss": 0.2603321075439453,
+          "eval_token_loss": 0.26735397272565636,
+          "eval_target_tokens": 1344127,
+          "eval_runtime": 15.6725,
+          "eval_samples_per_second": 1276.119,
+          "eval_steps_per_second": 10.018,
+          "epoch": 1,
+          "step": 15625,
+          "amp_overflow_count": 1,
+          "amp_loss_scale": 4194304
+        },
+        {
+          "train_runtime": 491.3095,
+          "train_samples_per_second": 8141.507,
+          "train_steps_per_second": 31.803,
+          "total_flos": 412392287096537100,
+          "train_loss": 0.022154455322265624,
+          "epoch": 1,
+          "step": 15625,
+          "amp_overflow_count": 1,
+          "amp_loss_scale": 4194304
+        },
+        {
+          "eval_loss": 0.2603245973587036,
+          "eval_token_loss": 0.26735336462672726,
+          "eval_target_tokens": 1344127,
+          "eval_runtime": 14.8626,
+          "eval_samples_per_second": 1345.662,
+          "eval_steps_per_second": 10.563,
+          "epoch": 1,
+          "step": 15625,
+          "amp_overflow_count": 1,
+          "amp_loss_scale": 4194304
+        }
+      ],
+      "last_train": {
+        "loss": 0.2116263771057129,
+        "grad_norm": 0.361576110124588,
+        "learning_rate": 1.51416071701993e-9,
+        "epoch": 0.9984,
+        "step": 15600,
+        "amp_overflow_count": 1,
+        "amp_loss_scale": 4194304
+      },
+      "last_eval": {
+        "eval_loss": 0.2603245973587036,
+        "eval_token_loss": 0.26735336462672726,
+        "eval_target_tokens": 1344127,
+        "eval_runtime": 14.8626,
+        "eval_samples_per_second": 1345.662,
+        "eval_steps_per_second": 10.563,
+        "epoch": 1,
+        "step": 15625,
+        "amp_overflow_count": 1,
+        "amp_loss_scale": 4194304
+      }
+    },
+    "distinct4m": {
+      "complete": null,
+      "recent_history": [],
+      "last_train": null,
+      "last_eval": null
+    }
+  },
+  "evaluations": {
+    "repeat4m": {
+      "progress": {
+        "generated": 4736,
+        "total": 20000,
+        "phase": "generation",
+        "elapsed_seconds": 66.14180840551853
+      },
+      "metrics": null,
+      "config": {
+        "architecture": "bart",
+        "checkpoint": "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage2_recovery/trials/repeat4m/final",
+        "checkpoint_step": 15625,
+        "validation_rows": 20000,
+        "validation_sha256": "282001d478bffb2d13ab2ca41e8232a0c99c3623f898dd7077128c266172c406",
+        "bundle_sha256": "ae80f9cd054d3bb23667bcb3a7d9f7200322005202f82c2945d718295e4b1f26",
+        "selection_sha256": "db1019e323091ea265971650fb8c9636adf58965440abb8411e4a484c5e318c4",
+        "device": "cuda:0",
+        "batch_size": 64,
+        "num_beams": 4,
+        "max_new_tokens": 256,
+        "length_penalty": 1,
+        "do_sample": false,
+        "use_cache": true,
+        "reference_source": "Full saved validation labels, decoded without truncation",
+        "evaluation_split": "validation; used during training for loss monitoring",
+        "official_test_used": false,
+        "started_at": "2026-10-22T20:04:56.140325+00:00"
+      }
+    },
+    "distinct4m": {
+      "progress": null,
+      "metrics": null,
+      "config": null
+    }
+  },
+  "log": {
+    "path": "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage2_recovery/logs/repeat4m_evaluation.log",
+    "bytes": 431,
+    "mtime": 1792699559.2598493,
+    "tail": "\nLoading weights:   0%|          | 0/344 [00:00<?, ?it/s]\nLoading weights: 100%|██████████| 344/344 [00:00<00:00, 24752.37it/s]\nbart: generated 64/20000 in 1.3s\nbart: generated 640/20000 in 9.8s\nbart: generated 1280/20000 in 16.9s\nbart: generated 1920/20000 in 24.5s\nbart: generated 2560/20000 in 32.8s\nbart: generated 3200/20000 in 42.7s\nbart: generated 3840/20000 in 51.3s\nbart: generated 4480/20000 in 62.6s\n"
+  },
+  "gpu": {
+    "available": true,
+    "name": "NVIDIA A100 80GB PCIe",
+    "free_total_bytes": [
+      9495707648,
+      85293072384
+    ]
+  },
+  "processes": "    PID     ELAPSED %CPU   RSS STAT COMMAND\n  83202       11:06  3.1 181092 Sl+ python3 /home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage2_recovery_code/tools/recover_a100_stage2.py --stage1-dir /home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage1 --failed-stage2-dir /home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage2 --prepared-data-dir /home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage2_data --output-dir /home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage2_recovery --reference-identity /home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage2_recovery_code/reference_identity.json\n  83341       01:17  101 2088496 Rsl /usr/bin/python3 /home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage2_recovery_code/tools/recover_a100_stage2.py worker --request /home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage2_recovery/run_request.json --request-sha 43fb0a3d0e076466f76b4385c459e1f3bdcd4e2ea4beda0fd4f3dff2db94603c --variant repeat4m --phase evaluation\n"
+}

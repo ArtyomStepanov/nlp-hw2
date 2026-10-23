@@ -1,0 +1,35 @@
+{
+  "exported_model_equals_best_checkpoint": true,
+  "checkpoint_tensors_compared": 344,
+  "best_checkpoint": "/home/artyom-step/workspace/nlp-hw2/artifacts/experiments/transformer_002_8x8_d768_lr1e4/checkpoint-360000",
+  "global_step": 362284,
+  "epoch": 4,
+  "best_eval_token_loss": 0.19270332574169102,
+  "continuation_validation_count": 63,
+  "last_updated_weights_validation": {
+    "eval_loss": 0.19270309805870056,
+    "eval_token_loss": 0.19270439709049467,
+    "eval_target_tokens": 7970835,
+    "eval_runtime": 59.538,
+    "eval_samples_per_second": 1986.999,
+    "eval_steps_per_second": 7.777,
+    "epoch": 4,
+    "step": 362284
+  },
+  "restored_best_validation": [
+    {
+      "eval_loss": 0.19270187616348267,
+      "eval_token_loss": 0.19270332574169102,
+      "eval_target_tokens": 7970835,
+      "eval_runtime": 59.1206,
+      "eval_samples_per_second": 2001.027,
+      "eval_steps_per_second": 7.831,
+      "epoch": 4,
+      "step": 362284
+    }
+  ],
+  "train_runtime_seconds": 46541.3275,
+  "finished_at_utc": "2026-10-14T01:51:40.507908+00:00",
+  "exit_code": 0,
+  "stop_reason": "Reached planned 362284 optimizer steps / 4 total epochs; early stopping did not trigger."
+}

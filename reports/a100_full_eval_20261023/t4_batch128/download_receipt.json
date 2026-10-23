@@ -1,0 +1,53 @@
+{
+  "verified_at": "2026-10-23T14:12:10.530621+00:00",
+  "archive_sha256": "c53116eed939b7b4f021826d9cbd46a56ed56eb1da13c67000a99c583c83673c",
+  "archive_bytes": 326792,
+  "download_method": "Rendered Colab result link data URL; no external fetch",
+  "files": [
+    {
+      "path": "benchmark/a100_full_best180000_beam4_t4.jsonl",
+      "bytes": 470647,
+      "sha256": "4d4a229127b93f08c9c227dda4fe1268ed371ca77f8c5ee913ef35d2e7033256"
+    },
+    {
+      "path": "benchmark/batch_stats.json",
+      "bytes": 1619,
+      "sha256": "0e893dc8c6be5fab99e9353e119ca6a75177d286ca39277bf02bb4fc61c69b5c"
+    },
+    {
+      "path": "benchmark/complete.json",
+      "bytes": 274,
+      "sha256": "12aa061f01634e8fa5a4c94cab960bc089ad43cdd5b2689a1badef79c5e91e87"
+    },
+    {
+      "path": "benchmark/metrics.json",
+      "bytes": 3031,
+      "sha256": "19271df2f69d80cb285cb4bd7eba16d4f8372f8124dbff5cf9273183b71adccc"
+    },
+    {
+      "path": "benchmark/predictions.jsonl",
+      "bytes": 1072432,
+      "sha256": "f2ec1defed5d4cdd9769c7c2222ba48ffc887a31dbb9a5da04120962715aeff7"
+    },
+    {
+      "path": "benchmark/request.json",
+      "bytes": 1261,
+      "sha256": "300cd09783c6132ae5641e1b18d26597b9600ac73dd91e996ec72a2d4dbd836f"
+    },
+    {
+      "path": "benchmark/results_manifest.json",
+      "bytes": 870,
+      "sha256": "ac873d6e04fc4b044c602b4cb9b95436df071e49d68939f0e0752c828e82dae6"
+    },
+    {
+      "path": "bundle_manifest.json",
+      "bytes": 3905,
+      "sha256": "6c91d0b45bf808b9d8f0648d8aadc509707516914fe797d294e9446efb27f549"
+    },
+    {
+      "path": "validation_repair.json",
+      "bytes": 853,
+      "sha256": "d6357b971a8aacca317cf40c63297764626eebcef0987d52a821cf8da152bff4"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "status": "complete",
+  "completed_at": "2026-10-23T14:15:41.330794+00:00",
+  "full_training_complete": true,
+  "checkpoint_step": 180000,
+  "training_global_step_attempts": 181144,
+  "weight_sha256": "2059268173416c77cd8c901c791eb86e7cbcea0ede756b2bb830ec23638b8165",
+  "validation": {
+    "num_examples": 20000,
+    "num_eligible": 19886,
+    "num_excluded": 114,
+    "num_passed": 14775,
+    "pass_at_1": 0.7429850145831238,
+    "previous_num_passed": 13657,
+    "previous_pass_at_1": 0.6867645579804887,
+    "delta_percentage_points": 5.622045660263502,
+    "paired": {
+      "both_pass": 13101,
+      "full_only": 1674,
+      "distinct4m_only": 556,
+      "neither_pass": 4555,
+      "excluded_both": 114,
+      "common_eligible": 19886,
+      "net_additional_full_passes": 1118,
+      "delta_percentage_points": 5.622045660263502,
+      "prediction_changes": 13609,
+      "eligible_prediction_changes": 13528
+    }
+  },
+  "t4": {
+    "gpu": "Tesla T4",
+    "num_examples": 1919,
+    "batch_size": 128,
+    "num_beams": 4,
+    "length_penalty": 1.0,
+    "max_new_tokens": 256,
+    "total_seconds": 165.07392259200014,
+    "wall_generation_seconds": 165.10661156800006,
+    "load_seconds": 4.298147315000051,
+    "peak_allocated_gib": 8.069822311401367,
+    "within_180_seconds": true,
+    "timer_scope": "Tokenization, length sorting, transfers, generation, decoding and prediction assembly; checkpoint loading, dependency installation and file writing excluded. No generation warmup."
+  },
+  "submission": {
+    "path": "t4_batch128/benchmark/a100_full_best180000_beam4_t4.jsonl",
+    "rows": 1919,
+    "sha256": "4d4a229127b93f08c9c227dda4fe1268ed371ca77f8c5ee913ef35d2e7033256",
+    "submitted_externally": true,
+    "submitted_by": "user",
+    "public_passed": 729,
+    "public_eligible": 960,
+    "public_pass_at_1": 0.759375,
+    "previous_002_public_passed": 735,
+    "public_delta_passed": -6,
+    "public_delta_percentage_points": -0.625,
+    "private_score": null
+  },
+  "reports": {
+    "validation_checks": "comparison_checks.json",
+    "t4_checks": "independent_t4_checks.json",
+    "t4_screenshot": "t4_proof.png"
+  },
+  "remaining_authorized_measurements": [],
+  "training_monitor_automation_deleted": true,
+  "limitations": [
+    "One seed and unequal training budgets; observed validation improvement does not isolate causes.",
+    "Validation was used for checkpoint selection; no hidden-test accuracy measured.",
+    "One actual T4 timing run with documented timer scope; dependencies/setup and weight loading recorded separately."
+  ],
+  "independent_validation_checks": "passed",
+  "independent_t4_checks": "passed"
+}

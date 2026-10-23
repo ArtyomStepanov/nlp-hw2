@@ -1,0 +1,72 @@
+{
+  "status": "running_stage4",
+  "t5_excluded": true,
+  "remote_host": "nlp-bart.ml-contest-mla.ws.deep.yandex.net",
+  "remote_root": "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022",
+  "tmux": "nlp-a100-seq-20261022",
+  "stages": [
+    {
+      "id": 1,
+      "name": "same-machine BART versus Copy",
+      "status": "complete",
+      "bart_training_complete": true,
+      "bart_pass_pending": false,
+      "bart_pass_at_1": 0.5131248114251232,
+      "copy_status": "complete",
+      "copy_training_complete": true,
+      "copy_pass_pending": false,
+      "copy_pass_at_1": 0.5130745247913104,
+      "winner": "bart"
+    },
+    {
+      "id": 2,
+      "name": "1M repeated four times versus 4M distinct training examples",
+      "status": "complete",
+      "architecture": "bart",
+      "tmux": "nlp-a100-stage2-recovery-20261022",
+      "source_row_proof_gate_passed": true,
+      "variant": "distinct4m",
+      "data_preparation_complete": true,
+      "failure_step": 14044,
+      "resume_checkpoint": "checkpoint-14000",
+      "output": "stage2_recovery/",
+      "source_checkpoint": "stage2/trials/repeat4m/checkpoint-14000",
+      "repeat4m_training_complete": true,
+      "repeat4m_eval_token_loss": 0.26735336462672726,
+      "repeat4m_global_step": 15625,
+      "distinct4m_started": true,
+      "repeat4m_pass_at_1": 0.6761037916121895,
+      "repeat4m_num_passed": 13445,
+      "winner": "distinct4m",
+      "distinct4m_training_complete": true,
+      "distinct4m_pass_at_1": 0.6867645579804887,
+      "distinct4m_eval_token_loss": 0.2504437715860451,
+      "distinct4m_num_passed": 13657,
+      "paired_comparison": "stage2_recovery/stage2_comparison_checks.json"
+    },
+    {
+      "id": 3,
+      "name": "deterministic audit of data quality and 200 validation failures",
+      "status": "complete",
+      "structural_audit_complete": true,
+      "output": "stage3_audit/",
+      "review": "stage3_audit/review_summary.json",
+      "validation_errors_reviewed": 200,
+      "train_examples_reviewed": 200
+    },
+    {
+      "id": 4,
+      "name": "beam and length penalty tuning; T4 timing separately",
+      "status": "running",
+      "winner": "distinct4m",
+      "tmux": "nlp-a100-stage4-20261023",
+      "output": "stage4_decoding/",
+      "t4_benchmark_status": "pending"
+    }
+  ],
+  "plan": "docs/superpowers/plans/2026-10-22-a100-sequential-experiments.md",
+  "notification_policy": "Meaningful completion, failure, lost access, stalled progress or critical disk only; suppress unchanged events.",
+  "automation_id": "a100",
+  "stage2_tmux": "nlp-a100-stage2-recovery-20261022",
+  "automation_status": "ACTIVE"
+}

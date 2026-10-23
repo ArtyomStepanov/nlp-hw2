@@ -10,8 +10,10 @@ from typing import Literal
 import datasets as ds
 import torch
 from tokenizers import Tokenizer
+from safetensors.torch import load_file
+from transformers import BartConfig, GenerationConfig
 
-from models import BaseSeq2SeqModel, BaselineTransformer
+from models import BaseSeq2SeqModel, BaselineTransformer, TransformerConfig
 from utils import get_device
 
 
@@ -70,20 +72,92 @@ def load_inference_model(
     path: str | Path, *, tokenizer_path: str | Path | None = None,
     device: str | torch.device | None = None,
 ) -> tuple[BaselineTransformer, Tokenizer]:
-    """Загрузить model.pt и tokenizer.json, которые сохраняет train_model.
+    """Загрузить нашу модель и BPE из локального checkpoint.
 
-    path — папка завершённого обучения или непосредственно model.pt.
-    Trainer checkpoint-N имеет другой формат и сюда не передаётся.
+    path — папка завершённого обучения, непосредственно model.pt или конкретная
+    папка Trainer checkpoint-N с config.json и model.safetensors. Для Trainer
+    конфигурация восстанавливается из самого checkpoint; состояние оптимизатора
+    и файлы родительского запуска не нужны. Загрузка из сети не выполняется.
     """
     path = Path(path).expanduser()
     weights_path = path / "model.pt" if path.is_dir() else path
     tokenizer_path = Path(tokenizer_path).expanduser() if tokenizer_path is not None else weights_path.parent / "tokenizer.json"
+    if not tokenizer_path.is_file():
+        raise FileNotFoundError(f"Не найден tokenizer.json: {tokenizer_path}")
     tokenizer = Tokenizer.from_file(str(tokenizer_path))
-    model = BaselineTransformer.load_checkpoint(weights_path, map_location="cpu")
+    model = (_load_trainer_checkpoint(path) if path.is_dir() and not weights_path.is_file()
+             else BaselineTransformer.load_checkpoint(weights_path, map_location="cpu"))
     _check_tokenizer(model, tokenizer)
     model.to(get_device() if device is None else torch.device(device))
     model.eval()
     return model, tokenizer
+
+
+def _load_trainer_checkpoint(path: Path) -> BaselineTransformer:
+    for name in ("config.json", "model.safetensors"):
+        if not (path / name).is_file():
+            raise FileNotFoundError(f"Не найден {name} в checkpoint: {path}")
+    saved = json.loads((path / "config.json").read_text(encoding="utf-8"))
+    if saved.get("model_type") != "bart":
+        raise ValueError("Checkpoint должен иметь model_type='bart'.")
+    if saved.get("architectures") != ["BartForConditionalGeneration"]:
+        raise ValueError("Checkpoint architectures должен быть ['BartForConditionalGeneration'].")
+    # Не угадываем размеры и число голов по значениям BART по умолчанию:
+    # форма весов сама по себе не позволяет проверить число attention heads.
+    mapping = {name: name for name in (
+        "vocab_size", "d_model", "encoder_layers", "decoder_layers",
+        "max_position_embeddings", "dropout", "attention_dropout",
+        "pad_token_id", "bos_token_id", "eos_token_id",
+    )}
+    mapping.update(attention_heads="encoder_attention_heads", ffn_dim="encoder_ffn_dim")
+    for name in (*mapping.values(), "decoder_attention_heads", "decoder_ffn_dim", "decoder_start_token_id"):
+        if name not in saved:
+            raise ValueError(f"В config.json отсутствует {name}.")
+    config = TransformerConfig(**{name: saved[source] for name, source in mapping.items()})
+    bart_config = BartConfig.from_dict(saved)
+    compatible = {
+        "decoder_attention_heads": config.attention_heads,
+        "decoder_ffn_dim": config.ffn_dim,
+        "decoder_start_token_id": config.bos_token_id,
+        "is_encoder_decoder": True, "is_decoder": False,
+        "tie_word_embeddings": True,
+        "activation_function": "gelu", "activation_dropout": 0.0,
+        "encoder_layerdrop": 0.0, "decoder_layerdrop": 0.0,
+        "scale_embedding": False,
+    }
+    for name, expected in compatible.items():
+        if getattr(bart_config, name) != expected:
+            raise ValueError(f"Checkpoint несовместим с BaselineTransformer: {name}.")
+    if saved.get("tie_encoder_decoder", False):
+        raise ValueError("Checkpoint несовместим с BaselineTransformer: tie_encoder_decoder.")
+    model = BaselineTransformer(config)
+    weights = load_file(str(path / "model.safetensors"), device="cpu")
+    # save_pretrained исключает дубли общих embeddings. Допускаются только эти
+    # известные aliases; любые остальные пропуски/лишние веса — ошибка.
+    tied_names = ("model.shared.weight", "model.encoder.embed_tokens.weight",
+                  "model.decoder.embed_tokens.weight", "lm_head.weight")
+    present = [name for name in tied_names if name in weights]
+    if present:
+        shared = weights[present[0]]
+        if any(not torch.equal(weights[name], shared) for name in present[1:]):
+            raise ValueError("Checkpoint содержит разные веса для связанных embeddings (tie_word_embeddings).")
+        for name in tied_names:
+            weights[name] = shared
+    model.network.load_state_dict(weights, strict=True)
+    generation_path = path / "generation_config.json"
+    generation = GenerationConfig.from_model_config(bart_config)
+    if generation_path.is_file():
+        generation = GenerationConfig.from_dict(json.loads(generation_path.read_text(encoding="utf-8")))
+    for name in ("pad_token_id", "bos_token_id", "eos_token_id", "decoder_start_token_id"):
+        value = getattr(generation, name)
+        # Trainer normalizes EOS to a list when aligning tokenizer specials.
+        # A single identical stop ID has the same semantics; extra IDs do not.
+        if name == "eos_token_id" and isinstance(value, (list, tuple)) and len(value) == 1:
+            value = value[0]
+        if value != getattr(bart_config, name):
+            raise ValueError(f"generation_config.json не совпадает с моделью: {name}.")
+    model.network.generation_config = generation
+    return model
 
 
 def _check_tokenizer(model: BaseSeq2SeqModel, tokenizer: Tokenizer) -> None:

@@ -1,0 +1,38 @@
+{
+  "train_pid": 3613,
+  "train_identity": "287276362",
+  "controller_pid": 5627,
+  "controller_identity": "287550362",
+  "deadline": 1792426227.4082506,
+  "results": [
+    {
+      "variant": "sdpa_eager",
+      "exit_code": 0
+    },
+    {
+      "variant": "fa2_eager",
+      "exit_code": 0
+    },
+    {
+      "variant": "fa3_eager",
+      "exit_code": 0
+    },
+    {
+      "variant": "sdpa_compiled",
+      "exit_code": 0
+    },
+    {
+      "variant": "fa2_compiled",
+      "exit_code": 0
+    },
+    {
+      "variant": "fa3_compiled",
+      "exit_code": 0
+    }
+  ],
+  "paused_at": 1792424049.737468,
+  "paused_memory_mib": 8334,
+  "benchmark_identity": "287603976",
+  "finished": true,
+  "resumed_at": 1792424461.3091662
+}

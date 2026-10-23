@@ -1,0 +1,9 @@
+{
+  "model": "copy",
+  "rows": 20000,
+  "mean_generated_tokens": 62.0642,
+  "median_generated_tokens": 57.0,
+  "more_than_64_tokens": 7185,
+  "hit_256_without_eos": 142,
+  "ended_with_eos": 19858
+}

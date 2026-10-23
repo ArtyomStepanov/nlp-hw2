@@ -1,0 +1,8 @@
+{
+  "models/t5.py": "d1ab22531c00453fb426a6e79f4c69b7ce9508f0849399b6241d4d23dee703bc",
+  "models/t5_attention.py": "3b32cf763518b5236af861d7b7c4cc41286a775e60f8412773b321e0c0f51388",
+  "models/__init__.py": "7561f6aa316549a93495826e8fc4c43e608bfce4b4b30a3ae2efa2b3164e1bd6",
+  "training.py": "0534bfafb34ff3bc38f02ea9402a6ca9add8615eb85f05f06254de2e88595f76",
+  "train_sweep.py": "9e6aa0bab9e9c331b01f749510f410a8e0799ab93744e8b1648028c5cae80860",
+  "configs/hpo_006_t5/sweep.json": "c95608a0c85651633cd3c65f56bb8f7c10ae3aee2b45d6f7ccce6d985252066c"
+}

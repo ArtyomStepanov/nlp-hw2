@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "status": "verified",
+  "request_sha256": "43fb0a3d0e076466f76b4385c459e1f3bdcd4e2ea4beda0fd4f3dff2db94603c",
+  "result": {
+    "num_examples": 20000,
+    "num_evaluated": 19886,
+    "num_passed": 13445,
+    "num_bad_code": 113,
+    "pass@1": 0.6761037916121895,
+    "bad_code_rate": 0.00565,
+    "wrong_answer_rate": 0.3182641054007845,
+    "reference_error_rate": 0.0057,
+    "evaluation_coverage": 0.9943,
+    "evaluation_seconds": 243.82722301781178,
+    "status_counts": {
+      "passed": 13445,
+      "wrong_answer": 6329,
+      "runtime_error": 102,
+      "ok": 113,
+      "invalid_output": 5,
+      "syntax_error": 5,
+      "timeout": 1
+    },
+    "reference_status_counts": {
+      "ok": 19886,
+      "unsupported_code": 27,
+      "runtime_error": 76,
+      "invalid_output": 11
+    },
+    "prediction_column": "generated_code",
+    "reference_column": "code",
+    "comparison": "reference_solve",
+    "architecture": "bart",
+    "num_beams": 4,
+    "max_new_tokens": 256,
+    "length_penalty": 1.0,
+    "generation_seconds": 469.17812605574727,
+    "validation_sha256": "282001d478bffb2d13ab2ca41e8232a0c99c3623f898dd7077128c266172c406",
+    "evaluation_split": "validation",
+    "num_reference_errors": 114,
+    "num_hit_token_limit": 14,
+    "passed_fraction_of_all_sampled": 0.67225,
+    "finished_at": "2026-10-22T20:16:51.302274+00:00"
+  },
+  "files": [
+    {
+      "path": "config.json",
+      "bytes": 877,
+      "sha256": "9ab94e1cc58a6ceedb4188b0ff7543291446dc18b09c87712389fce194991814"
+    },
+    {
+      "path": "evaluation/evaluation.jsonl",
+      "bytes": 20018618,
+      "sha256": "8adca1f10c896c4ac087e96c2770a9dc70632bd669b6897835065e9af919c2dd"
+    },
+    {
+      "path": "evaluation/evaluation_config.json",
+      "bytes": 366,
+      "sha256": "f1bde1e50008ed9078b2a0e002fc8ec3e4714cc5743e9534168af9c880462a05"
+    },
+    {
+      "path": "evaluation/metrics.json",
+      "bytes": 729,
+      "sha256": "96f6fc148faa27ac5e2b3929c26f3c9cfcc08a2c00024213817c0f95b17a5587"
+    },
+    {
+      "path": "metrics.json",
+      "bytes": 1153,
+      "sha256": "b531bef7e950b9f396f4d214e7512b9af58448cfc497938637037c09ec053a4b"
+    },
+    {
+      "path": "predictions.jsonl",
+      "bytes": 16220792,
+      "sha256": "fe7624847bc0af0f0d0ae9acd0a3012db8f57c4916b4b7f01c3acc7424e40a13"
+    },
+    {
+      "path": "progress.json",
+      "bytes": 66,
+      "sha256": "d6ec878726a2e2fedefca6c653f9b7ba8863f67d684a916a279221fac67e35c5"
+    }
+  ],
+  "verified_at": "2026-10-22T20:16:52.349607+00:00"
+}

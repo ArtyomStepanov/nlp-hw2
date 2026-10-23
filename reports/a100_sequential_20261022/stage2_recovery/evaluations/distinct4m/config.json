@@ -1,0 +1,20 @@
+{
+  "architecture": "bart",
+  "checkpoint": "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage2_recovery/trials/distinct4m/final",
+  "checkpoint_step": 15625,
+  "validation_rows": 20000,
+  "validation_sha256": "282001d478bffb2d13ab2ca41e8232a0c99c3623f898dd7077128c266172c406",
+  "bundle_sha256": "bab34556554696fd8927f4914df1aa835b9d1c8290bf180d4a5143a34381721c",
+  "selection_sha256": "80357f04410a2cb1812d71fed3c66c61c6e8367a140c2911af44bff325d29d13",
+  "device": "cuda:0",
+  "batch_size": 64,
+  "num_beams": 4,
+  "max_new_tokens": 256,
+  "length_penalty": 1.0,
+  "do_sample": false,
+  "use_cache": true,
+  "reference_source": "Full saved validation labels, decoded without truncation",
+  "evaluation_split": "validation; used during training for loss monitoring",
+  "official_test_used": false,
+  "started_at": "2026-10-22T21:35:32.195229+00:00"
+}

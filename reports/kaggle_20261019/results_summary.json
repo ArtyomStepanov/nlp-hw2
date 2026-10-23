@@ -1,0 +1,67 @@
+{
+  "checked_at": "2026-10-20T11:12:49.264Z",
+  "train_rows": 1000000,
+  "validation_rows": 20000,
+  "epochs": 1,
+  "global_batch": 256,
+  "learning_rate": 0.0002,
+  "source": "Rendered Kaggle version 2 logs; rank 0 completion record",
+  "models": {
+    "copy": {
+      "architecture": "copy",
+      "global_step": 3907,
+      "metrics": {
+        "eval_loss": 0.3744753301143646,
+        "eval_token_loss": 0.39254692065173874,
+        "eval_target_tokens": 1344127,
+        "eval_runtime": 59.5001,
+        "eval_samples_per_second": 336.134,
+        "eval_steps_per_second": 10.504,
+        "epoch": 1
+      },
+      "wall_seconds": 7444.498771568,
+      "precision": "fp16",
+      "world_size": 2,
+      "effective_batch": 256,
+      "parameters": 244656129,
+      "finished_at": "2026-10-19T22:38:04.803396+00:00",
+      "torch": "2.11.0+cu128",
+      "transformers": "5.10.2",
+      "gpu": "Tesla T4",
+      "peak_allocated_gib": 6.252555847167969,
+      "run_id": 360171441,
+      "status": "success",
+      "notebook_runtime_seconds": 7589.8,
+      "final_weights_verified_in_output": true,
+      "plot": "copy_training.png"
+    },
+    "t5": {
+      "architecture": "t5",
+      "global_step": 3907,
+      "metrics": {
+        "eval_loss": 0.9385644793510437,
+        "eval_token_loss": 1.0128972864446282,
+        "eval_target_tokens": 1344127,
+        "eval_runtime": 71.9103,
+        "eval_samples_per_second": 278.124,
+        "eval_steps_per_second": 8.691,
+        "epoch": 1
+      },
+      "wall_seconds": 10756.214713170999,
+      "precision": "fp16",
+      "world_size": 2,
+      "effective_batch": 256,
+      "parameters": 247310848,
+      "finished_at": "2026-10-19T23:42:25.282155+00:00",
+      "torch": "2.11.0+cu128",
+      "transformers": "5.10.2",
+      "gpu": "Tesla T4",
+      "peak_allocated_gib": 5.734429359436035,
+      "run_id": 360171567,
+      "status": "success",
+      "notebook_runtime_seconds": 10992,
+      "final_weights_verified_in_output": true,
+      "plot": "t5_training.png"
+    }
+  }
+}

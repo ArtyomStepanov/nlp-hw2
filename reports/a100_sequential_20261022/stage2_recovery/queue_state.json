@@ -1,0 +1,21 @@
+{
+  "status": "complete",
+  "stage": 2,
+  "recovery": true,
+  "phase": "complete",
+  "driver_pid": 83202,
+  "child_pid": null,
+  "started_at": "2026-10-22T19:54:58.654828+00:00",
+  "completed": [
+    "repeat4m",
+    "distinct4m"
+  ],
+  "variant": "distinct4m",
+  "architecture": "bart",
+  "updated_at": "2026-10-22T21:47:33.169831+00:00",
+  "log": "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage2_recovery/logs/distinct4m_evaluation.log",
+  "ranking": [
+    "distinct4m",
+    "repeat4m"
+  ]
+}

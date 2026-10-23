@@ -1,0 +1,23 @@
+{
+  "status": "launched",
+  "stage": 3,
+  "winner": "distinct4m",
+  "tmux": "nlp-a100-stage3-20261023",
+  "launched_at": "2026-10-22T21:57:45.856533+00:00",
+  "stage2_all_golden_references_reverified": true,
+  "stage2_completion_sha256": "5584eaee2d8e690cb233f4af3e2b76468e7fe4018ad0997de0c2c310320df481",
+  "argv": [
+    "python3",
+    "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage2_recovery_code/tools/audit_a100_errors.py",
+    "--bundle-root",
+    "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/bundle",
+    "--evaluation-dir",
+    "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage2_recovery/evaluations/distinct4m",
+    "--output-dir",
+    "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage3_audit",
+    "--seed",
+    "42",
+    "--sample-size",
+    "200"
+  ]
+}

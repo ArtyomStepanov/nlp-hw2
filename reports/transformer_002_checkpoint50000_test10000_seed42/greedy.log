@@ -1,0 +1,5 @@
+[2026-10-13T12:09:31+00:00] greedy: generating 10000 answers on cuda:0, batch=128
+Creating json from Arrow format:   0%|          | 0/10 [00:00<?, ?ba/s]Creating json from Arrow format: 100%|██████████| 10/10 [00:00<00:00, 115.29ba/s]
+[2026-10-13T12:11:18+00:00] greedy: generation finished in 105.8s; evaluating solve()
+Creating json from Arrow format:   0%|          | 0/10 [00:00<?, ?ba/s]Creating json from Arrow format: 100%|██████████| 10/10 [00:00<00:00, 98.51ba/s]Creating json from Arrow format: 100%|██████████| 10/10 [00:00<00:00, 98.34ba/s]
+[2026-10-13T12:12:20+00:00] greedy: pass@1=0.602051, passed=5988/9946

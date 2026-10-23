@@ -1,0 +1,122 @@
+{
+  "num_examples": 1919,
+  "total_seconds": 165.07392259200014,
+  "generation_seconds": 164.66872661000025,
+  "examples_per_second": 11.625094805210615,
+  "generated_tokens_per_second": 745.4542372865187,
+  "mean_generated_tokens": 63.96717040125065,
+  "source_truncated_rate": 0.0,
+  "hit_token_limit_rate": 0.0,
+  "eos_rate": 1.0,
+  "device": "cuda:0",
+  "mixed_precision": "fp16",
+  "batch_stats": [
+    {
+      "batch": 0,
+      "num_examples": 128,
+      "source_width": 25,
+      "seconds": 6.011012425999979
+    },
+    {
+      "batch": 1,
+      "num_examples": 128,
+      "source_width": 27,
+      "seconds": 5.28704537700014
+    },
+    {
+      "batch": 2,
+      "num_examples": 128,
+      "source_width": 30,
+      "seconds": 4.4548402870000245
+    },
+    {
+      "batch": 3,
+      "num_examples": 128,
+      "source_width": 32,
+      "seconds": 6.393542876000083
+    },
+    {
+      "batch": 4,
+      "num_examples": 128,
+      "source_width": 35,
+      "seconds": 5.194858882000062
+    },
+    {
+      "batch": 5,
+      "num_examples": 128,
+      "source_width": 37,
+      "seconds": 6.35022684799992
+    },
+    {
+      "batch": 6,
+      "num_examples": 128,
+      "source_width": 40,
+      "seconds": 7.779710482000155
+    },
+    {
+      "batch": 7,
+      "num_examples": 128,
+      "source_width": 43,
+      "seconds": 7.3978840729998865
+    },
+    {
+      "batch": 8,
+      "num_examples": 128,
+      "source_width": 46,
+      "seconds": 11.847334477000004
+    },
+    {
+      "batch": 9,
+      "num_examples": 128,
+      "source_width": 49,
+      "seconds": 23.8518399579998
+    },
+    {
+      "batch": 10,
+      "num_examples": 128,
+      "source_width": 53,
+      "seconds": 10.340190754000105
+    },
+    {
+      "batch": 11,
+      "num_examples": 128,
+      "source_width": 59,
+      "seconds": 11.016954258000169
+    },
+    {
+      "batch": 12,
+      "num_examples": 128,
+      "source_width": 64,
+      "seconds": 12.657051999000032
+    },
+    {
+      "batch": 13,
+      "num_examples": 128,
+      "source_width": 74,
+      "seconds": 15.297490429999925
+    },
+    {
+      "batch": 14,
+      "num_examples": 127,
+      "source_width": 166,
+      "seconds": 30.788743482999962
+    }
+  ],
+  "load_seconds": 4.298147315000051,
+  "wall_generation_seconds": 165.10661156800006,
+  "peak_allocated_gib": 8.069822311401367,
+  "checkpoint_step": 180000,
+  "model_parameters": 244391936,
+  "weight_sha256": "2059268173416c77cd8c901c791eb86e7cbcea0ede756b2bb830ec23638b8165",
+  "question_order_sha256": "6dd86866b2ed86a09781b7f471fc2fce5c00975503c4a85f1ec959dae0b93279",
+  "gpu": "Tesla T4",
+  "batch_size": 128,
+  "num_beams": 4,
+  "length_penalty": 1.0,
+  "max_new_tokens": 256,
+  "official_limit_seconds": 180,
+  "within_180_seconds": true,
+  "empty_answer_count": 0,
+  "timer_scope": "Tokenization, length sorting, transfers, generation, decoding and prediction assembly; checkpoint loading, dependency installation and file writing excluded. No generation warmup.",
+  "finished_at": "2026-10-23T14:09:14.454141+00:00"
+}

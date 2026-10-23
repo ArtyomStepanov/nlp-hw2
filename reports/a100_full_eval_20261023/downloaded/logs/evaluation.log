@@ -1,0 +1,38 @@
+Loading weights:   0%|          | 0/344 [00:00<?, ?it/s]Loading weights: 100%|██████████| 344/344 [00:00<00:00, 28710.96it/s]
+bart: generated 64/20000 in 3.5s
+bart: generated 640/20000 in 9.8s
+bart: generated 1280/20000 in 16.6s
+bart: generated 1920/20000 in 24.2s
+bart: generated 2560/20000 in 31.9s
+bart: generated 3200/20000 in 40.0s
+bart: generated 3840/20000 in 48.2s
+bart: generated 4480/20000 in 57.6s
+bart: generated 5120/20000 in 68.2s
+bart: generated 5760/20000 in 78.4s
+bart: generated 6400/20000 in 89.2s
+bart: generated 7040/20000 in 101.6s
+bart: generated 7680/20000 in 115.8s
+bart: generated 8320/20000 in 130.9s
+bart: generated 8960/20000 in 145.7s
+bart: generated 9600/20000 in 158.5s
+bart: generated 10240/20000 in 171.3s
+bart: generated 10880/20000 in 187.0s
+bart: generated 11520/20000 in 202.1s
+bart: generated 12160/20000 in 215.4s
+bart: generated 12800/20000 in 232.7s
+bart: generated 13440/20000 in 247.6s
+bart: generated 14080/20000 in 263.1s
+bart: generated 14720/20000 in 280.0s
+bart: generated 15360/20000 in 296.1s
+bart: generated 16000/20000 in 315.8s
+bart: generated 16640/20000 in 334.7s
+bart: generated 17280/20000 in 354.3s
+bart: generated 17920/20000 in 377.0s
+bart: generated 18560/20000 in 400.3s
+bart: generated 19200/20000 in 427.6s
+bart: generated 19840/20000 in 457.0s
+bart: generated 20000/20000 in 466.7s
+Creating json from Arrow format:   0%|          | 0/20 [00:00<?, ?ba/s]Creating json from Arrow format:  65%|██████▌   | 13/20 [00:00<00:00, 119.75ba/s]Creating json from Arrow format: 100%|██████████| 20/20 [00:00<00:00, 121.15ba/s]
+bart: execution checks, 20000 references and predictions
+Creating json from Arrow format:   0%|          | 0/20 [00:00<?, ?ba/s]Creating json from Arrow format:  50%|█████     | 10/20 [00:00<00:00, 94.17ba/s]Creating json from Arrow format: 100%|██████████| 20/20 [00:00<00:00, 95.40ba/s]Creating json from Arrow format: 100%|██████████| 20/20 [00:00<00:00, 95.13ba/s]
+{"num_examples": 20000, "num_evaluated": 19886, "num_passed": 14775, "num_bad_code": 32, "pass@1": 0.7429850145831238, "bad_code_rate": 0.0016, "wrong_answer_rate": 0.2556069596701197, "reference_error_rate": 0.0057, "evaluation_coverage": 0.9943, "evaluation_seconds": 245.28619204834104, "status_counts": {"passed": 14775, "wrong_answer": 5083, "ok": 110, "runtime_error": 22, "syntax_error": 6, "unsupported_code": 2, "timeout": 1, "invalid_output": 1}, "reference_status_counts": {"ok": 19886, "unsupported_code": 27, "runtime_error": 76, "invalid_output": 11}, "prediction_column": "generated_code", "reference_column": "code", "comparison": "reference_solve", "architecture": "bart", "num_beams": 4, "max_new_tokens": 256, "length_penalty": 1.0, "generation_seconds": 466.75004912540317, "validation_sha256": "282001d478bffb2d13ab2ca41e8232a0c99c3623f898dd7077128c266172c406", "evaluation_split": "validation", "num_reference_errors": 114, "num_hit_token_limit": 9, "passed_fraction_of_all_sampled": 0.73875, "finished_at": "2026-10-23T14:07:44.858011+00:00", "reference_identity_verified": true}

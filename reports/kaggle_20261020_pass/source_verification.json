@@ -1,0 +1,11 @@
+{
+  "downloaded_notebook": "/Users/artyom-step/Downloads/nlp-hw2-pass1-t5-copy-val20k-beam4-256.ipynb",
+  "ast_matches_local": true,
+  "max_new_tokens": 256,
+  "num_beams": 4,
+  "validation_rows": 20000,
+  "tiny_checkpoint_pipeline_verified": [
+    "copy",
+    "t5"
+  ]
+}

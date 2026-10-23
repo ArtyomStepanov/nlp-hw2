@@ -1,0 +1,23 @@
+{
+  "checked_at_utc": "2026-10-13T15:08:34.217608+00:00",
+  "tmux_active": true,
+  "latest_train": {
+    "loss": 0.2240826416015625,
+    "grad_norm": 0.22131125628948212,
+    "learning_rate": 8.575906744657434e-05,
+    "epoch": 1.136125249804021,
+    "step": 102900
+  },
+  "latest_eval": {
+    "eval_loss": 0.22244225442409515,
+    "eval_token_loss": 0.2224557131837264,
+    "eval_target_tokens": 7970835,
+    "eval_runtime": 63.882,
+    "eval_samples_per_second": 1851.883,
+    "eval_steps_per_second": 7.248,
+    "epoch": 1.104106170849389,
+    "step": 100000
+  },
+  "training_exitcode_exists": false,
+  "disk_free_GiB": 12.046985626220703
+}

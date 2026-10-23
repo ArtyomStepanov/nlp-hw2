@@ -1,0 +1,52 @@
+{
+  "activation_dropout": 0.0,
+  "activation_function": "gelu",
+  "architectures": [
+    "CopyBartForConditionalGeneration"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 2,
+  "classifier_dropout": 0.0,
+  "copy_attention_dim": 128,
+  "copy_excluded_ids": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "d_model": 1024,
+  "decoder_attention_heads": 8,
+  "decoder_ffn_dim": 4096,
+  "decoder_layerdrop": 0.0,
+  "decoder_layers": 8,
+  "decoder_start_token_id": 2,
+  "dropout": 0.1,
+  "dtype": "float32",
+  "encoder_attention_heads": 8,
+  "encoder_ffn_dim": 4096,
+  "encoder_layerdrop": 0.0,
+  "encoder_layers": 8,
+  "eos_token_id": 3,
+  "forced_eos_token_id": null,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1",
+    "2": "LABEL_2"
+  },
+  "init_std": 0.02,
+  "is_decoder": false,
+  "is_encoder_decoder": true,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1,
+    "LABEL_2": 2
+  },
+  "max_position_embeddings": 512,
+  "model_type": "copy_bart",
+  "pad_token_id": 0,
+  "scale_embedding": false,
+  "tie_word_embeddings": true,
+  "transformers_version": "5.10.2",
+  "use_cache": false,
+  "vocab_size": 8000
+}

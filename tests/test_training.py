@@ -10,7 +10,7 @@ import torch
 from torch.nn import functional as F
 from transformers import DataCollatorForSeq2Seq, PreTrainedTokenizerFast
 
-from models import BaselineTransformer, TransformerConfig
+from models import BaselineTransformer, T5Transformer, CopyTransformer, TransformerConfig
 from tokenizer import train_bpe_tokenizer
 from training import (
     TrainingConfig,
@@ -95,15 +95,16 @@ def test_preprocessing_filters_whole_examples_and_keeps_target_eos(tiny_data, ti
     assert batch["labels"].eq(-100).any()
 
 
-def test_training_updates_weights_saves_best_and_resumes(tiny_data, tiny_tokenizer, tmp_path, monkeypatch):
+@pytest.mark.parametrize('model_class', [BaselineTransformer, T5Transformer, CopyTransformer])
+def test_training_updates_weights_saves_best_and_resumes(tiny_data, tiny_tokenizer, tmp_path, monkeypatch, model_class):
     # Keep this integration check small and independent of accelerator hardware.
     monkeypatch.setenv("ACCELERATE_USE_CPU", "true")
     torch.manual_seed(42)
-    model = BaselineTransformer(TransformerConfig.from_tokenizer(
+    model = model_class(TransformerConfig.from_tokenizer(
         tiny_tokenizer, d_model=16, encoder_layers=1, decoder_layers=1,
         attention_heads=2, ffn_dim=32, max_position_embeddings=64, dropout=0,
     ))
-    before = model.network.model.shared.weight.detach().clone()
+    before = model.network.get_input_embeddings().weight.detach().clone()
     data = ds.DatasetDict({"train": tiny_data, "val": tiny_data.select([0, 1, 2]), "test": ds.Dataset.from_dict({"question": ["official test"]})})
     config = TrainingConfig(
         tokenizer=tiny_tokenizer, output_dir=tmp_path / "run", max_steps=2,
@@ -116,7 +117,7 @@ def test_training_updates_weights_saves_best_and_resumes(tiny_data, tiny_tokeniz
     assert result.model is model
     assert result.trainer.state.global_step == 2
     assert not model.training and not model.network.training
-    assert not torch.equal(before, model.network.model.shared.weight.detach().cpu())
+    assert not torch.equal(before, model.network.get_input_embeddings().weight.detach().cpu())
     assert math.isfinite(result.metrics["eval_token_loss"])
     assert result.preprocessing_stats["train"]["prepared_rows"] == 4
     checkpoint = result.best_checkpoint
@@ -124,7 +125,7 @@ def test_training_updates_weights_saves_best_and_resumes(tiny_data, tiny_tokeniz
     for name in ("optimizer.pt", "scheduler.pt", "trainer_state.json", "tokenizer.json"):
         assert (Path(checkpoint) / name).is_file()
 
-    restored = BaselineTransformer.load_checkpoint(result.output_dir / "model.pt")
+    restored = model_class.load_checkpoint(result.output_dir / "model.pt")
     for name, value in model.state_dict().items():
         torch.testing.assert_close(restored.state_dict()[name], value.cpu(), rtol=0, atol=0)
 
@@ -183,3 +184,59 @@ def test_training_applies_warmup_then_cosine_to_optimizer_steps(tiny_data, tiny_
     final_lrs = result.trainer.lr_scheduler.get_last_lr()
     assert final_lrs and all(lr == pytest.approx(0) for lr in final_lrs)
     assert json.loads((result.output_dir / "training_config.json").read_text())["lr_scheduler_type"] == "cosine"
+
+
+def test_early_stopping_keeps_patience_across_resume(tiny_data, tiny_tokenizer, tmp_path, monkeypatch):
+    monkeypatch.setenv("ACCELERATE_USE_CPU", "true")
+    model_config = TransformerConfig.from_tokenizer(
+        tiny_tokenizer, d_model=16, encoder_layers=1, decoder_layers=1,
+        attention_heads=2, ffn_dim=32, max_position_embeddings=64, dropout=0,
+    )
+    config = TrainingConfig(
+        tiny_tokenizer, output_dir=tmp_path / "plateau", use_cpu=True,
+        max_steps=10, learning_rate=1e-30, weight_decay=0, warmup_ratio=0,
+        train_batch_size=2, eval_batch_size=2, mixed_precision="no",
+        max_source_length=48, max_target_length=48,
+        eval_strategy="steps", eval_steps=2, logging_steps=1,
+        early_stopping_patience=2, save_total_limit=3,
+    )
+    data = ds.DatasetDict({"train": tiny_data, "val": tiny_data})
+    result = train_model(data, BaselineTransformer(model_config), config)
+    # With frozen numerical weights, the first check is best; two further
+    # checks without improvement must stop at step 6, not the planned step 10.
+    assert result.trainer.state.global_step == 6
+    assert Path(result.best_checkpoint).name == "checkpoint-2"
+    resumed = train_model(
+        data, BaselineTransformer(model_config),
+        replace(config, output_dir=tmp_path / "resumed-plateau"),
+        resume_from_checkpoint=tmp_path / "plateau" / "checkpoint-4",
+    )
+    assert resumed.trainer.state.global_step == 6
+    assert resumed.trainer.state.best_metric == pytest.approx(result.trainer.state.best_metric)
+
+
+def test_loss_history_is_saved_before_training_finishes(tiny_data, tiny_tokenizer, tmp_path, monkeypatch):
+    import training
+
+    monkeypatch.setenv("ACCELERATE_USE_CPU", "true")
+    output_dir = tmp_path / "interrupted"
+
+    # Interrupt at step 2 so the completed first update has been logged.
+    def interrupt_second_update(self, args, state, control, **kwargs):
+        if state.global_step == 2:
+            raise RuntimeError("simulated interruption after logged update")
+    monkeypatch.setattr(training._SaveTrainingLayout, "on_step_end", interrupt_second_update)
+    model = BaselineTransformer(TransformerConfig.from_tokenizer(
+        tiny_tokenizer, d_model=16, encoder_layers=1, decoder_layers=1,
+        attention_heads=2, ffn_dim=32, max_position_embeddings=64, dropout=0,
+    ))
+    config = TrainingConfig(
+        tiny_tokenizer, output_dir=output_dir, use_cpu=True, max_steps=4,
+        train_batch_size=2, logging_steps=1, mixed_precision="no",
+        max_source_length=48, max_target_length=48,
+    )
+    with pytest.raises(RuntimeError, match="simulated interruption"):
+        train_model(tiny_data, model, config)
+    history = json.loads((output_dir / "log_history.json").read_text())
+    assert len(history) == 1 and history[0]["step"] == 1
+    assert math.isfinite(history[0]["loss"])

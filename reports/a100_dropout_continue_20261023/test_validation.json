@@ -1,0 +1,9 @@
+{
+  "command": "MPLBACKEND=Agg python3 -m pytest -q",
+  "result": "passed",
+  "passed": 306,
+  "warnings": 7,
+  "seconds": 62.23,
+  "distributed_tests_included": true,
+  "independent_code_review": "no blocking findings"
+}

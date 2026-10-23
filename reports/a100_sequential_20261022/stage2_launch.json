@@ -1,0 +1,12 @@
+{
+  "status": "launched",
+  "launched_at": "2026-10-22T16:36:35.098621+00:00",
+  "tmux": "nlp-a100-stage2-20261022",
+  "winner": "bart",
+  "source_files_verified": 23,
+  "phase": "preparing_data",
+  "code": "stage2_code/",
+  "pipeline": "launch_stage2.sh",
+  "source_row_proof_gate_passed": true,
+  "evidence": "Preparer progressed to repeat4m/train add-length map after mandatory complete original-row comparison"
+}

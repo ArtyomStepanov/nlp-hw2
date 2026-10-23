@@ -1,0 +1,164 @@
+{
+  "sample_size": 10000,
+  "sample_sha256": "04d25083e90470612722e1e816b90efba62a8b9a1c893919a8cf29d122c0549a",
+  "checkpoint_steps": [
+    50000,
+    90000,
+    360000
+  ],
+  "final_checkpoint_step": 360000,
+  "scope": "Same saved 10,000 examples from 98/1/1 held-out test; not the public leaderboard",
+  "protocol": {
+    "max_new_tokens": 256,
+    "precision": "fp16",
+    "rtol": 1e-06,
+    "atol": 1e-06
+  },
+  "modes": {
+    "greedy": {
+      "checkpoints": {
+        "50000": {
+          "num_evaluated": 9946,
+          "num_passed": 5988,
+          "pass@1": 0.6020510758093706,
+          "num_bad_code": 230,
+          "bad_code_rate": 0.023,
+          "mean_generated_tokens": 66.8393,
+          "num_hit_token_limit": 80,
+          "execution_status_counts": {
+            "ok": 9770,
+            "runtime_error": 171,
+            "syntax_error": 48,
+            "invalid_output": 9,
+            "unsupported_code": 1,
+            "timeout": 1
+          }
+        },
+        "90000": {
+          "num_evaluated": 9946,
+          "num_passed": 6772,
+          "pass@1": 0.680876734365574,
+          "num_bad_code": 60,
+          "bad_code_rate": 0.006,
+          "mean_generated_tokens": 66.4827,
+          "num_hit_token_limit": 24,
+          "execution_status_counts": {
+            "ok": 9940,
+            "runtime_error": 38,
+            "syntax_error": 11,
+            "invalid_output": 8,
+            "unsupported_code": 1,
+            "timeout": 2
+          }
+        },
+        "360000": {
+          "num_evaluated": 9946,
+          "num_passed": 7127,
+          "pass@1": 0.7165694751658959,
+          "num_bad_code": 16,
+          "bad_code_rate": 0.0016,
+          "mean_generated_tokens": 66.3164,
+          "num_hit_token_limit": 5,
+          "execution_status_counts": {
+            "ok": 9984,
+            "timeout": 1,
+            "runtime_error": 13,
+            "unsupported_code": 1,
+            "syntax_error": 1
+          }
+        }
+      },
+      "final_changes": {
+        "from_50000": {
+          "num_evaluated": 9946,
+          "gained": 1424,
+          "lost": 285,
+          "net_more_solved": 1139,
+          "delta_percentage_points": 11.451839935652524
+        },
+        "from_90000": {
+          "num_evaluated": 9946,
+          "gained": 656,
+          "lost": 301,
+          "net_more_solved": 355,
+          "delta_percentage_points": 3.569274080032174
+        }
+      }
+    },
+    "beam4": {
+      "checkpoints": {
+        "50000": {
+          "num_evaluated": 9946,
+          "num_passed": 6269,
+          "pass@1": 0.6303036396541323,
+          "num_bad_code": 134,
+          "bad_code_rate": 0.0134,
+          "mean_generated_tokens": 67.8654,
+          "num_hit_token_limit": 18,
+          "execution_status_counts": {
+            "ok": 9866,
+            "runtime_error": 116,
+            "syntax_error": 17,
+            "invalid_output": 1
+          }
+        },
+        "90000": {
+          "num_evaluated": 9946,
+          "num_passed": 6931,
+          "pass@1": 0.696863060526845,
+          "num_bad_code": 35,
+          "bad_code_rate": 0.0035,
+          "mean_generated_tokens": 69.3412,
+          "num_hit_token_limit": 16,
+          "execution_status_counts": {
+            "ok": 9965,
+            "runtime_error": 20,
+            "unsupported_code": 2,
+            "invalid_output": 7,
+            "syntax_error": 4,
+            "timeout": 2
+          }
+        },
+        "360000": {
+          "num_evaluated": 9946,
+          "num_passed": 7245,
+          "pass@1": 0.7284335411220592,
+          "num_bad_code": 13,
+          "bad_code_rate": 0.0013,
+          "mean_generated_tokens": 69.4417,
+          "num_hit_token_limit": 3,
+          "execution_status_counts": {
+            "ok": 9987,
+            "runtime_error": 9,
+            "unsupported_code": 3,
+            "invalid_output": 1
+          }
+        }
+      },
+      "final_changes": {
+        "from_50000": {
+          "num_evaluated": 9946,
+          "gained": 1224,
+          "lost": 248,
+          "net_more_solved": 976,
+          "delta_percentage_points": 9.81299014679268
+        },
+        "from_90000": {
+          "num_evaluated": 9946,
+          "gained": 591,
+          "lost": 277,
+          "net_more_solved": 314,
+          "delta_percentage_points": 3.1570480595214154
+        }
+      }
+    }
+  },
+  "final_beam_vs_greedy": {
+    "num_evaluated": 9946,
+    "gained": 321,
+    "lost": 203,
+    "net_more_solved": 118,
+    "delta_percentage_points": 1.186406595616328
+  },
+  "num_reference_errors": 54
+}

@@ -1,0 +1,343 @@
+{
+  "status": "running",
+  "stage": 4,
+  "architecture": "bart",
+  "phase": "selection",
+  "last_logged_step": 15600,
+  "last_loss": 0.24568471908569336,
+  "driver_pid": 164659,
+  "child_pid": null,
+  "reported_events": [
+    "preflight_bart_complete",
+    "preflight_copy_complete",
+    "stage1_bart_started",
+    "stage1_bart_training_complete",
+    "stage1_bart_evaluation_complete",
+    "stage1_copy_started",
+    "stage1_copy_training_complete",
+    "stage1_copy_evaluation_complete",
+    "stage1_complete",
+    "stage2_preparation_started",
+    "stage2_data_preparation_complete",
+    "stage2_repeat4m_training_started",
+    "stage2_repeat4m_failed_nonfinite_gradients",
+    "stage2_recovery_started_from14000",
+    "stage2_repeat4m_training_complete",
+    "stage2_repeat4m_evaluation_complete",
+    "stage2_distinct4m_training_started",
+    "stage2_distinct4m_training_complete",
+    "stage2_distinct4m_evaluation_complete",
+    "stage2_complete",
+    "stage3_audit_samples_ready",
+    "stage3_audit_complete",
+    "stage4_decoding_started"
+  ],
+  "automation_id": "a100",
+  "last_checked_at": "2026-10-22T22:09:12.403774+00:00",
+  "last_observed_progress_step": 15625,
+  "last_learning_rate": 1.1438272605680534e-07,
+  "processes_alive": true,
+  "free_disk_bytes": 55153954816,
+  "gpu_free_bytes": 84849917952,
+  "gpu_total_bytes": 85293072384,
+  "consecutive_no_progress_checks": 0,
+  "preparation_agent": "/root/prepare_a100_stage2_data",
+  "preparation_scope": "Approved recovery launched; repeat resumes then evaluation and fresh distinct4m follow",
+  "preparation": {
+    "stage2_data_tool": "tools/prepare_a100_diversity.py",
+    "stage2_data_tests": 22,
+    "stage2_runner_agent": "/root/prepare_a100_stage2_runner",
+    "scope": "Both4M bundles and canonical validation verified; no extra experiment beyond authorized queue",
+    "stage2_runner_tool": "tools/run_a100_stage2.py",
+    "stage2_targeted_tests_passed": 61,
+    "independent_review_agent": "/root/review_a100_queue",
+    "independent_review": "One omission fixed: _code_runner.py now included in source immutability gate; regression test passed.",
+    "stage2_code_ready": true,
+    "stage3_audit_agent": "/root/prepare_a100_audit",
+    "stage4_decoding_agent": "/root/prepare_a100_decoding",
+    "stage3_audit_tool": "tools/audit_a100_errors.py",
+    "stage4_decoding_tool": "tools/run_a100_decoding.py",
+    "stage3_audit_tests_passed": 13,
+    "later_tools_review": "Independent review complete; original audit bundle SHA pin fixed and tested",
+    "stage3_stage4_combined_checks_passed": 24,
+    "all_new_stage_tools_checks_passed": 85
+  },
+  "bart_train_complete": {
+    "eval_token_loss": 0.3942929829230529,
+    "wall_seconds": 1192.586348284036,
+    "peak_allocated_gib": 32.54464912414551
+  },
+  "bart_evaluation_complete": {
+    "pass@1": 0.5131248114251232,
+    "num_passed": 10204,
+    "num_evaluated": 19886,
+    "reference_identity_verified": true,
+    "generation_seconds": 534.4984176568687
+  },
+  "copy_train_complete": {
+    "eval_token_loss": 0.3931237407685911,
+    "wall_seconds": 1317.9613379240036,
+    "peak_allocated_gib": 41.10528755187988
+  },
+  "preparing_variant": "repeat4m",
+  "last_prepared_rows": 4000000,
+  "preparing_total_rows": 4000000,
+  "data_prep_log_bytes": 113876,
+  "source_row_proof_gate_passed": true,
+  "stage1_winner": "bart",
+  "copy_evaluation_complete": {
+    "pass@1": 0.5130745247913104,
+    "num_passed": 10203,
+    "num_evaluated": 19886,
+    "generation_seconds": 528.2472777850926,
+    "reference_identity_verified": true
+  },
+  "preparation_subphase": "Stage3 all400 reviewed and saved; Stage4 sequential grid active, beam2 done and beam4 running",
+  "data_prep_log_mtime": 1792687223.6348867,
+  "preparer_cpu_percent": 93.4,
+  "last_cleanup_at": "2026-10-22T16:52:19.957017+00:00",
+  "cleanup": {
+    "report": "reports/a100_sequential_20261022/cleanup_20261022.json",
+    "removed_bytes": 13843917935,
+    "preserved_final_and_latest_checkpoints": true,
+    "active_stage2_unchanged": true
+  },
+  "variant": "distinct4m",
+  "prepared_data_complete": true,
+  "data_completed_at": "2026-10-22T16:55:35.820470+00:00",
+  "last_eval_step": 15625,
+  "last_eval_token_loss": 0.2504437715860451,
+  "recent_validation": [
+    {
+      "variant": "distinct4m",
+      "step": 5000,
+      "eval_token_loss": 0.43799215101653194
+    },
+    {
+      "variant": "distinct4m",
+      "step": 7000,
+      "eval_token_loss": 0.3686407876199852
+    },
+    {
+      "variant": "distinct4m",
+      "step": 9000,
+      "eval_token_loss": 0.3069828449582031
+    },
+    {
+      "variant": "distinct4m",
+      "step": 11000,
+      "eval_token_loss": 0.27371308090400287
+    },
+    {
+      "variant": "distinct4m",
+      "step": 13000,
+      "eval_token_loss": 0.25542754980661053
+    },
+    {
+      "variant": "distinct4m",
+      "step": 15000,
+      "eval_token_loss": 0.2505176994410508
+    }
+  ],
+  "resume_checkpoint": "stage2/trials/repeat4m/checkpoint-14000",
+  "fix_status": "Confirmed native AMP overflow backoff and continued progress past old failure; current training loss finite",
+  "failure_evidence": {
+    "checkpoint13000_scale": 4194304,
+    "checkpoint14000_scale": 8388608,
+    "growth_interval": 2000,
+    "checkpoint14000_growth_tracker": 0,
+    "forward_logged_losses_finite": true,
+    "guard_before_native_scaler_step": true,
+    "cause": "AMP overflow after scale growth plausible; guard incompatibility confirmed independently"
+  },
+  "checkpoint_health": "fp16_failure/checkpoint14000_health.json",
+  "recovery_plan": "fp16_failure/recovery_plan.json",
+  "automation_status": "ACTIVE",
+  "remote_active_output": "stage4_decoding/",
+  "remote_active_code": "stage2_recovery_code/",
+  "resume_step": 14000,
+  "passed_previous_failure_step": true,
+  "generation_progress": {
+    "generated": 640,
+    "total": 2000,
+    "phase": "generation",
+    "elapsed_seconds": 10.997383035719395
+  },
+  "repeat4m_train_complete": {
+    "architecture": "bart",
+    "global_step": 15625,
+    "metrics": {
+      "eval_loss": 0.2603245973587036,
+      "eval_token_loss": 0.26735336462672726,
+      "eval_target_tokens": 1344127,
+      "eval_runtime": 14.8626,
+      "eval_samples_per_second": 1345.662,
+      "eval_steps_per_second": 10.563,
+      "epoch": 1,
+      "amp_overflow_count": 1,
+      "amp_loss_scale": 4194304
+    },
+    "wall_seconds": 552.9438268877566,
+    "precision": "fp16",
+    "world_size": 1,
+    "effective_batch": 256,
+    "parameters": 244391936,
+    "finished_at": "2026-10-22T20:04:38.445289+00:00",
+    "torch": "2.9.1+cu128",
+    "transformers": "5.10.2",
+    "amp_diagnostics": {
+      "overflow_count": 1,
+      "final_loss_scale": 4194304,
+      "scope": "current_process_session"
+    },
+    "gpu": "NVIDIA A100 80GB PCIe",
+    "peak_allocated_gib": 32.54380226135254
+  },
+  "evaluation_phase": null,
+  "generation_finished": false,
+  "current_log": {
+    "path": "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage2_recovery/logs/distinct4m_training.log",
+    "bytes": 1123043,
+    "mtime": 1792704830.1658132
+  },
+  "repeat4m_evaluation_complete": {
+    "num_examples": 20000,
+    "num_evaluated": 19886,
+    "num_passed": 13445,
+    "num_bad_code": 113,
+    "pass@1": 0.6761037916121895,
+    "bad_code_rate": 0.00565,
+    "wrong_answer_rate": 0.3182641054007845,
+    "reference_error_rate": 0.0057,
+    "evaluation_coverage": 0.9943,
+    "evaluation_seconds": 243.82722301781178,
+    "status_counts": {
+      "passed": 13445,
+      "wrong_answer": 6329,
+      "runtime_error": 102,
+      "ok": 113,
+      "invalid_output": 5,
+      "syntax_error": 5,
+      "timeout": 1
+    },
+    "reference_status_counts": {
+      "ok": 19886,
+      "unsupported_code": 27,
+      "runtime_error": 76,
+      "invalid_output": 11
+    },
+    "prediction_column": "generated_code",
+    "reference_column": "code",
+    "comparison": "reference_solve",
+    "architecture": "bart",
+    "num_beams": 4,
+    "max_new_tokens": 256,
+    "length_penalty": 1,
+    "generation_seconds": 469.17812605574727,
+    "validation_sha256": "282001d478bffb2d13ab2ca41e8232a0c99c3623f898dd7077128c266172c406",
+    "evaluation_split": "validation",
+    "num_reference_errors": 114,
+    "num_hit_token_limit": 14,
+    "passed_fraction_of_all_sampled": 0.67225,
+    "finished_at": "2026-10-22T20:16:51.302274+00:00"
+  },
+  "amp_overflow_count": 2,
+  "amp_loss_scale": 2097152,
+  "stage2_complete": true,
+  "stage2_winner": "distinct4m",
+  "distinct4m_train_complete": {
+    "architecture": "bart",
+    "global_step": 15625,
+    "metrics": {
+      "eval_loss": 0.24439506232738495,
+      "eval_token_loss": 0.2504437715860451,
+      "eval_target_tokens": 1344127,
+      "eval_runtime": 14.264,
+      "eval_samples_per_second": 1402.127,
+      "eval_steps_per_second": 11.007,
+      "epoch": 1,
+      "amp_overflow_count": 2,
+      "amp_loss_scale": 2097152
+    },
+    "wall_seconds": 4691.542116113007,
+    "precision": "fp16",
+    "world_size": 1,
+    "effective_batch": 256,
+    "parameters": 244391936,
+    "finished_at": "2026-10-22T21:35:14.598034+00:00",
+    "torch": "2.9.1+cu128",
+    "transformers": "5.10.2",
+    "amp_diagnostics": {
+      "overflow_count": 2,
+      "final_loss_scale": 2097152,
+      "scope": "current_process_session"
+    },
+    "gpu": "NVIDIA A100 80GB PCIe",
+    "peak_allocated_gib": 32.5441837310791
+  },
+  "distinct4m_evaluation_complete": {
+    "num_examples": 20000,
+    "num_evaluated": 19886,
+    "num_passed": 13657,
+    "num_bad_code": 70,
+    "pass@1": 0.6867645579804887,
+    "bad_code_rate": 0.0035,
+    "wrong_answer_rate": 0.3097153776526199,
+    "reference_error_rate": 0.0057,
+    "evaluation_coverage": 0.9943,
+    "evaluation_seconds": 248.60350800305605,
+    "status_counts": {
+      "passed": 13657,
+      "wrong_answer": 6159,
+      "runtime_error": 64,
+      "ok": 114,
+      "invalid_output": 3,
+      "syntax_error": 3
+    },
+    "reference_status_counts": {
+      "ok": 19886,
+      "unsupported_code": 27,
+      "runtime_error": 76,
+      "invalid_output": 11
+    },
+    "prediction_column": "generated_code",
+    "reference_column": "code",
+    "comparison": "reference_solve",
+    "architecture": "bart",
+    "num_beams": 4,
+    "max_new_tokens": 256,
+    "length_penalty": 1,
+    "generation_seconds": 469.0115721002221,
+    "validation_sha256": "282001d478bffb2d13ab2ca41e8232a0c99c3623f898dd7077128c266172c406",
+    "evaluation_split": "validation",
+    "num_reference_errors": 114,
+    "num_hit_token_limit": 15,
+    "passed_fraction_of_all_sampled": 0.68285,
+    "finished_at": "2026-10-22T21:47:32.055096+00:00"
+  },
+  "stage2_ranking": [
+    "distinct4m",
+    "repeat4m"
+  ],
+  "stage3_review_agents": [
+    "audit_rows_first_half",
+    "audit_rows_second_half"
+  ],
+  "stage3_complete": true,
+  "stage3_review_summary": "stage3_audit/review_summary.json",
+  "stage4_decoder": {
+    "num_beams": 4,
+    "length_penalty": 1.0,
+    "batch_size": 64
+  },
+  "stage4_completed_candidates": [
+    {
+      "directory": "1_beam2_lp1",
+      "num_passed": 1365,
+      "num_evaluated": 1988,
+      "pass@1": 0.6866197183098591,
+      "generation_seconds": 42.553669445216656
+    }
+  ],
+  "t4_benchmark_status": "pending"
+}

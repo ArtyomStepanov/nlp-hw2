@@ -19,6 +19,7 @@ class TransformerConfig:
     pad_token_id: int = 0
     bos_token_id: int = 2
     eos_token_id: int = 3
+    unk_token_id: int | None = 1
 
     def __post_init__(self) -> None:
         for name in (
@@ -38,11 +39,13 @@ class TransformerConfig:
             raise ValueError("ID спецтокенов должны находиться внутри словаря.")
         if len(set(token_ids)) != len(token_ids):
             raise ValueError("PAD, BOS и EOS должны иметь разные ID.")
+        if self.unk_token_id is not None and (type(self.unk_token_id) is not int or not 0 <= self.unk_token_id < self.vocab_size):
+            raise ValueError("UNK должен находиться внутри словаря или быть None.")
 
     @classmethod
     def from_tokenizer(cls, tokenizer: Tokenizer, **overrides) -> "TransformerConfig":
         """Взять фактический размер словаря и ID спецтокенов из токенизатора."""
-        values = {"vocab_size": tokenizer.get_vocab_size()}
+        values = {"vocab_size": tokenizer.get_vocab_size(), "unk_token_id": tokenizer.token_to_id('<unk>')}
         for name, token in (
             ("pad_token_id", "<pad>"),
             ("bos_token_id", "<bos>"),

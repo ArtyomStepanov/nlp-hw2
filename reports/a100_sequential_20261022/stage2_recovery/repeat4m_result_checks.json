@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "status": "passed",
+  "checked_at": "2026-10-22T20:42:05.436309+00:00",
+  "scope": "Local read-only checks; no program re-execution, generation, SSH or training.",
+  "validation": {
+    "rows": 20000,
+    "eligible": 19886,
+    "excluded": 114,
+    "validation_sha256": "282001d478bffb2d13ab2ca41e8232a0c99c3623f898dd7077128c266172c406",
+    "golden_reference_file_sha256": "42fc3fa34f9e7ce9cfbc84fb2ad35dddccceb275e6d249ec7f7d2fe4cef9785b",
+    "all_original_arrow_questions_codes_and_order_match": true,
+    "all_golden_reference_eligibility_status_results_match": true
+  },
+  "result": {
+    "architecture": "bart",
+    "num_passed": 13445,
+    "pass_at_1": 0.6761037916121895,
+    "pass_percent": 67.61037916121894,
+    "num_bad_code": 113,
+    "bad_code_percent": 0.565,
+    "num_hit_token_limit": 14
+  },
+  "checks": {
+    "config": true,
+    "checkpoint_data_identity": true,
+    "actual_original_validation_row_sha": true,
+    "progress_complete": true,
+    "metrics_recomputed_from_rows": true,
+    "pass_flags_recomputed_from_saved_result_values": true,
+    "predictions_match_evaluation": true,
+    "receipt_result": true,
+    "local_files_match_receipt": [
+      "config.json",
+      "evaluation/evaluation.jsonl",
+      "evaluation/evaluation_config.json",
+      "evaluation/metrics.json",
+      "metrics.json",
+      "predictions.jsonl",
+      "progress.json"
+    ]
+  },
+  "backup_scope": {
+    "receipt_sidecars_not_copied_locally": [],
+    "all_seven_receipt_files_verified_locally": true,
+    "checked_at": "2026-10-22T20:42:51.775972+00:00",
+    "note": "Parent downloaded both redundant evaluator sidecars and verified every file against sealed receipt size/SHA256."
+  },
+  "paired_vs_stage1_bart": {
+    "both_pass": 9732,
+    "both_fail": 5969,
+    "repeat4m_only": 3713,
+    "stage1_only": 472,
+    "common_eligible": 19886,
+    "stage1_passed": 10204,
+    "repeat4m_passed": 13445,
+    "net_more_passed": 3241,
+    "delta_percentage_points": 16.297898018706626,
+    "limitation": "Same architecture and validation; different exposure budget/schedule: 1M vs4M repeated exposures. Not an architecture comparison or a matched Stage2 diversity comparison."
+  },
+  "findings": []
+}

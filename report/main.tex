@@ -1,0 +1,70 @@
+% !TEX program = xelatex
+\documentclass[11pt,a4paper]{article}
+\usepackage{fontspec}
+\setmainfont{DejaVuSerif}[Path=fonts/,Extension=.ttf,
+  BoldFont=DejaVuSerif-Bold,ItalicFont=DejaVuSerif-Italic,
+  BoldItalicFont=DejaVuSerif-BoldItalic]
+\setmonofont{DejaVuSansMono}[Path=fonts/,Extension=.ttf,Scale=.86]
+\usepackage[english,russian]{babel}
+\usepackage[margin=22mm]{geometry}
+\usepackage{amsmath,amssymb,booktabs,tabularx,longtable,array}
+\usepackage{graphicx,xcolor,caption,enumitem,fancyhdr}
+\usepackage[unicode,hidelinks]{hyperref}
+\usepackage{microtype}
+\graphicspath{{images/}}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\setlength{\emergencystretch}{2em}
+\renewcommand{\arraystretch}{1.15}
+\captionsetup{font=small,labelfont=bf}
+\setlist{nosep,leftmargin=*}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small Генерация кода с нуля}
+\fancyhead[R]{\small NLP · ДЗ 2}
+\fancyfoot[C]{\thepage}
+\setlength{\headheight}{14pt}
+\newcommand{\pass}{\textnormal{pass@1}}
+\newcommand{\loss}{\textnormal{token loss}}
+\newcommand{\code}[1]{\texttt{\detokenize{#1}}}
+\newcommand{\pending}[1]{\textcolor{blue!60!black}{#1}}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\setcounter{tocdepth}{1}
+\title{\textbf{Генерация Python-кода по тексту задачи}\\
+\large Обучение encoder--decoder Transformer с нуля}
+\author{}
+\date{Рабочий черновик 0.4 · 23 октября 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+Исследуется генерация Python-программы по условию арифметической задачи.
+Путь к решению включает baseline на основе BART, увеличение модели,
+диагностику нестабильного обучения, короткий поиск архитектуры,
+сравнение T5-style и pointer-generator, а также проверку разнообразия
+данных и параметров beam search. В сопоставимом бюджете четырёх миллионов
+предъявлений BART на различных train-примерах получил 68.6765\% локального
+\pass{} против 67.6104\% при повторении одного миллиона примеров.
+Выбранный BART 8+8/d1024 затем обучен с нуля на полном подготовленном train
+за четыре эпохи; лучший validation \loss{} составил 0.191021.
+На прежней фиксированной validation полная модель получила 74.2985\%
+\pass{} (+5.6220 п.п. к короткой Distinct4m). На одной NVIDIA T4
+генерация всех 1919 официальных ответов заняла 165.1 секунды при beam 4,
+то есть уложилась в лимит 180 секунд. Однако на public-половине
+официального теста новая модель получила 729/960 = 75.94\%
+против 735/960 = 76.56\% у прежней полной модели 002:
+на шесть решений меньше ($-0.625$ п.п.). Результат private пока неизвестен.
+\end{abstract}
+{\small\textbf{Статус документа.} Черновик по сохранённым
+результатам, дополненный оценкой полной модели, замером T4
+и сравнением двух официальных public-посылок.
+Работа с моделью продолжается отдельно; здесь фиксируются уже
+проверенные наблюдения. Текст, таблицы и рисунки будем уточнять по разделам.}
+{\small\tableofcontents}
+\newpage
+\input{sections/01_task}
+\input{sections/02_methods}
+\input{sections/03_experiments}
+\input{sections/04_a100}
+\input{sections/05_discussion}
+\input{sections/references}
+\end{document}

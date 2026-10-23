@@ -1,0 +1,38 @@
+{
+  "started_at_utc": "2026-10-13T12:54:47.496025+00:00",
+  "session": "nlp-002-lr1e4",
+  "command": [
+    "/usr/bin/python3",
+    "-u",
+    "-m",
+    "torch.distributed.run",
+    "--master-addr=127.0.0.1",
+    "--master-port=52311",
+    "--nproc-per-node=2",
+    "/home/artyom-step/workspace/nlp-hw2/train_distributed.py",
+    "--dataset",
+    "/home/artyom-step/workspace/nlp-hw2/artifacts/datasets/tinysms_98_1_1_seed42",
+    "--tokenizer",
+    "/home/artyom-step/workspace/nlp-hw2/artifacts/experiments/transformer_002_8x8_d768_lr1e4/tokenizer.json",
+    "--model-config",
+    "/home/artyom-step/workspace/nlp-hw2/artifacts/experiments/transformer_002_8x8_d768_lr1e4/model_config.json",
+    "--training-config",
+    "/home/artyom-step/workspace/nlp-hw2/artifacts/experiments/transformer_002_8x8_d768_lr1e4/training_config.json",
+    "--resume-from-checkpoint",
+    "/home/artyom-step/workspace/nlp-hw2/artifacts/experiments/transformer_002_8x8_d768_lr1e4/checkpoint-50000"
+  ],
+  "log": "/home/artyom-step/workspace/nlp-hw2/artifacts/launches/transformer_002_8x8_d768_lr1e4/train.log",
+  "exitcode": "/home/artyom-step/workspace/nlp-hw2/artifacts/launches/transformer_002_8x8_d768_lr1e4/train.exitcode",
+  "output_dir": "/home/artyom-step/workspace/nlp-hw2/artifacts/experiments/transformer_002_8x8_d768_lr1e4",
+  "code_sha256": {
+    "training.py": "14fb3a058415f26b45f8ff3884c7ac69f09c5a6935738ce4d02ddcc6485a0c52",
+    "train_distributed.py": "0924d58fa8bf1382518f61256e6066d5dd971aade34a5e09390bf4375d08e1d2",
+    "models/base.py": "a18e9a415bab03a5ef2ca313b7d9e27b515d8b20a8028648e9683bc8e999fbc0",
+    "models/baseline.py": "0896e2f2201be8650285344f535df04b70d3fa2a409403626338cec66506f9d8",
+    "models/config.py": "c21905d2da97eb18348bbc1afd877406db939886224b29abb912b54a8e2c6115",
+    "models/__init__.py": "4047f05472d4b643b836e383684aff9021c2c82feb528a45446f10ea2e904376",
+    "utils.py": "e1a3f3441abc890aeda4d1dc897466af3d493cf1688db0c9b8667dfbb0702eef",
+    "requirements.txt": "aba58d8a34b8981527c1dd09acada957435bb8b6e7c3fc62c3819a41f8c0a1d5"
+  },
+  "free_disk_gib": 14.174781799316406
+}

@@ -1,0 +1,48 @@
+{
+  "experiment": "transformer_003_10x10_d1024_h100",
+  "remote_project": "/workspace/nlp-hw2",
+  "tmux": "nlp-train-003",
+  "started_at_utc": "2026-10-19T14:44:47Z",
+  "log": "artifacts/launches/transformer_003_10x10_d1024_h100/train-20261019T144447Z.log",
+  "files_sha256": {
+    "training.py": "cb6845b0dd1b77556c3b0f7cb856e4669660f1ba0df4fe2725d01c2b496ffb99",
+    "train_distributed.py": "0924d58fa8bf1382518f61256e6066d5dd971aade34a5e09390bf4375d08e1d2",
+    "train_003_h100.ipynb": "8e09e98747f42e5773ab5576ab701c085bd19ad02397fe053574503c6fc02ffe",
+    "prepare_datasets.py": "df5e35028e80fd2d6406d8e2cb77420204e7693022a2e5a8d37c78aed1e94211",
+    "requirements.txt": "aba58d8a34b8981527c1dd09acada957435bb8b6e7c3fc62c3819a41f8c0a1d5",
+    "models/base.py": "a18e9a415bab03a5ef2ca313b7d9e27b515d8b20a8028648e9683bc8e999fbc0",
+    "models/config.py": "c21905d2da97eb18348bbc1afd877406db939886224b29abb912b54a8e2c6115",
+    "models/baseline.py": "0896e2f2201be8650285344f535df04b70d3fa2a409403626338cec66506f9d8",
+    "tests/test_training_performance.py": "0e3a78313acc1612eb5c17925d19fd12435d590a09b6756d4ad2deb023dc8d52",
+    "configs/transformer_003_10x10_d1024_h100/model_config.json": "c5c67262bfde2a92168626d0c989aba3668d0964af1a8521fe3eccb33278b9da",
+    "configs/transformer_003_10x10_d1024_h100/training_config.json": "59ad883f9bb0c69931bb1da80ded507831dd560cd20a1ae85370027913cdf345",
+    "configs/transformer_003_10x10_d1024_h100/data_config.json": "810482f3ab6376a3dafe2dcc85b9070a932a8c76240e5c4ae96a2baa8c8d840f"
+  },
+  "status": "training",
+  "planned_epochs": 4,
+  "quality_evaluated": false,
+  "startup_snapshot": {
+    "captured_at_utc": "2026-10-19T14:53:36.267203+00:00",
+    "tmux_running": true,
+    "progress": 800,
+    "planned_steps": 181144,
+    "latest_log": {
+      "loss": 2.3649952697753904,
+      "grad_norm": 1.2942469120025635,
+      "learning_rate": 1.7641863546036652e-05,
+      "epoch": 0.01766569873359022,
+      "step": 800
+    },
+    "throughput_window": {
+      "first_step": 100,
+      "first_elapsed_seconds": 42,
+      "last_step": 800,
+      "last_elapsed_seconds": 170,
+      "effective_batch": 256,
+      "examples_per_second": 1400.0
+    },
+    "gpu_csv": "82 %, 41947 MiB, 337.36 W",
+    "validation_completed": false,
+    "finite_logs": true
+  }
+}

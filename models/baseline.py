@@ -9,6 +9,21 @@ from .base import BaseSeq2SeqModel
 from .config import TransformerConfig
 
 
+def make_bart_config(config: TransformerConfig) -> BartConfig:
+    """Shared architecture recipe for ordinary BART and its copy extension."""
+    return BartConfig(
+        vocab_size=config.vocab_size, d_model=config.d_model,
+        encoder_layers=config.encoder_layers, decoder_layers=config.decoder_layers,
+        encoder_attention_heads=config.attention_heads, decoder_attention_heads=config.attention_heads,
+        encoder_ffn_dim=config.ffn_dim, decoder_ffn_dim=config.ffn_dim,
+        max_position_embeddings=config.max_position_embeddings, dropout=config.dropout,
+        attention_dropout=config.attention_dropout, activation_function='gelu',
+        pad_token_id=config.pad_token_id, bos_token_id=config.bos_token_id,
+        eos_token_id=config.eos_token_id, decoder_start_token_id=config.bos_token_id,
+        forced_eos_token_id=None, tie_word_embeddings=True, use_cache=True,
+    )
+
+
 class BaselineTransformer(BaseSeq2SeqModel):
     """BART-архитектура для обучения с нуля, без загрузки готовых весов.
 
@@ -18,28 +33,7 @@ class BaselineTransformer(BaseSeq2SeqModel):
 
     def __init__(self, config: TransformerConfig) -> None:
         super().__init__(config)
-        bart_config = BartConfig(
-            vocab_size=config.vocab_size,
-            d_model=config.d_model,
-            encoder_layers=config.encoder_layers,
-            decoder_layers=config.decoder_layers,
-            encoder_attention_heads=config.attention_heads,
-            decoder_attention_heads=config.attention_heads,
-            encoder_ffn_dim=config.ffn_dim,
-            decoder_ffn_dim=config.ffn_dim,
-            max_position_embeddings=config.max_position_embeddings,
-            dropout=config.dropout,
-            attention_dropout=config.attention_dropout,
-            activation_function="gelu",
-            pad_token_id=config.pad_token_id,
-            bos_token_id=config.bos_token_id,
-            eos_token_id=config.eos_token_id,
-            decoder_start_token_id=config.bos_token_id,
-            forced_eos_token_id=None,
-            tie_word_embeddings=True,
-            use_cache=True,
-        )
-        self.network = BartForConditionalGeneration(bart_config)
+        self.network = BartForConditionalGeneration(make_bart_config(config))
 
     def _check_token_batch(self, tokens: Tensor, name: str, batch_size: int | None = None) -> None:
         if tokens.ndim != 2 or not tokens.shape[0] or not tokens.shape[1]:

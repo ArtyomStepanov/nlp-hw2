@@ -1,0 +1,25 @@
+{
+  "status": "launched",
+  "launched_at": "2026-10-22T15:24:10.685404+00:00",
+  "remote_root": "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022",
+  "host": "nlp-bart.ml-contest-mla.ws.deep.yandex.net",
+  "tmux": "nlp-a100-seq-20261022",
+  "command": "python3 tools/run_a100_stage1.py --bundle-root ../bundle --output-dir ../stage1",
+  "automatic_sequence": [
+    "preflight_bart",
+    "preflight_copy",
+    "train_bart",
+    "evaluate_bart",
+    "train_copy",
+    "evaluate_copy"
+  ],
+  "automation_id": "a100",
+  "t5_excluded": true,
+  "verification": {
+    "portable_and_notebook_tests_passed": 12,
+    "reference_gate_tests_passed": 3,
+    "distributed_unchanged_tests_deselected": 2,
+    "source_sha_checked_remotely": true,
+    "bundle_sha_checked_remotely": true
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "trial": {
+    "name": "e10_d10_lr3e-04",
+    "output_dir": "/workspace/nlp-hw2/artifacts/sweeps/hpo_005_architecture_extension/trials/e10_d10_lr3e-04",
+    "encoder_layers": 10,
+    "decoder_layers": 10,
+    "learning_rate": 0.0003,
+    "train_batch_size": 128,
+    "gradient_accumulation_steps": 2,
+    "num_train_epochs": 1,
+    "seed": 42,
+    "data_manifest_sha256": "aab7a9237d69484044504eac5c998f9f7ebd9c5573ad4d1e31fb4f41705e1e3d",
+    "smoke": false
+  },
+  "metrics": {
+    "eval_loss": 0.8285144567489624,
+    "eval_token_loss": 0.8508708189978291,
+    "eval_target_tokens": 1344127,
+    "eval_runtime": 10.1922,
+    "eval_samples_per_second": 1962.287,
+    "eval_steps_per_second": 15.404,
+    "epoch": 1
+  },
+  "train_metrics": {
+    "train_runtime": 778.4382,
+    "train_samples_per_second": 1284.624,
+    "train_steps_per_second": 5.019,
+    "total_flos": 128887942595739650,
+    "train_loss": 1.2341078463374486,
+    "epoch": 1
+  },
+  "steps": 3907,
+  "train_rows": 1000000,
+  "validation_rows": 20000,
+  "parameters": 303177728,
+  "wall_seconds": 797.0261906730011,
+  "peak_allocated_gib": 36.90833520889282,
+  "checkpoint": "/workspace/nlp-hw2/artifacts/sweeps/hpo_005_architecture_extension/trials/e10_d10_lr3e-04/checkpoint-3907",
+  "completed_at": "2026-10-19T17:47:11.421983+00:00"
+}

@@ -1,0 +1,37 @@
+{
+  "backend": "fa3",
+  "implementation": "kernels-community/flash-attn3@e29f138fc363b396e5d2706c8a5f6fa7d36f41e0",
+  "compile": false,
+  "checkpoint_step": 7500,
+  "microbatch": 128,
+  "accumulation": 2,
+  "global_batch": 256,
+  "examples_per_repeat": 15104,
+  "warmup_seconds": 2.317521106917411,
+  "median_examples_per_second": 1057.6174657026531,
+  "peak_allocated_gib": 35.914259910583496,
+  "peak_reserved_gib": 40.23828125,
+  "finite": true,
+  "runs": [
+    {
+      "seconds": 14.348502285312861,
+      "examples_per_second": 1052.6534198249017,
+      "last_loss": 0.3568146824836731,
+      "last_gradient_norm": 0.40382707118988037
+    },
+    {
+      "seconds": 14.258447281084955,
+      "examples_per_second": 1059.3018792471705,
+      "last_loss": 0.25119882822036743,
+      "last_gradient_norm": 0.35069093108177185
+    },
+    {
+      "seconds": 14.281155984848738,
+      "examples_per_second": 1057.6174657026531,
+      "last_loss": 0.18839246034622192,
+      "last_gradient_norm": 0.3114420771598816
+    }
+  ],
+  "torch": "2.9.1+cu128",
+  "gpu": "NVIDIA H100 PCIe"
+}

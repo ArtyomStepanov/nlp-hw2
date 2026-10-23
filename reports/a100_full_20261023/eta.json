@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-10-23T11:45:21.507406+00:00",
+  "current_step": 161318,
+  "max_step_attempts": 181144,
+  "remaining_step_attempts": 19826,
+  "recent_steps_per_second_including_periodic_evaluation": 3.3236659774769355,
+  "estimated_remaining_seconds": 5965.100023393546,
+  "rough_finish_moscow": "2026-10-23T16:24:46.607429+03:00",
+  "caveat": "Estimate from recent wall-clock progress; final validation/checkpoint save and variable batch lengths can shift completion."
+}

@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "status": "complete",
+  "expected_rows": [
+    11593060,
+    118302
+  ],
+  "hardlinked": true,
+  "official_test_used": false,
+  "prepared_at": "2026-10-22T22:24:47.024429+00:00"
+}

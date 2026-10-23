@@ -1,0 +1,21 @@
+{
+  "checked_at": "2026-10-20T13:08:20.348656+00:00",
+  "models": {
+    "t5": {
+      "generated": 20000,
+      "total": 20000,
+      "phase": "complete; local scoring",
+      "pass_at_1": 0.16760535049783767
+    },
+    "copy": {
+      "generated": 20000,
+      "total": 20000,
+      "phase": "complete; cloud and local metrics identical",
+      "pass_at_1": 0.5153374233128835
+    }
+  },
+  "error_visible": false,
+  "status": "complete",
+  "gpu_session_stopped": true,
+  "active_kaggle_events": 0
+}

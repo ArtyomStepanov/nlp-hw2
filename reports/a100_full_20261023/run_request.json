@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "architecture": "bart",
+  "initialization": "from_scratch",
+  "bundle_root": "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_full_20261023/bundle",
+  "stage2_dir": "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage2_recovery",
+  "stage2": {
+    "completion_sha256": "5584eaee2d8e690cb233f4af3e2b76468e7fe4018ad0997de0c2c310320df481",
+    "architecture": "bart",
+    "ranking": [
+      "distinct4m",
+      "repeat4m"
+    ]
+  },
+  "bundle": {
+    "bundle_sha256": "0f330f228599f4cff65ed6ce0ca11e2d667ea24e6b911b5f67f6fff7e24bcbe5",
+    "selection_sha256": "b005ba47e2d9b3fcc99ee5f07d1d82c45f0ff7bcd08a6a95aea9b82dad0b8abf",
+    "tokenizer_sha256": "abd75c8655b948f612ebbf065a12269613269a4755cd0a698b0bf7a5bc1e9704"
+  },
+  "config": {
+    "architecture": "bart",
+    "micro_batch": 128,
+    "global_batch": 256,
+    "learning_rate": 0.0002,
+    "num_train_epochs": 4.0,
+    "eval_steps": 5000,
+    "precision": "fp16",
+    "gradient_checkpointing": false,
+    "torch_compile": false,
+    "torch_compile_backend": "inductor",
+    "use_cpu": false,
+    "tiny_model": false,
+    "preflight": false,
+    "max_steps": -1,
+    "expected_rows": [
+      11593060,
+      118302
+    ],
+    "expected_manifest_sha": "0f330f228599f4cff65ed6ce0ca11e2d667ea24e6b911b5f67f6fff7e24bcbe5",
+    "seed": 42,
+    "early_stopping_patience": 5
+  },
+  "previous_stage4": {
+    "path": "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage4_decoding",
+    "completion_sha256": "135596d945b657a091408d158486971b4c5ac93a6cc3db36e8b4ae36c0e00652"
+  },
+  "model": {
+    "d_model": 1024,
+    "encoder_layers": 8,
+    "decoder_layers": 8,
+    "attention_heads": 8,
+    "ffn_dim": 4096,
+    "vocab_size": 8000
+  },
+  "planned_step_attempts": 181144,
+  "sources": {
+    "kaggle_experiments.py": "c32a544ad651f81d09a8e8ac5a2ff1b6b2d89e4b8df2a37e4f3118e6e70c024a",
+    "training.py": "43312d3f7b48fc5cd8f772baccd9eb5721aa96385267a35ad563187dfed71ab8",
+    "plotting.py": "2071e931d633d2cc0399e9560ef088bab38302d5e0cf77331a0784777ff297b2",
+    "tools/prepare_a100_full.py": "79dd4236e9bd8210e7f3a9b4216ebfdddcfcfc9386e585feddbe029a3cc41828",
+    "tools/run_a100_full.py": "6b5c348de0888cee0d57a40f13691614d8db23cf210597be1ef4708c3fd6ca7c",
+    "models/__init__.py": "f0ac5a18a8a85dd51fa4044cc8fc4c2f2e210304baf3ee6c13cad2792847114f",
+    "models/base.py": "a18e9a415bab03a5ef2ca313b7d9e27b515d8b20a8028648e9683bc8e999fbc0",
+    "models/baseline.py": "349643d10004fd37aa9644d25634bbf832b867851304432e4d9b66dea8001ea1",
+    "models/config.py": "fce960895e77d4661e91f94b474a203522392416f73714679cfc2a2a6bca79d0",
+    "models/copy.py": "51aa4b4b92943ffb8b02c0742ad137b02eb06c48a2def9cc2c9fb4bbc7ec79d2",
+    "models/t5.py": "d1ab22531c00453fb426a6e79f4c69b7ce9508f0849399b6241d4d23dee703bc",
+    "models/t5_attention.py": "3b32cf763518b5236af861d7b7c4cc41286a775e60f8412773b321e0c0f51388"
+  },
+  "official_test_used": false
+}

@@ -1,0 +1,16 @@
+{
+  "status": "awaiting_stage2",
+  "stage": 1,
+  "driver_pid": 679,
+  "started_at": "2026-10-22T15:23:33.321586+00:00",
+  "completed": [
+    "bart",
+    "copy"
+  ],
+  "architecture": "copy",
+  "phase": "complete",
+  "updated_at": "2026-10-22T16:19:30.307325+00:00",
+  "child_pid": null,
+  "log": "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage1/logs/copy_evaluation.log",
+  "winner": "bart"
+}

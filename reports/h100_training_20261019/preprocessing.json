@@ -1,0 +1,16 @@
+{
+  "train": {
+    "original_rows": 11601243,
+    "selected_rows": 11601243,
+    "dropped_empty": 0,
+    "dropped_long": 8183,
+    "prepared_rows": 11593060
+  },
+  "val": {
+    "original_rows": 118380,
+    "selected_rows": 118380,
+    "dropped_empty": 0,
+    "dropped_long": 78,
+    "prepared_rows": 118302
+  }
+}

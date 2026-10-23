@@ -1,0 +1,24 @@
+{
+  "captured_at_utc": "2026-10-19T14:53:36.267203+00:00",
+  "tmux_running": true,
+  "progress": 800,
+  "planned_steps": 181144,
+  "latest_log": {
+    "loss": 2.3649952697753904,
+    "grad_norm": 1.2942469120025635,
+    "learning_rate": 1.7641863546036652e-05,
+    "epoch": 0.01766569873359022,
+    "step": 800
+  },
+  "throughput_window": {
+    "first_step": 100,
+    "first_elapsed_seconds": 42,
+    "last_step": 800,
+    "last_elapsed_seconds": 170,
+    "effective_batch": 256,
+    "examples_per_second": 1400.0
+  },
+  "gpu_csv": "82 %, 41947 MiB, 337.36 W",
+  "validation_completed": false,
+  "finite_logs": true
+}

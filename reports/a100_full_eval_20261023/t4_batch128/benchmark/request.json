@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "checkpoint_step": 180000,
+  "final_training_step": 181144,
+  "model_parameters": 244391936,
+  "weight_sha256": "2059268173416c77cd8c901c791eb86e7cbcea0ede756b2bb830ec23638b8165",
+  "bundle_manifest_sha256": "6c91d0b45bf808b9d8f0648d8aadc509707516914fe797d294e9446efb27f549",
+  "official_test_rows": 1919,
+  "question_order_sha256": "6dd86866b2ed86a09781b7f471fc2fce5c00975503c4a85f1ec959dae0b93279",
+  "gpu": "Tesla T4",
+  "device": "cuda:0",
+  "gpus_used": 1,
+  "visible_gpus": 1,
+  "compute_capability": [
+    7,
+    5
+  ],
+  "torch": "2.11.0+cu130",
+  "versions": {
+    "transformers": "5.10.2",
+    "tokenizers": "0.22.2",
+    "datasets": "4.6.0"
+  },
+  "batch_size": 128,
+  "num_beams": 4,
+  "length_penalty": 1.0,
+  "max_new_tokens": 256,
+  "max_source_length": 256,
+  "mixed_precision": "fp16",
+  "sort_by_length": true,
+  "truncate_source": false,
+  "do_sample": false,
+  "use_cache": true,
+  "early_stopping": false,
+  "min_new_tokens": 0,
+  "no_generated_code_execution": true,
+  "timer_scope": "Tokenization, length sorting, transfers, generation, decoding and prediction assembly; checkpoint loading, dependency installation and file writing excluded. No generation warmup.",
+  "started_at": "2026-10-23T14:06:24.907121+00:00"
+}

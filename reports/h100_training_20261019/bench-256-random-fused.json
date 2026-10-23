@@ -1,0 +1,20 @@
+{
+  "batch": 256,
+  "order": "random",
+  "optim": "fused",
+  "compile": false,
+  "stress": false,
+  "rows": 15346,
+  "parameters": 303177728,
+  "warmup_seconds": 1.8914690907113254,
+  "seconds": 25.50686219194904,
+  "examples_per_second": 601.642016352909,
+  "real_tokens_per_second": 68789.09631439568,
+  "padding_fraction": 0.6610763845963654,
+  "peak_allocated_gib": 64.26797103881836,
+  "finite": true,
+  "last_loss": 4.70869779586792,
+  "max_grad": 41.761566162109375,
+  "torch": "2.9.1+cu128",
+  "gpu": "NVIDIA H100 PCIe"
+}

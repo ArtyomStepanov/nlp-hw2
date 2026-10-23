@@ -1,0 +1,47 @@
+{
+  "source": "/home/artyom-step/workspace/nlp-hw2/artifacts/experiments/transformer_002_8x8_d768_lr1e4/checkpoint-90000",
+  "snapshot": "/home/artyom-step/workspace/nlp-hw2/artifacts/evaluations/transformer_002_checkpoint90000_test10000_seed42_20261013/checkpoint-90000",
+  "created_utc": "2026-10-13T14:50:54.419100+00:00",
+  "files": {
+    "training_layout.json": {
+      "bytes": 408,
+      "sha256": "9d54546a1052d8484cd5729148cf0dd7bc40fd54c07aea0bd06151159e7eae9d"
+    },
+    "config.json": {
+      "bytes": 1010,
+      "sha256": "300bdbcb98d2d15fe8a275c854e8606abb28b5d665490daf889f36a849fbb8b5"
+    },
+    "model.safetensors": {
+      "bytes": 557086648,
+      "sha256": "2e7c94aaf76493228d8ae0e66980cdcef05fc01e5ec9836586f81a3ec16b8d2c"
+    },
+    "trainer_state.json": {
+      "bytes": 176036,
+      "sha256": "72bd3f8c577da70197c09dc586a644424debb67e78845707dc62d01f32bda35e"
+    },
+    "generation_config.json": {
+      "bytes": 257,
+      "sha256": "6d5bd370a97d994f5a7112ca7e3e42c132ead2c3219959665690cda7743b83d3"
+    },
+    "tokenizer_config.json": {
+      "bytes": 304,
+      "sha256": "5128280f8f8798b74a5032fca3c6a6f50b80835fdb46afe012280ac314fde389"
+    },
+    "tokenizer.json": {
+      "bytes": 534007,
+      "sha256": "abd75c8655b948f612ebbf065a12269613269a4755cd0a698b0bf7a5bc1e9704"
+    },
+    "../model_config.json": {
+      "bytes": 274,
+      "sha256": "bab07c57eb15b2bbce50af497f43c6834e8f7b9bf6830add6cf273b700afd953"
+    },
+    "../tokenizer.json": {
+      "bytes": 534007,
+      "sha256": "abd75c8655b948f612ebbf065a12269613269a4755cd0a698b0bf7a5bc1e9704"
+    },
+    "../training_config.json": {
+      "bytes": 1069,
+      "sha256": "3e0ec3e47c50b3d45435da22c74a3b41de1d45a78cf8def0c02547b7a0bf3d78"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "repeat4m": {
+    "training_points": 157,
+    "validation_points": 16,
+    "final_eval_token_loss": 0.26735336462672726
+  },
+  "distinct4m": {
+    "training_points": 157,
+    "validation_points": 16,
+    "final_eval_token_loss": 0.2504437715860451
+  }
+}

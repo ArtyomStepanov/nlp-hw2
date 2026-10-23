@@ -1,0 +1,38 @@
+{
+  "num_examples": 2000,
+  "num_evaluated": 1988,
+  "num_passed": 1378,
+  "num_bad_code": 9,
+  "pass@1": 0.693158953722334,
+  "bad_code_rate": 0.0045,
+  "wrong_answer_rate": 0.3023138832997988,
+  "reference_error_rate": 0.006,
+  "evaluation_coverage": 0.994,
+  "evaluation_seconds": 24.603481575846672,
+  "status_counts": {
+    "passed": 1378,
+    "wrong_answer": 601,
+    "runtime_error": 9,
+    "ok": 12
+  },
+  "reference_status_counts": {
+    "ok": 1988,
+    "unsupported_code": 2,
+    "runtime_error": 8,
+    "invalid_output": 2
+  },
+  "prediction_column": "generated_code",
+  "reference_column": "code",
+  "comparison": "reference_solve",
+  "architecture": "bart",
+  "num_beams": 4,
+  "max_new_tokens": 256,
+  "length_penalty": 1.0,
+  "generation_seconds": 53.632171522825956,
+  "validation_sha256": "e867093926b3f125bc15ea701608f7d151b61983e16b9adc32305825d4c95881",
+  "evaluation_split": "validation",
+  "num_reference_errors": 12,
+  "num_hit_token_limit": 2,
+  "passed_fraction_of_all_sampled": 0.689,
+  "finished_at": "2026-10-22T22:10:19.390456+00:00"
+}

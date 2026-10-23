@@ -1,0 +1,14 @@
+{
+  "status": "complete",
+  "mode": "greedy",
+  "device": "cuda:1",
+  "num_beams": 1,
+  "batch_size": 128,
+  "precision": "fp16",
+  "max_new_tokens": 256,
+  "max_source_length": 256,
+  "checkpoint": "/home/artyom-step/workspace/nlp-hw2/artifacts/evaluations/transformer_002_checkpoint90000_test10000_seed42_20261013/checkpoint-90000",
+  "started_at_utc": "2026-10-13T14:54:13.987911+00:00",
+  "run_seconds": 239.09038865193725,
+  "completed_at_utc": "2026-10-13T14:58:13.078482+00:00"
+}

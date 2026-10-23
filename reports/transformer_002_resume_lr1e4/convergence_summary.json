@@ -1,0 +1,77 @@
+{
+  "source": "final/log_history.json",
+  "source_sha256": "4588652d3efa60d06ee5fa9a044620b9dcd4d6815d48092fba1f2436167ef715",
+  "best_step": 360000,
+  "best_eval_token_loss": 0.19270332574169102,
+  "finished_step": 362284,
+  "finished_epoch": 4.0,
+  "stopped_by": "planned four epochs; early stopping did not trigger",
+  "early_stopping_counter": 1,
+  "num_train_log_points": 3623,
+  "num_validation_points": 73,
+  "num_continuation_validation_points": 63,
+  "restored_best_eval_excluded_from_curve": {
+    "eval_loss": 0.19270187616348267,
+    "eval_token_loss": 0.19270332574169102,
+    "eval_target_tokens": 7970835,
+    "eval_runtime": 59.1206,
+    "eval_samples_per_second": 2001.027,
+    "eval_steps_per_second": 7.831,
+    "epoch": 4.0,
+    "step": 362284
+  },
+  "last_updated_weights_eval_token_loss": 0.19270439709049467,
+  "improvement_intervals": {
+    "50000_to_360000": {
+      "from_step": 50000,
+      "to_step": 360000,
+      "from_loss": 0.28246986758973974,
+      "to_loss": 0.19270332574169102,
+      "absolute_improvement": 0.08976654184804872,
+      "relative_improvement_percent": 31.779156698733605
+    },
+    "90000_to_360000": {
+      "from_step": 90000,
+      "to_step": 360000,
+      "from_loss": 0.22536838621723568,
+      "to_loss": 0.19270332574169102,
+      "absolute_improvement": 0.032665060475544655,
+      "relative_improvement_percent": 14.494073913303152
+    },
+    "300000_to_360000": {
+      "from_step": 300000,
+      "to_step": 360000,
+      "from_loss": 0.19406784705129027,
+      "to_loss": 0.19270332574169102,
+      "absolute_improvement": 0.0013645213095992426,
+      "relative_improvement_percent": 0.7031156012353827
+    },
+    "330000_to_360000": {
+      "from_step": 330000,
+      "to_step": 360000,
+      "from_loss": 0.19301917991857645,
+      "to_loss": 0.19270332574169102,
+      "absolute_improvement": 0.0003158541768854273,
+      "relative_improvement_percent": 0.16363875186842455
+    },
+    "350000_to_360000": {
+      "from_step": 350000,
+      "to_step": 360000,
+      "from_loss": 0.192711790287737,
+      "to_loss": 0.19270332574169102,
+      "absolute_improvement": 8.464546045972021e-06,
+      "relative_improvement_percent": 0.00439233429015093
+    }
+  },
+  "logged_learning_rates": {
+    "50100": 9.788419894745355e-05,
+    "300000": 7.865622939955873e-06,
+    "330000": 2.1555218929481756e-06,
+    "350000": 3.1404466870932897e-07,
+    "360000": 1.0875592292952651e-08,
+    "362200": 1.5049916268772277e-11
+  },
+  "train_smoothing": "Trailing arithmetic mean of 20 logged values (~2000 steps); resets at resume",
+  "train_val_comparison_note": "Train averages optimization minibatches with dropout; validation uses the fixed full split in eval mode. These are not matched-dataset loss measurements.",
+  "interpretation": "The final portion is nearly flat under the decayed learning rate. There is no sustained validation-loss rise. This does not establish an optimum under a different training schedule."
+}

@@ -1,0 +1,11 @@
+{
+  "prediction_column": "generated_code",
+  "reference_column": "code",
+  "timeout_seconds": 2,
+  "workers": 4,
+  "memory_limit_mb": 256,
+  "max_code_bytes": 65536,
+  "relative_tolerance": 1e-06,
+  "absolute_tolerance": 1e-06,
+  "output_dir": "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage4_decoding/confirmation/evaluation"
+}

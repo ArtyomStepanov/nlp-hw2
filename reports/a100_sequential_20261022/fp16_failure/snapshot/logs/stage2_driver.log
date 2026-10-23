@@ -1,0 +1,15 @@
+repeat4m training: pid=82031; log=/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage2/logs/repeat4m_training.log
+Traceback (most recent call last):
+  File "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage2_code/tools/run_a100_stage2.py", line 443, in <module>
+    main()
+  File "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage2_code/tools/run_a100_stage2.py", line 439, in main
+    print(json.dumps(run_stage2(**vars(parser.parse_args())), indent=2))
+  File "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage2_code/tools/run_a100_stage2.py", line 378, in run_stage2
+    result = ensure_phase(directory, output/'verified'/f'{variant}_{phase}.json',
+  File "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage2_code/tools/run_a100_stage2.py", line 270, in ensure_phase
+    launch()
+  File "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage2_code/tools/run_a100_stage2.py", line 380, in <lambda>
+    launch=lambda: _invoke(command, log=output/'logs'/f'{variant}_{phase}.log',
+  File "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage2_code/tools/run_a100_stage2.py", line 324, in _invoke
+    raise RuntimeError(f'{state["variant"]} {state["phase"]} exited {code}; see {log}')
+RuntimeError: repeat4m training exited 1; see /home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage2/logs/repeat4m_training.log

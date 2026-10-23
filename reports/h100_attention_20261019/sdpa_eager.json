@@ -1,0 +1,37 @@
+{
+  "backend": "sdpa",
+  "implementation": "sdpa",
+  "compile": false,
+  "checkpoint_step": 7500,
+  "microbatch": 128,
+  "accumulation": 2,
+  "global_batch": 256,
+  "examples_per_repeat": 15104,
+  "warmup_seconds": 2.0914895641617477,
+  "median_examples_per_second": 1140.456832945334,
+  "peak_allocated_gib": 37.41136646270752,
+  "peak_reserved_gib": 43.3046875,
+  "finite": true,
+  "runs": [
+    {
+      "seconds": 13.247818530071527,
+      "examples_per_second": 1140.1122355137252,
+      "last_loss": 0.356248140335083,
+      "last_gradient_norm": 0.4129701256752014
+    },
+    {
+      "seconds": 13.217556346207857,
+      "examples_per_second": 1142.7225732488266,
+      "last_loss": 0.25372812151908875,
+      "last_gradient_norm": 0.36070021986961365
+    },
+    {
+      "seconds": 13.243815604131669,
+      "examples_per_second": 1140.456832945334,
+      "last_loss": 0.19125984609127045,
+      "last_gradient_norm": 0.3167358934879303
+    }
+  ],
+  "torch": "2.9.1+cu128",
+  "gpu": "NVIDIA H100 PCIe"
+}

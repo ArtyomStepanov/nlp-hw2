@@ -1,0 +1,30 @@
+{
+  "checkpoint": "/home/artyom-step/workspace/nlp-hw2/artifacts/experiments/transformer_002_8x8_d768/checkpoint-50000",
+  "dataset": "/home/artyom-step/workspace/nlp-hw2/artifacts/datasets/tinysms_98_1_1_seed42/test",
+  "heldout_size": 118380,
+  "heldout_fingerprint": "104b916db8a72ffa",
+  "split_sizes": {
+    "train": 0.98,
+    "val": 0.01,
+    "test": 0.01
+  },
+  "split_seed": 42,
+  "sample_seed": 42,
+  "sample_size": 10000,
+  "sample_sha256": "04d25083e90470612722e1e816b90efba62a8b9a1c893919a8cf29d122c0549a",
+  "sample_fingerprint": "9c811eacdcb92362",
+  "selection": "saved test.add_column(test_row_index).shuffle(seed=42).select(range(10000))",
+  "filtering": "none; source truncation recorded; references are not truncated",
+  "official_test_used": false,
+  "exported_model_equals_best_checkpoint": true,
+  "checkpoint_tensors_compared": 344,
+  "best_eval_token_loss": 0.28246986758973974,
+  "training_stop_step": 75000,
+  "started_at_utc": "2026-10-13T12:09:25.754714+00:00",
+  "torch_version": "2.9.1+cu128",
+  "gpu_names": [
+    "NVIDIA A100 80GB PCIe",
+    "NVIDIA A100 80GB PCIe"
+  ],
+  "timing_note": "Two modes run concurrently on separate A100s; not a T4 speed benchmark."
+}

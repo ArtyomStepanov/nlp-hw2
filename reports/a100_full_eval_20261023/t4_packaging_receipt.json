@@ -1,0 +1,15 @@
+{
+  "status": "complete",
+  "created_at": "2026-10-23T13:57:27.864138+00:00",
+  "archive": "/Users/artyom-step/nlp-hw2/artifacts/a100_full_eval_20261023/a100_full_best180000_t4.zip",
+  "bytes": 978377144,
+  "sha256": "9845b2ad033482ad113dfc02592bbf72963520e4cf0c8c83403cd3ff144260da",
+  "compression": "ZIP_STORED",
+  "bundle_manifest_sha256": "06916a34eb73d999937de3a9e0c9662636b521b4a4513c7bcc5e12a747dd2ab7",
+  "files": 20,
+  "verify_only": "passed; no model weights loaded locally",
+  "model_parameters": 244391936,
+  "checkpoint_step": 180000,
+  "test_rows": 1919,
+  "run": "python /content/a100_full_best180000_t4/benchmark_full_t4.py --batch-size 128 --output-dir /content/a100_full_t4_batch128"
+}

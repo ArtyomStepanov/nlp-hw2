@@ -1,0 +1,5 @@
+[2026-10-13T14:58:21+00:00] beam4: generating 10000 answers on cuda:1, batch=64
+Creating json from Arrow format:   0%|          | 0/10 [00:00<?, ?ba/s]Creating json from Arrow format: 100%|██████████| 10/10 [00:00<00:00, 110.43ba/s]
+[2026-10-13T15:06:17+00:00] beam4: generation complete; evaluating solve()
+Creating json from Arrow format:   0%|          | 0/10 [00:00<?, ?ba/s]Creating json from Arrow format:  90%|█████████ | 9/10 [00:00<00:00, 87.48ba/s]Creating json from Arrow format: 100%|██████████| 10/10 [00:00<00:00, 88.08ba/s]
+[2026-10-13T15:07:24+00:00] beam4: pass@1=0.696863, passed=6931/9946

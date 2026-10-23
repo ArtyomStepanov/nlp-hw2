@@ -1,0 +1,23 @@
+{
+  "architecture": "bart",
+  "global_step": 3907,
+  "metrics": {
+    "eval_loss": 0.3758919835090637,
+    "eval_token_loss": 0.3942929829230529,
+    "eval_target_tokens": 1344127,
+    "eval_runtime": 14.199,
+    "eval_samples_per_second": 1408.548,
+    "eval_steps_per_second": 11.057,
+    "epoch": 1.0
+  },
+  "wall_seconds": 1192.586348284036,
+  "precision": "fp16",
+  "world_size": 1,
+  "effective_batch": 256,
+  "parameters": 244391936,
+  "finished_at": "2026-10-22T15:44:11.621332+00:00",
+  "torch": "2.9.1+cu128",
+  "transformers": "5.10.2",
+  "gpu": "NVIDIA A100 80GB PCIe",
+  "peak_allocated_gib": 32.54464912414551
+}

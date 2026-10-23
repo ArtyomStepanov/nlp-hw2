@@ -1,0 +1,191 @@
+{
+  "schema": 1,
+  "stage": 2,
+  "status": "complete",
+  "architecture": "bart",
+  "request_sha256": "43fb0a3d0e076466f76b4385c459e1f3bdcd4e2ea4beda0fd4f3dff2db94603c",
+  "models": {
+    "repeat4m": {
+      "num_examples": 20000,
+      "num_evaluated": 19886,
+      "num_passed": 13445,
+      "num_bad_code": 113,
+      "pass@1": 0.6761037916121895,
+      "bad_code_rate": 0.00565,
+      "wrong_answer_rate": 0.3182641054007845,
+      "reference_error_rate": 0.0057,
+      "evaluation_coverage": 0.9943,
+      "evaluation_seconds": 243.82722301781178,
+      "status_counts": {
+        "passed": 13445,
+        "wrong_answer": 6329,
+        "runtime_error": 102,
+        "ok": 113,
+        "invalid_output": 5,
+        "syntax_error": 5,
+        "timeout": 1
+      },
+      "reference_status_counts": {
+        "ok": 19886,
+        "unsupported_code": 27,
+        "runtime_error": 76,
+        "invalid_output": 11
+      },
+      "prediction_column": "generated_code",
+      "reference_column": "code",
+      "comparison": "reference_solve",
+      "architecture": "bart",
+      "num_beams": 4,
+      "max_new_tokens": 256,
+      "length_penalty": 1.0,
+      "generation_seconds": 469.17812605574727,
+      "validation_sha256": "282001d478bffb2d13ab2ca41e8232a0c99c3623f898dd7077128c266172c406",
+      "evaluation_split": "validation",
+      "num_reference_errors": 114,
+      "num_hit_token_limit": 14,
+      "passed_fraction_of_all_sampled": 0.67225,
+      "finished_at": "2026-10-22T20:16:51.302274+00:00"
+    },
+    "distinct4m": {
+      "num_examples": 20000,
+      "num_evaluated": 19886,
+      "num_passed": 13657,
+      "num_bad_code": 70,
+      "pass@1": 0.6867645579804887,
+      "bad_code_rate": 0.0035,
+      "wrong_answer_rate": 0.3097153776526199,
+      "reference_error_rate": 0.0057,
+      "evaluation_coverage": 0.9943,
+      "evaluation_seconds": 248.60350800305605,
+      "status_counts": {
+        "passed": 13657,
+        "wrong_answer": 6159,
+        "runtime_error": 64,
+        "ok": 114,
+        "invalid_output": 3,
+        "syntax_error": 3
+      },
+      "reference_status_counts": {
+        "ok": 19886,
+        "unsupported_code": 27,
+        "runtime_error": 76,
+        "invalid_output": 11
+      },
+      "prediction_column": "generated_code",
+      "reference_column": "code",
+      "comparison": "reference_solve",
+      "architecture": "bart",
+      "num_beams": 4,
+      "max_new_tokens": 256,
+      "length_penalty": 1.0,
+      "generation_seconds": 469.0115721002221,
+      "validation_sha256": "282001d478bffb2d13ab2ca41e8232a0c99c3623f898dd7077128c266172c406",
+      "evaluation_split": "validation",
+      "num_reference_errors": 114,
+      "num_hit_token_limit": 15,
+      "passed_fraction_of_all_sampled": 0.68285,
+      "finished_at": "2026-10-22T21:47:32.055096+00:00"
+    }
+  },
+  "ranking": [
+    "distinct4m",
+    "repeat4m"
+  ],
+  "validation_sha256": "282001d478bffb2d13ab2ca41e8232a0c99c3623f898dd7077128c266172c406",
+  "num_evaluated": 19886,
+  "optimizer_updates_per_epoch": 15625,
+  "planned_step_attempts": 15625,
+  "epochs": 1,
+  "optimizer_updates_per_epoch_interpretation": "Scheduled Trainer step attempts; successful weight updates can be fewer on AMP overflow.",
+  "amp_step_semantics": "Native fused AdamW can skip a weight update while Accelerate reports step_was_skipped=False; the native Trainer/scheduler behavior is unchanged. AMP diagnostics count overflows in each current process session.",
+  "recovery": {
+    "failed_stage2_dir": "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage2",
+    "checkpoint": "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage2/trials/repeat4m/checkpoint-14000",
+    "checkpoint_step": 14000,
+    "remaining_step_attempts": 1625,
+    "planned_step_attempts": 15625,
+    "failed_queue_state_sha256": "27f684cce8ae306813b3ff25b25de18d152adf83f23ef57aedb1f3d62ab71539",
+    "failed_request_sha256": "d5ad30e558ffae4a2d88c02a550efe902023c6d94d3d1fa7b450552abaaf76a2",
+    "frozen_manifest_sha256": "62cc7fd5c8befac98d5f0500417689b88b01fb9c08f634ab0021d82f7a1a3b1e",
+    "source_patch": {
+      "path": "kaggle_experiments.py",
+      "before_sha256": "45b193b4350a3f8ce3d2eaa3c48c45a874711b4ab73be505bcf8cbb19bcef6a7",
+      "after_sha256": "b6d71da0e67bafac9c2fadf9b4db27064a10ac2da4d30a14e4f5a6b385f44734"
+    },
+    "checkpoint_files": [
+      {
+        "path": "config.json",
+        "bytes": 1011,
+        "sha256": "30d9ba2a3ebdf1fa9e440aef154412b149d6fd9172e36940abd2e52839bf1c85"
+      },
+      {
+        "path": "generation_config.json",
+        "bytes": 257,
+        "sha256": "6d5bd370a97d994f5a7112ca7e3e42c132ead2c3219959665690cda7743b83d3"
+      },
+      {
+        "path": "model.safetensors",
+        "bytes": 977639840,
+        "sha256": "6d859afa87b4491b39be29f231693205a318a451fd5b8133f6a5b6ab89e36705"
+      },
+      {
+        "path": "optimizer.pt",
+        "bytes": 1955427560,
+        "sha256": "c78b99bc85b85b61bbeffd920e8dff7c8963641cab6cf4872cb21776d8a1a1f5"
+      },
+      {
+        "path": "rng_state.pth",
+        "bytes": 14645,
+        "sha256": "05596b8743271ea9450f618e4fe2d778450f6c039478d1bc21fabb7acde25a1b"
+      },
+      {
+        "path": "run_manifest.json",
+        "bytes": 1225,
+        "sha256": "62cc7fd5c8befac98d5f0500417689b88b01fb9c08f634ab0021d82f7a1a3b1e"
+      },
+      {
+        "path": "scaler.pt",
+        "bytes": 1383,
+        "sha256": "23c844bc341ec75b5cad5ad0be21d7c0eeee0623194498c334d6946af672123e"
+      },
+      {
+        "path": "scheduler.pt",
+        "bytes": 1465,
+        "sha256": "46145cb6a71d370aa691dd5cd7efec9bcd45343764922d6ac1eabed1a70a738e"
+      },
+      {
+        "path": "tokenizer.json",
+        "bytes": 534007,
+        "sha256": "abd75c8655b948f612ebbf065a12269613269a4755cd0a698b0bf7a5bc1e9704"
+      },
+      {
+        "path": "tokenizer_config.json",
+        "bytes": 304,
+        "sha256": "5128280f8f8798b74a5032fca3c6a6f50b80835fdb46afe012280ac314fde389"
+      },
+      {
+        "path": "trainer_state.json",
+        "bytes": 29497,
+        "sha256": "823b5522999285194bf2bfb5fdcb40243e99fd795ad6cacaa2619fa9d74ca7cc"
+      },
+      {
+        "path": "training_args.bin",
+        "bytes": 5457,
+        "sha256": "8debb621c48c60c90dc084d67e23b02839e91b223efe3b0e5691f877a2388f33"
+      }
+    ]
+  },
+  "amp_diagnostics": {
+    "repeat4m": {
+      "overflow_count": 1,
+      "final_loss_scale": 4194304.0,
+      "scope": "current_process_session"
+    },
+    "distinct4m": {
+      "overflow_count": 2,
+      "final_loss_scale": 2097152.0,
+      "scope": "current_process_session"
+    }
+  },
+  "finished_at": "2026-10-22T21:47:33.169508+00:00"
+}

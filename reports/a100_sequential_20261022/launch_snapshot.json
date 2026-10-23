@@ -1,0 +1,12 @@
+{
+  "status": "running",
+  "stage": 1,
+  "driver_pid": 679,
+  "started_at": "2026-10-22T15:23:33.321586+00:00",
+  "completed": [],
+  "architecture": "bart",
+  "phase": "training",
+  "updated_at": "2026-10-22T15:24:10.091094+00:00",
+  "child_pid": 794,
+  "log": "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_sequential_20261022/stage1/logs/bart_training.log"
+}

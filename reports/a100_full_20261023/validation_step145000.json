@@ -1,0 +1,31 @@
+{
+  "status": "finite",
+  "evaluation": {
+    "eval_loss": 0.19232286512851715,
+    "eval_token_loss": 0.1947816772473697,
+    "eval_target_tokens": 7970835,
+    "eval_runtime": 91.4393,
+    "eval_samples_per_second": 1293.777,
+    "eval_steps_per_second": 10.116,
+    "epoch": 3.2018747722781025,
+    "step": 145000,
+    "amp_overflow_count": 52,
+    "amp_loss_scale": 524288
+  },
+  "saved_state": {
+    "global_step": 145000,
+    "epoch": 3.2018747722781025,
+    "best_metric": 0.1947816772473697,
+    "best_model_checkpoint": "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_full_20261023/training/trial/checkpoint-145000"
+  },
+  "early_stopping": {
+    "args": {
+      "early_stopping_patience": 5,
+      "early_stopping_threshold": 0
+    },
+    "attributes": {
+      "early_stopping_patience_counter": 0
+    }
+  },
+  "all_logged_losses_finite": true
+}
