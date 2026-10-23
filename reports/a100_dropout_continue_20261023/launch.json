@@ -1,5 +1,5 @@
 {
-  "status": "training",
+  "status": "stopped_by_user",
   "pipeline_pid": 268796,
   "tmux": "nlp-a100-dropout-20261023",
   "remote_root": "/home/artyom-step/workspace/nlp-hw2/artifacts/a100_dropout_continue_20261023",
@@ -20,5 +20,9 @@
   "planned_step_attempts": 90572,
   "last_logged_train_loss": 0.2049,
   "git_commit": "db88fee1d7d2ca2e957861ada5fb99f9777e2ce0",
-  "git_branch": "codex/a100-final-backup-20261023"
+  "git_branch": "codex/a100-final-backup-20261023",
+  "stopped_at": "2026-10-23T16:16:41.210070+00:00",
+  "confirmed_final_step": 13632,
+  "automation_status": "deleted",
+  "selected_model": "original_full_best180000"
 }

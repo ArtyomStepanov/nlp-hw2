@@ -1,0 +1,29 @@
+{
+  "checked_at": "2026-10-23T16:17:17.031994+00:00",
+  "driver_pid": 268935,
+  "driver_alive": false,
+  "pipeline_pid": 268796,
+  "pipeline_alive": false,
+  "dropout_pipeline.phase": "failed",
+  "dropout_pipeline.exitcode": "143",
+  "gpu_compute_process_count": 0,
+  "last_progress": [
+    [
+      "13632",
+      "1:07:45<5:10:13,  4.13it/s"
+    ]
+  ],
+  "log_tail": [
+    " 15%|\u2588\u258c        | 13629/90572 [1:07:45<5:26:22,  3.93it/s]",
+    " 15%|\u2588\u258c        | 13630/90572 [1:07:45<5:24:19,  3.95it/s]",
+    " 15%|\u2588\u258c        | 13631/90572 [1:07:45<5:18:26,  4.03it/s]",
+    " 15%|\u2588\u258c        | 13632/90572 [1:07:45<5:10:13,  4.13it/s]"
+  ],
+  "status": "stopped_by_user",
+  "not_training_failure": true,
+  "last_saved_checkpoint": 10000,
+  "selected_model": "original_full_best180000",
+  "source_checkpoint_untouched": true,
+  "backup_verified_files": 751,
+  "ready_for_user_machine_shutdown": true
+}

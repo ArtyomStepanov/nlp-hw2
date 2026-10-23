@@ -4,8 +4,8 @@
     "bytes": 7
   },
   "dropout_pipeline.phase": {
-    "sha256": "3f401d92c688c4c4370769f029d97854129f1bd4e22d78643ebf527bcfd877a8",
-    "bytes": 9
+    "bytes": 7,
+    "sha256": "6da5b18878e110928643ebcc38dbb7552cf3a296eea56493e23edc2b93eecff8"
   },
   "dropout_driver.pid": {
     "sha256": "fab571fd7fbac096513a74e10cb9bfdc6a42fd346e29f1ebac274a7eb7528b49",
@@ -44,8 +44,8 @@
     "sha256": "5922c9fb935415ec4a2e333d6daf83bb8b5a9e4f67b1cb2d097340a1ed9b619c"
   },
   "training/trial/log_history.json": {
-    "bytes": 19046,
-    "sha256": "d5b9c8f963f10abb6e3305274544efe365cd704ea3a0f90bc6c01d1b68f12d7b"
+    "bytes": 27564,
+    "sha256": "790d38b500b5a2b7d70dcaf7de33d3a81cf84f3c640895bcf17548fad8625f3a"
   },
   "training/trial/checkpoint-5000/trainer_state.json": {
     "bytes": 10980,
@@ -86,5 +86,17 @@
   "training/trial/checkpoint-10000/amp_scale_check.json": {
     "bytes": 322,
     "sha256": "2c9a6e1ef1489f8e65f9baeec1d02888aac1e1730b5699996f1c80bf5c2e282e"
+  },
+  "user_cancel_request.json": {
+    "bytes": 664,
+    "sha256": "4be5259fafb707edbba48ad0d295efb1cfc283fe83f34e2e4975c87058d81e2a"
+  },
+  "user_cancel_complete.json": {
+    "bytes": 933,
+    "sha256": "cdf4596ccc4450ca484c85fcf3c20f6e63abdbe9411e823f2f1f1d6087036ad7"
+  },
+  "dropout_pipeline.exitcode": {
+    "bytes": 4,
+    "sha256": "9d9b18720961e9b4689fd763b85e7b6f36160ccd3a8a1c9ddc5103bb0f66c396"
   }
 }

@@ -1,0 +1,8 @@
+{
+  "status": "cancellation_requested_by_user",
+  "requested_at": "2026-10-23T16:16:41.210070+00:00",
+  "driver_pid": 268935,
+  "verified_command": "python3 tools/run_a100_dropout.py --bundle-root /home/artyom-step/workspace/nlp-hw2/artifacts/a100_full_20261023/bundle --parent-checkpoint /home/artyom-step/workspace/nlp-hw2/artifacts/a100_full_20261023/training/trial/checkpoint-180000 --output-dir /home/artyom-step/workspace/nlp-hw2/artifacts/a100_dropout_continue_20261023/training ",
+  "signal": "SIGTERM",
+  "reason": "User cancelled further experiments and requested safe A100 shutdown; original verified best model and complete selected backup retained."
+}
