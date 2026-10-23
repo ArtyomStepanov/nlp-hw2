@@ -1,22 +1,23 @@
 {
-  "checked_at": "2026-10-23T15:09:31.347435+00:00",
+  "checked_at": "2026-10-23T15:12:11.195385+00:00",
   "phase": "training",
-  "step": 105,
+  "step": 669,
   "planned_step_attempts": 90572,
   "pipeline_pid": 268796,
   "driver_pid": 268935,
   "driver_alive": true,
   "initial_eval_token_loss": 0.19102141552704124,
-  "free_gib": 41.14878463745117,
+  "free_gib": 41.148738861083984,
   "reported_events": [
     "launched"
   ],
   "previous": {
-    "checked_at": "2026-10-23T15:08:13.079616+00:00",
-    "phase": "training_sampler_preparation",
-    "step": 0
+    "checked_at": "2026-10-23T15:09:31.347435+00:00",
+    "phase": "training",
+    "step": 105
   },
-  "log_bytes": 38949,
-  "log_mtime": 1792768171.1185162,
-  "last_train_loss": 0.2131
+  "log_bytes": 70477,
+  "log_mtime": 1792768331.0378437,
+  "last_train_loss": 0.2049,
+  "gpu_utilization": 97
 }

@@ -1,0 +1,17 @@
+{
+  "status": "verified_published",
+  "branch": "codex/a100-final-backup-20261023",
+  "remote": "git@github.com:ArtyomStepanov/nlp-hw2.git",
+  "published_commit": "db88fee1d7d2ca2e957861ada5fb99f9777e2ce0",
+  "remote_ref_sha_verified": true,
+  "files_in_commit": 691,
+  "test_suite": {
+    "passed": 306,
+    "distributed_included": true
+  },
+  "large_weights_raw_data_private_screenshot_included": false,
+  "backup_large_files_status": "still_in_progress",
+  "continuation_status": "running",
+  "continuation_step_observed": 669,
+  "continuation_checked_at": "2026-10-23T15:12:11.195385+00:00"
+}

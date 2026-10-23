@@ -25,7 +25,7 @@
 - [x] Real tinyCPU integration RED→GREEN: exact parent initialization, effective dropout and unchanged eval outputs before updates; fresh lowerLR schedule actually updates; parent files unchanged; earlystop/baseline fallback and full optimizer/scheduler/RNG checkpoints; reject wrong parent/tokenizer/bundle/overwrite; default runner regression.
 - [x] Implement strict driver/CLI with frozen request and provenance, preflight mode using a separate disposable output (never production run), no auto-restarts.
 - [x] Independently review code/tests; verify pinned remote source hashes and finite GPUpreflight/VRAM headroom, then launch one full continuation and confirm advancing steps.
-- [ ] Push reviewed source/reports to requested Git backup branch. Update README with the actual experiment start and optimizer-reset distinction; do not claim public/private improvement in advance.
+- [x] Push reviewed source/reports to requested Git backup branch. Update README with the actual experiment start and optimizer-reset distinction; do not claim public/private improvement in advance.
 
 ## Execution ledger
 
@@ -35,3 +35,5 @@
 - Snapshot27files SHA51251efdbc42956db169777e26a903a6580192641c71b1458126fea0026f24ff uploaded and rehashed remotely. Single tmux nlp-a100-dropout-20261023 dispatched; pipeline268796. GPU preflight2/2finite, full start awaiting saved completion gate.
 
 - Main driver268935 started2026-10-23T15:04:24UTC; baseline full tokenloss0.19102141552704124, GPUpreflight complete. At15:09:31UTC training105/90572, finite trainloss0.2131; parent unchanged. Quiet monitor a100-dropout created for this active run.
+
+- Code/tests/reports published on codex/a100-final-backup-20261023 at db88fee1d7d2ca2e957861ada5fb99f9777e2ce0; GitHub ls-remote matched. Large model backup remains autonomous and incomplete; no shutdown/cleanup.
