@@ -1,0 +1,12 @@
+{
+  "checked_at": "2026-10-23T15:39:27.425207+00:00",
+  "checkpoint_step": 5000,
+  "scaler": {
+    "scale": 262144.0,
+    "growth_factor": 2.0,
+    "backoff_factor": 0.5,
+    "growth_interval": 2000,
+    "_growth_tracker": 1000
+  },
+  "source_sha256": "82ad8990572ad11a824b7db276c8af49c179ca7e7724b4e6906cd0ae480a80a8"
+}

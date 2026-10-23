@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "verified_at": "2026-10-23T16:01:03.819181+00:00",
+  "files_checked": 751,
+  "unique_inodes_hashed": 749,
+  "seconds": 6.667817625013413,
+  "failures": [],
+  "backup_complete_sha256": "d70b0d6562f80a9d04e81b126139aee54cd950517e2888caa8d1c38dbd156b9b",
+  "scope": "Independent root full-byte SHA check of every selected remote/raw/local-source file against saved source manifests. No GPU use or remote mutation.",
+  "safe_to_stop_a100": false,
+  "derived_arrow_caches_excluded": true
+}

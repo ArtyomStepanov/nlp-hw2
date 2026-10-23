@@ -1,0 +1,19 @@
+{
+  "captured_at": "2026-10-23T14:39:44Z",
+  "python": "3.10.12 (main, Aug 15 2025, 14:32:43) [GCC 11.4.0]",
+  "executable": "/usr/bin/python3",
+  "platform": "Linux-5.15.179-15.mofed2407ya-x86_64-with-glibc2.35",
+  "packages": {
+    "torch": "2.9.1",
+    "transformers": "5.10.2",
+    "accelerate": "1.15.0",
+    "datasets": "4.6.0",
+    "tokenizers": "0.22.2",
+    "huggingface-hub": "1.18.0",
+    "numpy": "2.2.6",
+    "pyarrow": "25.0.1",
+    "safetensors": "0.8.0",
+    "matplotlib": "3.10.6",
+    "packaging": "26.2"
+  }
+}

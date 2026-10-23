@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "status": "verified",
+  "verified_at": "2026-10-23T16:00:13.999524+00:00",
+  "restored_root": "/Users/artyom-step/nlp-hw2/artifacts/a100_shutdown_backup_20261023/restored",
+  "repository_revision": "db88fee1d7d2ca2e957861ada5fb99f9777e2ce0",
+  "remote_files_verified": 653,
+  "raw_files_verified": 61,
+  "local_source_files_verified": 37,
+  "total_files_verified": 751,
+  "unique_hashed_inodes": 749,
+  "selected_remote_logical_bytes": 12530277778,
+  "raw_logical_bytes": 1594482253,
+  "restored_unique_inode_bytes": 13146952252,
+  "full_checkpoints": [
+    {
+      "path": "artifacts/a100_full_20261023/training/trial/checkpoint-180000",
+      "global_step": 180000,
+      "all_required_exact_state_files_verified": true
+    },
+    {
+      "path": "artifacts/a100_full_20261023/training/trial/checkpoint-181144",
+      "global_step": 181144,
+      "all_required_exact_state_files_verified": true
+    }
+  ],
+  "final_matches_best": true,
+  "latest_distinct_from_best": true,
+  "missing_or_corrupt_files": 0,
+  "scope": "Every selected source byte verified using fresh remote source SHA256 and local SHA256. Raw inputs and source snapshot also verified. No model tensor loading or GPU use.",
+  "derived_arrow_caches_excluded": true,
+  "restoration_limit": "Derived caches must be rebuilt with recorded semantics and reviewed provenance before strict pinned-manifest training continuation.",
+  "remote_source_final_check": {
+    "schema": 1,
+    "status": "unchanged",
+    "checked_at": "2026-10-23T16:00:07Z",
+    "files_checked": 653,
+    "changed": [],
+    "verification": "Source size/mtime unchanged after fresh initial SHA256; each transferred local file separately verified by full SHA256",
+    "gpu": {
+      "init_status": 0,
+      "devices": [
+        {
+          "index": 0,
+          "utilization_percent": 97,
+          "compute_process_count": 1,
+          "count_query_status": 7
+        }
+      ]
+    },
+    "concurrent_new_training_reported_pid": 268935,
+    "concurrent_new_training_tmux": "nlp-a100-dropout-20261023",
+    "remote_stop_authorized": false
+  },
+  "remote_stop_command_issued": false,
+  "safe_to_stop_a100": false,
+  "shutdown_limit": "A separately authorized dropout continuation is running; its new outputs are outside this immutable-snapshot backup. Do not stop that training because this backup completes."
+}

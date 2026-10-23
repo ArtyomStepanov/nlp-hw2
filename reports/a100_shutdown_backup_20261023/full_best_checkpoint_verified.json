@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "status": "verified",
+  "checkpoint_step": 180000,
+  "files": [
+    {
+      "path": "artifacts/a100_full_20261023/training/trial/checkpoint-180000/config.json",
+      "bytes": 1011,
+      "sha256": "30d9ba2a3ebdf1fa9e440aef154412b149d6fd9172e36940abd2e52839bf1c85"
+    },
+    {
+      "path": "artifacts/a100_full_20261023/training/trial/checkpoint-180000/generation_config.json",
+      "bytes": 257,
+      "sha256": "6d5bd370a97d994f5a7112ca7e3e42c132ead2c3219959665690cda7743b83d3"
+    },
+    {
+      "path": "artifacts/a100_full_20261023/training/trial/checkpoint-180000/model.safetensors",
+      "bytes": 977639840,
+      "sha256": "2059268173416c77cd8c901c791eb86e7cbcea0ede756b2bb830ec23638b8165"
+    },
+    {
+      "path": "artifacts/a100_full_20261023/training/trial/checkpoint-180000/optimizer.pt",
+      "bytes": 1955427560,
+      "sha256": "473f08359a314ca0d508594a6fe22c024b386b896c9c982082a897451270eef7"
+    },
+    {
+      "path": "artifacts/a100_full_20261023/training/trial/checkpoint-180000/rng_state.pth",
+      "bytes": 14645,
+      "sha256": "b15fbd3124ffce07ab823e1bb21d132f1bd51e0a186132247e934b05f19877f8"
+    },
+    {
+      "path": "artifacts/a100_full_20261023/training/trial/checkpoint-180000/run_manifest.json",
+      "bytes": 1263,
+      "sha256": "21b47d84ea27dca35638048ff62cf3297409df893149260d3fac4a8419543c06"
+    },
+    {
+      "path": "artifacts/a100_full_20261023/training/trial/checkpoint-180000/scaler.pt",
+      "bytes": 1383,
+      "sha256": "931fb31849c12387662303a3f7b25314815e23e784eeb9aca374d6ca0054c154"
+    },
+    {
+      "path": "artifacts/a100_full_20261023/training/trial/checkpoint-180000/scheduler.pt",
+      "bytes": 1465,
+      "sha256": "59b219849375d573f858e9b340e33a3cf7e56c62c1a635313f58a59504780dd0"
+    },
+    {
+      "path": "artifacts/a100_full_20261023/training/trial/checkpoint-180000/tokenizer.json",
+      "bytes": 534007,
+      "sha256": "abd75c8655b948f612ebbf065a12269613269a4755cd0a698b0bf7a5bc1e9704"
+    },
+    {
+      "path": "artifacts/a100_full_20261023/training/trial/checkpoint-180000/tokenizer_config.json",
+      "bytes": 304,
+      "sha256": "5128280f8f8798b74a5032fca3c6a6f50b80835fdb46afe012280ac314fde389"
+    },
+    {
+      "path": "artifacts/a100_full_20261023/training/trial/checkpoint-180000/trainer_state.json",
+      "bytes": 466549,
+      "sha256": "5235f142f5cd17741dba816590d742926668b1530d7d61ad090529c5323b0b98"
+    },
+    {
+      "path": "artifacts/a100_full_20261023/training/trial/checkpoint-180000/training_args.bin",
+      "bytes": 5457,
+      "sha256": "3487031b3f72bcf20783595f6ba6ebaabc003091610f69503101fdf9506da1f3"
+    }
+  ],
+  "total_bytes": 2934093741,
+  "verified_at": "2026-10-23T15:26:13.695652+00:00",
+  "required_exact_state_preserved": [
+    "model.safetensors",
+    "optimizer.pt",
+    "scheduler.pt",
+    "scaler.pt",
+    "rng_state.pth",
+    "trainer_state.json",
+    "run_manifest.json"
+  ],
+  "source": "Fresh source SHA256 manifest and local full-byte SHA256 verification",
+  "new_training_still_running": true,
+  "remote_stop_authorized": false
+}

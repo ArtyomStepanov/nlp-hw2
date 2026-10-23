@@ -1,0 +1,6376 @@
+{
+  "schema": 1,
+  "selected": [
+    {
+      "path": "artifacts/a100_full_20261023/bundle/bundle_manifest.json",
+      "bytes": 5250,
+      "dev": 64514,
+      "inode": 146228610,
+      "links": 1,
+      "mtime_ns": 1792707887125761586
+    },
+    {
+      "path": "artifacts/a100_full_20261023/bundle/data/dataset_dict.json",
+      "bytes": 45,
+      "dev": 64514,
+      "inode": 146228601,
+      "links": 1,
+      "mtime_ns": 1792707886851755856
+    },
+    {
+      "path": "artifacts/a100_full_20261023/bundle/data/train/dataset_info.json",
+      "bytes": 10913,
+      "dev": 64514,
+      "inode": 145907271,
+      "links": 2,
+      "mtime_ns": 1791881374394635101
+    },
+    {
+      "path": "artifacts/a100_full_20261023/bundle/data/train/state.json",
+      "bytes": 1309,
+      "dev": 64514,
+      "inode": 145907375,
+      "links": 2,
+      "mtime_ns": 1791881374393635080
+    },
+    {
+      "path": "artifacts/a100_full_20261023/bundle/data/val/dataset_info.json",
+      "bytes": 10913,
+      "dev": 64514,
+      "inode": 145907447,
+      "links": 2,
+      "mtime_ns": 1791881375207651937
+    },
+    {
+      "path": "artifacts/a100_full_20261023/bundle/data/val/state.json",
+      "bytes": 247,
+      "dev": 64514,
+      "inode": 145907454,
+      "links": 2,
+      "mtime_ns": 1791881375206651916
+    },
+    {
+      "path": "artifacts/a100_full_20261023/bundle/preparation.json",
+      "bytes": 199,
+      "dev": 64514,
+      "inode": 146228608,
+      "links": 1,
+      "mtime_ns": 1792707887023759453
+    },
+    {
+      "path": "artifacts/a100_full_20261023/bundle/selection/data_manifest.json",
+      "bytes": 15852,
+      "dev": 64514,
+      "inode": 146228607,
+      "links": 1,
+      "mtime_ns": 1792707887023759453
+    },
+    {
+      "path": "artifacts/a100_full_20261023/bundle/selection/train_indices.npy",
+      "bytes": 92744608,
+      "dev": 64514,
+      "inode": 146228604,
+      "links": 1,
+      "mtime_ns": 1792707886920757299
+    },
+    {
+      "path": "artifacts/a100_full_20261023/bundle/selection/val_indices.npy",
+      "bytes": 946544,
+      "dev": 64514,
+      "inode": 146228605,
+      "links": 1,
+      "mtime_ns": 1792707887021759411
+    },
+    {
+      "path": "artifacts/a100_full_20261023/bundle/tokenizer.json",
+      "bytes": 534007,
+      "dev": 64514,
+      "inode": 146228634,
+      "links": 2,
+      "mtime_ns": 1792682287890289359
+    },
+    {
+      "path": "artifacts/a100_full_20261023/code/_code_runner.py",
+      "bytes": 7840,
+      "dev": 64514,
+      "inode": 146228560,
+      "links": 1,
+      "mtime_ns": 1791828928255914449
+    },
+    {
+      "path": "artifacts/a100_full_20261023/code/evaluation.py",
+      "bytes": 10300,
+      "dev": 64514,
+      "inode": 146228558,
+      "links": 1,
+      "mtime_ns": 1791828938209349632
+    },
+    {
+      "path": "artifacts/a100_full_20261023/code/kaggle_experiments.py",
+      "bytes": 21197,
+      "dev": 64514,
+      "inode": 146228552,
+      "links": 1,
+      "mtime_ns": 1792707616009066104
+    },
+    {
+      "path": "artifacts/a100_full_20261023/code/models/__init__.py",
+      "bytes": 378,
+      "dev": 64514,
+      "inode": 146228573,
+      "links": 1,
+      "mtime_ns": 1792435965352836370
+    },
+    {
+      "path": "artifacts/a100_full_20261023/code/models/base.py",
+      "bytes": 3434,
+      "dev": 64514,
+      "inode": 146228576,
+      "links": 1,
+      "mtime_ns": 1791826586298947334
+    },
+    {
+      "path": "artifacts/a100_full_20261023/code/models/baseline.py",
+      "bytes": 5633,
+      "dev": 64514,
+      "inode": 146228572,
+      "links": 1,
+      "mtime_ns": 1792435965283174991
+    },
+    {
+      "path": "artifacts/a100_full_20261023/code/models/config.py",
+      "bytes": 2922,
+      "dev": 64514,
+      "inode": 146228570,
+      "links": 1,
+      "mtime_ns": 1792435965308151006
+    },
+    {
+      "path": "artifacts/a100_full_20261023/code/models/copy.py",
+      "bytes": 7559,
+      "dev": 64514,
+      "inode": 146228574,
+      "links": 1,
+      "mtime_ns": 1792435965330479860
+    },
+    {
+      "path": "artifacts/a100_full_20261023/code/models/t5.py",
+      "bytes": 1629,
+      "dev": 64514,
+      "inode": 146228571,
+      "links": 1,
+      "mtime_ns": 1792433638375421047
+    },
+    {
+      "path": "artifacts/a100_full_20261023/code/models/t5_attention.py",
+      "bytes": 3637,
+      "dev": 64514,
+      "inode": 146228575,
+      "links": 1,
+      "mtime_ns": 1792433638350672721
+    },
+    {
+      "path": "artifacts/a100_full_20261023/code/plotting.py",
+      "bytes": 7719,
+      "dev": 64514,
+      "inode": 146228556,
+      "links": 1,
+      "mtime_ns": 1791828938227356672
+    },
+    {
+      "path": "artifacts/a100_full_20261023/code/prepare_datasets.py",
+      "bytes": 9003,
+      "dev": 64514,
+      "inode": 146228561,
+      "links": 1,
+      "mtime_ns": 1791833867979559898
+    },
+    {
+      "path": "artifacts/a100_full_20261023/code/reference_identity.json",
+      "bytes": 1870362,
+      "dev": 64514,
+      "inode": 146228577,
+      "links": 1,
+      "mtime_ns": 1792682557281433343
+    },
+    {
+      "path": "artifacts/a100_full_20261023/code/tokenizer.py",
+      "bytes": 5134,
+      "dev": 64514,
+      "inode": 146228557,
+      "links": 1,
+      "mtime_ns": 1791817183240795135
+    },
+    {
+      "path": "artifacts/a100_full_20261023/code/tools/audit_a100_errors.py",
+      "bytes": 12623,
+      "dev": 64514,
+      "inode": 146228580,
+      "links": 1,
+      "mtime_ns": 1792686391359083652
+    },
+    {
+      "path": "artifacts/a100_full_20261023/code/tools/evaluate_fixed_bundle.py",
+      "bytes": 8382,
+      "dev": 64514,
+      "inode": 146228563,
+      "links": 1,
+      "mtime_ns": 1792682178398048400
+    },
+    {
+      "path": "artifacts/a100_full_20261023/code/tools/prepare_a100_diversity.py",
+      "bytes": 16368,
+      "dev": 64514,
+      "inode": 146228578,
+      "links": 1,
+      "mtime_ns": 1792683567999725580
+    },
+    {
+      "path": "artifacts/a100_full_20261023/code/tools/prepare_a100_full.py",
+      "bytes": 13624,
+      "dev": 64514,
+      "inode": 146228583,
+      "links": 1,
+      "mtime_ns": 1792707574053026676
+    },
+    {
+      "path": "artifacts/a100_full_20261023/code/tools/recover_a100_stage2.py",
+      "bytes": 17177,
+      "dev": 64514,
+      "inode": 146228582,
+      "links": 1,
+      "mtime_ns": 1792698596428444147
+    },
+    {
+      "path": "artifacts/a100_full_20261023/code/tools/run_a100_decoding.py",
+      "bytes": 11335,
+      "dev": 64514,
+      "inode": 146228581,
+      "links": 1,
+      "mtime_ns": 1792685958449085474
+    },
+    {
+      "path": "artifacts/a100_full_20261023/code/tools/run_a100_full.py",
+      "bytes": 13196,
+      "dev": 64514,
+      "inode": 146228584,
+      "links": 1,
+      "mtime_ns": 1792707634407938957
+    },
+    {
+      "path": "artifacts/a100_full_20261023/code/tools/run_a100_stage1.py",
+      "bytes": 5717,
+      "dev": 64514,
+      "inode": 146228568,
+      "links": 1,
+      "mtime_ns": 1792682556163963556
+    },
+    {
+      "path": "artifacts/a100_full_20261023/code/tools/run_a100_stage2.py",
+      "bytes": 24367,
+      "dev": 64514,
+      "inode": 146228579,
+      "links": 1,
+      "mtime_ns": 1792707616029561042
+    },
+    {
+      "path": "artifacts/a100_full_20261023/code/train_kaggle.py",
+      "bytes": 1856,
+      "dev": 64514,
+      "inode": 146228553,
+      "links": 1,
+      "mtime_ns": 1792682028237051010
+    },
+    {
+      "path": "artifacts/a100_full_20261023/code/training.py",
+      "bytes": 37589,
+      "dev": 64514,
+      "inode": 146228554,
+      "links": 1,
+      "mtime_ns": 1792436119809920072
+    },
+    {
+      "path": "artifacts/a100_full_20261023/code/utils.py",
+      "bytes": 1381,
+      "dev": 64514,
+      "inode": 146228555,
+      "links": 1,
+      "mtime_ns": 1792435820539279460
+    },
+    {
+      "path": "artifacts/a100_full_20261023/full_driver.pid",
+      "bytes": 7,
+      "dev": 64514,
+      "inode": 146228617,
+      "links": 1,
+      "mtime_ns": 1792708027385694189
+    },
+    {
+      "path": "artifacts/a100_full_20261023/full_pipeline.exitcode",
+      "bytes": 2,
+      "dev": 64514,
+      "inode": 146228627,
+      "links": 1,
+      "mtime_ns": 1792761999185856417
+    },
+    {
+      "path": "artifacts/a100_full_20261023/full_pipeline.phase",
+      "bytes": 9,
+      "dev": 64514,
+      "inode": 146228589,
+      "links": 1,
+      "mtime_ns": 1792761999185856417
+    },
+    {
+      "path": "artifacts/a100_full_20261023/full_pipeline.pid",
+      "bytes": 7,
+      "dev": 64514,
+      "inode": 146228587,
+      "links": 1,
+      "mtime_ns": 1792707867927360178
+    },
+    {
+      "path": "artifacts/a100_full_20261023/launch.json",
+      "bytes": 906,
+      "dev": 64514,
+      "inode": 146228550,
+      "links": 1,
+      "mtime_ns": 1792707867925360136
+    },
+    {
+      "path": "artifacts/a100_full_20261023/launch_full.sh",
+      "bytes": 2425,
+      "dev": 64514,
+      "inode": 146228548,
+      "links": 1,
+      "mtime_ns": 1792707853702062751
+    },
+    {
+      "path": "artifacts/a100_full_20261023/logs/bootstrap.log",
+      "bytes": 36,
+      "dev": 64514,
+      "inode": 146228585,
+      "links": 1,
+      "mtime_ns": 1792707870400411885
+    },
+    {
+      "path": "artifacts/a100_full_20261023/logs/data_prepare.log",
+      "bytes": 371,
+      "dev": 64514,
+      "inode": 146228590,
+      "links": 1,
+      "mtime_ns": 1792707887248764157
+    },
+    {
+      "path": "artifacts/a100_full_20261023/logs/full_training.log",
+      "bytes": 14558823,
+      "dev": 64514,
+      "inode": 146228618,
+      "links": 1,
+      "mtime_ns": 1792761997878828654
+    },
+    {
+      "path": "artifacts/a100_full_20261023/pipeline.lock",
+      "bytes": 0,
+      "dev": 64514,
+      "inode": 146228586,
+      "links": 1,
+      "mtime_ns": 1792707867926360157
+    },
+    {
+      "path": "artifacts/a100_full_20261023/source_manifest.json",
+      "bytes": 2835,
+      "dev": 64514,
+      "inode": 146228547,
+      "links": 1,
+      "mtime_ns": 1792707853620061036
+    },
+    {
+      "path": "artifacts/a100_full_20261023/source_snapshot.tar.gz",
+      "bytes": 187860,
+      "dev": 64514,
+      "inode": 146228546,
+      "links": 1,
+      "mtime_ns": 1792707853543059427
+    },
+    {
+      "path": "artifacts/a100_full_20261023/training/full_complete.json",
+      "bytes": 1481,
+      "dev": 64514,
+      "inode": 146228637,
+      "links": 1,
+      "mtime_ns": 1792761997877828633
+    },
+    {
+      "path": "artifacts/a100_full_20261023/training/queue.lock",
+      "bytes": 0,
+      "dev": 64514,
+      "inode": 146228623,
+      "links": 1,
+      "mtime_ns": 1792708027430695129
+    },
+    {
+      "path": "artifacts/a100_full_20261023/training/queue_state.json",
+      "bytes": 321,
+      "dev": 64514,
+      "inode": 146228639,
+      "links": 1,
+      "mtime_ns": 1792761997877828633
+    },
+    {
+      "path": "artifacts/a100_full_20261023/training/run_request.json",
+      "bytes": 2958,
+      "dev": 64514,
+      "inode": 146228626,
+      "links": 1,
+      "mtime_ns": 1792708039277942836
+    },
+    {
+      "path": "artifacts/a100_full_20261023/training/trial/checkpoint-180000/config.json",
+      "bytes": 1011,
+      "dev": 64514,
+      "inode": 146803791,
+      "links": 1,
+      "mtime_ns": 1792761487284981328
+    },
+    {
+      "path": "artifacts/a100_full_20261023/training/trial/checkpoint-180000/generation_config.json",
+      "bytes": 257,
+      "dev": 64514,
+      "inode": 146803792,
+      "links": 1,
+      "mtime_ns": 1792761487284981328
+    },
+    {
+      "path": "artifacts/a100_full_20261023/training/trial/checkpoint-180000/model.safetensors",
+      "bytes": 977639840,
+      "dev": 64514,
+      "inode": 146803793,
+      "links": 1,
+      "mtime_ns": 1792761488052997647
+    },
+    {
+      "path": "artifacts/a100_full_20261023/training/trial/checkpoint-180000/optimizer.pt",
+      "bytes": 1955427560,
+      "dev": 64514,
+      "inode": 146803797,
+      "links": 1,
+      "mtime_ns": 1792761489965038275
+    },
+    {
+      "path": "artifacts/a100_full_20261023/training/trial/checkpoint-180000/rng_state.pth",
+      "bytes": 14645,
+      "dev": 64514,
+      "inode": 146803802,
+      "links": 1,
+      "mtime_ns": 1792761489967038318
+    },
+    {
+      "path": "artifacts/a100_full_20261023/training/trial/checkpoint-180000/run_manifest.json",
+      "bytes": 1263,
+      "dev": 64514,
+      "inode": 146803804,
+      "links": 1,
+      "mtime_ns": 1792761490383047158
+    },
+    {
+      "path": "artifacts/a100_full_20261023/training/trial/checkpoint-180000/scaler.pt",
+      "bytes": 1383,
+      "dev": 64514,
+      "inode": 146803801,
+      "links": 1,
+      "mtime_ns": 1792761489966038297
+    },
+    {
+      "path": "artifacts/a100_full_20261023/training/trial/checkpoint-180000/scheduler.pt",
+      "bytes": 1465,
+      "dev": 64514,
+      "inode": 146803800,
+      "links": 1,
+      "mtime_ns": 1792761489966038297
+    },
+    {
+      "path": "artifacts/a100_full_20261023/training/trial/checkpoint-180000/tokenizer.json",
+      "bytes": 534007,
+      "dev": 64514,
+      "inode": 146803795,
+      "links": 1,
+      "mtime_ns": 1792761488083998306
+    },
+    {
+      "path": "artifacts/a100_full_20261023/training/trial/checkpoint-180000/tokenizer_config.json",
+      "bytes": 304,
+      "dev": 64514,
+      "inode": 146803794,
+      "links": 1,
+      "mtime_ns": 1792761488078998200
+    },
+    {
+      "path": "artifacts/a100_full_20261023/training/trial/checkpoint-180000/trainer_state.json",
+      "bytes": 466549,
+      "dev": 64514,
+      "inode": 146803803,
+      "links": 1,
+      "mtime_ns": 1792761490015039338
+    },
+    {
+      "path": "artifacts/a100_full_20261023/training/trial/checkpoint-180000/training_args.bin",
+      "bytes": 5457,
+      "dev": 64514,
+      "inode": 146803796,
+      "links": 1,
+      "mtime_ns": 1792761488084998327
+    },
+    {
+      "path": "artifacts/a100_full_20261023/training/trial/checkpoint-181144/config.json",
+      "bytes": 1011,
+      "dev": 64514,
+      "inode": 146803806,
+      "links": 1,
+      "mtime_ns": 1792761900178753366
+    },
+    {
+      "path": "artifacts/a100_full_20261023/training/trial/checkpoint-181144/generation_config.json",
+      "bytes": 257,
+      "dev": 64514,
+      "inode": 146803807,
+      "links": 1,
+      "mtime_ns": 1792761900178753366
+    },
+    {
+      "path": "artifacts/a100_full_20261023/training/trial/checkpoint-181144/model.safetensors",
+      "bytes": 977639840,
+      "dev": 64514,
+      "inode": 146803808,
+      "links": 1,
+      "mtime_ns": 1792761900941769574
+    },
+    {
+      "path": "artifacts/a100_full_20261023/training/trial/checkpoint-181144/optimizer.pt",
+      "bytes": 1955427560,
+      "dev": 64514,
+      "inode": 146803813,
+      "links": 1,
+      "mtime_ns": 1792761902875810657
+    },
+    {
+      "path": "artifacts/a100_full_20261023/training/trial/checkpoint-181144/rng_state.pth",
+      "bytes": 14645,
+      "dev": 64514,
+      "inode": 146803816,
+      "links": 1,
+      "mtime_ns": 1792761902876810678
+    },
+    {
+      "path": "artifacts/a100_full_20261023/training/trial/checkpoint-181144/run_manifest.json",
+      "bytes": 1263,
+      "dev": 64514,
+      "inode": 146803777,
+      "links": 1,
+      "mtime_ns": 1792761903275819154
+    },
+    {
+      "path": "artifacts/a100_full_20261023/training/trial/checkpoint-181144/scaler.pt",
+      "bytes": 1383,
+      "dev": 64514,
+      "inode": 146803815,
+      "links": 1,
+      "mtime_ns": 1792761902875810657
+    },
+    {
+      "path": "artifacts/a100_full_20261023/training/trial/checkpoint-181144/scheduler.pt",
+      "bytes": 1465,
+      "dev": 64514,
+      "inode": 146803814,
+      "links": 1,
+      "mtime_ns": 1792761902875810657
+    },
+    {
+      "path": "artifacts/a100_full_20261023/training/trial/checkpoint-181144/tokenizer.json",
+      "bytes": 534007,
+      "dev": 64514,
+      "inode": 146803811,
+      "links": 1,
+      "mtime_ns": 1792761900964770063
+    },
+    {
+      "path": "artifacts/a100_full_20261023/training/trial/checkpoint-181144/tokenizer_config.json",
+      "bytes": 304,
+      "dev": 64514,
+      "inode": 146803810,
+      "links": 1,
+      "mtime_ns": 1792761900960769978
+    },
+    {
+      "path": "artifacts/a100_full_20261023/training/trial/checkpoint-181144/trainer_state.json",
+      "bytes": 469710,
+      "dev": 64514,
+      "inode": 146803817,
+      "links": 1,
+      "mtime_ns": 1792761902925811719
+    },
+    {
+      "path": "artifacts/a100_full_20261023/training/trial/checkpoint-181144/training_args.bin",
+      "bytes": 5457,
+      "dev": 64514,
+      "inode": 146803812,
+      "links": 1,
+      "mtime_ns": 1792761900966770105
+    },
+    {
+      "path": "artifacts/a100_full_20261023/training/trial/complete.json",
+      "bytes": 1191,
+      "dev": 64514,
+      "inode": 146228467,
+      "links": 1,
+      "mtime_ns": 1792761997874828569
+    },
+    {
+      "path": "artifacts/a100_full_20261023/training/trial/final/config.json",
+      "bytes": 1011,
+      "dev": 64514,
+      "inode": 146803779,
+      "links": 1,
+      "mtime_ns": 1792761996436798025
+    },
+    {
+      "path": "artifacts/a100_full_20261023/training/trial/final/generation_config.json",
+      "bytes": 257,
+      "dev": 64514,
+      "inode": 146803780,
+      "links": 1,
+      "mtime_ns": 1792761996436798025
+    },
+    {
+      "path": "artifacts/a100_full_20261023/training/trial/final/model.safetensors",
+      "bytes": 977639840,
+      "dev": 64514,
+      "inode": 146803781,
+      "links": 1,
+      "mtime_ns": 1792761997203814316
+    },
+    {
+      "path": "artifacts/a100_full_20261023/training/trial/final/model_config.json",
+      "bytes": 297,
+      "dev": 64514,
+      "inode": 146803785,
+      "links": 1,
+      "mtime_ns": 1792761997294816249
+    },
+    {
+      "path": "artifacts/a100_full_20261023/training/trial/final/tokenizer.json",
+      "bytes": 534007,
+      "dev": 64514,
+      "inode": 146803783,
+      "links": 1,
+      "mtime_ns": 1792761997224814762
+    },
+    {
+      "path": "artifacts/a100_full_20261023/training/trial/final/tokenizer_config.json",
+      "bytes": 304,
+      "dev": 64514,
+      "inode": 146803782,
+      "links": 1,
+      "mtime_ns": 1792761997220814678
+    },
+    {
+      "path": "artifacts/a100_full_20261023/training/trial/final/training_args.bin",
+      "bytes": 5457,
+      "dev": 64514,
+      "inode": 146803784,
+      "links": 1,
+      "mtime_ns": 1792761997225814784
+    },
+    {
+      "path": "artifacts/a100_full_20261023/training/trial/log_history.json",
+      "bytes": 436142,
+      "dev": 64514,
+      "inode": 146228464,
+      "links": 1,
+      "mtime_ns": 1792761997293816228
+    },
+    {
+      "path": "artifacts/a100_full_20261023/training/trial/run_manifest.json",
+      "bytes": 1263,
+      "dev": 64514,
+      "inode": 146228645,
+      "links": 1,
+      "mtime_ns": 1792708056081294166
+    },
+    {
+      "path": "artifacts/a100_full_20261023/training/trial/source_tokenizer.json",
+      "bytes": 534007,
+      "dev": 64514,
+      "inode": 146228393,
+      "links": 1,
+      "mtime_ns": 1792761997297816313
+    },
+    {
+      "path": "artifacts/a100_full_20261023/training/trial/trainer_args.json",
+      "bytes": 3658,
+      "dev": 64514,
+      "inode": 146228646,
+      "links": 1,
+      "mtime_ns": 1792708056168295984
+    },
+    {
+      "path": "artifacts/a100_full_20261023/training/trial/trainer_state.json",
+      "bytes": 470388,
+      "dev": 64514,
+      "inode": 146228454,
+      "links": 1,
+      "mtime_ns": 1792761997275815846
+    },
+    {
+      "path": "artifacts/a100_full_20261023/training/trial/training.png",
+      "bytes": 85960,
+      "dev": 64514,
+      "inode": 146228466,
+      "links": 1,
+      "mtime_ns": 1792761997873828548
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/bundle/bundle_manifest.json",
+      "bytes": 4234,
+      "dev": 64514,
+      "inode": 146228297,
+      "links": 1,
+      "mtime_ns": 1792682284629222170
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/bundle/data/dataset_dict.json",
+      "bytes": 28,
+      "dev": 64514,
+      "inode": 146228299,
+      "links": 1,
+      "mtime_ns": 1792682284630222190
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/bundle/data/train/dataset_info.json",
+      "bytes": 9702,
+      "dev": 64514,
+      "inode": 146228353,
+      "links": 1,
+      "mtime_ns": 1792682287784287175
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/bundle/data/train/state.json",
+      "bytes": 306,
+      "dev": 64514,
+      "inode": 146228361,
+      "links": 1,
+      "mtime_ns": 1792682287784287175
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/bundle/data/val/dataset_info.json",
+      "bytes": 9702,
+      "dev": 64514,
+      "inode": 146228460,
+      "links": 1,
+      "mtime_ns": 1792682287845288432
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/bundle/data/val/state.json",
+      "bytes": 247,
+      "dev": 64514,
+      "inode": 146228482,
+      "links": 1,
+      "mtime_ns": 1792682287845288432
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/bundle/kaggle_experiments.py",
+      "bytes": 15231,
+      "dev": 64514,
+      "inode": 146228485,
+      "links": 1,
+      "mtime_ns": 1792682287845288432
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/bundle/models/__init__.py",
+      "bytes": 378,
+      "dev": 64514,
+      "inode": 146228487,
+      "links": 1,
+      "mtime_ns": 1792682287845288432
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/bundle/models/base.py",
+      "bytes": 3434,
+      "dev": 64514,
+      "inode": 146228488,
+      "links": 1,
+      "mtime_ns": 1792682287845288432
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/bundle/models/baseline.py",
+      "bytes": 5633,
+      "dev": 64514,
+      "inode": 146228489,
+      "links": 1,
+      "mtime_ns": 1792682287845288432
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/bundle/models/config.py",
+      "bytes": 2922,
+      "dev": 64514,
+      "inode": 146228501,
+      "links": 1,
+      "mtime_ns": 1792682287845288432
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/bundle/models/copy.py",
+      "bytes": 7559,
+      "dev": 64514,
+      "inode": 146228502,
+      "links": 1,
+      "mtime_ns": 1792682287845288432
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/bundle/models/t5.py",
+      "bytes": 1629,
+      "dev": 64514,
+      "inode": 146228503,
+      "links": 1,
+      "mtime_ns": 1792682287846288453
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/bundle/models/t5_attention.py",
+      "bytes": 3637,
+      "dev": 64514,
+      "inode": 146228514,
+      "links": 1,
+      "mtime_ns": 1792682287846288453
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/bundle/plotting.py",
+      "bytes": 7719,
+      "dev": 64514,
+      "inode": 146228515,
+      "links": 1,
+      "mtime_ns": 1792682287846288453
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/bundle/requirements-kaggle.txt",
+      "bytes": 213,
+      "dev": 64514,
+      "inode": 146228559,
+      "links": 1,
+      "mtime_ns": 1792682287846288453
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/bundle/selection/data_manifest.json",
+      "bytes": 912,
+      "dev": 64514,
+      "inode": 146228565,
+      "links": 1,
+      "mtime_ns": 1792682287846288453
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/bundle/selection/train_indices.npy",
+      "bytes": 8000128,
+      "dev": 64514,
+      "inode": 146228566,
+      "links": 1,
+      "mtime_ns": 1792682287887289298
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/bundle/selection/val_indices.npy",
+      "bytes": 160128,
+      "dev": 64514,
+      "inode": 146228567,
+      "links": 1,
+      "mtime_ns": 1792682287888289318
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/bundle/tokenizer.json",
+      "bytes": 534007,
+      "dev": 64514,
+      "inode": 146228634,
+      "links": 2,
+      "mtime_ns": 1792682287890289359
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/bundle/tokenizer.py",
+      "bytes": 5134,
+      "dev": 64514,
+      "inode": 146228669,
+      "links": 1,
+      "mtime_ns": 1792682287890289359
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/bundle/train_kaggle.py",
+      "bytes": 1849,
+      "dev": 64514,
+      "inode": 146228671,
+      "links": 1,
+      "mtime_ns": 1792682287890289359
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/bundle/training.py",
+      "bytes": 37589,
+      "dev": 64514,
+      "inode": 146228672,
+      "links": 1,
+      "mtime_ns": 1792682287891289380
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/bundle/utils.py",
+      "bytes": 1381,
+      "dev": 64514,
+      "inode": 146228676,
+      "links": 1,
+      "mtime_ns": 1792682287891289380
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/cleanup_20261022.json",
+      "bytes": 4363,
+      "dev": 64514,
+      "inode": 146228211,
+      "links": 1,
+      "mtime_ns": 1792687941136982666
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/code/_code_runner.py",
+      "bytes": 7840,
+      "dev": 64514,
+      "inode": 146228135,
+      "links": 1,
+      "mtime_ns": 1791828928255914449
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/code/evaluation.py",
+      "bytes": 10300,
+      "dev": 64514,
+      "inode": 146228126,
+      "links": 1,
+      "mtime_ns": 1791828938209349632
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/code/kaggle_experiments.py",
+      "bytes": 15291,
+      "dev": 64514,
+      "inode": 146228034,
+      "links": 1,
+      "mtime_ns": 1792682028208237409
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/code/models/__init__.py",
+      "bytes": 378,
+      "dev": 64514,
+      "inode": 146228291,
+      "links": 1,
+      "mtime_ns": 1792435965352836370
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/code/models/base.py",
+      "bytes": 3434,
+      "dev": 64514,
+      "inode": 146228296,
+      "links": 1,
+      "mtime_ns": 1791826586298947334
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/code/models/baseline.py",
+      "bytes": 5633,
+      "dev": 64514,
+      "inode": 146228290,
+      "links": 1,
+      "mtime_ns": 1792435965283174991
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/code/models/config.py",
+      "bytes": 2922,
+      "dev": 64514,
+      "inode": 146228277,
+      "links": 1,
+      "mtime_ns": 1792435965308151006
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/code/models/copy.py",
+      "bytes": 7559,
+      "dev": 64514,
+      "inode": 146228292,
+      "links": 1,
+      "mtime_ns": 1792435965330479860
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/code/models/t5.py",
+      "bytes": 1629,
+      "dev": 64514,
+      "inode": 146228289,
+      "links": 1,
+      "mtime_ns": 1792433638375421047
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/code/models/t5_attention.py",
+      "bytes": 3637,
+      "dev": 64514,
+      "inode": 146228295,
+      "links": 1,
+      "mtime_ns": 1792433638350672721
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/code/plotting.py",
+      "bytes": 7719,
+      "dev": 64514,
+      "inode": 146228057,
+      "links": 1,
+      "mtime_ns": 1791828938227356672
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/code/prepare_datasets.py",
+      "bytes": 9003,
+      "dev": 64514,
+      "inode": 146228137,
+      "links": 1,
+      "mtime_ns": 1791833867979559898
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/code/reference_identity.json",
+      "bytes": 1870362,
+      "dev": 64514,
+      "inode": 146228293,
+      "links": 1,
+      "mtime_ns": 1792682557281433343
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/code/tokenizer.py",
+      "bytes": 5134,
+      "dev": 64514,
+      "inode": 146228058,
+      "links": 1,
+      "mtime_ns": 1791817183240795135
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/code/tools/evaluate_fixed_bundle.py",
+      "bytes": 8382,
+      "dev": 64514,
+      "inode": 146228139,
+      "links": 1,
+      "mtime_ns": 1792682178398048400
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/code/tools/run_a100_stage1.py",
+      "bytes": 5717,
+      "dev": 64514,
+      "inode": 146228140,
+      "links": 1,
+      "mtime_ns": 1792682556163963556
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/code/train_kaggle.py",
+      "bytes": 1856,
+      "dev": 64514,
+      "inode": 146228035,
+      "links": 1,
+      "mtime_ns": 1792682028237051010
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/code/training.py",
+      "bytes": 37589,
+      "dev": 64514,
+      "inode": 146228036,
+      "links": 1,
+      "mtime_ns": 1792436119809920072
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/code/utils.py",
+      "bytes": 1381,
+      "dev": 64514,
+      "inode": 146228056,
+      "links": 1,
+      "mtime_ns": 1792435820539279460
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/launch_stage2.sh",
+      "bytes": 1637,
+      "dev": 64514,
+      "inode": 146228115,
+      "links": 1,
+      "mtime_ns": 1792686943105976130
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/launch_stage2_recovery.sh",
+      "bytes": 1379,
+      "dev": 64514,
+      "inode": 146228248,
+      "links": 1,
+      "mtime_ns": 1792698834014707896
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/launch_stage3.sh",
+      "bytes": 1047,
+      "dev": 64514,
+      "inode": 146228448,
+      "links": 1,
+      "mtime_ns": 1792706265846854034
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/launch_stage4.sh",
+      "bytes": 1147,
+      "dev": 64514,
+      "inode": 146228461,
+      "links": 1,
+      "mtime_ns": 1792706826987593825
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/logs/driver.log",
+      "bytes": 791,
+      "dev": 64514,
+      "inode": 146228317,
+      "links": 1,
+      "mtime_ns": 1792685970306521149
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/logs/stage2_bootstrap.log",
+      "bytes": 196,
+      "dev": 64514,
+      "inode": 146228150,
+      "links": 1,
+      "mtime_ns": 1792686995467079759
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/logs/stage2_data_prepare.log",
+      "bytes": 233525,
+      "dev": 64514,
+      "inode": 146228159,
+      "links": 1,
+      "mtime_ns": 1792688136727094240
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/logs/stage2_driver.log",
+      "bytes": 1513,
+      "dev": 64514,
+      "inode": 146228090,
+      "links": 1,
+      "mtime_ns": 1792692363879935727
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/logs/stage2_recovery_driver.log",
+      "bytes": 7285,
+      "dev": 64514,
+      "inode": 146228281,
+      "links": 1,
+      "mtime_ns": 1792705653170034513
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/logs/stage3_audit.log",
+      "bytes": 820,
+      "dev": 64514,
+      "inode": 146228452,
+      "links": 1,
+      "mtime_ns": 1792706269679934232
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/logs/stage4_decoding.log",
+      "bytes": 11569,
+      "dev": 64514,
+      "inode": 146228470,
+      "links": 1,
+      "mtime_ns": 1792708021750576368
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/queue_plan.json",
+      "bytes": 980,
+      "dev": 64514,
+      "inode": 146228316,
+      "links": 1,
+      "mtime_ns": 1792682613257993013
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/recovery_code_snapshot.tar.gz",
+      "bytes": 180513,
+      "dev": 64514,
+      "inode": 146228246,
+      "links": 1,
+      "mtime_ns": 1792698833915705829
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/recovery_plan.json",
+      "bytes": 6555,
+      "dev": 64514,
+      "inode": 146228247,
+      "links": 1,
+      "mtime_ns": 1792698833967706914
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/repeat4m_checkpoint14000_health.json",
+      "bytes": 534,
+      "dev": 64514,
+      "inode": 146228245,
+      "links": 1,
+      "mtime_ns": 1792698253231581192
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/source_manifest.json",
+      "bytes": 1986,
+      "dev": 64514,
+      "inode": 146228677,
+      "links": 1,
+      "mtime_ns": 1792682613257993013
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/evaluations/bart/config.json",
+      "bytes": 863,
+      "dev": 64514,
+      "inode": 146228044,
+      "links": 1,
+      "mtime_ns": 1792683859190677544
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/evaluations/bart/evaluation/evaluation.jsonl",
+      "bytes": 19838451,
+      "dev": 64514,
+      "inode": 146228048,
+      "links": 1,
+      "mtime_ns": 1792684641760929979
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/evaluations/bart/evaluation/evaluation_config.json",
+      "bytes": 353,
+      "dev": 64514,
+      "inode": 146228050,
+      "links": 1,
+      "mtime_ns": 1792684641761929999
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/evaluations/bart/evaluation/metrics.json",
+      "bytes": 755,
+      "dev": 64514,
+      "inode": 146228049,
+      "links": 1,
+      "mtime_ns": 1792684641761929999
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/evaluations/bart/metrics.json",
+      "bytes": 1178,
+      "dev": 64514,
+      "inode": 146228051,
+      "links": 1,
+      "mtime_ns": 1792684641969934317
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/evaluations/bart/predictions.jsonl",
+      "bytes": 16001013,
+      "dev": 64514,
+      "inode": 146228046,
+      "links": 1,
+      "mtime_ns": 1792684394616798946
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/evaluations/bart/progress.json",
+      "bytes": 66,
+      "dev": 64514,
+      "inode": 146228052,
+      "links": 1,
+      "mtime_ns": 1792684641970934338
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/evaluations/copy/config.json",
+      "bytes": 863,
+      "dev": 64514,
+      "inode": 146228103,
+      "links": 1,
+      "mtime_ns": 1792685976145644068
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/evaluations/copy/evaluation/evaluation.jsonl",
+      "bytes": 19794747,
+      "dev": 64514,
+      "inode": 146228107,
+      "links": 1,
+      "mtime_ns": 1792686756248048232
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/evaluations/copy/evaluation/evaluation_config.json",
+      "bytes": 353,
+      "dev": 64514,
+      "inode": 146228109,
+      "links": 1,
+      "mtime_ns": 1792686756249048253
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/evaluations/copy/evaluation/metrics.json",
+      "bytes": 713,
+      "dev": 64514,
+      "inode": 146228108,
+      "links": 1,
+      "mtime_ns": 1792686756249048253
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/evaluations/copy/metrics.json",
+      "bytes": 1137,
+      "dev": 64514,
+      "inode": 146228110,
+      "links": 1,
+      "mtime_ns": 1792686756480053106
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/evaluations/copy/predictions.jsonl",
+      "bytes": 15958923,
+      "dev": 64514,
+      "inode": 146228105,
+      "links": 1,
+      "mtime_ns": 1792686505275774409
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/evaluations/copy/progress.json",
+      "bytes": 66,
+      "dev": 64514,
+      "inode": 146228111,
+      "links": 1,
+      "mtime_ns": 1792686756480053106
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/logs/bart_evaluation.log",
+      "bytes": 3034,
+      "dev": 64514,
+      "inode": 146228039,
+      "links": 1,
+      "mtime_ns": 1792684641970934338
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/logs/bart_preflight.log",
+      "bytes": 3001,
+      "dev": 64514,
+      "inode": 146228697,
+      "links": 1,
+      "mtime_ns": 1792682631320365159
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/logs/bart_training.log",
+      "bytes": 282321,
+      "dev": 64514,
+      "inode": 146229422,
+      "links": 1,
+      "mtime_ns": 1792683852355535521
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/logs/copy_evaluation.log",
+      "bytes": 3099,
+      "dev": 64514,
+      "inode": 146228101,
+      "links": 1,
+      "mtime_ns": 1792686756480053106
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/logs/copy_preflight.log",
+      "bytes": 2997,
+      "dev": 64514,
+      "inode": 146228971,
+      "links": 1,
+      "mtime_ns": 1792682649087731226
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/logs/copy_training.log",
+      "bytes": 296095,
+      "dev": 64514,
+      "inode": 146228040,
+      "links": 1,
+      "mtime_ns": 1792685969344500896
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/preflight/bart/checkpoint-2/config.json",
+      "bytes": 1011,
+      "dev": 64514,
+      "inode": 146228849,
+      "links": 1,
+      "mtime_ns": 1792682625812251672
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/preflight/bart/checkpoint-2/generation_config.json",
+      "bytes": 257,
+      "dev": 64514,
+      "inode": 146228850,
+      "links": 1,
+      "mtime_ns": 1792682625812251672
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/preflight/bart/checkpoint-2/rng_state.pth",
+      "bytes": 14645,
+      "dev": 64514,
+      "inode": 146228902,
+      "links": 1,
+      "mtime_ns": 1792682629291323354
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/preflight/bart/checkpoint-2/run_manifest.json",
+      "bytes": 1217,
+      "dev": 64514,
+      "inode": 146228930,
+      "links": 1,
+      "mtime_ns": 1792682629293323395
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/preflight/bart/checkpoint-2/tokenizer.json",
+      "bytes": 534007,
+      "dev": 64514,
+      "inode": 146228867,
+      "links": 1,
+      "mtime_ns": 1792682626903274151
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/preflight/bart/checkpoint-2/tokenizer_config.json",
+      "bytes": 304,
+      "dev": 64514,
+      "inode": 146228862,
+      "links": 1,
+      "mtime_ns": 1792682626895273987
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/preflight/bart/checkpoint-2/trainer_state.json",
+      "bytes": 1612,
+      "dev": 64514,
+      "inode": 146228913,
+      "links": 1,
+      "mtime_ns": 1792682629292323374
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/preflight/bart/checkpoint-2/training_args.bin",
+      "bytes": 5457,
+      "dev": 64514,
+      "inode": 146228898,
+      "links": 1,
+      "mtime_ns": 1792682626907274234
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/preflight/bart/complete.json",
+      "bytes": 618,
+      "dev": 64514,
+      "inode": 146228848,
+      "links": 1,
+      "mtime_ns": 1792682630610350530
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/preflight/bart/final/config.json",
+      "bytes": 1011,
+      "dev": 64514,
+      "inode": 146228938,
+      "links": 1,
+      "mtime_ns": 1792682629508327825
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/preflight/bart/final/generation_config.json",
+      "bytes": 257,
+      "dev": 64514,
+      "inode": 146228939,
+      "links": 1,
+      "mtime_ns": 1792682629508327825
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/preflight/bart/final/model_config.json",
+      "bytes": 297,
+      "dev": 64514,
+      "inode": 146228955,
+      "links": 1,
+      "mtime_ns": 1792682630610350530
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/preflight/bart/final/tokenizer.json",
+      "bytes": 534007,
+      "dev": 64514,
+      "inode": 146228942,
+      "links": 1,
+      "mtime_ns": 1792682630606350448
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/preflight/bart/final/tokenizer_config.json",
+      "bytes": 304,
+      "dev": 64514,
+      "inode": 146228941,
+      "links": 1,
+      "mtime_ns": 1792682630603350386
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/preflight/bart/final/training_args.bin",
+      "bytes": 5457,
+      "dev": 64514,
+      "inode": 146228952,
+      "links": 1,
+      "mtime_ns": 1792682630608350489
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/preflight/bart/log_history.json",
+      "bytes": 1263,
+      "dev": 64514,
+      "inode": 146228954,
+      "links": 1,
+      "mtime_ns": 1792682630610350530
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/preflight/bart/run_manifest.json",
+      "bytes": 1217,
+      "dev": 64514,
+      "inode": 146228817,
+      "links": 1,
+      "mtime_ns": 1792682622968193076
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/preflight/bart/source_tokenizer.json",
+      "bytes": 534007,
+      "dev": 64514,
+      "inode": 146228956,
+      "links": 1,
+      "mtime_ns": 1792682630614350612
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/preflight/bart/trainer_args.json",
+      "bytes": 3650,
+      "dev": 64514,
+      "inode": 146228818,
+      "links": 1,
+      "mtime_ns": 1792682623066195095
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/preflight/bart/trainer_state.json",
+      "bytes": 2126,
+      "dev": 64514,
+      "inode": 146228953,
+      "links": 1,
+      "mtime_ns": 1792682630608350489
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/preflight/bart/training.png",
+      "bytes": 92510,
+      "dev": 64514,
+      "inode": 146228969,
+      "links": 1,
+      "mtime_ns": 1792682631311364973
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/preflight/copy/checkpoint-2/config.json",
+      "bytes": 1106,
+      "dev": 64514,
+      "inode": 146228979,
+      "links": 1,
+      "mtime_ns": 1792682643948625343
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/preflight/copy/checkpoint-2/generation_config.json",
+      "bytes": 257,
+      "dev": 64514,
+      "inode": 146228981,
+      "links": 1,
+      "mtime_ns": 1792682643949625363
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/preflight/copy/checkpoint-2/rng_state.pth",
+      "bytes": 14645,
+      "dev": 64514,
+      "inode": 146229096,
+      "links": 1,
+      "mtime_ns": 1792682647118690657
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/preflight/copy/checkpoint-2/run_manifest.json",
+      "bytes": 1217,
+      "dev": 64514,
+      "inode": 146229098,
+      "links": 1,
+      "mtime_ns": 1792682647119690677
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/preflight/copy/checkpoint-2/tokenizer.json",
+      "bytes": 534007,
+      "dev": 64514,
+      "inode": 146228994,
+      "links": 1,
+      "mtime_ns": 1792682645067648398
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/preflight/copy/checkpoint-2/tokenizer_config.json",
+      "bytes": 304,
+      "dev": 64514,
+      "inode": 146228992,
+      "links": 1,
+      "mtime_ns": 1792682645063648316
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/preflight/copy/checkpoint-2/trainer_state.json",
+      "bytes": 1608,
+      "dev": 64514,
+      "inode": 146229097,
+      "links": 1,
+      "mtime_ns": 1792682647119690677
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/preflight/copy/checkpoint-2/training_args.bin",
+      "bytes": 5457,
+      "dev": 64514,
+      "inode": 146229073,
+      "links": 1,
+      "mtime_ns": 1792682645069648440
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/preflight/copy/complete.json",
+      "bytes": 616,
+      "dev": 64514,
+      "inode": 146228978,
+      "links": 1,
+      "mtime_ns": 1792682648454718183
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/preflight/copy/final/config.json",
+      "bytes": 1106,
+      "dev": 64514,
+      "inode": 146229128,
+      "links": 1,
+      "mtime_ns": 1792682647335695128
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/preflight/copy/final/generation_config.json",
+      "bytes": 257,
+      "dev": 64514,
+      "inode": 146229129,
+      "links": 1,
+      "mtime_ns": 1792682647335695128
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/preflight/copy/final/model_config.json",
+      "bytes": 297,
+      "dev": 64514,
+      "inode": 146229317,
+      "links": 1,
+      "mtime_ns": 1792682648454718183
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/preflight/copy/final/tokenizer.json",
+      "bytes": 534007,
+      "dev": 64514,
+      "inode": 146229132,
+      "links": 1,
+      "mtime_ns": 1792682648443717956
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/preflight/copy/final/tokenizer_config.json",
+      "bytes": 304,
+      "dev": 64514,
+      "inode": 146229131,
+      "links": 1,
+      "mtime_ns": 1792682648439717874
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/preflight/copy/final/training_args.bin",
+      "bytes": 5457,
+      "dev": 64514,
+      "inode": 146229133,
+      "links": 1,
+      "mtime_ns": 1792682648444717977
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/preflight/copy/log_history.json",
+      "bytes": 1258,
+      "dev": 64514,
+      "inode": 146229316,
+      "links": 1,
+      "mtime_ns": 1792682648454718183
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/preflight/copy/run_manifest.json",
+      "bytes": 1217,
+      "dev": 64514,
+      "inode": 146228973,
+      "links": 1,
+      "mtime_ns": 1792682641211568950
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/preflight/copy/source_tokenizer.json",
+      "bytes": 534007,
+      "dev": 64514,
+      "inode": 146229318,
+      "links": 1,
+      "mtime_ns": 1792682648457718245
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/preflight/copy/trainer_args.json",
+      "bytes": 3650,
+      "dev": 64514,
+      "inode": 146228974,
+      "links": 1,
+      "mtime_ns": 1792682641306570907
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/preflight/copy/trainer_state.json",
+      "bytes": 2121,
+      "dev": 64514,
+      "inode": 146229294,
+      "links": 1,
+      "mtime_ns": 1792682648444717977
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/preflight/copy/training.png",
+      "bytes": 89643,
+      "dev": 64514,
+      "inode": 146229319,
+      "links": 1,
+      "mtime_ns": 1792682649081731102
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/queue.lock",
+      "bytes": 0,
+      "dev": 64514,
+      "inode": 146228678,
+      "links": 1,
+      "mtime_ns": 1792682613320994311
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/queue_state.json",
+      "bytes": 423,
+      "dev": 64514,
+      "inode": 146228112,
+      "links": 1,
+      "mtime_ns": 1792686757620077054
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/stage1_complete.json",
+      "bytes": 2843,
+      "dev": 64514,
+      "inode": 146228102,
+      "links": 1,
+      "mtime_ns": 1792686757620077054
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/trials/bart/checkpoint-3907/config.json",
+      "bytes": 1011,
+      "dev": 64514,
+      "inode": 146228006,
+      "links": 1,
+      "mtime_ns": 1792683832714127395
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/trials/bart/checkpoint-3907/generation_config.json",
+      "bytes": 257,
+      "dev": 64514,
+      "inode": 146228007,
+      "links": 1,
+      "mtime_ns": 1792683832714127395
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/trials/bart/checkpoint-3907/rng_state.pth",
+      "bytes": 14645,
+      "dev": 64514,
+      "inode": 146228016,
+      "links": 1,
+      "mtime_ns": 1792683835578186907
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/trials/bart/checkpoint-3907/run_manifest.json",
+      "bytes": 1225,
+      "dev": 64514,
+      "inode": 146228019,
+      "links": 1,
+      "mtime_ns": 1792683835897193536
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/trials/bart/checkpoint-3907/scaler.pt",
+      "bytes": 1383,
+      "dev": 64514,
+      "inode": 146228015,
+      "links": 1,
+      "mtime_ns": 1792683835577186887
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/trials/bart/checkpoint-3907/scheduler.pt",
+      "bytes": 1465,
+      "dev": 64514,
+      "inode": 146228014,
+      "links": 1,
+      "mtime_ns": 1792683835577186887
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/trials/bart/checkpoint-3907/tokenizer.json",
+      "bytes": 534007,
+      "dev": 64514,
+      "inode": 146228011,
+      "links": 1,
+      "mtime_ns": 1792683833685147572
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/trials/bart/checkpoint-3907/tokenizer_config.json",
+      "bytes": 304,
+      "dev": 64514,
+      "inode": 146228010,
+      "links": 1,
+      "mtime_ns": 1792683833681147489
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/trials/bart/checkpoint-3907/trainer_state.json",
+      "bytes": 9411,
+      "dev": 64514,
+      "inode": 146228017,
+      "links": 1,
+      "mtime_ns": 1792683835579186928
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/trials/bart/checkpoint-3907/training_args.bin",
+      "bytes": 5457,
+      "dev": 64514,
+      "inode": 146228012,
+      "links": 1,
+      "mtime_ns": 1792683833690147676
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/trials/bart/complete.json",
+      "bytes": 626,
+      "dev": 64514,
+      "inode": 146228004,
+      "links": 1,
+      "mtime_ns": 1792683851621520269
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/trials/bart/final/config.json",
+      "bytes": 1011,
+      "dev": 64514,
+      "inode": 146228021,
+      "links": 1,
+      "mtime_ns": 1792683850596498971
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/trials/bart/final/generation_config.json",
+      "bytes": 257,
+      "dev": 64514,
+      "inode": 146228022,
+      "links": 1,
+      "mtime_ns": 1792683850597498991
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/trials/bart/final/model.safetensors",
+      "bytes": 977639840,
+      "dev": 64514,
+      "inode": 146228023,
+      "links": 1,
+      "mtime_ns": 1792683851552518835
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/trials/bart/final/model_config.json",
+      "bytes": 297,
+      "dev": 64514,
+      "inode": 146228029,
+      "links": 1,
+      "mtime_ns": 1792683851621520269
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/trials/bart/final/tokenizer.json",
+      "bytes": 534007,
+      "dev": 64514,
+      "inode": 146228025,
+      "links": 1,
+      "mtime_ns": 1792683851587519563
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/trials/bart/final/tokenizer_config.json",
+      "bytes": 304,
+      "dev": 64514,
+      "inode": 146228024,
+      "links": 1,
+      "mtime_ns": 1792683851583519479
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/trials/bart/final/training_args.bin",
+      "bytes": 5457,
+      "dev": 64514,
+      "inode": 146228026,
+      "links": 1,
+      "mtime_ns": 1792683851588519583
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/trials/bart/log_history.json",
+      "bytes": 8493,
+      "dev": 64514,
+      "inode": 146228028,
+      "links": 1,
+      "mtime_ns": 1792683851621520269
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/trials/bart/run_manifest.json",
+      "bytes": 1225,
+      "dev": 64514,
+      "inode": 146229438,
+      "links": 1,
+      "mtime_ns": 1792682658706929413
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/trials/bart/source_tokenizer.json",
+      "bytes": 534007,
+      "dev": 64514,
+      "inode": 146228037,
+      "links": 1,
+      "mtime_ns": 1792683851625520352
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/trials/bart/trainer_args.json",
+      "bytes": 3656,
+      "dev": 64514,
+      "inode": 146229439,
+      "links": 1,
+      "mtime_ns": 1792682658806931473
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/trials/bart/trainer_state.json",
+      "bytes": 9948,
+      "dev": 64514,
+      "inode": 146228027,
+      "links": 1,
+      "mtime_ns": 1792683851590519625
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/trials/bart/training.png",
+      "bytes": 89206,
+      "dev": 64514,
+      "inode": 146228038,
+      "links": 1,
+      "mtime_ns": 1792683852342535251
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/trials/copy/checkpoint-3907/config.json",
+      "bytes": 1106,
+      "dev": 64514,
+      "inode": 146228065,
+      "links": 1,
+      "mtime_ns": 1792685941688918689
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/trials/copy/checkpoint-3907/generation_config.json",
+      "bytes": 257,
+      "dev": 64514,
+      "inode": 146228066,
+      "links": 1,
+      "mtime_ns": 1792685941689918710
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/trials/copy/checkpoint-3907/rng_state.pth",
+      "bytes": 14645,
+      "dev": 64514,
+      "inode": 146228074,
+      "links": 1,
+      "mtime_ns": 1792685944589979765
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/trials/copy/checkpoint-3907/run_manifest.json",
+      "bytes": 1225,
+      "dev": 64514,
+      "inode": 146228062,
+      "links": 1,
+      "mtime_ns": 1792685944900986312
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/trials/copy/checkpoint-3907/scaler.pt",
+      "bytes": 1383,
+      "dev": 64514,
+      "inode": 146228073,
+      "links": 1,
+      "mtime_ns": 1792685944588979744
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/trials/copy/checkpoint-3907/scheduler.pt",
+      "bytes": 1465,
+      "dev": 64514,
+      "inode": 146228072,
+      "links": 1,
+      "mtime_ns": 1792685944588979744
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/trials/copy/checkpoint-3907/tokenizer.json",
+      "bytes": 534007,
+      "dev": 64514,
+      "inode": 146228069,
+      "links": 1,
+      "mtime_ns": 1792685942690939785
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/trials/copy/checkpoint-3907/tokenizer_config.json",
+      "bytes": 304,
+      "dev": 64514,
+      "inode": 146228068,
+      "links": 1,
+      "mtime_ns": 1792685942686939700
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/trials/copy/checkpoint-3907/trainer_state.json",
+      "bytes": 9403,
+      "dev": 64514,
+      "inode": 146228088,
+      "links": 1,
+      "mtime_ns": 1792685944590979786
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/trials/copy/checkpoint-3907/training_args.bin",
+      "bytes": 5457,
+      "dev": 64514,
+      "inode": 146228070,
+      "links": 1,
+      "mtime_ns": 1792685942711940227
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/trials/copy/complete.json",
+      "bytes": 626,
+      "dev": 64514,
+      "inode": 146228064,
+      "links": 1,
+      "mtime_ns": 1792685968549484161
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/trials/copy/final/config.json",
+      "bytes": 1106,
+      "dev": 64514,
+      "inode": 146228077,
+      "links": 1,
+      "mtime_ns": 1792685967564463424
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/trials/copy/final/generation_config.json",
+      "bytes": 257,
+      "dev": 64514,
+      "inode": 146228078,
+      "links": 1,
+      "mtime_ns": 1792685967565463446
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/trials/copy/final/model.safetensors",
+      "bytes": 978696948,
+      "dev": 64514,
+      "inode": 146228079,
+      "links": 1,
+      "mtime_ns": 1792685968508483298
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/trials/copy/final/model_config.json",
+      "bytes": 297,
+      "dev": 64514,
+      "inode": 146228085,
+      "links": 1,
+      "mtime_ns": 1792685968549484161
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/trials/copy/final/tokenizer.json",
+      "bytes": 534007,
+      "dev": 64514,
+      "inode": 146228081,
+      "links": 1,
+      "mtime_ns": 1792685968544484056
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/trials/copy/final/tokenizer_config.json",
+      "bytes": 304,
+      "dev": 64514,
+      "inode": 146228080,
+      "links": 1,
+      "mtime_ns": 1792685968524483634
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/trials/copy/final/training_args.bin",
+      "bytes": 5457,
+      "dev": 64514,
+      "inode": 146228082,
+      "links": 1,
+      "mtime_ns": 1792685968545484077
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/trials/copy/log_history.json",
+      "bytes": 8484,
+      "dev": 64514,
+      "inode": 146228084,
+      "links": 1,
+      "mtime_ns": 1792685968548484140
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/trials/copy/run_manifest.json",
+      "bytes": 1225,
+      "dev": 64514,
+      "inode": 146228054,
+      "links": 1,
+      "mtime_ns": 1792684650322107694
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/trials/copy/source_tokenizer.json",
+      "bytes": 534007,
+      "dev": 64514,
+      "inode": 146228086,
+      "links": 1,
+      "mtime_ns": 1792685968574484687
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/trials/copy/trainer_args.json",
+      "bytes": 3656,
+      "dev": 64514,
+      "inode": 146228055,
+      "links": 1,
+      "mtime_ns": 1792684650409109500
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/trials/copy/trainer_state.json",
+      "bytes": 9939,
+      "dev": 64514,
+      "inode": 146228083,
+      "links": 1,
+      "mtime_ns": 1792685968547484118
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/trials/copy/training.png",
+      "bytes": 89118,
+      "dev": 64514,
+      "inode": 146228087,
+      "links": 1,
+      "mtime_ns": 1792685969332500644
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1.exitcode",
+      "bytes": 2,
+      "dev": 64514,
+      "inode": 146228106,
+      "links": 1,
+      "mtime_ns": 1792686757629077243
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2/logs/repeat4m_training.log",
+      "bytes": 1008298,
+      "dev": 64514,
+      "inode": 146228097,
+      "links": 1,
+      "mtime_ns": 1792692363062918518
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2/queue.lock",
+      "bytes": 0,
+      "dev": 64514,
+      "inode": 146228093,
+      "links": 1,
+      "mtime_ns": 1792688136915098191
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2/queue_state.json",
+      "bytes": 562,
+      "dev": 64514,
+      "inode": 146228098,
+      "links": 1,
+      "mtime_ns": 1792692363878935706
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2/run_request.json",
+      "bytes": 3143,
+      "dev": 64514,
+      "inode": 146228095,
+      "links": 1,
+      "mtime_ns": 1792688147473320087
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2/trials/repeat4m/checkpoint-13000/config.json",
+      "bytes": 1011,
+      "dev": 64514,
+      "inode": 146228223,
+      "links": 1,
+      "mtime_ns": 1792692050965346521
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2/trials/repeat4m/checkpoint-13000/generation_config.json",
+      "bytes": 257,
+      "dev": 64514,
+      "inode": 146228224,
+      "links": 1,
+      "mtime_ns": 1792692050965346521
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2/trials/repeat4m/checkpoint-13000/rng_state.pth",
+      "bytes": 14645,
+      "dev": 64514,
+      "inode": 146228232,
+      "links": 1,
+      "mtime_ns": 1792692053863407506
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2/trials/repeat4m/checkpoint-13000/run_manifest.json",
+      "bytes": 1225,
+      "dev": 64514,
+      "inode": 146228217,
+      "links": 1,
+      "mtime_ns": 1792692054179414156
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2/trials/repeat4m/checkpoint-13000/scaler.pt",
+      "bytes": 1383,
+      "dev": 64514,
+      "inode": 146228231,
+      "links": 1,
+      "mtime_ns": 1792692053862407485
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2/trials/repeat4m/checkpoint-13000/scheduler.pt",
+      "bytes": 1465,
+      "dev": 64514,
+      "inode": 146228230,
+      "links": 1,
+      "mtime_ns": 1792692053862407485
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2/trials/repeat4m/checkpoint-13000/tokenizer.json",
+      "bytes": 534007,
+      "dev": 64514,
+      "inode": 146228227,
+      "links": 1,
+      "mtime_ns": 1792692051972367712
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2/trials/repeat4m/checkpoint-13000/tokenizer_config.json",
+      "bytes": 304,
+      "dev": 64514,
+      "inode": 146228226,
+      "links": 1,
+      "mtime_ns": 1792692051969367649
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2/trials/repeat4m/checkpoint-13000/trainer_state.json",
+      "bytes": 27444,
+      "dev": 64514,
+      "inode": 146228244,
+      "links": 1,
+      "mtime_ns": 1792692053866407569
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2/trials/repeat4m/checkpoint-13000/training_args.bin",
+      "bytes": 5457,
+      "dev": 64514,
+      "inode": 146228228,
+      "links": 1,
+      "mtime_ns": 1792692051973367733
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2/trials/repeat4m/checkpoint-14000/config.json",
+      "bytes": 1011,
+      "dev": 64514,
+      "inode": 146228233,
+      "links": 1,
+      "mtime_ns": 1792692346330566079
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2/trials/repeat4m/checkpoint-14000/generation_config.json",
+      "bytes": 257,
+      "dev": 64514,
+      "inode": 146228234,
+      "links": 1,
+      "mtime_ns": 1792692346330566079
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2/trials/repeat4m/checkpoint-14000/rng_state.pth",
+      "bytes": 14645,
+      "dev": 64514,
+      "inode": 146228242,
+      "links": 1,
+      "mtime_ns": 1792692349245627481
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2/trials/repeat4m/checkpoint-14000/run_manifest.json",
+      "bytes": 1225,
+      "dev": 64514,
+      "inode": 146228218,
+      "links": 1,
+      "mtime_ns": 1792692349572634369
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2/trials/repeat4m/checkpoint-14000/scaler.pt",
+      "bytes": 1383,
+      "dev": 64514,
+      "inode": 146228241,
+      "links": 1,
+      "mtime_ns": 1792692349244627460
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2/trials/repeat4m/checkpoint-14000/scheduler.pt",
+      "bytes": 1465,
+      "dev": 64514,
+      "inode": 146228240,
+      "links": 1,
+      "mtime_ns": 1792692349244627460
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2/trials/repeat4m/checkpoint-14000/tokenizer.json",
+      "bytes": 534007,
+      "dev": 64514,
+      "inode": 146228237,
+      "links": 1,
+      "mtime_ns": 1792692347325587038
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2/trials/repeat4m/checkpoint-14000/tokenizer_config.json",
+      "bytes": 304,
+      "dev": 64514,
+      "inode": 146228236,
+      "links": 1,
+      "mtime_ns": 1792692347321586954
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2/trials/repeat4m/checkpoint-14000/trainer_state.json",
+      "bytes": 29497,
+      "dev": 64514,
+      "inode": 146228243,
+      "links": 1,
+      "mtime_ns": 1792692349249627565
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2/trials/repeat4m/checkpoint-14000/training_args.bin",
+      "bytes": 5457,
+      "dev": 64514,
+      "inode": 146228238,
+      "links": 1,
+      "mtime_ns": 1792692347326587059
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2/trials/repeat4m/log_history.json",
+      "bytes": 26462,
+      "dev": 64514,
+      "inode": 146228221,
+      "links": 1,
+      "mtime_ns": 1792692346326565995
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2/trials/repeat4m/run_manifest.json",
+      "bytes": 1225,
+      "dev": 64514,
+      "inode": 146228215,
+      "links": 1,
+      "mtime_ns": 1792688158168544857
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2/trials/repeat4m/trainer_args.json",
+      "bytes": 3660,
+      "dev": 64514,
+      "inode": 146228216,
+      "links": 1,
+      "mtime_ns": 1792688158261546811
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_code/_code_runner.py",
+      "bytes": 7840,
+      "dev": 64514,
+      "inode": 146228124,
+      "links": 1,
+      "mtime_ns": 1791828928255914449
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_code/evaluation.py",
+      "bytes": 10300,
+      "dev": 64514,
+      "inode": 146228123,
+      "links": 1,
+      "mtime_ns": 1791828938209349632
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_code/kaggle_experiments.py",
+      "bytes": 15291,
+      "dev": 64514,
+      "inode": 146228117,
+      "links": 1,
+      "mtime_ns": 1792682028208237409
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_code/models/__init__.py",
+      "bytes": 378,
+      "dev": 64514,
+      "inode": 146228134,
+      "links": 1,
+      "mtime_ns": 1792435965352836370
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_code/models/base.py",
+      "bytes": 3434,
+      "dev": 64514,
+      "inode": 146228143,
+      "links": 1,
+      "mtime_ns": 1791826586298947334
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_code/models/baseline.py",
+      "bytes": 5633,
+      "dev": 64514,
+      "inode": 146228133,
+      "links": 1,
+      "mtime_ns": 1792435965283174991
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_code/models/config.py",
+      "bytes": 2922,
+      "dev": 64514,
+      "inode": 146228131,
+      "links": 1,
+      "mtime_ns": 1792435965308151006
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_code/models/copy.py",
+      "bytes": 7559,
+      "dev": 64514,
+      "inode": 146228141,
+      "links": 1,
+      "mtime_ns": 1792435965330479860
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_code/models/t5.py",
+      "bytes": 1629,
+      "dev": 64514,
+      "inode": 146228132,
+      "links": 1,
+      "mtime_ns": 1792433638375421047
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_code/models/t5_attention.py",
+      "bytes": 3637,
+      "dev": 64514,
+      "inode": 146228142,
+      "links": 1,
+      "mtime_ns": 1792433638350672721
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_code/plotting.py",
+      "bytes": 7719,
+      "dev": 64514,
+      "inode": 146228121,
+      "links": 1,
+      "mtime_ns": 1791828938227356672
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_code/prepare_datasets.py",
+      "bytes": 9003,
+      "dev": 64514,
+      "inode": 146228125,
+      "links": 1,
+      "mtime_ns": 1791833867979559898
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_code/reference_identity.json",
+      "bytes": 1870362,
+      "dev": 64514,
+      "inode": 146228144,
+      "links": 1,
+      "mtime_ns": 1792682557281433343
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_code/tokenizer.py",
+      "bytes": 5134,
+      "dev": 64514,
+      "inode": 146228122,
+      "links": 1,
+      "mtime_ns": 1791817183240795135
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_code/tools/audit_a100_errors.py",
+      "bytes": 12623,
+      "dev": 64514,
+      "inode": 146228147,
+      "links": 1,
+      "mtime_ns": 1792686391359083652
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_code/tools/evaluate_fixed_bundle.py",
+      "bytes": 8382,
+      "dev": 64514,
+      "inode": 146228128,
+      "links": 1,
+      "mtime_ns": 1792682178398048400
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_code/tools/prepare_a100_diversity.py",
+      "bytes": 16368,
+      "dev": 64514,
+      "inode": 146228145,
+      "links": 1,
+      "mtime_ns": 1792683567999725580
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_code/tools/run_a100_decoding.py",
+      "bytes": 11335,
+      "dev": 64514,
+      "inode": 146228148,
+      "links": 1,
+      "mtime_ns": 1792685958449085474
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_code/tools/run_a100_stage1.py",
+      "bytes": 5717,
+      "dev": 64514,
+      "inode": 146228129,
+      "links": 1,
+      "mtime_ns": 1792682556163963556
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_code/tools/run_a100_stage2.py",
+      "bytes": 24298,
+      "dev": 64514,
+      "inode": 146228146,
+      "links": 1,
+      "mtime_ns": 1792684980797678232
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_code/train_kaggle.py",
+      "bytes": 1856,
+      "dev": 64514,
+      "inode": 146228118,
+      "links": 1,
+      "mtime_ns": 1792682028237051010
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_code/training.py",
+      "bytes": 37589,
+      "dev": 64514,
+      "inode": 146228119,
+      "links": 1,
+      "mtime_ns": 1792436119809920072
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_code/utils.py",
+      "bytes": 1381,
+      "dev": 64514,
+      "inode": 146228120,
+      "links": 1,
+      "mtime_ns": 1792435820539279460
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_code_snapshot.tar.gz",
+      "bytes": 175604,
+      "dev": 64514,
+      "inode": 146228113,
+      "links": 1,
+      "mtime_ns": 1792686942954972947
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_data/complete.json",
+      "bytes": 3233,
+      "dev": 64514,
+      "inode": 146228089,
+      "links": 1,
+      "mtime_ns": 1792688135820075177
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_data/distinct4m/bundle_manifest.json",
+      "bytes": 3013,
+      "dev": 64514,
+      "inode": 146228075,
+      "links": 1,
+      "mtime_ns": 1792687944901061784
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_data/distinct4m/data/dataset_dict.json",
+      "bytes": 28,
+      "dev": 64514,
+      "inode": 146228196,
+      "links": 1,
+      "mtime_ns": 1792687757266116916
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_data/distinct4m/data/train/dataset_info.json",
+      "bytes": 10983,
+      "dev": 64514,
+      "inode": 146228206,
+      "links": 1,
+      "mtime_ns": 1792687761480205535
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_data/distinct4m/data/train/state.json",
+      "bytes": 601,
+      "dev": 64514,
+      "inode": 146228205,
+      "links": 1,
+      "mtime_ns": 1792687761479205514
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_data/distinct4m/data/val/dataset_info.json",
+      "bytes": 10983,
+      "dev": 64514,
+      "inode": 146228210,
+      "links": 1,
+      "mtime_ns": 1792687761505206060
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_data/distinct4m/data/val/state.json",
+      "bytes": 247,
+      "dev": 64514,
+      "inode": 146228209,
+      "links": 1,
+      "mtime_ns": 1792687761504206039
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_data/distinct4m/selection/data_manifest.json",
+      "bytes": 3471,
+      "dev": 64514,
+      "inode": 146228059,
+      "links": 1,
+      "mtime_ns": 1792687941290985903
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_data/distinct4m/selection/train_indices.npy",
+      "bytes": 32000128,
+      "dev": 64514,
+      "inode": 146228191,
+      "links": 1,
+      "mtime_ns": 1792687601565841974
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_data/distinct4m/selection/val_indices.npy",
+      "bytes": 160128,
+      "dev": 64514,
+      "inode": 146228193,
+      "links": 1,
+      "mtime_ns": 1792687756513101081
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_data/distinct4m/tokenizer.json",
+      "bytes": 534007,
+      "dev": 64514,
+      "inode": 146228190,
+      "links": 1,
+      "mtime_ns": 1792687601441839365
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_data/repeat4m/bundle_manifest.json",
+      "bytes": 3013,
+      "dev": 64514,
+      "inode": 146228187,
+      "links": 1,
+      "mtime_ns": 1792687410746826452
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_data/repeat4m/data/dataset_dict.json",
+      "bytes": 28,
+      "dev": 64514,
+      "inode": 146228171,
+      "links": 1,
+      "mtime_ns": 1792687219364796884
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_data/repeat4m/data/train/dataset_info.json",
+      "bytes": 10983,
+      "dev": 64514,
+      "inode": 146228181,
+      "links": 1,
+      "mtime_ns": 1792687223610886310
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_data/repeat4m/data/train/state.json",
+      "bytes": 601,
+      "dev": 64514,
+      "inode": 146228180,
+      "links": 1,
+      "mtime_ns": 1792687223609886289
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_data/repeat4m/data/val/dataset_info.json",
+      "bytes": 10983,
+      "dev": 64514,
+      "inode": 146228185,
+      "links": 1,
+      "mtime_ns": 1792687223635886837
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_data/repeat4m/data/val/state.json",
+      "bytes": 247,
+      "dev": 64514,
+      "inode": 146228184,
+      "links": 1,
+      "mtime_ns": 1792687223634886816
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_data/repeat4m/selection/data_manifest.json",
+      "bytes": 3469,
+      "dev": 64514,
+      "inode": 146228186,
+      "links": 1,
+      "mtime_ns": 1792687407269753262
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_data/repeat4m/selection/train_indices.npy",
+      "bytes": 32000128,
+      "dev": 64514,
+      "inode": 146228166,
+      "links": 1,
+      "mtime_ns": 1792687070554662083
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_data/repeat4m/selection/val_indices.npy",
+      "bytes": 160128,
+      "dev": 64514,
+      "inode": 146228168,
+      "links": 1,
+      "mtime_ns": 1792687218643781699
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_data/repeat4m/tokenizer.json",
+      "bytes": 534007,
+      "dev": 64514,
+      "inode": 146228165,
+      "links": 1,
+      "mtime_ns": 1792687070538661746
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_launch.json",
+      "bytes": 627,
+      "dev": 64514,
+      "inode": 146228149,
+      "links": 1,
+      "mtime_ns": 1792686995098071982
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_pipeline.exitcode",
+      "bytes": 2,
+      "dev": 64514,
+      "inode": 146228220,
+      "links": 1,
+      "mtime_ns": 1792692363996938192
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_pipeline.lock",
+      "bytes": 0,
+      "dev": 64514,
+      "inode": 146228151,
+      "links": 1,
+      "mtime_ns": 1792686995103072087
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_pipeline.phase",
+      "bytes": 7,
+      "dev": 64514,
+      "inode": 146228158,
+      "links": 1,
+      "mtime_ns": 1792692363996938192
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_pipeline.pid",
+      "bytes": 6,
+      "dev": 64514,
+      "inode": 146228152,
+      "links": 1,
+      "mtime_ns": 1792686995104072109
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/evaluations/distinct4m/config.json",
+      "bytes": 879,
+      "dev": 64514,
+      "inode": 146228437,
+      "links": 1,
+      "mtime_ns": 1792704932194946579
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/evaluations/distinct4m/evaluation/evaluation.jsonl",
+      "bytes": 20003040,
+      "dev": 64514,
+      "inode": 146228441,
+      "links": 1,
+      "mtime_ns": 1792705651828006430
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/evaluations/distinct4m/evaluation/evaluation_config.json",
+      "bytes": 368,
+      "dev": 64514,
+      "inode": 146228443,
+      "links": 1,
+      "mtime_ns": 1792705651829006451
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/evaluations/distinct4m/evaluation/metrics.json",
+      "bytes": 708,
+      "dev": 64514,
+      "inode": 146228442,
+      "links": 1,
+      "mtime_ns": 1792705651829006451
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/evaluations/distinct4m/metrics.json",
+      "bytes": 1131,
+      "dev": 64514,
+      "inode": 146228444,
+      "links": 1,
+      "mtime_ns": 1792705652055011180
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/evaluations/distinct4m/predictions.jsonl",
+      "bytes": 16209996,
+      "dev": 64514,
+      "inode": 146228439,
+      "links": 1,
+      "mtime_ns": 1792705402022779038
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/evaluations/distinct4m/progress.json",
+      "bytes": 66,
+      "dev": 64514,
+      "inode": 146228445,
+      "links": 1,
+      "mtime_ns": 1792705652055011180
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/evaluations/repeat4m/config.json",
+      "bytes": 877,
+      "dev": 64514,
+      "inode": 146228377,
+      "links": 1,
+      "mtime_ns": 1792699496139531075
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/evaluations/repeat4m/evaluation/evaluation.jsonl",
+      "bytes": 20018618,
+      "dev": 64514,
+      "inode": 146228381,
+      "links": 1,
+      "mtime_ns": 1792700211078465195
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/evaluations/repeat4m/evaluation/evaluation_config.json",
+      "bytes": 366,
+      "dev": 64514,
+      "inode": 146228383,
+      "links": 1,
+      "mtime_ns": 1792700211079465215
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/evaluations/repeat4m/evaluation/metrics.json",
+      "bytes": 729,
+      "dev": 64514,
+      "inode": 146228382,
+      "links": 1,
+      "mtime_ns": 1792700211079465215
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/evaluations/repeat4m/metrics.json",
+      "bytes": 1153,
+      "dev": 64514,
+      "inode": 146228384,
+      "links": 1,
+      "mtime_ns": 1792700211301469854
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/evaluations/repeat4m/predictions.jsonl",
+      "bytes": 16220792,
+      "dev": 64514,
+      "inode": 146228379,
+      "links": 1,
+      "mtime_ns": 1792699966134347751
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/evaluations/repeat4m/progress.json",
+      "bytes": 66,
+      "dev": 64514,
+      "inode": 146228385,
+      "links": 1,
+      "mtime_ns": 1792700211301469854
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/logs/distinct4m_evaluation.log",
+      "bytes": 2994,
+      "dev": 64514,
+      "inode": 146228434,
+      "links": 1,
+      "mtime_ns": 1792705652055011180
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/logs/distinct4m_training.log",
+      "bytes": 1149091,
+      "dev": 64514,
+      "inode": 146228386,
+      "links": 1,
+      "mtime_ns": 1792704914585578029
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/logs/repeat4m_evaluation.log",
+      "bytes": 3014,
+      "dev": 64514,
+      "inode": 146228370,
+      "links": 1,
+      "mtime_ns": 1792700211301469854
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/logs/repeat4m_training.log",
+      "bytes": 118859,
+      "dev": 64514,
+      "inode": 146228302,
+      "links": 1,
+      "mtime_ns": 1792699478434161338
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/queue.lock",
+      "bytes": 0,
+      "dev": 64514,
+      "inode": 146228288,
+      "links": 1,
+      "mtime_ns": 1792698898654057008
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/queue_state.json",
+      "bytes": 523,
+      "dev": 64514,
+      "inode": 146228447,
+      "links": 1,
+      "mtime_ns": 1792705653169034492
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/run_request.json",
+      "bytes": 7639,
+      "dev": 64514,
+      "inode": 146228300,
+      "links": 1,
+      "mtime_ns": 1792698911929334092
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/stage2_complete.json",
+      "bytes": 6675,
+      "dev": 64514,
+      "inode": 146228440,
+      "links": 1,
+      "mtime_ns": 1792705653169034492
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/distinct4m/checkpoint-15000/config.json",
+      "bytes": 1011,
+      "dev": 64514,
+      "inode": 146228423,
+      "links": 1,
+      "mtime_ns": 1792704704193183619
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/distinct4m/checkpoint-15000/generation_config.json",
+      "bytes": 257,
+      "dev": 64514,
+      "inode": 146228424,
+      "links": 1,
+      "mtime_ns": 1792704704194183640
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/distinct4m/checkpoint-15000/rng_state.pth",
+      "bytes": 14645,
+      "dev": 64514,
+      "inode": 146228432,
+      "links": 1,
+      "mtime_ns": 1792704706806238163
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/distinct4m/checkpoint-15000/run_manifest.json",
+      "bytes": 1225,
+      "dev": 64514,
+      "inode": 146228390,
+      "links": 1,
+      "mtime_ns": 1792704707140245136
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/distinct4m/checkpoint-15000/scaler.pt",
+      "bytes": 1383,
+      "dev": 64514,
+      "inode": 146228431,
+      "links": 1,
+      "mtime_ns": 1792704706805238142
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/distinct4m/checkpoint-15000/scheduler.pt",
+      "bytes": 1465,
+      "dev": 64514,
+      "inode": 146228430,
+      "links": 1,
+      "mtime_ns": 1792704706804238122
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/distinct4m/checkpoint-15000/tokenizer.json",
+      "bytes": 534007,
+      "dev": 64514,
+      "inode": 146228427,
+      "links": 1,
+      "mtime_ns": 1792704704960199630
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/distinct4m/checkpoint-15000/tokenizer_config.json",
+      "bytes": 304,
+      "dev": 64514,
+      "inode": 146228426,
+      "links": 1,
+      "mtime_ns": 1792704704956199546
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/distinct4m/checkpoint-15000/trainer_state.json",
+      "bytes": 32985,
+      "dev": 64514,
+      "inode": 146228433,
+      "links": 1,
+      "mtime_ns": 1792704706810238247
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/distinct4m/checkpoint-15000/training_args.bin",
+      "bytes": 5457,
+      "dev": 64514,
+      "inode": 146228428,
+      "links": 1,
+      "mtime_ns": 1792704704961199650
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/distinct4m/checkpoint-15625/config.json",
+      "bytes": 1011,
+      "dev": 64514,
+      "inode": 146228397,
+      "links": 1,
+      "mtime_ns": 1792704896225193762
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/distinct4m/checkpoint-15625/generation_config.json",
+      "bytes": 257,
+      "dev": 64514,
+      "inode": 146228398,
+      "links": 1,
+      "mtime_ns": 1792704896225193762
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/distinct4m/checkpoint-15625/rng_state.pth",
+      "bytes": 14645,
+      "dev": 64514,
+      "inode": 146228421,
+      "links": 1,
+      "mtime_ns": 1792704898779247217
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/distinct4m/checkpoint-15625/run_manifest.json",
+      "bytes": 1225,
+      "dev": 64514,
+      "inode": 146228391,
+      "links": 1,
+      "mtime_ns": 1792704899105254040
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/distinct4m/checkpoint-15625/scaler.pt",
+      "bytes": 1383,
+      "dev": 64514,
+      "inode": 146228418,
+      "links": 1,
+      "mtime_ns": 1792704898778247196
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/distinct4m/checkpoint-15625/scheduler.pt",
+      "bytes": 1465,
+      "dev": 64514,
+      "inode": 146228404,
+      "links": 1,
+      "mtime_ns": 1792704898778247196
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/distinct4m/checkpoint-15625/tokenizer.json",
+      "bytes": 534007,
+      "dev": 64514,
+      "inode": 146228401,
+      "links": 1,
+      "mtime_ns": 1792704896965209250
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/distinct4m/checkpoint-15625/tokenizer_config.json",
+      "bytes": 304,
+      "dev": 64514,
+      "inode": 146228400,
+      "links": 1,
+      "mtime_ns": 1792704896962209187
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/distinct4m/checkpoint-15625/trainer_state.json",
+      "bytes": 34778,
+      "dev": 64514,
+      "inode": 146228422,
+      "links": 1,
+      "mtime_ns": 1792704898783247300
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/distinct4m/checkpoint-15625/training_args.bin",
+      "bytes": 5457,
+      "dev": 64514,
+      "inode": 146228402,
+      "links": 1,
+      "mtime_ns": 1792704896966209271
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/distinct4m/complete.json",
+      "bytes": 816,
+      "dev": 64514,
+      "inode": 146228392,
+      "links": 1,
+      "mtime_ns": 1792704914599578322
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/distinct4m/final/config.json",
+      "bytes": 1011,
+      "dev": 64514,
+      "inode": 146228406,
+      "links": 1,
+      "mtime_ns": 1792704913856562772
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/distinct4m/final/generation_config.json",
+      "bytes": 257,
+      "dev": 64514,
+      "inode": 146228407,
+      "links": 1,
+      "mtime_ns": 1792704913856562772
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/distinct4m/final/model.safetensors",
+      "bytes": 977639840,
+      "dev": 64514,
+      "inode": 146228408,
+      "links": 1,
+      "mtime_ns": 1792704914568577674
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/distinct4m/final/model_config.json",
+      "bytes": 297,
+      "dev": 64514,
+      "inode": 146228414,
+      "links": 1,
+      "mtime_ns": 1792704914599578322
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/distinct4m/final/tokenizer.json",
+      "bytes": 534007,
+      "dev": 64514,
+      "inode": 146228410,
+      "links": 1,
+      "mtime_ns": 1792704914589578113
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/distinct4m/final/tokenizer_config.json",
+      "bytes": 304,
+      "dev": 64514,
+      "inode": 146228409,
+      "links": 1,
+      "mtime_ns": 1792704914586578050
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/distinct4m/final/training_args.bin",
+      "bytes": 5457,
+      "dev": 64514,
+      "inode": 146228411,
+      "links": 1,
+      "mtime_ns": 1792704914590578134
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/distinct4m/log_history.json",
+      "bytes": 31992,
+      "dev": 64514,
+      "inode": 146228413,
+      "links": 1,
+      "mtime_ns": 1792704914599578322
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/distinct4m/run_manifest.json",
+      "bytes": 1225,
+      "dev": 64514,
+      "inode": 146228388,
+      "links": 1,
+      "mtime_ns": 1792700222786709829
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/distinct4m/source_tokenizer.json",
+      "bytes": 534007,
+      "dev": 64514,
+      "inode": 146228415,
+      "links": 1,
+      "mtime_ns": 1792704914603578406
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/distinct4m/trainer_args.json",
+      "bytes": 3671,
+      "dev": 64514,
+      "inode": 146228389,
+      "links": 1,
+      "mtime_ns": 1792700222883711855
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/distinct4m/trainer_state.json",
+      "bytes": 35451,
+      "dev": 64514,
+      "inode": 146228412,
+      "links": 1,
+      "mtime_ns": 1792704914595578239
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/distinct4m/training.png",
+      "bytes": 88356,
+      "dev": 64514,
+      "inode": 146228416,
+      "links": 1,
+      "mtime_ns": 1792704915407595234
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/repeat4m/checkpoint-15000/config.json",
+      "bytes": 1011,
+      "dev": 64514,
+      "inode": 146228325,
+      "links": 1,
+      "mtime_ns": 1792699266227730299
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/repeat4m/checkpoint-15000/generation_config.json",
+      "bytes": 257,
+      "dev": 64514,
+      "inode": 146228326,
+      "links": 1,
+      "mtime_ns": 1792699266228730320
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/repeat4m/checkpoint-15000/rng_state.pth",
+      "bytes": 14645,
+      "dev": 64514,
+      "inode": 146228334,
+      "links": 1,
+      "mtime_ns": 1792699269388796299
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/repeat4m/checkpoint-15000/run_manifest.json",
+      "bytes": 1225,
+      "dev": 64514,
+      "inode": 146228336,
+      "links": 1,
+      "mtime_ns": 1792699269392796382
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/repeat4m/checkpoint-15000/scaler.pt",
+      "bytes": 1383,
+      "dev": 64514,
+      "inode": 146228333,
+      "links": 1,
+      "mtime_ns": 1792699269387796278
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/repeat4m/checkpoint-15000/scheduler.pt",
+      "bytes": 1465,
+      "dev": 64514,
+      "inode": 146228332,
+      "links": 1,
+      "mtime_ns": 1792699269387796278
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/repeat4m/checkpoint-15000/tokenizer.json",
+      "bytes": 534007,
+      "dev": 64514,
+      "inode": 146228329,
+      "links": 1,
+      "mtime_ns": 1792699267346753663
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/repeat4m/checkpoint-15000/tokenizer_config.json",
+      "bytes": 304,
+      "dev": 64514,
+      "inode": 146228328,
+      "links": 1,
+      "mtime_ns": 1792699267342753580
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/repeat4m/checkpoint-15000/trainer_state.json",
+      "bytes": 32273,
+      "dev": 64514,
+      "inode": 146228335,
+      "links": 1,
+      "mtime_ns": 1792699269392796382
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/repeat4m/checkpoint-15000/training_args.bin",
+      "bytes": 5457,
+      "dev": 64514,
+      "inode": 146228330,
+      "links": 1,
+      "mtime_ns": 1792699267347753684
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/repeat4m/checkpoint-15625/config.json",
+      "bytes": 1011,
+      "dev": 64514,
+      "inode": 146228339,
+      "links": 1,
+      "mtime_ns": 1792699459509766150
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/repeat4m/checkpoint-15625/generation_config.json",
+      "bytes": 257,
+      "dev": 64514,
+      "inode": 146228340,
+      "links": 1,
+      "mtime_ns": 1792699459509766150
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/repeat4m/checkpoint-15625/rng_state.pth",
+      "bytes": 14645,
+      "dev": 64514,
+      "inode": 146228348,
+      "links": 1,
+      "mtime_ns": 1792699462251823410
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/repeat4m/checkpoint-15625/run_manifest.json",
+      "bytes": 1225,
+      "dev": 64514,
+      "inode": 146228350,
+      "links": 1,
+      "mtime_ns": 1792699462255823494
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/repeat4m/checkpoint-15625/scaler.pt",
+      "bytes": 1383,
+      "dev": 64514,
+      "inode": 146228347,
+      "links": 1,
+      "mtime_ns": 1792699462250823390
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/repeat4m/checkpoint-15625/scheduler.pt",
+      "bytes": 1465,
+      "dev": 64514,
+      "inode": 146228346,
+      "links": 1,
+      "mtime_ns": 1792699462249823369
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/repeat4m/checkpoint-15625/tokenizer.json",
+      "bytes": 534007,
+      "dev": 64514,
+      "inode": 146228343,
+      "links": 1,
+      "mtime_ns": 1792699460327783232
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/repeat4m/checkpoint-15625/tokenizer_config.json",
+      "bytes": 304,
+      "dev": 64514,
+      "inode": 146228342,
+      "links": 1,
+      "mtime_ns": 1792699460323783148
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/repeat4m/checkpoint-15625/trainer_state.json",
+      "bytes": 34074,
+      "dev": 64514,
+      "inode": 146228349,
+      "links": 1,
+      "mtime_ns": 1792699462255823494
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/repeat4m/checkpoint-15625/training_args.bin",
+      "bytes": 5457,
+      "dev": 64514,
+      "inode": 146228344,
+      "links": 1,
+      "mtime_ns": 1792699460328783253
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/repeat4m/complete.json",
+      "bytes": 818,
+      "dev": 64514,
+      "inode": 146228338,
+      "links": 1,
+      "mtime_ns": 1792699478447161609
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/repeat4m/final/config.json",
+      "bytes": 1011,
+      "dev": 64514,
+      "inode": 146228355,
+      "links": 1,
+      "mtime_ns": 1792699477625144444
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/repeat4m/final/generation_config.json",
+      "bytes": 257,
+      "dev": 64514,
+      "inode": 146228356,
+      "links": 1,
+      "mtime_ns": 1792699477625144444
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/repeat4m/final/model.safetensors",
+      "bytes": 977639840,
+      "dev": 64514,
+      "inode": 146228357,
+      "links": 1,
+      "mtime_ns": 1792699478416160962
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/repeat4m/final/model_config.json",
+      "bytes": 297,
+      "dev": 64514,
+      "inode": 146228366,
+      "links": 1,
+      "mtime_ns": 1792699478447161609
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/repeat4m/final/tokenizer.json",
+      "bytes": 534007,
+      "dev": 64514,
+      "inode": 146228359,
+      "links": 1,
+      "mtime_ns": 1792699478438161422
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/repeat4m/final/tokenizer_config.json",
+      "bytes": 304,
+      "dev": 64514,
+      "inode": 146228358,
+      "links": 1,
+      "mtime_ns": 1792699478434161338
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/repeat4m/final/training_args.bin",
+      "bytes": 5457,
+      "dev": 64514,
+      "inode": 146228360,
+      "links": 1,
+      "mtime_ns": 1792699478439161443
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/repeat4m/log_history.json",
+      "bytes": 31335,
+      "dev": 64514,
+      "inode": 146228365,
+      "links": 1,
+      "mtime_ns": 1792699478447161609
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/repeat4m/run_manifest.json",
+      "bytes": 1225,
+      "dev": 64514,
+      "inode": 146228321,
+      "links": 1,
+      "mtime_ns": 1792698925241611952
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/repeat4m/source_tokenizer.json",
+      "bytes": 534007,
+      "dev": 64514,
+      "inode": 146228367,
+      "links": 1,
+      "mtime_ns": 1792699478451161693
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/repeat4m/trainer_args.json",
+      "bytes": 3669,
+      "dev": 64514,
+      "inode": 146228322,
+      "links": 1,
+      "mtime_ns": 1792698925332613851
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/repeat4m/trainer_state.json",
+      "bytes": 34749,
+      "dev": 64514,
+      "inode": 146228364,
+      "links": 1,
+      "mtime_ns": 1792699478444161547
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/repeat4m/training.png",
+      "bytes": 88481,
+      "dev": 64514,
+      "inode": 146228369,
+      "links": 1,
+      "mtime_ns": 1792699479073174682
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/verified/distinct4m_evaluation.json",
+      "bytes": 2506,
+      "dev": 64514,
+      "inode": 146228436,
+      "links": 1,
+      "mtime_ns": 1792705653168034471
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/verified/distinct4m_training.json",
+      "bytes": 7300,
+      "dev": 64514,
+      "inode": 146228387,
+      "links": 1,
+      "mtime_ns": 1792704923543765517
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/verified/repeat4m_evaluation.json",
+      "bytes": 2530,
+      "dev": 64514,
+      "inode": 146228373,
+      "links": 1,
+      "mtime_ns": 1792700212348491731
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/verified/repeat4m_training.json",
+      "bytes": 7302,
+      "dev": 64514,
+      "inode": 146228371,
+      "links": 1,
+      "mtime_ns": 1792699487507350811
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery_code/_code_runner.py",
+      "bytes": 7840,
+      "dev": 64514,
+      "inode": 146228257,
+      "links": 1,
+      "mtime_ns": 1792698859614242184
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery_code/evaluation.py",
+      "bytes": 10300,
+      "dev": 64514,
+      "inode": 146228256,
+      "links": 1,
+      "mtime_ns": 1792698859613242163
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery_code/kaggle_experiments.py",
+      "bytes": 17765,
+      "dev": 64514,
+      "inode": 146228250,
+      "links": 1,
+      "mtime_ns": 1792698859613242163
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery_code/models/__init__.py",
+      "bytes": 378,
+      "dev": 64514,
+      "inode": 146228266,
+      "links": 1,
+      "mtime_ns": 1792698859614242184
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery_code/models/base.py",
+      "bytes": 3434,
+      "dev": 64514,
+      "inode": 146228270,
+      "links": 1,
+      "mtime_ns": 1792698859615242204
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery_code/models/baseline.py",
+      "bytes": 5633,
+      "dev": 64514,
+      "inode": 146228265,
+      "links": 1,
+      "mtime_ns": 1792698859614242184
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery_code/models/config.py",
+      "bytes": 2922,
+      "dev": 64514,
+      "inode": 146228263,
+      "links": 1,
+      "mtime_ns": 1792698859614242184
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery_code/models/copy.py",
+      "bytes": 7559,
+      "dev": 64514,
+      "inode": 146228267,
+      "links": 1,
+      "mtime_ns": 1792698859615242204
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery_code/models/t5.py",
+      "bytes": 1629,
+      "dev": 64514,
+      "inode": 146228264,
+      "links": 1,
+      "mtime_ns": 1792698859614242184
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery_code/models/t5_attention.py",
+      "bytes": 3637,
+      "dev": 64514,
+      "inode": 146228269,
+      "links": 1,
+      "mtime_ns": 1792698859615242204
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery_code/plotting.py",
+      "bytes": 7719,
+      "dev": 64514,
+      "inode": 146228254,
+      "links": 1,
+      "mtime_ns": 1792698859613242163
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery_code/prepare_datasets.py",
+      "bytes": 9003,
+      "dev": 64514,
+      "inode": 146228258,
+      "links": 1,
+      "mtime_ns": 1792698859614242184
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery_code/reference_identity.json",
+      "bytes": 1870362,
+      "dev": 64514,
+      "inode": 146228271,
+      "links": 1,
+      "mtime_ns": 1792698859619242288
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery_code/tokenizer.py",
+      "bytes": 5134,
+      "dev": 64514,
+      "inode": 146228255,
+      "links": 1,
+      "mtime_ns": 1792698859613242163
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery_code/tools/audit_a100_errors.py",
+      "bytes": 12623,
+      "dev": 64514,
+      "inode": 146228274,
+      "links": 1,
+      "mtime_ns": 1792698859621242330
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery_code/tools/evaluate_fixed_bundle.py",
+      "bytes": 8382,
+      "dev": 64514,
+      "inode": 146228260,
+      "links": 1,
+      "mtime_ns": 1792698859614242184
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery_code/tools/prepare_a100_diversity.py",
+      "bytes": 16368,
+      "dev": 64514,
+      "inode": 146228272,
+      "links": 1,
+      "mtime_ns": 1792698859620242309
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery_code/tools/recover_a100_stage2.py",
+      "bytes": 17177,
+      "dev": 64514,
+      "inode": 146228276,
+      "links": 1,
+      "mtime_ns": 1792698859621242330
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery_code/tools/run_a100_decoding.py",
+      "bytes": 11335,
+      "dev": 64514,
+      "inode": 146228275,
+      "links": 1,
+      "mtime_ns": 1792698859621242330
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery_code/tools/run_a100_stage1.py",
+      "bytes": 5717,
+      "dev": 64514,
+      "inode": 146228261,
+      "links": 1,
+      "mtime_ns": 1792698859614242184
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery_code/tools/run_a100_stage2.py",
+      "bytes": 24298,
+      "dev": 64514,
+      "inode": 146228273,
+      "links": 1,
+      "mtime_ns": 1792698859620242309
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery_code/train_kaggle.py",
+      "bytes": 1856,
+      "dev": 64514,
+      "inode": 146228251,
+      "links": 1,
+      "mtime_ns": 1792698859613242163
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery_code/training.py",
+      "bytes": 37589,
+      "dev": 64514,
+      "inode": 146228252,
+      "links": 1,
+      "mtime_ns": 1792698859613242163
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery_code/utils.py",
+      "bytes": 1381,
+      "dev": 64514,
+      "inode": 146228253,
+      "links": 1,
+      "mtime_ns": 1792698859613242163
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery_launch.json",
+      "bytes": 347,
+      "dev": 64514,
+      "inode": 146228280,
+      "links": 1,
+      "mtime_ns": 1792698898602055922
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery_pipeline.exitcode",
+      "bytes": 2,
+      "dev": 64514,
+      "inode": 146228446,
+      "links": 1,
+      "mtime_ns": 1792705653281036835
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery_pipeline.phase",
+      "bytes": 9,
+      "dev": 64514,
+      "inode": 146228279,
+      "links": 1,
+      "mtime_ns": 1792705653281036835
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery_pipeline.pid",
+      "bytes": 6,
+      "dev": 64514,
+      "inode": 146228278,
+      "links": 1,
+      "mtime_ns": 1792698898602055922
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_source_manifest.json",
+      "bytes": 2467,
+      "dev": 64514,
+      "inode": 146228114,
+      "links": 1,
+      "mtime_ns": 1792686943027974486
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage3_audit/report.json",
+      "bytes": 3966,
+      "dev": 64514,
+      "inode": 146228458,
+      "links": 1,
+      "mtime_ns": 1792706269652933667
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage3_audit/selected_errors.jsonl",
+      "bytes": 445084,
+      "dev": 64514,
+      "inode": 146228455,
+      "links": 1,
+      "mtime_ns": 1792706269648933583
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage3_audit/train_sample.jsonl",
+      "bytes": 247887,
+      "dev": 64514,
+      "inode": 146228456,
+      "links": 1,
+      "mtime_ns": 1792706269651933646
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage3_launch.json",
+      "bytes": 878,
+      "dev": 64514,
+      "inode": 146228450,
+      "links": 1,
+      "mtime_ns": 1792706265855854223
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage3_pipeline.exitcode",
+      "bytes": 2,
+      "dev": 64514,
+      "inode": 146228459,
+      "links": 1,
+      "mtime_ns": 1792706269789936533
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage3_pipeline.pid",
+      "bytes": 7,
+      "dev": 64514,
+      "inode": 146228449,
+      "links": 1,
+      "mtime_ns": 1792706265855854223
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage3_review_complete.json",
+      "bytes": 3989,
+      "dev": 64514,
+      "inode": 146228462,
+      "links": 1,
+      "mtime_ns": 1792706827069595540
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage4_decoding/confirmation/config.json",
+      "bytes": 879,
+      "dev": 64514,
+      "inode": 146228541,
+      "links": 1,
+      "mtime_ns": 1792707310117697195
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage4_decoding/confirmation/evaluation/evaluation.jsonl",
+      "bytes": 20003040,
+      "dev": 64514,
+      "inode": 146228611,
+      "links": 1,
+      "mtime_ns": 1792708021534571851
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage4_decoding/confirmation/evaluation/evaluation_config.json",
+      "bytes": 358,
+      "dev": 64514,
+      "inode": 146228613,
+      "links": 1,
+      "mtime_ns": 1792708021535571872
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage4_decoding/confirmation/evaluation/metrics.json",
+      "bytes": 708,
+      "dev": 64514,
+      "inode": 146228612,
+      "links": 1,
+      "mtime_ns": 1792708021535571872
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage4_decoding/confirmation/metrics.json",
+      "bytes": 1131,
+      "dev": 64514,
+      "inode": 146228614,
+      "links": 1,
+      "mtime_ns": 1792708021750576368
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage4_decoding/confirmation/predictions.jsonl",
+      "bytes": 16209996,
+      "dev": 64514,
+      "inode": 146228543,
+      "links": 1,
+      "mtime_ns": 1792707775136420070
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage4_decoding/confirmation/progress.json",
+      "bytes": 66,
+      "dev": 64514,
+      "inode": 146228615,
+      "links": 1,
+      "mtime_ns": 1792708021750576368
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage4_decoding/queue.lock",
+      "bytes": 0,
+      "dev": 64514,
+      "inode": 146228472,
+      "links": 1,
+      "mtime_ns": 1792706855231184685
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage4_decoding/queue_state.json",
+      "bytes": 330,
+      "dev": 64514,
+      "inode": 146228616,
+      "links": 1,
+      "mtime_ns": 1792708022192585609
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage4_decoding/run_request.json",
+      "bytes": 1861,
+      "dev": 64514,
+      "inode": 146228474,
+      "links": 1,
+      "mtime_ns": 1792706860580296589
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage4_decoding/selection/1_beam2_lp1/config.json",
+      "bytes": 878,
+      "dev": 64514,
+      "inode": 146228480,
+      "links": 1,
+      "mtime_ns": 1792706867871449120
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage4_decoding/selection/1_beam2_lp1/evaluation/evaluation.jsonl",
+      "bytes": 1988585,
+      "dev": 64514,
+      "inode": 146228491,
+      "links": 1,
+      "mtime_ns": 1792706936191878379
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage4_decoding/selection/1_beam2_lp1/evaluation/evaluation_config.json",
+      "bytes": 367,
+      "dev": 64514,
+      "inode": 146228494,
+      "links": 1,
+      "mtime_ns": 1792706936192878400
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage4_decoding/selection/1_beam2_lp1/evaluation/metrics.json",
+      "bytes": 673,
+      "dev": 64514,
+      "inode": 146228492,
+      "links": 1,
+      "mtime_ns": 1792706936192878400
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage4_decoding/selection/1_beam2_lp1/metrics.json",
+      "bytes": 1094,
+      "dev": 64514,
+      "inode": 146228495,
+      "links": 1,
+      "mtime_ns": 1792706936216878902
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage4_decoding/selection/1_beam2_lp1/predictions.jsonl",
+      "bytes": 1608652,
+      "dev": 64514,
+      "inode": 146228481,
+      "links": 1,
+      "mtime_ns": 1792706910958350497
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage4_decoding/selection/1_beam2_lp1/progress.json",
+      "bytes": 64,
+      "dev": 64514,
+      "inode": 146228496,
+      "links": 1,
+      "mtime_ns": 1792706936216878902
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage4_decoding/selection/2_beam4_lp1/config.json",
+      "bytes": 878,
+      "dev": 64514,
+      "inode": 146228497,
+      "links": 1,
+      "mtime_ns": 1792706939966957353
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage4_decoding/selection/2_beam4_lp1/evaluation/evaluation.jsonl",
+      "bytes": 1992897,
+      "dev": 64514,
+      "inode": 146228504,
+      "links": 1,
+      "mtime_ns": 1792707019366617944
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage4_decoding/selection/2_beam4_lp1/evaluation/evaluation_config.json",
+      "bytes": 367,
+      "dev": 64514,
+      "inode": 146228506,
+      "links": 1,
+      "mtime_ns": 1792707019367617965
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage4_decoding/selection/2_beam4_lp1/evaluation/metrics.json",
+      "bytes": 645,
+      "dev": 64514,
+      "inode": 146228505,
+      "links": 1,
+      "mtime_ns": 1792707019367617965
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage4_decoding/selection/2_beam4_lp1/metrics.json",
+      "bytes": 1065,
+      "dev": 64514,
+      "inode": 146228507,
+      "links": 1,
+      "mtime_ns": 1792707019389618425
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage4_decoding/selection/2_beam4_lp1/predictions.jsonl",
+      "bytes": 1613373,
+      "dev": 64514,
+      "inode": 146228498,
+      "links": 1,
+      "mtime_ns": 1792706994004087644
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage4_decoding/selection/2_beam4_lp1/progress.json",
+      "bytes": 64,
+      "dev": 64514,
+      "inode": 146228509,
+      "links": 1,
+      "mtime_ns": 1792707019389618425
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage4_decoding/selection/3_beam8_lp1/config.json",
+      "bytes": 878,
+      "dev": 64514,
+      "inode": 146228510,
+      "links": 1,
+      "mtime_ns": 1792707023061695204
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage4_decoding/selection/3_beam8_lp1/evaluation/evaluation.jsonl",
+      "bytes": 2002182,
+      "dev": 64514,
+      "inode": 146228517,
+      "links": 1,
+      "mtime_ns": 1792707144232228738
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage4_decoding/selection/3_beam8_lp1/evaluation/evaluation_config.json",
+      "bytes": 367,
+      "dev": 64514,
+      "inode": 146228519,
+      "links": 1,
+      "mtime_ns": 1792707144232228738
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage4_decoding/selection/3_beam8_lp1/evaluation/metrics.json",
+      "bytes": 647,
+      "dev": 64514,
+      "inode": 146228518,
+      "links": 1,
+      "mtime_ns": 1792707144232228738
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage4_decoding/selection/3_beam8_lp1/metrics.json",
+      "bytes": 1066,
+      "dev": 64514,
+      "inode": 146228520,
+      "links": 1,
+      "mtime_ns": 1792707144254229197
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage4_decoding/selection/3_beam8_lp1/predictions.jsonl",
+      "bytes": 1622489,
+      "dev": 64514,
+      "inode": 146228513,
+      "links": 1,
+      "mtime_ns": 1792707119044702096
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage4_decoding/selection/3_beam8_lp1/progress.json",
+      "bytes": 64,
+      "dev": 64514,
+      "inode": 146228521,
+      "links": 1,
+      "mtime_ns": 1792707144254229197
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage4_decoding/selection/4_beam4_lp0.8/config.json",
+      "bytes": 878,
+      "dev": 64514,
+      "inode": 146228522,
+      "links": 1,
+      "mtime_ns": 1792707147827303906
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage4_decoding/selection/4_beam4_lp0.8/evaluation/evaluation.jsonl",
+      "bytes": 1983248,
+      "dev": 64514,
+      "inode": 146228526,
+      "links": 1,
+      "mtime_ns": 1792707224359904107
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage4_decoding/selection/4_beam4_lp0.8/evaluation/evaluation_config.json",
+      "bytes": 369,
+      "dev": 64514,
+      "inode": 146228528,
+      "links": 1,
+      "mtime_ns": 1792707224360904128
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage4_decoding/selection/4_beam4_lp0.8/evaluation/metrics.json",
+      "bytes": 643,
+      "dev": 64514,
+      "inode": 146228527,
+      "links": 1,
+      "mtime_ns": 1792707224360904128
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage4_decoding/selection/4_beam4_lp0.8/metrics.json",
+      "bytes": 1062,
+      "dev": 64514,
+      "inode": 146228529,
+      "links": 1,
+      "mtime_ns": 1792707224383904609
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage4_decoding/selection/4_beam4_lp0.8/predictions.jsonl",
+      "bytes": 1603867,
+      "dev": 64514,
+      "inode": 146228523,
+      "links": 1,
+      "mtime_ns": 1792707198993373724
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage4_decoding/selection/4_beam4_lp0.8/progress.json",
+      "bytes": 64,
+      "dev": 64514,
+      "inode": 146228530,
+      "links": 1,
+      "mtime_ns": 1792707224383904609
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage4_decoding/selection/5_beam4_lp1.2/config.json",
+      "bytes": 878,
+      "dev": 64514,
+      "inode": 146228531,
+      "links": 1,
+      "mtime_ns": 1792707228009980426
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage4_decoding/selection/5_beam4_lp1.2/evaluation/evaluation.jsonl",
+      "bytes": 2000269,
+      "dev": 64514,
+      "inode": 146228535,
+      "links": 1,
+      "mtime_ns": 1792707305640603584
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage4_decoding/selection/5_beam4_lp1.2/evaluation/evaluation_config.json",
+      "bytes": 369,
+      "dev": 64514,
+      "inode": 146228538,
+      "links": 1,
+      "mtime_ns": 1792707305641603605
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage4_decoding/selection/5_beam4_lp1.2/evaluation/metrics.json",
+      "bytes": 646,
+      "dev": 64514,
+      "inode": 146228537,
+      "links": 1,
+      "mtime_ns": 1792707305641603605
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage4_decoding/selection/5_beam4_lp1.2/metrics.json",
+      "bytes": 1066,
+      "dev": 64514,
+      "inode": 146228539,
+      "links": 1,
+      "mtime_ns": 1792707305664604086
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage4_decoding/selection/5_beam4_lp1.2/predictions.jsonl",
+      "bytes": 1620656,
+      "dev": 64514,
+      "inode": 146228532,
+      "links": 1,
+      "mtime_ns": 1792707280120069983
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage4_decoding/selection/5_beam4_lp1.2/progress.json",
+      "bytes": 64,
+      "dev": 64514,
+      "inode": 146228540,
+      "links": 1,
+      "mtime_ns": 1792707305664604086
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage4_decoding/stage4_complete.json",
+      "bytes": 11616,
+      "dev": 64514,
+      "inode": 146228544,
+      "links": 1,
+      "mtime_ns": 1792708022192585609
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage4_decoding/t4_benchmark_required.json",
+      "bytes": 171,
+      "dev": 64514,
+      "inode": 146228475,
+      "links": 1,
+      "mtime_ns": 1792706860580296589
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage4_driver.pid",
+      "bytes": 7,
+      "dev": 64514,
+      "inode": 146228468,
+      "links": 1,
+      "mtime_ns": 1792706855188183785
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage4_launch.json",
+      "bytes": 540,
+      "dev": 64514,
+      "inode": 146228469,
+      "links": 1,
+      "mtime_ns": 1792706855188183785
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage4_pipeline.exitcode",
+      "bytes": 2,
+      "dev": 64514,
+      "inode": 146228534,
+      "links": 1,
+      "mtime_ns": 1792708022974601960
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage4_pipeline.pid",
+      "bytes": 7,
+      "dev": 64514,
+      "inode": 146228463,
+      "links": 1,
+      "mtime_ns": 1792706855188183785
+    },
+    {
+      "path": "artifacts/a100_full_eval_20261023/code/_code_runner.py",
+      "bytes": 7840,
+      "dev": 64514,
+      "inode": 146803827,
+      "links": 1,
+      "mtime_ns": 1791828928255914449
+    },
+    {
+      "path": "artifacts/a100_full_eval_20261023/code/evaluation.py",
+      "bytes": 10300,
+      "dev": 64514,
+      "inode": 146803826,
+      "links": 1,
+      "mtime_ns": 1791828938209349632
+    },
+    {
+      "path": "artifacts/a100_full_eval_20261023/code/kaggle_experiments.py",
+      "bytes": 21197,
+      "dev": 64514,
+      "inode": 146803820,
+      "links": 1,
+      "mtime_ns": 1792707616009066104
+    },
+    {
+      "path": "artifacts/a100_full_eval_20261023/code/models/__init__.py",
+      "bytes": 378,
+      "dev": 64514,
+      "inode": 146803837,
+      "links": 1,
+      "mtime_ns": 1792435965352836370
+    },
+    {
+      "path": "artifacts/a100_full_eval_20261023/code/models/base.py",
+      "bytes": 3434,
+      "dev": 64514,
+      "inode": 146803840,
+      "links": 1,
+      "mtime_ns": 1791826586298947334
+    },
+    {
+      "path": "artifacts/a100_full_eval_20261023/code/models/baseline.py",
+      "bytes": 5633,
+      "dev": 64514,
+      "inode": 146803836,
+      "links": 1,
+      "mtime_ns": 1792435965283174991
+    },
+    {
+      "path": "artifacts/a100_full_eval_20261023/code/models/config.py",
+      "bytes": 2922,
+      "dev": 64514,
+      "inode": 146803834,
+      "links": 1,
+      "mtime_ns": 1792435965308151006
+    },
+    {
+      "path": "artifacts/a100_full_eval_20261023/code/models/copy.py",
+      "bytes": 7559,
+      "dev": 64514,
+      "inode": 146803838,
+      "links": 1,
+      "mtime_ns": 1792435965330479860
+    },
+    {
+      "path": "artifacts/a100_full_eval_20261023/code/models/t5.py",
+      "bytes": 1629,
+      "dev": 64514,
+      "inode": 146803835,
+      "links": 1,
+      "mtime_ns": 1792433638375421047
+    },
+    {
+      "path": "artifacts/a100_full_eval_20261023/code/models/t5_attention.py",
+      "bytes": 3637,
+      "dev": 64514,
+      "inode": 146803839,
+      "links": 1,
+      "mtime_ns": 1792433638350672721
+    },
+    {
+      "path": "artifacts/a100_full_eval_20261023/code/plotting.py",
+      "bytes": 7719,
+      "dev": 64514,
+      "inode": 146803824,
+      "links": 1,
+      "mtime_ns": 1791828938227356672
+    },
+    {
+      "path": "artifacts/a100_full_eval_20261023/code/prepare_datasets.py",
+      "bytes": 9003,
+      "dev": 64514,
+      "inode": 146803828,
+      "links": 1,
+      "mtime_ns": 1791833867979559898
+    },
+    {
+      "path": "artifacts/a100_full_eval_20261023/code/reference_identity.json",
+      "bytes": 1870362,
+      "dev": 64514,
+      "inode": 146803841,
+      "links": 1,
+      "mtime_ns": 1792682557281433343
+    },
+    {
+      "path": "artifacts/a100_full_eval_20261023/code/tokenizer.py",
+      "bytes": 5134,
+      "dev": 64514,
+      "inode": 146803825,
+      "links": 1,
+      "mtime_ns": 1791817183240795135
+    },
+    {
+      "path": "artifacts/a100_full_eval_20261023/code/tools/audit_a100_errors.py",
+      "bytes": 12623,
+      "dev": 64514,
+      "inode": 146803845,
+      "links": 1,
+      "mtime_ns": 1792686391359083652
+    },
+    {
+      "path": "artifacts/a100_full_eval_20261023/code/tools/evaluate_fixed_bundle.py",
+      "bytes": 17578,
+      "dev": 64514,
+      "inode": 146803830,
+      "links": 1,
+      "mtime_ns": 1792763374018121242
+    },
+    {
+      "path": "artifacts/a100_full_eval_20261023/code/tools/prepare_a100_diversity.py",
+      "bytes": 16368,
+      "dev": 64514,
+      "inode": 146803842,
+      "links": 1,
+      "mtime_ns": 1792683567999725580
+    },
+    {
+      "path": "artifacts/a100_full_eval_20261023/code/tools/prepare_a100_full.py",
+      "bytes": 13624,
+      "dev": 64514,
+      "inode": 146803848,
+      "links": 1,
+      "mtime_ns": 1792707574053026676
+    },
+    {
+      "path": "artifacts/a100_full_eval_20261023/code/tools/recover_a100_stage2.py",
+      "bytes": 17177,
+      "dev": 64514,
+      "inode": 146803847,
+      "links": 1,
+      "mtime_ns": 1792698596428444147
+    },
+    {
+      "path": "artifacts/a100_full_eval_20261023/code/tools/run_a100_decoding.py",
+      "bytes": 11335,
+      "dev": 64514,
+      "inode": 146803846,
+      "links": 1,
+      "mtime_ns": 1792685958449085474
+    },
+    {
+      "path": "artifacts/a100_full_eval_20261023/code/tools/run_a100_full.py",
+      "bytes": 13196,
+      "dev": 64514,
+      "inode": 146803849,
+      "links": 1,
+      "mtime_ns": 1792707634407938957
+    },
+    {
+      "path": "artifacts/a100_full_eval_20261023/code/tools/run_a100_stage1.py",
+      "bytes": 5717,
+      "dev": 64514,
+      "inode": 146803832,
+      "links": 1,
+      "mtime_ns": 1792682556163963556
+    },
+    {
+      "path": "artifacts/a100_full_eval_20261023/code/tools/run_a100_stage2.py",
+      "bytes": 24367,
+      "dev": 64514,
+      "inode": 146803844,
+      "links": 1,
+      "mtime_ns": 1792707616029561042
+    },
+    {
+      "path": "artifacts/a100_full_eval_20261023/code/train_kaggle.py",
+      "bytes": 1856,
+      "dev": 64514,
+      "inode": 146803821,
+      "links": 1,
+      "mtime_ns": 1792682028237051010
+    },
+    {
+      "path": "artifacts/a100_full_eval_20261023/code/training.py",
+      "bytes": 37589,
+      "dev": 64514,
+      "inode": 146803822,
+      "links": 1,
+      "mtime_ns": 1792436119809920072
+    },
+    {
+      "path": "artifacts/a100_full_eval_20261023/code/utils.py",
+      "bytes": 1381,
+      "dev": 64514,
+      "inode": 146803823,
+      "links": 1,
+      "mtime_ns": 1792435820539279460
+    },
+    {
+      "path": "artifacts/a100_full_eval_20261023/evaluation/config.json",
+      "bytes": 2107,
+      "dev": 64514,
+      "inode": 147591985,
+      "links": 1,
+      "mtime_ns": 1792763750397996805
+    },
+    {
+      "path": "artifacts/a100_full_eval_20261023/evaluation/evaluation/evaluation.jsonl",
+      "bytes": 20094534,
+      "dev": 64514,
+      "inode": 147591990,
+      "links": 1,
+      "mtime_ns": 1792764464483038040
+    },
+    {
+      "path": "artifacts/a100_full_eval_20261023/evaluation/evaluation/evaluation_config.json",
+      "bytes": 339,
+      "dev": 64514,
+      "inode": 147591992,
+      "links": 1,
+      "mtime_ns": 1792764464484038062
+    },
+    {
+      "path": "artifacts/a100_full_eval_20261023/evaluation/evaluation/metrics.json",
+      "bytes": 753,
+      "dev": 64514,
+      "inode": 147591991,
+      "links": 1,
+      "mtime_ns": 1792764464484038062
+    },
+    {
+      "path": "artifacts/a100_full_eval_20261023/evaluation/metrics.json",
+      "bytes": 1215,
+      "dev": 64514,
+      "inode": 147591996,
+      "links": 1,
+      "mtime_ns": 1792764464858045946
+    },
+    {
+      "path": "artifacts/a100_full_eval_20261023/evaluation/predictions.jsonl",
+      "bytes": 16309902,
+      "dev": 64514,
+      "inode": 147591987,
+      "links": 1,
+      "mtime_ns": 1792764217982842918
+    },
+    {
+      "path": "artifacts/a100_full_eval_20261023/evaluation/progress.json",
+      "bytes": 66,
+      "dev": 64514,
+      "inode": 147591997,
+      "links": 1,
+      "mtime_ns": 1792764464858045946
+    },
+    {
+      "path": "artifacts/a100_full_eval_20261023/evaluation.exitcode",
+      "bytes": 2,
+      "dev": 64514,
+      "inode": 146803856,
+      "links": 1,
+      "mtime_ns": 1792764465686063402
+    },
+    {
+      "path": "artifacts/a100_full_eval_20261023/evaluation.lock",
+      "bytes": 0,
+      "dev": 64514,
+      "inode": 146803851,
+      "links": 1,
+      "mtime_ns": 1792763725226467114
+    },
+    {
+      "path": "artifacts/a100_full_eval_20261023/evaluation.phase",
+      "bytes": 9,
+      "dev": 64514,
+      "inode": 146803853,
+      "links": 1,
+      "mtime_ns": 1792764465686063402
+    },
+    {
+      "path": "artifacts/a100_full_eval_20261023/evaluation.pid",
+      "bytes": 7,
+      "dev": 64514,
+      "inode": 146803852,
+      "links": 1,
+      "mtime_ns": 1792763725227467135
+    },
+    {
+      "path": "artifacts/a100_full_eval_20261023/evaluation_driver.pid",
+      "bytes": 7,
+      "dev": 64514,
+      "inode": 146803854,
+      "links": 1,
+      "mtime_ns": 1792763728027526055
+    },
+    {
+      "path": "artifacts/a100_full_eval_20261023/evaluation_results.tar.gz",
+      "bytes": 6791094,
+      "dev": 64514,
+      "inode": 146803858,
+      "links": 1,
+      "mtime_ns": 1792764546404765185
+    },
+    {
+      "path": "artifacts/a100_full_eval_20261023/evaluation_source.tar.gz",
+      "bytes": 190000,
+      "dev": 64514,
+      "inode": 146803789,
+      "links": 1,
+      "mtime_ns": 1792763709380133674
+    },
+    {
+      "path": "artifacts/a100_full_eval_20261023/evaluation_source_manifest.json",
+      "bytes": 2689,
+      "dev": 64514,
+      "inode": 146803818,
+      "links": 1,
+      "mtime_ns": 1792763709454135231
+    },
+    {
+      "path": "artifacts/a100_full_eval_20261023/launch_evaluation.sh",
+      "bytes": 2253,
+      "dev": 64514,
+      "inode": 146803819,
+      "links": 1,
+      "mtime_ns": 1792763709528136788
+    },
+    {
+      "path": "artifacts/a100_full_eval_20261023/logs/bootstrap.log",
+      "bytes": 67,
+      "dev": 64514,
+      "inode": 146803850,
+      "links": 1,
+      "mtime_ns": 1792763727612517322
+    },
+    {
+      "path": "artifacts/a100_full_eval_20261023/logs/evaluation.log",
+      "bytes": 3167,
+      "dev": 64514,
+      "inode": 146803855,
+      "links": 1,
+      "mtime_ns": 1792764464858045946
+    },
+    {
+      "path": "artifacts/a100_full_eval_20261023/results_manifest.json",
+      "bytes": 2248,
+      "dev": 64514,
+      "inode": 146803857,
+      "links": 1,
+      "mtime_ns": 1792764544515725355
+    },
+    {
+      "path": "artifacts/experiments/baseline_001/checkpoint-147871/config.json",
+      "bytes": 1010,
+      "dev": 64514,
+      "inode": 145907576,
+      "links": 1,
+      "mtime_ns": 1791848619832917094
+    },
+    {
+      "path": "artifacts/experiments/baseline_001/checkpoint-147871/generation_config.json",
+      "bytes": 257,
+      "dev": 64514,
+      "inode": 145907570,
+      "links": 1,
+      "mtime_ns": 1791848619832917094
+    },
+    {
+      "path": "artifacts/experiments/baseline_001/checkpoint-147871/model.safetensors",
+      "bytes": 195113216,
+      "dev": 64514,
+      "inode": 145907573,
+      "links": 1,
+      "mtime_ns": 1791848620088922413
+    },
+    {
+      "path": "artifacts/experiments/baseline_001/checkpoint-147871/rng_state.pth",
+      "bytes": 14645,
+      "dev": 64514,
+      "inode": 145907572,
+      "links": 1,
+      "mtime_ns": 1791848620540931805
+    },
+    {
+      "path": "artifacts/experiments/baseline_001/checkpoint-147871/scaler.pt",
+      "bytes": 1383,
+      "dev": 64514,
+      "inode": 145907575,
+      "links": 1,
+      "mtime_ns": 1791848620539931784
+    },
+    {
+      "path": "artifacts/experiments/baseline_001/checkpoint-147871/scheduler.pt",
+      "bytes": 1465,
+      "dev": 64514,
+      "inode": 145907556,
+      "links": 1,
+      "mtime_ns": 1791848620539931784
+    },
+    {
+      "path": "artifacts/experiments/baseline_001/checkpoint-147871/tokenizer.json",
+      "bytes": 534007,
+      "dev": 64514,
+      "inode": 145907577,
+      "links": 1,
+      "mtime_ns": 1791848620102922704
+    },
+    {
+      "path": "artifacts/experiments/baseline_001/checkpoint-147871/tokenizer_config.json",
+      "bytes": 304,
+      "dev": 64514,
+      "inode": 145907571,
+      "links": 1,
+      "mtime_ns": 1791848620098922621
+    },
+    {
+      "path": "artifacts/experiments/baseline_001/checkpoint-147871/trainer_state.json",
+      "bytes": 279963,
+      "dev": 64514,
+      "inode": 145907569,
+      "links": 1,
+      "mtime_ns": 1791848620573932491
+    },
+    {
+      "path": "artifacts/experiments/baseline_001/checkpoint-147871/training_args.bin",
+      "bytes": 5393,
+      "dev": 64514,
+      "inode": 145907568,
+      "links": 1,
+      "mtime_ns": 1791848620105922766
+    },
+    {
+      "path": "artifacts/experiments/baseline_001/environment.json",
+      "bytes": 153,
+      "dev": 64514,
+      "inode": 145907554,
+      "links": 1,
+      "mtime_ns": 1791839670830375825
+    },
+    {
+      "path": "artifacts/experiments/baseline_001/model_config.json",
+      "bytes": 274,
+      "dev": 64514,
+      "inode": 145907551,
+      "links": 1,
+      "mtime_ns": 1791839670826375741
+    },
+    {
+      "path": "artifacts/experiments/baseline_001/preprocessing.json",
+      "bytes": 313,
+      "dev": 64514,
+      "inode": 145907552,
+      "links": 1,
+      "mtime_ns": 1791839670826375741
+    },
+    {
+      "path": "artifacts/experiments/baseline_001/tokenizer.json",
+      "bytes": 534007,
+      "dev": 64514,
+      "inode": 145907579,
+      "links": 1,
+      "mtime_ns": 1791839670835375929
+    },
+    {
+      "path": "artifacts/experiments/baseline_001/trainer_args.json",
+      "bytes": 3603,
+      "dev": 64514,
+      "inode": 145907578,
+      "links": 1,
+      "mtime_ns": 1791839670830375825
+    },
+    {
+      "path": "artifacts/experiments/baseline_001/training_config.json",
+      "bytes": 882,
+      "dev": 64514,
+      "inode": 145907553,
+      "links": 1,
+      "mtime_ns": 1791839670826375741
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/checkpoint-50000/config.json",
+      "bytes": 1010,
+      "dev": 64514,
+      "inode": 145907669,
+      "links": 1,
+      "mtime_ns": 1791888195482166923
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/checkpoint-50000/generation_config.json",
+      "bytes": 257,
+      "dev": 64514,
+      "inode": 145907655,
+      "links": 1,
+      "mtime_ns": 1791888195483166944
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/checkpoint-50000/rng_state_0.pth",
+      "bytes": 14917,
+      "dev": 64514,
+      "inode": 145907600,
+      "links": 1,
+      "mtime_ns": 1791888197350206279
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/checkpoint-50000/rng_state_1.pth",
+      "bytes": 14917,
+      "dev": 64514,
+      "inode": 145907657,
+      "links": 1,
+      "mtime_ns": 1791888196115180260
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/checkpoint-50000/scheduler.pt",
+      "bytes": 1465,
+      "dev": 64514,
+      "inode": 145907599,
+      "links": 1,
+      "mtime_ns": 1791888197348206237
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/checkpoint-50000/tokenizer.json",
+      "bytes": 534007,
+      "dev": 64514,
+      "inode": 145907670,
+      "links": 1,
+      "mtime_ns": 1791888196112180196
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/checkpoint-50000/tokenizer_config.json",
+      "bytes": 304,
+      "dev": 64514,
+      "inode": 145907656,
+      "links": 1,
+      "mtime_ns": 1791888196108180112
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/checkpoint-50000/trainer_state.json",
+      "bytes": 98409,
+      "dev": 64514,
+      "inode": 145907654,
+      "links": 1,
+      "mtime_ns": 1791888197362206532
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/checkpoint-50000/training_args.bin",
+      "bytes": 5393,
+      "dev": 64514,
+      "inode": 145907653,
+      "links": 1,
+      "mtime_ns": 1791888196113180218
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/checkpoint-50000/training_layout.json",
+      "bytes": 393,
+      "dev": 64514,
+      "inode": 145907598,
+      "links": 1,
+      "mtime_ns": 1791888197586211251
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/checkpoint-75000/config.json",
+      "bytes": 1010,
+      "dev": 64514,
+      "inode": 145907743,
+      "links": 1,
+      "mtime_ns": 1791891595690309504
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/checkpoint-75000/generation_config.json",
+      "bytes": 257,
+      "dev": 64514,
+      "inode": 145907709,
+      "links": 1,
+      "mtime_ns": 1791891595691309526
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/checkpoint-75000/rng_state_0.pth",
+      "bytes": 14917,
+      "dev": 64514,
+      "inode": 145907676,
+      "links": 1,
+      "mtime_ns": 1791891597368345390
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/checkpoint-75000/rng_state_1.pth",
+      "bytes": 14917,
+      "dev": 64514,
+      "inode": 145907711,
+      "links": 1,
+      "mtime_ns": 1791891596259321673
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/checkpoint-75000/scheduler.pt",
+      "bytes": 1465,
+      "dev": 64514,
+      "inode": 145907675,
+      "links": 1,
+      "mtime_ns": 1791891597367345368
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/checkpoint-75000/tokenizer.json",
+      "bytes": 534007,
+      "dev": 64514,
+      "inode": 145907744,
+      "links": 1,
+      "mtime_ns": 1791891596256321608
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/checkpoint-75000/tokenizer_config.json",
+      "bytes": 304,
+      "dev": 64514,
+      "inode": 145907710,
+      "links": 1,
+      "mtime_ns": 1791891596253321544
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/checkpoint-75000/trainer_state.json",
+      "bytes": 146755,
+      "dev": 64514,
+      "inode": 145907708,
+      "links": 1,
+      "mtime_ns": 1791891597383345710
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/checkpoint-75000/training_args.bin",
+      "bytes": 5393,
+      "dev": 64514,
+      "inode": 145907707,
+      "links": 1,
+      "mtime_ns": 1791891596257321630
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/checkpoint-75000/training_layout.json",
+      "bytes": 393,
+      "dev": 64514,
+      "inode": 145907674,
+      "links": 1,
+      "mtime_ns": 1791891597555349389
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/environment.json",
+      "bytes": 172,
+      "dev": 64514,
+      "inode": 145907596,
+      "links": 1,
+      "mtime_ns": 1791881375747663120
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/log_history.json",
+      "bytes": 135350,
+      "dev": 64514,
+      "inode": 145907671,
+      "links": 1,
+      "mtime_ns": 1791891653641548519
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/metrics.json",
+      "bytes": 423,
+      "dev": 64514,
+      "inode": 145907768,
+      "links": 1,
+      "mtime_ns": 1791891653635548390
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/model.pt",
+      "bytes": 557159507,
+      "dev": 64514,
+      "inode": 145907746,
+      "links": 1,
+      "mtime_ns": 1791891653617548005
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/model_config.json",
+      "bytes": 274,
+      "dev": 64514,
+      "inode": 145907581,
+      "links": 1,
+      "mtime_ns": 1791881375743663037
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/preprocessing.json",
+      "bytes": 312,
+      "dev": 64514,
+      "inode": 145907583,
+      "links": 1,
+      "mtime_ns": 1791881375743663037
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/tokenizer.json",
+      "bytes": 534007,
+      "dev": 64514,
+      "inode": 145907769,
+      "links": 1,
+      "mtime_ns": 1791881375750663182
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/trainer_args.json",
+      "bytes": 3613,
+      "dev": 64514,
+      "inode": 145907745,
+      "links": 1,
+      "mtime_ns": 1791881375747663120
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/trainer_state.json",
+      "bytes": 147325,
+      "dev": 64514,
+      "inode": 145907672,
+      "links": 1,
+      "mtime_ns": 1791891653634548369
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/training_config.json",
+      "bytes": 945,
+      "dev": 64514,
+      "inode": 145907584,
+      "links": 1,
+      "mtime_ns": 1791881375742663016
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/training_layout.json",
+      "bytes": 393,
+      "dev": 64514,
+      "inode": 145907582,
+      "links": 1,
+      "mtime_ns": 1791881375747663120
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/checkpoint-360000/config.json",
+      "bytes": 1010,
+      "dev": 64514,
+      "inode": 145907235,
+      "links": 1,
+      "mtime_ns": 1791942264492693201
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/checkpoint-360000/generation_config.json",
+      "bytes": 257,
+      "dev": 64514,
+      "inode": 145907216,
+      "links": 1,
+      "mtime_ns": 1791942264492693201
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/checkpoint-360000/rng_state_0.pth",
+      "bytes": 14917,
+      "dev": 64514,
+      "inode": 145907171,
+      "links": 1,
+      "mtime_ns": 1791942266416733864
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/checkpoint-360000/rng_state_1.pth",
+      "bytes": 14917,
+      "dev": 64514,
+      "inode": 145907218,
+      "links": 1,
+      "mtime_ns": 1791942265163707383
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/checkpoint-360000/scheduler.pt",
+      "bytes": 1465,
+      "dev": 64514,
+      "inode": 145907170,
+      "links": 1,
+      "mtime_ns": 1791942266415733843
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/checkpoint-360000/tokenizer.json",
+      "bytes": 534007,
+      "dev": 64514,
+      "inode": 145907236,
+      "links": 1,
+      "mtime_ns": 1791942265160707319
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/checkpoint-360000/tokenizer_config.json",
+      "bytes": 304,
+      "dev": 64514,
+      "inode": 145907217,
+      "links": 1,
+      "mtime_ns": 1791942265155707214
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/checkpoint-360000/trainer_state.json",
+      "bytes": 703048,
+      "dev": 64514,
+      "inode": 145907215,
+      "links": 1,
+      "mtime_ns": 1791942266510735850
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/checkpoint-360000/training_args.bin",
+      "bytes": 5393,
+      "dev": 64514,
+      "inode": 145907214,
+      "links": 1,
+      "mtime_ns": 1791942265161707341
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/checkpoint-360000/training_layout.json",
+      "bytes": 408,
+      "dev": 64514,
+      "inode": 145907169,
+      "links": 1,
+      "mtime_ns": 1791942266707740014
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/checkpoint-362284/config.json",
+      "bytes": 1010,
+      "dev": 64514,
+      "inode": 145907547,
+      "links": 1,
+      "mtime_ns": 1791942636384552466
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/checkpoint-362284/generation_config.json",
+      "bytes": 257,
+      "dev": 64514,
+      "inode": 145907523,
+      "links": 1,
+      "mtime_ns": 1791942636385552487
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/checkpoint-362284/rng_state_0.pth",
+      "bytes": 14917,
+      "dev": 64514,
+      "inode": 145907488,
+      "links": 1,
+      "mtime_ns": 1791942638092588561
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/checkpoint-362284/rng_state_1.pth",
+      "bytes": 14917,
+      "dev": 64514,
+      "inode": 145907525,
+      "links": 1,
+      "mtime_ns": 1791942636989565251
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/checkpoint-362284/scheduler.pt",
+      "bytes": 1465,
+      "dev": 64514,
+      "inode": 145907487,
+      "links": 1,
+      "mtime_ns": 1791942638091588540
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/checkpoint-362284/tokenizer.json",
+      "bytes": 534007,
+      "dev": 64514,
+      "inode": 145907548,
+      "links": 1,
+      "mtime_ns": 1791942636986565188
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/checkpoint-362284/tokenizer_config.json",
+      "bytes": 304,
+      "dev": 64514,
+      "inode": 145907524,
+      "links": 1,
+      "mtime_ns": 1791942636981565082
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/checkpoint-362284/trainer_state.json",
+      "bytes": 707491,
+      "dev": 64514,
+      "inode": 145907522,
+      "links": 1,
+      "mtime_ns": 1791942638171590230
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/checkpoint-362284/training_args.bin",
+      "bytes": 5393,
+      "dev": 64514,
+      "inode": 145907521,
+      "links": 1,
+      "mtime_ns": 1791942636987565209
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/checkpoint-362284/training_layout.json",
+      "bytes": 408,
+      "dev": 64514,
+      "inode": 145907486,
+      "links": 1,
+      "mtime_ns": 1791942638344593886
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/continuation_manifest.json",
+      "bytes": 2025,
+      "dev": 64514,
+      "inode": 145907457,
+      "links": 1,
+      "mtime_ns": 1791895725156840815
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/environment.json",
+      "bytes": 172,
+      "dev": 64514,
+      "inode": 145907456,
+      "links": 1,
+      "mtime_ns": 1791881375747663120
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/log_history.json",
+      "bytes": 654698,
+      "dev": 64514,
+      "inode": 145907458,
+      "links": 1,
+      "mtime_ns": 1791942698357862093
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/metrics.json",
+      "bytes": 410,
+      "dev": 64514,
+      "inode": 145907484,
+      "links": 1,
+      "mtime_ns": 1791942698327861459
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/model.pt",
+      "bytes": 557159507,
+      "dev": 64514,
+      "inode": 145907469,
+      "links": 1,
+      "mtime_ns": 1791942698242859663
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/model_config.json",
+      "bytes": 274,
+      "dev": 64514,
+      "inode": 145907166,
+      "links": 1,
+      "mtime_ns": 1791881375743663037
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/preprocessing.json",
+      "bytes": 312,
+      "dev": 64514,
+      "inode": 145907237,
+      "links": 1,
+      "mtime_ns": 1791881375743663037
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/resumes/step-50000/environment.json",
+      "bytes": 172,
+      "dev": 64514,
+      "inode": 145907465,
+      "links": 1,
+      "mtime_ns": 1791896095865617585
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/resumes/step-50000/model_config.json",
+      "bytes": 274,
+      "dev": 64514,
+      "inode": 145907461,
+      "links": 1,
+      "mtime_ns": 1791896095861617501
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/resumes/step-50000/preprocessing.json",
+      "bytes": 312,
+      "dev": 64514,
+      "inode": 145907463,
+      "links": 1,
+      "mtime_ns": 1791896095861617501
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/resumes/step-50000/tokenizer.json",
+      "bytes": 534007,
+      "dev": 64514,
+      "inode": 145907467,
+      "links": 1,
+      "mtime_ns": 1791896095869617669
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/resumes/step-50000/trainer_args.json",
+      "bytes": 3634,
+      "dev": 64514,
+      "inode": 145907466,
+      "links": 1,
+      "mtime_ns": 1791896095865617585
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/resumes/step-50000/training_config.json",
+      "bytes": 1069,
+      "dev": 64514,
+      "inode": 145907464,
+      "links": 1,
+      "mtime_ns": 1791896095861617501
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/resumes/step-50000/training_layout.json",
+      "bytes": 408,
+      "dev": 64514,
+      "inode": 145907462,
+      "links": 1,
+      "mtime_ns": 1791896095865617585
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/tokenizer.json",
+      "bytes": 534007,
+      "dev": 64514,
+      "inode": 145907549,
+      "links": 1,
+      "mtime_ns": 1791881375750663182
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/trainer_state.json",
+      "bytes": 708035,
+      "dev": 64514,
+      "inode": 145907468,
+      "links": 1,
+      "mtime_ns": 1791942698327861459
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/training_config.json",
+      "bytes": 1069,
+      "dev": 64514,
+      "inode": 145907238,
+      "links": 1,
+      "mtime_ns": 1791895718626703897
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/training_layout.json",
+      "bytes": 408,
+      "dev": 64514,
+      "inode": 145907167,
+      "links": 1,
+      "mtime_ns": 1791895717979690331
+    }
+  ],
+  "excluded": [
+    {
+      "path": "artifacts/a100_full_20261023/bundle/data/train/data-00000-of-00019.arrow",
+      "bytes": 480372248,
+      "dev": 64514,
+      "inode": 145907401,
+      "links": 3,
+      "mtime_ns": 1791881296372019365,
+      "reason": "Reconstructible token cache; rawsource/config/tokenizer/selection preserved separately"
+    },
+    {
+      "path": "artifacts/a100_full_20261023/bundle/data/train/data-00001-of-00019.arrow",
+      "bytes": 480493352,
+      "dev": 64514,
+      "inode": 145907280,
+      "links": 3,
+      "mtime_ns": 1791881300619107316,
+      "reason": "Reconstructible token cache; rawsource/config/tokenizer/selection preserved separately"
+    },
+    {
+      "path": "artifacts/a100_full_20261023/bundle/data/train/data-00002-of-00019.arrow",
+      "bytes": 480679064,
+      "dev": 64514,
+      "inode": 145907347,
+      "links": 3,
+      "mtime_ns": 1791881304993197897,
+      "reason": "Reconstructible token cache; rawsource/config/tokenizer/selection preserved separately"
+    },
+    {
+      "path": "artifacts/a100_full_20261023/bundle/data/train/data-00003-of-00019.arrow",
+      "bytes": 480566320,
+      "dev": 64514,
+      "inode": 145907325,
+      "links": 3,
+      "mtime_ns": 1791881309221285455,
+      "reason": "Reconstructible token cache; rawsource/config/tokenizer/selection preserved separately"
+    },
+    {
+      "path": "artifacts/a100_full_20261023/bundle/data/train/data-00004-of-00019.arrow",
+      "bytes": 480691664,
+      "dev": 64514,
+      "inode": 145907367,
+      "links": 3,
+      "mtime_ns": 1791881314121386925,
+      "reason": "Reconstructible token cache; rawsource/config/tokenizer/selection preserved separately"
+    },
+    {
+      "path": "artifacts/a100_full_20261023/bundle/data/train/data-00005-of-00019.arrow",
+      "bytes": 480776784,
+      "dev": 64514,
+      "inode": 145907255,
+      "links": 3,
+      "mtime_ns": 1791881318885485579,
+      "reason": "Reconstructible token cache; rawsource/config/tokenizer/selection preserved separately"
+    },
+    {
+      "path": "artifacts/a100_full_20261023/bundle/data/train/data-00006-of-00019.arrow",
+      "bytes": 480240712,
+      "dev": 64514,
+      "inode": 145907243,
+      "links": 3,
+      "mtime_ns": 1791881323162574152,
+      "reason": "Reconstructible token cache; rawsource/config/tokenizer/selection preserved separately"
+    },
+    {
+      "path": "artifacts/a100_full_20261023/bundle/data/train/data-00007-of-00019.arrow",
+      "bytes": 480386816,
+      "dev": 64514,
+      "inode": 145907310,
+      "links": 3,
+      "mtime_ns": 1791881327503664050,
+      "reason": "Reconstructible token cache; rawsource/config/tokenizer/selection preserved separately"
+    },
+    {
+      "path": "artifacts/a100_full_20261023/bundle/data/train/data-00008-of-00019.arrow",
+      "bytes": 480284016,
+      "dev": 64514,
+      "inode": 145907297,
+      "links": 3,
+      "mtime_ns": 1791881331779752602,
+      "reason": "Reconstructible token cache; rawsource/config/tokenizer/selection preserved separately"
+    },
+    {
+      "path": "artifacts/a100_full_20261023/bundle/data/train/data-00009-of-00019.arrow",
+      "bytes": 480682192,
+      "dev": 64514,
+      "inode": 145907426,
+      "links": 3,
+      "mtime_ns": 1791881336135842810,
+      "reason": "Reconstructible token cache; rawsource/config/tokenizer/selection preserved separately"
+    },
+    {
+      "path": "artifacts/a100_full_20261023/bundle/data/train/data-00010-of-00019.arrow",
+      "bytes": 480282728,
+      "dev": 64514,
+      "inode": 145907376,
+      "links": 3,
+      "mtime_ns": 1791881340312929312,
+      "reason": "Reconstructible token cache; rawsource/config/tokenizer/selection preserved separately"
+    },
+    {
+      "path": "artifacts/a100_full_20261023/bundle/data/train/data-00011-of-00019.arrow",
+      "bytes": 480304216,
+      "dev": 64514,
+      "inode": 145907321,
+      "links": 3,
+      "mtime_ns": 1791881344630018714,
+      "reason": "Reconstructible token cache; rawsource/config/tokenizer/selection preserved separately"
+    },
+    {
+      "path": "artifacts/a100_full_20261023/bundle/data/train/data-00012-of-00019.arrow",
+      "bytes": 480260728,
+      "dev": 64514,
+      "inode": 145907386,
+      "links": 3,
+      "mtime_ns": 1791881348825105588,
+      "reason": "Reconstructible token cache; rawsource/config/tokenizer/selection preserved separately"
+    },
+    {
+      "path": "artifacts/a100_full_20261023/bundle/data/train/data-00013-of-00019.arrow",
+      "bytes": 480608232,
+      "dev": 64514,
+      "inode": 145907357,
+      "links": 3,
+      "mtime_ns": 1791881353151195176,
+      "reason": "Reconstructible token cache; rawsource/config/tokenizer/selection preserved separately"
+    },
+    {
+      "path": "artifacts/a100_full_20261023/bundle/data/train/data-00014-of-00019.arrow",
+      "bytes": 480527080,
+      "dev": 64514,
+      "inode": 145907443,
+      "links": 3,
+      "mtime_ns": 1791881357364282423,
+      "reason": "Reconstructible token cache; rawsource/config/tokenizer/selection preserved separately"
+    },
+    {
+      "path": "artifacts/a100_full_20261023/bundle/data/train/data-00015-of-00019.arrow",
+      "bytes": 480745624,
+      "dev": 64514,
+      "inode": 145907413,
+      "links": 3,
+      "mtime_ns": 1791881361633370831,
+      "reason": "Reconstructible token cache; rawsource/config/tokenizer/selection preserved separately"
+    },
+    {
+      "path": "artifacts/a100_full_20261023/bundle/data/train/data-00016-of-00019.arrow",
+      "bytes": 480211968,
+      "dev": 64514,
+      "inode": 145907411,
+      "links": 3,
+      "mtime_ns": 1791881365930459818,
+      "reason": "Reconstructible token cache; rawsource/config/tokenizer/selection preserved separately"
+    },
+    {
+      "path": "artifacts/a100_full_20261023/bundle/data/train/data-00017-of-00019.arrow",
+      "bytes": 479999984,
+      "dev": 64514,
+      "inode": 145907272,
+      "links": 3,
+      "mtime_ns": 1791881370118546548,
+      "reason": "Reconstructible token cache; rawsource/config/tokenizer/selection preserved separately"
+    },
+    {
+      "path": "artifacts/a100_full_20261023/bundle/data/train/data-00018-of-00019.arrow",
+      "bytes": 480608328,
+      "dev": 64514,
+      "inode": 145907338,
+      "links": 3,
+      "mtime_ns": 1791881374392635059,
+      "reason": "Reconstructible token cache; rawsource/config/tokenizer/selection preserved separately"
+    },
+    {
+      "path": "artifacts/a100_full_20261023/bundle/data/val/data-00000-of-00001.arrow",
+      "bytes": 93203608,
+      "dev": 64514,
+      "inode": 145907448,
+      "links": 3,
+      "mtime_ns": 1791881375205651896,
+      "reason": "Reconstructible token cache; rawsource/config/tokenizer/selection preserved separately"
+    },
+    {
+      "path": "artifacts/a100_full_20261023/code/__pycache__/kaggle_experiments.cpython-310.pyc",
+      "bytes": 18115,
+      "dev": 64514,
+      "inode": 146228593,
+      "links": 1,
+      "mtime_ns": 1792707870869421691,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "artifacts/a100_full_20261023/code/__pycache__/plotting.cpython-310.pyc",
+      "bytes": 8201,
+      "dev": 64514,
+      "inode": 146228465,
+      "links": 1,
+      "mtime_ns": 1792761997300816377,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "artifacts/a100_full_20261023/code/__pycache__/training.cpython-310.pyc",
+      "bytes": 30872,
+      "dev": 64514,
+      "inode": 146228638,
+      "links": 1,
+      "mtime_ns": 1792708042627012859,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "artifacts/a100_full_20261023/code/__pycache__/utils.cpython-310.pyc",
+      "bytes": 1467,
+      "dev": 64514,
+      "inode": 146228643,
+      "links": 1,
+      "mtime_ns": 1792708042643013194,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "artifacts/a100_full_20261023/code/models/__pycache__/__init__.cpython-310.pyc",
+      "bytes": 555,
+      "dev": 64514,
+      "inode": 146228628,
+      "links": 1,
+      "mtime_ns": 1792708041643992306,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "artifacts/a100_full_20261023/code/models/__pycache__/base.cpython-310.pyc",
+      "bytes": 4151,
+      "dev": 64514,
+      "inode": 146228629,
+      "links": 1,
+      "mtime_ns": 1792708041644992326,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "artifacts/a100_full_20261023/code/models/__pycache__/baseline.cpython-310.pyc",
+      "bytes": 4954,
+      "dev": 64514,
+      "inode": 146228631,
+      "links": 1,
+      "mtime_ns": 1792708041664992745,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "artifacts/a100_full_20261023/code/models/__pycache__/config.cpython-310.pyc",
+      "bytes": 3182,
+      "dev": 64514,
+      "inode": 146228630,
+      "links": 1,
+      "mtime_ns": 1792708041662992703,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "artifacts/a100_full_20261023/code/models/__pycache__/copy.cpython-310.pyc",
+      "bytes": 6626,
+      "dev": 64514,
+      "inode": 146228636,
+      "links": 1,
+      "mtime_ns": 1792708042621012733,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "artifacts/a100_full_20261023/code/models/__pycache__/t5.cpython-310.pyc",
+      "bytes": 1950,
+      "dev": 64514,
+      "inode": 146228632,
+      "links": 1,
+      "mtime_ns": 1792708042606012420,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "artifacts/a100_full_20261023/code/models/__pycache__/t5_attention.cpython-310.pyc",
+      "bytes": 2674,
+      "dev": 64514,
+      "inode": 146228633,
+      "links": 1,
+      "mtime_ns": 1792708042619012692,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "artifacts/a100_full_20261023/code/tools/__pycache__/prepare_a100_full.cpython-310.pyc",
+      "bytes": 11397,
+      "dev": 64514,
+      "inode": 146228621,
+      "links": 1,
+      "mtime_ns": 1792708027426695046,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/bundle/data/train/data-00000-of-00002.arrow",
+      "bytes": 397730688,
+      "dev": 64514,
+      "inode": 146228351,
+      "links": 1,
+      "mtime_ns": 1792682286160253714,
+      "reason": "Reconstructible token cache; rawsource/config/tokenizer/selection preserved separately"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/bundle/data/train/data-00001-of-00002.arrow",
+      "bytes": 397569992,
+      "dev": 64514,
+      "inode": 146228352,
+      "links": 1,
+      "mtime_ns": 1792682287784287175,
+      "reason": "Reconstructible token cache; rawsource/config/tokenizer/selection preserved separately"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/bundle/data/val/data-00000-of-00001.arrow",
+      "bytes": 15890712,
+      "dev": 64514,
+      "inode": 146228363,
+      "links": 1,
+      "mtime_ns": 1792682287845288432,
+      "reason": "Reconstructible token cache; rawsource/config/tokenizer/selection preserved separately"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/code/__pycache__/evaluation.cpython-310.pyc",
+      "bytes": 9528,
+      "dev": 64514,
+      "inode": 146228041,
+      "links": 1,
+      "mtime_ns": 1792683857380639934,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/code/__pycache__/kaggle_experiments.cpython-310.pyc",
+      "bytes": 14023,
+      "dev": 64514,
+      "inode": 146228319,
+      "links": 1,
+      "mtime_ns": 1792682613307994043,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/code/__pycache__/plotting.cpython-310.pyc",
+      "bytes": 8207,
+      "dev": 64514,
+      "inode": 146228957,
+      "links": 1,
+      "mtime_ns": 1792682630617350674,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/code/__pycache__/training.cpython-310.pyc",
+      "bytes": 30878,
+      "dev": 64514,
+      "inode": 146228803,
+      "links": 1,
+      "mtime_ns": 1792682618398098916,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/code/__pycache__/utils.cpython-310.pyc",
+      "bytes": 1473,
+      "dev": 64514,
+      "inode": 146228814,
+      "links": 1,
+      "mtime_ns": 1792682618747106107,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/code/models/__pycache__/__init__.cpython-310.pyc",
+      "bytes": 561,
+      "dev": 64514,
+      "inode": 146228700,
+      "links": 1,
+      "mtime_ns": 1792682616885067743,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/code/models/__pycache__/base.cpython-310.pyc",
+      "bytes": 4157,
+      "dev": 64514,
+      "inode": 146228773,
+      "links": 1,
+      "mtime_ns": 1792682616886067763,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/code/models/__pycache__/baseline.cpython-310.pyc",
+      "bytes": 4960,
+      "dev": 64514,
+      "inode": 146228798,
+      "links": 1,
+      "mtime_ns": 1792682616910068258,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/code/models/__pycache__/config.cpython-310.pyc",
+      "bytes": 3188,
+      "dev": 64514,
+      "inode": 146228797,
+      "links": 1,
+      "mtime_ns": 1792682616908068217,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/code/models/__pycache__/copy.cpython-310.pyc",
+      "bytes": 6632,
+      "dev": 64514,
+      "inode": 146228802,
+      "links": 1,
+      "mtime_ns": 1792682618389098731,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/code/models/__pycache__/t5.cpython-310.pyc",
+      "bytes": 1956,
+      "dev": 64514,
+      "inode": 146228800,
+      "links": 1,
+      "mtime_ns": 1792682618368098298,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/code/models/__pycache__/t5_attention.cpython-310.pyc",
+      "bytes": 2680,
+      "dev": 64514,
+      "inode": 146228801,
+      "links": 1,
+      "mtime_ns": 1792682618387098690,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/code/tools/__pycache__/run_a100_stage1.cpython-310.pyc",
+      "bytes": 5537,
+      "dev": 64514,
+      "inode": 146228061,
+      "links": 1,
+      "mtime_ns": 1792684975813863131,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/trials/bart/checkpoint-3907/model.safetensors",
+      "bytes": 977639840,
+      "dev": 64514,
+      "inode": 146228009,
+      "links": 1,
+      "mtime_ns": 1792683833649146824,
+      "reason": "Superseded short-study/intermediate checkpoint weights or optimizer; finalweights and allmetadata preserved"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/trials/bart/checkpoint-3907/optimizer.pt",
+      "bytes": 1955427560,
+      "dev": 64514,
+      "inode": 146228013,
+      "links": 1,
+      "mtime_ns": 1792683835577186887,
+      "reason": "Superseded short-study/intermediate checkpoint weights or optimizer; finalweights and allmetadata preserved"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/trials/copy/checkpoint-3907/model.safetensors",
+      "bytes": 978696948,
+      "dev": 64514,
+      "inode": 146228067,
+      "links": 1,
+      "mtime_ns": 1792685942649938921,
+      "reason": "Superseded short-study/intermediate checkpoint weights or optimizer; finalweights and allmetadata preserved"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/trials/copy/checkpoint-3907/optimizer.pt",
+      "bytes": 1957544564,
+      "dev": 64514,
+      "inode": 146228071,
+      "links": 1,
+      "mtime_ns": 1792685944588979744,
+      "reason": "Superseded short-study/intermediate checkpoint weights or optimizer; finalweights and allmetadata preserved"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2/trials/repeat4m/checkpoint-13000/model.safetensors",
+      "bytes": 977639840,
+      "dev": 64514,
+      "inode": 146228225,
+      "links": 1,
+      "mtime_ns": 1792692051940367039,
+      "reason": "Superseded short-study/intermediate checkpoint weights or optimizer; finalweights and allmetadata preserved"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2/trials/repeat4m/checkpoint-13000/optimizer.pt",
+      "bytes": 1955427560,
+      "dev": 64514,
+      "inode": 146228229,
+      "links": 1,
+      "mtime_ns": 1792692053862407485,
+      "reason": "Superseded short-study/intermediate checkpoint weights or optimizer; finalweights and allmetadata preserved"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2/trials/repeat4m/checkpoint-14000/model.safetensors",
+      "bytes": 977639840,
+      "dev": 64514,
+      "inode": 146228235,
+      "links": 1,
+      "mtime_ns": 1792692347302586553,
+      "reason": "Superseded short-study/intermediate checkpoint weights or optimizer; finalweights and allmetadata preserved"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2/trials/repeat4m/checkpoint-14000/optimizer.pt",
+      "bytes": 1955427560,
+      "dev": 64514,
+      "inode": 146228239,
+      "links": 1,
+      "mtime_ns": 1792692349243627439,
+      "reason": "Superseded short-study/intermediate checkpoint weights or optimizer; finalweights and allmetadata preserved"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_code/__pycache__/kaggle_experiments.cpython-310.pyc",
+      "bytes": 14030,
+      "dev": 64514,
+      "inode": 146228156,
+      "links": 1,
+      "mtime_ns": 1792686995146072994,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_code/__pycache__/training.cpython-310.pyc",
+      "bytes": 30885,
+      "dev": 64514,
+      "inode": 146228194,
+      "links": 1,
+      "mtime_ns": 1792688151401402640,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_code/__pycache__/utils.cpython-310.pyc",
+      "bytes": 1480,
+      "dev": 64514,
+      "inode": 146228212,
+      "links": 1,
+      "mtime_ns": 1792688151714409218,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_code/models/__pycache__/__init__.cpython-310.pyc",
+      "bytes": 568,
+      "dev": 64514,
+      "inode": 146228099,
+      "links": 1,
+      "mtime_ns": 1792688150391381413,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_code/models/__pycache__/base.cpython-310.pyc",
+      "bytes": 4164,
+      "dev": 64514,
+      "inode": 146228100,
+      "links": 1,
+      "mtime_ns": 1792688150392381435,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_code/models/__pycache__/baseline.cpython-310.pyc",
+      "bytes": 4967,
+      "dev": 64514,
+      "inode": 146228162,
+      "links": 1,
+      "mtime_ns": 1792688150414381897,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_code/models/__pycache__/config.cpython-310.pyc",
+      "bytes": 3195,
+      "dev": 64514,
+      "inode": 146228160,
+      "links": 1,
+      "mtime_ns": 1792688150412381855,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_code/models/__pycache__/copy.cpython-310.pyc",
+      "bytes": 6639,
+      "dev": 64514,
+      "inode": 146228192,
+      "links": 1,
+      "mtime_ns": 1792688151393402472,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_code/models/__pycache__/t5.cpython-310.pyc",
+      "bytes": 1963,
+      "dev": 64514,
+      "inode": 146228167,
+      "links": 1,
+      "mtime_ns": 1792688151377402136,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_code/models/__pycache__/t5_attention.cpython-310.pyc",
+      "bytes": 2687,
+      "dev": 64514,
+      "inode": 146228169,
+      "links": 1,
+      "mtime_ns": 1792688151391402430,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_code/tools/__pycache__/run_a100_stage1.cpython-310.pyc",
+      "bytes": 5544,
+      "dev": 64514,
+      "inode": 146228157,
+      "links": 1,
+      "mtime_ns": 1792686995149073057,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_code/tools/__pycache__/run_a100_stage2.cpython-310.pyc",
+      "bytes": 21007,
+      "dev": 64514,
+      "inode": 146228154,
+      "links": 1,
+      "mtime_ns": 1792686995129072636,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_data/distinct4m/data/train/data-00000-of-00007.arrow",
+      "bytes": 454485856,
+      "dev": 64514,
+      "inode": 146228198,
+      "links": 1,
+      "mtime_ns": 1792687757897130186,
+      "reason": "Reconstructible token cache; rawsource/config/tokenizer/selection preserved separately"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_data/distinct4m/data/train/data-00001-of-00007.arrow",
+      "bytes": 454360952,
+      "dev": 64514,
+      "inode": 146228199,
+      "links": 1,
+      "mtime_ns": 1792687758504142951,
+      "reason": "Reconstructible token cache; rawsource/config/tokenizer/selection preserved separately"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_data/distinct4m/data/train/data-00002-of-00007.arrow",
+      "bytes": 454314552,
+      "dev": 64514,
+      "inode": 146228200,
+      "links": 1,
+      "mtime_ns": 1792687759097155421,
+      "reason": "Reconstructible token cache; rawsource/config/tokenizer/selection preserved separately"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_data/distinct4m/data/train/data-00003-of-00007.arrow",
+      "bytes": 454472664,
+      "dev": 64514,
+      "inode": 146228201,
+      "links": 1,
+      "mtime_ns": 1792687759690167892,
+      "reason": "Reconstructible token cache; rawsource/config/tokenizer/selection preserved separately"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_data/distinct4m/data/train/data-00004-of-00007.arrow",
+      "bytes": 454634000,
+      "dev": 64514,
+      "inode": 146228202,
+      "links": 1,
+      "mtime_ns": 1792687760288180467,
+      "reason": "Reconstructible token cache; rawsource/config/tokenizer/selection preserved separately"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_data/distinct4m/data/train/data-00005-of-00007.arrow",
+      "bytes": 454378752,
+      "dev": 64514,
+      "inode": 146228203,
+      "links": 1,
+      "mtime_ns": 1792687760883192980,
+      "reason": "Reconstructible token cache; rawsource/config/tokenizer/selection preserved separately"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_data/distinct4m/data/train/data-00006-of-00007.arrow",
+      "bytes": 454518784,
+      "dev": 64514,
+      "inode": 146228204,
+      "links": 1,
+      "mtime_ns": 1792687761479205514,
+      "reason": "Reconstructible token cache; rawsource/config/tokenizer/selection preserved separately"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_data/distinct4m/data/val/data-00000-of-00001.arrow",
+      "bytes": 15890712,
+      "dev": 64514,
+      "inode": 146228208,
+      "links": 1,
+      "mtime_ns": 1792687761504206039,
+      "reason": "Reconstructible token cache; rawsource/config/tokenizer/selection preserved separately"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_data/repeat4m/data/train/data-00000-of-00007.arrow",
+      "bytes": 454485856,
+      "dev": 64514,
+      "inode": 146228173,
+      "links": 1,
+      "mtime_ns": 1792687219985809963,
+      "reason": "Reconstructible token cache; rawsource/config/tokenizer/selection preserved separately"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_data/repeat4m/data/train/data-00001-of-00007.arrow",
+      "bytes": 454429336,
+      "dev": 64514,
+      "inode": 146228174,
+      "links": 1,
+      "mtime_ns": 1792687220590822705,
+      "reason": "Reconstructible token cache; rawsource/config/tokenizer/selection preserved separately"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_data/repeat4m/data/train/data-00002-of-00007.arrow",
+      "bytes": 454521464,
+      "dev": 64514,
+      "inode": 146228175,
+      "links": 1,
+      "mtime_ns": 1792687221186835258,
+      "reason": "Reconstructible token cache; rawsource/config/tokenizer/selection preserved separately"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_data/repeat4m/data/train/data-00003-of-00007.arrow",
+      "bytes": 454339576,
+      "dev": 64514,
+      "inode": 146228176,
+      "links": 1,
+      "mtime_ns": 1792687221776847684,
+      "reason": "Reconstructible token cache; rawsource/config/tokenizer/selection preserved separately"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_data/repeat4m/data/train/data-00004-of-00007.arrow",
+      "bytes": 454598160,
+      "dev": 64514,
+      "inode": 146228177,
+      "links": 1,
+      "mtime_ns": 1792687222388860573,
+      "reason": "Reconstructible token cache; rawsource/config/tokenizer/selection preserved separately"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_data/repeat4m/data/train/data-00005-of-00007.arrow",
+      "bytes": 454245520,
+      "dev": 64514,
+      "inode": 146228178,
+      "links": 1,
+      "mtime_ns": 1792687223002873505,
+      "reason": "Reconstructible token cache; rawsource/config/tokenizer/selection preserved separately"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_data/repeat4m/data/train/data-00006-of-00007.arrow",
+      "bytes": 454583680,
+      "dev": 64514,
+      "inode": 146228179,
+      "links": 1,
+      "mtime_ns": 1792687223608886268,
+      "reason": "Reconstructible token cache; rawsource/config/tokenizer/selection preserved separately"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_data/repeat4m/data/val/data-00000-of-00001.arrow",
+      "bytes": 15890712,
+      "dev": 64514,
+      "inode": 146228183,
+      "links": 1,
+      "mtime_ns": 1792687223634886816,
+      "reason": "Reconstructible token cache; rawsource/config/tokenizer/selection preserved separately"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/distinct4m/checkpoint-15000/model.safetensors",
+      "bytes": 977639840,
+      "dev": 64514,
+      "inode": 146228425,
+      "links": 1,
+      "mtime_ns": 1792704704939199191,
+      "reason": "Superseded short-study/intermediate checkpoint weights or optimizer; finalweights and allmetadata preserved"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/distinct4m/checkpoint-15000/optimizer.pt",
+      "bytes": 1955427560,
+      "dev": 64514,
+      "inode": 146228429,
+      "links": 1,
+      "mtime_ns": 1792704706804238122,
+      "reason": "Superseded short-study/intermediate checkpoint weights or optimizer; finalweights and allmetadata preserved"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/distinct4m/checkpoint-15625/model.safetensors",
+      "bytes": 977639840,
+      "dev": 64514,
+      "inode": 146228399,
+      "links": 1,
+      "mtime_ns": 1792704896948208894,
+      "reason": "Superseded short-study/intermediate checkpoint weights or optimizer; finalweights and allmetadata preserved"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/distinct4m/checkpoint-15625/optimizer.pt",
+      "bytes": 1955427560,
+      "dev": 64514,
+      "inode": 146228403,
+      "links": 1,
+      "mtime_ns": 1792704898778247196,
+      "reason": "Superseded short-study/intermediate checkpoint weights or optimizer; finalweights and allmetadata preserved"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/repeat4m/checkpoint-15000/model.safetensors",
+      "bytes": 977639840,
+      "dev": 64514,
+      "inode": 146228327,
+      "links": 1,
+      "mtime_ns": 1792699267326753246,
+      "reason": "Superseded short-study/intermediate checkpoint weights or optimizer; finalweights and allmetadata preserved"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/repeat4m/checkpoint-15000/optimizer.pt",
+      "bytes": 1955427560,
+      "dev": 64514,
+      "inode": 146228331,
+      "links": 1,
+      "mtime_ns": 1792699269386796257,
+      "reason": "Superseded short-study/intermediate checkpoint weights or optimizer; finalweights and allmetadata preserved"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/repeat4m/checkpoint-15625/model.safetensors",
+      "bytes": 977639840,
+      "dev": 64514,
+      "inode": 146228341,
+      "links": 1,
+      "mtime_ns": 1792699460305782772,
+      "reason": "Superseded short-study/intermediate checkpoint weights or optimizer; finalweights and allmetadata preserved"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/repeat4m/checkpoint-15625/optimizer.pt",
+      "bytes": 1955427560,
+      "dev": 64514,
+      "inode": 146228345,
+      "links": 1,
+      "mtime_ns": 1792699462249823369,
+      "reason": "Superseded short-study/intermediate checkpoint weights or optimizer; finalweights and allmetadata preserved"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery_code/__pycache__/evaluation.cpython-310.pyc",
+      "bytes": 9544,
+      "dev": 64514,
+      "inode": 146228374,
+      "links": 1,
+      "mtime_ns": 1792699491594436160,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery_code/__pycache__/kaggle_experiments.cpython-310.pyc",
+      "bytes": 15966,
+      "dev": 64514,
+      "inode": 146228283,
+      "links": 1,
+      "mtime_ns": 1792698898641056736,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery_code/__pycache__/plotting.cpython-310.pyc",
+      "bytes": 8223,
+      "dev": 64514,
+      "inode": 146228368,
+      "links": 1,
+      "mtime_ns": 1792699478454161756,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery_code/__pycache__/training.cpython-310.pyc",
+      "bytes": 30894,
+      "dev": 64514,
+      "inode": 146228312,
+      "links": 1,
+      "mtime_ns": 1792698918755476570,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery_code/__pycache__/utils.cpython-310.pyc",
+      "bytes": 1489,
+      "dev": 64514,
+      "inode": 146228313,
+      "links": 1,
+      "mtime_ns": 1792698918953480703,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery_code/models/__pycache__/__init__.cpython-310.pyc",
+      "bytes": 577,
+      "dev": 64514,
+      "inode": 146228304,
+      "links": 1,
+      "mtime_ns": 1792698917680454131,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery_code/models/__pycache__/base.cpython-310.pyc",
+      "bytes": 4173,
+      "dev": 64514,
+      "inode": 146228305,
+      "links": 1,
+      "mtime_ns": 1792698917681454152,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery_code/models/__pycache__/baseline.cpython-310.pyc",
+      "bytes": 4976,
+      "dev": 64514,
+      "inode": 146228308,
+      "links": 1,
+      "mtime_ns": 1792698917701454570,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery_code/models/__pycache__/config.cpython-310.pyc",
+      "bytes": 3204,
+      "dev": 64514,
+      "inode": 146228306,
+      "links": 1,
+      "mtime_ns": 1792698917699454528,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery_code/models/__pycache__/copy.cpython-310.pyc",
+      "bytes": 6648,
+      "dev": 64514,
+      "inode": 146228311,
+      "links": 1,
+      "mtime_ns": 1792698918642474211,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery_code/models/__pycache__/t5.cpython-310.pyc",
+      "bytes": 1972,
+      "dev": 64514,
+      "inode": 146228309,
+      "links": 1,
+      "mtime_ns": 1792698918627473898,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery_code/models/__pycache__/t5_attention.cpython-310.pyc",
+      "bytes": 2696,
+      "dev": 64514,
+      "inode": 146228310,
+      "links": 1,
+      "mtime_ns": 1792698918641474190,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery_code/tools/__pycache__/evaluate_fixed_bundle.cpython-310.pyc",
+      "bytes": 7171,
+      "dev": 64514,
+      "inode": 146228372,
+      "links": 1,
+      "mtime_ns": 1792699487553351771,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery_code/tools/__pycache__/run_a100_stage1.cpython-310.pyc",
+      "bytes": 5553,
+      "dev": 64514,
+      "inode": 146228286,
+      "links": 1,
+      "mtime_ns": 1792698898650056924,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery_code/tools/__pycache__/run_a100_stage2.cpython-310.pyc",
+      "bytes": 21016,
+      "dev": 64514,
+      "inode": 146228285,
+      "links": 1,
+      "mtime_ns": 1792698898649056903,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "artifacts/a100_full_eval_20261023/code/__pycache__/evaluation.cpython-310.pyc",
+      "bytes": 9527,
+      "dev": 64514,
+      "inode": 147591981,
+      "links": 1,
+      "mtime_ns": 1792763732130612395,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "artifacts/a100_full_eval_20261023/code/__pycache__/kaggle_experiments.cpython-310.pyc",
+      "bytes": 18120,
+      "dev": 64514,
+      "inode": 147591980,
+      "links": 1,
+      "mtime_ns": 1792763732127612332,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "artifacts/a100_full_eval_20261023/code/models/__pycache__/__init__.cpython-310.pyc",
+      "bytes": 560,
+      "dev": 64514,
+      "inode": 147591972,
+      "links": 1,
+      "mtime_ns": 1792763731783605093,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "artifacts/a100_full_eval_20261023/code/models/__pycache__/base.cpython-310.pyc",
+      "bytes": 4156,
+      "dev": 64514,
+      "inode": 147591973,
+      "links": 1,
+      "mtime_ns": 1792763731784605114,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "artifacts/a100_full_eval_20261023/code/models/__pycache__/baseline.cpython-310.pyc",
+      "bytes": 4959,
+      "dev": 64514,
+      "inode": 147591975,
+      "links": 1,
+      "mtime_ns": 1792763731802605493,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "artifacts/a100_full_eval_20261023/code/models/__pycache__/config.cpython-310.pyc",
+      "bytes": 3187,
+      "dev": 64514,
+      "inode": 147591974,
+      "links": 1,
+      "mtime_ns": 1792763731800605451,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "artifacts/a100_full_eval_20261023/code/models/__pycache__/copy.cpython-310.pyc",
+      "bytes": 6631,
+      "dev": 64514,
+      "inode": 147591978,
+      "links": 1,
+      "mtime_ns": 1792763732122612227,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "artifacts/a100_full_eval_20261023/code/models/__pycache__/t5.cpython-310.pyc",
+      "bytes": 1955,
+      "dev": 64514,
+      "inode": 147591976,
+      "links": 1,
+      "mtime_ns": 1792763732106611891,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "artifacts/a100_full_eval_20261023/code/models/__pycache__/t5_attention.cpython-310.pyc",
+      "bytes": 2679,
+      "dev": 64514,
+      "inode": 147591977,
+      "links": 1,
+      "mtime_ns": 1792763732121612206,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "artifacts/a100_full_eval_20261023/code/tools/__pycache__/prepare_a100_diversity.cpython-310.pyc",
+      "bytes": 13147,
+      "dev": 64514,
+      "inode": 147591984,
+      "links": 1,
+      "mtime_ns": 1792763733047631692,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "artifacts/a100_full_eval_20261023/code/tools/__pycache__/run_a100_stage1.cpython-310.pyc",
+      "bytes": 5536,
+      "dev": 64514,
+      "inode": 147591993,
+      "links": 1,
+      "mtime_ns": 1792764464705042721,
+      "reason": "Regenerable Python bytecode"
+    },
+    {
+      "path": "artifacts/experiments/baseline_001/checkpoint-147871/optimizer.pt",
+      "bytes": 390320011,
+      "dev": 64514,
+      "inode": 145907557,
+      "links": 1,
+      "mtime_ns": 1791848620539931784,
+      "reason": "Superseded short-study/intermediate checkpoint weights or optimizer; finalweights and allmetadata preserved"
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/checkpoint-50000/model.safetensors",
+      "bytes": 557086648,
+      "dev": 64514,
+      "inode": 145907658,
+      "links": 1,
+      "mtime_ns": 1791888196084179606,
+      "reason": "Superseded short-study/intermediate checkpoint weights or optimizer; finalweights and allmetadata preserved"
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/checkpoint-50000/optimizer.pt",
+      "bytes": 1114317352,
+      "dev": 64514,
+      "inode": 145907601,
+      "links": 1,
+      "mtime_ns": 1791888197348206237,
+      "reason": "Superseded short-study/intermediate checkpoint weights or optimizer; finalweights and allmetadata preserved"
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/checkpoint-75000/model.safetensors",
+      "bytes": 557086648,
+      "dev": 64514,
+      "inode": 145907712,
+      "links": 1,
+      "mtime_ns": 1791891596217320774,
+      "reason": "Superseded short-study/intermediate checkpoint weights or optimizer; finalweights and allmetadata preserved"
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/checkpoint-75000/optimizer.pt",
+      "bytes": 1114317352,
+      "dev": 64514,
+      "inode": 145907677,
+      "links": 1,
+      "mtime_ns": 1791891597366345347,
+      "reason": "Superseded short-study/intermediate checkpoint weights or optimizer; finalweights and allmetadata preserved"
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/checkpoint-360000/model.safetensors",
+      "bytes": 557086648,
+      "dev": 64514,
+      "inode": 145907219,
+      "links": 1,
+      "mtime_ns": 1791942265110706263,
+      "reason": "Superseded short-study/intermediate checkpoint weights or optimizer; finalweights and allmetadata preserved"
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/checkpoint-360000/optimizer.pt",
+      "bytes": 1114322152,
+      "dev": 64514,
+      "inode": 145907172,
+      "links": 1,
+      "mtime_ns": 1791942266414733821,
+      "reason": "Superseded short-study/intermediate checkpoint weights or optimizer; finalweights and allmetadata preserved"
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/checkpoint-362284/model.safetensors",
+      "bytes": 557086648,
+      "dev": 64514,
+      "inode": 145907526,
+      "links": 1,
+      "mtime_ns": 1791942636940564216,
+      "reason": "Superseded short-study/intermediate checkpoint weights or optimizer; finalweights and allmetadata preserved"
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/checkpoint-362284/optimizer.pt",
+      "bytes": 1114322152,
+      "dev": 64514,
+      "inode": 145907489,
+      "links": 1,
+      "mtime_ns": 1791942638090588518,
+      "reason": "Superseded short-study/intermediate checkpoint weights or optimizer; finalweights and allmetadata preserved"
+    }
+  ],
+  "selected_logical_bytes": 12530277778,
+  "policy": "Preserve both fullmodel resumable checkpoints, fullfinal, fourselectedshortstudyfinals, baseline andold002exports, allsmallreports/source/metadata/selection. No remote deletion."
+}

@@ -1,0 +1,9 @@
+{
+  "schema": 1,
+  "status": "verified",
+  "files": 641,
+  "logical_bytes": 465454440,
+  "archive_bytes": 128514232,
+  "archive_sha256": "94f57d2b2c3548844a42afb1a78014086030ec0bd3dec21d13e0f58ac86634d6",
+  "hardlinks_preserved": true
+}

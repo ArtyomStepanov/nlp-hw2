@@ -1,0 +1,46 @@
+{
+  "status": "complete",
+  "updated_at": "2026-10-23T15:59:38.229415+00:00",
+  "unique_download_bytes": 9552384151,
+  "bytes_received": 9552384151,
+  "percent": 100.0,
+  "elapsed_seconds": 575.4263415830064,
+  "throughput_mib_per_second": 3.458856154713475,
+  "eta_seconds": 0.0,
+  "completed_files": 9,
+  "unique_download_files": 9,
+  "active": [
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/trials/bart/final/model.safetensors",
+      "status": "verified",
+      "bytes_received": 977639840,
+      "bytes_total": 977639840
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/distinct4m/final/model.safetensors",
+      "status": "verified",
+      "bytes_received": 977639840,
+      "bytes_total": 977639840
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/repeat4m/final/model.safetensors",
+      "status": "verified",
+      "bytes_received": 977639840,
+      "bytes_total": 977639840
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/model.pt",
+      "status": "verified",
+      "bytes_received": 557159507,
+      "bytes_total": 557159507
+    },
+    {
+      "path": "artifacts/experiments/baseline_001/checkpoint-147871/model.safetensors",
+      "status": "verified",
+      "bytes_received": 195113216,
+      "bytes_total": 195113216
+    }
+  ],
+  "reused_logical_bytes": 2512439187,
+  "verified_existing_backup_bytes": 5867191908
+}

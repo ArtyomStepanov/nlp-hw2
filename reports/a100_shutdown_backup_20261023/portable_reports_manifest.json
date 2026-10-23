@@ -1,0 +1,144 @@
+{
+  "canonical_report_directory": "reports/a100_shutdown_backup_20261023",
+  "files": [
+    {
+      "bytes": 2281,
+      "path": "README.md",
+      "sha256": "4f9a21425eebba3f4788edb2a3fae4584eb128650650d45ee73f93b8857cbc99"
+    },
+    {
+      "bytes": 6453,
+      "path": "backup_reports/README.md",
+      "sha256": "03a1c73c96bd8c80bac98dd7de6549e543d6e40b5acd0a999b67884083bb12c2"
+    },
+    {
+      "bytes": 2362,
+      "path": "backup_reports/backup_complete.json",
+      "sha256": "d70b0d6562f80a9d04e81b126139aee54cd950517e2888caa8d1c38dbd156b9b"
+    },
+    {
+      "bytes": 190265,
+      "path": "backup_reports/backup_selection.json",
+      "sha256": "77524adc4fc66379f540e33b5209a1353c355261de284b069382fd033c22397e"
+    },
+    {
+      "bytes": 2453,
+      "path": "backup_reports/check_remote_snapshot.py",
+      "sha256": "acbcf35818dd16fc4d80ebc249faf584df775e25ff8f2f80549fa27db964df13"
+    },
+    {
+      "bytes": 8277,
+      "path": "backup_reports/download_large_artifacts.py",
+      "sha256": "d022835c346e6216d7a929e02b74dc93ccbe90b7539d43ba2c15778e148681ca"
+    },
+    {
+      "bytes": 1769,
+      "path": "backup_reports/export_small_metadata.py",
+      "sha256": "a0448eed4ffa22f5e08c9a6f38de76fffaab35959c74b18bd3dbbe9aeec2ada8"
+    },
+    {
+      "bytes": 3084,
+      "path": "backup_reports/full_best_checkpoint_verified.json",
+      "sha256": "6dbf4de35648f0c0f4aea34ffcd5f740966493cada23d22cb55e19f77e16bb2f"
+    },
+    {
+      "bytes": 2888,
+      "path": "backup_reports/full_latest_checkpoint_verified.json",
+      "sha256": "89cbaddf7deb2fbc6ac60675e3baab0d1aaf03eeaee2ca1a56a674a5acc17e91"
+    },
+    {
+      "bytes": 1632,
+      "path": "backup_reports/hash_remote_selected.py",
+      "sha256": "06122f184d88e8e3bdbb1ac98256e6c1c4765becb0f27209df1d97f93de6f54c"
+    },
+    {
+      "bytes": 511,
+      "path": "backup_reports/independent_verification.json",
+      "sha256": "0a90274b34736782f86b8a5ac8888c31ba86c66286e527ec09e23a6fee835840"
+    },
+    {
+      "bytes": 6564,
+      "path": "backup_reports/large_file_receipts.json",
+      "sha256": "c618104dc9cbf584b9c79ee581da1092030832adcd2d594f1ea72e9c7e0ec627"
+    },
+    {
+      "bytes": 5971,
+      "path": "backup_reports/local_source_snapshot.json",
+      "sha256": "65e99dfcc0ff382303ef56503a09b2e6bccc9c9fea521487d4d3279f82b42985"
+    },
+    {
+      "bytes": 16206,
+      "path": "backup_reports/raw_source_backup_receipt.json",
+      "sha256": "d9ba3027d61a1a6b98a09374543b01e47996c1afb37a61ab468ee61084ca0820"
+    },
+    {
+      "bytes": 84466,
+      "path": "backup_reports/reconstruction_manifest.json",
+      "sha256": "d96e4d9f73da4ab566925efa329d89c6c5ebed2258fc0f9044af05860bfe28a7"
+    },
+    {
+      "bytes": 160037,
+      "path": "backup_reports/remote_inventory.json",
+      "sha256": "8ede5eab26ae4fadbff7cae34c37ca34335ab049f7935b5c797b24704b8d860b"
+    },
+    {
+      "bytes": 21750,
+      "path": "backup_reports/remote_old_model_inventory.json",
+      "sha256": "d824a25f8d5bb5e1c0838f429277d186f4df9d9064997a9864c4b5e87ce33d84"
+    },
+    {
+      "bytes": 529,
+      "path": "backup_reports/remote_runtime.json",
+      "sha256": "5adff46f195a7dd1948c5b5a28e1e33c5e74ecd3717784e0120132213d281638"
+    },
+    {
+      "bytes": 204069,
+      "path": "backup_reports/remote_sha256_manifest.json",
+      "sha256": "4b7e7b25776c1cd47eab983775486531c59b8336885eb1cf8941ce8d6c8386c7"
+    },
+    {
+      "bytes": 612,
+      "path": "backup_reports/remote_snapshot_final_check.json",
+      "sha256": "ee5f3df43c7137284706581de298caa1c0ac8747c659acca659e2d3f687572be"
+    },
+    {
+      "bytes": 313,
+      "path": "backup_reports/restore_git_revision.json",
+      "sha256": "9b09d74fd0f69b7482d28fe3aa2f604ada05982ec4a38ed4ce8073da0a439202"
+    },
+    {
+      "bytes": 50966,
+      "path": "backup_reports/selected_paths.json",
+      "sha256": "897ee90450529073733d2685f4d5095453eb8e571a31cb12a978d16cf84d02f1"
+    },
+    {
+      "bytes": 237,
+      "path": "backup_reports/small_metadata_receipt.json",
+      "sha256": "d7811afb6cee3966871e6c093a2d26897751990ebfec5b4360da3b088d8fa00d"
+    },
+    {
+      "bytes": 2975,
+      "path": "backup_reports/transfer_network_reset_recovery.json",
+      "sha256": "40a1538a3875d962c542fef77cc7f8d04996a6727110a278a9addc554ddca921"
+    },
+    {
+      "bytes": 1449,
+      "path": "backup_reports/transfer_progress.json",
+      "sha256": "0d8bd27dfe3a5a54edb4e4530b535221cb4beb06ab4fb7c35dff50e0526bee4b"
+    },
+    {
+      "bytes": 1958,
+      "path": "backup_reports/transfer_stall_recovery.json",
+      "sha256": "ff87284272a259ff7f64233cd5c3842760d1a36901215f632787f38c80481506"
+    },
+    {
+      "bytes": 4841,
+      "path": "backup_reports/verify_backup.py",
+      "sha256": "662c9386a85c50327700ed91475f06df28557fab07588502251ba2268b1c4081"
+    }
+  ],
+  "mirrored_report_files": 27,
+  "schema": 1,
+  "scope": "Small portable report copies and backup root README; this manifest excludes itself. The restored data is verified by backup_complete.json and source manifests.",
+  "status": "verified"
+}

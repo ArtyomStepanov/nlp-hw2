@@ -1,0 +1,44 @@
+{
+  "status": "running",
+  "updated_at": "2026-10-23T14:52:02.743367+00:00",
+  "unique_download_bytes": 9552384151,
+  "bytes_received": 2290089984,
+  "percent": 23.974014735999283,
+  "elapsed_seconds": 1230.6624402079979,
+  "throughput_mib_per_second": 1.7746539819894689,
+  "eta_seconds": 3902.655670087647,
+  "completed_files": 0,
+  "unique_download_files": 9,
+  "active": [
+    {
+      "path": "artifacts/a100_full_20261023/training/trial/checkpoint-180000/optimizer.pt",
+      "status": "downloading",
+      "bytes_received": 864026624,
+      "bytes_total": 1955427560
+    },
+    {
+      "path": "artifacts/a100_full_20261023/training/trial/checkpoint-181144/optimizer.pt",
+      "status": "downloading",
+      "bytes_received": 947912704,
+      "bytes_total": 1955427560
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/trials/copy/final/model.safetensors",
+      "status": "downloading",
+      "bytes_received": 478150656,
+      "bytes_total": 978696948
+    }
+  ],
+  "reused_logical_bytes": 2512439187,
+  "stall_diagnosed_at": "2026-10-23T14:52:03.499053+00:00",
+  "cause": "All three subprocess SSH stderr pipes reached16KiB and were not drained until process termination",
+  "clients": [
+    37751,
+    37753,
+    37754
+  ],
+  "recovery": "Terminate only stalled local backup SSH clients; preserve partials; redirect stderr; verify local and remote prefixes before offset resume",
+  "pipe_evidence": "Local lsof reported16384bytes in each SSH stderr PIPE. Local lsof manual documents pipe SIZE/OFF as kernel-buffer content amount. The downloader only read stderr after process.wait, so diagnostic backpressure could block its clients.",
+  "recovery_verified_at": "2026-10-23T14:59:45.027421+00:00",
+  "recovery_verified": "New streams advanced beyond every saved partial offset; local and remote prefix SHA checks precede appending; diagnostics now go to private regular files and LogLevel=ERROR; no automatic training retry."
+}

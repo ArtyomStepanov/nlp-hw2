@@ -1,0 +1,757 @@
+{
+  "schema": 1,
+  "files": [
+    {
+      "path": "artifacts/experiments/baseline_001/checkpoint-147871/config.json",
+      "bytes": 1010,
+      "dev": 64514,
+      "inode": 145907576,
+      "links": 1,
+      "mtime_ns": 1791848619832917094
+    },
+    {
+      "path": "artifacts/experiments/baseline_001/checkpoint-147871/generation_config.json",
+      "bytes": 257,
+      "dev": 64514,
+      "inode": 145907570,
+      "links": 1,
+      "mtime_ns": 1791848619832917094
+    },
+    {
+      "path": "artifacts/experiments/baseline_001/checkpoint-147871/model.safetensors",
+      "bytes": 195113216,
+      "dev": 64514,
+      "inode": 145907573,
+      "links": 1,
+      "mtime_ns": 1791848620088922413
+    },
+    {
+      "path": "artifacts/experiments/baseline_001/checkpoint-147871/optimizer.pt",
+      "bytes": 390320011,
+      "dev": 64514,
+      "inode": 145907557,
+      "links": 1,
+      "mtime_ns": 1791848620539931784
+    },
+    {
+      "path": "artifacts/experiments/baseline_001/checkpoint-147871/rng_state.pth",
+      "bytes": 14645,
+      "dev": 64514,
+      "inode": 145907572,
+      "links": 1,
+      "mtime_ns": 1791848620540931805
+    },
+    {
+      "path": "artifacts/experiments/baseline_001/checkpoint-147871/scaler.pt",
+      "bytes": 1383,
+      "dev": 64514,
+      "inode": 145907575,
+      "links": 1,
+      "mtime_ns": 1791848620539931784
+    },
+    {
+      "path": "artifacts/experiments/baseline_001/checkpoint-147871/scheduler.pt",
+      "bytes": 1465,
+      "dev": 64514,
+      "inode": 145907556,
+      "links": 1,
+      "mtime_ns": 1791848620539931784
+    },
+    {
+      "path": "artifacts/experiments/baseline_001/checkpoint-147871/tokenizer.json",
+      "bytes": 534007,
+      "dev": 64514,
+      "inode": 145907577,
+      "links": 1,
+      "mtime_ns": 1791848620102922704
+    },
+    {
+      "path": "artifacts/experiments/baseline_001/checkpoint-147871/tokenizer_config.json",
+      "bytes": 304,
+      "dev": 64514,
+      "inode": 145907571,
+      "links": 1,
+      "mtime_ns": 1791848620098922621
+    },
+    {
+      "path": "artifacts/experiments/baseline_001/checkpoint-147871/trainer_state.json",
+      "bytes": 279963,
+      "dev": 64514,
+      "inode": 145907569,
+      "links": 1,
+      "mtime_ns": 1791848620573932491
+    },
+    {
+      "path": "artifacts/experiments/baseline_001/checkpoint-147871/training_args.bin",
+      "bytes": 5393,
+      "dev": 64514,
+      "inode": 145907568,
+      "links": 1,
+      "mtime_ns": 1791848620105922766
+    },
+    {
+      "path": "artifacts/experiments/baseline_001/environment.json",
+      "bytes": 153,
+      "dev": 64514,
+      "inode": 145907554,
+      "links": 1,
+      "mtime_ns": 1791839670830375825
+    },
+    {
+      "path": "artifacts/experiments/baseline_001/model_config.json",
+      "bytes": 274,
+      "dev": 64514,
+      "inode": 145907551,
+      "links": 1,
+      "mtime_ns": 1791839670826375741
+    },
+    {
+      "path": "artifacts/experiments/baseline_001/preprocessing.json",
+      "bytes": 313,
+      "dev": 64514,
+      "inode": 145907552,
+      "links": 1,
+      "mtime_ns": 1791839670826375741
+    },
+    {
+      "path": "artifacts/experiments/baseline_001/tokenizer.json",
+      "bytes": 534007,
+      "dev": 64514,
+      "inode": 145907579,
+      "links": 1,
+      "mtime_ns": 1791839670835375929
+    },
+    {
+      "path": "artifacts/experiments/baseline_001/trainer_args.json",
+      "bytes": 3603,
+      "dev": 64514,
+      "inode": 145907578,
+      "links": 1,
+      "mtime_ns": 1791839670830375825
+    },
+    {
+      "path": "artifacts/experiments/baseline_001/training_config.json",
+      "bytes": 882,
+      "dev": 64514,
+      "inode": 145907553,
+      "links": 1,
+      "mtime_ns": 1791839670826375741
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/checkpoint-50000/config.json",
+      "bytes": 1010,
+      "dev": 64514,
+      "inode": 145907669,
+      "links": 1,
+      "mtime_ns": 1791888195482166923
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/checkpoint-50000/generation_config.json",
+      "bytes": 257,
+      "dev": 64514,
+      "inode": 145907655,
+      "links": 1,
+      "mtime_ns": 1791888195483166944
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/checkpoint-50000/model.safetensors",
+      "bytes": 557086648,
+      "dev": 64514,
+      "inode": 145907658,
+      "links": 1,
+      "mtime_ns": 1791888196084179606
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/checkpoint-50000/optimizer.pt",
+      "bytes": 1114317352,
+      "dev": 64514,
+      "inode": 145907601,
+      "links": 1,
+      "mtime_ns": 1791888197348206237
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/checkpoint-50000/rng_state_0.pth",
+      "bytes": 14917,
+      "dev": 64514,
+      "inode": 145907600,
+      "links": 1,
+      "mtime_ns": 1791888197350206279
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/checkpoint-50000/rng_state_1.pth",
+      "bytes": 14917,
+      "dev": 64514,
+      "inode": 145907657,
+      "links": 1,
+      "mtime_ns": 1791888196115180260
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/checkpoint-50000/scheduler.pt",
+      "bytes": 1465,
+      "dev": 64514,
+      "inode": 145907599,
+      "links": 1,
+      "mtime_ns": 1791888197348206237
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/checkpoint-50000/tokenizer.json",
+      "bytes": 534007,
+      "dev": 64514,
+      "inode": 145907670,
+      "links": 1,
+      "mtime_ns": 1791888196112180196
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/checkpoint-50000/tokenizer_config.json",
+      "bytes": 304,
+      "dev": 64514,
+      "inode": 145907656,
+      "links": 1,
+      "mtime_ns": 1791888196108180112
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/checkpoint-50000/trainer_state.json",
+      "bytes": 98409,
+      "dev": 64514,
+      "inode": 145907654,
+      "links": 1,
+      "mtime_ns": 1791888197362206532
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/checkpoint-50000/training_args.bin",
+      "bytes": 5393,
+      "dev": 64514,
+      "inode": 145907653,
+      "links": 1,
+      "mtime_ns": 1791888196113180218
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/checkpoint-50000/training_layout.json",
+      "bytes": 393,
+      "dev": 64514,
+      "inode": 145907598,
+      "links": 1,
+      "mtime_ns": 1791888197586211251
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/checkpoint-75000/config.json",
+      "bytes": 1010,
+      "dev": 64514,
+      "inode": 145907743,
+      "links": 1,
+      "mtime_ns": 1791891595690309504
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/checkpoint-75000/generation_config.json",
+      "bytes": 257,
+      "dev": 64514,
+      "inode": 145907709,
+      "links": 1,
+      "mtime_ns": 1791891595691309526
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/checkpoint-75000/model.safetensors",
+      "bytes": 557086648,
+      "dev": 64514,
+      "inode": 145907712,
+      "links": 1,
+      "mtime_ns": 1791891596217320774
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/checkpoint-75000/optimizer.pt",
+      "bytes": 1114317352,
+      "dev": 64514,
+      "inode": 145907677,
+      "links": 1,
+      "mtime_ns": 1791891597366345347
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/checkpoint-75000/rng_state_0.pth",
+      "bytes": 14917,
+      "dev": 64514,
+      "inode": 145907676,
+      "links": 1,
+      "mtime_ns": 1791891597368345390
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/checkpoint-75000/rng_state_1.pth",
+      "bytes": 14917,
+      "dev": 64514,
+      "inode": 145907711,
+      "links": 1,
+      "mtime_ns": 1791891596259321673
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/checkpoint-75000/scheduler.pt",
+      "bytes": 1465,
+      "dev": 64514,
+      "inode": 145907675,
+      "links": 1,
+      "mtime_ns": 1791891597367345368
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/checkpoint-75000/tokenizer.json",
+      "bytes": 534007,
+      "dev": 64514,
+      "inode": 145907744,
+      "links": 1,
+      "mtime_ns": 1791891596256321608
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/checkpoint-75000/tokenizer_config.json",
+      "bytes": 304,
+      "dev": 64514,
+      "inode": 145907710,
+      "links": 1,
+      "mtime_ns": 1791891596253321544
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/checkpoint-75000/trainer_state.json",
+      "bytes": 146755,
+      "dev": 64514,
+      "inode": 145907708,
+      "links": 1,
+      "mtime_ns": 1791891597383345710
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/checkpoint-75000/training_args.bin",
+      "bytes": 5393,
+      "dev": 64514,
+      "inode": 145907707,
+      "links": 1,
+      "mtime_ns": 1791891596257321630
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/checkpoint-75000/training_layout.json",
+      "bytes": 393,
+      "dev": 64514,
+      "inode": 145907674,
+      "links": 1,
+      "mtime_ns": 1791891597555349389
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/environment.json",
+      "bytes": 172,
+      "dev": 64514,
+      "inode": 145907596,
+      "links": 1,
+      "mtime_ns": 1791881375747663120
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/log_history.json",
+      "bytes": 135350,
+      "dev": 64514,
+      "inode": 145907671,
+      "links": 1,
+      "mtime_ns": 1791891653641548519
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/metrics.json",
+      "bytes": 423,
+      "dev": 64514,
+      "inode": 145907768,
+      "links": 1,
+      "mtime_ns": 1791891653635548390
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/model.pt",
+      "bytes": 557159507,
+      "dev": 64514,
+      "inode": 145907746,
+      "links": 1,
+      "mtime_ns": 1791891653617548005
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/model_config.json",
+      "bytes": 274,
+      "dev": 64514,
+      "inode": 145907581,
+      "links": 1,
+      "mtime_ns": 1791881375743663037
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/preprocessing.json",
+      "bytes": 312,
+      "dev": 64514,
+      "inode": 145907583,
+      "links": 1,
+      "mtime_ns": 1791881375743663037
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/tokenizer.json",
+      "bytes": 534007,
+      "dev": 64514,
+      "inode": 145907769,
+      "links": 1,
+      "mtime_ns": 1791881375750663182
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/trainer_args.json",
+      "bytes": 3613,
+      "dev": 64514,
+      "inode": 145907745,
+      "links": 1,
+      "mtime_ns": 1791881375747663120
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/trainer_state.json",
+      "bytes": 147325,
+      "dev": 64514,
+      "inode": 145907672,
+      "links": 1,
+      "mtime_ns": 1791891653634548369
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/training_config.json",
+      "bytes": 945,
+      "dev": 64514,
+      "inode": 145907584,
+      "links": 1,
+      "mtime_ns": 1791881375742663016
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/training_layout.json",
+      "bytes": 393,
+      "dev": 64514,
+      "inode": 145907582,
+      "links": 1,
+      "mtime_ns": 1791881375747663120
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/checkpoint-360000/config.json",
+      "bytes": 1010,
+      "dev": 64514,
+      "inode": 145907235,
+      "links": 1,
+      "mtime_ns": 1791942264492693201
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/checkpoint-360000/generation_config.json",
+      "bytes": 257,
+      "dev": 64514,
+      "inode": 145907216,
+      "links": 1,
+      "mtime_ns": 1791942264492693201
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/checkpoint-360000/model.safetensors",
+      "bytes": 557086648,
+      "dev": 64514,
+      "inode": 145907219,
+      "links": 1,
+      "mtime_ns": 1791942265110706263
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/checkpoint-360000/optimizer.pt",
+      "bytes": 1114322152,
+      "dev": 64514,
+      "inode": 145907172,
+      "links": 1,
+      "mtime_ns": 1791942266414733821
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/checkpoint-360000/rng_state_0.pth",
+      "bytes": 14917,
+      "dev": 64514,
+      "inode": 145907171,
+      "links": 1,
+      "mtime_ns": 1791942266416733864
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/checkpoint-360000/rng_state_1.pth",
+      "bytes": 14917,
+      "dev": 64514,
+      "inode": 145907218,
+      "links": 1,
+      "mtime_ns": 1791942265163707383
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/checkpoint-360000/scheduler.pt",
+      "bytes": 1465,
+      "dev": 64514,
+      "inode": 145907170,
+      "links": 1,
+      "mtime_ns": 1791942266415733843
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/checkpoint-360000/tokenizer.json",
+      "bytes": 534007,
+      "dev": 64514,
+      "inode": 145907236,
+      "links": 1,
+      "mtime_ns": 1791942265160707319
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/checkpoint-360000/tokenizer_config.json",
+      "bytes": 304,
+      "dev": 64514,
+      "inode": 145907217,
+      "links": 1,
+      "mtime_ns": 1791942265155707214
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/checkpoint-360000/trainer_state.json",
+      "bytes": 703048,
+      "dev": 64514,
+      "inode": 145907215,
+      "links": 1,
+      "mtime_ns": 1791942266510735850
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/checkpoint-360000/training_args.bin",
+      "bytes": 5393,
+      "dev": 64514,
+      "inode": 145907214,
+      "links": 1,
+      "mtime_ns": 1791942265161707341
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/checkpoint-360000/training_layout.json",
+      "bytes": 408,
+      "dev": 64514,
+      "inode": 145907169,
+      "links": 1,
+      "mtime_ns": 1791942266707740014
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/checkpoint-362284/config.json",
+      "bytes": 1010,
+      "dev": 64514,
+      "inode": 145907547,
+      "links": 1,
+      "mtime_ns": 1791942636384552466
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/checkpoint-362284/generation_config.json",
+      "bytes": 257,
+      "dev": 64514,
+      "inode": 145907523,
+      "links": 1,
+      "mtime_ns": 1791942636385552487
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/checkpoint-362284/model.safetensors",
+      "bytes": 557086648,
+      "dev": 64514,
+      "inode": 145907526,
+      "links": 1,
+      "mtime_ns": 1791942636940564216
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/checkpoint-362284/optimizer.pt",
+      "bytes": 1114322152,
+      "dev": 64514,
+      "inode": 145907489,
+      "links": 1,
+      "mtime_ns": 1791942638090588518
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/checkpoint-362284/rng_state_0.pth",
+      "bytes": 14917,
+      "dev": 64514,
+      "inode": 145907488,
+      "links": 1,
+      "mtime_ns": 1791942638092588561
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/checkpoint-362284/rng_state_1.pth",
+      "bytes": 14917,
+      "dev": 64514,
+      "inode": 145907525,
+      "links": 1,
+      "mtime_ns": 1791942636989565251
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/checkpoint-362284/scheduler.pt",
+      "bytes": 1465,
+      "dev": 64514,
+      "inode": 145907487,
+      "links": 1,
+      "mtime_ns": 1791942638091588540
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/checkpoint-362284/tokenizer.json",
+      "bytes": 534007,
+      "dev": 64514,
+      "inode": 145907548,
+      "links": 1,
+      "mtime_ns": 1791942636986565188
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/checkpoint-362284/tokenizer_config.json",
+      "bytes": 304,
+      "dev": 64514,
+      "inode": 145907524,
+      "links": 1,
+      "mtime_ns": 1791942636981565082
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/checkpoint-362284/trainer_state.json",
+      "bytes": 707491,
+      "dev": 64514,
+      "inode": 145907522,
+      "links": 1,
+      "mtime_ns": 1791942638171590230
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/checkpoint-362284/training_args.bin",
+      "bytes": 5393,
+      "dev": 64514,
+      "inode": 145907521,
+      "links": 1,
+      "mtime_ns": 1791942636987565209
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/checkpoint-362284/training_layout.json",
+      "bytes": 408,
+      "dev": 64514,
+      "inode": 145907486,
+      "links": 1,
+      "mtime_ns": 1791942638344593886
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/continuation_manifest.json",
+      "bytes": 2025,
+      "dev": 64514,
+      "inode": 145907457,
+      "links": 1,
+      "mtime_ns": 1791895725156840815
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/environment.json",
+      "bytes": 172,
+      "dev": 64514,
+      "inode": 145907456,
+      "links": 1,
+      "mtime_ns": 1791881375747663120
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/log_history.json",
+      "bytes": 654698,
+      "dev": 64514,
+      "inode": 145907458,
+      "links": 1,
+      "mtime_ns": 1791942698357862093
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/metrics.json",
+      "bytes": 410,
+      "dev": 64514,
+      "inode": 145907484,
+      "links": 1,
+      "mtime_ns": 1791942698327861459
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/model.pt",
+      "bytes": 557159507,
+      "dev": 64514,
+      "inode": 145907469,
+      "links": 1,
+      "mtime_ns": 1791942698242859663
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/model_config.json",
+      "bytes": 274,
+      "dev": 64514,
+      "inode": 145907166,
+      "links": 1,
+      "mtime_ns": 1791881375743663037
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/preprocessing.json",
+      "bytes": 312,
+      "dev": 64514,
+      "inode": 145907237,
+      "links": 1,
+      "mtime_ns": 1791881375743663037
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/resumes/step-50000/environment.json",
+      "bytes": 172,
+      "dev": 64514,
+      "inode": 145907465,
+      "links": 1,
+      "mtime_ns": 1791896095865617585
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/resumes/step-50000/model_config.json",
+      "bytes": 274,
+      "dev": 64514,
+      "inode": 145907461,
+      "links": 1,
+      "mtime_ns": 1791896095861617501
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/resumes/step-50000/preprocessing.json",
+      "bytes": 312,
+      "dev": 64514,
+      "inode": 145907463,
+      "links": 1,
+      "mtime_ns": 1791896095861617501
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/resumes/step-50000/tokenizer.json",
+      "bytes": 534007,
+      "dev": 64514,
+      "inode": 145907467,
+      "links": 1,
+      "mtime_ns": 1791896095869617669
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/resumes/step-50000/trainer_args.json",
+      "bytes": 3634,
+      "dev": 64514,
+      "inode": 145907466,
+      "links": 1,
+      "mtime_ns": 1791896095865617585
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/resumes/step-50000/training_config.json",
+      "bytes": 1069,
+      "dev": 64514,
+      "inode": 145907464,
+      "links": 1,
+      "mtime_ns": 1791896095861617501
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/resumes/step-50000/training_layout.json",
+      "bytes": 408,
+      "dev": 64514,
+      "inode": 145907462,
+      "links": 1,
+      "mtime_ns": 1791896095865617585
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/tokenizer.json",
+      "bytes": 534007,
+      "dev": 64514,
+      "inode": 145907549,
+      "links": 1,
+      "mtime_ns": 1791881375750663182
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/trainer_state.json",
+      "bytes": 708035,
+      "dev": 64514,
+      "inode": 145907468,
+      "links": 1,
+      "mtime_ns": 1791942698327861459
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/training_config.json",
+      "bytes": 1069,
+      "dev": 64514,
+      "inode": 145907238,
+      "links": 1,
+      "mtime_ns": 1791895718626703897
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/training_layout.json",
+      "bytes": 408,
+      "dev": 64514,
+      "inode": 145907167,
+      "links": 1,
+      "mtime_ns": 1791895717979690331
+    }
+  ]
+}

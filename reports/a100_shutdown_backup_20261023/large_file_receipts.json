@@ -1,0 +1,141 @@
+{
+  "schema": 1,
+  "status": "complete",
+  "files": [
+    {
+      "path": "artifacts/a100_full_20261023/training/trial/checkpoint-180000/model.safetensors",
+      "bytes": 977639840,
+      "sha256": "2059268173416c77cd8c901c791eb86e7cbcea0ede756b2bb830ec23638b8165",
+      "method": "reused_verified_local_hardlink",
+      "source": "/Users/artyom-step/nlp-hw2/artifacts/a100_full_eval_20261023/t4_bundle/checkpoint/model.safetensors"
+    },
+    {
+      "path": "artifacts/a100_full_20261023/training/trial/final/model.safetensors",
+      "bytes": 977639840,
+      "sha256": "2059268173416c77cd8c901c791eb86e7cbcea0ede756b2bb830ec23638b8165",
+      "method": "reused_verified_local_hardlink",
+      "source": "/Users/artyom-step/nlp-hw2/artifacts/a100_full_eval_20261023/t4_bundle/checkpoint/model.safetensors"
+    },
+    {
+      "path": "artifacts/a100_full_20261023/training/trial/checkpoint-180000/optimizer.pt",
+      "bytes": 1955427560,
+      "sha256": "473f08359a314ca0d508594a6fe22c024b386b896c9c982082a897451270eef7",
+      "method": "reused_verified_local_hardlink",
+      "source": "/Users/artyom-step/nlp-hw2/artifacts/a100_shutdown_backup_20261023/restored/artifacts/a100_full_20261023/training/trial/checkpoint-180000/optimizer.pt"
+    },
+    {
+      "path": "artifacts/a100_full_20261023/training/trial/checkpoint-181144/model.safetensors",
+      "bytes": 977639840,
+      "sha256": "1a0a46502e93933c0beabd1224ab7ebef050f32ab9a5401f7e5a250ba96c8602",
+      "method": "reused_verified_local_hardlink",
+      "source": "/Users/artyom-step/nlp-hw2/artifacts/a100_shutdown_backup_20261023/restored/artifacts/a100_full_20261023/training/trial/checkpoint-181144/model.safetensors"
+    },
+    {
+      "path": "artifacts/a100_full_20261023/training/trial/checkpoint-181144/optimizer.pt",
+      "bytes": 1955427560,
+      "sha256": "5d430f55fc7cc80720dba287ed63b2b7939dcc7782cb480232b94a9d1149affe",
+      "method": "reused_verified_local_hardlink",
+      "source": "/Users/artyom-step/nlp-hw2/artifacts/a100_shutdown_backup_20261023/restored/artifacts/a100_full_20261023/training/trial/checkpoint-181144/optimizer.pt"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/trials/copy/final/model.safetensors",
+      "bytes": 978696948,
+      "sha256": "ad529f850279ed6cebee31051c5e09328ab96e6c82af948515e7049f91920c54",
+      "method": "reused_verified_local_hardlink",
+      "source": "/Users/artyom-step/nlp-hw2/artifacts/a100_shutdown_backup_20261023/restored/artifacts/a100_sequential_20261022/stage1/trials/copy/final/model.safetensors"
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768_lr1e4/model.pt",
+      "bytes": 557159507,
+      "sha256": "5e1a87fae9f39adc24c4fab8eaf630a89c4906862a6fa38962fb2f71d65fe0fd",
+      "method": "reused_verified_local_hardlink",
+      "source": "/Users/artyom-step/nlp-hw2/artifacts/remote_backups/nlp-bart_20261019_161656/nlp-hw2/artifacts/experiments/transformer_002_8x8_d768_lr1e4/model.pt"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage1/trials/bart/final/model.safetensors",
+      "bytes": 977639840,
+      "sha256": "1df0e04a6b13888c2afa436e342e44622cafce5e6b5286499055ba48f16c1983",
+      "method": "downloaded_and_sha256_verified",
+      "resumed_prefix_bytes": 780140544,
+      "resumed_prefix_sha256": "0d566ffa833617621d5ba3046cd52c12d230200ee40b816942d1f3f718c2e6a6"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/distinct4m/final/model.safetensors",
+      "bytes": 977639840,
+      "sha256": "b5dfb476110b1339282e65d9dcea8d55b0c0ea8ca4ebb7c85d297e4e930d6e74",
+      "method": "downloaded_and_sha256_verified",
+      "resumed_prefix_bytes": 809664512,
+      "resumed_prefix_sha256": "965ddb3d43eaa67b7f7242907e0a53a1860f3faa9c7858f6c94290a23017be6e"
+    },
+    {
+      "path": "artifacts/experiments/baseline_001/checkpoint-147871/model.safetensors",
+      "bytes": 195113216,
+      "sha256": "ce2598e7682dec2bd6272a952df4990579008be4c88d4763353eea8854acf740",
+      "method": "downloaded_and_sha256_verified",
+      "resumed_prefix_bytes": 0,
+      "resumed_prefix_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "artifacts/experiments/transformer_002_8x8_d768/model.pt",
+      "bytes": 557159507,
+      "sha256": "a5f8fbbfd32de56d3275383e7d7b508ef38fb99eb0bd5396654d7b812925a445",
+      "method": "downloaded_and_sha256_verified",
+      "resumed_prefix_bytes": 0,
+      "resumed_prefix_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/repeat4m/final/model.safetensors",
+      "bytes": 977639840,
+      "sha256": "373383375d1bd18da223b51ad1783500b30de57bde923772142f1f6fa748895e",
+      "method": "downloaded_and_sha256_verified",
+      "resumed_prefix_bytes": 8388608,
+      "resumed_prefix_sha256": "1a7cc140eeffb00c0cfa4cd40ed856eeb3cd10fdfc7a1a62fc078059630f52e7"
+    }
+  ],
+  "progress": {
+    "status": "complete",
+    "updated_at": "2026-10-23T15:59:38.229415+00:00",
+    "unique_download_bytes": 9552384151,
+    "bytes_received": 9552384151,
+    "percent": 100.0,
+    "elapsed_seconds": 575.4263415830064,
+    "throughput_mib_per_second": 3.458856154713475,
+    "eta_seconds": 0.0,
+    "completed_files": 9,
+    "unique_download_files": 9,
+    "active": [
+      {
+        "path": "artifacts/a100_sequential_20261022/stage1/trials/bart/final/model.safetensors",
+        "status": "verified",
+        "bytes_received": 977639840,
+        "bytes_total": 977639840
+      },
+      {
+        "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/distinct4m/final/model.safetensors",
+        "status": "verified",
+        "bytes_received": 977639840,
+        "bytes_total": 977639840
+      },
+      {
+        "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/repeat4m/final/model.safetensors",
+        "status": "verified",
+        "bytes_received": 977639840,
+        "bytes_total": 977639840
+      },
+      {
+        "path": "artifacts/experiments/transformer_002_8x8_d768/model.pt",
+        "status": "verified",
+        "bytes_received": 557159507,
+        "bytes_total": 557159507
+      },
+      {
+        "path": "artifacts/experiments/baseline_001/checkpoint-147871/model.safetensors",
+        "status": "verified",
+        "bytes_received": 195113216,
+        "bytes_total": 195113216
+      }
+    ],
+    "reused_logical_bytes": 2512439187,
+    "verified_existing_backup_bytes": 5867191908
+  }
+}

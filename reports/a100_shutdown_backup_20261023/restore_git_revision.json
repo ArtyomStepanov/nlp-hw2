@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "repository_revision": "db88fee1d7d2ca2e957861ada5fb99f9777e2ce0",
+  "remote_branch": "origin/codex/a100-final-backup-20261023",
+  "verification": "Parent confirmed ls-remote matches this SHA; this backup worker performed no Git commands",
+  "recorded_at": "2026-10-23T15:13:14.318960+00:00"
+}

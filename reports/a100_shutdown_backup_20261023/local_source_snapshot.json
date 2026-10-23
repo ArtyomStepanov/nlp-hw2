@@ -1,0 +1,192 @@
+{
+  "schema": 1,
+  "created_at": "2026-10-23T14:36:03.042213+00:00",
+  "scope": "Explicit current Python/config/dependency sources; remote immutable experiment sources also retained separately",
+  "files": [
+    {
+      "path": "_code_runner.py",
+      "bytes": 7840,
+      "sha256": "0e68f1713d6f65b9c2638aca26bd7c1440328b000b648eb9f76c01352d721913"
+    },
+    {
+      "path": "evaluate_checkpoint.py",
+      "bytes": 17041,
+      "sha256": "e80e1068db6a43899f21969479f61744135b6ef0f3698691e4b6879c66c15b81"
+    },
+    {
+      "path": "evaluation.py",
+      "bytes": 10300,
+      "sha256": "9ad4d6bb1c03d0d2eca15a597db3319cf264e7d3cfcc86149a609251a4e983d0"
+    },
+    {
+      "path": "inference.py",
+      "bytes": 17298,
+      "sha256": "837e1147884a5a517a28d167e0a5ade715072a202c1fd3ffe3d879baa2cd30b8"
+    },
+    {
+      "path": "kaggle_experiments.py",
+      "bytes": 21197,
+      "sha256": "c32a544ad651f81d09a8e8ac5a2ff1b6b2d89e4b8df2a37e4f3118e6e70c024a"
+    },
+    {
+      "path": "load_dataset.py",
+      "bytes": 1900,
+      "sha256": "76349a121aea942e9edd8c3609eb820e3d5656b27760dda7f8172fe8fcc9601d"
+    },
+    {
+      "path": "models/__init__.py",
+      "bytes": 378,
+      "sha256": "f0ac5a18a8a85dd51fa4044cc8fc4c2f2e210304baf3ee6c13cad2792847114f"
+    },
+    {
+      "path": "models/base.py",
+      "bytes": 3434,
+      "sha256": "a18e9a415bab03a5ef2ca313b7d9e27b515d8b20a8028648e9683bc8e999fbc0"
+    },
+    {
+      "path": "models/baseline.py",
+      "bytes": 5633,
+      "sha256": "349643d10004fd37aa9644d25634bbf832b867851304432e4d9b66dea8001ea1"
+    },
+    {
+      "path": "models/config.py",
+      "bytes": 2922,
+      "sha256": "fce960895e77d4661e91f94b474a203522392416f73714679cfc2a2a6bca79d0"
+    },
+    {
+      "path": "models/copy.py",
+      "bytes": 7559,
+      "sha256": "51aa4b4b92943ffb8b02c0742ad137b02eb06c48a2def9cc2c9fb4bbc7ec79d2"
+    },
+    {
+      "path": "models/t5.py",
+      "bytes": 1629,
+      "sha256": "d1ab22531c00453fb426a6e79f4c69b7ce9508f0849399b6241d4d23dee703bc"
+    },
+    {
+      "path": "models/t5_attention.py",
+      "bytes": 3637,
+      "sha256": "3b32cf763518b5236af861d7b7c4cc41286a775e60f8412773b321e0c0f51388"
+    },
+    {
+      "path": "plotting.py",
+      "bytes": 7719,
+      "sha256": "2071e931d633d2cc0399e9560ef088bab38302d5e0cf77331a0784777ff297b2"
+    },
+    {
+      "path": "prepare_datasets.py",
+      "bytes": 9003,
+      "sha256": "df5e35028e80fd2d6406d8e2cb77420204e7693022a2e5a8d37c78aed1e94211"
+    },
+    {
+      "path": "requirements-kaggle.txt",
+      "bytes": 213,
+      "sha256": "23cbcbf20b2243376a403595761786097d13c31a4043cf3f034d9da14d329208"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 161,
+      "sha256": "aba58d8a34b8981527c1dd09acada957435bb8b6e7c3fc62c3819a41f8c0a1d5"
+    },
+    {
+      "path": "tokenizer.py",
+      "bytes": 5134,
+      "sha256": "4ff94323b5ab8aa5fac1e53760b76c4505b947b620539d6c7c62460f4ffbf746"
+    },
+    {
+      "path": "tools/audit_a100_errors.py",
+      "bytes": 12623,
+      "sha256": "cd2d6e4dd40ee7cf8f834472cb2e7a1d28f541f8af04cc274313e0caef3a77ad"
+    },
+    {
+      "path": "tools/benchmark_full_t4.py",
+      "bytes": 13553,
+      "sha256": "41343c797a415237bbd98bedbcdf4f27d9ec848988e1d7c0807f08884fd36829"
+    },
+    {
+      "path": "tools/evaluate_fixed_bundle.py",
+      "bytes": 17578,
+      "sha256": "ed6df43e3ab222e220dcddc1fa30e1500581cb2f731b05e57aa7c45647f42f0f"
+    },
+    {
+      "path": "tools/make_kaggle_notebooks.py",
+      "bytes": 9081,
+      "sha256": "e7e68f3d620ea5c025781d823bb8148876875753325a0d0579036a32e5864d1a"
+    },
+    {
+      "path": "tools/prepare_a100_diversity.py",
+      "bytes": 16368,
+      "sha256": "5d72088ef7cd9b32860496cbf211b95f84de411baeb1eabb1c7fc264eb1e1dfa"
+    },
+    {
+      "path": "tools/prepare_a100_full.py",
+      "bytes": 13624,
+      "sha256": "79dd4236e9bd8210e7f3a9b4216ebfdddcfcfc9386e585feddbe029a3cc41828"
+    },
+    {
+      "path": "tools/prepare_kaggle_bundle.py",
+      "bytes": 3213,
+      "sha256": "7ae5684e2fe57a631991952e2297cc9e3fc73c43f778887427a3de36602ec31c"
+    },
+    {
+      "path": "tools/recover_a100_stage2.py",
+      "bytes": 17177,
+      "sha256": "2cc1e05ca0c98e6995ab25efd467e4b33298da330a3c82adfe8ad749bee0171f"
+    },
+    {
+      "path": "tools/repair_full_t4_defaults.py",
+      "bytes": 3695,
+      "sha256": "5d328e75768e59156c12b80638cbcadd06728ad7712512fb922f8d1145811335"
+    },
+    {
+      "path": "tools/run_a100_decoding.py",
+      "bytes": 11335,
+      "sha256": "23bde8f44db9ba23012b18bf0e17181fdf768f4cb15d9ef11aca2109016365bc"
+    },
+    {
+      "path": "tools/run_a100_full.py",
+      "bytes": 13196,
+      "sha256": "6b5c348de0888cee0d57a40f13691614d8db23cf210597be1ef4708c3fd6ca7c"
+    },
+    {
+      "path": "tools/run_a100_stage1.py",
+      "bytes": 5717,
+      "sha256": "0966773bb18e2fca2621d5e95d5ec9941937545e4a2a07642567dc93fb06ce4b"
+    },
+    {
+      "path": "tools/run_a100_stage2.py",
+      "bytes": 24367,
+      "sha256": "c0ae85bbd46319fa79e14c090b5a7faf99550b22185fb7b057e3d06bbe5793b2"
+    },
+    {
+      "path": "tools/summarize_full_evaluation.py",
+      "bytes": 17964,
+      "sha256": "1488487e3578f4a2004ba71ea9315de62c3cae347e809d056661caca7f6f5419"
+    },
+    {
+      "path": "train_distributed.py",
+      "bytes": 5031,
+      "sha256": "0924d58fa8bf1382518f61256e6066d5dd971aade34a5e09390bf4375d08e1d2"
+    },
+    {
+      "path": "train_kaggle.py",
+      "bytes": 1856,
+      "sha256": "152e74f37c5c62a561e8bf650c35aef281a4edd2056834ea55ea74378978a7c8"
+    },
+    {
+      "path": "train_sweep.py",
+      "bytes": 15275,
+      "sha256": "9e6aa0bab9e9c331b01f749510f410a8e0799ab93744e8b1648028c5cae80860"
+    },
+    {
+      "path": "training.py",
+      "bytes": 37589,
+      "sha256": "43312d3f7b48fc5cd8f772baccd9eb5721aa96385267a35ad563187dfed71ab8"
+    },
+    {
+      "path": "utils.py",
+      "bytes": 1381,
+      "sha256": "709493015d18f1e37d7384d50d686e4c66029126c4698eff8e60c5dd06b9e9a0"
+    }
+  ]
+}

@@ -42,5 +42,49 @@
   "training/trial/initial_validation.json": {
     "bytes": 268,
     "sha256": "5922c9fb935415ec4a2e333d6daf83bb8b5a9e4f67b1cb2d097340a1ed9b619c"
+  },
+  "training/trial/log_history.json": {
+    "bytes": 19046,
+    "sha256": "d5b9c8f963f10abb6e3305274544efe365cd704ea3a0f90bc6c01d1b68f12d7b"
+  },
+  "training/trial/checkpoint-5000/trainer_state.json": {
+    "bytes": 10980,
+    "sha256": "4db93d6be8ffd65aa420da375faac4c4abc5403358dde4bb4ec19d98df7ef138"
+  },
+  "training/trial/checkpoint-5000/run_manifest.json": {
+    "bytes": 1848,
+    "sha256": "d0f1a8e5d6cc94135fb66c3a679e8f0c901ab3e1e29f7cc8869b199f45bc4900"
+  },
+  "training/trial/checkpoint-5000/config.json": {
+    "bytes": 1011,
+    "sha256": "0030a357e22fb9ddc16de08eb35b836c8876bad6f3c6311649d932c3dd5f3b9e"
+  },
+  "training/trial/checkpoint-5000/generation_config.json": {
+    "bytes": 257,
+    "sha256": "6d5bd370a97d994f5a7112ca7e3e42c132ead2c3219959665690cda7743b83d3"
+  },
+  "training/trial/checkpoint-5000/amp_scale_check.json": {
+    "bytes": 321,
+    "sha256": "127758028673a88e625567b5200c5a07ead2817396e95b94b60973d63ec38df1"
+  },
+  "training/trial/checkpoint-10000/trainer_state.json": {
+    "bytes": 21579,
+    "sha256": "89375433757fb32dde7b40d9ee9a0a68103e9d4b7705b3f5ae4e50a75fe23855"
+  },
+  "training/trial/checkpoint-10000/run_manifest.json": {
+    "bytes": 1848,
+    "sha256": "d0f1a8e5d6cc94135fb66c3a679e8f0c901ab3e1e29f7cc8869b199f45bc4900"
+  },
+  "training/trial/checkpoint-10000/config.json": {
+    "bytes": 1011,
+    "sha256": "0030a357e22fb9ddc16de08eb35b836c8876bad6f3c6311649d932c3dd5f3b9e"
+  },
+  "training/trial/checkpoint-10000/generation_config.json": {
+    "bytes": 257,
+    "sha256": "6d5bd370a97d994f5a7112ca7e3e42c132ead2c3219959665690cda7743b83d3"
+  },
+  "training/trial/checkpoint-10000/amp_scale_check.json": {
+    "bytes": 322,
+    "sha256": "2c9a6e1ef1489f8e65f9baeec1d02888aac1e1730b5699996f1c80bf5c2e282e"
   }
 }

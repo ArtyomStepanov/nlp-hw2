@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "status": "unchanged",
+  "checked_at": "2026-10-23T16:00:07Z",
+  "files_checked": 653,
+  "changed": [],
+  "verification": "Source size/mtime unchanged after fresh initial SHA256; each transferred local file separately verified by full SHA256",
+  "gpu": {
+    "init_status": 0,
+    "devices": [
+      {
+        "index": 0,
+        "utilization_percent": 97,
+        "compute_process_count": 1,
+        "count_query_status": 7
+      }
+    ]
+  },
+  "concurrent_new_training_reported_pid": 268935,
+  "concurrent_new_training_tmux": "nlp-a100-dropout-20261023",
+  "remote_stop_authorized": false
+}

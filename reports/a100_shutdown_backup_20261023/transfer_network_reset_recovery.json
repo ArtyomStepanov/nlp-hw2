@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "observed_at": "2026-10-23T15:49:55.170802+00:00",
+  "error": "SSH255: Connection reset by peer; client_loop: send disconnect: Broken pipe",
+  "failed_source": "artifacts/a100_sequential_20261022/stage2_recovery/trials/distinct4m/final/model.safetensors",
+  "progress_at_failure": {
+    "status": "failed",
+    "updated_at": "2026-10-23T15:43:13.943409+00:00",
+    "unique_download_bytes": 9552384151,
+    "bytes_received": 7465385572,
+    "percent": 78.15206606005768,
+    "elapsed_seconds": 2945.761943458994,
+    "throughput_mib_per_second": 1.6452713508801724,
+    "eta_seconds": 1209.7195651670943,
+    "completed_files": 4,
+    "unique_download_files": 9,
+    "active": [
+      {
+        "path": "artifacts/a100_full_20261023/training/trial/checkpoint-180000/optimizer.pt",
+        "status": "verified",
+        "bytes_received": 1955427560,
+        "bytes_total": 1955427560
+      },
+      {
+        "path": "artifacts/a100_full_20261023/training/trial/checkpoint-181144/optimizer.pt",
+        "status": "verified",
+        "bytes_received": 1955427560,
+        "bytes_total": 1955427560
+      },
+      {
+        "path": "artifacts/a100_sequential_20261022/stage1/trials/copy/final/model.safetensors",
+        "status": "verified",
+        "bytes_received": 978696948,
+        "bytes_total": 978696948
+      },
+      {
+        "path": "artifacts/a100_full_20261023/training/trial/checkpoint-181144/model.safetensors",
+        "status": "verified",
+        "bytes_received": 977639840,
+        "bytes_total": 977639840
+      },
+      {
+        "path": "artifacts/a100_sequential_20261022/stage1/trials/bart/final/model.safetensors",
+        "status": "downloading",
+        "bytes_received": 780140544,
+        "bytes_total": 977639840
+      },
+      {
+        "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/distinct4m/final/model.safetensors",
+        "status": "downloading",
+        "bytes_received": 809664512,
+        "bytes_total": 977639840
+      },
+      {
+        "path": "artifacts/a100_sequential_20261022/stage2_recovery/trials/repeat4m/final/model.safetensors",
+        "status": "downloading",
+        "bytes_received": 8388608,
+        "bytes_total": 977639840
+      },
+      {
+        "path": "artifacts/experiments/transformer_002_8x8_d768/model.pt",
+        "status": "downloading",
+        "bytes_received": 0,
+        "bytes_total": 557159507
+      },
+      {
+        "path": "artifacts/experiments/baseline_001/checkpoint-147871/model.safetensors",
+        "status": "pending",
+        "bytes_received": 0,
+        "bytes_total": 195113216
+      }
+    ],
+    "reused_logical_bytes": 2512439187
+  },
+  "source_sha_mismatch": false,
+  "completed_full_checkpoints_safe": [
+    180000,
+    181144
+  ],
+  "recovery": "Explicit restart of backup client only; rehash and reuse all completed files, verify each local partial prefix against the pinned remote source before offset append; preserve all partial bytes"
+}

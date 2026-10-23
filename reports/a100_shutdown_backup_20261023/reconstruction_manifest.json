@@ -1,0 +1,1704 @@
+{
+  "schema": 1,
+  "created_at": "2026-10-23T14:31:07.972629+00:00",
+  "status": "local_raw_source_freshly_hashed_reconstruction_documented",
+  "workspace_root": "/Users/artyom-step/nlp-hw2",
+  "scope": "Raw dataset identity, saved tokenizer, source/config identity, historical cache/selection provenance, and reproducible derived-cache reconstruction. Checkpoint retention decisions are outside this manifest.",
+  "verification": {
+    "raw_train_sha256": "freshly computed from all bytes of all 60 local Parquet shards",
+    "raw_train_row_counts": "Parquet footer metadata, without row materialization",
+    "official_test_sha256": "freshly computed",
+    "official_question_order_sha256": "freshly computed from all 1919 questions",
+    "code_config_tokenizer_sha256": "freshly computed",
+    "model_weights_loaded": false,
+    "gpu_used": false,
+    "reconstruction_executed": false,
+    "reconstruction_script_syntax": "ast.parse passed for both embedded Python scripts",
+    "historical_checksums_are_labeled": true,
+    "audit_python": "3.13.4 (v3.13.4:8a526ec7cbe, Jun  3 2025, 21:14:54) [Clang 16.0.0 (clang-1600.0.26.6)]",
+    "audit_platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O"
+  },
+  "raw_dataset": {
+    "dataset_id": "SlavaYus/tinysms_qa_12m",
+    "public_repository": "https://huggingface.co/datasets/SlavaYus/tinysms_qa_12m",
+    "source_revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+    "source_revision_evidence": "All 60 local HF train download metadata files and official-test metadata record this revision. Fresh shard SHA256 values match recorded public-source ETags.",
+    "train": {
+      "glob": "data/tinysms_qa_12m/data/train/part-*.parquet",
+      "file_count": 60,
+      "total_bytes": 1594345814,
+      "total_rows": 11838003,
+      "order": "lexicographic part-00000.parquet through part-00059.parquet; preserve rows within each shard",
+      "schema": "question: string\ncode: string",
+      "files": [
+        {
+          "path": "data/tinysms_qa_12m/data/train/part-00000.parquet",
+          "bytes": 26169796,
+          "sha256": "91831d582faa12d73b1a6b3878e496446cd5df074f17ee4ffea8cc2887c708ec",
+          "rows": 200000,
+          "row_groups": 1,
+          "public_source_revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+          "public_source_etag": "91831d582faa12d73b1a6b3878e496446cd5df074f17ee4ffea8cc2887c708ec",
+          "fresh_sha256_matches_public_source_etag": true
+        },
+        {
+          "path": "data/tinysms_qa_12m/data/train/part-00001.parquet",
+          "bytes": 26166175,
+          "sha256": "5222d657a1af07a531f1b22503f35741a6547f0831509897d0a279bc8f67d068",
+          "rows": 200000,
+          "row_groups": 1,
+          "public_source_revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+          "public_source_etag": "5222d657a1af07a531f1b22503f35741a6547f0831509897d0a279bc8f67d068",
+          "fresh_sha256_matches_public_source_etag": true
+        },
+        {
+          "path": "data/tinysms_qa_12m/data/train/part-00002.parquet",
+          "bytes": 26162244,
+          "sha256": "c6082401ea966aeaa8375018ae1f1d9c7c55cc30e421c45cc933ceacd97dc3de",
+          "rows": 200000,
+          "row_groups": 1,
+          "public_source_revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+          "public_source_etag": "c6082401ea966aeaa8375018ae1f1d9c7c55cc30e421c45cc933ceacd97dc3de",
+          "fresh_sha256_matches_public_source_etag": true
+        },
+        {
+          "path": "data/tinysms_qa_12m/data/train/part-00003.parquet",
+          "bytes": 26167481,
+          "sha256": "b2b63db46b005e229aa5e91f1010adc763ca9f4b806561b328432fbc9e5c11e9",
+          "rows": 200000,
+          "row_groups": 1,
+          "public_source_revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+          "public_source_etag": "b2b63db46b005e229aa5e91f1010adc763ca9f4b806561b328432fbc9e5c11e9",
+          "fresh_sha256_matches_public_source_etag": true
+        },
+        {
+          "path": "data/tinysms_qa_12m/data/train/part-00004.parquet",
+          "bytes": 26185069,
+          "sha256": "272ac87a686134a3e3ba6488985879bd8ea567dcaba1e1145aae0cb724a0afe5",
+          "rows": 200000,
+          "row_groups": 1,
+          "public_source_revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+          "public_source_etag": "272ac87a686134a3e3ba6488985879bd8ea567dcaba1e1145aae0cb724a0afe5",
+          "fresh_sha256_matches_public_source_etag": true
+        },
+        {
+          "path": "data/tinysms_qa_12m/data/train/part-00005.parquet",
+          "bytes": 26168730,
+          "sha256": "89687321a1df7338e543a7d8c46d7bc0bd6596d855f9d3e43995e2a9cff858b7",
+          "rows": 200000,
+          "row_groups": 1,
+          "public_source_revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+          "public_source_etag": "89687321a1df7338e543a7d8c46d7bc0bd6596d855f9d3e43995e2a9cff858b7",
+          "fresh_sha256_matches_public_source_etag": true
+        },
+        {
+          "path": "data/tinysms_qa_12m/data/train/part-00006.parquet",
+          "bytes": 26157073,
+          "sha256": "4ecc34f83241a21dd3d9b28dc9477da9bd297dffee0936c490ca9b75a32612aa",
+          "rows": 200000,
+          "row_groups": 1,
+          "public_source_revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+          "public_source_etag": "4ecc34f83241a21dd3d9b28dc9477da9bd297dffee0936c490ca9b75a32612aa",
+          "fresh_sha256_matches_public_source_etag": true
+        },
+        {
+          "path": "data/tinysms_qa_12m/data/train/part-00007.parquet",
+          "bytes": 26162520,
+          "sha256": "0e8c5310122ba05a7c92d48ca59af0d5a467a58fe57e3e074f8a1768dd37f9cb",
+          "rows": 200000,
+          "row_groups": 1,
+          "public_source_revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+          "public_source_etag": "0e8c5310122ba05a7c92d48ca59af0d5a467a58fe57e3e074f8a1768dd37f9cb",
+          "fresh_sha256_matches_public_source_etag": true
+        },
+        {
+          "path": "data/tinysms_qa_12m/data/train/part-00008.parquet",
+          "bytes": 26199557,
+          "sha256": "44f6cbd7a6b821c80108ef6dcb5b4b8e136ad6deaaeccca894717ea4e0b2e1d4",
+          "rows": 200000,
+          "row_groups": 1,
+          "public_source_revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+          "public_source_etag": "44f6cbd7a6b821c80108ef6dcb5b4b8e136ad6deaaeccca894717ea4e0b2e1d4",
+          "fresh_sha256_matches_public_source_etag": true
+        },
+        {
+          "path": "data/tinysms_qa_12m/data/train/part-00009.parquet",
+          "bytes": 26157219,
+          "sha256": "1ef7d1642dd5e5b8e90c7e239214bf0fd301315d5ef45830e663ffa72e7bd028",
+          "rows": 200000,
+          "row_groups": 1,
+          "public_source_revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+          "public_source_etag": "1ef7d1642dd5e5b8e90c7e239214bf0fd301315d5ef45830e663ffa72e7bd028",
+          "fresh_sha256_matches_public_source_etag": true
+        },
+        {
+          "path": "data/tinysms_qa_12m/data/train/part-00010.parquet",
+          "bytes": 26164309,
+          "sha256": "41caae2f7236c8839ef30ad915320b69844aad4d01c2d9c8d65a38befa029408",
+          "rows": 200000,
+          "row_groups": 1,
+          "public_source_revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+          "public_source_etag": "41caae2f7236c8839ef30ad915320b69844aad4d01c2d9c8d65a38befa029408",
+          "fresh_sha256_matches_public_source_etag": true
+        },
+        {
+          "path": "data/tinysms_qa_12m/data/train/part-00011.parquet",
+          "bytes": 26190841,
+          "sha256": "4a22ce4fcedbd4cf09b53cfe5d0491530f39411d54b407d2965d2e210f1af264",
+          "rows": 200000,
+          "row_groups": 1,
+          "public_source_revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+          "public_source_etag": "4a22ce4fcedbd4cf09b53cfe5d0491530f39411d54b407d2965d2e210f1af264",
+          "fresh_sha256_matches_public_source_etag": true
+        },
+        {
+          "path": "data/tinysms_qa_12m/data/train/part-00012.parquet",
+          "bytes": 26151272,
+          "sha256": "53f510526897ccc5103722f3a5724340abbf01c26a67d139dff9e9a430b15116",
+          "rows": 200000,
+          "row_groups": 1,
+          "public_source_revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+          "public_source_etag": "53f510526897ccc5103722f3a5724340abbf01c26a67d139dff9e9a430b15116",
+          "fresh_sha256_matches_public_source_etag": true
+        },
+        {
+          "path": "data/tinysms_qa_12m/data/train/part-00013.parquet",
+          "bytes": 26129342,
+          "sha256": "f4e6d924bbd7a8e711fa9bdf4173e5d0e2aa9db0204861444b8c86ccf61f6916",
+          "rows": 200000,
+          "row_groups": 1,
+          "public_source_revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+          "public_source_etag": "f4e6d924bbd7a8e711fa9bdf4173e5d0e2aa9db0204861444b8c86ccf61f6916",
+          "fresh_sha256_matches_public_source_etag": true
+        },
+        {
+          "path": "data/tinysms_qa_12m/data/train/part-00014.parquet",
+          "bytes": 24278231,
+          "sha256": "87ba111400e3742e80efd106ee5ea236fea2e6d92bba752033108a1d728c14d5",
+          "rows": 200000,
+          "row_groups": 1,
+          "public_source_revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+          "public_source_etag": "87ba111400e3742e80efd106ee5ea236fea2e6d92bba752033108a1d728c14d5",
+          "fresh_sha256_matches_public_source_etag": true
+        },
+        {
+          "path": "data/tinysms_qa_12m/data/train/part-00015.parquet",
+          "bytes": 23578713,
+          "sha256": "f9f71f028f59d44418139920615cad652ad91d3671aaec5b4dc5dad29515c315",
+          "rows": 200000,
+          "row_groups": 1,
+          "public_source_revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+          "public_source_etag": "f9f71f028f59d44418139920615cad652ad91d3671aaec5b4dc5dad29515c315",
+          "fresh_sha256_matches_public_source_etag": true
+        },
+        {
+          "path": "data/tinysms_qa_12m/data/train/part-00016.parquet",
+          "bytes": 23580532,
+          "sha256": "204fa2af3be3f09282118cfc29af9417ce05229fe100502d529bf4a16bc8542f",
+          "rows": 200000,
+          "row_groups": 1,
+          "public_source_revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+          "public_source_etag": "204fa2af3be3f09282118cfc29af9417ce05229fe100502d529bf4a16bc8542f",
+          "fresh_sha256_matches_public_source_etag": true
+        },
+        {
+          "path": "data/tinysms_qa_12m/data/train/part-00017.parquet",
+          "bytes": 23559509,
+          "sha256": "07ffc050aca01ae824d747c1d690ae50b3cb46126195ebcc2d847bc7b338d274",
+          "rows": 200000,
+          "row_groups": 1,
+          "public_source_revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+          "public_source_etag": "07ffc050aca01ae824d747c1d690ae50b3cb46126195ebcc2d847bc7b338d274",
+          "fresh_sha256_matches_public_source_etag": true
+        },
+        {
+          "path": "data/tinysms_qa_12m/data/train/part-00018.parquet",
+          "bytes": 23575652,
+          "sha256": "48226fa0da896a28ecba6d68978ac21e444c80ee5c8dbf7cdc4ae6f7d7a07ba0",
+          "rows": 200000,
+          "row_groups": 1,
+          "public_source_revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+          "public_source_etag": "48226fa0da896a28ecba6d68978ac21e444c80ee5c8dbf7cdc4ae6f7d7a07ba0",
+          "fresh_sha256_matches_public_source_etag": true
+        },
+        {
+          "path": "data/tinysms_qa_12m/data/train/part-00019.parquet",
+          "bytes": 23588643,
+          "sha256": "47078937f949663ab7a31756dd4fd2445a3e2ed4b4f34a2e2ad28914ed5ba40b",
+          "rows": 200000,
+          "row_groups": 1,
+          "public_source_revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+          "public_source_etag": "47078937f949663ab7a31756dd4fd2445a3e2ed4b4f34a2e2ad28914ed5ba40b",
+          "fresh_sha256_matches_public_source_etag": true
+        },
+        {
+          "path": "data/tinysms_qa_12m/data/train/part-00020.parquet",
+          "bytes": 23581860,
+          "sha256": "1b17ed45f8bea8065150371c2da75b2117be55217a9863c74a2b5a46013d0583",
+          "rows": 200000,
+          "row_groups": 1,
+          "public_source_revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+          "public_source_etag": "1b17ed45f8bea8065150371c2da75b2117be55217a9863c74a2b5a46013d0583",
+          "fresh_sha256_matches_public_source_etag": true
+        },
+        {
+          "path": "data/tinysms_qa_12m/data/train/part-00021.parquet",
+          "bytes": 23572499,
+          "sha256": "62f8a983f0e7d198e495df52942ce295af377648aedf7a3c3c303e7183cac492",
+          "rows": 200000,
+          "row_groups": 1,
+          "public_source_revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+          "public_source_etag": "62f8a983f0e7d198e495df52942ce295af377648aedf7a3c3c303e7183cac492",
+          "fresh_sha256_matches_public_source_etag": true
+        },
+        {
+          "path": "data/tinysms_qa_12m/data/train/part-00022.parquet",
+          "bytes": 23578899,
+          "sha256": "f42aed0c6814b1491b658fd5a61bdd3cd65ff0c9696e972d198183b6fd33f2c0",
+          "rows": 200000,
+          "row_groups": 1,
+          "public_source_revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+          "public_source_etag": "f42aed0c6814b1491b658fd5a61bdd3cd65ff0c9696e972d198183b6fd33f2c0",
+          "fresh_sha256_matches_public_source_etag": true
+        },
+        {
+          "path": "data/tinysms_qa_12m/data/train/part-00023.parquet",
+          "bytes": 23566965,
+          "sha256": "b7802cff1236dc757f114c17a1ecc0065a6f057db5ad658aeb98cf23d3d45fa4",
+          "rows": 200000,
+          "row_groups": 1,
+          "public_source_revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+          "public_source_etag": "b7802cff1236dc757f114c17a1ecc0065a6f057db5ad658aeb98cf23d3d45fa4",
+          "fresh_sha256_matches_public_source_etag": true
+        },
+        {
+          "path": "data/tinysms_qa_12m/data/train/part-00024.parquet",
+          "bytes": 23594948,
+          "sha256": "f4b297dd098807319c8ce6ff6b4318ae70ee9167409a13c20a590b21853a2eb2",
+          "rows": 200000,
+          "row_groups": 1,
+          "public_source_revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+          "public_source_etag": "f4b297dd098807319c8ce6ff6b4318ae70ee9167409a13c20a590b21853a2eb2",
+          "fresh_sha256_matches_public_source_etag": true
+        },
+        {
+          "path": "data/tinysms_qa_12m/data/train/part-00025.parquet",
+          "bytes": 23592190,
+          "sha256": "1966e2ad5b2fc25c9a91c1ece78e6cc3c42b2cd6e76f0e0d300af1ac0031c4fa",
+          "rows": 200000,
+          "row_groups": 1,
+          "public_source_revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+          "public_source_etag": "1966e2ad5b2fc25c9a91c1ece78e6cc3c42b2cd6e76f0e0d300af1ac0031c4fa",
+          "fresh_sha256_matches_public_source_etag": true
+        },
+        {
+          "path": "data/tinysms_qa_12m/data/train/part-00026.parquet",
+          "bytes": 23586227,
+          "sha256": "b6d6b7edd181e5c4919669ae799cb0c5002185a3dc8f6f0d41f0dce664f45dfb",
+          "rows": 200000,
+          "row_groups": 1,
+          "public_source_revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+          "public_source_etag": "b6d6b7edd181e5c4919669ae799cb0c5002185a3dc8f6f0d41f0dce664f45dfb",
+          "fresh_sha256_matches_public_source_etag": true
+        },
+        {
+          "path": "data/tinysms_qa_12m/data/train/part-00027.parquet",
+          "bytes": 23587897,
+          "sha256": "69907e05bf7f1b088fb36a388c6f0be46477a586c657f5c0dc076decec203135",
+          "rows": 200000,
+          "row_groups": 1,
+          "public_source_revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+          "public_source_etag": "69907e05bf7f1b088fb36a388c6f0be46477a586c657f5c0dc076decec203135",
+          "fresh_sha256_matches_public_source_etag": true
+        },
+        {
+          "path": "data/tinysms_qa_12m/data/train/part-00028.parquet",
+          "bytes": 23551367,
+          "sha256": "e9b572b4b11d4127b9c3031695ef569067da6d9fa493f24c4ead65e8e9df95a5",
+          "rows": 200000,
+          "row_groups": 1,
+          "public_source_revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+          "public_source_etag": "e9b572b4b11d4127b9c3031695ef569067da6d9fa493f24c4ead65e8e9df95a5",
+          "fresh_sha256_matches_public_source_etag": true
+        },
+        {
+          "path": "data/tinysms_qa_12m/data/train/part-00029.parquet",
+          "bytes": 27914406,
+          "sha256": "a6606ce87f15bfafb51553d3be682dfe88f42657e6dc8e249beea4c6dab9b192",
+          "rows": 200000,
+          "row_groups": 1,
+          "public_source_revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+          "public_source_etag": "a6606ce87f15bfafb51553d3be682dfe88f42657e6dc8e249beea4c6dab9b192",
+          "fresh_sha256_matches_public_source_etag": true
+        },
+        {
+          "path": "data/tinysms_qa_12m/data/train/part-00030.parquet",
+          "bytes": 30255832,
+          "sha256": "92ef433b1be78433fd238dfbcbc6b68cbdcfaf4060d7074e8002b1c4241fc9c7",
+          "rows": 200000,
+          "row_groups": 1,
+          "public_source_revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+          "public_source_etag": "92ef433b1be78433fd238dfbcbc6b68cbdcfaf4060d7074e8002b1c4241fc9c7",
+          "fresh_sha256_matches_public_source_etag": true
+        },
+        {
+          "path": "data/tinysms_qa_12m/data/train/part-00031.parquet",
+          "bytes": 30272658,
+          "sha256": "f35b0c6f4e36bf472220c2adf16bf9ea401564b6bce37e75e6511235911f29e4",
+          "rows": 200000,
+          "row_groups": 1,
+          "public_source_revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+          "public_source_etag": "f35b0c6f4e36bf472220c2adf16bf9ea401564b6bce37e75e6511235911f29e4",
+          "fresh_sha256_matches_public_source_etag": true
+        },
+        {
+          "path": "data/tinysms_qa_12m/data/train/part-00032.parquet",
+          "bytes": 30292629,
+          "sha256": "5ac54d930269ffb55bb7520c3f3f5d0de84c890b704c876feb162717a9b54207",
+          "rows": 200000,
+          "row_groups": 1,
+          "public_source_revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+          "public_source_etag": "5ac54d930269ffb55bb7520c3f3f5d0de84c890b704c876feb162717a9b54207",
+          "fresh_sha256_matches_public_source_etag": true
+        },
+        {
+          "path": "data/tinysms_qa_12m/data/train/part-00033.parquet",
+          "bytes": 30281085,
+          "sha256": "51d6bd884e8203175b75c4e7f5d531ea09a82fe487f2320353d1c4c54ea328e3",
+          "rows": 200000,
+          "row_groups": 1,
+          "public_source_revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+          "public_source_etag": "51d6bd884e8203175b75c4e7f5d531ea09a82fe487f2320353d1c4c54ea328e3",
+          "fresh_sha256_matches_public_source_etag": true
+        },
+        {
+          "path": "data/tinysms_qa_12m/data/train/part-00034.parquet",
+          "bytes": 30301581,
+          "sha256": "d263a24b5b5321f84a68610675813f753e3125b16589d70aad265b9d3938927b",
+          "rows": 200000,
+          "row_groups": 1,
+          "public_source_revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+          "public_source_etag": "d263a24b5b5321f84a68610675813f753e3125b16589d70aad265b9d3938927b",
+          "fresh_sha256_matches_public_source_etag": true
+        },
+        {
+          "path": "data/tinysms_qa_12m/data/train/part-00035.parquet",
+          "bytes": 30237616,
+          "sha256": "7708377ca2b0cf2e61113edda14abae22b9e84ebd57362177a750c05115d5103",
+          "rows": 200000,
+          "row_groups": 1,
+          "public_source_revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+          "public_source_etag": "7708377ca2b0cf2e61113edda14abae22b9e84ebd57362177a750c05115d5103",
+          "fresh_sha256_matches_public_source_etag": true
+        },
+        {
+          "path": "data/tinysms_qa_12m/data/train/part-00036.parquet",
+          "bytes": 28578586,
+          "sha256": "5f8d8eb234d3fd0b2b02bc6fa96e13d078855e7e5e94a6289e9c648904f9a791",
+          "rows": 200000,
+          "row_groups": 1,
+          "public_source_revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+          "public_source_etag": "5f8d8eb234d3fd0b2b02bc6fa96e13d078855e7e5e94a6289e9c648904f9a791",
+          "fresh_sha256_matches_public_source_etag": true
+        },
+        {
+          "path": "data/tinysms_qa_12m/data/train/part-00037.parquet",
+          "bytes": 23504723,
+          "sha256": "7328070d46d4bc68da93e424b899f542bbb52580721d92462bfdf0bb2bb785ca",
+          "rows": 200000,
+          "row_groups": 1,
+          "public_source_revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+          "public_source_etag": "7328070d46d4bc68da93e424b899f542bbb52580721d92462bfdf0bb2bb785ca",
+          "fresh_sha256_matches_public_source_etag": true
+        },
+        {
+          "path": "data/tinysms_qa_12m/data/train/part-00038.parquet",
+          "bytes": 23501763,
+          "sha256": "3bd57e3b3a19d3a1cfad96d11fa789f56b0f06501eb7c3ee09ec576981de798e",
+          "rows": 200000,
+          "row_groups": 1,
+          "public_source_revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+          "public_source_etag": "3bd57e3b3a19d3a1cfad96d11fa789f56b0f06501eb7c3ee09ec576981de798e",
+          "fresh_sha256_matches_public_source_etag": true
+        },
+        {
+          "path": "data/tinysms_qa_12m/data/train/part-00039.parquet",
+          "bytes": 23550818,
+          "sha256": "e81fedee1fa299f0db0c089e93716a385311662aa8954419308f0c21ec9a79ec",
+          "rows": 200000,
+          "row_groups": 1,
+          "public_source_revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+          "public_source_etag": "e81fedee1fa299f0db0c089e93716a385311662aa8954419308f0c21ec9a79ec",
+          "fresh_sha256_matches_public_source_etag": true
+        },
+        {
+          "path": "data/tinysms_qa_12m/data/train/part-00040.parquet",
+          "bytes": 23478550,
+          "sha256": "31920d538b7bde332561dbb2afea2afe1dc8aea637c87dff79fcec9c445a406d",
+          "rows": 200000,
+          "row_groups": 1,
+          "public_source_revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+          "public_source_etag": "31920d538b7bde332561dbb2afea2afe1dc8aea637c87dff79fcec9c445a406d",
+          "fresh_sha256_matches_public_source_etag": true
+        },
+        {
+          "path": "data/tinysms_qa_12m/data/train/part-00041.parquet",
+          "bytes": 23544280,
+          "sha256": "96a68e4aba353771a6e090d5d098db0fc5c5a1c3377a78a17d5a539898609de4",
+          "rows": 200000,
+          "row_groups": 1,
+          "public_source_revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+          "public_source_etag": "96a68e4aba353771a6e090d5d098db0fc5c5a1c3377a78a17d5a539898609de4",
+          "fresh_sha256_matches_public_source_etag": true
+        },
+        {
+          "path": "data/tinysms_qa_12m/data/train/part-00042.parquet",
+          "bytes": 23532881,
+          "sha256": "1855f54d0c3bdf8d1d89ba58e340ea03131c86d9b55d353a6c7685d92a0de703",
+          "rows": 200000,
+          "row_groups": 1,
+          "public_source_revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+          "public_source_etag": "1855f54d0c3bdf8d1d89ba58e340ea03131c86d9b55d353a6c7685d92a0de703",
+          "fresh_sha256_matches_public_source_etag": true
+        },
+        {
+          "path": "data/tinysms_qa_12m/data/train/part-00043.parquet",
+          "bytes": 23487888,
+          "sha256": "0602fa8c93d5d635ec539b27075557ed83cf76d7366a1880bf07e646239b4c99",
+          "rows": 200000,
+          "row_groups": 1,
+          "public_source_revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+          "public_source_etag": "0602fa8c93d5d635ec539b27075557ed83cf76d7366a1880bf07e646239b4c99",
+          "fresh_sha256_matches_public_source_etag": true
+        },
+        {
+          "path": "data/tinysms_qa_12m/data/train/part-00044.parquet",
+          "bytes": 23528291,
+          "sha256": "6240f1e5f4ff2832d554931d528d34b6bfa6fcdd1c64b44f273f5f9e7ab27a4d",
+          "rows": 200000,
+          "row_groups": 1,
+          "public_source_revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+          "public_source_etag": "6240f1e5f4ff2832d554931d528d34b6bfa6fcdd1c64b44f273f5f9e7ab27a4d",
+          "fresh_sha256_matches_public_source_etag": true
+        },
+        {
+          "path": "data/tinysms_qa_12m/data/train/part-00045.parquet",
+          "bytes": 23520482,
+          "sha256": "24e457560cf58387c2d3a34f415518f90a3f06ea411ab20d6ecfb678deb2aeb2",
+          "rows": 200000,
+          "row_groups": 1,
+          "public_source_revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+          "public_source_etag": "24e457560cf58387c2d3a34f415518f90a3f06ea411ab20d6ecfb678deb2aeb2",
+          "fresh_sha256_matches_public_source_etag": true
+        },
+        {
+          "path": "data/tinysms_qa_12m/data/train/part-00046.parquet",
+          "bytes": 23553675,
+          "sha256": "69d8e27a658513a129687863696ede7b62c334d2eb69bccba7c5bf19752e4578",
+          "rows": 200000,
+          "row_groups": 1,
+          "public_source_revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+          "public_source_etag": "69d8e27a658513a129687863696ede7b62c334d2eb69bccba7c5bf19752e4578",
+          "fresh_sha256_matches_public_source_etag": true
+        },
+        {
+          "path": "data/tinysms_qa_12m/data/train/part-00047.parquet",
+          "bytes": 23534383,
+          "sha256": "fb6cc779bd2ae25cf5329655d4c6c176ae40fb360b110bbf8806969f72856a98",
+          "rows": 200000,
+          "row_groups": 1,
+          "public_source_revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+          "public_source_etag": "fb6cc779bd2ae25cf5329655d4c6c176ae40fb360b110bbf8806969f72856a98",
+          "fresh_sha256_matches_public_source_etag": true
+        },
+        {
+          "path": "data/tinysms_qa_12m/data/train/part-00048.parquet",
+          "bytes": 23547600,
+          "sha256": "1245557b20c3419f576602fbebba464d04187f9b0d4cedc660829b47f20dd955",
+          "rows": 200000,
+          "row_groups": 1,
+          "public_source_revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+          "public_source_etag": "1245557b20c3419f576602fbebba464d04187f9b0d4cedc660829b47f20dd955",
+          "fresh_sha256_matches_public_source_etag": true
+        },
+        {
+          "path": "data/tinysms_qa_12m/data/train/part-00049.parquet",
+          "bytes": 23527054,
+          "sha256": "0ec6d7d2b1a6c0e7481284618a11f9df10fea752e7c41b9d73faedf2090f90a0",
+          "rows": 200000,
+          "row_groups": 1,
+          "public_source_revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+          "public_source_etag": "0ec6d7d2b1a6c0e7481284618a11f9df10fea752e7c41b9d73faedf2090f90a0",
+          "fresh_sha256_matches_public_source_etag": true
+        },
+        {
+          "path": "data/tinysms_qa_12m/data/train/part-00050.parquet",
+          "bytes": 23524938,
+          "sha256": "b5a9518358b663512003d62e2f7706add86b63a47969a20e3a1110566869a57e",
+          "rows": 200000,
+          "row_groups": 1,
+          "public_source_revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+          "public_source_etag": "b5a9518358b663512003d62e2f7706add86b63a47969a20e3a1110566869a57e",
+          "fresh_sha256_matches_public_source_etag": true
+        },
+        {
+          "path": "data/tinysms_qa_12m/data/train/part-00051.parquet",
+          "bytes": 23524651,
+          "sha256": "a562a888cfcaafa07a16b54dba79633fc936df34fe61d09303ab11117466d20b",
+          "rows": 200000,
+          "row_groups": 1,
+          "public_source_revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+          "public_source_etag": "a562a888cfcaafa07a16b54dba79633fc936df34fe61d09303ab11117466d20b",
+          "fresh_sha256_matches_public_source_etag": true
+        },
+        {
+          "path": "data/tinysms_qa_12m/data/train/part-00052.parquet",
+          "bytes": 39245172,
+          "sha256": "e5c605de3a44056b7d5ebaa6442eb3bf2f9898fae29c7560392a65df170f6837",
+          "rows": 200000,
+          "row_groups": 1,
+          "public_source_revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+          "public_source_etag": "e5c605de3a44056b7d5ebaa6442eb3bf2f9898fae29c7560392a65df170f6837",
+          "fresh_sha256_matches_public_source_etag": true
+        },
+        {
+          "path": "data/tinysms_qa_12m/data/train/part-00053.parquet",
+          "bytes": 39347988,
+          "sha256": "e6ccfe88296f320ff4f1d5a881fa8af842ac15d610ad6de8d08fb81ffde0e157",
+          "rows": 200000,
+          "row_groups": 1,
+          "public_source_revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+          "public_source_etag": "e6ccfe88296f320ff4f1d5a881fa8af842ac15d610ad6de8d08fb81ffde0e157",
+          "fresh_sha256_matches_public_source_etag": true
+        },
+        {
+          "path": "data/tinysms_qa_12m/data/train/part-00054.parquet",
+          "bytes": 39355070,
+          "sha256": "82c1eaac80deea7b2ef90e306079b6165a80b011491c2aee5a073da7cf3ef8a4",
+          "rows": 200000,
+          "row_groups": 1,
+          "public_source_revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+          "public_source_etag": "82c1eaac80deea7b2ef90e306079b6165a80b011491c2aee5a073da7cf3ef8a4",
+          "fresh_sha256_matches_public_source_etag": true
+        },
+        {
+          "path": "data/tinysms_qa_12m/data/train/part-00055.parquet",
+          "bytes": 39311389,
+          "sha256": "1a793279bf52a90ebbeb290d9c386067b69d28a87e0c31fb89ab90a9d87be751",
+          "rows": 200000,
+          "row_groups": 1,
+          "public_source_revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+          "public_source_etag": "1a793279bf52a90ebbeb290d9c386067b69d28a87e0c31fb89ab90a9d87be751",
+          "fresh_sha256_matches_public_source_etag": true
+        },
+        {
+          "path": "data/tinysms_qa_12m/data/train/part-00056.parquet",
+          "bytes": 39287567,
+          "sha256": "a984ff588e0ab606793ecc0d21b1f29ca39dc03572374aa406c5362a04a7117c",
+          "rows": 200000,
+          "row_groups": 1,
+          "public_source_revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+          "public_source_etag": "a984ff588e0ab606793ecc0d21b1f29ca39dc03572374aa406c5362a04a7117c",
+          "fresh_sha256_matches_public_source_etag": true
+        },
+        {
+          "path": "data/tinysms_qa_12m/data/train/part-00057.parquet",
+          "bytes": 39302585,
+          "sha256": "27c35d99709bb983e7a072d33031777cd154c35ae267b3605b4bdafff56fb9e1",
+          "rows": 200000,
+          "row_groups": 1,
+          "public_source_revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+          "public_source_etag": "27c35d99709bb983e7a072d33031777cd154c35ae267b3605b4bdafff56fb9e1",
+          "fresh_sha256_matches_public_source_etag": true
+        },
+        {
+          "path": "data/tinysms_qa_12m/data/train/part-00058.parquet",
+          "bytes": 39321706,
+          "sha256": "6d802692d5ee78e300e8fb94e5b556cc24aa274b622b5806e411edf7e0433673",
+          "rows": 200000,
+          "row_groups": 1,
+          "public_source_revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+          "public_source_etag": "6d802692d5ee78e300e8fb94e5b556cc24aa274b622b5806e411edf7e0433673",
+          "fresh_sha256_matches_public_source_etag": true
+        },
+        {
+          "path": "data/tinysms_qa_12m/data/train/part-00059.parquet",
+          "bytes": 7472207,
+          "sha256": "69e1c814c52a97519fc485e7e14f9500cff74585e06c92d648eb2377da3484dd",
+          "rows": 38003,
+          "row_groups": 1,
+          "public_source_revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+          "public_source_etag": "69e1c814c52a97519fc485e7e14f9500cff74585e06c92d648eb2377da3484dd",
+          "fresh_sha256_matches_public_source_etag": true
+        }
+      ]
+    },
+    "official_test": {
+      "path": "data/tinysms_qa_12m/data/test/test.parquet",
+      "bytes": 136439,
+      "sha256": "8bde59c8d8bb7edc4e8a503be22fc132c4a47773025d333432e78c5489e6522a",
+      "rows": 1919,
+      "columns": [
+        "question"
+      ],
+      "public_source_revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+      "question_order_sha256": "6dd86866b2ed86a09781b7f471fc2fce5c00975503c4a85f1ec959dae0b93279",
+      "question_order_hash_format": "sha256(json.dumps(question_list, ensure_ascii=False, separators=(',', ':')).encode('utf-8'))",
+      "official_test_has_targets": false
+    },
+    "auxiliary_source_files": [
+      {
+        "path": "data/tinysms_qa_12m/meta.json",
+        "bytes": 643,
+        "sha256": "c03a510e4189cc921f32f2007203809cb2efef1c73cd1f88b8d67331323897e0"
+      },
+      {
+        "path": "data/tinysms_qa_12m/README.md",
+        "bytes": 1804,
+        "sha256": "a2fbc05746d9849e36cdfb124ae5c900008939886f74ce3449f03542af29fea7"
+      }
+    ]
+  },
+  "preprocessing": {
+    "source_split": "train",
+    "columns": [
+      "question",
+      "code"
+    ],
+    "remove_code_comments": true,
+    "comment_removal": "prepare_datasets.remove_dataset_comments uses tokenize-based removal of COMMENT tokens; leaves string/docstring contents and line breaks unchanged. It does not execute code.",
+    "split": {
+      "method": "prepare_datasets.split_dataset: Dataset.shuffle(seed=42), then contiguous slices in sizes insertion order",
+      "seed": 42,
+      "sizes": {
+        "train": 0.98,
+        "val": 0.01,
+        "test": 0.01
+      },
+      "rows": {
+        "train": 11601243,
+        "val": 118380,
+        "test": 118380
+      },
+      "official_test_used_for_training": false
+    },
+    "tokenization": {
+      "implementation": "training._encode_batch and training._prepare_dataset",
+      "source_column": "question",
+      "target_column": "code",
+      "tokenization_batch_size": 1000,
+      "num_proc": 16,
+      "padding": false,
+      "truncation": false,
+      "input_special_tokens": "saved tokenizer post_processor adds BOS=2 and EOS=3",
+      "labels": "target IDs with initial BOS removed, EOS retained",
+      "drop_empty": "drop pairs containing None or whitespace-only source/target",
+      "max_source_length": 256,
+      "max_target_length": 256,
+      "length_filter": "drop rather than truncate rows exceeding either limit",
+      "max_train_samples": null,
+      "max_eval_samples": null,
+      "original_lr1e4_group_by_length": false,
+      "h100_group_by_length": true,
+      "h100_length_column": "max(len(input_ids), len(labels)); token/order semantics unchanged"
+    },
+    "configuration_files": [
+      {
+        "path": "artifacts/remote_backups/nlp-bart_20261019_161656/nlp-hw2/artifacts/configs/transformer_002_8x8_d768/data_config.json",
+        "bytes": 408,
+        "sha256": "1428bfd4ab6fbe4f14fb11e3e2e50672866e0ab4b021ae92ffc16b4fe693f179",
+        "content": {
+          "dataset_id": "SlavaYus/tinysms_qa_12m",
+          "source_split": "train",
+          "sizes": {
+            "train": 0.98,
+            "val": 0.01,
+            "test": 0.01
+          },
+          "seed": 42,
+          "columns": [
+            "question",
+            "code"
+          ],
+          "remove_code_comments": true,
+          "preprocessing_sha256": "df5e35028e80fd2d6406d8e2cb77420204e7693022a2e5a8d37c78aed1e94211",
+          "rows": {
+            "train": 11601243,
+            "val": 118380,
+            "test": 118380
+          }
+        }
+      },
+      {
+        "path": "artifacts/remote_backups/nlp-bart_20261019_161656/nlp-hw2/artifacts/experiments/transformer_002_8x8_d768_lr1e4/training_config.json",
+        "bytes": 1069,
+        "sha256": "3e0ec3e47c50b3d45435da22c74a3b41de1d45a78cf8def0c02547b7a0bf3d78",
+        "content": {
+          "output_dir": "/home/artyom-step/workspace/nlp-hw2/artifacts/experiments/transformer_002_8x8_d768_lr1e4",
+          "source_column": "question",
+          "target_column": "code",
+          "num_train_epochs": 4,
+          "max_steps": -1,
+          "learning_rate": 9.999999999999999e-05,
+          "train_batch_size": 64,
+          "eval_batch_size": 128,
+          "gradient_accumulation_steps": 1,
+          "weight_decay": 0.01,
+          "warmup_ratio": 0.05,
+          "lr_scheduler_type": "cosine",
+          "max_grad_norm": 1.0,
+          "max_source_length": 256,
+          "max_target_length": 256,
+          "mixed_precision": "bf16",
+          "eval_strategy": "steps",
+          "eval_steps": 5000,
+          "logging_steps": 100,
+          "save_total_limit": 2,
+          "seed": 42,
+          "gradient_checkpointing": false,
+          "early_stopping_patience": 5,
+          "dataloader_num_workers": 4,
+          "tokenization_batch_size": 1000,
+          "num_proc": 16,
+          "max_train_samples": null,
+          "max_eval_samples": null,
+          "pad_to_multiple_of": 8,
+          "use_cpu": false,
+          "tokenizer_vocab_size": 8000,
+          "resume_from_checkpoint": "/home/artyom-step/workspace/nlp-hw2/artifacts/experiments/transformer_002_8x8_d768_lr1e4/checkpoint-50000"
+        }
+      },
+      {
+        "path": "artifacts/remote_backups/nlp-bart_20261019_161656/nlp-hw2/artifacts/experiments/transformer_002_8x8_d768_lr1e4/preprocessing.json",
+        "bytes": 312,
+        "sha256": "cde8383095078b4ee9aa95a1b3d7ac486062ef23d1d352c697c1d5616f2296ff",
+        "content": {
+          "train": {
+            "original_rows": 11601243,
+            "selected_rows": 11601243,
+            "dropped_empty": 0,
+            "dropped_long": 8183,
+            "prepared_rows": 11593060
+          },
+          "val": {
+            "original_rows": 118380,
+            "selected_rows": 118380,
+            "dropped_empty": 0,
+            "dropped_long": 78,
+            "prepared_rows": 118302
+          }
+        }
+      },
+      {
+        "path": "artifacts/remote_backups/nlp-bart_20261019_161656/nlp-hw2/artifacts/experiments/transformer_002_8x8_d768_lr1e4/environment.json",
+        "bytes": 172,
+        "sha256": "f786237ffaba53cd70c4eccfb6abadb4e66c652d5d81ba815d808ecd4e12ad7f",
+        "content": {
+          "device": "cuda:0",
+          "world_size": 2,
+          "torch": "2.9.1+cu128",
+          "transformers": "5.10.2",
+          "accelerate": "1.15.0",
+          "datasets": "4.6.0",
+          "tokenizers": "0.22.2"
+        }
+      },
+      {
+        "path": "configs/transformer_003_10x10_d1024_h100/data_config.json",
+        "bytes": 447,
+        "sha256": "810482f3ab6376a3dafe2dcc85b9070a932a8c76240e5c4ae96a2baa8c8d840f",
+        "content": {
+          "dataset_id": "SlavaYus/tinysms_qa_12m",
+          "source_split": "train",
+          "sizes": {
+            "train": 0.98,
+            "val": 0.01,
+            "test": 0.01
+          },
+          "seed": 42,
+          "columns": [
+            "question",
+            "code"
+          ],
+          "remove_code_comments": true,
+          "preprocessing_sha256": "df5e35028e80fd2d6406d8e2cb77420204e7693022a2e5a8d37c78aed1e94211",
+          "rows": {
+            "train": 11601243,
+            "val": 118380,
+            "test": 118380
+          },
+          "prepare_seconds": 92.5558492699638
+        }
+      },
+      {
+        "path": "configs/transformer_003_10x10_d1024_h100/training_config.json",
+        "bytes": 969,
+        "sha256": "59ad883f9bb0c69931bb1da80ded507831dd560cd20a1ae85370027913cdf345",
+        "content": {
+          "output_dir": "artifacts/experiments/transformer_003_10x10_d1024_h100",
+          "source_column": "question",
+          "target_column": "code",
+          "num_train_epochs": 4,
+          "max_steps": -1,
+          "learning_rate": 0.0002,
+          "train_batch_size": 128,
+          "eval_batch_size": 128,
+          "gradient_accumulation_steps": 2,
+          "weight_decay": 0.01,
+          "warmup_ratio": 0.05,
+          "lr_scheduler_type": "cosine",
+          "max_grad_norm": 1.0,
+          "max_source_length": 256,
+          "max_target_length": 256,
+          "mixed_precision": "bf16",
+          "eval_strategy": "steps",
+          "eval_steps": 2500,
+          "logging_steps": 100,
+          "save_total_limit": 2,
+          "seed": 42,
+          "gradient_checkpointing": false,
+          "early_stopping_patience": 5,
+          "dataloader_num_workers": 4,
+          "tokenization_batch_size": 1000,
+          "num_proc": 16,
+          "max_train_samples": null,
+          "max_eval_samples": null,
+          "pad_to_multiple_of": 8,
+          "use_cpu": false,
+          "optim": "adamw_torch_fused",
+          "group_by_length": true,
+          "torch_compile": true,
+          "tokenizer_vocab_size": 8000
+        }
+      },
+      {
+        "path": "reports/a100_full_20261023/run_manifest.json",
+        "bytes": 1263,
+        "sha256": "21b47d84ea27dca35638048ff62cf3297409df893149260d3fac4a8419543c06",
+        "content": {
+          "config": {
+            "architecture": "bart",
+            "micro_batch": 128,
+            "global_batch": 256,
+            "learning_rate": 0.0002,
+            "num_train_epochs": 4.0,
+            "eval_steps": 5000,
+            "precision": "fp16",
+            "gradient_checkpointing": false,
+            "torch_compile": false,
+            "torch_compile_backend": "inductor",
+            "use_cpu": false,
+            "tiny_model": false,
+            "preflight": false,
+            "max_steps": -1,
+            "expected_rows": [
+              11593060,
+              118302
+            ],
+            "expected_manifest_sha": "0f330f228599f4cff65ed6ce0ca11e2d667ea24e6b911b5f67f6fff7e24bcbe5",
+            "seed": 42,
+            "early_stopping_patience": 5
+          },
+          "precision": "fp16",
+          "world_size": 1,
+          "gradient_accumulation_steps": 2,
+          "bundle_sha256": "0f330f228599f4cff65ed6ce0ca11e2d667ea24e6b911b5f67f6fff7e24bcbe5",
+          "selection_sha256": "b005ba47e2d9b3fcc99ee5f07d1d82c45f0ff7bcd08a6a95aea9b82dad0b8abf",
+          "model_config": {
+            "vocab_size": 8000,
+            "d_model": 1024,
+            "encoder_layers": 8,
+            "decoder_layers": 8,
+            "attention_heads": 8,
+            "ffn_dim": 4096,
+            "max_position_embeddings": 512,
+            "dropout": 0.1,
+            "attention_dropout": 0.0,
+            "pad_token_id": 0,
+            "bos_token_id": 2,
+            "eos_token_id": 3,
+            "unk_token_id": 1
+          },
+          "train_rows": 11593060,
+          "validation_rows": 118302
+        }
+      }
+    ]
+  },
+  "source_code": [
+    {
+      "path": "prepare_datasets.py",
+      "bytes": 9003,
+      "sha256": "df5e35028e80fd2d6406d8e2cb77420204e7693022a2e5a8d37c78aed1e94211",
+      "matches_frozen_full_run_source_manifest": true
+    },
+    {
+      "path": "training.py",
+      "bytes": 37589,
+      "sha256": "43312d3f7b48fc5cd8f772baccd9eb5721aa96385267a35ad563187dfed71ab8",
+      "matches_frozen_full_run_source_manifest": true
+    },
+    {
+      "path": "tokenizer.py",
+      "bytes": 5134,
+      "sha256": "4ff94323b5ab8aa5fac1e53760b76c4505b947b620539d6c7c62460f4ffbf746",
+      "matches_frozen_full_run_source_manifest": true
+    },
+    {
+      "path": "kaggle_experiments.py",
+      "bytes": 21197,
+      "sha256": "c32a544ad651f81d09a8e8ac5a2ff1b6b2d89e4b8df2a37e4f3118e6e70c024a",
+      "matches_frozen_full_run_source_manifest": true
+    },
+    {
+      "path": "models/__init__.py",
+      "bytes": 378,
+      "sha256": "f0ac5a18a8a85dd51fa4044cc8fc4c2f2e210304baf3ee6c13cad2792847114f",
+      "matches_frozen_full_run_source_manifest": true
+    },
+    {
+      "path": "models/base.py",
+      "bytes": 3434,
+      "sha256": "a18e9a415bab03a5ef2ca313b7d9e27b515d8b20a8028648e9683bc8e999fbc0",
+      "matches_frozen_full_run_source_manifest": true
+    },
+    {
+      "path": "models/config.py",
+      "bytes": 2922,
+      "sha256": "fce960895e77d4661e91f94b474a203522392416f73714679cfc2a2a6bca79d0",
+      "matches_frozen_full_run_source_manifest": true
+    },
+    {
+      "path": "models/baseline.py",
+      "bytes": 5633,
+      "sha256": "349643d10004fd37aa9644d25634bbf832b867851304432e4d9b66dea8001ea1",
+      "matches_frozen_full_run_source_manifest": true
+    },
+    {
+      "path": "models/copy.py",
+      "bytes": 7559,
+      "sha256": "51aa4b4b92943ffb8b02c0742ad137b02eb06c48a2def9cc2c9fb4bbc7ec79d2",
+      "matches_frozen_full_run_source_manifest": true
+    },
+    {
+      "path": "models/t5.py",
+      "bytes": 1629,
+      "sha256": "d1ab22531c00453fb426a6e79f4c69b7ce9508f0849399b6241d4d23dee703bc",
+      "matches_frozen_full_run_source_manifest": true
+    },
+    {
+      "path": "models/t5_attention.py",
+      "bytes": 3637,
+      "sha256": "3b32cf763518b5236af861d7b7c4cc41286a775e60f8412773b321e0c0f51388",
+      "matches_frozen_full_run_source_manifest": true
+    },
+    {
+      "path": "utils.py",
+      "bytes": 1381,
+      "sha256": "709493015d18f1e37d7384d50d686e4c66029126c4698eff8e60c5dd06b9e9a0",
+      "matches_frozen_full_run_source_manifest": true
+    },
+    {
+      "path": "tools/prepare_a100_diversity.py",
+      "bytes": 16368,
+      "sha256": "5d72088ef7cd9b32860496cbf211b95f84de411baeb1eabb1c7fc264eb1e1dfa",
+      "matches_frozen_full_run_source_manifest": true
+    },
+    {
+      "path": "tools/prepare_a100_full.py",
+      "bytes": 13624,
+      "sha256": "79dd4236e9bd8210e7f3a9b4216ebfdddcfcfc9386e585feddbe029a3cc41828",
+      "matches_frozen_full_run_source_manifest": true
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 161,
+      "sha256": "aba58d8a34b8981527c1dd09acada957435bb8b6e7c3fc62c3819a41f8c0a1d5"
+    }
+  ],
+  "tokenizer": {
+    "path": "artifacts/a100_full_eval_20261023/t4_bundle/checkpoint/tokenizer.json",
+    "bytes": 534007,
+    "sha256": "abd75c8655b948f612ebbf065a12269613269a4755cd0a698b0bf7a5bc1e9704",
+    "model_type": "BPE",
+    "vocabulary_size": 8000,
+    "added_tokens": [
+      {
+        "id": 0,
+        "content": "<pad>",
+        "single_word": false,
+        "lstrip": false,
+        "rstrip": false,
+        "normalized": false,
+        "special": true
+      },
+      {
+        "id": 1,
+        "content": "<unk>",
+        "single_word": false,
+        "lstrip": false,
+        "rstrip": false,
+        "normalized": false,
+        "special": true
+      },
+      {
+        "id": 2,
+        "content": "<bos>",
+        "single_word": false,
+        "lstrip": false,
+        "rstrip": false,
+        "normalized": false,
+        "special": true
+      },
+      {
+        "id": 3,
+        "content": "<eos>",
+        "single_word": false,
+        "lstrip": false,
+        "rstrip": false,
+        "normalized": false,
+        "special": true
+      }
+    ],
+    "normalizer": null,
+    "pre_tokenizer": {
+      "type": "ByteLevel",
+      "add_prefix_space": false,
+      "trim_offsets": true,
+      "use_regex": true
+    },
+    "post_processor": {
+      "type": "TemplateProcessing",
+      "single": [
+        {
+          "SpecialToken": {
+            "id": "<bos>",
+            "type_id": 0
+          }
+        },
+        {
+          "Sequence": {
+            "id": "A",
+            "type_id": 0
+          }
+        },
+        {
+          "SpecialToken": {
+            "id": "<eos>",
+            "type_id": 0
+          }
+        }
+      ],
+      "pair": [
+        {
+          "Sequence": {
+            "id": "A",
+            "type_id": 0
+          }
+        },
+        {
+          "Sequence": {
+            "id": "B",
+            "type_id": 1
+          }
+        }
+      ],
+      "special_tokens": {
+        "<bos>": {
+          "id": "<bos>",
+          "ids": [
+            2
+          ],
+          "tokens": [
+            "<bos>"
+          ]
+        },
+        "<eos>": {
+          "id": "<eos>",
+          "ids": [
+            3
+          ],
+          "tokens": [
+            "<eos>"
+          ]
+        }
+      }
+    },
+    "decoder": {
+      "type": "ByteLevel",
+      "add_prefix_space": true,
+      "trim_offsets": true,
+      "use_regex": true
+    },
+    "must_reuse_saved_tokenizer": true,
+    "restore_relative_path": "artifacts/a100_full_20261023/bundle/tokenizer.json"
+  },
+  "historical_cache": {
+    "physical_cache_directory_fingerprint": "59ebc525571791733f851050d49d4a25a2ba5330ff775d360d868ec0bc6f35e0",
+    "historical_path": "/home/artyom-step/workspace/nlp-hw2/artifacts/experiments/transformer_002_8x8_d768_lr1e4/preprocessed/59ebc525571791733f851050d49d4a25a2ba5330ff775d360d868ec0bc6f35e0/dataset",
+    "splits": {
+      "train": {
+        "rows": 11593060,
+        "fingerprint": "db4a9cf00f162409",
+        "original_source_fingerprint": "aa5d0e63813f76f9",
+        "fingerprint_matches_original": false
+      },
+      "val": {
+        "rows": 118302,
+        "fingerprint": "593c37f2d44384f8",
+        "original_source_fingerprint": "bccad2dc0c84a83e",
+        "fingerprint_matches_original": false
+      }
+    },
+    "original_h100_cache_directory_fingerprint": "4879438077e0cb46363513447b8659890aeae228b22084a5856ab2ac5b6560fc",
+    "original_h100_cache_path": "/workspace/nlp-hw2/artifacts/experiments/transformer_003_10x10_d1024_h100/preprocessed/4879438077e0cb46363513447b8659890aeae228b22084a5856ab2ac5b6560fc/dataset",
+    "preprocessing_statistics": {
+      "train": {
+        "original_rows": 11601243,
+        "selected_rows": 11601243,
+        "dropped_empty": 0,
+        "dropped_long": 8183,
+        "prepared_rows": 11593060
+      },
+      "val": {
+        "original_rows": 118380,
+        "selected_rows": 118380,
+        "dropped_empty": 0,
+        "dropped_long": 78,
+        "prepared_rows": 118302
+      }
+    },
+    "historical_environment": {
+      "device": "cuda:0",
+      "world_size": 2,
+      "torch": "2.9.1+cu128",
+      "transformers": "5.10.2",
+      "accelerate": "1.15.0",
+      "datasets": "4.6.0",
+      "tokenizers": "0.22.2"
+    },
+    "selected_row_proof": {
+      "original_bundle_sha256": "7480c7d1778bffce50db987019f2ccf87c06f8643c1ce59ad811e4fd3c77d0e1",
+      "original_selection_sha256": "aab7a9237d69484044504eac5c998f9f7ebd9c5573ad4d1e31fb4f41705e1e3d",
+      "original_selection": {
+        "identity": {
+          "train_rows": 1000000,
+          "validation_rows": 20000,
+          "seed": 42,
+          "source": "/workspace/nlp-hw2/artifacts/experiments/transformer_003_10x10_d1024_h100/preprocessed/4879438077e0cb46363513447b8659890aeae228b22084a5856ab2ac5b6560fc/dataset",
+          "tokenizer_sha256": "abd75c8655b948f612ebbf065a12269613269a4755cd0a698b0bf7a5bc1e9704"
+        },
+        "splits": {
+          "train": {
+            "source_rows": 11593060,
+            "selected_rows": 1000000,
+            "source_fingerprint": "aa5d0e63813f76f9",
+            "indices_sha256": "e9c9a3ab522a0d8e015fa746e1b180a877e1038d671a6f59a88cfda9901ebf44",
+            "seed": 42
+          },
+          "val": {
+            "source_rows": 118302,
+            "selected_rows": 20000,
+            "source_fingerprint": "bccad2dc0c84a83e",
+            "indices_sha256": "27f9db6e215b9666e3d60dd01c207169afb92d8e535eb3c7ee48a21efcd66b21",
+            "seed": 43
+          }
+        },
+        "created_at": "2026-10-19T15:58:09.980519+00:00"
+      },
+      "full_cache_path": "/home/artyom-step/workspace/nlp-hw2/artifacts/experiments/transformer_002_8x8_d768_lr1e4/preprocessed/59ebc525571791733f851050d49d4a25a2ba5330ff775d360d868ec0bc6f35e0/dataset",
+      "full_cache": {
+        "train": {
+          "rows": 11593060,
+          "fingerprint": "db4a9cf00f162409",
+          "original_source_fingerprint": "aa5d0e63813f76f9",
+          "fingerprint_matches_original": false
+        },
+        "val": {
+          "rows": 118302,
+          "fingerprint": "593c37f2d44384f8",
+          "original_source_fingerprint": "bccad2dc0c84a83e",
+          "fingerprint_matches_original": false
+        }
+      },
+      "verified_original_rows": {
+        "train": 1000000,
+        "val": 20000
+      },
+      "original_rows_sha256": {
+        "train": "f38a4a16701954f7f763c22ea499e70ccb04788683cc6cc573933ce349d8eb8c",
+        "val": "ef11fafa16c1b9f03560cfc68ed0f83d3e07aa7b4ccb9054d12a8e34c0ce8fae"
+      },
+      "validation_rows_sha256": "ef11fafa16c1b9f03560cfc68ed0f83d3e07aa7b4ccb9054d12a8e34c0ce8fae",
+      "row_hash_format": "sha256 of ordered JSON [input_ids,attention_mask,labels] + LF"
+    },
+    "selected_row_proof_file": {
+      "path": "reports/a100_sequential_20261022/stage2_data/complete.json",
+      "bytes": 3233,
+      "sha256": "26c3bac82936553f0af8976cf326bf90a871c14d42a88f7527cea0792a982528"
+    },
+    "full_bundle_manifest": {
+      "path": "reports/a100_full_20261023/bundle_manifest.json",
+      "bytes": 5250,
+      "sha256": "0f330f228599f4cff65ed6ce0ca11e2d667ea24e6b911b5f67f6fff7e24bcbe5",
+      "content": {
+        "schema": 1,
+        "derive_length": true,
+        "files": [
+          {
+            "path": "data/dataset_dict.json",
+            "bytes": 45,
+            "sha256": "69b51085d8699ceb574d31318f21692220d55d929627d43d4b52bbd41474584f"
+          },
+          {
+            "path": "data/train/data-00000-of-00019.arrow",
+            "bytes": 480372248,
+            "sha256": "9929f142705494aa4b318e909208169f740197ec9c225897aa5e26b0410711bb"
+          },
+          {
+            "path": "data/train/data-00001-of-00019.arrow",
+            "bytes": 480493352,
+            "sha256": "38932dcb3a0605a0167e81586772a413ce7f5c3732437352d7ec25cb607defd6"
+          },
+          {
+            "path": "data/train/data-00002-of-00019.arrow",
+            "bytes": 480679064,
+            "sha256": "7b5a48a94280aa34fb609b088d529300f9e89f72c66cb34dc76c17bcb6f82d86"
+          },
+          {
+            "path": "data/train/data-00003-of-00019.arrow",
+            "bytes": 480566320,
+            "sha256": "95848753c1a0c279952531376b43770fed10fed7c7c30c4c24d7d95d07e42e7c"
+          },
+          {
+            "path": "data/train/data-00004-of-00019.arrow",
+            "bytes": 480691664,
+            "sha256": "a00eaf344a118421deaa445241283959acf4433ba3c7fef07fa4eba56267fd89"
+          },
+          {
+            "path": "data/train/data-00005-of-00019.arrow",
+            "bytes": 480776784,
+            "sha256": "65853d2cbea68121cb041732060af2db6387929bbb64b110a9f02e2909da14f6"
+          },
+          {
+            "path": "data/train/data-00006-of-00019.arrow",
+            "bytes": 480240712,
+            "sha256": "a34d36f551ee148cdb8ac8e7c7c2a9d732764d6e4a079e547b83792cabd532bb"
+          },
+          {
+            "path": "data/train/data-00007-of-00019.arrow",
+            "bytes": 480386816,
+            "sha256": "165f9dccdfd1aec279b96ae51c42c1110fb636ecb981ab390f7b9528da93550b"
+          },
+          {
+            "path": "data/train/data-00008-of-00019.arrow",
+            "bytes": 480284016,
+            "sha256": "ef22cb310c77f2d44d4ccd821c2462d40b9de20106baa0ed8f91fae0d816c8ab"
+          },
+          {
+            "path": "data/train/data-00009-of-00019.arrow",
+            "bytes": 480682192,
+            "sha256": "d8e924370c8d9c404bef72138c6e126fc7d7c0f46e7824c865c224474fcd98a0"
+          },
+          {
+            "path": "data/train/data-00010-of-00019.arrow",
+            "bytes": 480282728,
+            "sha256": "8d04888ca941d589bf45690fbd2fbf6d07a8eb305f5dead91b1cdf04c8b386d7"
+          },
+          {
+            "path": "data/train/data-00011-of-00019.arrow",
+            "bytes": 480304216,
+            "sha256": "48d65373a3e648d1ac5c7c7b571be3581aa64d460f958204ee646cd2e7b76d31"
+          },
+          {
+            "path": "data/train/data-00012-of-00019.arrow",
+            "bytes": 480260728,
+            "sha256": "aecac1c5980c902c17c82c540f01f5f3d689916f41db82cc49f3b1d5255f5351"
+          },
+          {
+            "path": "data/train/data-00013-of-00019.arrow",
+            "bytes": 480608232,
+            "sha256": "480c54640b9aca7d15b261244bcd92d45ec68916a9f02904b109af3db7751210"
+          },
+          {
+            "path": "data/train/data-00014-of-00019.arrow",
+            "bytes": 480527080,
+            "sha256": "56fe2f33c7e23bc55b5ac324764cde2255d1cf6ba155c579852b8a4d840ab29c"
+          },
+          {
+            "path": "data/train/data-00015-of-00019.arrow",
+            "bytes": 480745624,
+            "sha256": "522dd38577808499cd0222f2198c4dfbe6bd48ace95e2c3788bb153dbfa0ccd2"
+          },
+          {
+            "path": "data/train/data-00016-of-00019.arrow",
+            "bytes": 480211968,
+            "sha256": "35347ed38c40160eabc9012c8b77af91d0e4cbbac959ffd3f1b3fc2083b4b55f"
+          },
+          {
+            "path": "data/train/data-00017-of-00019.arrow",
+            "bytes": 479999984,
+            "sha256": "884811510484ed6ea9a3606a87018a28c20ba9c66d1339cc390c1605718a6694"
+          },
+          {
+            "path": "data/train/data-00018-of-00019.arrow",
+            "bytes": 480608328,
+            "sha256": "73106c111157471eb139d4e8a52f5fb260df2fa7fb70358c1f4430b0bc865516"
+          },
+          {
+            "path": "data/train/dataset_info.json",
+            "bytes": 10913,
+            "sha256": "0b98cccbb77a018d49629a814ad54886690ea7dc6d5ceeac5eccb8f7b2ddcbef"
+          },
+          {
+            "path": "data/train/state.json",
+            "bytes": 1309,
+            "sha256": "cee16104de287eedd15cb8b93ba9eb04fa1cf7d835b9b07ce5b1d9e01fd6ab4d"
+          },
+          {
+            "path": "data/val/data-00000-of-00001.arrow",
+            "bytes": 93203608,
+            "sha256": "347525a9cabce1b6accb93d5d7bbcf81a172c0930af6cd83922c3f19848ee803"
+          },
+          {
+            "path": "data/val/dataset_info.json",
+            "bytes": 10913,
+            "sha256": "0b98cccbb77a018d49629a814ad54886690ea7dc6d5ceeac5eccb8f7b2ddcbef"
+          },
+          {
+            "path": "data/val/state.json",
+            "bytes": 247,
+            "sha256": "4475608471bd720298678298245d1185cfe80b633dbe3fdb64f36e152aee15e2"
+          },
+          {
+            "path": "preparation.json",
+            "bytes": 199,
+            "sha256": "b4a4a07d4c5e819e6aab61e9e1eff1ae3b8d6fef2636c1fa446601918d8967c6"
+          },
+          {
+            "path": "selection/data_manifest.json",
+            "bytes": 15852,
+            "sha256": "b005ba47e2d9b3fcc99ee5f07d1d82c45f0ff7bcd08a6a95aea9b82dad0b8abf"
+          },
+          {
+            "path": "selection/train_indices.npy",
+            "bytes": 92744608,
+            "sha256": "dccb3b25040b764b2b72c1f2d244c886963f0f62003d4e885360faed4fc6f5ec"
+          },
+          {
+            "path": "selection/val_indices.npy",
+            "bytes": 946544,
+            "sha256": "cbe3056352386a800bed18c8e5957b4d8cb9d4a910916ea61113ae9c6efebe36"
+          },
+          {
+            "path": "tokenizer.json",
+            "bytes": 534007,
+            "sha256": "abd75c8655b948f612ebbf065a12269613269a4755cd0a698b0bf7a5bc1e9704"
+          }
+        ],
+        "selection_sha256": "b005ba47e2d9b3fcc99ee5f07d1d82c45f0ff7bcd08a6a95aea9b82dad0b8abf"
+      }
+    },
+    "historical_physical_hashes": "The full bundle manifest retains original Arrow file byte sizes and SHA256 values as historical provenance; rebuilt Arrow files may have different physical hashes."
+  },
+  "selections": {
+    "base_1m_20k": {
+      "path": "artifacts/kaggle_20261019/verified_bundle/selection/data_manifest.json",
+      "bytes": 912,
+      "sha256": "aab7a9237d69484044504eac5c998f9f7ebd9c5573ad4d1e31fb4f41705e1e3d",
+      "content": {
+        "identity": {
+          "train_rows": 1000000,
+          "validation_rows": 20000,
+          "seed": 42,
+          "source": "/workspace/nlp-hw2/artifacts/experiments/transformer_003_10x10_d1024_h100/preprocessed/4879438077e0cb46363513447b8659890aeae228b22084a5856ab2ac5b6560fc/dataset",
+          "tokenizer_sha256": "abd75c8655b948f612ebbf065a12269613269a4755cd0a698b0bf7a5bc1e9704"
+        },
+        "splits": {
+          "train": {
+            "source_rows": 11593060,
+            "selected_rows": 1000000,
+            "source_fingerprint": "aa5d0e63813f76f9",
+            "indices_sha256": "e9c9a3ab522a0d8e015fa746e1b180a877e1038d671a6f59a88cfda9901ebf44",
+            "seed": 42
+          },
+          "val": {
+            "source_rows": 118302,
+            "selected_rows": 20000,
+            "source_fingerprint": "bccad2dc0c84a83e",
+            "indices_sha256": "27f9db6e215b9666e3d60dd01c207169afb92d8e535eb3c7ee48a21efcd66b21",
+            "seed": 43
+          }
+        },
+        "created_at": "2026-10-19T15:58:09.980519+00:00"
+      },
+      "local_indices": [
+        {
+          "path": "artifacts/kaggle_20261019/verified_bundle/selection/train_indices.npy",
+          "bytes": 8000128,
+          "sha256": "e9c9a3ab522a0d8e015fa746e1b180a877e1038d671a6f59a88cfda9901ebf44"
+        },
+        {
+          "path": "artifacts/kaggle_20261019/verified_bundle/selection/val_indices.npy",
+          "bytes": 160128,
+          "sha256": "27f9db6e215b9666e3d60dd01c207169afb92d8e535eb3c7ee48a21efcd66b21"
+        }
+      ],
+      "restore_relative_directory": "artifacts/a100_sequential_20261022/bundle/selection"
+    },
+    "repeat4m": {
+      "path": "reports/a100_sequential_20261022/stage2_data/repeat4m/selection/data_manifest.json",
+      "bytes": 3469,
+      "sha256": "db1019e323091ea265971650fb8c9636adf58965440abb8411e4a484c5e318c4",
+      "content": {
+        "identity": {
+          "train_rows": 4000000,
+          "validation_rows": 20000,
+          "seed": 42,
+          "source": "/workspace/nlp-hw2/artifacts/experiments/transformer_003_10x10_d1024_h100/preprocessed/4879438077e0cb46363513447b8659890aeae228b22084a5856ab2ac5b6560fc/dataset",
+          "tokenizer_sha256": "abd75c8655b948f612ebbf065a12269613269a4755cd0a698b0bf7a5bc1e9704"
+        },
+        "splits": {
+          "train": {
+            "source_rows": 11593060,
+            "selected_rows": 4000000,
+            "source_fingerprint": "db4a9cf00f162409",
+            "indices_sha256": "74e5909704c8a60edf526012fe2508e0019f34da22775d70aec7acfde6978118",
+            "seed": 42,
+            "rows_sha256": "1b6242edb3caf0fbbeef81b8f1a60fc3f7d6fe5b3d2260173d7e470f1ee1016e"
+          },
+          "val": {
+            "source_rows": 118302,
+            "selected_rows": 20000,
+            "source_fingerprint": "593c37f2d44384f8",
+            "indices_sha256": "27f9db6e215b9666e3d60dd01c207169afb92d8e535eb3c7ee48a21efcd66b21",
+            "seed": 43,
+            "rows_sha256": "ef11fafa16c1b9f03560cfc68ed0f83d3e07aa7b4ccb9054d12a8e34c0ce8fae"
+          }
+        },
+        "strategy": "repeat4m",
+        "provenance": {
+          "original_bundle_sha256": "7480c7d1778bffce50db987019f2ccf87c06f8643c1ce59ad811e4fd3c77d0e1",
+          "original_selection_sha256": "aab7a9237d69484044504eac5c998f9f7ebd9c5573ad4d1e31fb4f41705e1e3d",
+          "original_selection": {
+            "identity": {
+              "train_rows": 1000000,
+              "validation_rows": 20000,
+              "seed": 42,
+              "source": "/workspace/nlp-hw2/artifacts/experiments/transformer_003_10x10_d1024_h100/preprocessed/4879438077e0cb46363513447b8659890aeae228b22084a5856ab2ac5b6560fc/dataset",
+              "tokenizer_sha256": "abd75c8655b948f612ebbf065a12269613269a4755cd0a698b0bf7a5bc1e9704"
+            },
+            "splits": {
+              "train": {
+                "source_rows": 11593060,
+                "selected_rows": 1000000,
+                "source_fingerprint": "aa5d0e63813f76f9",
+                "indices_sha256": "e9c9a3ab522a0d8e015fa746e1b180a877e1038d671a6f59a88cfda9901ebf44",
+                "seed": 42
+              },
+              "val": {
+                "source_rows": 118302,
+                "selected_rows": 20000,
+                "source_fingerprint": "bccad2dc0c84a83e",
+                "indices_sha256": "27f9db6e215b9666e3d60dd01c207169afb92d8e535eb3c7ee48a21efcd66b21",
+                "seed": 43
+              }
+            },
+            "created_at": "2026-10-19T15:58:09.980519+00:00"
+          },
+          "full_cache_path": "/home/artyom-step/workspace/nlp-hw2/artifacts/experiments/transformer_002_8x8_d768_lr1e4/preprocessed/59ebc525571791733f851050d49d4a25a2ba5330ff775d360d868ec0bc6f35e0/dataset",
+          "full_cache": {
+            "train": {
+              "rows": 11593060,
+              "fingerprint": "db4a9cf00f162409",
+              "original_source_fingerprint": "aa5d0e63813f76f9",
+              "fingerprint_matches_original": false
+            },
+            "val": {
+              "rows": 118302,
+              "fingerprint": "593c37f2d44384f8",
+              "original_source_fingerprint": "bccad2dc0c84a83e",
+              "fingerprint_matches_original": false
+            }
+          },
+          "verified_original_rows": {
+            "train": 1000000,
+            "val": 20000
+          },
+          "original_rows_sha256": {
+            "train": "f38a4a16701954f7f763c22ea499e70ccb04788683cc6cc573933ce349d8eb8c",
+            "val": "ef11fafa16c1b9f03560cfc68ed0f83d3e07aa7b4ccb9054d12a8e34c0ce8fae"
+          },
+          "validation_rows_sha256": "ef11fafa16c1b9f03560cfc68ed0f83d3e07aa7b4ccb9054d12a8e34c0ce8fae",
+          "row_hash_format": "sha256 of ordered JSON [input_ids,attention_mask,labels] + LF"
+        },
+        "created_at": "2026-10-22T16:43:27.270364+00:00"
+      },
+      "restore_relative_directory": "artifacts/a100_sequential_20261022/stage2_data/repeat4m/selection"
+    },
+    "distinct4m": {
+      "path": "reports/a100_sequential_20261022/stage2_data/distinct4m/selection/data_manifest.json",
+      "bytes": 3471,
+      "sha256": "80357f04410a2cb1812d71fed3c66c61c6e8367a140c2911af44bff325d29d13",
+      "content": {
+        "identity": {
+          "train_rows": 4000000,
+          "validation_rows": 20000,
+          "seed": 42,
+          "source": "/workspace/nlp-hw2/artifacts/experiments/transformer_003_10x10_d1024_h100/preprocessed/4879438077e0cb46363513447b8659890aeae228b22084a5856ab2ac5b6560fc/dataset",
+          "tokenizer_sha256": "abd75c8655b948f612ebbf065a12269613269a4755cd0a698b0bf7a5bc1e9704"
+        },
+        "splits": {
+          "train": {
+            "source_rows": 11593060,
+            "selected_rows": 4000000,
+            "source_fingerprint": "db4a9cf00f162409",
+            "indices_sha256": "7820e100ea1c60e47390e7856163e96c9809e87f1425b702ac672dc6b985855c",
+            "seed": 42,
+            "rows_sha256": "212108ff69788f208feb6be592bb072967dc5ae47d621ec338d87f8260b75bcb"
+          },
+          "val": {
+            "source_rows": 118302,
+            "selected_rows": 20000,
+            "source_fingerprint": "593c37f2d44384f8",
+            "indices_sha256": "27f9db6e215b9666e3d60dd01c207169afb92d8e535eb3c7ee48a21efcd66b21",
+            "seed": 43,
+            "rows_sha256": "ef11fafa16c1b9f03560cfc68ed0f83d3e07aa7b4ccb9054d12a8e34c0ce8fae"
+          }
+        },
+        "strategy": "distinct4m",
+        "provenance": {
+          "original_bundle_sha256": "7480c7d1778bffce50db987019f2ccf87c06f8643c1ce59ad811e4fd3c77d0e1",
+          "original_selection_sha256": "aab7a9237d69484044504eac5c998f9f7ebd9c5573ad4d1e31fb4f41705e1e3d",
+          "original_selection": {
+            "identity": {
+              "train_rows": 1000000,
+              "validation_rows": 20000,
+              "seed": 42,
+              "source": "/workspace/nlp-hw2/artifacts/experiments/transformer_003_10x10_d1024_h100/preprocessed/4879438077e0cb46363513447b8659890aeae228b22084a5856ab2ac5b6560fc/dataset",
+              "tokenizer_sha256": "abd75c8655b948f612ebbf065a12269613269a4755cd0a698b0bf7a5bc1e9704"
+            },
+            "splits": {
+              "train": {
+                "source_rows": 11593060,
+                "selected_rows": 1000000,
+                "source_fingerprint": "aa5d0e63813f76f9",
+                "indices_sha256": "e9c9a3ab522a0d8e015fa746e1b180a877e1038d671a6f59a88cfda9901ebf44",
+                "seed": 42
+              },
+              "val": {
+                "source_rows": 118302,
+                "selected_rows": 20000,
+                "source_fingerprint": "bccad2dc0c84a83e",
+                "indices_sha256": "27f9db6e215b9666e3d60dd01c207169afb92d8e535eb3c7ee48a21efcd66b21",
+                "seed": 43
+              }
+            },
+            "created_at": "2026-10-19T15:58:09.980519+00:00"
+          },
+          "full_cache_path": "/home/artyom-step/workspace/nlp-hw2/artifacts/experiments/transformer_002_8x8_d768_lr1e4/preprocessed/59ebc525571791733f851050d49d4a25a2ba5330ff775d360d868ec0bc6f35e0/dataset",
+          "full_cache": {
+            "train": {
+              "rows": 11593060,
+              "fingerprint": "db4a9cf00f162409",
+              "original_source_fingerprint": "aa5d0e63813f76f9",
+              "fingerprint_matches_original": false
+            },
+            "val": {
+              "rows": 118302,
+              "fingerprint": "593c37f2d44384f8",
+              "original_source_fingerprint": "bccad2dc0c84a83e",
+              "fingerprint_matches_original": false
+            }
+          },
+          "verified_original_rows": {
+            "train": 1000000,
+            "val": 20000
+          },
+          "original_rows_sha256": {
+            "train": "f38a4a16701954f7f763c22ea499e70ccb04788683cc6cc573933ce349d8eb8c",
+            "val": "ef11fafa16c1b9f03560cfc68ed0f83d3e07aa7b4ccb9054d12a8e34c0ce8fae"
+          },
+          "validation_rows_sha256": "ef11fafa16c1b9f03560cfc68ed0f83d3e07aa7b4ccb9054d12a8e34c0ce8fae",
+          "row_hash_format": "sha256 of ordered JSON [input_ids,attention_mask,labels] + LF"
+        },
+        "created_at": "2026-10-22T16:52:21.291553+00:00"
+      },
+      "restore_relative_directory": "artifacts/a100_sequential_20261022/stage2_data/distinct4m/selection"
+    },
+    "full": {
+      "restore_relative_directory": "artifacts/a100_full_20261023/bundle/selection",
+      "manifest_records": [
+        {
+          "path": "selection/data_manifest.json",
+          "bytes": 15852,
+          "sha256": "b005ba47e2d9b3fcc99ee5f07d1d82c45f0ff7bcd08a6a95aea9b82dad0b8abf"
+        },
+        {
+          "path": "selection/train_indices.npy",
+          "bytes": 92744608,
+          "sha256": "dccb3b25040b764b2b72c1f2d244c886963f0f62003d4e885360faed4fc6f5ec"
+        },
+        {
+          "path": "selection/val_indices.npy",
+          "bytes": 946544,
+          "sha256": "cbe3056352386a800bed18c8e5957b4d8cb9d4a910916ea61113ae9c6efebe36"
+        }
+      ],
+      "method": "train=np.arange(11593060,dtype=np.int64); val=np.arange(118302,dtype=np.int64); np.save(...,allow_pickle=False); no row reordering"
+    },
+    "repeat4m_method": "np.tile(saved_base_train_indices,4); same saved 20k validation indices",
+    "distinct4m_method": "base 1M indices first; remaining=np.flatnonzero(mask excluding base); extra=np.random.default_rng(42).choice(remaining,size=3000000,replace=False); concatenate(base,extra); same saved 20k validation indices",
+    "reconstruction_priority": "Use preserved .npy arrays and verify their SHA256. Generation formulas document provenance and are fallback reconstruction methods.",
+    "row_hash_format": "SHA256 over each ordered [input_ids,attention_mask,labels] encoded by json.dumps(row,separators=(comma,colon)).encode(utf-8), followed by one LF byte per row; only integer token arrays enter this hash."
+  },
+  "cache_exclusions": {
+    "intent": "Exclude only reproducible derived dataset/cache artifacts from source-data backup scope; preserve immutable raw Parquet inputs, saved tokenizer, code, configs, .npy selection indices, and provenance manifests.",
+    "rebuildable_artifacts": [
+      "data/tinysms_qa_12m/.cache/datasets/** and analogous Hugging Face Arrow/map/shuffle caches",
+      "data/tinysms_qa_12m/.cache/huggingface/** transfer locks/incomplete downloads; public revision/ETags needed for identity are captured above",
+      "artifacts/experiments/*/preprocessed/*/dataset/**/*.arrow and equivalent derived token cache copies",
+      "artifacts/a100_full_20261023/bundle/data/**/*.arrow and artifacts/a100_sequential_20261022/**/data/**/*.arrow when they are derived from the preserved source/tokenizer/selection inputs"
+    ],
+    "must_preserve": [
+      "all raw train/test Parquet files listed above",
+      "saved tokenizer JSON with SHA256 above",
+      "frozen preprocessing source and exact configurations",
+      "selection .npy arrays and their manifests",
+      "historical source fingerprints, raw-file hashes, row counts and ordered token-row proof hashes"
+    ],
+    "physical_rebuild_limit": "Arrow serialization byte hashes, file partitioning, local cache-directory fingerprints and Dataset fingerprints may differ after a rebuild because runtime, filesystem paths, multiprocessing, and serialization metadata differ. Do not claim the original physical Arrow files were restored unless their original byte hashes match.",
+    "semantic_rebuild_contract": "Preserve raw shard and row order, tokenize using the exact saved tokenizer and saved preprocessing source/settings, shuffle/split with seed42 in the recorded split order, drop exactly the recorded empty/long rows, then apply the preserved selection indices in stored order. Check row counts and the available ordered token-row proof hashes. Record new physical Arrow hashes and lineage if physical representation differs.",
+    "strict_historical_sealer": "tools/prepare_a100_full.py intentionally checks historical physical fingerprints/proofs. A semantically reconstructed cache with new physical fingerprints requires a newly documented provenance/manifest after verification; do not overwrite the historical manifest or edit fingerprints merely to bypass checks.",
+    "checkpoint_policy": "Not specified here; owned by the parent backup policy."
+  },
+  "reconstruction": {
+    "working_directory": "restored repository root, with relative paths above retained",
+    "dependencies": {
+      "pinned_requirements_file": "requirements.txt",
+      "historical_data_stack": {
+        "datasets": "4.6.0",
+        "tokenizers": "0.22.2",
+        "transformers": "5.10.2"
+      },
+      "python_note": "Use the historical Python runtime where available; tokenize behavior and HF fingerprints can depend on Python/library versions."
+    },
+    "install_command": "python3 -m pip install -r requirements.txt",
+    "rebuild_command": "CUDA_VISIBLE_DEVICES='' REBUILD_DIR=/tmp/nlp_hw2_rebuilt_cache python3 -B - <<'PY'\nfrom pathlib import Path\nfrom dataclasses import fields\nimport hashlib, json, os\nimport datasets as ds\nfrom tokenizers import Tokenizer\nfrom transformers import PreTrainedTokenizerFast\nfrom prepare_datasets import remove_dataset_comments, split_dataset\nfrom training import TrainingConfig, _prepare_dataset\n\nroot = Path.cwd()\noutput = Path(os.environ.get('REBUILD_DIR', '/tmp/nlp_hw2_rebuilt_cache')).resolve()\nassert not output.exists(), 'Choose a fresh REBUILD_DIR'\nmanifest = json.loads((root/'reports/a100_shutdown_backup_20261023/reconstruction_manifest.json').read_text())\nfor item in manifest['raw_dataset']['train']['files'] + [manifest['raw_dataset']['official_test']]:\n    digest = hashlib.sha256()\n    with (root/item['path']).open('rb') as stream:\n        for block in iter(lambda: stream.read(8*1024*1024), b''):\n            digest.update(block)\n    assert digest.hexdigest() == item['sha256'], item['path']\nfiles = [str(root/item['path']) for item in manifest['raw_dataset']['train']['files']]\nraw = ds.load_dataset('parquet', data_files={'train': files}, split='train', cache_dir=str(output/'hf_cache'))\nassert len(raw) == 11838003\nclean = remove_dataset_comments(raw, columns=('code',), num_proc=16, batch_size=1000)\nsplits = split_dataset(clean, sizes={'train': 0.98, 'val': 0.01, 'test': 0.01}, seed=42, columns=['question', 'code'])\nassert {name: len(value) for name, value in splits.items()} == {'train': 11601243, 'val': 118380, 'test': 118380}\ntoken_path = root/manifest['tokenizer']['restore_relative_path']\nassert hashlib.sha256(token_path.read_bytes()).hexdigest() == manifest['tokenizer']['sha256']\ntokenizer = Tokenizer.from_file(str(token_path))\nfast = PreTrainedTokenizerFast(tokenizer_object=tokenizer, bos_token='<bos>', eos_token='<eos>', pad_token='<pad>', unk_token='<unk>', model_max_length=256)\nassert fast.encode('', add_special_tokens=True) == [2, 3]\nconfig = TrainingConfig(tokenizer=tokenizer, output_dir=output, source_column='question', target_column='code', max_source_length=256, max_target_length=256, tokenization_batch_size=1000, num_proc=16, seed=42, max_train_samples=None, max_eval_samples=None, group_by_length=False, use_cpu=True, mixed_precision='no')\nprepared, statistics = {}, {}\nfor name in ('train', 'val'):\n    prepared[name], statistics[name] = _prepare_dataset(splits[name], fast, config, name, None)\nassert statistics == manifest['historical_cache']['preprocessing_statistics']\nassert [len(prepared[name]) for name in ('train', 'val')] == [11593060, 118302]\nds.DatasetDict(prepared).save_to_disk(str(output/'full_dataset'))\n(output/'statistics.json').write_text(json.dumps(statistics, indent=2)+'\\n')\nprint(json.dumps({'output': str(output/'full_dataset'), 'rows': {name: len(value) for name, value in prepared.items()}, 'fingerprints': {name: value._fingerprint for name, value in prepared.items()}}, indent=2))\nPY\n",
+    "rebuild_python": "from pathlib import Path\nfrom dataclasses import fields\nimport hashlib, json, os\nimport datasets as ds\nfrom tokenizers import Tokenizer\nfrom transformers import PreTrainedTokenizerFast\nfrom prepare_datasets import remove_dataset_comments, split_dataset\nfrom training import TrainingConfig, _prepare_dataset\n\nroot = Path.cwd()\noutput = Path(os.environ.get('REBUILD_DIR', '/tmp/nlp_hw2_rebuilt_cache')).resolve()\nassert not output.exists(), 'Choose a fresh REBUILD_DIR'\nmanifest = json.loads((root/'reports/a100_shutdown_backup_20261023/reconstruction_manifest.json').read_text())\nfor item in manifest['raw_dataset']['train']['files'] + [manifest['raw_dataset']['official_test']]:\n    digest = hashlib.sha256()\n    with (root/item['path']).open('rb') as stream:\n        for block in iter(lambda: stream.read(8*1024*1024), b''):\n            digest.update(block)\n    assert digest.hexdigest() == item['sha256'], item['path']\nfiles = [str(root/item['path']) for item in manifest['raw_dataset']['train']['files']]\nraw = ds.load_dataset('parquet', data_files={'train': files}, split='train', cache_dir=str(output/'hf_cache'))\nassert len(raw) == 11838003\nclean = remove_dataset_comments(raw, columns=('code',), num_proc=16, batch_size=1000)\nsplits = split_dataset(clean, sizes={'train': 0.98, 'val': 0.01, 'test': 0.01}, seed=42, columns=['question', 'code'])\nassert {name: len(value) for name, value in splits.items()} == {'train': 11601243, 'val': 118380, 'test': 118380}\ntoken_path = root/manifest['tokenizer']['restore_relative_path']\nassert hashlib.sha256(token_path.read_bytes()).hexdigest() == manifest['tokenizer']['sha256']\ntokenizer = Tokenizer.from_file(str(token_path))\nfast = PreTrainedTokenizerFast(tokenizer_object=tokenizer, bos_token='<bos>', eos_token='<eos>', pad_token='<pad>', unk_token='<unk>', model_max_length=256)\nassert fast.encode('', add_special_tokens=True) == [2, 3]\nconfig = TrainingConfig(tokenizer=tokenizer, output_dir=output, source_column='question', target_column='code', max_source_length=256, max_target_length=256, tokenization_batch_size=1000, num_proc=16, seed=42, max_train_samples=None, max_eval_samples=None, group_by_length=False, use_cpu=True, mixed_precision='no')\nprepared, statistics = {}, {}\nfor name in ('train', 'val'):\n    prepared[name], statistics[name] = _prepare_dataset(splits[name], fast, config, name, None)\nassert statistics == manifest['historical_cache']['preprocessing_statistics']\nassert [len(prepared[name]) for name in ('train', 'val')] == [11593060, 118302]\nds.DatasetDict(prepared).save_to_disk(str(output/'full_dataset'))\n(output/'statistics.json').write_text(json.dumps(statistics, indent=2)+'\\n')\nprint(json.dumps({'output': str(output/'full_dataset'), 'rows': {name: len(value) for name, value in prepared.items()}, 'fingerprints': {name: value._fingerprint for name, value in prepared.items()}}, indent=2))\n",
+    "verify_ordered_selected_tokens_command": "CUDA_VISIBLE_DEVICES='' REBUILD_DIR=/tmp/nlp_hw2_rebuilt_cache python3 -B - <<'PY'\nfrom pathlib import Path\nimport hashlib, json, os\nimport numpy as np\nimport datasets as ds\n\nroot = Path.cwd()\noutput = Path(os.environ.get('REBUILD_DIR', '/tmp/nlp_hw2_rebuilt_cache')).resolve()\nmanifest = json.loads((root/'reports/a100_shutdown_backup_20261023/reconstruction_manifest.json').read_text())\ndata = ds.load_from_disk(str(output/'full_dataset'))\nselection_dir = root/manifest['selections']['base_1m_20k']['restore_relative_directory']\nfor name in ('train', 'val'):\n    index_path = selection_dir/f'{name}_indices.npy'\n    expected = manifest['selections']['base_1m_20k']['content']['splits'][name]\n    assert hashlib.sha256(index_path.read_bytes()).hexdigest() == expected['indices_sha256']\n    indices = np.load(index_path, allow_pickle=False)\n    selected = data[name].select_columns(['input_ids', 'attention_mask', 'labels']).select(indices)\n    digest = hashlib.sha256()\n    for batch in selected.iter(batch_size=1000):\n        for row in zip(batch['input_ids'], batch['attention_mask'], batch['labels']):\n            digest.update(json.dumps(row, separators=(',', ':')).encode('utf-8'))\n            digest.update(b'\\n')\n    expected_rows_sha = manifest['historical_cache']['selected_row_proof']['original_rows_sha256'][name]\n    assert digest.hexdigest() == expected_rows_sha, (name, digest.hexdigest(), expected_rows_sha)\n    print(name, len(selected), digest.hexdigest())\nPY\n",
+    "verify_ordered_selected_tokens_python": "from pathlib import Path\nimport hashlib, json, os\nimport numpy as np\nimport datasets as ds\n\nroot = Path.cwd()\noutput = Path(os.environ.get('REBUILD_DIR', '/tmp/nlp_hw2_rebuilt_cache')).resolve()\nmanifest = json.loads((root/'reports/a100_shutdown_backup_20261023/reconstruction_manifest.json').read_text())\ndata = ds.load_from_disk(str(output/'full_dataset'))\nselection_dir = root/manifest['selections']['base_1m_20k']['restore_relative_directory']\nfor name in ('train', 'val'):\n    index_path = selection_dir/f'{name}_indices.npy'\n    expected = manifest['selections']['base_1m_20k']['content']['splits'][name]\n    assert hashlib.sha256(index_path.read_bytes()).hexdigest() == expected['indices_sha256']\n    indices = np.load(index_path, allow_pickle=False)\n    selected = data[name].select_columns(['input_ids', 'attention_mask', 'labels']).select(indices)\n    digest = hashlib.sha256()\n    for batch in selected.iter(batch_size=1000):\n        for row in zip(batch['input_ids'], batch['attention_mask'], batch['labels']):\n            digest.update(json.dumps(row, separators=(',', ':')).encode('utf-8'))\n            digest.update(b'\\n')\n    expected_rows_sha = manifest['historical_cache']['selected_row_proof']['original_rows_sha256'][name]\n    assert digest.hexdigest() == expected_rows_sha, (name, digest.hexdigest(), expected_rows_sha)\n    print(name, len(selected), digest.hexdigest())\n",
+    "checks_after_rebuild": [
+      "all raw input SHA256 values match this manifest",
+      "raw rows=11838003; split rows=11601243/118380/118380",
+      "filtered full rows=train11593060,val118302 and dropped_long=train8183,val78",
+      "saved tokenizer SHA256 matches; empty encoding=[2,3]",
+      "base selected 1M train ordered token hash=f38a4a16701954f7f763c22ea499e70ccb04788683cc6cc573933ce349d8eb8c",
+      "selected 20k validation ordered token hash=ef11fafa16c1b9f03560cfc68ed0f83d3e07aa7b4ccb9054d12a8e34c0ce8fae",
+      "recreate optional length column with max(input_length,label_length) only when a consumer requires it",
+      "apply preserved full/repeat4m/distinct4m index arrays and compare their manifest rows_sha256 where present",
+      "write a new physical data manifest with lineage to this reconstruction manifest; preserve historical manifests separately"
+    ],
+    "coverage_note": "Available historical ordered token digests cover the selected1M/20k and repeat/distinct4M selections. The historical full11.59M cache records physical Arrow hashes and deterministic provenance, rather than a separate all-row semantic digest. Do not describe selected-row digest checks as an all-row semantic hash verification."
+  }
+}
