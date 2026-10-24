@@ -22,7 +22,7 @@
 
 - Parent and tree identity for all historical files outside the removed section.
 - Concurrent remote changes: atomic explicit force-with-lease only on the inspected published heads.
-- Private repository authentication without tokens in notebooks, logs or files.
+- Repository authentication without tokens in notebooks, logs or files; public release downloads require no token.
 - Exact model/tokenizer/test identity; server asset SHA and fresh compatibility script.
 - Relative links after relocating long documentation and distinct model archive names.
 
@@ -32,5 +32,5 @@
 - [x] Verify every rewritten README, non-README tree and parent mapping; independently review and publish both cleaned heads with leases.
 - [x] Prepare verified model002 and full BART release ZIPs; preserve original archive and model tensor hashes.
 - [x] Replace README with practical setup/layout/train/inference guide; move supplementary material and provide both Colab paths.
-- [ ] Validate notebook syntax, bundle integrity and documentation links, commit guide, then create/upload/publish both release assets against cleaned commit.
-- [ ] Verify remote refs, release asset SHA/size and final absence of removed content in published history; report exact scope and GitHub cache limitations.
+- [x] Validate notebook syntax, bundle integrity and documentation links, commit guide, then create/upload/publish both release assets against cleaned commit.
+- [x] Verify remote refs, release asset SHA/size and final absence of removed content in published history; report exact scope and GitHub cache limitations.

@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "status": "published_verified",
+  "verified_at": "2026-10-24T16:10:58.004415+00:00",
+  "repository": "ArtyomStepanov/nlp-hw2",
+  "release_id": 422833110,
+  "release_url": "https://github.com/ArtyomStepanov/nlp-hw2/releases/tag/models-2026-10-24",
+  "tag": "models-2026-10-24",
+  "target_commit_sha": "6f8309d7f68c01f781b849989a37923f78fdb139",
+  "tag_commit_sha": "6f8309d7f68c01f781b849989a37923f78fdb139",
+  "assets": [
+    {
+      "id": 672692124,
+      "name": "final_checkpoint360000_colab.zip",
+      "size": 518363693,
+      "digest": "sha256:dd822e91abb618cb79b99b1dc900a19c6df9f3e91d52671cd21c85214947ae69",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/ArtyomStepanov/nlp-hw2/releases/download/models-2026-10-24/final_checkpoint360000_colab.zip",
+      "created_at": "2026-10-24T16:04:44Z",
+      "updated_at": "2026-10-24T16:06:27Z",
+      "model": "model002",
+      "extraction_bundle_root": ".",
+      "checkpoint_relative_path": "checkpoint",
+      "checkpoint_step": 360000,
+      "model_parameters": 139253760,
+      "official_test_rows": 1919,
+      "sha256": "dd822e91abb618cb79b99b1dc900a19c6df9f3e91d52671cd21c85214947ae69"
+    },
+    {
+      "id": 672697792,
+      "name": "a100_full_best180000_colab.zip",
+      "size": 978377281,
+      "digest": "sha256:52dde24e1984813b3b9030f59123a3e9b48a53a6e1a278bafa3d81fa4aa3e1e7",
+      "state": "uploaded",
+      "browser_download_url": "https://github.com/ArtyomStepanov/nlp-hw2/releases/download/models-2026-10-24/a100_full_best180000_colab.zip",
+      "created_at": "2026-10-24T16:07:24Z",
+      "updated_at": "2026-10-24T16:10:53Z",
+      "model": "a100_full",
+      "extraction_bundle_root": "a100_full_best180000_t4",
+      "checkpoint_relative_path": "checkpoint",
+      "checkpoint_step": 180000,
+      "model_parameters": 244391936,
+      "official_test_rows": 1919,
+      "sha256": "52dde24e1984813b3b9030f59123a3e9b48a53a6e1a278bafa3d81fa4aa3e1e7"
+    }
+  ],
+  "server_digest_algorithm": "sha256",
+  "credentials_persisted": false,
+  "preparation": {
+    "a100_bundle_manifest_sha256": "4ac0daa90326956e69152eb681131bd5889af8ad5876a80591a532a1d2ee81ba",
+    "a100_weight_sha256": "2059268173416c77cd8c901c791eb86e7cbcea0ede756b2bb830ec23638b8165",
+    "a100_modified_member": "benchmark_full_t4.py",
+    "a100_original_script": {
+      "bytes": 13416,
+      "sha256": "f5087b3ef09677a413ce9e9d8aab2bd670b17bd4fbefc1a4c149e65641b059b6"
+    },
+    "a100_release_script": {
+      "bytes": 13553,
+      "sha256": "41343c797a415237bbd98bedbcdf4f27d9ec848988e1d7c0807f08884fd36829"
+    },
+    "original_archives_unchanged": [
+      {
+        "path": "artifacts/colab_final_20261019/final_checkpoint360000_colab.zip",
+        "bytes": 518363693,
+        "sha256": "dd822e91abb618cb79b99b1dc900a19c6df9f3e91d52671cd21c85214947ae69"
+      },
+      {
+        "path": "artifacts/a100_full_eval_20261023/a100_full_best180000_t4.zip",
+        "bytes": 978377144,
+        "sha256": "9845b2ad033482ad113dfc02592bbf72963520e4cf0c8c83403cd3ff144260da"
+      }
+    ],
+    "verification": {
+      "model_weights_loaded": false,
+      "a100_verify_bundle": "passed",
+      "new_zip_all_members_match_verified_bundle": true,
+      "new_zip_member_count": 20
+    }
+  },
+  "model002_verification": {
+    "status": "passed",
+    "archive_bytes": 518363693,
+    "archive_sha256": "dd822e91abb618cb79b99b1dc900a19c6df9f3e91d52671cd21c85214947ae69",
+    "payload_files_checked": 10,
+    "zip_members_crc_checked": 11,
+    "unique_safe_relative_paths": true,
+    "symlinks_or_encryption": false,
+    "python_syntax": "valid",
+    "weight_sha256": "5e1a87fae9f39adc24c4fab8eaf630a89c4906862a6fa38962fb2f71d65fe0fd",
+    "test_rows": 1919,
+    "test_columns": [
+      "question"
+    ],
+    "model_weights_loaded": false,
+    "independent_agent": "/root/prepare_full_training_launch/local_backup_inventory"
+  },
+  "draft_url_recovery": "GitHub draft temporary untagged URL accepted only during upload; final published canonical URLs, server digests, sizes and tag commit verified via fresh API GET."
+}

@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "checked_at": "2026-10-24T16:05:14.246012+00:00",
+  "historical_commits_rewritten": 8,
+  "published_reachable_commits_checked": 9,
+  "removed_content_matches": 0,
+  "all_other_historical_tree_entries_preserved": true,
+  "commit_metadata_messages_parent_topology_preserved": true,
+  "main_and_work_branch_commit": "6f8309d7f68c01f781b849989a37923f78fdb139",
+  "published_refs_verified": true,
+  "local_recovery_bundle_excluded_from_git": true,
+  "scope": "Published branches; GitHub may retain unreachable cached commit views and independent clones.",
+  "release_tag_commit": "6f8309d7f68c01f781b849989a37923f78fdb139",
+  "guide_validation": {
+    "notebook_json_and_python_ast": "passed",
+    "local_markdown_links_checked": 167,
+    "a100_notebook_actual_extraction_and_cpu_verify_only": "passed",
+    "gpu_execution_performed": false,
+    "independent_documentation_review": "passed"
+  }
+}
